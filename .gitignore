@@ -1,0 +1,9 @@
+/target
+
+# Local model weights and caches
+*.gguf
+*.safetensors
+*.sqlite
+*.sqlite-*
+
+.DS_Store
