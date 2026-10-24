@@ -9,6 +9,7 @@ A macOS app that turns any molecule into short, accurate, surprising fact cards,
 - macOS 13 or later on Apple Silicon
 - Rust (the pinned version in `rust-toolchain.toml` installs automatically via rustup)
 - Node.js 22 or later
+- Xcode (not just the Command Line Tools): mistral.rs compiles its Metal kernels with Apple's `metal` compiler at build time. Check with `xcrun -sdk macosx metal --version`.
 
 ## Build
 

@@ -9,5 +9,13 @@ repository.workspace = true
 
 [dependencies]
 
+# M0 model spike only; moves to [dependencies] when generation lands in M3.
+# crates.io lags behind (0.8.1), so pin the release tag.
+[dev-dependencies]
+anyhow = "1"
+libproc = "0.14"
+mistralrs = { git = "https://github.com/EricLBuehler/mistral.rs", tag = "v0.9.5", features = ["metal"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
 [lints]
 workspace = true

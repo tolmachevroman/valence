@@ -21,7 +21,7 @@ Done when: `cargo test --workspace` passes locally and in CI.
 
 Goal: pick the default model, and find out early whether small models write cards that are both accurate and fun.
 
-- [ ] **M0.1 Hello mistral.rs** — `valence-core` example that loads a GGUF (Q4_K_M) on Metal and streams tokens to stdout. Print load time, time to first token, tokens/s, peak RSS.
+- [x] **M0.1 Hello mistral.rs** — `valence-core` example that loads a GGUF (Q4_K_M) on Metal and streams tokens to stdout. Print load time, time to first token, tokens/s, peak memory. Results in [spike/m0-results.md](spike/m0-results.md).
 - [ ] **M0.2 Spike fixtures** — `fixtures/spike/<molecule>.json` for 30 molecules: hand-pasted snippets, each with `id`, `source`, `section`, `url`, `text`. Mix famous (caffeine, capsaicin, aspirin) and obscure.
 - [ ] **M0.3 Card types and prompts v1** — `CardKind` enum (`where`, `origin`, `danger`, `weird`), one prompt template per kind, few-shot examples, JSON output format from the PRD.
 - [ ] **M0.4 Validator v1** (production code, not throwaway) — parse JSON; sources non-empty and known; every number, year and proper name in `body` found in a cited snippet (normalized match); 2–4 sentences, under 80 words. Unit tests with good and bad cards.
@@ -67,7 +67,7 @@ Exit: searching any molecule shows its header and a smooth 3D model at 60 fps.
 ## M3 · Cards end to end (weeks 7–10)
 
 - [ ] **M3.1 Snippet selection** — per-kind rules (`where` ← uses + occurrence, `origin` ← Wikipedia history, `danger` ← GHS, `weird` ← all non-manufacturing); no snippets → no card.
-- [ ] **M3.2 Model service** — loads in the background at launch, one generation queue, token stream to the UI; footer shows loaded / loading / not downloaded.
+- [ ] **M3.2 Model service** — loads in the background at launch, one generation queue, token stream to the UI; footer shows loaded / loading / not downloaded. Load with manual device mapping and no paged attention (see M0 findings), plus our own memory check before loading.
 - [ ] **M3.3 Pipeline** — select → generate → validate → retry once stricter → persist or drop. Validator from M0, hardened.
 - [ ] **M3.4 Danger card** — GHS pictograms + statements rendered straight from data; model writes only the plain-language summary; no doses.
 - [ ] **M3.5 Persistence** — `card` + `card_source`; regenerate only when cited snippet hashes change.
