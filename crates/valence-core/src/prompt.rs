@@ -262,16 +262,31 @@ mod tests {
     }
 
     #[test]
-    fn examples_follow_the_output_format() {
+    fn examples_pass_the_validator() {
         for kind in CardKind::ALL {
             let ex = example(kind);
             let card: CardDraft = serde_json::from_str(ex.card).expect("example card parses");
-            assert!(!card.sources.is_empty());
-            for id in &card.sources {
-                let n: usize = id.strip_prefix('s').unwrap().parse().unwrap();
-                assert!((1..=ex.snippets.len()).contains(&n), "{kind:?} cites {id}");
-            }
-            assert!(card.body.split_whitespace().count() < 80);
+            let snippets: Vec<_> = ex
+                .snippets
+                .iter()
+                .map(|(label, text)| {
+                    let (source, section) = label.split_once(", ").unwrap();
+                    Snippet {
+                        id: String::new(),
+                        source: source.to_lowercase(),
+                        section: section.into(),
+                        url: String::new(),
+                        origin: source.into(),
+                        text: text.to_string(),
+                    }
+                })
+                .collect();
+            let refs: Vec<_> = snippets.iter().collect();
+            assert_eq!(
+                crate::validate::validate(&card, ex.molecule, &refs),
+                Ok(()),
+                "{kind:?} example"
+            );
         }
     }
 

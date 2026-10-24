@@ -7812,6 +7812,7 @@ dependencies = [
  "anyhow",
  "libproc",
  "mistralrs",
+ "regex",
  "serde",
  "serde_json",
  "tokio",
