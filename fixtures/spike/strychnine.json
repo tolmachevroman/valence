@@ -1,0 +1,206 @@
+{
+  "molecule": "strychnine",
+  "cid": 441071,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Strychnine appears as colorless, transparent crystals or white crystalline powder. Has no odor. Used for destroying rodents and predatory animals and for trapping fur-bearing animals. (EPA, 1998)"
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Strychnine is a monoterpenoid indole alkaloid that is strychnidine bearing a keto substituent at the 10-position. It has a role as a rodenticide, an avicide, a neurotransmitter agent, a cholinergic antagonist and a glycine receptor antagonist. It is an organic heteroheptacyclic compound and a monoterpenoid indole alkaloid. It is a conjugate base of a strychnine(1+). It derives from a hydride of a strychnidine."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "strychnine has been reported in Strychnos ignatii, Strychnos wallichiana, and other organisms with data available."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Record-Description",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Strychnine is a plant toxin most commonly found in the seeds of the Strychnine tree (Strychnos nux-vomica L.). It is used as a pesticide, particularly for killing small vertebrates such as birds and rodents. Strychnine causes muscular convulsions and eventually death through asphyxia or sheer exhaustion. (L1230)"
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "An alkaloid found in the seeds of STRYCHNOS NUX-VOMICA. It is a competitive antagonist at glycine receptors and thus a convulsant. It has been used as an analeptic, in the treatment of nonketotic hyperglycinemia and sleep apnea, and as a rat poison."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Strychnine",
+      "origin": "Wikipedia",
+      "text": "Strychnine is a highly toxic, colorless, bitter, crystalline alkaloid used as a pesticide, particularly for killing small vertebrates such as birds and rodents. Strychnine, when inhaled, swallowed, or absorbed through the eyes or mouth, causes poisoning which results in muscular convulsions and eventually death through asphyxia. While it is no longer used medicinally, it was used historically in small doses to strengthen muscle contractions, such as a heart and bowel stimulant and performance-enhancing drug. The most common source is from the seeds of the Strychnos nux-vomica tree."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#History",
+      "origin": "Wikipedia",
+      "text": "Strychnine was the first alkaloid to be identified in plants of the genus Strychnos, family Loganiaceae. Strychnos, named by Carl Linnaeus in 1753, is a genus of trees and climbing shrubs of the Gentianales order. The genus contains 196 various species and is distributed throughout the warm regions of Asia (58 species), America (64 species), and Africa (75 species). The seeds and bark of many plants in this genus contain strychnine."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#History",
+      "origin": "Wikipedia",
+      "text": "The toxic and medicinal effects of Strychnos nux-vomica have been well known from the times of ancient India, although the chemical compound itself was not identified and characterized until the 19th century. The inhabitants of these countries had historical knowledge of the species Strychnos nux-vomica and Saint-Ignatius' bean (Strychnos ignatii). Strychnos nux-vomica is a tree native to the tropical forests on the Malabar Coast in Southern India, Sri Lanka and Indonesia, which attains a height of about 12 metres (39 ft). The tree has a crooked, short, thick trunk and the wood is close grained and very durable."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#History",
+      "origin": "Wikipedia",
+      "text": "Strychnine was first discovered by French chemists Joseph Bienaimé Caventou and Pierre-Joseph Pelletier in 1818 in the Saint-Ignatius' bean. In some Strychnos plants a 9,10-dimethoxy derivative of strychnine, the alkaloid brucine, is also present. Brucine is not as poisonous as strychnine. Historic records indicate that preparations containing strychnine (presumably) had been used to kill dogs, cats, and birds in Europe as far back as 1640. It was allegedly used by convicted murderer William Palmer to kill his final victim, John Cook. It was also used during World War II by Oskar Dirlewanger against civilians."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#History",
+      "origin": "Wikipedia",
+      "text": "The structure of strychnine was first determined in 1946 by Sir Robert Robinson and in 1954 this alkaloid was synthesized in a laboratory by Robert B. Woodward. This is one of the most famous syntheses in the history of organic chemistry. Both chemists won the Nobel prize (Robinson in 1947 and Woodward in 1965)."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "Strychnine is a neurotoxin which acts as an antagonist of glycine and acetylcholine receptors. It primarily affects the motor nerve fibers in the spinal cord which control muscle contraction. An impulse is triggered at one end of a nerve cell by the binding of neurotransmitters to the receptors. In the presence of an inhibitory neurotransmitter, such as glycine, a greater quantity of excitatory neurotransmitters must bind to receptors before an action potential is generated. Glycine acts primarily as an agonist of the glycine receptor, which is a ligand-gated chloride channel in neurons located in the spinal cord and in the brain."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Toxicity",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Toxicity",
+      "origin": "Wikipedia",
+      "text": "Strychnine is very toxic to humans (minimum lethal oral dose in adults is 30–120 mg) and many other animals (oral LD50 = 16 mg/kg in rats, 2 mg/kg in mice), and poisoning by inhalation, swallowing, or absorption through eyes or mouth can be fatal. S. nux-vomica seeds are generally effective as a poison only when they are crushed or chewed before swallowing because the pericarp is quite hard and indigestible; poisoning symptoms may therefore not appear if the seeds are ingested whole."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Toxicity",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Toxicity",
+      "origin": "Wikipedia",
+      "text": "Strychnine poisoning in animals usually occurs from ingestion of baits designed for use against gophers, rats, squirrels, moles, chipmunks and coyotes. Strychnine is also used as a rodenticide, but is not specific to such unwanted pests and may kill other small animals. In the United States, most baits containing strychnine have been replaced with zinc phosphide baits since 1990. In the European Union, rodenticides with strychnine have been forbidden since 2006. Some animals are immune to strychnine; usually these have evolved resistance to poisonous strychnos alkaloids in the fruit they eat, such as fruit bats."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Treatment",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Treatment",
+      "origin": "Wikipedia",
+      "text": "There is no antidote for strychnine poisoning. Strychnine poisoning demands aggressive management with early control of muscle spasms, intubation for loss of airway control, toxin removal (decontamination), intravenous hydration and potentially active cooling efforts in the context of hyperthermia as well as hemodialysis in kidney failure (strychnine has not been shown to be removed by hemodialysis). Treatment involves oral administration of activated charcoal, which adsorbs strychnine within the digestive tract; unabsorbed strychnine is removed from the stomach by gastric lavage, along with tannic acid or potassium permanganate solutions to oxidize strychnine."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Treatment",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Treatment",
+      "origin": "Wikipedia",
+      "text": "Activated charcoal is a substance that can bind to certain toxins in the digestive tract and prevent their absorption into the bloodstream. The effectiveness of this treatment, as well as how long it is effective after ingestion, are subject to debate. According to one source, activated charcoal is only effective within one hour of poison being ingested, although the source does not regard strychnine specifically. Other sources specific to strychnine state that activated charcoal may be used after one hour of ingestion, depending on dose and type of strychnine-containing product. Therefore, other treatment options are generally favoured over activated charcoal."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Pharmacokinetics",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Pharmacokinetics",
+      "origin": "Wikipedia",
+      "text": "Strychnine may be introduced into the body orally, by inhalation, or by injection. It is a potently bitter substance, and in humans has been shown to activate bitter taste receptors TAS2R10 and TAS2R46. Strychnine is rapidly absorbed from the gastrointestinal tract."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Pharmacokinetics",
+      "url": "https://en.wikipedia.org/wiki/Strychnine#Pharmacokinetics",
+      "origin": "Wikipedia",
+      "text": "Strychnine is transported by plasma and red blood cells. Due to slight protein binding, strychnine leaves the bloodstream quickly and distributes to bodily tissues. Approximately 50% of the ingested dose can enter the tissues in 5 minutes. Also within a few minutes of ingestion, strychnine can be detected in the urine. Little difference was noted between oral and intramuscular administration of strychnine in a 4 mg dose. In persons killed by strychnine, the highest concentrations are found in the blood, liver, kidney and stomach wall. The usual fatal dose is 60–100 mg strychnine and is fatal after a period of 1–2 hours, though lethal doses vary depending on the individual."
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used as a rodenticide and to poison birds and larger wild animals; [ACGIH] Strychnine is an alkaloid in the seeds of the Strychnos nux-vomica tree; No longer used in prescription drugs, but it may be encountered as an adulterant in elicit drugs; [Olson, p. 429]"
+    },
+    {
+      "id": "s19",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Farming (Pesticides) [Category: Industry]"
+    },
+    {
+      "id": "s20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For strychnine (USEPA/OPP Pesticide Code: 076901) ACTIVE products with label matches. /SRP: Registered for use in the USA but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "s21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Used chiefly in poison baits set for squirrels, gophers, rabbits, and some lesser rodents. Baits are usually colored grains containing 0.5-1% of the sulfate."
+    },
+    {
+      "id": "s22",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Strychnine is an alkaloid found in seeds of Strychnos nux vomica Loganiaceae(1-3) and beans of Strychnos ignatii(1)."
+    },
+    {
+      "id": "s23",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Strychnine is a solid. It is used chiefly in poison baits set for squirrels, gophers, rabbits, and some lesser rodents. Baits are usually colored grains containing 0.5-1% of the sulfate. It has been used as Has been used as a tonic and central stimulant in veterinary medicine. HUMAN STUDIES: The clinical syndrome of strychnine poisoning is very characteristic. The initial symptoms are stiffness and twitching of face and neck muscles and movements may be abrupt. Reflex excitability is heightened and sudden tactile, visual, or acoustic stimuli induce violent motor responses. Within 30 min after ingestion, full tetanic convulsion and opisthotonos develop."
+    },
+    {
+      "id": "s24",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Strychnine acts as an antagonist at the inhibitory or strychnine-sensitive glycine receptor, a ligand-gated chloride channel in the spinal cord and the brain. (L1230)"
+    },
+    {
+      "id": "s25",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441071#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic, Environmental Hazard. H300: Fatal if swallowed [Danger Acute toxicity, oral] H310: Fatal in contact with skin [Danger Acute toxicity, dermal] H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

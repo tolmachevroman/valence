@@ -1,0 +1,190 @@
+{
+  "molecule": "cinnamaldehyde",
+  "cid": 637511,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "(E)-cinnamaldehyde is the E (trans) stereoisomer of cinnamaldehyde, the parent of the class of cinnamaldehydes. It has a role as a sensitiser, a hypoglycemic agent, a flavouring agent, a vasodilator agent, an antifungal agent, an EC 4.3.1.24 (phenylalanine ammonia-lyase) inhibitor and a plant metabolite. It is a 3-phenylprop-2-enal and a member of cinnamaldehydes."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Cinnamaldehyde is a naturally occurring flavonoid that gives the spice cinnamon its flavour and odour. It occurs naturally in the bark of cinnamon trees and other species of the genus Cinnamomum such as camphor and cassia. Sensitivity to cinnamaldehyde may be identified with a clinical patch test."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Cinnamaldehyde is a Standardized Chemical Allergen. The physiologic effect of cinnamaldehyde is by means of Increased Histamine Release and Cell-mediated Immunity."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "(E)-cinnamaldehyde has been reported in Curcuma xanthorrhiza, Alpinia latilabris, and other organisms with data available."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Record-Description",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Cinnamaldehyde is the aldehyde that gives cinnamon its flavor and odor. Cinnamaldehyde occurs naturally in the bark of cinnamon trees and other species of the genus Cinnamomum like camphor and cassia. These trees are the natural source of cinnamon, and the essential oil of cinnamon bark is about 90% cinnamaldehyde. Cinnamaldehyde is also used as a fungicide. Proven effective on over 40 different crops, cinnamaldehyde is typically applied to the root systems of plants. Its low toxicity and well-known properties make it ideal for agriculture. To a lesser extent, cinnamaldehyde is an effective insecticide, and its scent is also known to repel animals like cats and dogs."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde is an organic compound with the formula C9H8O or C6H5CH=CHCHO. Occurring naturally as predominantly the trans (E) isomer, it gives cinnamon its flavor and odor. It is a phenylpropanoid that is naturally synthesized by the shikimate pathway. This pale yellow, viscous liquid occurs in the bark of cinnamon trees and other species of the genus Cinnamomum. It is found in high concentrations in cinnamon essential oil."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Applications",
+      "origin": "Wikipedia",
+      "text": "The aroma of cinnamaldehyde is described as \"sweet, spicy, aldehydic, aromatic, balsamic, cinnamyl, resinous, honey, powdery, cassia, and cinnamon\". Thus the most obvious application for cinnamaldehyde is as flavoring in chewing gum, ice cream, candy, e-liquid and beverages; use levels range from 9 to 4,900 parts per million (ppm) (that is, less than 0.5%). It is also used in some perfumes of natural, sweet, or fruity scents. Almond, apricot, butterscotch, and other aromas may partially employ the compound for their pleasant smells. Cinnamaldehyde can be used as a food adulterant; powdered beechnut husk aromatized with cinnamaldehyde can be marketed as powdered cinnamon."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Applications",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde has been tested as a safe and effective insecticide against mosquito larvae. A concentration of 29 ppm of cinnamaldehyde kills half of Aedes aegypti mosquito larvae in 24 hours. Trans-cinnamaldehyde works as a potent fumigant and practical repellant for adult mosquitos. It also has antibacterial and antifungal properties."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Derivatives",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Derivatives",
+      "origin": "Wikipedia",
+      "text": "Numerous derivatives of cinnamaldehyde are commercially useful. Dihydrocinnamyl alcohol (3-phenylpropanol) occurs naturally but is produced by double hydrogenation of cinnamaldehyde. It has the fragrances of hyacinth and lilac. Cinnamyl alcohol similarly occurs naturally and has the odor of lilac but can be also produced starting from cinnamaldehyde. Dihydrocinnamaldehyde is produced by the selective hydrogenation of the alkene subunit. α-Amylcinnamaldehyde and α-hexylcinnamaldehyde are important commercial fragrances, but they are not prepared from cinnamaldehyde. Hydrogenation of cinnamaldehyde, if directed to the alkene, gives hydrocinnamaldehyde."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Toxicology",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Toxicology",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde is used in agriculture because of its low toxicity, but it is a skin irritant. Cinnamaldehyde may cause allergic contact stomatitis in sensitised individuals, however allergy to the compound is believed to be uncommon."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Toxicology",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Toxicology",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde can contain traces of styrene, which arises during storage or transport. Styrene especially forms in high humidity and high temperatures."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "DNA repair",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#DNA_repair",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde is a dietary antimutagen that effectively inhibits both induced and spontaneous mutations. Experimental evidence indicates that cinnamaldehyde induces a type of DNA damage in the bacterium Escherichia coli and in human cells that elicits recombinational DNA repair that then reduces spontaneous mutations."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "DNA repair",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#DNA_repair",
+      "origin": "Wikipedia",
+      "text": "In mice, X-ray–induced chromosome aberrations were reduced when cinnamaldehyde was given orally to the mice after X-ray irradiation, perhaps due to cinnamaldehyde-stimulated DNA repair."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Biological effects",
+      "url": "https://en.wikipedia.org/wiki/Cinnamaldehyde#Biological_effects",
+      "origin": "Wikipedia",
+      "text": "Cinnamaldehyde is a bioactive electrophile that activates the transient receptor potential ankyrin 1 (TRPA1) ion channel, a chemosensory receptor expressed in sensory neurons and in the gastrointestinal tract. TRPA1 detects pungent or irritant compounds such as those found in cinnamon, mustard oil, and clove, producing the characteristic warming or burning sensation associated with these spices. In the gastrointestinal tract, TRPA1 activation by cinnamaldehyde influences the release of serotonin from enterochromaffin cells, linking chemical irritation with gut motility and sensory signaling."
+    },
+    {
+      "id": "s15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used to flavor beverages, chewing gum, and dental products; [Marks, p. 77]"
+    },
+    {
+      "id": "s16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For cinnamaldehyde (USEPA/OPP Pesticide Code: 040506) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "s17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "In electroplating processes, cinnamaldehyde is utilized as a brightener. Other applications include its efficacy as an animal repellent, its use in compositions to attract insects, and demonstration of a positive antifungal activity."
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "FOOD CHEM TO IMPART CINNAMON FLAVOR TO FOODS, BEVERAGES; PERFUME CHEM; FOOD CHEM; FILTERING AGENT; CINNAMON FLAVORING AGENT IN MEDICINALS, LIQUORS & CORDIALS; RUBBER REINFORCING AGENT"
+    },
+    {
+      "id": "s19",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The main component of Sri Lanka cinnamon bark oil (75%)."
+    },
+    {
+      "id": "s20",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "It has been identified in essential oils of: Ceylon and Madagascar cinnamon leaves, Ceylon, Seychelles, and Japanese (cinnamon laureirii) cinnamon bark, and in other cinnamon species in varying amt (0.1-76%) ... Also in essential oils of: hyacinth, myrrh, Bulgarian rose, patchouli, and others."
+    },
+    {
+      "id": "s21",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "... Reported found in grapefruit, celery seed, clove bud and lemon balm (Melissa officinalis L)."
+    },
+    {
+      "id": "s22",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Cinnamaldehyde is an allergen. The physiologic effect of cinnamaldehyde is by means of increased histamine release and cell-mediated immunity."
+    },
+    {
+      "id": "s23",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/637511#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Warning. Pictograms: Irritant. H317: May cause an allergic skin reaction [Warning Sensitization, Skin]"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "molecule": "sucralose",
+  "cid": 71485,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Sucralose is a disaccharide derivative consisting of 4-chloro-4-deoxy-alpha-D-galactopyranose and 1,6-dichloro-1,6-dideoxy-beta-D-fructofuranose units linked by a glycosidic bond. It has a role as a xenobiotic, a sweetening agent and an environmental contaminant. It is an organochlorine compound and a disaccharide derivative."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Sucralose is an artificial sweetener used as a sugar substitute."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "sweetness intensity roughly 600 times that of sucrose and is nonnutritive and noncaloric; largely unabsorbed in the gastrointestinal tract"
+    },
+    {
+      "id": "s4",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sucralose",
+      "origin": "Wikipedia",
+      "text": "Sucralose is an artificial sweetener and sugar substitute. In the European Union, it is also known under the E number E955. It is produced by chlorination of sucrose, selectively replacing three of the hydroxy groups. Sucralose is about 600 times sweeter than sucrose (table sugar), three times as sweet as both aspartame and acesulfame potassium, and twice as sweet as sodium saccharin."
+    },
+    {
+      "id": "s5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sucralose",
+      "origin": "Wikipedia",
+      "text": "The commercial success of sucralose-based products stems from its favorable comparison to other low-calorie sweeteners in terms of taste, stability, and safety."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#History",
+      "origin": "Wikipedia",
+      "text": "Sucralose was discovered in 1975 by scientists from Tate & Lyle, working with researchers Leslie Hough and Shashikant Phadnis at Queen Elizabeth College (now part of King's College London). While researching novel uses of sucrose and its synthetic derivatives, mixing sulfuryl chloride with sugar, Phadnis was told to \"test\" a chlorinated sugar compound. According to an anecdotal account, Phadnis thought Hough asked him to \"taste\" it, so he did and found the compound to be exceptionally sweet. Tate & Lyle patented the substance in 1976; as of 2008, the only remaining patents concerned specific manufacturing processes."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#History",
+      "origin": "Wikipedia",
+      "text": "Sucralose was first approved for use in Canada in 1991. Subsequent approvals came in Australia in 1993, in New Zealand in 1996, in the United States in 1998, and in the European Union in 2004. By 2008, it had been approved in over 80 countries, including Mexico, Brazil, China, India, and Japan. In 2006, the FDA amended the regulations for foods to include sucralose as a \"non-nutritive sweetener\" in food. In May 2008, Fusion Nutraceuticals launched a generic product to the market, using Tate & Lyle patents."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#History",
+      "origin": "Wikipedia",
+      "text": "A Duke University animal study funded by the Sugar Association found evidence that doses of Splenda (containing ~1% sucralose and ~99% maltodextrin by weight) between 100 and 1000 mg/kg BW/day, containing sucralose at 1.1 to 11 mg/kg BW/day, fed to rats reduced gut microbiota, increased the pH level in the intestines, contributed to increases in body weight, and increased levels of P-glycoprotein (P-gp). These effects have not been reported in humans."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#History",
+      "origin": "Wikipedia",
+      "text": "In April 2015, PepsiCo announced that it would be moving from aspartame to sucralose for most of its diet drinks in the U.S. due to sales of Diet Pepsi falling by more than 5% in the U.S. The company stated that its decision was a commercial one, responding to consumer preferences. In February 2018, PepsiCo went back to using aspartame in Diet Pepsi because of an 8% drop in sales for the previous year."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#Uses",
+      "origin": "Wikipedia",
+      "text": "Sucralose is used in many food and beverage products because it is a non-nutritive sweetener (14 kilojoules [3.3 kcal] per typical one-gram serving), does not promote dental cavities, is safe for consumption by diabetics and nondiabetics and does not affect insulin levels. The powdered form of the sucralose-based sweetener product Splenda contains two bulking agents: dextrose and maltodextrin. Sucralose content is about 1.1% and the remainder is bulking agents."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#Uses",
+      "origin": "Wikipedia",
+      "text": "Sucralose is used as a replacement for (or in combination with) other artificial or natural sweeteners such as aspartame, acesulfame potassium or high-fructose corn syrup. It is used in products such as candy, breakfast bars, coffee pods, and soft drinks. It is also used in canned fruits wherein water and sucralose take the place of much higher-energy corn syrup-based additives. Sucralose mixed with dextrose (glucose) or maltodextrin (both made from corn) as bulking agents is sold internationally by McNeil Nutritionals under the Splenda brand name."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Safety evaluation",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#Safety_evaluation",
+      "origin": "Wikipedia",
+      "text": "Sucralose has been accepted as safe by several food safety regulatory bodies worldwide, including the U.S. Food and Drug Administration (FDA), the Joint FAO/WHO Expert Committee Report on Food Additives, the European Union's Scientific Committee on Food, Health Canada, and Food Standards Australia New Zealand."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Safety evaluation",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#Safety_evaluation",
+      "origin": "Wikipedia",
+      "text": "At normal baking temperatures, sucralose is mostly heat-stable, indicating that it retains its sweetness and is suitable as a sugar substitute for use in baked goods. However, there is concern about the possible formation of dioxins when sucralose is heated. Especially when heating sucralose above 120 °C, chlorinated organic compounds such as polychlorinated dibenzo-p-dioxins (PCDD), polychlorinated dibenzofurans (PCDF), or chloropropanol form in unkown amounts."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Environmental effects",
+      "url": "https://en.wikipedia.org/wiki/Sucralose#Environmental_effects",
+      "origin": "Wikipedia",
+      "text": "Sucralose has been detected in natural waters, but research indicates that the levels found in the environment are far below those required to cause adverse effects to certain kinds of aquatic life. The majority of ingested sucralose is not metabolized by the human body, but is instead excreted unchanged. It is an emerging environmental contaminant that cannot be removed in conventional waste water treatment process."
+    },
+    {
+      "id": "s15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Chlorinated derivative of sucrose; Used as a non-nutritive sweetener; [Merck Index]"
+    },
+    {
+      "id": "s16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Add sweetness with or without the extra calories ... /in/ beverages, baked goods, confections, table-top sugar, substitutes, many processed foods"
+    },
+    {
+      "id": "s17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Uses",
+      "origin": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+      "text": "Food Additives -> SWEETENER -> JECFA Functional Classes"
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Uses",
+      "origin": "Consumer Product Information Database (CPID)",
+      "text": "Information on 39 consumer products that contain Sucralose in the following categories is provided: • Personal Care"
+    },
+    {
+      "id": "s19",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "s20",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 309 of 309 companies. For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

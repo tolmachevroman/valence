@@ -1,0 +1,230 @@
+{
+  "molecule": "buckminsterfullerene",
+  "cid": 123591,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "C60 fullerene is a fullerene. It has a role as a geroprotector."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Buckyball is a nanoparticle characterized by a spherical geometry and hollow interior that is comprised of 60 carbon atoms. This configuration is the most common type of fullerene."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Fullerene is one of three known pure forms of carbon that exhibits a spherical shape with a hollow interior. The number of carbon atoms comprising fullerenes is variable and several stable spherical carbon structures containing 70 or more atoms have been documented."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "A polyhedral CARBON structure composed of around 60-80 carbon atoms in pentagon and hexagon configuration. They are named after Buckminster Fuller because of structural resemblance to geodesic domes. Fullerenes can be made in high temperature such as arc discharge in an inert atmosphere."
+    },
+    {
+      "id": "s5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene",
+      "origin": "Wikipedia",
+      "text": "Buckminsterfullerene is a type of fullerene with the formula C60. It has a cage-like fused-ring structure (truncated icosahedron) made of twenty hexagons and twelve pentagons, and resembles an association football. Each of its 60 carbon atoms is bonded to its three neighbors."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene",
+      "origin": "Wikipedia",
+      "text": "Buckminsterfullerene is a black solid that dissolves in hydrocarbon solvents to produce a purple solution. The substance was discovered in 1985 and has received intense study, although few real world applications have been found."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene",
+      "origin": "Wikipedia",
+      "text": "Molecules of buckminsterfullerene (or of fullerenes in general) are commonly nicknamed buckyballs."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#History",
+      "origin": "Wikipedia",
+      "text": "Theoretical predictions of buckminsterfullerene molecules appeared in the late 1960s and early 1970s. It was first generated in 1984 by Eric Rohlfing, Donald Cox, and Andrew Kaldor, using a laser to vaporize carbon in a supersonic helium beam, although the group did not realize that buckminsterfullerene had been produced. In 1985 their work was repeated by Harold Kroto, James R. Heath, Sean C. O'Brien, Robert Curl, and Richard Smalley at Rice University, who recognized the structure of C60 as buckminsterfullerene."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#History",
+      "origin": "Wikipedia",
+      "text": "Concurrent but unconnected to the Kroto-Smalley work, astrophysicists were working with spectroscopists to study infrared emissions from giant red carbon stars. Smalley and team were able to use a laser vaporization technique to create carbon clusters which could potentially emit infrared at the same wavelength as had been emitted by the red carbon star. Hence, the inspiration came to Smalley and team to use the laser technique on graphite to generate fullerenes."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#History",
+      "origin": "Wikipedia",
+      "text": "Using laser evaporation of graphite the Smalley team found Cn clusters (where n > 20 and even) of which the most common were C60 and C70. A solid rotating graphite disk was used as the surface from which carbon was vaporized using a laser beam creating hot plasma that was then passed through a stream of high-density helium gas. The carbon species were subsequently cooled and ionized resulting in the formation of clusters. Clusters ranged in molecular masses, but Kroto and Smalley found predominance in a C60 cluster that could be enhanced further by allowing the plasma to react longer. They also discovered that C60 is a cage-like molecule, a regular truncated icosahedron."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#History",
+      "origin": "Wikipedia",
+      "text": "The experimental evidence, a strong peak at 720 daltons, indicated that a carbon molecule with 60 carbon atoms was forming, but provided no structural information. The research group concluded after reactivity experiments, that the most likely structure was a spheroidal molecule. The idea was quickly rationalized as the basis of an icosahedral symmetry closed cage structure."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Buckminsterfullerene is the most common naturally occurring fullerene. Small quantities of it can be found in soot."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Occurrence",
+      "origin": "Wikipedia",
+      "text": "It also exists in space. Neutral C60 has been observed in planetary nebulae and several types of star. The ionised form, C+60, has been identified in the interstellar medium, where it is the cause of several absorption features known as diffuse interstellar bands in the near-infrared."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Structure",
+      "origin": "Wikipedia",
+      "text": "Buckminsterfullerene is a truncated icosahedron with 60 vertices, 32 faces (20 hexagons and 12 pentagons where no pentagons share a vertex), and 90 edges (60 edges between 5-membered & 6-membered rings and 30 edges are shared between 6-membered & 6-membered rings), with a carbon atom at the vertices of each polygon and a bond along each polygon edge. The van der Waals diameter of a C60 molecule is about 1.01 nanometers (nm). The nucleus to nucleus diameter of a C60 molecule is about 0.71 nm. The C60 molecule has two bond lengths. The 6:6 ring bonds (between two hexagons) can be considered \"double bonds\" and are shorter than the 6:5 bonds (between a hexagon and a pentagon)."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Properties",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Properties",
+      "origin": "Wikipedia",
+      "text": "For a time buckminsterfullerene was the largest known molecule observed to exhibit wave–particle duality. In 2020 the dye molecule phthalocyanine exhibited the duality that is more famously attributed to light, electrons and other small particles and molecules."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Properties",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Properties",
+      "origin": "Wikipedia",
+      "text": "Fullerenes are sparingly soluble in aromatic solvents and carbon disulfide, but insoluble in water. Solutions of pure C60 have a deep purple color which leaves a brown residue upon evaporation. The reason for this color change is the relatively narrow energy width of the band of molecular levels responsible for green light absorption by individual C60 molecules. Thus individual molecules transmit some blue and red light resulting in a purple color. Upon drying, intermolecular interaction results in the overlap and broadening of the energy bands, thereby eliminating the blue light transmittance and causing the purple to brown color change."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Chemical reactions and properties",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Chemical_reactions_and_properties",
+      "origin": "Wikipedia",
+      "text": "C60 undergoes six reversible, one-electron reductions, ultimately generating C6−60. Its oxidation is irreversible. The first reduction occurs at ≈−1.0 V (Fc/Fc+), showing that C60 is a reluctant electron acceptor. C60 tends to avoid having double bonds in the pentagonal rings, which makes electron delocalization poor, and results in C60 not being \"superaromatic\". C60 behaves like an electron deficient alkene. For example, it reacts with some nucleophiles."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Chemical reactions and properties",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Chemical_reactions_and_properties",
+      "origin": "Wikipedia",
+      "text": "C60 exhibits a small degree of aromatic character, but it still reflects localized double and single C–C bond characters. Therefore, C60 can undergo addition with hydrogen to give polyhydrofullerenes. C60 also undergoes Birch reduction. For example, C60 reacts with lithium in liquid ammonia, followed by tert-butanol to give a mixture of polyhydrofullerenes such as C60H18, C60H32, C60H36, with C60H32 being the dominating product. This mixture of polyhydrofullerenes can be re-oxidized by 2,3-dichloro-5,6-dicyano-1,4-benzoquinone to give C60 again."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Boron fullerenes",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Boron_fullerenes",
+      "origin": "Wikipedia",
+      "text": "Predictions of boron fullerenes began in 2007 when researchers Nevill Szwacki, Arta Sadrzadeh, and Boris Yakobson from Rice University proposed a stable cage of 80 boron atoms with the same structure as C60 but with an additional boron atom at the center of each hexagon. The existence of the B80 fullerene was debated, as subsequent density functional theory calculations found it to be significantly less stable than other configurations of 80 boron atoms; this may be due to errors in the calculated bond lengths. A smaller configuration of 40 boron atoms (borospherene) was observed in 2014, however it lacked the icosahedral symmetry of C60."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Boron fullerenes",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Boron_fullerenes",
+      "origin": "Wikipedia",
+      "text": "The B80 buckyball was first observed in 2026 by a team led by Lai-Sheng Wang at Brown University, using a laser to vaporize a boron target in a helium carrier gas mixed with argon to cool the resulting clusters. The photoelectron spectrum of the B80− anion showed a few sharp peaks, indicating a symmetric structure. Of the candidate structures, only the simulated spectrum of the buckyball agreed with the experimental result."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Potential applications",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Potential_applications",
+      "origin": "Wikipedia",
+      "text": "The optical absorption properties of C60 match the solar spectrum in a way that suggests that C60-based films could be useful for photovoltaic applications. Because of its high electronic affinity it is one of the most common electron acceptors used in donor/acceptor based solar cells. Conversion efficiencies up to 5.7% have been reported in C60–polymer cells."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Potential applications",
+      "url": "https://en.wikipedia.org/wiki/Buckminsterfullerene#Potential_applications",
+      "origin": "Wikipedia",
+      "text": "C60 is sensitive to light, so leaving C60 under light exposure causes it to degrade, becoming dangerous. The ingestion of C60 solutions that have been exposed to light could lead to developing cancer (tumors). So the management of C60 products for human ingestion requires cautionary measures such as: elaboration in very dark environments, encasing into bottles of great opacity, and storing in dark places, and others like consumption under low light conditions and using labels to warn about the problems with light."
+    },
+    {
+      "id": "s23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Carbon molecules structured as fullerenes containing 12 pentagons and 'm' hexagons; [Merck Index] Used as high-performance polymer films, transistors, lubricants, anticorrosion coatings, organic photoconductors, and energy cells; [HSDB]"
+    },
+    {
+      "id": "s24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "C60 fullerene is an insulator but exhibits electrical conductivity when doped with electropositive metals."
+    },
+    {
+      "id": "s25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Solid fullerenes are compressible because of the weak van der Waals forces between the fullerene molecules in the lattice. Various high-pressure phases of C60 and C70 have been characterized. When compressed to 70 percent of its original size, C60 becomes more than twice as hard as diamond. Thus, it could be applied as a shock absorber for high-energy collision or for reinforcing metals or plastics. Cross-linked polymers and high-performance polymer films can be obtained by cross-linking C60 with resins. These materials are very hard and thermally extremely stable."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "In C60-polymer composites, fast photo induced electron transfer occurs from the polymer to the C60 molecule and photoconductivity is observed. The efficiency of organic photoconductors could be improved by addition of C60. This discovery may lead to applications in xerography, laser printers, fax machines."
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Fullerene was first discovered in shungite, a green-schist facies metamorphic rock containing 99% carbon(1)."
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/123591#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. H315 (22.4%): Causes skin irritation [Warning Skin corrosion/irritation] H319 (100%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] H335 (98.3%): May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "molecule": "tetrodotoxin",
+  "cid": 11174599,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "An aminoperhydroquinazoline poison found mainly in the liver and ovaries of fishes in the order tetraodontiformes, which are eaten. The toxin causes paresthesia and paralysis through interference with neuromuscular conduction. Tetrodotoxin is being investigated by Wex Pharmaceuticals for the treatment of chronic and breakthrough pain in advanced cancer patients as well as for the treatment of opioid dependence."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "tetrodotoxin has been reported in Taricha torosa, Hapalochlaena maculosa, and other organisms with data available."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "Spheroidine has been reported in Takifugu flavidus, Takifugu rubripes, and other organisms with data available."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Tetrodotoxin is a neurotoxin with potential analgesic activity. Tetrodotoxin binds to the pores of fast voltage-gated fast sodium channels in nerve cell membranes, inhibiting nerve action potentials and blocking nerve transmission. Although found in various species of fish (such as the pufferfish), newts, frogs, flatworms, and crabs, tetrodotoxin, for which there is no known antidote, is actually produced by bacteria such as Vibrio alginolyticus, Pseudoalteromonas tetraodonis, and other vibrio and pseudomonas bacterial species."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Record-Description",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "An aminoperhydroquinazoline poison found mainly in the liver and ovaries of fishes in the order tetraodontiformes, which are eaten. Tetrodotoxin is a potent neurotoxin that is produced by bacteria (genus Pseudoalteromonas, Pseudomonas, Vibrio) and found in certain species of Tetraodontiformes (puffer fish, porcupine fish, ocean sunfish, triggerfish), from which its name is derived. It acts on the voltage-gated sodium channels of nerve cells. (L1060) The toxin causes paresthesia and paralysis through interference with neuromuscular conduction."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin",
+      "origin": "Wikipedia",
+      "text": "Tetrodotoxin (TTX) is a potent neurotoxin. Its name derives from Tetraodontiformes, an order that includes pufferfish, porcupinefish, ocean sunfish, and triggerfish; several of these species carry the toxin. Although tetrodotoxin was discovered in these fish, it is found in several other animals (e.g., in blue-ringed octopuses, rough-skinned newts, and moon snails). It is also produced by certain infectious or symbiotic bacteria like Pseudoalteromonas, Pseudomonas, and Vibrio as well as other species found in symbiotic relationships with animals and plants."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin",
+      "origin": "Wikipedia",
+      "text": "Although it produces thousands of intoxications annually and several deaths, it has shown efficacy for the treatment of cancer-related pain in phase II and III clinical trials."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin",
+      "origin": "Wikipedia",
+      "text": "Tetrodotoxin is a sodium channel blocker. It inhibits the firing of action potentials in neurons by binding to the voltage-gated sodium channels in nerve cell membranes and blocking the passage of sodium ions (responsible for the rising phase of an action potential) into the neuron. This prevents the nervous system from carrying messages and thus muscles from contracting in response to nervous stimulation."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Tetrodotoxin binds to what is known as site 1 of the fast voltage-gated sodium channel. Site 1 is located at the extracellular pore opening of the ion channel. Any molecule bound to this site will block sodium ions from going into the nerve cell through this channel (which is ultimately necessary for nerve conduction). Saxitoxin, neosaxitoxin, and several of the conotoxins also bind the same site."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "The use of this toxin as a biochemical probe has elucidated two distinct types of voltage-gated sodium channels (VGSCs) present in mammals: tetrodotoxin-sensitive voltage-gated sodium channels (TTX-s Na+ channels) and tetrodotoxin-resistant voltage-gated sodium channels (TTX-r Na+ channels). Tetrodotoxin inhibits TTX-s Na+ channels at concentrations of around 1–10 nM, whereas micromolar concentrations of tetrodotoxin are required to inhibit TTX-r Na+ channels. Nerve cells containing TTX-r Na+ channels are located primarily in cardiac tissue, while nerve cells containing TTX-s Na+ channels dominate the rest of the body."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Poisoning",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Poisoning",
+      "origin": "Wikipedia",
+      "text": "TTX is extremely toxic. The material safety data sheet for TTX lists the oral median lethal dose (LD50) for mice as 334 μg per kg. For comparison, the oral LD50 of potassium cyanide for mice is 8,500 μg per kg, demonstrating that even orally, TTX is more poisonous than cyanide. TTX is even more dangerous if administered intravenously; the amount needed to reach a lethal dose by injection is 8 μg per kg in mice."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Poisoning",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Poisoning",
+      "origin": "Wikipedia",
+      "text": "The toxin can enter the body of a victim by ingestion, injection, or inhalation, or through abraded skin."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Modern therapeutic research",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Modern_therapeutic_research",
+      "origin": "Wikipedia",
+      "text": "Tetrodotoxin has been investigated as a possible treatment for cancer-associated pain. Early clinical trials demonstrate significant pain relief in some patients."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Modern therapeutic research",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Modern_therapeutic_research",
+      "origin": "Wikipedia",
+      "text": "It has also been studied in relation to migraine headaches. Mutations in one particular TTX-sensitive Na+ channel are associated with some migraine headaches, although it is unclear as to whether this has any therapeutic relevance for most people with migraine."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Regulation",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Regulation",
+      "origin": "Wikipedia",
+      "text": "In the U.S., tetrodotoxin appears on the select agents list of the Department of Health and Human Services, and scientists must register with HHS to use tetrodotoxin in their research. However, investigators possessing less than 500 mg are exempt from regulation."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Popular culture",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Popular_culture",
+      "origin": "Wikipedia",
+      "text": "Tetrodotoxin serves as a plot device for characters to fake death, as in the films Hello Again (1987), The Serpent and the Rainbow (1988), The A-Team (2010), Captain America: The Winter Soldier (2014), and War (2019), and in episodes of Jane the Virgin, Miami Vice (1985), Nikita, MacGyver (season 7, episode 6, where the antidote is Datura stramonium leaf), CSI: NY (season 4, episode 9, \"Boo\"), and Chuck. In Law Abiding Citizen (2009), Alex Cross (2012), and Send Help (2026), paralysis is presented as a method of assisting torture. The toxin was also referenced in \"synthetic form\" in season 1, episode 2, of the series \"FBI\"."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Popular culture",
+      "url": "https://en.wikipedia.org/wiki/Tetrodotoxin#Popular_culture",
+      "origin": "Wikipedia",
+      "text": "Based on the presumption that tetrodotoxin is not always fatal, but at near-lethal doses can leave a person extremely unwell with the person remaining conscious, tetrodotoxin has been alleged to result in zombieism, and has been suggested as an ingredient in Haitian Vodou preparations. This idea first appeared in the 1938 non-fiction book Tell My Horse by Zora Neale Hurston in which there were multiple accounts of purported tetrodotoxin poisoning in Haiti by a voodoo sorcerer called the bokor. These stories were later popularized by Harvard-trained ethnobotanist Wade Davis in his 1985 book and Wes Craven's 1988 film, both titled The Serpent and the Rainbow."
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Toxin from the ovaries and liver of Tetraodontidae species (especially the globe fish); [Merck Index] Used for physiological studies; [HSDB] Very potent toxin from the liver and sex organs of fish (i.e., puffer fish, globe fish, and toadfish); Also found in some amphibians, octopus, and shellfish; [Reference #1]"
+    },
+    {
+      "id": "s19",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Tetrodotoxin (TTX), contained in ... /pufferfish/, has become an extremely popular chemical tool in the physiological and pharmacological laboratories since discovery of its channel blocking action in the early 1960s ... More recently, the TTX-resistant sodium channels have been discovered in the nervous system and received much attention because of their role in pain sensation. TTX is now known to be produced not by puffer but by bacteria, and reaches various species of animals via food chain."
+    },
+    {
+      "id": "s20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Tetrodotoxin (TTX) is a deadly neurotoxin which selectively inhibits Na(+) activation mechanism of nerve impulse, without affecting the permeability of K(+) ions. Because of this sodium channel blocking action, it is majorly being studied for biomedical applications. TTX is present in taxonomically diverse groups of animals inhabiting terrestrial, marine, fresh water and brackish water environments, still its origin remains unclear. The extensive study of the toxin has revealed a few possibilities of its origin. This review reports on the aspects of the origin of TTX, where the primary focus is on its exogenous origin."
+    },
+    {
+      "id": "s21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Uses",
+      "origin": "The National Institute for Occupational Safety and Health (NIOSH)",
+      "text": "Tetrodotoxin is an extremely potent poison (toxin) found mainly in the liver and sex organs (gonads) of some fish, such as puffer fish, globefish, and toadfish (order Tetraodontiformes) and in some amphibian, octopus, and shellfish species. Human poisonings occur when the flesh and/or organs of the fish are improperly prepared and eaten. Tetrodotoxin interferes with the transmission of signals from nerves to muscles and causes an increasing paralysis of the muscles of the body. Tetrodotoxin poisoning can be fatal."
+    },
+    {
+      "id": "s22",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Tetrodotoxin is a nonprotein, aminoperhydroquanizole found mainly in the skin, liver, ovary, intestine, and possibly muscle /of certain fish/. The ovary has the highest concentration of the toxin, and is most poisonous if eaten during the spawning season(1). The ovaries and liver of many species of tetraodontidae, especially the globe fish (Spheroides rubripes) contain tetrodotoxin(2). The gonads, liver, intestines, and skin of pufferfish can contain levels of tetrodotoxin sufficient to produce rapid and violent death. ..."
+    },
+    {
+      "id": "s23",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Tetrodotoxin (TTX) and its analogs (TTXs), widely distributed among marine as well as terrestrial animals, induce dangerous intoxications. These highly potential toxins are also known as the causative agent of puffer fish poisoning. ... TTX, anhydrotetrodotoxin, 11-deoxytetrodotoxin and trideoxytetrodotoxin were determined in separated tissues of Bangladeshi marine puffers, Takifugu oblongus. TTX was predominant in skin, muscle and liver, whereas trideoxytetrodotoxin preponderated in the ovary."
+    },
+    {
+      "id": "s24",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "... Puffer fish contain tetrodotoxin (TTX) at a high concentration mainly in liver .."
+    },
+    {
+      "id": "s25",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Tetrodotoxin (TTX) is a solid. TTX contained in puffer, has become an extremely popular chemical tool in the physiological and pharmacological laboratories since discovery of its channel blocking action in the early 1960s. More recently, the TTX-resistant sodium channels have been discovered in the nervous system and received much attention because of their role in pain sensation. TTX is now known to be produced not by puffer but by bacteria, and reaches various species of animals via food chain. HUMAN STUDIES: TTX is a deadly neurotoxin which selectively inhibits Na(+) activation mechanism of nerve impulse, without affecting the permeability of K(+) ions."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=Toxicity-Summary",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "Tetrodotoxin (TTX) is one of the most potent marine toxins known. It was first isolated from pufferfish and now has been found in numerous other marine organisms and a few terrestrial species. Tetrodotoxication is an important health problem today and has no known antidote. TTX poisonings have been most commonly reported from Japan, Thailand, and China; however, the risk of TTX poisoning is spreading around the world. Studies have shown that TTX-containing fish are found in other regions of the Pacific and in the Indian Ocean, and in the Mediterranean Sea."
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11174599#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic. H300 (100%): Fatal if swallowed [Danger Acute toxicity, oral] H310 (85.7%): Fatal in contact with skin [Danger Acute toxicity, dermal] H330 (85.7%): Fatal if inhaled [Danger Acute toxicity, inhalation]"
+    }
+  ]
+}

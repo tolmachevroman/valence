@@ -1,0 +1,246 @@
+{
+  "molecule": "thalidomide",
+  "cid": 5426,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Thalidomide can cause developmental toxicity according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Thalidomide appears as needles or white powder. (NTP, 1992)"
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "2-(2,6-dioxopiperidin-3-yl)-1H-isoindole-1,3(2H)-dione is a dicarboximide that is isoindole-1,3(2H)-dione in which the hydrogen attached to the nitrogen is substituted by a 2,6-dioxopiperidin-3-yl group. It is a member of piperidones and a member of phthalimides."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "A piperidinyl isoindole originally introduced as a non-barbiturate hypnotic, thalidomide was withdrawn from the market due to teratogenic effects. It has been reintroduced and used for a number of inflammatory disorders and cancers. Thalidomide displays immunosuppressive and anti-angiogenic activity through modulating the release of inflammatory mediators like tumor necrosis factor-alpha (TNF-a) and other cytokine action. Due to severe teratogenicity, pregnancy must be excluded before the start of treatment and patients must enrol in the THALIDOMID Risk Evaluation and Mitigation Strategy (REMS) program to ensure contraception adherence."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "The physiologic effect of thalidomide is by means of Decreased Immunologically Active Molecule Activity."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide",
+      "origin": "Wikipedia",
+      "text": "Thalidomide, sold under the brand names Contergan, Distaval and Thalomid among others, is an oral administered medication used to treat a number of cancers (e.g., multiple myeloma), graft-versus-host disease, and skin disorders (e.g., complications of leprosy such as skin lesions). Thalidomide has been used to treat conditions associated with HIV: aphthous ulcers, HIV-associated wasting syndrome, diarrhea, and Kaposi's sarcoma, but increases in HIV viral load have been reported."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide",
+      "origin": "Wikipedia",
+      "text": "Common side effects include sleepiness, rash, and dizziness. Severe side effects include tumor lysis syndrome, blood clots, and peripheral neuropathy. Thalidomide is a human teratogen and carries a high risk of severe, life-threatening birth defects if administered or taken during pregnancy. It causes skeletal deformities such as amelia (absence of legs and/or arms), absence of bones, and phocomelia (malformation of the limbs). A single dose of thalidomide, regardless of dosage, is enough to cause teratogenic effects."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide",
+      "origin": "Wikipedia",
+      "text": "Thalidomide was first marketed in 1957 in West Germany, where it was available as an over-the-counter drug. When first released, thalidomide was promoted for anxiety, trouble sleeping, \"tension\", and morning sickness. While it was initially thought to be safe in pregnancy, thalidomide was found to cause birth defects, resulting in its removal from the market in Europe in 1961. The total number of infants severely harmed by thalidomide use during pregnancy is estimated at over 10,000, possibly 20,000, of whom about 40% died around the time of birth. Those who survived had limb, eye, urinary tract, and heart problems."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#History",
+      "origin": "Wikipedia",
+      "text": "In 1952, thalidomide was synthesised by Chemical Industry Basel, but was found \"to have no effect on animals\" and was discarded on that basis. In 1957, it was acquired by Chemie Grünenthal in Germany. The German company had been established as a soap maker after World War II ended, to address the urgent market need for antibiotics. Heinrich Mückter was appointed to head the discovery program based on his experience working with the German army's antiviral research. While preparing reagents for the work, Mueckter's assistant Wilhelm Kunz isolated a by-product that was recognized by pharmacologist Herbert Keller as an analog of glutethimide, a sedative."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#History",
+      "origin": "Wikipedia",
+      "text": "Researchers at Chemie Grünenthal found that thalidomide was a particularly effective antiemetic that had an inhibitory effect on morning sickness. On 1 October 1957, the company launched thalidomide and began marketing it under the trade name Contergan. It was proclaimed a \"wonder drug\" for insomnia, coughs, colds and headaches."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#History",
+      "origin": "Wikipedia",
+      "text": "During that period, the use of medications during pregnancy was not strictly controlled, and drugs were not thoroughly tested for potential harm to the fetus. Thousands of pregnant women took the drug to relieve their symptoms. At the time of the drug's development, scientists did not believe any drug taken by a pregnant woman could pass across the placental barrier and harm the developing fetus. There soon appeared reports of abnormalities in children being born to mothers using thalidomide."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#History",
+      "origin": "Wikipedia",
+      "text": "While initially considered safe, the drug was responsible for teratogenic deformities in children born after their mothers used it during pregnancies, prior to the third trimester. In November 1961, thalidomide was taken off the market due to massive pressure from the press and public. Experts estimate that thalidomide led to the death of approximately 2,000 children and serious birth defects in more than 10,000 children, with over half of them in West Germany. The regulatory authorities in East Germany never approved thalidomide."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "Thalidomide is used as a first-line treatment for multiple myeloma in combination with dexamethasone or with melphalan and prednisone to treat acute episodes of erythema nodosum leprosum, as well as for maintenance therapy."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "The bacterium that causes tuberculosis (TB) is related to leprosy. Thalidomide may be helpful in some cases where standard TB drugs and corticosteroids are not sufficient to resolve severe inflammation in the brain."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Prescriptions of thalidomide are accompanied by strict measures to avoid any possibility of use during pregnancy, and thalidomide should be avoided in women wanting to conceive. In the United States, the prescribing doctor is required to ensure that contraception is being used and that regular pregnancy tests are taken."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Thalidomide causes birth defects. The U.S. Food and Drug Administration (FDA) and other regulatory agencies have approved marketing of the drug only with an auditable risk evaluation and mitigation strategy that ensures that people using the drug are aware of the risks and avoid pregnancy; this applies to both men and women, as the drug can be transmitted in semen."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "There is a high risk that thalidomide can cause excessive blood clots. There is also a high risk that thalidomide can interfere with the production of several types of new blood cells, creating a risk of infection via neutropenia, leukopenia, and lymphopenia, and risks that blood will not clot via thrombocytopenia. There is also a risk of anemia via lack of red blood cells. The drug can also damage nerves, causing potentially irreversible peripheral neuropathy."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "The precise mechanism of action for thalidomide was not known until the twenty-first century, although efforts to identify thalidomide's teratogenic action generated more than 2,000 research papers and the proposal of 15 or 16 plausible mechanisms by 2000. The primary mechanism of action of thalidomide and its analogs in both their anti-cancer and teratogenic effects is now known to be as cereblon E3 ligase modulators."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Thalidomide also binds to and acts as an antagonist of the androgen receptor and hence is a nonsteroidal antiandrogen of some capacity. In accordance, it can produce gynecomastia and sexual dysfunction as side effects in men."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Thalidomide is a chiral molecule, and when synthesized is formed as racemic; while S-thalidomide is the bioactive form of the molecule, the individual enantiomers can racemize to each other due to the acidic hydrogen at the chiral centre, which is the carbon of the glutarimide ring bonded to the phthalimide substituent. The racemization process can occur in vivo. The process of conversion of one enantiomer to its mirror-image version with no other change in the molecule is called chiral inversion."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Celgene Corporation originally synthesized thalidomide using a three-step sequence starting with L-glutamic acid treatment, but this has since been reformed by the use of L-glutamine. As shown in the image below, N-carbethoxyphthalimide (1) can react with L-glutamine to yield N-phthaloyl-L-glutamine (2). Cyclization of N-phthaloyl-L-glutamine occurs using carbonyldiimidazole, which then yields thalidomide (3). Celgene Corporation's original method resulted in a 31% yield of S-thalidomide, whereas the two-step synthesis yields 85–93% product that is 99% pure."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Society and culture",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Society_and_culture",
+      "origin": "Wikipedia",
+      "text": "In the late 1950s and early 1960s, more than 10,000 children in 46 countries were born with deformities, such as phocomelia, as a consequence of thalidomide use. The severity and location of the deformities depended on how many days into the pregnancy the mother was before beginning treatment, with the time-sensitive window occurring approximately between day 20 and day 36 post-fertilisation. Thalidomide taken on the 20th day of pregnancy caused central brain damage, day 22 the ears and face, day 24 the arms, and leg damage would occur if taken up to day 28."
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "Society and culture",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Society_and_culture",
+      "origin": "Wikipedia",
+      "text": "It is not known exactly how many worldwide victims of the drug there have been, although estimates range from 10,000 to 20,000. Concerns about Thalidomide increased beginning with a letter published by Leslie Florence in the British Medical Journal in December 1960. In November 1961 Widukind Lenz presented evidence linking the births of deformed infants in Europe to thalidomide at a pediatric conference held in Düsseldorf, West Germany on 18 November 1961 that resulted in many countries removing thalidomide from circulation. The full results of his study were published in June 1962."
+    },
+    {
+      "id": "s24",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Research",
+      "origin": "Wikipedia",
+      "text": "Research efforts have been focused on determining how thalidomide causes birth defects and its other activities in the human body, efforts to develop safer analogs, and efforts to find further uses for thalidomide."
+    },
+    {
+      "id": "s25",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide#Research",
+      "origin": "Wikipedia",
+      "text": "The exploration of the antiangiogenic and immunomodulatory activities of thalidomide has led to the study and creation of thalidomide analogs. Celgene has sponsored numerous clinical trials with analogues to thalidomide, such as lenalidomide, that are substantially more powerful and have fewer side effects – except for greater myelosuppression. In 2005, Celgene received FDA approval for lenalidomide (Revlimid) as the first commercially useful derivative. Revlimid is available only in a restricted distribution setting to avoid its use during pregnancy. Further studies are being conducted to find safer compounds with useful qualities."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Angiogenesis Inhibitors; Immunosuppressive Agents; Leprostatic Agents; Teratogens"
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "For the acute treatment of the cutaneous manifestations of moderate to severe erythema nodosum leprosum (ENL). Also for use as maintenance therapy for prevention and suppression of the cutaneous manifestations of ENL recurrence. Used to treat multiple myeloma."
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Thalidomide is a white to off-white crystalline powder. Thalidomide is an immunomodulatory agent with anti-inflammatory, antiangiogenic, and sedative and hypnotic activity. It is used for the acute treatment of the cutaneous manifestations of moderate to severe erythema nodosum leprosum (ENL). It is also used as maintenance therapy for prevention and suppression of the cutaneous manifestations of erythema nodosum leprosum recurrence. It is used in combination with dexamethasone for the treatment of patients with newly diagnosed multiple myeloma."
+    },
+    {
+      "id": "s29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "There is no indicated antidote for thalidomide overdose. Thalidomide toxicity directly correlates with drug dosage and duration of therapy. Patients taking 200 mg or less appear to have good therapeutic outcomes without evident toxicity, while dosages exceeding 400 mg/day almost always lead to toxicity-related symptoms. The most common symptoms related to thalidomide toxicity include constipation, sedation, fatigue, and neuropathy. Therapy exceeding six months is associated with an increase in neuropathy and hypothyroidism related to thalidomide toxicity. However, the incidence of constipation and sedation seems to decrease with the continued duration of therapy."
+    },
+    {
+      "id": "s30",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Irritant, Health Hazard. H302 (88.2%): Harmful if swallowed [Warning Acute toxicity, oral] H360 (92.1%): May damage fertility or the unborn child [Danger Reproductive toxicity]"
+    }
+  ]
+}

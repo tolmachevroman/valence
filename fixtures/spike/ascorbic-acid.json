@@ -1,0 +1,286 @@
+{
+  "molecule": "ascorbic acid",
+  "cid": 54670067,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "L-ascorbic acid is a white to very pale yellow crystalline powder with a pleasant sharp acidic taste. Almost odorless. (NTP, 1992)"
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "L-ascorbic acid is the L-enantiomer of ascorbic acid and conjugate acid of L-ascorbate. It has a role as a geroprotector, a coenzyme, a cofactor, a flour treatment agent, a plant metabolite, a food antioxidant, a food colour retention agent and a skin lightening agent. It is a vitamin C and an ascorbic acid. It is a conjugate acid of a L-ascorbate. It is an enantiomer of a D-ascorbic acid."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "A six carbon compound related to glucose. It is found naturally in citrus fruits and many vegetables. Ascorbic acid is an essential nutrient in human diets, and necessary to maintain connective tissue and bone. Its biologically active form, vitamin C, functions as a reducing agent and coenzyme in several metabolic pathways. Vitamin C is considered an antioxidant."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Record-Description",
+      "origin": "E. coli Metabolome Database (ECMDB)",
+      "text": "Ascorbic acid is a metabolite found in or produced by Escherichia coli (strain K12, MG1655)."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Ascorbic Acid is a natural water-soluble vitamin (Vitamin C). Ascorbic acid is a potent reducing and antioxidant agent that functions in fighting bacterial infections, in detoxifying reactions, and in the formation of collagen in fibrous tissue, teeth, bones, connective tissue, skin, and capillaries. Found in citrus and other fruits, and in vegetables, vitamin C cannot be produced or stored by humans and must be obtained in the diet. (NCI04)"
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C",
+      "origin": "Wikipedia",
+      "text": "Vitamin C or ascorbate is a water-soluble vitamin found in citrus and other fruits and vegetables. It is found as a form of ascorbic acid. It is an essential nutrient involved in the repair of tissue, the formation of collagen, and the enzymatic production of certain neurotransmitters. It is required for the functioning of several enzymes and is important for immune system function. It is also an antioxidant. Most animals are able to synthesize their own vitamin C."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C",
+      "origin": "Wikipedia",
+      "text": "It is also a generic prescription medication and in some countries is sold as a non-prescription dietary supplement. As a therapy, it is used to prevent and treat scurvy, a disease caused by vitamin C deficiency. Vitamin C may be taken by mouth or by intramuscular, subcutaneous or intravenous injection. Various health claims exist on the supposition that moderate vitamin C deficiency increases disease risk, such as for the common cold, cancer or COVID-19. There are also claims of benefits from vitamin C supplementation in excess of the recommended dietary intake for people who are not considered vitamin C deficient. Vitamin C is generally well tolerated."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C",
+      "origin": "Wikipedia",
+      "text": "Vitamin C was discovered in 1912, isolated in 1928, and in 1933, was the first vitamin to be chemically produced. Partly for its discovery, Albert Szent-Györgyi was awarded the 1937 Nobel Prize in Physiology or Medicine."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#History",
+      "origin": "Wikipedia",
+      "text": "Scurvy was known to Hippocrates, described in book two of his Prorrheticorum and in his Liber de internis affectionibus, and cited by James Lind. Symptoms of scurvy were also described by Pliny the Elder: (i) Pliny. \"49\". Naturalis historiae. Vol. 3.; and (ii) Strabo, in Geographicorum, book 16, cited in the 1881 International Encyclopedia of Surgery."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#History",
+      "origin": "Wikipedia",
+      "text": "In the 1497 expedition of Vasco da Gama, the curative effects of citrus fruit were known. In the 1500s, Portuguese sailors put in to the island of Saint Helena to avail themselves of planted vegetable gardens and wild-growing fruit trees. Authorities occasionally recommended plant food to prevent scurvy during long sea voyages. John Woodall, the first surgeon to the British East India Company, recommended the preventive and curative use of lemon juice in his 1617 book, The Surgeon's Mate."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#History",
+      "origin": "Wikipedia",
+      "text": "The first attempt to give scientific basis for the cause of this disease was by a ship's surgeon in the Royal Navy, James Lind. While at sea in May 1747, Lind provided some crew members with two oranges and one lemon per day, in addition to normal rations, while others continued on cider, vinegar, sulfuric acid or seawater, along with their normal rations, in one of the world's first controlled experiments. The results showed that citrus fruits prevented the disease. Lind published his work in 1753 in his Treatise on the Scurvy."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#History",
+      "origin": "Wikipedia",
+      "text": "Fresh fruit was expensive to keep on board, whereas boiling it down to juice allowed easy storage, but destroyed the vitamin (especially if it was boiled in copper kettles). It was 1796 before the British navy adopted lemon juice as standard issue at sea. In 1845, ships in the West Indies were provided with lime juice instead, and in 1860 lime juice was used throughout the Royal Navy, giving rise to the American use of the nickname \"limey\" for the British. Captain James Cook had previously demonstrated the advantages of carrying \"Sour krout\" on board by taking his crew on a 1772–75 Pacific Ocean voyage without losing any of his men to scurvy."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Chemistry",
+      "origin": "Wikipedia",
+      "text": "The name \"vitamin C\" always refers to the l-enantiomers of ascorbic acid and its oxidized form, dehydroascorbate (DHA). Therefore, unless written otherwise, \"ascorbate\" and \"ascorbic acid\" refer in the nutritional literature to l-ascorbate and l-ascorbic acid respectively. Ascorbic acid is a weak sugar acid structurally related to glucose. In biological systems, ascorbic acid can be found only at low pH, but in solutions above pH 5 it is predominantly found in the ionized form, ascorbate."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Many analytical methods have been developed for ascorbic acid detection. For example, vitamin C content of a food sample such as fruit juice can be calculated by measuring the volume of the sample required to decolorize a solution of dichlorophenolindophenol (DCPIP) and then calibrating the results by comparison with a known concentration of vitamin C."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Deficiency",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Deficiency",
+      "origin": "Wikipedia",
+      "text": "Plasma vitamin C is the most widely applied test for vitamin C status. Adequate levels are defined as near 50 μmol/L. Hypovitaminosis of vitamin C is defined as less than 23 μmol/L, and deficiency as less than 11.4 μmol/L. For people 20 years of age or above, data from the US 2017–18 National Health and Nutrition Examination Survey showed mean serum concentrations of 53.4 μmol/L. Deficiency was reported in 5.9% of people. Globally, vitamin C deficiency is common in low and middle-income countries, and not uncommon in high income countries. In the latter, prevalence is higher in males than in females."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Deficiency",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Deficiency",
+      "origin": "Wikipedia",
+      "text": "Plasma levels are considered saturated at about 65 μmol/L, achieved by intakes of 100 to 200 mg/day, which are well above the recommended intakes. Even higher oral intake does not further raise plasma nor tissue concentrations because absorption efficiency decreases and any excess that is absorbed is excreted in urine."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Diet",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Diet",
+      "origin": "Wikipedia",
+      "text": "Recommendations for vitamin C intake by adults have been set by various national agencies:"
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Diet",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Diet",
+      "origin": "Wikipedia",
+      "text": "40 mg/day: India National Institute of Nutrition, Hyderabad"
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Food preservation additive",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Food_preservation_additive",
+      "origin": "Wikipedia",
+      "text": "Ascorbic acid and some of its salts and esters are common additives added to foods such as canned fruits, mostly to slow oxidation and enzymatic browning. It may be used as a flour treatment agent used in breadmaking. As food additives, they are assigned E numbers, with safety assessment and approval the responsibility of the European Food Safety Authority. The relevant E numbers are:"
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Food preservation additive",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Food_preservation_additive",
+      "origin": "Wikipedia",
+      "text": "E300 ascorbic acid (approved for use as a food additive in the UK, US Canada, Australia and New Zealand)"
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Pharmacodynamics includes enzymes for which vitamin C is a cofactor, with function potentially compromised in a deficiency state, and any enzyme cofactor or other physiological function affected by administration of vitamin C, orally or injected, in excess of normal requirements. At normal physiological concentrations, vitamin C is an enzyme substrate or cofactor and an electron donor antioxidant. The enzymatic functions include the synthesis of collagen, carnitine, and neurotransmitters; the synthesis and catabolism of tyrosine; and the metabolism of microsomes."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Vitamin C is a cofactor for the following enzymes:"
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "Health effects",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Health_effects",
+      "origin": "Wikipedia",
+      "text": "Vitamin C has a definitive role in preventing and treating scurvy, which is a disease caused by vitamin C deficiency. Beyond that, a role for vitamin C as prevention or treatment for various diseases is disputed, with reviews often reporting conflicting results. No effect of vitamin C supplementation reported for overall mortality. It is on the World Health Organization's List of Essential Medicines and on the World Health Organization's Model Forumulary. In 2023, it was the 226th most commonly prescribed medication in the United States, with more than 1 million prescriptions."
+    },
+    {
+      "id": "s24",
+      "source": "wikipedia",
+      "section": "Health effects",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Health_effects",
+      "origin": "Wikipedia",
+      "text": "Scurvy is a disease resulting from a deficiency of vitamin C. Without this vitamin, collagen made by the body is too unstable to perform its function and several other enzymes in the body do not operate correctly. Early symptoms are malaise and lethargy, progressing to shortness of breath, bone pain and susceptibility to bruising. As the disease progressed, it is characterized by spots on and bleeding under the skin and bleeding gums. The skin lesions are most abundant on the thighs and legs. A person with the ailment looks pale, feels depressed, and is partially immobilized."
+    },
+    {
+      "id": "s25",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_C#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Oral intake of dietary supplements vitamin C in excess of requirements is poorly absorbed, and excess amounts in the blood are rapidly excreted in the urine, so it exhibits low acute toxicity. More than two to three grams, consumed orally, may cause nausea, abdominal cramps and diarrhea. These effects are attributed to the osmotic effect of unabsorbed vitamin C passing through the intestine. In theory, high vitamin C intake may cause excessive absorption of iron. A summary of reviews of supplementation in healthy subjects did not report this problem, but left as untested the possibility that individuals with hereditary hemochromatosis might be adversely affected."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "An antioxidant essential in the human diet; Used as an antioxidant for foods and therapeutic vitamin; [Merck Index] Used as an antioxidant and pH adjustor in cosmetics (over 75% in hair dyes and colors), for abscission of citrus fruit in harvesting, as a reducing agent in analytical chemistry, skin protectant, and UV sunscreen; [HSDB] Used in chemical synthesis; [IUCLID] Used as flavoring agent, antimicrobial agent, antioxidant, dough strengthener, nutritional supplement, pH control agent, sequestrant, and stabilizer or thickener for foods; [FDA] Permitted for use as an inert ingredient in non-food pesticide products; [EPA]"
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "As antimicrobial and antioxidant in foodstuffs"
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Nutrition, color fixing, flavoring and preservative in meats and other foods, oxidant in bread dough, abscission of citrus fruit in harvesting, reducing agent in analytical chemistry"
+    },
+    {
+      "id": "s29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The iron, calcium, and sodium salts are available for biochemical research."
+    },
+    {
+      "id": "s30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "L-Ascorbic acid is widely distributed in the plant and animal kingdom(1). Food sources of L-ascorbic acid include acerola (West Indian cherry); citrus fruits, tomatoes; potatoes, and green leafy vegetables(2). It has been isolated from the adrenal cortex of ox and later from lemons and paprika(1)."
+    },
+    {
+      "id": "s31",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "VITAMIN C IS FOUND IN ALL LIVING PLANT CELLS, IS SYNTHESIZED DURING GERMINATION OF SEEDS & IS...CONCENTRATED IN RAPIDLY GROWING PARTS OF PLANT. IT IS PRESENT IN ALL ANIMAL TISSUES...ONLY GUINEA PIGS, PRIMATES...FEW EXOTIC ANIMAL SPECIES, & MAN ARE UNABLE TO MEET...NEEDS BY SYNTHESIS...RELY UPON DIETARY SOURCE."
+    },
+    {
+      "id": "s32",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Recent speculations on the loss and retention of the ability to synthesize L-ascorbic acid (vitamin C) during evolution of animals have been based on few data, often for limited numbers of species. Published reports for the Mammalia deal mostly with domesticated and laboratory species, and there is little information on ascorbate biosynthesis in wild populations. The status of knowledge on bats typifies this paucity of data. It has been reported that two species of bats (of approximately 850 species), like anthropoid primates and guinea pigs, are unable to synthesize vitamin C because they lack L-gulonolactone oxidase."
+    },
+    {
+      "id": "s33",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "s34",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION: Origin of the substance: Ascorbic acid is of both natural and synthetic origin. Natural origin: ascorbic acid is found in fresh fruit and vegetables. Citrus fruits are a particularly good source of ascorbic acid and also hip berries, acerola and fresh tea leaves. Ascorbic acid exists as colorless, or white or almost white crystals. It is odorless or almost odorless. It has a pleasant, sharp acidic taste. It is freely soluble in water and sparingly soluble in ethanol. It is practically insoluble in ether and chloroform. HUMAN EXPOSURE: Main risks and target organs: The main target organs for toxicity are found in the gastrointestinal, renal and hematological systems."
+    },
+    {
+      "id": "s35",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 1 of 1 companies. For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

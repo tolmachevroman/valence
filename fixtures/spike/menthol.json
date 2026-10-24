@@ -1,0 +1,238 @@
+{
+  "molecule": "menthol",
+  "cid": 1254,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "D,l-menthol is a white crystalline solid with a peppermint odor and taste. (NTP, 1992)"
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "P-menthan-3-ol is any secondary alcohol that is one of the eight possible diastereoisomers of 5-methyl-2-(propan-2-yl)cyclohexan-1-ol. It has a role as a volatile oil component. It is a p-menthane monoterpenoid and a secondary alcohol."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "p-menthan-3-ol has been reported in Camellia sinensis, Solanum tuberosum, and other organisms with data available."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "neomenthol has been reported in Clinopodium thymifolium with data available."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Menthol is an organic compound made synthetically or obtained from peppermint or mint oils with flavoring and local anesthetic properties. When added to pharmaceuticals and foods, menthol functions as a fortifier for peppermint flavors. It also has a counterirritant effect on skin and mucous membranes, thereby producing a local analgesic or anesthetic effect."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Menthol",
+      "origin": "Wikipedia",
+      "text": "Menthol is a monoterpenoid organic compound that occurs naturally in the oils of certain plants in the mint family, such as corn mint and peppermint. It is a white or clear waxy crystalline substance that is solid at room temperature and melts slightly above. The main form of menthol occurring in nature is (−)-menthol, which is assigned the (1R,2S,5R) configuration."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Menthol",
+      "origin": "Wikipedia",
+      "text": "For many people, menthol produces a cooling sensation when inhaled, eaten, or applied to the skin, and mint plants have been used for centuries for topical pain relief and as a food flavoring. Menthol has local anesthetic and counterirritant qualities, and it is widely used to relieve minor throat irritation."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Menthol",
+      "origin": "Wikipedia",
+      "text": "Menthol has been demonstrated to cause a subjective nasal decongestant effect without any objective decongestant action, and administration of menthol via a nasal inhaler in humans has also been shown to cause nasal decongestion."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Menthol#History",
+      "origin": "Wikipedia",
+      "text": "Menthol was first isolated in 1771, by the German, Hieronymus David Gaubius. Early characterizations were done by Oppenheim, Beckett, Moriya, and Atkinson. It was named by F. L. Alphonse Oppenheim (1833–1877) in 1861."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Structure",
+      "origin": "Wikipedia",
+      "text": "Natural menthol exists as one pure stereoisomer, nearly always the (1R,2S,5R) form (bottom left corner of the diagram below). The eight possible stereoisomers are:"
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Structure",
+      "origin": "Wikipedia",
+      "text": "In the natural compound, the isopropyl group is in the trans orientation to both the methyl and hydroxyl groups. Thus, it can be drawn in any of the ways shown:"
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Biological properties",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Biological_properties",
+      "origin": "Wikipedia",
+      "text": "Menthol's ability to chemically trigger the cold-sensitive TRPM8 receptors in the skin is responsible for the well-known cooling sensation it provokes when inhaled, eaten, or applied to the skin. In this sense, it is similar to capsaicin, the chemical responsible for the spiciness of hot chilis (which stimulates heat sensors, also without causing an actual change in temperature)."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Biological properties",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Biological_properties",
+      "origin": "Wikipedia",
+      "text": "Menthol's analgesic properties are mediated through a selective activation of κ-opioid receptors. Menthol blocks calcium channels and voltage-sensitive sodium channels, reducing neural activity that may stimulate muscles."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Mentha arvensis (wild mint) is the primary species of mint used to make natural menthol crystals and natural menthol flakes."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Menthol occurs naturally in peppermint oil (along with a little menthone, the ester menthyl acetate and other compounds), obtained from Mentha × piperita (peppermint). Japanese menthol also contains a small percentage of the 1-epimer neomenthol."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Applications",
+      "origin": "Wikipedia",
+      "text": "Menthol is included in many products, and for a variety of reasons."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Applications",
+      "origin": "Wikipedia",
+      "text": "In some beauty products such as hair conditioners, based on natural ingredients."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Reactions",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Reactions",
+      "origin": "Wikipedia",
+      "text": "Menthol reacts in many ways like a normal secondary alcohol. It is oxidised to menthone by oxidising agents such as chromic acid, dichromate, or by calcium hypochlorite, in a green chemistry route. Under some conditions the oxidation using Cr(VI) compounds can go further and break open the ring. Menthol is easily dehydrated to give mainly 3-menthene, by the action of 2% sulfuric acid. Phosphorus pentachloride (PCl5) gives menthyl chloride."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Safety",
+      "origin": "Wikipedia",
+      "text": "The estimated lethal dose for menthol (and peppermint oil) in humans may be as low as LD"
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Menthol#Safety",
+      "origin": "Wikipedia",
+      "text": "Survival after doses of 8 to 9 g has been reported. Overdose effects are abdominal pain, ataxia, atrial fibrillation, bradycardia, coma, dizziness, lethargy, nausea, skin rash, tremor, vomiting, and vertigo."
+    },
+    {
+      "id": "s21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Found in peppermint oil and other mint oils; [Merck Index] Used as flavoring/fragrance agent in toothpastes, mouthwashes, pharmaceuticals, cigarettes, aerosol room fresheners, cosmetics, liqueurs, confectionary, and perfumes; Also used as a topical antipruritic and in cough drops and inhalers; [HSDB] Used in Canada to control mites and in Europe in paints and lacquers, adhesives, metal care products, cleaning products, shoe and leather polishes, disinfectants, solvents, repellents, and animal care products; [eChemPortal: SIDSUNEP] Peppermint oil contains menthol, menthone, and more than 30 other chemicals. It is widely used as a flavoring agent and herbal remedy. [Haddad, p. 1439]"
+    },
+    {
+      "id": "s22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Painting (Solvents) [Category: Paint] Working with Glues and Adhesives [Category: Other] Using Disinfectants or Biocides [Category: Clean]"
+    },
+    {
+      "id": "s23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For menthol (USEPA/OPP Pesticide Code: 051601) ACTIVE products with label matches. /SRP: Registered for use in the USA but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "s24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Flavor in liquers, confectionary; perfumery, cigarettes, cough drops, and nasal inhalers. /L-Menthol/"
+    },
+    {
+      "id": "s25",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "L-Menthol is the main component (other stereoisomers may be present) of peppermint oils and cornmint oils obtained from Mentha piperita and Mentha arvensis(1). /l-Menthol/"
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "NATURAL MENTHOL, KNOWN ALSO AS PEPPERMINT CAMPHOR MAY BE OBTAINED FROM PEPPERMINT OIL WHETHER AMERICAN, CHINESE, OR JAPANESE EITHER BY COOLING THE OIL TO POINT OF CRYSTALLIZATION OF MENTHOL OR BY FRACTIONAL DISTILLATION OF THE OIL."
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Menthol is produced as crystals or granules. DL-Menthol is used as flavoring, disinfectant and cooling compound in confectionery products, liqueurs, chewing gums, toothpastes, cosmetics and common cold ointments and medications for human purposes. L-Menthol is used in large quantities in cigarettes, cosmetics, toothpastes, chewing gum, sweets, and medicines. D-Menthol is used only in research. HUMAN EXPOSURE AND TOXICITY: A maximization test was carried out on 25 volunteers. The material was tested at a concentration of 8% in petrolatum and produced no sensitization reactions."
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Menthol acts as a weak Kappa Opioid Receptor Agonist."
+    },
+    {
+      "id": "s29",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1254#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. Not Classified Reported as not meeting GHS hazard criteria by 1 of 1 companies. For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

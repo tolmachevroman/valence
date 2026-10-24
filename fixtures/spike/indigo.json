@@ -1,0 +1,150 @@
+{
+  "molecule": "indigo",
+  "cid": 10215,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10215#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Indigo dye is a member of hydroxyindoles."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10215#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "3'-hydroxy-1'H-[2,2'-biindol]-3-one has been reported in Couroupita guianensis and Isatis tinctoria with data available."
+    },
+    {
+      "id": "s3",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye",
+      "origin": "Wikipedia",
+      "text": "Indigo dye is an organic compound with a distinctive blue color. Indigo is a natural dye obtained from the leaves of some plants of the Indigofera genus, in particular Indigofera tinctoria. Dye-bearing Indigofera plants were once common throughout the world. Blue colorants are relatively rare. Since indigo is insoluble, it is also referred to as a pigment (C.I. Pigment Blue 66, C.I.)."
+    },
+    {
+      "id": "s4",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye",
+      "origin": "Wikipedia",
+      "text": "Most indigo dye produced today is synthetic, constituting around 80,000 tonnes each year, as of 2023. It is most commonly associated with the production of denim cloth and blue jeans, where its properties allow for effects such as stone washing and acid washing to be applied quickly."
+    },
+    {
+      "id": "s5",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#History",
+      "origin": "Wikipedia",
+      "text": "The oldest known fabric dyed indigo, dated to 6,000 years ago, was discovered in Huaca Prieta, Peru. Many Asian countries, such as India, China, Japan, and Southeast Asian nations have used indigo as a dye (particularly for silk) for centuries. The dye was also known to ancient civilizations in Mesopotamia, Egypt, Britain, Mesoamerica, Peru, Iran, and West Africa. Indigo was also cultivated in India, which was also the earliest major center for its production and processing. The Indigofera tinctoria species was domesticated in India. Indigo, used as a dye, made its way to the Greeks and the Romans, where it was valued as a luxury product."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#History",
+      "origin": "Wikipedia",
+      "text": "In Mesopotamia, a neo-Babylonian cuneiform tablet of the seventh century BC gives a recipe for the dyeing of wool, where lapis-colored wool (uqnatu) is produced by repeated immersion and airing of the cloth. Indigo was most probably imported from India. The Romans used indigo as a pigment for painting and for medicinal and cosmetic purposes. It was a luxury item imported to the Mediterranean from India by Arab merchants."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#History",
+      "origin": "Wikipedia",
+      "text": "India was a primary supplier of indigo to Europe as early as the Greco-Roman era. The association of India with indigo is reflected in the Greek word for the dye, indikón (Ἰνδικόν, Indian). The Romans Latinized the term to indicum, which passed into Italian dialect and eventually into English as the word indigo."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#History",
+      "origin": "Wikipedia",
+      "text": "In Bengal, indigo cultivators revolted against exploitative working conditions created by European merchants and planters in what became known as the Indigo revolt in 1859. The Bengali play Nil Darpan by Indian playwright Dinabandhu Mitra was a fictionalized retelling of the revolt."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Uses",
+      "origin": "Wikipedia",
+      "text": "The primary use for indigo is as a dye for cotton yarn, mainly used in the production of denim cloth suitable for blue jeans; on average, a pair of blue jeans requires 3–12 grams (0.11–0.42 oz) of dye. Smaller quantities are used in the dyeing of wool and silk."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Uses",
+      "origin": "Wikipedia",
+      "text": "Indigo's widespread use was partly due to its colorfast properties, as it binds effectively to fibers while allowing repeated dyeing processes that produce a range of shades."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Dyeing technology",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Dyeing_technology",
+      "origin": "Wikipedia",
+      "text": "Indigo is a challenging dye because it is not soluble in water. To be dissolved, it must undergo a chemical change (reduction). Reduction converts indigo into \"white indigo\" (leuco-indigo). When a submerged fabric is removed from the dyebath, the white indigo quickly combines with oxygen in the air and reverts to the insoluble, intensely colored indigo. When it first became widely available in Europe in the 16th century, European dyers and printers struggled with indigo because of this distinctive property. It also required several chemical manipulations, some involving toxic materials, and presented many opportunities to injure workers."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Dyeing technology",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Dyeing_technology",
+      "origin": "Wikipedia",
+      "text": "A pre-industrial process for production of indigo white, used in Europe, was to dissolve the indigo in stale urine, which contains ammonia. A more convenient reductive agent is zinc. Another pre-industrial method, used in Japan, was to dissolve the indigo in a heated vat in which a culture of thermophilic, anaerobic bacteria was maintained. Some species of such bacteria generate hydrogen as a metabolic product, which convert insoluble indigo into soluble indigo white. Cloth dyed in such a vat was decorated with the techniques of shibori (tie-dye), kasuri, katazome, and tsutsugaki."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Indigo dye is a dark blue crystalline powder that sublimes at 390–392 °C (734–738 °F). It is insoluble in water, alcohol, or ether, but soluble in DMSO, chloroform, nitrobenzene, and concentrated sulfuric acid. The chemical formula of indigo is C16H10N2O2."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "The molecule absorbs light in the orange part of the spectrum (λmax=613 nm). The compound owes its deep color to the conjugation of the double bonds, i.e. the double bonds within the molecule are adjacent and the molecule is planar. In indigo white, the conjugation is interrupted because the molecule is non-planar."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Indigo as an organic semiconductor",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Indigo_as_an_organic_semiconductor",
+      "origin": "Wikipedia",
+      "text": "Indigo and some of its derivatives are known to be ambipolar organic semiconductors when deposited as thin films by vacuum evaporation."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Safety and the environment",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Safety_and_the_environment",
+      "origin": "Wikipedia",
+      "text": "Indigo has a low oral toxicity, with an LD50 of 5 g/kg (0.5% of total mass) in mammals. In 2009, large spills of blue dye were reported downstream of a blue jeans manufacturer in Lesotho."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Safety and the environment",
+      "url": "https://en.wikipedia.org/wiki/Indigo_dye#Safety_and_the_environment",
+      "origin": "Wikipedia",
+      "text": "The compound has been found to act as an agonist of the aryl hydrocarbon receptor."
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10215#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Health Hazard. H373 (90.9%): May causes damage to organs through prolonged or repeated exposure [Warning Specific target organ toxicity, repeated exposure]"
+    }
+  ]
+}

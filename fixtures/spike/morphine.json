@@ -1,0 +1,286 @@
+{
+  "molecule": "morphine",
+  "cid": 5288826,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Morphine is a morphinane alkaloid that is a highly potent opiate analgesic psychoactive drug. Morphine acts directly on the central nervous system (CNS) to relieve pain but has a high potential for addiction, with tolerance and both physical and psychological dependence developing rapidly. Morphine is the most abundant opiate found in Papaver somniferum (the opium poppy). It has a role as a geroprotector, an opioid analgesic, a vasodilator agent, a xenobiotic, an anaesthetic, a mu-opioid receptor agonist, a plant metabolite, an environmental contaminant and a drug allergen. It is a morphinane alkaloid, an organic heteropentacyclic compound and a tertiary amino compound."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Record-Description",
+      "origin": "Drug Enforcement Administration (DEA)",
+      "text": "Morphine is a DEA Schedule II controlled substance. Substances in the DEA Schedule II have a high potential for abuse which may lead to severe psychological or physical dependence."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Morphine, the main alkaloid of opium, was first obtained from poppy seeds in 1805. It is a potent analgesic, though its use is limited due to tolerance, withdrawal, and the risk of abuse. Morphine is still routinely used today, though there are a number of semi-synthetic opioids of varying strength such as [codeine], [fentanyl], [methadone], [hydrocodone], [hydromorphone], [meperidine], and [oxycodone]. Morphine was granted FDA approval in 1941."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Morphine is an Opioid Agonist. The mechanism of action of morphine is as a Full Opioid Agonist."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Record-Description",
+      "origin": "LiverTox",
+      "text": "Morphine is one of the natural plant alkaloids found in opium and is the prototype opiate, against which other derivatives are measured in terms of analgesic effects and side effects. Morphine has not been linked to serum enzyme elevations during therapy or to clinically apparent liver injury."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Morphine",
+      "origin": "Wikipedia",
+      "text": "Morphine, formerly known as morphium, is an opiate found naturally in opium, a dark brown resin produced by drying the latex of opium poppies (Papaver somniferum). It is mainly used as an analgesic (pain medication). There are multiple methods used to administer morphine: oral; sublingual; via inhalation; injection into a muscle, injection under the skin, or injection into the spinal cord area; transdermal; intravenously; or via rectal suppository. It acts directly on the central nervous system (CNS) to induce analgesia and alter perception and emotional response to pain. Physical and psychological dependence and tolerance may develop with repeated administration."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Morphine",
+      "origin": "Wikipedia",
+      "text": "Common side effects of morphine include drowsiness, euphoria, nausea, dizziness, sweating, and constipation. Potentially serious side effects of morphine include decreased respiratory effort, vomiting, and low blood pressure. Morphine is highly addictive and prone to abuse. If one's dose is reduced after long-term use, opioid withdrawal symptoms may occur. Caution is advised for the use of morphine during pregnancy or breastfeeding, as it may affect the health of the baby."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Morphine",
+      "origin": "Wikipedia",
+      "text": "Morphine was first isolated in 1804 by German pharmacist Friedrich Sertürner. This is believed to be the first isolation of a medicinal alkaloid from a plant. Merck began marketing it commercially in 1827. Morphine was more widely used after the invention of the hypodermic syringe in 1853–1855. Sertürner originally named the substance morphium, after the Greek god of dreams, Morpheus, as it has a tendency to cause sleep."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Morphine#History",
+      "origin": "Wikipedia",
+      "text": "The earliest known reference to morphine can be traced back to Theophrastus in the 3rd century BC, however, possible references to morphine may go as far back as 2100 BC as Sumerian clay tablets which records lists of medical prescriptions including opium-based cures."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Morphine#History",
+      "origin": "Wikipedia",
+      "text": "An opium-based elixir has been ascribed to alchemists of Byzantine times, but the specific formula was lost during the Ottoman conquest of Constantinople (Istanbul). Around 1522, Paracelsus made reference to an opium-based elixir that he called laudanum from the Latin word laudāre, meaning \"to praise\". He described it as a potent painkiller but recommended that it be used sparingly. The recipe given differs substantially from that of modern-day laudanum."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Morphine#History",
+      "origin": "Wikipedia",
+      "text": "Morphine was discovered as the first active alkaloid extracted from the opium poppy plant in December 1804 in Paderborn by German pharmacist Friedrich Sertürner. Sertürner noticed the compound induced drowsiness in rats and stray dogs and he reported his findings in 1805. In 1817, Sertürner reported experiments in which he administered morphine to himself, three young boys, three dogs, and a mouse; all four people almost died. Sertürner originally named the substance morphium after the Greek god of dreams, Morpheus, as it has a tendency to cause sleep. Sertürner's morphium was six times stronger than opium."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Morphine#History",
+      "origin": "Wikipedia",
+      "text": "The drug was first marketed to the general public by Sertürner and Company in 1817 as a pain medication, and also as a treatment for opium and alcohol addiction. It was first used as a poison in 1822 when Edme Castaing of France was convicted of murdering a patient. Commercial production began in Darmstadt, Germany, in 1827 by the pharmacy that became the pharmaceutical company Merck, with morphine sales being a large part of their early growth. In the 1850s, Alexander Wood reported that he had injected morphine into his wife Rebecca as an experiment; the myth goes that this killed her because of respiratory depression, but she outlived her husband by ten years."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "Morphine is used primarily to treat both acute and chronic severe pain. Its duration of analgesia is about three to seven hours. Side effects of nausea and constipation are rarely severe enough to warrant stopping treatment."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "It is used for pain due to myocardial infarction and for labor pains. However, concerns exist that morphine may increase mortality in the event of non-ST elevation myocardial infarction."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Relative contraindications to morphine include:"
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Respiratory depression when appropriate equipment is not available."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Like loperamide and other opioids, morphine acts on the myenteric plexus in the intestinal tract, reducing gut motility, and causing constipation. The gastrointestinal effects of morphine are mediated primarily by μ-opioid receptors in the bowel. By inhibiting gastric emptying and reducing propulsive peristalsis of the intestine, morphine decreases the rate of intestinal transit. Reduction in gut secretion and increased intestinal fluid absorption also contribute to the constipating effect. Opioids also may act on the gut indirectly through tonic gut spasms after inhibition of nitric oxide generation."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Clinical studies consistently conclude that morphine, like other opioids, often causes hypogonadism and hormone imbalances in chronic users of both sexes. This side effect is dose-dependent and occurs in both therapeutic and recreational users. Morphine can interfere with menstruation by suppressing levels of luteinizing hormone. Multiple studies suggest the majority (perhaps as many as 90%) of chronic opioid users have opioid-induced hypogonadism. This effect may cause the increased likelihood of osteoporosis and bone fracture observed in chronic morphine users. Studies suggest the effect is temporary."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Overdose",
+      "origin": "Wikipedia",
+      "text": "A large overdose can cause asphyxia and death by respiratory depression if the person does not receive medical attention immediately. Overdose treatment includes the administration of naloxone. The latter completely reverses morphine's effects but may result in the immediate onset of withdrawal in opiate-addicted subjects. Multiple doses may be needed as the duration of action of morphine is longer than that of naloxone."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Due to its long history and established use as a pain medication, this compound has become the benchmark to which all other opioids are compared. It interacts predominantly with the μ–δ-opioid (mu–delta) receptor heteromer. The μ-binding sites are discretely distributed in the human brain, with high densities in the posterior amygdala, hypothalamus, thalamus, nucleus caudatus, putamen, and certain cortical areas. They are also found on the terminal axons of primary afferents within laminae I and II (substantia gelatinosa) of the spinal cord and in the spinal nucleus of the trigeminal nerve."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Morphine is a phenanthrene opioid receptor agonist – its main effect is binding to and activating the μ-opioid receptor (MOR) in the central nervous system. Its intrinsic activity at the MOR is heavily dependent on the assay and tissue being tested; in some situations it is a full agonist while in others it can be a partial agonist or even antagonist. In clinical settings, morphine exerts its principal pharmacological effect on the central nervous system and gastrointestinal tract. Its primary actions of therapeutic value are analgesia and sedation. Activation of the MOR is associated with analgesia, sedation, euphoria, physical dependence, and respiratory depression."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Natural occurrence",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Natural_occurrence",
+      "origin": "Wikipedia",
+      "text": "Morphine is the most abundant opiate found in opium, the dried latex extracted by shallowly scoring the unripe seedpods of the Papaver somniferum poppy. Morphine is generally 8–14% of the dry weight of opium. Przemko and Norman cultivars of the opium poppy, are used to produce two other alkaloids, thebaine and oripavine, which are used in the manufacture of semi-synthetic and synthetic opioids like oxycodone and etorphine. P. bracteatum does not contain morphine or codeine, or other narcotic phenanthrene-type, alkaloids. This species is rather a source of thebaine."
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "Natural occurrence",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Natural_occurrence",
+      "origin": "Wikipedia",
+      "text": "In the brains of mammals, morphine is detectable in trace steady-state concentrations. The human body also produces endorphins, which are chemically related endogenous opioid peptides that function as neuropeptides and have similar effects to morphine."
+    },
+    {
+      "id": "s24",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Elements of the morphine structure have been used to create completely synthetic drugs such as the morphinan family (levorphanol, dextromethorphan and others) and other groups that have multiple members with morphine-like qualities. The modification of morphine and the aforementioned synthetics has also given rise to non-narcotic drugs with other uses such as emetics, stimulants, antitussives, anticholinergics, muscle relaxants, local anaesthetics, general anaesthetics, and others. Morphine-derived agonist–antagonist drugs have also been developed."
+    },
+    {
+      "id": "s25",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Morphine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Morphine is a benzylisoquinoline alkaloid with two additional ring closures. As Jack DeRuiter of the Department of Drug Discovery and Development (formerly, Pharmacal Sciences), Harrison School of Pharmacy, Auburn University stated in his Fall 2000 course notes for that earlier department's \"Principles of Drug Action 2\" course, \"Examination of the morphine molecule reveals the following structural features important to its pharmacological profile..."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Morphine (DEA Code Number: 9300) is a Schedule II controlled substance."
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Schedule II Controlled Substance: (A) The drug or other substance has a high potential for abuse; (B) The drug or other substance has a currently accepted medical use in treatment in the United States or a currently accepted medical use with severe restrictions; and (C) Abuse of the drug or other substances may lead to severe psychological or physical dependence."
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Analgesic (in form of acetate, hydrochloride, tartrate, and other soluble salts)."
+    },
+    {
+      "id": "s29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg) in Switzerland (2009): >250 Use (kg; approx.) in Germany (2009): >1000 Use (kg) in USA (2002): 4830 Consumption (g per capita) in Switzerland (2009): 0.032 Consumption (g per capita; approx.) in Germany (2009): 0.012 Consumption (g per capita) in the USA (2002): 0.017 Excretion rate: 0.9 Calculated removal (%): 8.8"
+    },
+    {
+      "id": "s30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Morphine occurs naturally in poppies(1), specifically in sap from the opium poppy (Papaver somniferum)(2)."
+    },
+    {
+      "id": "s31",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Morphine is obtained from opium, which itself is obtained from the milky exudate of incised unripe seed capsules of the poppy plant, Papaver somniferum, indigenous to Asia Minor. The alkaloids of opium include phenanthrenes (morphine, codeine, thebaine) and benzyl isoquinolines (papaverine, noscapine)."
+    },
+    {
+      "id": "s32",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The codeine, morphine, noscapine, papaverine, and thebaine contents of Papaver somniferum cultivated at 10 different locales in eastern Austria were investigated to note differences due to climatic conditions. Opium alkaloids were produced by aerial parts of the plants under all growth conditions tested. Morphine content varied considerably according to locale. Opium alkaloid content was also confirmed in poppy seeds from 28 samples at Austrian florist shops."
+    },
+    {
+      "id": "s33",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Morphine is white and crystalline solid. It is an opiate agonist used, often in the form of its sulfate salt, to relieve severe, acute pain or moderate to severe, chronic pain. The drug is also used parenterally as a supplement for analgesia during labor. Morphine is the drug of choice in relieving pain of myocardial infarction. It may be used in veterinary care as an analgesic (narcotic), preanesthetic, antitussive, and antiperstaltic. HUMAN EXPOSURE AND TOXICITY: Morphine sulfate misuse is essentially observed among regular heroin injectors. The most serious adverse effect of morphine is respiratory depression. Constipation is a common side effect."
+    },
+    {
+      "id": "s34",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Signs and Symptoms of Overdose Morphine can potentially be a lethal medication when not used properly. This medication causes a host of symptoms related to CNS depression. Severe respiratory depression is the most feared complication of morphine in cases of overdose. Acute morphine overdose can present with a variety of symptoms, including respiratory depression, skeletal muscle flaccidity, cold and clammy skin, hypoglycemia, bradycardia, hypotension, constricted pupils, pulmonary edema, somnolence progressing to coma, partial or complete airway obstruction. Management of Overdose The initial management is to secure the airway, breathing, and circulation."
+    },
+    {
+      "id": "s35",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5288826#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant, Health Hazard. H302 (98.6%): Harmful if swallowed [Warning Acute toxicity, oral] H317 (27.8%): May cause an allergic skin reaction [Warning Sensitization, Skin] H336 (38.9%): May cause drowsiness or dizziness [Warning Specific target organ toxicity, single exposure; Narcotic effects] H361 (27.8%): Suspected of damaging fertility or the unborn child [Warning Reproductive toxicity] H361fd (25%): Suspected of damaging fertility; Suspected of damaging the unborn child [Warning Reproductive toxicity] H362 (26.4%): May cause harm to breast-fed children [Reproductive toxicity, effects on or via lactation]"
+    }
+  ]
+}

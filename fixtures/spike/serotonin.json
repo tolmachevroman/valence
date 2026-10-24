@@ -1,0 +1,214 @@
+{
+  "molecule": "serotonin",
+  "cid": 5202,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Serotonin is a primary amino compound that is the 5-hydroxy derivative of tryptamine. It has a role as a neurotransmitter, a mouse metabolite and a human metabolite. It is a monoamine molecular messenger, a member of tryptamines, a member of phenols, a primary amino compound and a member of hydroxyindoles. It is functionally related to a tryptamine. It is a conjugate base of a serotonin(1+)."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "For temporary relief of nervousness, anxiety, mood swings, joint pains, weakness, drowsiness, itching and lethargy. Not evaluated by the FDA, homeopathic product."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "serotonin has been reported in Mamestra brassicae, Bufo gargarizans, and other organisms with data available."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "A biochemical messenger and regulator, synthesized from the essential amino acid L-TRYPTOPHAN. In humans it is found primarily in the central nervous system, gastrointestinal tract, and blood platelets. Serotonin mediates several important physiological functions including neurotransmission, gastrointestinal motility, hemostasis, and cardiovascular integrity. Multiple receptor families (RECEPTORS, SEROTONIN) explain the broad physiological actions and distribution of this biochemical mediator."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "proteolytic enzyme from the venom of Bothrops marajoensis; aggregates platelets directly without the mediation of prothrombin or Factor X; causes the platelet release reaction & platelet dependent fibrin retraction"
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Serotonin",
+      "origin": "Wikipedia",
+      "text": "Serotonin, also known as 5-hydroxytryptamine (5-HT), is a monoamine neurotransmitter with a wide range of functions in both the central nervous system (CNS) and also peripheral tissues. It is involved in mood, cognition, reward, learning, memory, and physiological processes such as vomiting and vasoconstriction. In the CNS, serotonin regulates mood, appetite, and sleep."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Serotonin",
+      "origin": "Wikipedia",
+      "text": "Most of the body's serotonin—about 90%—is synthesized in the gastrointestinal tract by enterochromaffin cells, where it regulates intestinal movements. It is also produced in smaller amounts in the brainstem's raphe nuclei, the skin's Merkel cells, pulmonary neuroendocrine cells, and taste receptor cells of the tongue. Once secreted, serotonin is taken up by platelets in the blood, which release it during clotting to promote vasoconstriction and platelet aggregation. Around 8% of the body's serotonin is stored in platelets, and 1–2% is found in the CNS."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Serotonin",
+      "origin": "Wikipedia",
+      "text": "Serotonin acts as both a vasoconstrictor and vasodilator depending on concentration and context, influencing hemostasis and blood pressure regulation. It plays a role in stimulating myenteric neurons and enhancing gastrointestinal motility through uptake and release cycles in platelets and surrounding tissue. Biochemically, serotonin is an indoleamine synthesized from tryptophan and metabolized primarily in the liver to 5-hydroxyindoleacetic acid (5-HIAA)."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Molecular structure",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Molecular_structure",
+      "origin": "Wikipedia",
+      "text": "Biochemically, the indoleamine molecule derives from the amino acid tryptophan, via the (rate-limiting) hydroxylation of the 5 position on the ring (forming the intermediate 5-hydroxytryptophan), and then decarboxylation to produce serotonin. Preferable conformations are defined via ethylamine chain, resulting in six different conformations."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Crystal structure",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Crystal_structure",
+      "origin": "Wikipedia",
+      "text": "Serotonin crystallizes in P212121 chiral space group forming different hydrogen-bonding interactions between serotonin molecules via N-H...O and O-H...N intermolecular bonds. Serotonin also forms several salts, including pharmaceutical formulation of serotonin adipate."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Cellular effects",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Cellular_effects",
+      "origin": "Wikipedia",
+      "text": "Serotonin is involved in numerous physiological processes, including sleep, thermoregulation, learning and memory, pain, (social) behavior, sexual activity, feeding, motor activity, neural development, and biological rhythms. In less complex animals, such as some invertebrates, serotonin regulates feeding and other processes. In plants serotonin synthesis seems to be associated with stress signals. Despite its longstanding prominence in pharmaceutical advertising, the claim that low serotonin levels cause depression is not supported by scientific evidence."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Cellular effects",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Cellular_effects",
+      "origin": "Wikipedia",
+      "text": "Serotonin primarily acts through its receptors and its effects depend on which cells and tissues express these receptors. Metabolism involves first oxidation by monoamine oxidase to 5-hydroxyindoleacetaldehyde (5-HIAL). The rate-limiting step is hydride transfer from serotonin to the flavin cofactor. There follows oxidation by aldehyde dehydrogenase (ALDH) to 5-hydroxyindoleacetic acid (5-HIAA), the indole acetic-acid derivative. The latter is then excreted by the kidneys."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Biological role",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Biological_role",
+      "origin": "Wikipedia",
+      "text": "The neurons of the raphe nuclei are the principal source of 5-HT release in the brain. There are nine raphe nuclei, designated B1–B9, which contain the majority of serotonin-containing neurons (some scientists chose to group the nuclei raphes lineares into one nucleus), all of which are located along the midline of the brainstem, and centered on the reticular formation. Axons from the neurons of the raphe nuclei form a neurotransmitter system reaching almost every part of the central nervous system. Axons of neurons in the lower raphe nuclei terminate in the cerebellum and spinal cord, while the axons of the higher nuclei spread out in the entire brain."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Biological role",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Biological_role",
+      "origin": "Wikipedia",
+      "text": "It is the dorsal part of the raphe nucleus that contains neurons projecting to the central nervous system. Serotonin-releasing neurons in this area receive input from a large number of areas, notably from prefrontal cortex, lateral habenula, preoptic area, substantia nigra and amygdala. These neurons are thought to communicate the expectation of rewards in the near future, a quantity called state value in reinforcement learning."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Several classes of drugs target the serotonin system, including some antidepressants, anxiolytics, antipsychotics, analgesics, antimigraine drugs, oxytocics, antiemetics, appetite suppressants, and anticonvulsants, as well as psychedelics and entactogens."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "At rest, serotonin is stored within the vesicles of presynaptic neurons. When stimulated by nerve impulses, serotonin is released as a neurotransmitter into the synapse, reversibly binding to the postsynaptic receptor to induce a nerve impulse on the postsynaptic neuron. Serotonin can also bind to auto-receptors on the presynaptic neuron to regulate the synthesis and release of serotonin. Normally serotonin is taken back into the presynaptic neuron to stop its action, then reused or broken down by monoamine oxidase."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Comparative biology & evolution",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Comparative_biology_&_evolution",
+      "origin": "Wikipedia",
+      "text": "Serotonin is used by a variety of single-cell organisms for various purposes. SSRIs have been found to be toxic to algae. The gastrointestinal parasite Entamoeba histolytica secretes serotonin, causing a sustained secretory diarrhea in some people. Patients infected with E. histolytica have been found to have highly elevated serum serotonin levels, which returned to normal following resolution of the infection. E. histolytica also responds to the presence of serotonin by becoming more virulent."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Comparative biology & evolution",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Comparative_biology_&_evolution",
+      "origin": "Wikipedia",
+      "text": "In drying seeds, serotonin production is a way to get rid of the buildup of poisonous ammonia. The ammonia is collected and placed in the indole part of L-tryptophan, which is then decarboxylated by tryptophan decarboxylase to give tryptamine, which is then hydroxylated by a cytochrome P450 monooxygenase, yielding serotonin."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Biochemical mechanisms",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Biochemical_mechanisms",
+      "origin": "Wikipedia",
+      "text": "In animals and humans, serotonin is synthesized from the amino acid L-tryptophan by a short metabolic pathway consisting of two enzymes, tryptophan hydroxylase (TPH) and aromatic amino acid decarboxylase (DDC), and the coenzyme pyridoxal phosphate. The TPH-mediated reaction is the rate-limiting step in the pathway."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Biochemical mechanisms",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Biochemical_mechanisms",
+      "origin": "Wikipedia",
+      "text": "TPH has been shown to exist in two forms: TPH1, found in several tissues, and TPH2, which is a neuron-specific isoform."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Analytical chemistry",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Analytical_chemistry",
+      "origin": "Wikipedia",
+      "text": "Indium tin oxide is recommended for the electrode material in electrochemical investigation of concentrations produced, detected, or consumed by microbes. A mass spectrometry technique was developed in 1994 to measure the molecular weight of both natural and synthetic serotonins."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "History & etymology",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#History_&_etymology",
+      "origin": "Wikipedia",
+      "text": "It had been known to physiologists for over a century that a vasoconstrictor material appears in serum when blood was allowed to clot. In 1935, Italian Vittorio Erspamer, working in Pavia, showed an extract from enterochromaffin cells made intestines contract. Some believed it contained adrenaline, but two years later, Erspamer was able to show it was a previously unknown amine, which he named \"enteramine\". In 1948, Maurice M. Rapport, Arda Green, and Irvine Page of the Cleveland Clinic discovered a vasoconstrictor substance in blood serum, and since it was a serum agent affecting vascular tone, they named it serotonin."
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "History & etymology",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#History_&_etymology",
+      "origin": "Wikipedia",
+      "text": "In 1952, enteramine was shown to be the same substance as serotonin, and as the broad range of physiological roles was elucidated, the abbreviation 5-HT of the proper chemical name 5-hydroxytryptamine became the preferred name in the pharmacological field. Synonyms of serotonin include: 5-hydroxytriptamine, enteramine, substance DS, and 3-(β-aminoethyl)-5-hydroxyindole. In 1953, Betty Twarog and Page discovered serotonin in the central nervous system."
+    },
+    {
+      "id": "s24",
+      "source": "wikipedia",
+      "section": "Therapeutic effects",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Therapeutic_effects",
+      "origin": "Wikipedia",
+      "text": "Serotonin, given orally at a dose of 100 mg, produced effects in humans including blood pressure changes, abdominal cramps, muscle aches, and a feeling of sedation. In contrast to psychedelic drugs like LSD, no hallucinogenic effects were reported. In other studies, serotonin, at low intravenous doses of 2 to 6 mg, had no effects on electroencephalogram (EEG) readings in humans. In accordance with the preceding findings, it has been stated that administration of serotonin in humans produces no psychoactive effects that cannot be attributed to anxiety by its profound peripheral adverse effects including circulatory disturbance, other autonomic effects, and vomiting."
+    },
+    {
+      "id": "s25",
+      "source": "wikipedia",
+      "section": "Therapeutic effects",
+      "url": "https://en.wikipedia.org/wiki/Serotonin#Therapeutic_effects",
+      "origin": "Wikipedia",
+      "text": "It is thought that exogenous serotonin is too hydrophilic to cross the blood–brain barrier and has too poor of metabolic stability due to rapid metabolism by monoamine oxidase (MAO) such that it cannot produce drug-like central effects in humans with peripheral administration. However, close analogues of serotonin that are more lipophilic and metabolically stable, like bufotenin (N,N-dimethylserotonin), 5-MeO-DMT (N,N,O-trimethylserotonin), and 5-MeO-AMT (α,O-dimethylserotonin), among many others, are active and produce pronounced centrally mediated effects in humans."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5202#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic, Health Hazard. H301 (100%): Toxic if swallowed [Danger Acute toxicity, oral] H361 (98.5%): Suspected of damaging fertility or the unborn child [Warning Reproductive toxicity]"
+    }
+  ]
+}

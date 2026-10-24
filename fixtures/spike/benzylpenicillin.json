@@ -1,0 +1,134 @@
+{
+  "molecule": "benzylpenicillin",
+  "cid": 5904,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Benzylpenicillin is a penicillin in which the substituent at position 6 of the penam ring is a phenylacetamido group. It has a role as an antibacterial drug, an epitope and a drug allergen. It is a penicillin and a penicillin allergen. It is a conjugate acid of a benzylpenicillin(1-)."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description",
+      "origin": "Drug Database, Clinicalinfo.hiv.gov",
+      "text": "Penicillin G (potassium or sodium) is an antibacterial prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain serious bacterialinfections, such as pneumonia, meningitis, gonorrhea, syphilis, and others. Pneumonia and syphilis can be opportunistic infections (OI) of HIV."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Benzylpenicillin (Penicillin G) is narrow spectrum antibiotic used to treat infections caused by susceptible bacteria. It is a natural penicillin antibiotic that is administered intravenously or intramuscularly due to poor oral absorption. Penicillin G may also be used in some cases as prophylaxis against susceptible organisms. Natural penicillins are considered the drugs of choice for several infections caused by susceptible gram positive aerobic organisms, such as *Streptococcus pneumoniae*, groups A, B, C and G streptococci, nonenterococcal group D streptococci, viridans group streptococci, and non-penicillinase producing staphylococcus."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Penicillin g is a Penicillin-class Antibacterial."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "benzylpenicillin has been reported in Sarocladium strictum, Hohenbuehelia grisea, and other organisms with data available."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin",
+      "origin": "Wikipedia",
+      "text": "Benzylpenicillin, also known as penicillin G (PenG) or BENPEN, is an antibiotic used to treat a number of bacterial infections. This includes pneumonia, strep throat, syphilis, necrotizing enterocolitis, diphtheria, gas gangrene, leptospirosis, cellulitis, and tetanus. It is not a first-line agent for pneumococcal meningitis. Due to benzylpenicillin's limited bioavailability for oral medications, it is generally taken as an injection in the form of a sodium, potassium, benzathine, or procaine salt. Benzylpenicillin is given by injection into a vein or muscle. Two long-acting forms benzathine benzylpenicillin and procaine benzylpenicillin are available for use by injection into a muscle only."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin",
+      "origin": "Wikipedia",
+      "text": "Side effects include diarrhea, seizures, and allergic reactions including anaphylaxis. When used to treat syphilis or Lyme disease a reaction known as Jarisch–Herxheimer may occur. It is not recommended in those with a history of penicillin allergy. Use during pregnancy is generally safe in the penicillin and β-lactam class of medications."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin",
+      "origin": "Wikipedia",
+      "text": "Benzylpenicillin is on the World Health Organization's List of Essential Medicines."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "As an antibiotic, benzylpenicillin is noted to possess effectiveness mainly against gram-positive organisms. Some gram-negative organisms such as Neisseria gonorrhoeae and Leptospira weilii are also reported to be susceptible to benzylpenicillin."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Adverse effects can include hypersensitivity reactions including urticaria, fever, joint pains, rashes, angioedema, anaphylaxis and serum sickness-like reaction. Rarely, central nervous system toxicity, including convulsions (especially with high doses or in severe renal impairment), interstitial nephritis, haemolytic anaemia, leucopenia, thrombocytopenia, and coagulation disorders can occur. Furthermore, cases of diarrhoea (including antibiotic-associated colitis) have been reported. Benzylpenicillin has relatively low toxicity, except for in the nervous system, in which it is one of the most active drugs among β-lactam agents."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Benzylpenicillin serum concentrations can be monitored either by traditional microbiological assay or by more modern chromatographic techniques. Such measurements can be useful to avoid central nervous system toxicity in any person receiving large doses of the drug on a chronic basis, but they are especially relevant to patients with kidney failure, who may accumulate the drug due to reduced urinary excretion rates."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Synonyms",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin#Synonyms",
+      "origin": "Wikipedia",
+      "text": "Penicillin II (old UK nomenclature for naming penicillins)"
+    },
+    {
+      "id": "s13",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg; approx.) in Germany (2009): >2500 Use (kg; exact) in Germany (2009): 4519 Consumption (g per capita; approx.) in Germany (2009): 0.0305 Consumption (g per capita; exact) in Germany (2009): 0.0552 Excretion rate: 1 Calculated removal (%): 22.6"
+    },
+    {
+      "id": "s14",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Uses",
+      "origin": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+      "text": "Veterinary Drug -> ANTIMICROBIAL_AGENT -> JECFA Functional Classes"
+    },
+    {
+      "id": "s15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Pharmaceuticals -> Animal Drugs -> Approved in Taiwan"
+    },
+    {
+      "id": "s16",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Irritant, Health Hazard, Environmental Hazard. H317 (100%): May cause an allergic skin reaction [Warning Sensitization, Skin] H334 (48%): May cause allergy or asthma symptoms or breathing difficulties if inhaled [Danger Sensitization, respiratory] H400 (46.7%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H412 (46.7%): Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

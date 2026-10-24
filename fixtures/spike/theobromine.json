@@ -1,0 +1,182 @@
+{
+  "molecule": "theobromine",
+  "cid": 5429,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Theobromine is an odorless white crystalline powder. Bitter taste. pH (saturated solution in water): 5.5-7. (NTP, 1992)"
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Theobromine is a dimethylxanthine having the two methyl groups located at positions 3 and 7. A purine alkaloid derived from the cacao plant, it is found in chocolate, as well as in a number of other foods, and is a vasodilator, diuretic and heart stimulator. It has a role as a bronchodilator agent, a vasodilator agent, an adenosine receptor antagonist, a mouse metabolite, a plant metabolite, a food component and a human blood serum metabolite."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Theobromine (3,7-dimethylxanthine) is the principle alkaloid in Theobroma cacao (the cacao bean) and other plants. A xanthine alkaloid that is used as a bronchodilator and as a vasodilator. It has a weaker diuretic activity than theophylline and is also a less powerful stimulant of smooth muscle. It has practically no stimulant effect on the central nervous system. It was formerly used as a diuretic and in the treatment of angina pectoris and hypertension. (From Martindale, The Extra Pharmacopoeia, 30th ed, pp1318-9)"
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "theobromine has been reported in Camellia sinensis, Ilex perado, and other organisms with data available."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "3,7-Dimethylxanthine. The principle alkaloid in Theobroma cacao (the cacao bean) and other plants. A xanthine alkaloid that is used as a bronchodilator and as a vasodilator. It has a weaker diuretic activity than THEOPHYLLINE and is also a less powerful stimulant of smooth muscle. It has practically no stimulant effect on the central nervous system. It was formerly used as a diuretic and in the treatment of angina pectoris and hypertension. (From Martindale, The Extra Pharmacopoeia, 30th ed, pp1318-9)"
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Theobromine",
+      "origin": "Wikipedia",
+      "text": "Theobromine, also known as xantheose, is the principal alkaloid of Theobroma cacao (cacao plant). Theobromine is slightly water-soluble (330 mg/L) with a bitter taste. In industry, theobromine is used as an additive and precursor to some cosmetics. It is found in chocolate and several other foods, including tea (Camellia sinensis), some American hollies (yaupon and guayusa) and the kola nut. It is a white or colourless solid, but commercial samples can appear yellowish."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Theobromine",
+      "origin": "Wikipedia",
+      "text": "Theobromine, a metabolite of caffeine, is processed in the liver into xanthine and methyluric acid, peaks in the blood 2–3 hours after ingestion due to its fat solubility, and primarily acts by inhibiting adenosine receptors with minor phosphodiesterase inhibition. It is a mild heart stimulant and bronchodilator in humans with limited central nervous system effects. It can be toxic or fatal to animals like dogs and cats due to their slower metabolism of the compound."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#History",
+      "origin": "Wikipedia",
+      "text": "Theobromine was discovered in 1841 in cacao beans by the chemist A. Woskresensky. Synthesis of theobromine from xanthine was first reported in 1882 by Hermann Emil Fischer."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Structure",
+      "origin": "Wikipedia",
+      "text": "Theobromine is a flat molecule, a derivative of purine and an isomer of theophylline. It is also classified as a dimethyl xanthine. Related compounds include theophylline, caffeine, paraxanthine, and 7-methylxanthine, each of which differ in the number or placement of the methyl groups."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Etymology",
+      "origin": "Wikipedia",
+      "text": "Theobromine is derived from Theobroma, the name of the genus of the cacao tree, with the suffix -ine given to alkaloids and other basic nitrogen-containing compounds. That name in turn is made up of the Greek roots theo (\"god\") and broma (\"food\"), meaning \"food of the gods\"."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Etymology",
+      "origin": "Wikipedia",
+      "text": "Despite its name, the compound contains no bromine, which is based on Greek bromos (\"stench\")."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Even without dietary intake, theobromine may occur in the body as it is a product of the human metabolism of caffeine, which is metabolised in the liver into 12% theobromine, 4% theophylline, and 84% paraxanthine."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "In the liver, theobromine is metabolized into xanthine and subsequently into methyluric acid. Important enzymes include CYP1A2 and CYP2E1. The elimination half life of theobromine is between 6 and 8 hours."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Effects",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Effects",
+      "origin": "Wikipedia",
+      "text": "Theobromine is a heart stimulator and diuretic but has no significant stimulant effect on the human central nervous system. It is a bronchodilator and causes relaxation of vascular smooth muscle. It is available as a prescription drug in South Korea. The amount of theobromine found in chocolate is small enough that chocolate can, in general, be safely consumed by humans."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Effects",
+      "url": "https://en.wikipedia.org/wiki/Theobromine#Effects",
+      "origin": "Wikipedia",
+      "text": "Compared with caffeine, theobromine is weaker in both its inhibition of cyclic nucleotide phosphodiesterases and its antagonism of adenosine receptors. The potential phosphodiesterase inhibitory effect of theobromine is seen only at amounts much higher than what people normally would consume in a typical diet including chocolate."
+    },
+    {
+      "id": "s16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Theobromine is used principally to make caffeine. Formerly, theobromine and its derivatives were used in diuretics, myocardial stimulants, vasodilators and smooth muscle relaxants. Theobromine salts (calcium salicylate, sodium salicylate and sodium acetate) were used previously to dilate coronary arteries at doses of 300 to 600 mg per day. There is no current therapeutic use of theobromine."
+    },
+    {
+      "id": "s17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Reported uses (ppm): Table: Reported uses (ppm): (Flavor and Extract Manufacturers' Association, 1994) [Table#6920]"
+    },
+    {
+      "id": "s18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg; approx.) in Germany (2009): >10 Consumption (g per capita; approx.) in Germany (2009): 0.000122 Calculated removal (%): 75.1"
+    },
+    {
+      "id": "s19",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Theobromine is the principal alkaloid of the cacao bean(1). It also occurs in tea and cola nuts and is a purine base closely related to caffeine(2)."
+    },
+    {
+      "id": "s20",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "s21",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Theobromine is a white powder. It is an alkaloid found in cocoa and chocolate products. Theobromine is used principally to make caffeine . Formerly, theobromine and its derivatives were used in diuretics, myocardial stimulants, vasodilators and smooth muscle relaxants. Theobromine salts (calcium salicylate, sodium salicylate and sodium acetate) were used previously to dilate coronary arteries at doses of 300 to 600 mg per day. There is no current therapeutic use of theobromine."
+    },
+    {
+      "id": "s22",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant, Health Hazard. H302 (98.6%): Harmful if swallowed [Warning Acute toxicity, oral] H319 (47.7%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] H351 (28.5%): Suspected of causing cancer [Warning Carcinogenicity]"
+    }
+  ]
+}

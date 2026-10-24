@@ -1,0 +1,86 @@
+{
+  "molecule": "geosmin",
+  "cid": 29746,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29746#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "(-)-geosmin is the-stereoisomer of geosmin, having 4S,4aS,8aR configuration. It is an enantiomer of a (+)-geosmin."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29746#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "geosmin has been reported in Basella alba, Streptomyces, and other organisms with data available."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29746#section=Record-Description",
+      "origin": "Yeast Metabolome Database (YMDB)",
+      "text": "Geosmin is a metabolite found in or produced by Saccharomyces cerevisiae."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29746#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "earthy smelling cpd from sediment in Lake Biwa; structure"
+    },
+    {
+      "id": "s5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Geosmin",
+      "origin": "Wikipedia",
+      "text": "Geosmin ( jee-OZ-min) is a chemical with a distinct earthy or musty odor. It is easily smelled by most people, having a very low odor detection threshold, ranging from 0.006 to 0.01 micrograms per liter in water. Geosmin is responsible for the earthy taste of beetroots and a contributor to the strong scent, known as petrichor, that occurs when rain falls after a spell of dry weather or when soil is disturbed. It is produced by bacteria, especially cyanobacteria, often present in soil and water supplies. Geosmin, along with 2-methylisoborneol, are the major biological causes of muddy odor and flavor in drinking water worldwide and in farmed fish."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Geosmin",
+      "origin": "Wikipedia",
+      "text": "Geosmin is an irregular sesquiterpenoid. It is a bicyclic alcohol with formula C12H22O, a derivative of decalin. It is produced from the universal sesquiterpene precursor farnesyl pyrophosphate (also known as farnesyl diphosphate), in a two-step Mg2+-dependent reaction. Its name is derived from the Ancient Greek words geō- (γεω-), meaning \"earth\", and osmḗ (ὀσμή), meaning \"smell\". The word was coined in 1965 by the American biochemist Nancy N. Gerber (1929–1985) and the French-American biologist Hubert A. Lechevalier (1926–2015)."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Effects",
+      "url": "https://en.wikipedia.org/wiki/Geosmin#Effects",
+      "origin": "Wikipedia",
+      "text": "The human olfactory system is extremely sensitive to geosmin and is able to detect it at concentrations as low as anywhere from 400 parts per trillion to 5 parts per trillion. It is proposed that this extreme sensitivity to geosmin evolved in humans or their ancestors to aid them in their search for scarce water, but this is not conclusive. Similarly, many insects possess a sensitivity to geosmin such that it may act as an attractant, signaling the presence of microbial prey, or as a repellant, where its presence may coincide with that of toxin-producing microbes."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Effects",
+      "url": "https://en.wikipedia.org/wiki/Geosmin#Effects",
+      "origin": "Wikipedia",
+      "text": "Geosmin is responsible for the muddy smell in many commercially important freshwater fish such as carp, catfish, and tilapia. Geosmin and another terpenoid compound 2-methylisoborneol, which is produced in similar circumstances, concentrate in the fatty skin and dark muscle tissues. Geosmin breaks down in acidic conditions; hence, vinegar and other acidic ingredients are used in fish recipes to reduce the muddy flavor. Taste and odor compounds including geosmin lead to an unpleasant taste of drinking water, which is perceived by consumers as an indication of poor water quality. Despite its negative effects on the taste and odor of fish and drinking water, geosmin is nontoxic to humans."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "Geosmin remediation in drinking water",
+      "url": "https://en.wikipedia.org/wiki/Geosmin#Geosmin_remediation_in_drinking_water",
+      "origin": "Wikipedia",
+      "text": "Geosmin cannot be removed from water using standard treatment processes, requiring a combination of integrated solutions which may not be available to all municipal water suppliers. Possible advanced oxidation methods include photocatalysis, ozonation, and ultrasonication. Activated carbon filters may be able to help somewhat, but few studies have been completed to address this issue."
+    },
+    {
+      "id": "s10",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29746#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. H302 (100%): Harmful if swallowed [Warning Acute toxicity, oral]"
+    }
+  ]
+}

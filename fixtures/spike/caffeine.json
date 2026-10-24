@@ -1,0 +1,270 @@
+{
+  "molecule": "caffeine",
+  "cid": 2519,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Caffeine appears as odorless white powder or white glistening needles, usually melted together. Bitter taste. Solutions in water are neutral to litmus. Odorless. (NTP, 1992)"
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Caffeine is a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee. It has a role as a geroprotector, a mutagen, a central nervous system stimulant, a psychotropic drug, a diuretic, a xenobiotic, an EC 3.1.4.* (phosphoric diester hydrolase) inhibitor, an EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor, an adenosine A2A receptor antagonist, an adjuvant, a food additive, a ryanodine receptor agonist, an adenosine receptor antagonist, a mouse metabolite, a plant metabolite, a fungal metabolite, an environmental contaminant and a human blood serum metabolite."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Caffeine is a drug of the methylxanthine class used for a variety of purposes, including certain respiratory conditions of the premature newborn, pain relief, and to combat drowsiness. Caffeine is similar in chemical structure to [Theophylline] and [Theobromine]. It can be sourced from coffee beans, but also occurs naturally in various teas and cacao beans, which are different than coffee beans. Caffeine is also used in a variety of cosmetic products and can be administered topically, orally, by inhalation, or by injection. The caffeine citrate injection, used for apnea of the premature newborn, was initially approved by the FDA in 1999."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Caffeine is a Central Nervous System Stimulant and Methylxanthine. The physiologic effect of caffeine is by means of Central Nervous System Stimulation."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description",
+      "origin": "LiverTox",
+      "text": "Caffeine is xanthine alkaloid that occurs naturally in seeds, leaves and fruit of several plants and trees that acts as a natural pesticide. Caffeine is a major component of coffee, tea and chocolate and in humans acts as a central nervous system (CNS) stimulant. Consumption of caffeine, even in high doses, has not been associated with elevations in serum enzyme elevations or instances of clinically apparent liver injury."
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Caffeine",
+      "origin": "Wikipedia",
+      "text": "Caffeine is a central nervous system (CNS) stimulant of the methylxanthine class and is the most commonly consumed psychoactive drug globally. It is mainly used for its eugeroic (wakefulness promoting), ergogenic (physical performance-enhancing), or nootropic (cognitive-enhancing) properties (particularly in workplace settings); it is also used recreationally, often in social settings. Caffeine acts by blocking the binding of adenosine at a number of adenosine receptor types, inhibiting the centrally depressant effects of adenosine and enhancing the release of acetylcholine."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Caffeine",
+      "origin": "Wikipedia",
+      "text": "Caffeine is a bitter, white crystalline purine, a methylxanthine alkaloid, and is chemically related to the adenine and guanine bases of deoxyribonucleic acid (DNA) and ribonucleic acid (RNA). It is found in the seeds, fruits, nuts, or leaves of a number of plants native to Africa, East Asia, and South America and helps to protect them against herbivores and from competition by preventing the germination of nearby seeds, as well as encouraging consumption by select animals such as honey bees. The most common sources of caffeine for human consumption are the tea leaves of the Camellia sinensis plant and the coffee bean, the seed of the Coffea plant."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Caffeine",
+      "origin": "Wikipedia",
+      "text": "Caffeine has both positive and negative health effects. It can treat and prevent the premature infant breathing disorders bronchopulmonary dysplasia of prematurity and apnea of prematurity. Caffeine citrate is on the WHO Model List of Essential Medicines. It may confer a modest protective effect against some diseases, including Parkinson's disease. Caffeine can acutely improve reaction time and accuracy for cognitive tasks. Some people experience sleep disruption or anxiety if they consume caffeine, but others show little disturbance."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#History",
+      "origin": "Wikipedia",
+      "text": "Kola nut use appears to have ancient origins. It is chewed in many West African cultures, in both private and social settings, to restore vitality and ease hunger pangs."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#History",
+      "origin": "Wikipedia",
+      "text": "The earliest evidence of cocoa bean use comes from residue found in an ancient Mayan pot dated to 600 BCE. Also, chocolate was consumed in a bitter and spicy drink called xocolatl, often seasoned with vanilla, chile pepper, and achiote. Xocolatl was believed to fight fatigue, a belief probably attributable to the theobromine and caffeine content. Chocolate was an important luxury good throughout pre-Columbian Mesoamerica, and cocoa beans were often used as currency."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#History",
+      "origin": "Wikipedia",
+      "text": "Xocolatl was introduced to Europe by the Spaniards, and became a popular beverage by 1700. The Spaniards also introduced the cacao tree into the West Indies and the Philippines."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#History",
+      "origin": "Wikipedia",
+      "text": "The leaves and stems of the yaupon holly (Ilex vomitoria) were used by Native Americans to brew a tea called asi or the \"black drink\". Archaeologists have found evidence of this use far into antiquity, possibly dating to Late Archaic times."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Uses",
+      "origin": "Wikipedia",
+      "text": "Caffeine is used for both prevention and treatment of bronchopulmonary dysplasia in premature infants. It may improve weight gain during therapy and reduce the incidence of cerebral palsy as well as reduce language and cognitive delay. On the other hand, subtle long-term side effects are possible."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Uses",
+      "origin": "Wikipedia",
+      "text": "Caffeine is used as a primary treatment for apnea of prematurity, but not prevention. It is also used for orthostatic hypotension treatment."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Caffeine in coffee and other caffeinated drinks can affect gastrointestinal motility and gastric acid secretion. In postmenopausal women, high caffeine consumption can accelerate bone loss. Caffeine, alongside other factors such as stress and fatigue, can also increase the pressure in various muscles, including the eyelids."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Acute ingestion of caffeine in large doses (at least 250–300 mg, equivalent to the amount found in 2–3 cups of coffee or 5–8 cups of tea) results in a short-term stimulation of urine output in individuals who have been deprived of caffeine for a period of days or weeks. This increase is due to both a diuresis (increase in water excretion) and a natriuresis (increase in saline excretion); it is mediated via proximal tubular adenosine receptor blockade. The acute increase in urinary output may increase the risk of dehydration. However, chronic users of caffeine develop a tolerance to this effect and experience no increase in urinary output."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Overdose",
+      "origin": "Wikipedia",
+      "text": "Consumption of 1–1.5 grams (1,000–1,500 mg) per day is associated with a condition known as caffeinism. Caffeinism usually combines caffeine dependency with a wide range of unpleasant symptoms including nervousness, irritability, restlessness, insomnia, headaches, and palpitations after caffeine use."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Overdose",
+      "origin": "Wikipedia",
+      "text": "Caffeine overdose can result in a state of central nervous system overstimulation known as caffeine intoxication, a clinically significant temporary condition that develops during, or shortly after, the consumption of caffeine. This syndrome typically occurs only after ingestion of large amounts of caffeine, well over the amounts found in typical caffeinated beverages and caffeine tablets (e.g., more than 400–500 mg at a time)."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Interactions",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Interactions",
+      "origin": "Wikipedia",
+      "text": "Caffeine is a substrate for CYP1A2, and interacts with many substances through this and other mechanisms."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Interactions",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Interactions",
+      "origin": "Wikipedia",
+      "text": "According to DSST, alcohol causes a decrease in performance on their standardized tests, and caffeine causes a significant improvement. When alcohol and caffeine are consumed jointly, the effects of the caffeine are changed, but the alcohol effects remain the same. For example, consuming additional caffeine does not reduce the effect of alcohol. However, the jitteriness and alertness given by caffeine is decreased when additional alcohol is consumed. Alcohol consumption alone reduces both inhibitory and activational aspects of behavioral control."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "In the absence of caffeine and when a person is awake and alert, little adenosine is present in CNS neurons. With a continued wakeful state, over time adenosine accumulates in the neuronal synapse, in turn binding to and activating adenosine receptors found on certain CNS neurons; when activated, these receptors produce a cellular response that ultimately increases drowsiness. When caffeine is consumed, it antagonizes adenosine receptors; in other words, caffeine prevents adenosine from activating the receptor by blocking the location on the receptor where adenosine binds to it. As a result, caffeine temporarily prevents or relieves drowsiness, and thus maintains or restores alertness."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Caffeine is an antagonist of adenosine A2A receptors, and knockout mouse studies have specifically implicated antagonism of the A2A receptor as responsible for the wakefulness-promoting effects of caffeine. Antagonism of A2A receptors in the ventrolateral preoptic area (VLPO) reduces inhibitory GABA neurotransmission to the tuberomammillary nucleus, a histaminergic projection nucleus that activation-dependently promotes arousal. This disinhibition of the tuberomammillary nucleus is the downstream mechanism by which caffeine produces wakefulness-promoting effects. Caffeine is an antagonist of all four adenosine receptor subtypes (A1, A2A, A2B, and A3), although with varying potencies."
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Pure anhydrous caffeine is a bitter-tasting, white, odorless powder with a melting point of 235–238 °C. Caffeine is moderately soluble in water at room temperature (2 g/100 mL), but quickly soluble in boiling water (66 g/100 mL). It is also moderately soluble in ethanol (1.5 g/100 mL). It is weakly basic (pKa of conjugate acid = ~0.6), requiring a strong acid to protonate it. Caffeine does not contain any stereogenic centers and hence is classified as an achiral molecule."
+    },
+    {
+      "id": "s24",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "The xanthine core of caffeine contains two fused rings, a pyrimidinedione and imidazole. The pyrimidinedione in turn contains two amide functional groups that exist predominantly in a zwitterionic resonance the location from which the nitrogen atoms are double bonded to their adjacent amide carbons atoms. Hence all six of the atoms within the pyrimidinedione ring system are sp2 hybridized and planar. The imidazole ring also has a resonance. Therefore, the fused 5,6-ring core of caffeine contains a total of ten pi electrons and hence according to Hückel's rule is aromatic."
+    },
+    {
+      "id": "s25",
+      "source": "wikipedia",
+      "section": "Natural occurrence",
+      "url": "https://en.wikipedia.org/wiki/Caffeine#Natural_occurrence",
+      "origin": "Wikipedia",
+      "text": "Around thirty plant species are known to contain caffeine. Common sources are the \"beans\" (seeds) of the two cultivated coffee plants, Coffea arabica and Coffea canephora (the quantity varies, but 1.3% is a typical value); and of the cocoa plant, Theobroma cacao; the leaves of the tea plant; and kola nuts. Other sources include the leaves of yaupon holly, South American holly yerba mate, and Amazonian holly guayusa; and seeds from Amazonian maple guarana berries. Temperate climates around the world have produced unrelated caffeine-containing plants."
+    },
+    {
+      "id": "s26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Occurs naturally in tea leaves, coffee beans, cocoa beans, mate leaves, guarana paste, and kola nuts; [Merck Index] Used in beverages, cardiac and respiratory stimulants, and diuretics; [HSDB] Also used in cosmetics; [eChemPortal: SIDSUNEP]"
+    },
+    {
+      "id": "s27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For caffeine (USEPA/OPP Pesticide Code: 000660) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "s28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Caffeine is a substance in wide use. It is predominantly used in the food sector and pharma sector (80% and 16% rspectively). A smaller part is used in cosmetics (3%) or in technical applications (1%). Furthermore caffeine is a naturally occurring substance in various plant species (e.g. 0.9 to 2.6% in green coffee beans). It is a component in coffee, tea and cocoa."
+    },
+    {
+      "id": "s29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Stimulant for central nervous and respiratory systems; cardiac and respiratory stimulant; diuretic"
+    },
+    {
+      "id": "s30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Caffeine is a naturally occurring alkaloid commonly found in tea leaves, coffee beans, cocoa beans, mate leaves, guarana paste and kola nuts(1)."
+    },
+    {
+      "id": "s31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "s32",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Signs and Symptoms of Overdose Caffeine consumption is generally regarded as safe. Additive caffeine in most substances does not necessitate FDA approval as long as consumption remains within safe levels stipulated by the statute. A typical dose of caffeine is around 70 to 100 mg per drink. While there is no recommended daily allowance for caffeine, doses of up to 400 mg/d are deemed safe. The exact LD50 for humans varies and largely depends on individual sensitivity to caffeine. However, the estimated LD50 is between 150 and 200 mg/kg. Case reports indicate that doses as low as 57 mg/kg have resulted in fatalities."
+    },
+    {
+      "id": "s33",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Warning. Pictograms: Irritant. H302: Harmful if swallowed [Warning Acute toxicity, oral]"
+    }
+  ]
+}

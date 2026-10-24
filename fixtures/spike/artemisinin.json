@@ -1,0 +1,206 @@
+{
+  "molecule": "artemisinin",
+  "cid": 68827,
+  "snippets": [
+    {
+      "id": "s1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "(+)-artemisinin is a sesquiterpene lactone obtained from sweet wormwood, Artemisia annua, which is used as an antimalarial for the treatment of multi-drug resistant strains of falciparum malaria. It has a role as an antimalarial and a plant metabolite. It is an organic peroxide and a sesquiterpene lactone."
+    },
+    {
+      "id": "s2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Artemisinin has been used in trials studying the treatment of Schizophrenia, Malaria, Falciparum, and Plasmodium Falciparum."
+    },
+    {
+      "id": "s3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "artemisinin has been reported in Artemisia lancea, Artemisia annua, and other organisms with data available."
+    },
+    {
+      "id": "s4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "A 2023 review notes that Artemisinin can be isolated from Artemisia annua, also known as sweet wormwood, sweet annie, sweet sagewort, and annual wormwood (Chinese: qngho). It has been used to treat various conditions, e.g. malaria, cancer, viral and bacterial infections, and some cardiovasculreviear diseases."
+    },
+    {
+      "id": "s5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "antimalarial from Chinese medicinal herb Artemisia annua"
+    },
+    {
+      "id": "s6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin",
+      "origin": "Wikipedia",
+      "text": "Artemisinin and its semisynthetic derivatives are a group of drugs used in the treatment of malaria due to Plasmodium falciparum. It was discovered in 1972 by Tu Youyou, who shared the 2015 Nobel Prize in Physiology or Medicine for her discovery. Artemisinin-based combination therapies (ACTs) have become standard treatment worldwide for P. falciparum malaria as well as malaria due to other species of Plasmodium. Artemisinin can be extracted from the herb Artemisia annua (sweet wormwood), which is used in traditional Chinese medicine."
+    },
+    {
+      "id": "s7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin",
+      "origin": "Wikipedia",
+      "text": "Artemisinin and its derivatives are all sesquiterpene lactones containing an unusual peroxide bridge. This endoperoxide 1,2,4-trioxane ring is responsible for their antimalarial properties. Few other natural compounds with such a peroxide bridge are known."
+    },
+    {
+      "id": "s8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin",
+      "origin": "Wikipedia",
+      "text": "Artemisinin and its derivatives have been used for the treatment of malarial and parasitic worm (helminth) infections. Advantages of such treatments over other anti-parasitics include faster parasite elimination and broader efficacy across the parasite life-cycle; disadvantages include their low bioavailability, poor pharmacokinetic properties, and high cost. Moreover, use of the drug by itself as a monotherapy is explicitly discouraged by the World Health Organization, as there have been signs that malarial parasites are developing resistance to the drug."
+    },
+    {
+      "id": "s9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#History",
+      "origin": "Wikipedia",
+      "text": "Artemisinin is an antimalarial lactone derived from Artemisia annua or sweet wormwood. In 1596, Li Shizhen recommended tea made from 'sweet wormwood specifically to treat malaria symptoms in his Compendium of Materia Medica. The genus name is derived from the Greek goddess Artemis and, more specifically, may have been named after Queen Artemisia II of Caria, a botanist and medical researcher in the fourth century BC."
+    },
+    {
+      "id": "s10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#History",
+      "origin": "Wikipedia",
+      "text": "Artemisia annua is a common herb found in many parts of the world. In 1967, a plant screening research program, under a secret military program code-named \"Project 523\", was set up by the People's Liberation Army to find an adequate treatment for malaria; the program and early clinical work were ordered by Mao Zedong at the request of North Vietnamese leaders to provide assistance for their malaria-ridden army. In the course of this research in 1972, Tu Youyou discovered artemisinin in the leaves of Artemisia annua."
+    },
+    {
+      "id": "s11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#History",
+      "origin": "Wikipedia",
+      "text": "Named qinghaosu (Chinese: 青蒿素; lit. 'compound of green-blue wormwood'), it was one of many candidates tested as possible treatments for malaria by Chinese scientists, from a list of nearly 2,000 traditional Chinese medicines. Tu Youyou also discovered that a low-temperature extraction process could be used to isolate an effective antimalarial substance from the plant. Tu says she was influenced by a traditional Chinese herbal medicine source The Handbook of Prescriptions for Emergency Treatments written in 340 CE by Ge Hong saying that this herb should be steeped in cold water."
+    },
+    {
+      "id": "s12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#History",
+      "origin": "Wikipedia",
+      "text": "Tu's team subsequently isolated an extract. Results were published in the Chinese Medical Journal in 1979. The extracted substance, once subject to purification, proved to be a useful starting point to obtain purified artemisinin. A 2012 review reported that artemisinin-based therapies were the most effective drugs for treatment of malaria at that time; it was also reported to clear malaria parasites from patients' bodies faster than other drugs. In addition to artemisinin, Project 523 developed a number of products that can be used in combination with artemisinin, including lumefantrine, piperaquine, and pyronaridine."
+    },
+    {
+      "id": "s13",
+      "source": "wikipedia",
+      "section": "Medical use",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Medical_use",
+      "origin": "Wikipedia",
+      "text": "The World Health Organization (WHO) recommends artemisinin or one of its derivatives ― typically in combination with a longer-lasting partner drug ― as frontline therapy for all cases of malaria. For uncomplicated malaria, the WHO recommends three days of oral treatment with any of five artemisinin-based combination therapies (ACTs): artemether/lumefantrine, artesunate/amodiaquine (ASAQ), artesunate/mefloquine, dihydroartemisinin/piperaquine, or artesunate/sulfadoxine/pyrimethamine. In each of these combinations, the artemisinin derivative rapidly kills the parasites, but is itself rapidly cleared from the body."
+    },
+    {
+      "id": "s14",
+      "source": "wikipedia",
+      "section": "Medical use",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Medical_use",
+      "origin": "Wikipedia",
+      "text": "For severe malaria, the WHO recommends intravenous or intramuscular treatment with the artemisinin derivative artesunate for at least 24 hours. Artesunate treatment is continued until the treated person is well enough to take oral medication. They are then given a three-day course of an ACT, for uncomplicated malaria. Where artesunate is not available, the WHO recommends intramuscular injection of the less potent artemisinin derivative artemether. For children less than six years old, if injected artesunate is not available the WHO recommends rectal administration of artesunate, followed by referral to a facility with the resources for further care."
+    },
+    {
+      "id": "s15",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Artemisinins are generally well tolerated at the doses used to treat malaria. The side effects from the artemisinin class of medications are similar to the symptoms of malaria: nausea, vomiting, loss of appetite, and dizziness. Mild blood abnormalities have also been noted. A rare but serious adverse effect is allergic reaction. One case of significant liver inflammation has been reported in association with prolonged use of a relatively high-dose of artemisinin for an unclear reason (the patient did not have malaria). The drugs used in combination therapies can contribute to the adverse effects experienced by those undergoing treatment. Adverse effects in patients with acute P."
+    },
+    {
+      "id": "s16",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Chemistry",
+      "origin": "Wikipedia",
+      "text": "An unusual component of the artemisinin molecules is an endoperoxide 1,2,4-trioxane ring. This is the main antimalarial centre of the molecule. Modifications at carbon 10 (C10) position give rise to a variety of derivatives which are more powerful than the original compound. Because the physical properties of artemisinin itself, such as poor bioavailability, limit its effectiveness, semisynthetic derivatives of artemisinin have been developed. Derivatives of dihydroartemisinin were made since 1976. Artesunate, arteether, and artemether were first synthesized in 1986."
+    },
+    {
+      "id": "s17",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Artemisinin is poorly soluble in oils and water. Therefore, it is typically administered via the digestive tract, either by oral or rectal administration. Artesunate however can be administered via the intravenous and intramuscular, as well as the oral and rectal routes. A synthetic compound with a similar trioxolane structure (a ring containing three oxygen atoms) named RBx-11160 showed promise in in vitro testing. Phase II testing in patients with malaria was not as successful as hoped, but the manufacturer decided to start Phase III testing anyway."
+    },
+    {
+      "id": "s18",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "As of 2018, the exact mechanism of action of artemisinins has not been fully elucidated. Artemisinin itself is a prodrug of the biologically active dihydroartemisinin. This metabolite undergoes cleavage of its endoperoxide ring inside the erythrocytes. As the drug molecules come in contact with the haem (associated with the hemoglobin of the red blood cells), the iron(II) oxide breaks the endoperoxide ring. This process produces free radicals that in turn damage susceptible proteins, resulting in the death of the parasite. In 2016 artemisinin was shown to bind to a large number of targets suggesting that it acts in a promiscuous manner."
+    },
+    {
+      "id": "s19",
+      "source": "wikipedia",
+      "section": "Resistance",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Resistance",
+      "origin": "Wikipedia",
+      "text": "Clinical evidence for artemisinin drug resistance in southeast Asia was first reported in 2008, and was subsequently confirmed by a detailed study from western Cambodia. Resistance in neighbouring Thailand was reported in 2012, and in northern Cambodia, Vietnam and eastern Myanmar in 2014. Emerging resistance was reported in southern Laos, central Myanmar and northeastern Cambodia in 2014. The parasite's kelch gene on chromosome 13 appears to be a reliable molecular marker for clinical resistance in Southeast Asia."
+    },
+    {
+      "id": "s20",
+      "source": "wikipedia",
+      "section": "Resistance",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Resistance",
+      "origin": "Wikipedia",
+      "text": "In 2011, the WHO stated that resistance to the most effective antimalarial drug, artemisinin, could unravel national Indian malaria control programs, which have achieved significant progress in the last decade. WHO advocates the rational use of antimalarial drugs and acknowledges the crucial role of community health workers in reducing malaria in the region."
+    },
+    {
+      "id": "s21",
+      "source": "wikipedia",
+      "section": "Metabolism",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Metabolism",
+      "origin": "Wikipedia",
+      "text": "After ingestion or injection, artemisinin and its derivatives (arteether, artemether, and artesunate) are all rapidly converted in the bloodstream to dihydroartemisinin (DHA), which has 5–10 times greater antimalarial potency than artemisinin. DHA is eventually converted in the liver into metabolites such as deoxyartemisinin, deoxydihydroartemisinin, and 9,10-dihydrodeoxyartemisinin. These reactions are catalyzed by the enzymes CYP2A6, CYP3A4, and CYP3A5, which belong to the cytochrome P450 group present in the smooth endoplasmic reticulum."
+    },
+    {
+      "id": "s22",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Research",
+      "origin": "Wikipedia",
+      "text": "The WHO notes four additional ACTs that are in preliminary clinical trials or regionally used for which there is no evidence to recommend widespread use: artesunate/pyronaridine, arterolane-piperaquine, artemisinin-piperaquine base, and artemisinin/naphthoquine."
+    },
+    {
+      "id": "s23",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Artemisinin#Research",
+      "origin": "Wikipedia",
+      "text": "A serendipitous discovery was made in China in the early 1980s while searching for novel anthelmintics for schistosomiasis that artemisinin was effective against schistosomes, the human blood flukes, which are the second-most prevalent parasitic infections, after malaria. Artemisinin and its derivatives are all potent antihelmintics. Artemisinins were later found to possess a broad spectrum of activity against a wide range of trematodes, including Schistosoma japonicum, S. mansoni, S. haematobium, Clonorchis sinensis, Fasciola hepatica, and Opisthorchis viverrini."
+    },
+    {
+      "id": "s24",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Toxicity-Summary",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "A 2025 systematic review notes that although Artemisinin is generally regarded as being well-tolerated, ico-administration with other pharmacological agents should be carefully monitored. In animal-focused studies, Artemisinin led to neurotoxicity (affecting brain matter and nuclei), cardiotoxicity (slower heart rate and prolonged QTc interval), hematotoxicity (low counts of white blood cells and platelets), and genotoxicity, embryotoxicity, and nephrotoxicity."
+    },
+    {
+      "id": "s25",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Flammable, Environmental Hazard. H242 (91.7%): Heating may cause a fire [Danger Self-reactive substances and mixtures; Organic peroxides] H400 (88.9%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410 (91.7%): Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}
