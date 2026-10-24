@@ -7812,6 +7812,8 @@ dependencies = [
  "anyhow",
  "libproc",
  "mistralrs",
+ "serde",
+ "serde_json",
  "tokio",
 ]
 

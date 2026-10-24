@@ -23,7 +23,7 @@ Goal: pick the default model, and find out early whether small models write card
 
 - [x] **M0.1 Hello mistral.rs** — `valence-core` example that loads a GGUF (Q4_K_M) on Metal and streams tokens to stdout. Print load time, time to first token, tokens/s, peak memory. Results in [spike/m0-results.md](spike/m0-results.md).
 - [x] **M0.2 Spike fixtures** — `fixtures/spike/<molecule>.json` for 30 molecules, each snippet with `id`, `source`, `section`, `url`, `origin`, `text`. Mix famous (caffeine, capsaicin, aspirin) and obscure. Fetched with `scripts/fetch_spike_fixtures.py` instead of pasted by hand.
-- [ ] **M0.3 Card types and prompts v1** — `CardKind` enum (`where`, `origin`, `danger`, `weird`), one prompt template per kind, few-shot examples, JSON output format from the PRD.
+- [x] **M0.3 Card types and prompts v1** — `CardKind` enum (`where`, `origin`, `danger`, `weird`), one prompt template per kind, few-shot examples, JSON output format from the PRD. Plus a JSON schema per kind for constrained decoding (`Constraint::JsonSchema`), and `{"skip": true}` for Origin and Weird.
 - [ ] **M0.4 Validator v1** (production code, not throwaway) — parse JSON; sources non-empty and known; every number, year and proper name in `body` found in a cited snippet (normalized match); 2–4 sentences, under 80 words. Unit tests with good and bad cards.
 - [ ] **M0.5 Spike runner** — `cargo run --example spike -- --model <path>` generates all cards for all 30 fixtures, with retry-once-stricter, and writes a CSV/Markdown report: pass rate, latency, memory, plus the cards for hand review.
 - [ ] **M0.6 Bake-off** — run 2–3 current 3–4B instruct models (and one 7–8B for the "higher quality" setting). Score fun 1–5 by hand.
