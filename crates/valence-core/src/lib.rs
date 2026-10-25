@@ -3,4 +3,5 @@
 
 pub mod card;
 pub mod prompt;
+pub mod select;
 pub mod validate;

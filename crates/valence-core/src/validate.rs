@@ -91,7 +91,8 @@ impl fmt::Display for Rejection {
     }
 }
 
-/// Common words that start a sentence capitalized without being names.
+/// Common words that start a sentence capitalized without being names. Covers
+/// contractions and casual openers the system word list may lack.
 #[rustfmt::skip]
 const SENTENCE_STARTERS: &[&str] = &[
     "a", "about", "after", "all", "also", "although", "an", "and", "around", "as", "at", "because",
@@ -103,6 +104,10 @@ const SENTENCE_STARTERS: &[&str] = &[
     "these", "they", "this", "those", "though", "thanks", "to", "today", "turns", "under", "unlike",
     "we", "what", "when", "where", "which", "while", "who", "why", "with", "without", "yet", "you",
     "your",
+    // Seen in M0.5 ("Plus, ...", "Did you know ...") and their kin.
+    "plus", "did", "do", "does", "can", "could", "would", "will", "is", "are", "was", "were", "has",
+    "have", "had", "ever", "meet", "picture", "talk", "think", "guess", "wow", "well", "yes", "sure",
+    "first", "best", "fun", "chances", "spoiler",
 ];
 
 static NUMBER: LazyLock<Regex> =
@@ -143,10 +148,29 @@ fn numbers(text: &str) -> Vec<String> {
         .collect()
 }
 
-fn strip_possessive(word: &str) -> &str {
-    word.strip_suffix("'s")
-        .or_else(|| word.strip_suffix("’s"))
-        .unwrap_or(word)
+/// The word without a possessive or contraction: "Remsen's" → "Remsen", "It's" → "It".
+fn base_word(word: &str) -> &str {
+    word.split(['\'', '’']).next().unwrap_or(word)
+}
+
+/// Lowercase entries of the macOS system word list (public domain, always
+/// present on macOS): ordinary words. Names are listed capitalized there, so
+/// they stay out. Empty if the file is missing.
+static COMMON_WORDS: LazyLock<HashSet<String>> = LazyLock::new(|| {
+    std::fs::read_to_string("/usr/share/dict/words")
+        .map(|list| {
+            list.lines()
+                .filter(|w| w.chars().next().is_some_and(char::is_lowercase))
+                .map(str::to_string)
+                .collect()
+        })
+        .unwrap_or_default()
+});
+
+/// Whether a capitalized word opening a sentence is just an ordinary word.
+fn is_ordinary_starter(word: &str) -> bool {
+    let lower = base_word(word).to_lowercase();
+    SENTENCE_STARTERS.contains(&lower.as_str()) || COMMON_WORDS.contains(&lower)
 }
 
 /// Everything a card may draw on: snippet text plus the source labels the model sees.
@@ -162,7 +186,7 @@ impl Vocabulary {
         for s in snippets {
             for text in [s.text.as_str(), s.section.as_str(), s.origin.as_str()] {
                 for w in WORD.find_iter(text) {
-                    words.insert(strip_possessive(w.as_str()).to_lowercase());
+                    words.insert(base_word(w.as_str()).to_lowercase());
                 }
                 nums.extend(numbers(text));
             }
@@ -184,8 +208,15 @@ impl Vocabulary {
         }
     }
 
+    /// Case-insensitive, ignoring possessives and a plural "s" or "es".
     fn has_word(&self, word: &str) -> bool {
-        self.words.contains(&strip_possessive(word).to_lowercase())
+        let w = base_word(word).to_lowercase();
+        let singular = [w.strip_suffix("es"), w.strip_suffix('s')];
+        self.words.contains(&w)
+            || singular
+                .into_iter()
+                .flatten()
+                .any(|s| self.words.contains(s))
     }
 }
 
@@ -201,7 +232,7 @@ fn check_numbers_and_codes(text: &str, vocab: &Vocabulary, out: &mut Vec<Rejecti
         }
     }
     for w in WORD.find_iter(text) {
-        let w = strip_possessive(w.as_str());
+        let w = base_word(w.as_str());
         let has_digit = w.chars().any(|c| c.is_ascii_digit());
         let has_letter = w.chars().any(char::is_alphabetic);
         if !(has_digit && has_letter) {
@@ -236,13 +267,11 @@ fn check_names(body: &str, vocab: &Vocabulary, out: &mut Vec<Rejection>) {
         if !starts_upper || is_code {
             continue;
         }
-        if starter && SENTENCE_STARTERS.contains(&word.to_lowercase().as_str()) {
+        if starter && is_ordinary_starter(word) {
             continue;
         }
         if !vocab.has_word(word) {
-            out.push(Rejection::UnsupportedName(
-                strip_possessive(word).to_string(),
-            ));
+            out.push(Rejection::UnsupportedName(base_word(word).to_string()));
         }
     }
 }
@@ -518,18 +547,34 @@ mod tests {
         assert_eq!(check(&c), Ok(()));
     }
 
-    /// Known false rejection: without a dictionary, an uncommon word opening a
-    /// sentence looks like a name. The retry usually rewords it; M0.5 measures
-    /// how often this costs a card.
+    /// Ordinary words opening a sentence pass via the system word list, and
+    /// contractions and plurals match their base word (M0.5 false rejections).
     #[test]
-    fn known_false_reject_uncommon_sentence_starter() {
-        let err = check(&card(
+    fn ordinary_openers_contractions_and_plurals_pass() {
+        let c = card(
             "Hot",
-            "Capsaicin is an irritant for mammals. Pure capsaicin is the main active component of chili peppers.",
+            "Pure capsaicin is the main active component of chili peppers. It's an irritant for mammals. Beyond that, Capsicum seeds are dispersed predominantly by birds.",
+            &["s1", "s2"],
+        );
+        assert_eq!(check(&c), Ok(()));
+        let c = card(
+            "Hot",
+            "Capsaicin is an irritant for mammals. They're also in chili peppers, and Humans feel it.",
             &["s1"],
-        ))
-        .unwrap_err();
-        assert_eq!(err, vec![Rejection::UnsupportedName("Pure".into())]);
+        );
+        assert_eq!(check(&c), Ok(()));
+    }
+
+    /// Known gap: a name that is also an ordinary word passes when it opens a
+    /// sentence ("japan" is a lacquer in the word list).
+    #[test]
+    fn known_gap_name_that_is_also_a_word_opening_a_sentence() {
+        let c = card(
+            "Hot",
+            "Capsaicin is an irritant for mammals. Japan grows chili peppers.",
+            &["s1"],
+        );
+        assert_eq!(check(&c), Ok(()));
     }
 
     #[test]

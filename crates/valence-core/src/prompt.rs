@@ -35,7 +35,8 @@ const SKIP_RULE: &str =
 
 const RETRY_RULE: &str = "\
 Your previous answer was rejected. Write the card again, more carefully: \
-use only words, numbers and names that appear in the snippets you cite, and cite each one.";
+use only words, numbers and names that appear in the snippets you cite, cite each one, \
+and write 2 to 4 sentences.";
 
 struct Example {
     molecule: &'static str,
@@ -55,8 +56,8 @@ fn brief(kind: CardKind) -> &'static str {
         }
         CardKind::Danger => {
             "Card: Danger level. Explain the official GHS hazard statements in plain language \
-             for a curious adult. List no hazards beyond them, and never state doses, safe \
-             amounts or treatments."
+             for a curious adult. List no hazards beyond them. Describe, don't advise: no \
+             doses, safe amounts, treatments, or handling instructions."
         }
         CardKind::Weird => {
             "Card: Weird fact. The single most surprising detail in the snippets, the kind that \
@@ -143,9 +144,14 @@ fn write_task(out: &mut String, kind: CardKind, molecule: &str, snippets: &[(Str
 }
 
 /// Build the prompt for one card. Snippets are renumbered `s1..sN` in the
-/// order given; callers map ids back with the same order. Pass `retry` after a
-/// rejected attempt to get the stricter prompt.
-pub fn build(kind: CardKind, molecule: &str, snippets: &[&Snippet], retry: bool) -> Prompt {
+/// order given; callers map ids back with the same order. After a rejected
+/// attempt, pass `retry` with the validator's problems for the stricter prompt.
+pub fn build(
+    kind: CardKind,
+    molecule: &str,
+    snippets: &[&Snippet],
+    retry: Option<&[String]>,
+) -> Prompt {
     let ex = example(kind);
     let ex_snippets: Vec<_> = ex
         .snippets
@@ -161,8 +167,11 @@ pub fn build(kind: CardKind, molecule: &str, snippets: &[&Snippet], retry: bool)
     system.push_str("\n\nExample\n");
     write_task(&mut system, kind, ex.molecule, &ex_snippets);
     let _ = write!(system, "\n{}", ex.card);
-    if retry {
+    if let Some(problems) = retry {
         let _ = write!(system, "\n\n{RETRY_RULE}");
+        if !problems.is_empty() {
+            let _ = write!(system, " Problems found: {}.", problems.join("; "));
+        }
     }
 
     let snippets: Vec<_> = snippets
@@ -175,8 +184,10 @@ pub fn build(kind: CardKind, molecule: &str, snippets: &[&Snippet], retry: bool)
     Prompt { system, user }
 }
 
-/// JSON schema for the model's reply, for constrained decoding.
-pub fn output_schema(kind: CardKind) -> Value {
+/// JSON schema for the model's reply, for constrained decoding. Source ids are
+/// limited to the `snippet_count` snippets the prompt lists.
+pub fn output_schema(kind: CardKind, snippet_count: usize) -> Value {
+    let ids: Vec<_> = (1..=snippet_count).map(|n| format!("s{n}")).collect();
     let card = json!({
         "type": "object",
         "properties": {
@@ -184,7 +195,7 @@ pub fn output_schema(kind: CardKind) -> Value {
             "body": { "type": "string" },
             "sources": {
                 "type": "array",
-                "items": { "type": "string", "pattern": "^s[0-9]+$" },
+                "items": { "type": "string", "enum": ids },
                 "minItems": 1
             }
         },
@@ -223,7 +234,7 @@ mod tests {
     fn numbers_snippets_in_order() {
         let a = snippet("History", "First extracted in 1816.");
         let b = snippet("Natural function", "Birds do not feel it.");
-        let p = build(CardKind::Weird, "capsaicin", &[&a, &b], false);
+        let p = build(CardKind::Weird, "capsaicin", &[&a, &b], None);
         assert!(
             p.user
                 .contains("[s1] (Wikipedia, History) First extracted in 1816.")
@@ -240,25 +251,24 @@ mod tests {
     fn skip_and_retry_rules_only_where_they_apply() {
         let s = snippet("History", "First extracted in 1816.");
         assert!(
-            build(CardKind::Origin, "x", &[&s], false)
+            build(CardKind::Origin, "x", &[&s], None)
                 .system
                 .contains(SKIP_RULE)
         );
         assert!(
-            !build(CardKind::Danger, "x", &[&s], false)
+            !build(CardKind::Danger, "x", &[&s], None)
                 .system
                 .contains(SKIP_RULE)
         );
         assert!(
-            !build(CardKind::Where, "x", &[&s], false)
+            !build(CardKind::Where, "x", &[&s], None)
                 .system
                 .contains(RETRY_RULE)
         );
-        assert!(
-            build(CardKind::Where, "x", &[&s], true)
-                .system
-                .contains(RETRY_RULE)
-        );
+        let problems = ["body has 1 sentences, needs 2 to 4".to_string()];
+        let retry = build(CardKind::Where, "x", &[&s], Some(&problems)).system;
+        assert!(retry.contains(RETRY_RULE));
+        assert!(retry.ends_with("Problems found: body has 1 sentences, needs 2 to 4."));
     }
 
     #[test]
@@ -292,7 +302,12 @@ mod tests {
 
     #[test]
     fn schema_allows_skip_only_for_skippable_kinds() {
-        assert!(output_schema(CardKind::Weird).get("anyOf").is_some());
-        assert!(output_schema(CardKind::Danger).get("anyOf").is_none());
+        assert!(output_schema(CardKind::Weird, 3).get("anyOf").is_some());
+        let danger = output_schema(CardKind::Danger, 3);
+        assert!(danger.get("anyOf").is_none());
+        assert_eq!(
+            danger["properties"]["sources"]["items"]["enum"],
+            json!(["s1", "s2", "s3"])
+        );
     }
 }
