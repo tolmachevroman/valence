@@ -1,0 +1,108 @@
+{"molecule":"allicin","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Clean, calm restatement of three H-codes."}
+{"molecule":"allicin","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Faithful but flat; title leans on 'mainly in Japan'."}
+{"molecule":"allicin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Smell, antifeedant, alliinase all supported."}
+{"molecule":"allicin","kind":"weird","accuracy":"minor","issue":"'not just when it's eaten' and 'fleeting defender' are mild embellishments of 'chopped or crushed'","rule":"","fun":3,"note":"Duplicate title of where card."}
+{"molecule":"artemisinin","kind":"danger","accuracy":"unsupported","issue":"'officially rated highly flammable' - snippet says H242 'Heating may cause a fire', not highly flammable","rule":"exaggeration","fun":3,"note":"Misnames the hazard class."}
+{"molecule":"artemisinin","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Accurate Project 523 and cold-extraction story."}
+{"molecule":"artemisinin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Nobel and ACTs supported."}
+{"molecule":"artemisinin","kind":"weird","accuracy":"minor","issue":"'unique' and 'mysterious' ring vs snippet's 'unusual'","rule":"","fun":2,"note":"Jargon-heavy."}
+{"molecule":"ascorbic acid","kind":"danger","accuracy":"unsupported","issue":"'generally considered safe' not in snippet (only 1 company reports not classified); also 'always check the latest guidelines' is advice","rule":"exaggeration","fun":2,"note":"Overstates safety and adds advice."}
+{"molecule":"ascorbic acid","kind":"origin","accuracy":"minor","issue":"'saving countless lives' is added embellishment; Lind experiment was 1747, published 1753","rule":"","fun":3,"note":"Good scurvy story otherwise."}
+{"molecule":"ascorbic acid","kind":"where","accuracy":"minor","issue":"'found in ... some meats' - meat snippet is about use as preservative in meats","rule":"","fun":2,"note":"List-like."}
+{"molecule":"ascorbic acid","kind":"weird","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Accurate but not weird."}
+{"molecule":"aspirin","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Clear."}
+{"molecule":"aspirin","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Accurate timeline."}
+{"molecule":"aspirin","kind":"where","accuracy":"minor","issue":"'can help ... reduce the risk of certain cancers' firms up 'may decrease'","rule":"","fun":3,"note":""}
+{"molecule":"aspirin","kind":"weird","accuracy":"unsupported","issue":"'so NIOSH and OSHA set strict limits... to keep workers safe' invents causal link to explosion (OSHA limit was vacated); 'volatile nature' wrong","rule":"","fun":4,"note":"Great hook, wrong relationships."}
+{"molecule":"batrachotoxin","kind":"origin","accuracy":"minor","issue":"'In 1963 ... discovered' - 1963 is when properties were determined","rule":"","fun":2,"note":""}
+{"molecule":"batrachotoxin","kind":"where","accuracy":"unsupported","issue":"'Poison dart frogs and certain birds use batrachotoxin for hunting' - snippets say Choco people use it on darts","rule":"","fun":3,"note":"Wrong subject."}
+{"molecule":"batrachotoxin","kind":"weird","accuracy":"unsupported","issue":"'used in hunting darts by indigenous people in Colombia' merges darts (s8) with precolonial discovery (s11); hunting not in cited","rule":"","fun":3,"note":"'tiny amount' also inferred."}
+{"molecule":"benzylpenicillin","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Clear and calm."}
+{"molecule":"benzylpenicillin","kind":"where","accuracy":"unsupported","issue":"'Safe for pregnant women' overstates 'generally safe in the penicillin class'; 'always check allergies first!' is advice","rule":"exaggeration","fun":3,"note":"Playful tone otherwise."}
+{"molecule":"benzylpenicillin","kind":"weird","accuracy":"unsupported","issue":"'posing risks even for those without a history of penicillin allergy' is invented inference","rule":"","fun":2,"note":""}
+{"molecule":"buckminsterfullerene","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"buckminsterfullerene","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Omits the 'didn't realize' hook."}
+{"molecule":"buckminsterfullerene","kind":"where","accuracy":"unsupported","issue":"'found in ... space' and title 'in the cosmos' not in cited snippets","rule":"","fun":3,"note":""}
+{"molecule":"buckminsterfullerene","kind":"weird","accuracy":"minor","issue":"'stable icosahedron' - snippet says truncated icosahedron, 'stable' added; 'turned out' overstates 'debated'","rule":"","fun":3,"note":"Wordy."}
+{"molecule":"caffeine","kind":"danger","accuracy":"minor","issue":"'It's important to handle with care' not in snippet","rule":"advice","fun":2,"note":""}
+{"molecule":"caffeine","kind":"origin","accuracy":"unsupported","issue":"Mayan 600 BCE is cocoa use, not 'bitter chocolate with caffeine'; Spaniards brought xocolatl, not 'cacao to Europe by 1700'; kola caffeine not stated","rule":"","fun":3,"note":"Several merged facts."}
+{"molecule":"caffeine","kind":"weird","accuracy":"unsupported","issue":"'This ancient stimulant was even used as currency' - cocoa beans were currency, not caffeine; 600 BCE is cocoa residue, not xocolatl","rule":"","fun":3,"note":"Wrong subject."}
+{"molecule":"caffeine","kind":"where","accuracy":"unsupported","issue":"'kick in your soda' and 'energy drink' not in cited snippets","rule":"","fun":3,"note":""}
+{"molecule":"capsaicin","kind":"danger","accuracy":"minor","issue":"'rated as toxic if swallowed' picks 21.9% H301 over majority H302 harmful","rule":"","fun":3,"note":""}
+{"molecule":"capsaicin","kind":"origin","accuracy":"minor","issue":"'discovered its burning sensation' vs snippet 'stated that capsicol caused the burning feeling'","rule":"","fun":2,"note":""}
+{"molecule":"capsaicin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"capsaicin","kind":"weird","accuracy":"unsupported","issue":"'capsaicin ... evolved as an antifungal agent' stated as fact; snippet says 'may have evolved'","rule":"","fun":2,"note":"Ignores the better bird-dispersal fact."}
+{"molecule":"carvone","kind":"danger","accuracy":"minor","issue":"'important to handle it carefully to avoid skin sensitization' not in snippet","rule":"advice","fun":2,"note":""}
+{"molecule":"carvone","kind":"origin","accuracy":"minor","issue":"'first isolated as a pure compound in 1849' drops snippet's 'probably'","rule":"","fun":2,"note":"Name list."}
+{"molecule":"carvone","kind":"where","accuracy":"minor","issue":"'used for flavoring and in alternative medicine for ages' - millennia applies only to food","rule":"","fun":3,"note":""}
+{"molecule":"carvone","kind":"weird","accuracy":"minor","issue":"'mysterious origins' and 'complex history of ... chemical transformations' are vague overstatement; drops 'probably'","rule":"","fun":1,"note":"Rehash of origin card; not weird."}
+{"molecule":"cinnamaldehyde","kind":"danger","accuracy":"minor","issue":"'rated as an irritant, which means it might cause an allergic skin reaction' conflates pictogram and H317; adds 'handle it carefully'","rule":"advice","fun":2,"note":""}
+{"molecule":"cinnamaldehyde","kind":"where","accuracy":"unsupported","issue":"'your morning coffee' not in cited snippets (only beverages generally)","rule":"","fun":3,"note":""}
+{"molecule":"cinnamaldehyde","kind":"weird","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Insecticide, allergen, crop fungicide supported."}
+{"molecule":"cubane","kind":"where","accuracy":"unsupported","issue":"'useful for controlled energy storage and as a high-performance explosive' not in cited snippet","rule":"","fun":2,"note":""}
+{"molecule":"cubane","kind":"weird","accuracy":"minor","issue":"'energetically unfavorable' inferred from 'highly strained'","rule":"","fun":2,"note":"Misses Eaton 'impossible' hook."}
+{"molecule":"dopamine","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Title playful but fair."}
+{"molecule":"dopamine","kind":"origin","accuracy":"minor","issue":"'dopamine's ability to coat materials led to the discovery of polydopamine' inverts snippet (mussel research led to discovery of coating)","rule":"","fun":3,"note":""}
+{"molecule":"dopamine","kind":"where","accuracy":"unsupported","issue":"'signals what's important, guiding our actions' and regulating 'heartbeats' not in cited snippets","rule":"","fun":3,"note":""}
+{"molecule":"dopamine","kind":"weird","accuracy":"unsupported","issue":"'traces its origins back to bacteria' states a proposal as fact; snippet: 'It has been proposed'","rule":"","fun":4,"note":"Good hook, hedge dropped."}
+{"molecule":"ethylene","kind":"danger","accuracy":"minor","issue":"'should be kept away from flames and handled with care' not in snippet","rule":"advice","fun":3,"note":""}
+{"molecule":"ethylene","kind":"origin","accuracy":"unsupported","issue":"Title 'A gas from ancient Greece' and 'linked to' Delphi overstate 'some scholars think'; Priestley 'contributed to its synthesis knowledge' garbles s2","rule":"","fun":3,"note":""}
+{"molecule":"ethylene","kind":"where","accuracy":"unsupported","issue":"'bananas' and 'used in making plastics and as a refrigerant' not in cited snippets","rule":"","fun":3,"note":""}
+{"molecule":"ethylene","kind":"weird","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Misses record-production hook."}
+{"molecule":"geosmin","kind":"danger","accuracy":"unsupported","issue":"'can cause serious irritation if it comes into contact with your skin' - snippet only has H302","rule":"exaggeration","fun":2,"note":"Invented hazard."}
+{"molecule":"geosmin","kind":"where","accuracy":"minor","issue":"'responsible for ... the petrichor scent' overstates 'a contributor to'","rule":"","fun":3,"note":""}
+{"molecule":"geosmin","kind":"weird","accuracy":"unsupported","issue":"'This extreme sensitivity helps us find water' states an inconclusive proposal as fact; 'makes us dislike' fish inferred","rule":"","fun":4,"note":"Range phrased oddly ('as low as 400 to 5')."}
+{"molecule":"indigo","kind":"danger","accuracy":"unsupported","issue":"Title 'long-term eye exposure' - snippet says organ damage, no eyes; adds 'handle it with care'","rule":"advice","fun":2,"note":""}
+{"molecule":"indigo","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"indigo","kind":"weird","accuracy":"minor","issue":"'journey from' Peru through Mesopotamia/Egypt to Europe implies a trade path not stated","rule":"","fun":3,"note":""}
+{"molecule":"limonene","kind":"danger","accuracy":"unsupported","issue":"'cause dizziness' not in snippet (no H336); 'don't let it go down the drain!' is advice","rule":"advice","fun":3,"note":"Omits allergic skin reaction."}
+{"molecule":"limonene","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"limonene","kind":"weird","accuracy":"minor","issue":"'(+)-d-limonene' naming and 'chiral' not in cited snippets, only implied by '(−)-isomer' and racemic","rule":"","fun":4,"note":"Good mirror-image smell hook."}
+{"molecule":"lycopene","kind":"danger","accuracy":"unsupported","issue":"'meets GHS criteria for safety' and title 'Safe and Non-Hazardous' - snippet says 'not meeting GHS hazard criteria'; 'majority' understates 203 of 203","rule":"exaggeration","fun":2,"note":"Misreads not-classified as certified safe."}
+{"molecule":"lycopene","kind":"where","accuracy":"unsupported","issue":"'watermelon', 'rosehips and guava' not in cited snippets","rule":"","fun":2,"note":""}
+{"molecule":"lycopene","kind":"weird","accuracy":"minor","issue":"'can twist into over a thousand different shapes' drops 'theoretical' configurations","rule":"","fun":4,"note":"Chameleon line works."}
+{"molecule":"menthol","kind":"danger","accuracy":"unsupported","issue":"'which means it can cause skin irritation' - snippet has no H315, it is Not Classified; 'not ... a more serious hazard' misstates","rule":"","fun":2,"note":"Invents a hazard from a pictogram."}
+{"molecule":"menthol","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Accurate, two dry facts."}
+{"molecule":"menthol","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"menthol","kind":"weird","accuracy":"minor","issue":"'mysterious origins' and 'fascinating blend' are empty overstatement","rule":"","fun":1,"note":"Rehash of origin card; duplicate citation."}
+{"molecule":"morphine","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":"'rated as a warning' awkward."}
+{"molecule":"morphine","kind":"origin","accuracy":"unsupported","issue":"'first marketed as a pain medication in 1817' - cited s3 gives 1817 as self-experiment; marketing snippet not cited","rule":"","fun":3,"note":"Skips the near-fatal self-test hook."}
+{"molecule":"morphine","kind":"weird","accuracy":"minor","issue":"'history dating back to 2100 BC' drops 'possible references'","rule":"","fun":4,"note":"Rebecca Wood myth is a good hook."}
+{"molecule":"morphine","kind":"where","accuracy":"unsupported","issue":"'has been used since 1805 for pain relief' - snippet: first obtained in 1805","rule":"","fun":2,"note":""}
+{"molecule":"nicotine","kind":"danger","accuracy":"minor","issue":"'highly toxic' softens 'Fatal' x3; 'smoke' in title not in snippet","rule":"","fun":3,"note":""}
+{"molecule":"nicotine","kind":"origin","accuracy":"minor","issue":"'promoted its medicinal use in 1560' merges sending seeds in 1560 with promotion; tobacco vs nicotine popularity blurred","rule":"","fun":3,"note":""}
+{"molecule":"nicotine","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Tomatoes/potatoes trace is a nice touch."}
+{"molecule":"nicotine","kind":"weird","accuracy":"unsupported","issue":"'once thought to be a poison, but it's now ...' implies it isn't one; s9 says it is classified as a poison; s5 says not a standalone cessation tool","rule":"","fun":2,"note":""}
+{"molecule":"nitroglycerin","kind":"danger","accuracy":"minor","issue":"'toxic if swallowed' softens H300 'Fatal if swallowed'; 'toxic fumes' in title not stated","rule":"","fun":3,"note":""}
+{"molecule":"nitroglycerin","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":4,"note":"Dramatic, accurate story."}
+{"molecule":"nitroglycerin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Vague but supported."}
+{"molecule":"nitroglycerin","kind":"weird","accuracy":"unsupported","issue":"'first used as an explosive by Alfred Nobel in 1867' - 1867 is the dynamite patent; Nobel adopted it earlier","rule":"","fun":3,"note":"Missed Monday disease hook."}
+{"molecule":"quinine","kind":"danger","accuracy":"unsupported","issue":"'officially rated as a danger to your eyes and skin' - Danger signal comes from H334 respiratory; eye/skin are Warning; omits main H317","rule":"","fun":2,"note":""}
+{"molecule":"quinine","kind":"origin","accuracy":"unsupported","issue":"Title 'A sweet taste on his hands' has no basis in cited snippets","rule":"","fun":2,"note":"Body is near-verbatim copy."}
+{"molecule":"quinine","kind":"weird","accuracy":"minor","issue":"'known for its bitter taste' not in cited snippets; omits acid-solution condition","rule":"","fun":4,"note":"Glow-under-UV is a fine hook."}
+{"molecule":"serotonin","kind":"danger","accuracy":"minor","issue":"'may damage fertility' firms up 'Suspected of damaging'; 'Handle with care' added","rule":"advice","fun":2,"note":""}
+{"molecule":"serotonin","kind":"where","accuracy":"minor","issue":"'our happiness' stretches 'mood'","rule":"","fun":3,"note":""}
+{"molecule":"serotonin","kind":"weird","accuracy":"unsupported","issue":"'plays a role in plant stress signals' drops 'seems to be associated'; 'feeling blue' implies mood link that s3 says is unsupported","rule":"","fun":3,"note":""}
+{"molecule":"strychnine","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"strychnine","kind":"origin","accuracy":"minor","issue":"'earning them Nobel prizes' implies prizes were for this work; snippet only says both won","rule":"","fun":3,"note":""}
+{"molecule":"strychnine","kind":"where","accuracy":"minor","issue":"'beware of its presence in certain plants' is added caution","rule":"","fun":2,"note":""}
+{"molecule":"strychnine","kind":"weird","accuracy":"unsupported","issue":"'used in rodenticides' not in cited snippets","rule":"","fun":4,"note":"Bitter-receptor fact is a hook."}
+{"molecule":"sucralose","kind":"danger","accuracy":"unsupported","issue":"Title 'Safe but not classified' - safety not stated; 'majority' understates 309 of 309","rule":"exaggeration","fun":1,"note":"Points to ECHA website."}
+{"molecule":"sucralose","kind":"origin","accuracy":"minor","issue":"'found ... exceptionally sweet after testing it' garbles the test/taste mix-up and drops 'anecdotal'","rule":"","fun":3,"note":"Muffles best hook."}
+{"molecule":"sucralose","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"sucralose","kind":"weird","accuracy":"ok","issue":"","rule":"","fun":2,"note":"600x is not very weird."}
+{"molecule":"tetrodotoxin","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"tetrodotoxin","kind":"weird","accuracy":"minor","issue":"'death at high doses' misleads given 'more poisonous than cyanide'; 'pufferfish and other animals' not literally in cited","rule":"","fun":4,"note":""}
+{"molecule":"tetrodotoxin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Bacterial origin is a nice twist."}
+{"molecule":"thalidomide","kind":"danger","accuracy":"minor","issue":"'dangerous if swallowed' loosens H302 'Harmful'","rule":"","fun":3,"note":""}
+{"molecule":"thalidomide","kind":"origin","accuracy":"minor","issue":"'removed ... after reports of thousands of affected children' - snippet: pressure from press and public; counts are later estimates","rule":"","fun":3,"note":""}
+{"molecule":"thalidomide","kind":"where","accuracy":"minor","issue":"'fights cancers and leprosy' overstates multiple myeloma and erythema nodosum leprosum; 'sedative' loose","rule":"","fun":3,"note":""}
+{"molecule":"thalidomide","kind":"weird","accuracy":"unsupported","issue":"'once a wonder drug for morning sickness' - snippet's 'wonder drug' was for insomnia, coughs, colds, headaches","rule":"","fun":3,"note":"Misses day-by-day defect window."}
+{"molecule":"theobromine","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":3,"note":""}
+{"molecule":"theobromine","kind":"origin","accuracy":"ok","issue":"","rule":"","fun":3,"note":"Missed 'no bromine' hook."}
+{"molecule":"theobromine","kind":"where","accuracy":"minor","issue":"'chocolate's secret kick' sits uneasily with 'practically no stimulant effect on the CNS'","rule":"","fun":3,"note":""}
+{"molecule":"theobromine","kind":"weird","accuracy":"unsupported","issue":"'doesn't significantly stimulate the brain, making chocolate safe for humans but toxic to pets' - wrong cause (snippet: slower metabolism); 'safe for humans' unstated","rule":"","fun":4,"note":""}
+{"molecule":"vanillin","kind":"danger","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Second sentence redundant."}
+{"molecule":"vanillin","kind":"origin","accuracy":"minor","issue":"'Vanilla was first isolated as a pure substance in 1858' - should be vanillin, 'relatively pure'","rule":"","fun":3,"note":""}
+{"molecule":"vanillin","kind":"where","accuracy":"ok","issue":"","rule":"","fun":2,"note":"Misses ice cream/chocolate 75% stat."}
+{"molecule":"vanillin","kind":"weird","accuracy":"unsupported","issue":"'predates the domestication of vanilla in Mesoamerica by centuries' - no Mesoamerican date given; 'possible cultivation' softened","rule":"","fun":4,"note":""}

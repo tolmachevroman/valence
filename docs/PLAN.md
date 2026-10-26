@@ -26,7 +26,8 @@ Goal: pick the default model, and find out early whether small models write card
 - [x] **M0.3 Card types and prompts v1** — `CardKind` enum (`where`, `origin`, `danger`, `weird`), one prompt template per kind, few-shot examples, JSON output format from the PRD. Plus a JSON schema per kind for constrained decoding (`Constraint::JsonSchema`), and `{"skip": true}` for Origin and Weird.
 - [x] **M0.4 Validator v1** (production code, not throwaway) — parse JSON; sources non-empty and known; every number, year and proper name in `body` found in a cited snippet (normalized match); 2–4 sentences, under 80 words. Unit tests with good and bad cards.
 - [x] **M0.5 Spike runner** — `cargo run --example spike -- --model <path>` generates all cards for all 30 fixtures, with retry-once-stricter, and writes a CSV/Markdown report: pass rate, latency, memory, plus the cards for hand review.
-- [ ] **M0.6 Bake-off** — run 2–3 current 3–4B instruct models (and one 7–8B for the "higher quality" setting). Score fun 1–5 by hand.
+- [x] **M0.6 Bake-off** — run 2–3 current 3–4B instruct models (and one 7–8B for the "higher quality" setting). Score fun 1–5 by hand. Done for three 4B models; provisional pick Qwen3 4B, but about a third of cards still carry an unsupported claim. 7–8B not yet tried.
+- [ ] **M0.6b Accuracy pass** — Danger card from GHS data without the model; pick-then-write for Weird and Where; prompt rules for hedges, merged facts and unlisted examples; lower temperature. Rerun and re-review until unsupported claims are near zero, or conclude the 4B class can't get there.
 - [ ] **M0.7 Decision record** — `docs/decisions/0001-default-model.md`: winner, HF repo + pinned revision + sha256, numbers.
 
 Exit: one model gets first card in under 10 s and passes validation on most cards.

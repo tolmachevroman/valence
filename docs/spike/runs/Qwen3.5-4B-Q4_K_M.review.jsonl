@@ -1,0 +1,109 @@
+{"molecule": "allicin", "kind": "danger", "accuracy": "unsupported", "issue": "\"serious eye damage\": snippet H319 says eye irritation; eye damage is a stronger hazard", "rule": "exaggeration", "fun": 3, "note": "Otherwise accurate."}
+{"molecule": "allicin", "kind": "origin", "accuracy": "unsupported", "issue": "Title \"1944 discovery in Japan\" merges Cavallito/Bailey 1944 isolation with Japanese thiamine work", "rule": "", "fun": 2, "note": "Merged facts."}
+{"molecule": "allicin", "kind": "where", "accuracy": "minor", "issue": "\"forms only when garlic tissue is damaged\": 'only' comes from uncited s3; cited s4 lacks it", "rule": "", "fun": 3, "note": ""}
+{"molecule": "allicin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Accurate but not surprising."}
+{"molecule": "artemisinin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "artemisinin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Good narrative arc."}
+{"molecule": "artemisinin", "kind": "where", "accuracy": "minor", "issue": "\"often combined with other drugs to treat resistant strains\": combination not tied to resistance in snippets", "rule": "", "fun": 3, "note": ""}
+{"molecule": "artemisinin", "kind": "weird", "accuracy": "unsupported", "issue": "\"snap apart when it meets iron in the parasite\": snippet says metabolite DHA, in red blood cells; mechanism not fully known; \"without us needing to force\" invented", "rule": "", "fun": 4, "note": "Good hook, wrong details."}
+{"molecule": "ascorbic acid", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "ascorbic acid", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ascorbic acid", "kind": "where", "accuracy": "unsupported", "issue": "\"tomatoes, potatoes, and green leafy vegetables\" not in cited snippets (only 'many vegetables')", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ascorbic acid", "kind": "weird", "accuracy": "minor", "issue": "Title \"turns into its opposite\": ascorbate is the ionized form, not an opposite", "rule": "", "fun": 3, "note": ""}
+{"molecule": "aspirin", "kind": "danger", "accuracy": "unsupported", "issue": "\"serious eye damage\": snippet H319 says eye irritation; eye damage is a stronger hazard; omits main hazard H302 harmful if swallowed (95.6%)", "rule": "exaggeration", "fun": 2, "note": "Leads with minority hazards."}
+{"molecule": "aspirin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "aspirin", "kind": "where", "accuracy": "minor", "issue": "\"heart health supplements\": snippets describe a drug, not supplements", "rule": "", "fun": 3, "note": ""}
+{"molecule": "aspirin", "kind": "weird", "accuracy": "unsupported", "issue": "Title \"poisons the air\" wrong (dust is explosive); exposure limits not stated as caused by explosion risk", "rule": "", "fun": 3, "note": "Wrong cause link."}
+{"molecule": "batrachotoxin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "batrachotoxin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": ""}
+{"molecule": "batrachotoxin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "'Forever' is a fair gloss of irreversibly."}
+{"molecule": "benzylpenicillin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "benzylpenicillin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "benzylpenicillin", "kind": "weird", "accuracy": "unsupported", "issue": "\"smells like mold\", \"grow in certain fungi\", \"food source for some organisms\" all invented; snippet only says 'reported in' organisms", "rule": "", "fun": 2, "note": "Misreads 'reported in'."}
+{"molecule": "buckminsterfullerene", "kind": "danger", "accuracy": "unsupported", "issue": "\"serious eye damage\": snippet H319 says eye irritation; eye damage is a stronger hazard; \"nearly all tested concentrations\" misreads company-report percentages (skin is 22.4%)", "rule": "exaggeration", "fun": 2, "note": ""}
+{"molecule": "buckminsterfullerene", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Soot to space is a nice hook."}
+{"molecule": "buckminsterfullerene", "kind": "weird", "accuracy": "unsupported", "issue": "\"Despite being a man-made discovery\" not in snippets; repeats itself", "rule": "", "fun": 2, "note": ""}
+{"molecule": "caffeine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "caffeine", "kind": "origin", "accuracy": "minor", "issue": "\"Theobromine and caffeine content in xocolatl was believed to fight fatigue\": the drink was believed to; caffeine is modern attribution", "rule": "", "fun": 3, "note": ""}
+{"molecule": "caffeine", "kind": "weird", "accuracy": "unsupported", "issue": "\"Ancient Mayans believed chocolate's caffeine helped\": belief was about xocolatl, not caffeine; title nonsensical", "rule": "", "fun": 3, "note": ""}
+{"molecule": "caffeine", "kind": "where", "accuracy": "unsupported", "issue": "\"medicines for premature infants\" not in cited snippets", "rule": "", "fun": 3, "note": ""}
+{"molecule": "capsaicin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "capsaicin", "kind": "where", "accuracy": "unsupported", "issue": "\"hot sauces, pepper sprays\" not in cited snippets", "rule": "", "fun": 4, "note": ""}
+{"molecule": "capsaicin", "kind": "weird", "accuracy": "minor", "issue": "Title \"Birds love the burn\": birds don't feel it; \"teeth destroy the peppers\" should be seeds", "rule": "", "fun": 4, "note": ""}
+{"molecule": "carvone", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "carvone", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "carvone", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "carvone", "kind": "weird", "accuracy": "minor", "issue": "\"proves ... identical molecules\": snippet says evidence; enantiomers are mirror images, not identical", "rule": "", "fun": 4, "note": ""}
+{"molecule": "cinnamaldehyde", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "cinnamaldehyde", "kind": "where", "accuracy": "unsupported", "issue": "Title \"gum and tea\": tea not in snippets; \"up to 90%\" vs 'about 90%'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "cinnamaldehyde", "kind": "weird", "accuracy": "unsupported", "issue": "Title \"fixes broken DNA\": snippet says it induces DNA damage that elicits repair; mouse X-ray result was 'perhaps', overstated", "rule": "", "fun": 4, "note": ""}
+{"molecule": "cubane", "kind": "where", "accuracy": "unsupported", "issue": "Title \"The cube in your fuel\" unsupported; derivatives, not cubane, studied as explosives", "rule": "", "fun": 3, "note": ""}
+{"molecule": "cubane", "kind": "weird", "accuracy": "unsupported", "issue": "\"This stability makes it a solid crystalline substance\": invented causation; \"won't explode\" not stated", "rule": "", "fun": 4, "note": ""}
+{"molecule": "dopamine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "dopamine", "kind": "origin", "accuracy": "minor", "issue": "\"linked dopamine to adhesive proteins in mussels\": research was motivated by mussel proteins", "rule": "", "fun": 4, "note": "Mussel glue is a good hook."}
+{"molecule": "dopamine", "kind": "where", "accuracy": "minor", "issue": "\"synthesized in plants like Magnolia officinalis\": snippet only says 'reported in'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "dopamine", "kind": "weird", "accuracy": "unsupported", "issue": "\"likely evolved\" overstates 'it has been proposed'; \"exact enzymes\" vs snippet 'homologs'", "rule": "", "fun": 4, "note": ""}
+{"molecule": "ethylene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ethylene", "kind": "origin", "accuracy": "minor", "issue": "\"Geologists once linked\": snippet says some geologists think (current, hedged)", "rule": "", "fun": 4, "note": ""}
+{"molecule": "ethylene", "kind": "where", "accuracy": "unsupported", "issue": "\"welding torches and once served as an anesthetic\" not in cited snippets", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ethylene", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Not really surprising."}
+{"molecule": "geosmin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "geosmin", "kind": "where", "accuracy": "minor", "issue": "\"creates petrichor\": snippet says it is a contributor to petrichor", "rule": "", "fun": 3, "note": ""}
+{"molecule": "geosmin", "kind": "weird", "accuracy": "unsupported", "issue": "Title \"smells like nothing\" contradicts snippets (earthy smell); \"does not kill them\" filler", "rule": "", "fun": 2, "note": ""}
+{"molecule": "indigo", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "indigo", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "indigo", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "indigo", "kind": "weird", "accuracy": "unsupported", "issue": "\"so common it became a specific historical technique\" invented; title \"needs urine\" overstates one method", "rule": "", "fun": 4, "note": ""}
+{"molecule": "limonene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "limonene", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "limonene", "kind": "weird", "accuracy": "unsupported", "issue": "\"deadens the sense of smell\" and \"warning fades\" not in snippets; meta \"The text notes\"", "rule": "", "fun": 2, "note": "Wholly invented core claim."}
+{"molecule": "lycopene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "lycopene", "kind": "where", "accuracy": "unsupported", "issue": "\"acts as a powerful antioxidant\": snippet says 'may possess antioxidant properties' in animals", "rule": "", "fun": 3, "note": ""}
+{"molecule": "lycopene", "kind": "weird", "accuracy": "minor", "issue": "\"straight, flat molecule\": 'flat' not in snippets", "rule": "", "fun": 4, "note": ""}
+{"molecule": "menthol", "kind": "danger", "accuracy": "minor", "issue": "\"classified as an irritant\" alongside \"not officially classified\": mirrors contradictory snippet, confusing", "rule": "", "fun": 2, "note": ""}
+{"molecule": "menthol", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "menthol", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "menthol", "kind": "weird", "accuracy": "unsupported", "issue": "\"activating heat sensors\": snippet says cold-sensitive TRPM8 receptors", "rule": "", "fun": 3, "note": "Core mechanism inverted."}
+{"molecule": "morphine", "kind": "danger", "accuracy": "minor", "issue": "Title \"irritates skin\": H317 is allergic reaction, not irritation", "rule": "", "fun": 3, "note": ""}
+{"molecule": "morphine", "kind": "origin", "accuracy": "minor", "issue": "\"References to morphine date back to Sumerian clay tablets\": snippet says 'possible references'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "morphine", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 5, "note": "Self-poisoning discoverer, memorable."}
+{"molecule": "morphine", "kind": "where", "accuracy": "minor", "issue": "\"severe acute and chronic pain\": severity/chronicity not stated", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nicotine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Clear and calm."}
+{"molecule": "nicotine", "kind": "origin", "accuracy": "minor", "issue": "Title \"to poison to cure\": 'cure' not supported; 'poison' was a belief", "rule": "", "fun": 2, "note": ""}
+{"molecule": "nicotine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nicotine", "kind": "weird", "accuracy": "unsupported", "issue": "Title \"saves your sleep\" contradicts snippet (reduces sleep in healthy nonsmokers); receptor-agonist causal link invented", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nitroglycerin", "kind": "danger", "accuracy": "minor", "issue": "\"officially classified as having a mass explosion hazard\": H201 is marked Deleted", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nitroglycerin", "kind": "origin", "accuracy": "unsupported", "issue": "Links 1866 San Francisco explosion to Nobel's Blasting Oil; snippets do not connect them", "rule": "", "fun": 4, "note": ""}
+{"molecule": "nitroglycerin", "kind": "where", "accuracy": "unsupported", "issue": "\"treat angina\" and \"shock sensitive if ethanol evaporates\" not in cited snippets", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nitroglycerin", "kind": "weird", "accuracy": "unsupported", "issue": "\"less sensitive to impact\" omits snippet's 'more liable to explode on breaking, crushing, tamping'; \"freezing between 7 and 13 C\" misstated", "rule": "exaggeration", "fun": 4, "note": "Overstates safety of frozen form."}
+{"molecule": "quinine", "kind": "danger", "accuracy": "unsupported", "issue": "\"serious eye damage\": snippet H319 says eye irritation; eye damage is a stronger hazard", "rule": "exaggeration", "fun": 3, "note": ""}
+{"molecule": "quinine", "kind": "origin", "accuracy": "minor", "issue": "\"Spanish Jesuit missionaries learned of this by the 1570s\": snippet says 'the Spanish'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "quinine", "kind": "where", "accuracy": "unsupported", "issue": "\"once used for malaria, now primarily flavoring and muscle disorders\": snippet says still used for malaria, leg cramps not recommended", "rule": "", "fun": 3, "note": ""}
+{"molecule": "quinine", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Glowing quinine is a good hook."}
+{"molecule": "serotonin", "kind": "danger", "accuracy": "unsupported", "issue": "\"98.5% chance it is suspected\": misreads company-report share as probability", "rule": "", "fun": 2, "note": ""}
+{"molecule": "serotonin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "serotonin", "kind": "where", "accuracy": "minor", "issue": "\"90% ... lives in the gut\": snippet says synthesized there; title implies gut mood role", "rule": "", "fun": 4, "note": ""}
+{"molecule": "serotonin", "kind": "weird", "accuracy": "minor", "issue": "\"converts the toxin into tryptamine\": ammonia is incorporated into tryptophan; simplified", "rule": "", "fun": 4, "note": ""}
+{"molecule": "strychnine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "strychnine", "kind": "origin", "accuracy": "minor", "issue": "\"They identified it in plants of the genus Strychnos\": attribution to the pair is loose", "rule": "", "fun": 3, "note": ""}
+{"molecule": "strychnine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "strychnine", "kind": "weird", "accuracy": "unsupported", "issue": "\"natural warning system ... before it can even be swallowed\" invented interpretation", "rule": "", "fun": 3, "note": ""}
+{"molecule": "sucralose", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "sucralose", "kind": "origin", "accuracy": "unsupported", "issue": "Title \"A sweet taste on his hands\" invented; drops the test/taste mishearing", "rule": "", "fun": 3, "note": "Misses the real hook."}
+{"molecule": "sucralose", "kind": "where", "accuracy": "minor", "issue": "\"without calories\": snippet says non-nutritive, 3.3 kcal per gram", "rule": "", "fun": 3, "note": ""}
+{"molecule": "sucralose", "kind": "weird", "accuracy": "unsupported", "issue": "\"generally safe for consumption\" not in cited snippet; \"dangerous\" added", "rule": "", "fun": 4, "note": ""}
+{"molecule": "tetrodotoxin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "tetrodotoxin", "kind": "weird", "accuracy": "minor", "issue": "\"kills mice with just 334 micrograms per kilogram\": it is median lethal dose", "rule": "dose", "fun": 4, "note": "States lethal dose figure."}
+{"molecule": "tetrodotoxin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "thalidomide", "kind": "danger", "accuracy": "minor", "issue": "Title \"damages fertility\": H360 says 'may damage'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "thalidomide", "kind": "origin", "accuracy": "unsupported", "issue": "\"acquired it after Mückter's team identified a by-product\": causal order invented; Keller recognized it", "rule": "", "fun": 3, "note": ""}
+{"molecule": "thalidomide", "kind": "where", "accuracy": "minor", "issue": "Title \"life-saving drug\" not stated", "rule": "", "fun": 3, "note": ""}
+{"molecule": "thalidomide", "kind": "weird", "accuracy": "minor", "issue": "Title \"28-day window\": snippet window is day 20 to 36", "rule": "", "fun": 4, "note": ""}
+{"molecule": "theobromine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "theobromine", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "theobromine", "kind": "where", "accuracy": "unsupported", "issue": "\"giving chocolate its unique flavor\" and \"practically no stimulant effect on CNS\" not in cited snippets", "rule": "", "fun": 3, "note": ""}
+{"molecule": "theobromine", "kind": "weird", "accuracy": "unsupported", "issue": "\"this compound has no odor at all\" not in snippets", "rule": "", "fun": 4, "note": ""}
+{"molecule": "vanillin", "kind": "danger", "accuracy": "unsupported", "issue": "Title \"Warning for eyes\": no eye hazard in snippet", "rule": "", "fun": 2, "note": ""}
+{"molecule": "vanillin", "kind": "origin", "accuracy": "unsupported", "issue": "\"Totonacs ... since at least the early 15th century\": that date refers to Aztecs", "rule": "", "fun": 3, "note": "Merged facts."}
+{"molecule": "vanillin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": ""}
+{"molecule": "vanillin", "kind": "weird", "accuracy": "unsupported", "issue": "\"guides insects to their next meal\": snippet says host tree for oviposition (egg laying)", "rule": "", "fun": 3, "note": ""}
