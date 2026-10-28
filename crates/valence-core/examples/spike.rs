@@ -18,12 +18,13 @@ use mistralrs::{Constraint, Model, RequestBuilder, TextMessageRole};
 use serde::{Deserialize, Serialize};
 use valence_core::card::{CardDraft, CardKind, Snippet};
 use valence_core::validate::{self, Rejection, Reply};
-use valence_core::{prompt, select};
+use valence_core::{ghs, prompt, select};
 
 use common::{PeakMemory, gb, load_model, stream};
 
 const MAX_NEW_TOKENS: usize = 300;
-const TEMPERATURE: f64 = 0.6;
+/// M0.6 used 0.6; lowered in M0.6b for faithfulness to the snippets.
+const TEMPERATURE: f64 = 0.2;
 
 #[derive(Deserialize)]
 struct Fixture {
@@ -40,6 +41,8 @@ enum Outcome {
     Skipped,
     Rejected,
     NoInput,
+    /// Built from data without the model (the Danger card).
+    FromData,
 }
 
 impl Outcome {
@@ -50,12 +53,13 @@ impl Outcome {
             Self::Skipped => "skipped by model",
             Self::Rejected => "rejected",
             Self::NoInput => "no input",
+            Self::FromData => "from GHS data",
         }
     }
 
     /// Whether the card would appear in the app.
     fn shown(self) -> bool {
-        matches!(self, Self::Passed | Self::PassedOnRetry)
+        matches!(self, Self::Passed | Self::PassedOnRetry | Self::FromData)
     }
 }
 
@@ -87,9 +91,19 @@ struct CardResult {
     outcome: Outcome,
     card: Option<CardDraft>,
     cited: Vec<Cited>,
+    /// First step of a two-step card: the model choosing its snippets.
+    pick: Option<Attempt>,
     attempts: Vec<Attempt>,
     /// Seconds from the start of this molecule to the end of this card.
     done_at: f64,
+}
+
+impl CardResult {
+    /// Model time for this card: pick step plus every attempt.
+    fn model_seconds(&self) -> f64 {
+        self.pick.as_ref().map_or(0.0, |p| p.seconds)
+            + self.attempts.iter().map(|a| a.seconds).sum::<f64>()
+    }
 }
 
 fn category(r: &Rejection) -> &'static str {
@@ -161,7 +175,7 @@ async fn run_card(
     kind: CardKind,
     started: Instant,
 ) -> Result<CardResult> {
-    let picked = select::select(kind, &fixture.snippets);
+    let mut picked = select::select(kind, &fixture.snippets);
     let mut result = CardResult {
         molecule: fixture.molecule.clone(),
         kind,
@@ -169,9 +183,60 @@ async fn run_card(
         outcome: Outcome::NoInput,
         card: None,
         cited: vec![],
+        pick: None,
         attempts: vec![],
         done_at: 0.0,
     };
+
+    if kind == CardKind::Danger {
+        if let Some(s) = picked.first() {
+            let ghs = ghs::Ghs::from_snippet_text(&s.text);
+            result.card = Some(ghs::danger_card(&fixture.molecule, &ghs));
+            result.cited = vec![Cited {
+                id: "s1".into(),
+                fixture_id: s.id.clone(),
+                label: label(s),
+                url: s.url.clone(),
+            }];
+            result.outcome = Outcome::FromData;
+        }
+        result.done_at = started.elapsed().as_secs_f64();
+        return Ok(result);
+    }
+
+    if let (Some(_), true) = (prompt::pick_limit(kind), picked.len() > 1) {
+        let p = prompt::build_pick(kind, &fixture.molecule, &picked);
+        let request = RequestBuilder::new()
+            .add_message(TextMessageRole::System, p.system)
+            .add_message(TextMessageRole::User, p.user)
+            .enable_thinking(false)
+            .set_constraint(Constraint::JsonSchema(prompt::pick_schema(
+                kind,
+                picked.len(),
+            )))
+            .set_sampler_max_len(40)
+            .set_sampler_temperature(TEMPERATURE);
+        let g = stream(model, request, |_| {}).await?;
+        let chosen = prompt::parse_pick(&g.text, picked.len());
+        result.pick = Some(Attempt {
+            problems: if chosen.is_some() {
+                vec![]
+            } else {
+                vec!["unparseable pick; wrote from all snippets".into()]
+            },
+            categories: vec![],
+            output: g.text,
+            first_token: g.first_token,
+            seconds: g.seconds,
+            prompt_tokens: g.usage.as_ref().map(|u| u.prompt_tokens),
+            completion_tokens: g.usage.as_ref().map(|u| u.completion_tokens),
+        });
+        if let Some(chosen) = chosen {
+            picked = chosen.into_iter().map(|i| picked[i]).collect();
+            result.snippets = picked.len();
+        }
+    }
+
     if !picked.is_empty() {
         for retry in [false, true] {
             let problems = result.attempts.last().map(|a| a.problems.as_slice());
@@ -254,14 +319,27 @@ fn report(
         .values()
         .filter_map(|cards| cards.iter().find(|r| r.outcome.shown()).map(|r| r.done_at))
         .collect();
+    let first_model_card: Vec<f64> = by_molecule
+        .values()
+        .filter_map(|cards| {
+            cards
+                .iter()
+                .find(|r| r.outcome.shown() && r.outcome != Outcome::FromData)
+                .map(|r| r.done_at)
+        })
+        .collect();
+    // Time until the reader sees text: the pick step, then the first token of the card.
     let first_token: Vec<f64> = results
         .iter()
-        .filter_map(|r| r.attempts.first()?.first_token)
+        .filter_map(|r| {
+            let pick = r.pick.as_ref().map_or(0.0, |p| p.seconds);
+            Some(pick + r.attempts.first()?.first_token?)
+        })
         .collect();
     let card_time: Vec<f64> = results
         .iter()
         .filter(|r| !r.attempts.is_empty())
-        .map(|r| r.attempts.iter().map(|a| a.seconds).sum())
+        .map(CardResult::model_seconds)
         .collect();
     let mut tally: BTreeMap<&str, usize> = BTreeMap::new();
     for a in results.iter().flat_map(|r| &r.attempts) {
@@ -274,12 +352,13 @@ fn report(
     let _ = writeln!(md, "# Spike run: {model_name}\n");
     let _ = writeln!(
         md,
-        "{} molecules, {} cards with input. Temperature {TEMPERATURE}, JSON schema constraint, one stricter retry, shortest card first, KV cache: {kv_cache}.\n",
+        "{} molecules, {} cards with input. Temperature {TEMPERATURE}, JSON schema constraint, one stricter retry, shortest card first, pick-then-write for Weird and Where, Danger from GHS data, KV cache: {kv_cache}.\n",
         by_molecule.len(),
         with_input
     );
     let _ = writeln!(md, "## Summary\n\n| Measure | Value |\n| --- | --- |");
     for (name, o) in [
+        ("From GHS data (no model)", Outcome::FromData),
         ("Passed first try", Outcome::Passed),
         ("Passed on retry", Outcome::PassedOnRetry),
         ("Skipped by model", Outcome::Skipped),
@@ -293,9 +372,22 @@ fn report(
         "| Molecules with 3+ cards | {three_plus} of {} |",
         by_molecule.len()
     );
-    let _ = writeln!(md, "| First token | {} |", spread(&first_token));
-    let _ = writeln!(md, "| Card, including retry | {} |", spread(&card_time));
+    let _ = writeln!(
+        md,
+        "| First text of a model card | {} |",
+        spread(&first_token)
+    );
+    let _ = writeln!(
+        md,
+        "| Model card, including pick and retry | {} |",
+        spread(&card_time)
+    );
     let _ = writeln!(md, "| First card per molecule | {} |", spread(&first_card));
+    let _ = writeln!(
+        md,
+        "| First model card per molecule | {} |",
+        spread(&first_model_card)
+    );
     let _ = writeln!(md, "| Model load | {load:.1} s |");
     let _ = writeln!(md, "| Peak memory | {:.2} GB |", gb(peak));
     let _ = writeln!(md, "\n### Problems found (all attempts)\n");
@@ -310,7 +402,7 @@ fn report(
     for (molecule, cards) in &by_molecule {
         let _ = writeln!(md, "\n### {molecule}\n");
         for r in cards {
-            let secs: f64 = r.attempts.iter().map(|a| a.seconds).sum();
+            let secs = r.model_seconds();
             let _ = writeln!(
                 md,
                 "**{}** · {} · {} snippets · {secs:.1} s\n",
@@ -414,7 +506,7 @@ async fn main() -> Result<()> {
                 fixture.cid,
                 kind.as_str(),
                 r.outcome.label(),
-                r.attempts.iter().map(|a| a.seconds).sum::<f64>()
+                r.model_seconds()
             );
             results.push(r);
         }

@@ -20,6 +20,9 @@ You write fact cards for Valence, an app that makes chemistry fun.
 Rules:
 - Use only facts stated in the snippets. If a fact is not in them, leave it out, even if you are sure it is true.
 - Copy every number, year and name exactly as the snippets give them.
+- Keep each fact attached to what the snippet says it is about. Do not combine facts from different sentences into a new claim.
+- Keep the snippet's hedges: if it says may, probably, possibly, proposed or suspected, say so too.
+- Name only the examples, places and people the snippets name.
 - Be playful in tone but exact in content. Do not exaggerate danger or safety.
 - Never describe how to make, extract or concentrate a substance.
 - Cite every snippet the body relies on.
@@ -135,12 +138,19 @@ fn source_label(snippet: &Snippet) -> String {
     format!("{source}, {}", snippet.section)
 }
 
-fn write_task(out: &mut String, kind: CardKind, molecule: &str, snippets: &[(String, String)]) {
+fn write_task(out: &mut String, molecule: &str, snippets: &[(String, String)], ask: &str) {
     let _ = writeln!(out, "Molecule: {molecule}\nSnippets:");
     for (i, (label, text)) in snippets.iter().enumerate() {
         let _ = writeln!(out, "[s{}] ({label}) {text}", i + 1);
     }
-    let _ = write!(out, "Write the \"{}\" card.", kind.label());
+    out.push_str(ask);
+}
+
+fn labelled(snippets: &[&Snippet]) -> Vec<(String, String)> {
+    snippets
+        .iter()
+        .map(|s| (source_label(s), s.text.clone()))
+        .collect()
 }
 
 /// Build the prompt for one card. Snippets are renumbered `s1..sN` in the
@@ -158,6 +168,7 @@ pub fn build(
         .iter()
         .map(|(label, text)| (label.to_string(), text.to_string()))
         .collect();
+    let ask = format!("Write the \"{}\" card.", kind.label());
 
     let mut system = String::from(RULES);
     let _ = write!(system, "\n\n{}", brief(kind));
@@ -165,7 +176,7 @@ pub fn build(
         let _ = write!(system, " {SKIP_RULE}");
     }
     system.push_str("\n\nExample\n");
-    write_task(&mut system, kind, ex.molecule, &ex_snippets);
+    write_task(&mut system, ex.molecule, &ex_snippets, &ask);
     let _ = write!(system, "\n{}", ex.card);
     if let Some(problems) = retry {
         let _ = write!(system, "\n\n{RETRY_RULE}");
@@ -174,12 +185,8 @@ pub fn build(
         }
     }
 
-    let snippets: Vec<_> = snippets
-        .iter()
-        .map(|s| (source_label(s), s.text.clone()))
-        .collect();
     let mut user = String::new();
-    write_task(&mut user, kind, molecule, &snippets);
+    write_task(&mut user, molecule, &labelled(snippets), &ask);
 
     Prompt { system, user }
 }
@@ -212,6 +219,81 @@ pub fn output_schema(kind: CardKind, snippet_count: usize) -> Value {
         "additionalProperties": false
     });
     json!({ "anyOf": [card, skip] })
+}
+
+/// For card kinds written in two steps, how many snippets the first step may
+/// pick. Weird and Where get the most snippets and, in M0.6, merged facts
+/// across them most often; writing from only the picked ones leaves less to mix up.
+pub fn pick_limit(kind: CardKind) -> Option<usize> {
+    match kind {
+        CardKind::Where => Some(3),
+        CardKind::Weird => Some(2),
+        CardKind::Origin | CardKind::Danger => None,
+    }
+}
+
+fn pick_brief(kind: CardKind) -> &'static str {
+    match kind {
+        CardKind::Where => {
+            "Pick the snippets that best show where a person meets this molecule in everyday \
+             life: foods, products, medicines, nature. Prefer concrete, familiar examples."
+        }
+        _ => {
+            "Pick the snippet with the single most surprising, specific fact, the kind that \
+             makes a reader say \"wait, really?\". Add a second only if the fact needs it."
+        }
+    }
+}
+
+/// First step of a two-step card: choose the best snippets by id.
+pub fn build_pick(kind: CardKind, molecule: &str, snippets: &[&Snippet]) -> Prompt {
+    let limit = pick_limit(kind).unwrap_or(1);
+    let system = format!(
+        "You choose source snippets for a fact card in Valence, an app that makes chemistry fun.\n\n\
+         {} Pick at most {limit}.\n\n\
+         Reply with one JSON object and nothing else: {{\"pick\": [\"s1\"]}}",
+        pick_brief(kind)
+    );
+    let mut user = String::new();
+    let ask = format!("Pick snippets for the \"{}\" card.", kind.label());
+    write_task(&mut user, molecule, &labelled(snippets), &ask);
+    Prompt { system, user }
+}
+
+/// Schema for the pick step: 1 to `pick_limit` ids from the listed snippets.
+/// llguidance doesn't support `uniqueItems`; `parse_pick` drops repeats.
+pub fn pick_schema(kind: CardKind, snippet_count: usize) -> Value {
+    let ids: Vec<_> = (1..=snippet_count).map(|n| format!("s{n}")).collect();
+    json!({
+        "type": "object",
+        "properties": {
+            "pick": {
+                "type": "array",
+                "items": { "type": "string", "enum": ids },
+                "minItems": 1,
+                "maxItems": pick_limit(kind).unwrap_or(1)
+            }
+        },
+        "required": ["pick"],
+        "additionalProperties": false
+    })
+}
+
+/// Zero-based indices of the picked snippets, in the order the model gave them.
+/// `None` if the reply isn't a valid pick.
+pub fn parse_pick(output: &str, snippet_count: usize) -> Option<Vec<usize>> {
+    let value: Value = serde_json::from_str(output.trim()).ok()?;
+    let mut picked = Vec::new();
+    for id in value.get("pick")?.as_array()? {
+        let n: usize = id.as_str()?.strip_prefix('s')?.parse().ok()?;
+        if !(1..=snippet_count).contains(&n) {
+            return None;
+        }
+        if !picked.contains(&(n - 1)) {
+            picked.push(n - 1);
+        }
+    }
+    (!picked.is_empty()).then_some(picked)
 }
 
 #[cfg(test)]
@@ -298,6 +380,30 @@ mod tests {
                 "{kind:?} example"
             );
         }
+    }
+
+    #[test]
+    fn pick_step_prompt_schema_and_parse() {
+        let a = snippet("History", "First extracted in 1816.");
+        let b = snippet("Natural function", "Birds do not feel it.");
+        let p = build_pick(CardKind::Weird, "capsaicin", &[&a, &b]);
+        assert!(p.system.contains("Pick at most 2."));
+        assert!(
+            p.user
+                .ends_with("Pick snippets for the \"Weird fact\" card.")
+        );
+        assert_eq!(
+            pick_schema(CardKind::Where, 5)["properties"]["pick"]["maxItems"],
+            3
+        );
+
+        assert_eq!(
+            parse_pick(r#"{"pick": ["s2", "s1", "s2"]}"#, 2),
+            Some(vec![1, 0])
+        );
+        assert_eq!(parse_pick(r#"{"pick": ["s3"]}"#, 2), None);
+        assert_eq!(parse_pick(r#"{"pick": []}"#, 2), None);
+        assert_eq!(pick_limit(CardKind::Origin), None);
     }
 
     #[test]
