@@ -24,6 +24,8 @@ pub struct HazardStatement {
     pub text: String,
     /// Share of notifiers reporting it, when the source gives one (ECHA does).
     pub percent: Option<f32>,
+    /// The statement's own signal level, "Danger" or "Warning", when given.
+    pub level: Option<String>,
 }
 
 #[derive(Debug, Clone, PartialEq, Default)]
@@ -34,9 +36,13 @@ pub struct Ghs {
     pub statements: Vec<HazardStatement>,
 }
 
+// Code, optional "**" footnote marker, optional report share, optional
+// "(Deleted)" label, text, then the bracketed level and class.
 static STATEMENT: LazyLock<Regex> = LazyLock::new(|| {
-    Regex::new(r"(H\d{3}\w*(?:\+H\d{3}\w*)*)(?:\s*\((\d+(?:\.\d+)?)%\))?:\s*([^\[]+?)\s*\[")
-        .unwrap()
+    Regex::new(
+        r"(H\d{3}\w*(?:\+H\d{3}\w*)*)(?:\s*\*+)?(?:\s*\((\d+(?:\.\d+)?)%\))?:\s*(?:\(Deleted\)\s*)?([^\[]+?)\s*\[(Danger|Warning)?",
+    )
+    .unwrap()
 });
 static SIGNAL: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"Signal word:\s*(\w+)").unwrap());
 static PICTOGRAMS: LazyLock<Regex> =
@@ -55,6 +61,7 @@ impl Ghs {
                 code: c[1].to_string(),
                 text: c[3].trim().to_string(),
                 percent: c.get(2).and_then(|p| p.as_str().parse().ok()),
+                level: c.get(4).map(|l| l.as_str().to_string()),
             });
         }
         let classified = !statements.is_empty();
@@ -72,8 +79,17 @@ impl Ghs {
         }
     }
 
-    fn is_majority(s: &HazardStatement) -> bool {
-        s.percent.is_none_or(|p| p >= MAJORITY_PERCENT)
+    /// Statements listed on the card: those most notifiers report, plus, when
+    /// none of those carries the signal word's level, the ones that do, so the
+    /// card explains its own signal (benzylpenicillin's "Danger" comes from a
+    /// statement 48% report). The rest are only counted.
+    fn listed(&self) -> (Vec<&HazardStatement>, Vec<&HazardStatement>) {
+        let majority = |s: &HazardStatement| s.percent.is_none_or(|p| p >= MAJORITY_PERCENT);
+        let at_signal = |s: &HazardStatement| s.level.is_some() && s.level == self.signal;
+        let explained = self.statements.iter().any(|s| majority(s) && at_signal(s));
+        self.statements
+            .iter()
+            .partition(|s| majority(s) || (!explained && at_signal(s)))
     }
 }
 
@@ -112,7 +128,7 @@ pub fn danger_card(molecule: &str, ghs: &Ghs) -> CardDraft {
         };
     };
 
-    let (common, rare): (Vec<_>, Vec<_>) = ghs.statements.iter().partition(|s| Ghs::is_majority(s));
+    let (common, rare) = ghs.listed();
     let listed: Vec<String> = common
         .iter()
         .take(MAX_LISTED)
@@ -176,6 +192,31 @@ mod tests {
         assert_eq!(
             card.body,
             "Capsaicin carries the official GHS signal word \"Danger\". Its hazard statements: harmful if swallowed, causes skin irritation, and causes serious eye damage. A minority of reports list 2 other hazards."
+        );
+    }
+
+    /// M0.6b review: the "**" footnote marker hid H373, and "(Deleted)" leaked into the card.
+    #[test]
+    fn footnote_markers_and_deleted_labels() {
+        let g = Ghs::from_snippet_text(
+            "Signal word: Danger. H201: (Deleted) Explosive; mass explosion hazard [Danger Explosives] H300: Fatal if swallowed [Danger Acute toxicity, oral] H373 **: May causes damage to organs through prolonged or repeated exposure [Warning Specific target organ toxicity, repeated exposure]",
+        );
+        let codes: Vec<_> = g.statements.iter().map(|s| s.code.as_str()).collect();
+        assert_eq!(codes, ["H201", "H300", "H373"]);
+        assert_eq!(g.statements[0].text, "Explosive; mass explosion hazard");
+        assert_eq!(g.statements[2].level.as_deref(), Some("Warning"));
+    }
+
+    #[test]
+    fn card_explains_its_signal_word_even_from_a_minority_report() {
+        let g = Ghs::from_snippet_text(
+            "Signal word: Danger. H317 (100%): May cause an allergic skin reaction [Warning Sensitization, Skin] H334 (48%): May cause allergy or asthma symptoms or breathing difficulties if inhaled [Danger Sensitization, respiratory] H400 (46.7%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]",
+        );
+        let card = danger_card("benzylpenicillin", &g);
+        assert!(card.body.contains("may cause allergy or asthma symptoms"));
+        assert!(
+            card.body
+                .ends_with("A minority of reports list 1 other hazard.")
         );
     }
 

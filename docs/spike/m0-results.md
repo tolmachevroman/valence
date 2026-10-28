@@ -22,7 +22,7 @@ First impressions from one card each (not a verdict; that's M0.6):
 
 ## M0.5 spike runner (2026-10-25)
 
-Phi-4 mini, all four cards for all 30 fixtures (`crates/valence-core/examples/spike.rs`, full report in `runs/`). Two runs: the first exposed validator bugs, the second is after fixing them.
+Phi-4 mini, all four cards for all 30 fixtures (`crates/valence-core/examples/spike.rs`, full report of the second run in `runs/m0.6/`). Two runs: the first exposed validator bugs, the second is after fixing them.
 
 | | First run | After fixes |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ What changed between the runs:
 
 ## M0.6 bake-off (2026-10-25)
 
-All three models through the same spike, then every shown card reviewed against the full text of the snippets it cites, with one written rubric (accuracy: ok / minor / unsupported; rule violations; fun 1–5). Reviews are in `runs/*.review.jsonl`.
+All three models through the same spike, then every shown card reviewed against the full text of the snippets it cites, with one written rubric (accuracy: ok / minor / unsupported; rule violations; fun 1–5). Runs and reviews are in `runs/m0.6/`.
 
 | | Phi-4 mini | Qwen3 4B Instruct 2507 | Qwen3.5 4B |
 | --- | --- | --- | --- |
@@ -77,6 +77,28 @@ Errors concentrate in the **Weird** (13–18 of 30) and **Where** (10 of 30) car
 3. **Prompt rules for the observed failures:** keep hedges; don't combine facts from different snippets into one claim; name only examples the snippets list.
 4. **Lower temperature** (0.6 to about 0.2) for faithfulness, checking that fun holds up.
 5. If still short: a verification pass, where the model checks each sentence against its cited snippets, at the cost of extra time per card.
+
+## M0.6b accuracy pass (2026-10-28)
+
+Changes: the Danger card is built from GHS data without the model; Weird and Where cards pick 1–2 (Weird) or 1–3 (Where) snippets first and are written from those only; new prompt rules (keep hedges, keep facts on their own subject, name only listed examples); temperature 0.6 → 0.2. Same fixtures, same review rubric. Runs and reviews are in `runs/`.
+
+| | Unsupported claims | Rule violations | Fun | Accurate and fun (4+) |
+| --- | --- | --- | --- | --- |
+| Phi-4 mini | 34% → 17% | 13 → 1 | 2.77 → 2.86 | 6 → 11 |
+| **Qwen3 4B** | 27% → **16%** | 15 → 3 | 2.92 → **3.19** | 12 → **24** |
+| Qwen3.5 4B | 36% → 19% | 6 → 3 | 3.05 → 3.05 | 16 → 20 |
+
+- **Data-built Danger cards had no unsupported claims** for any model, and advice on Danger cards is gone. The review found three template bugs, since fixed: a `**` footnote marker hid nitroglycerin's H373, the raw "(Deleted)" label leaked into the card, and benzylpenicillin's "Danger" signal came from a statement only 48% of notifiers report, which the card counted but didn't list.
+- **Qwen3 4B is now clearly ahead:** fewest unsupported claims, and twice as many accurate-and-fun cards as in M0.6 (24). Its Weird cards average 3.83 for fun.
+- **Remaining errors** cluster in an editorial closing sentence on Weird cards ("this is surprising because…"), overconfident titles, and still some merged facts. Rule violations left: lethal doses from toxicity snippets (tetrodotoxin) and historical procedures (roasting frogs for dart poison, a recrystallization step).
+- **Cost: time.** The pick step reads every candidate snippet, so a model card takes about 7–9 s instead of about 5 s, and the first model card for a molecule arrives at about 5 s median. The Danger card appears instantly, so something is on screen at once.
+
+**Memory is not solved.** In this run mistral.rs also refused fixed-size paged attention for Qwen3 4B (the Mac had about 1 GB "available" by its estimate at that moment) and fell back to the plain cache, which peaked at 8.5 GB. The fallback depends on how busy the Mac is, and the plain cache is too large with 1,500-token prompts.
+
+**Still open before M0.7:**
+
+1. **Memory.** Options: patch mistral.rs's macOS free-memory estimate to count reclaimable (inactive) memory, used by both auto device mapping and paged attention, and send it upstream; or move inference to llama.cpp, which has a mature Metal backend with predictable memory.
+2. **The last 16%.** The 320 reviewed cards are now a labeled test set, so a verification step (the model checks each sentence against its cited snippets) can be measured offline for how many bad cards it catches and how many good ones it drops, before adding it to the pipeline. Also: rewrite the Weird example card, whose last sentence models the editorial inference the review keeps flagging, and exclude dose and procedure sentences at snippet selection.
 
 ## Findings that affect the app
 
