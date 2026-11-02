@@ -3728,7 +3728,7 @@ dependencies = [
 [[package]]
 name = "mistralrs"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "candle-core",
@@ -3755,7 +3755,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-audio"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "apodize",
@@ -3766,7 +3766,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-code-exec"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "base64 0.22.1",
@@ -3785,7 +3785,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-core"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "ahash",
  "akin",
@@ -3889,7 +3889,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-macros"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "darling 0.23.0",
  "proc-macro2",
@@ -3900,7 +3900,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-mcp"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -3921,7 +3921,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-metal-compile"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "candle-metal-kernels",
  "objc2-metal",
@@ -3930,7 +3930,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-paged-attn"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "candle-core",
@@ -3947,7 +3947,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-quant"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "bytemuck",
  "byteorder",
@@ -3984,7 +3984,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-sandbox"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "anyhow",
  "itoa",
@@ -4001,7 +4001,7 @@ dependencies = [
 [[package]]
 name = "mistralrs-vision"
 version = "0.9.5"
-source = "git+https://github.com/EricLBuehler/mistral.rs?tag=v0.9.5#465191d0b0a7e2432d327b0de06204ab3f94d3a2"
+source = "git+https://github.com/tolmachevroman/mistral.rs?rev=0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb#0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb"
 dependencies = [
  "candle-core",
  "image",

@@ -13,11 +13,13 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
 # M0 model spike only; moves to [dependencies] when generation lands in M3.
-# crates.io lags behind (0.8.1), so pin the release tag.
+# mistral.rs v0.9.5 plus an opt-in macOS available-memory estimate (M0.6c),
+# from our fork, pinned to the exact commit. Switch back to an upstream
+# release once the change is merged there.
 [dev-dependencies]
 anyhow = "1"
 libproc = "0.14"
-mistralrs = { git = "https://github.com/EricLBuehler/mistral.rs", tag = "v0.9.5", features = ["metal"] }
+mistralrs = { git = "https://github.com/tolmachevroman/mistral.rs", rev = "0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb", features = ["metal"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 
 [lints]

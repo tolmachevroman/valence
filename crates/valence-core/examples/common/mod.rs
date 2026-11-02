@@ -9,12 +9,13 @@ use std::time::{Duration, Instant};
 use anyhow::{Context, Result, bail};
 use libproc::pid_rusage::{RUsageInfoV4, pidrusage};
 use mistralrs::{
-    ChatCompletionChunkResponse, DeviceMapMetadata, GgufModelBuilder, MemoryGoal, Model,
-    PagedAttentionMetaBuilder, RequestBuilder, Response, Usage,
+    ChatCompletionChunkResponse, GgufModelBuilder, MacosAvailableMemory, MemoryGoal, Model,
+    PagedAttentionMetaBuilder, RequestBuilder, Response, Usage, set_macos_available_memory,
 };
 
-/// Context window the app will need: snippets plus a few-shot example fit well under this.
-pub const MAX_MODEL_LEN: usize = 8192;
+/// Context window and fixed KV cache size. The longest card prompt is about
+/// 2,500 tokens plus up to 300 generated; 4K instead of 8K saves about 600 MB.
+pub const MAX_MODEL_LEN: usize = 4096;
 
 /// Physical footprint in bytes: what Activity Monitor reports as memory, including Metal buffers.
 pub fn phys_footprint() -> u64 {
@@ -61,12 +62,23 @@ impl Drop for PeakMemory {
 
 /// Load a local GGUF file on Metal. Returns the model and which KV cache it uses.
 ///
-/// Prefers paged attention with a fixed cache of `MAX_MODEL_LEN` tokens: on a
-/// 2,400-token prompt it peaked at 4.9 GB against 6.3 GB for the plain cache.
-/// Its startup check still uses mistral.rs's conservative free-memory estimate
-/// and can refuse (Qwen3.5 in M0.1), so fall back to the plain cache then.
-/// `VALENCE_PLAIN_KV=1` forces the plain cache, for comparisons.
+/// mistral.rs's default macOS memory estimate counts only fully reclaimable
+/// pages, about 2 GB on a 16 GB Mac with a browser open, and every memory check
+/// reads it: automatic device mapping, paged attention planning, per-request
+/// admission. Our patched mistral.rs (M0.6c) can use the kernel's memory
+/// pressure level instead, the system's own measure of usable memory.
+///
+/// Uses paged attention with a fixed cache of `MAX_MODEL_LEN` tokens. There is
+/// no fallback to the plain cache: it peaked at 8.5 GB in M0.6b and stalled a
+/// busy Mac, so a refusal is better. `VALENCE_MEMORY=reclaimable|inactive|pressure`
+/// picks the estimate (default `pressure`); `VALENCE_PLAIN_KV=1` forces the plain cache.
 pub async fn load_model(path: &Path) -> Result<(Model, &'static str)> {
+    let policy = match std::env::var("VALENCE_MEMORY").as_deref() {
+        Ok("reclaimable") => MacosAvailableMemory::Reclaimable,
+        Ok("inactive") => MacosAvailableMemory::IncludeInactive,
+        _ => MacosAvailableMemory::SystemPressure,
+    };
+    set_macos_available_memory(policy);
     let dir = path.parent().context("model path has no directory")?;
     let file = path
         .file_name()
@@ -75,21 +87,20 @@ pub async fn load_model(path: &Path) -> Result<(Model, &'static str)> {
     let base = || {
         GgufModelBuilder::new(dir.to_string_lossy(), vec![file.to_string()])
             .with_max_model_len(MAX_MODEL_LEN)
-            // Auto mapping counts only free and file-backed pages as available, so on a
-            // 16 GB Mac with a browser open it refuses a 2.5 GB model. Put every layer on Metal.
-            .with_device_mapping(DeviceMapMetadata::dummy())
     };
 
-    if std::env::var_os("VALENCE_PLAIN_KV").is_none() {
-        let paged = PagedAttentionMetaBuilder::default()
-            .with_memory_goal(MemoryGoal::KvTokens(MAX_MODEL_LEN))
-            .build()?;
-        match base().with_paged_attn(paged).build().await {
-            Ok(model) => return Ok((model, "paged, fixed 8K tokens")),
-            Err(e) => eprintln!("paged attention refused ({e}); using the plain KV cache"),
-        }
+    if std::env::var_os("VALENCE_PLAIN_KV").is_some() {
+        return Ok((base().without_paged_attn().build().await?, "plain"));
     }
-    Ok((base().without_paged_attn().build().await?, "plain"))
+    let paged = PagedAttentionMetaBuilder::default()
+        .with_memory_goal(MemoryGoal::KvTokens(MAX_MODEL_LEN))
+        .build()?;
+    let model = base()
+        .with_paged_attn(paged)
+        .build()
+        .await
+        .context("not enough free memory for the model and its 4K-token cache")?;
+    Ok((model, "paged, fixed 4K tokens"))
 }
 
 pub struct Generation {

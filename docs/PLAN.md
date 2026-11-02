@@ -28,7 +28,7 @@ Goal: pick the default model, and find out early whether small models write card
 - [x] **M0.5 Spike runner** — `cargo run --example spike -- --model <path>` generates all cards for all 30 fixtures, with retry-once-stricter, and writes a CSV/Markdown report: pass rate, latency, memory, plus the cards for hand review.
 - [x] **M0.6 Bake-off** — run 2–3 current 3–4B instruct models (and one 7–8B for the "higher quality" setting). Score fun 1–5 by hand. Done for three 4B models; provisional pick Qwen3 4B, but about a third of cards still carry an unsupported claim. 7–8B not yet tried.
 - [x] **M0.6b Accuracy pass** — Danger card from GHS data without the model; pick-then-write for Weird and Where; prompt rules for hedges, merged facts and unlisted examples; lower temperature. Unsupported claims roughly halved (Qwen3 4B: 27% → 16%).
-- [ ] **M0.6c Memory** — make memory predictable under 5 GB regardless of how busy the Mac is: patch mistral.rs's macOS free-memory estimate (and upstream it), or move inference to llama.cpp.
+- [x] **M0.6c Memory** — make memory predictable under 5 GB regardless of how busy the Mac is. Opt-in kernel-pressure memory estimate on our mistral.rs fork, fixed 4K-token paged cache, no plain-cache fallback: 4.1 GB peak on the full Qwen3 run. Upstream pull request still to open.
 - [ ] **M0.6d Last mile on accuracy** — measure a sentence-level verification step against the 320 reviewed cards; fix the Weird example; filter dose and procedure sentences from snippets.
 - [ ] **M0.7 Decision record** — `docs/decisions/0001-default-model.md`: winner, HF repo + pinned revision + sha256, numbers.
 
@@ -70,7 +70,7 @@ Exit: searching any molecule shows its header and a smooth 3D model at 60 fps.
 ## M3 · Cards end to end (weeks 7–10)
 
 - [ ] **M3.1 Snippet selection** — per-kind rules (`where` ← uses + occurrence, `origin` ← Wikipedia history, `danger` ← GHS, `weird` ← all non-manufacturing); no snippets → no card. A v1 exists in `valence-core::select` from M0.5.
-- [ ] **M3.2 Model service** — loads in the background at launch, one generation queue (shortest card first), token stream to the UI; footer shows loaded / loading / not downloaded. Load with manual device mapping and fixed-size paged attention, falling back to the plain cache (see M0 findings), plus our own memory check before loading.
+- [ ] **M3.2 Model service** — loads in the background at launch, one generation queue (shortest card first), token stream to the UI; footer shows loaded / loading / not downloaded. Load with the kernel-pressure memory estimate and a fixed 4K-token paged cache (see M0.6c); if mistral.rs refuses, show a clear "not enough free memory" state instead of falling back.
 - [ ] **M3.3 Pipeline** — select → generate → validate → retry once stricter → persist or drop. Validator from M0, hardened.
 - [ ] **M3.4 Danger card** — GHS pictograms + statements rendered straight from data; model writes only the plain-language summary; no doses.
 - [ ] **M3.5 Persistence** — `card` + `card_source`; regenerate only when cited snippet hashes change.

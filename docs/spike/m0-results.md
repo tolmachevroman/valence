@@ -80,7 +80,7 @@ Errors concentrate in the **Weird** (13–18 of 30) and **Where** (10 of 30) car
 
 ## M0.6b accuracy pass (2026-10-28)
 
-Changes: the Danger card is built from GHS data without the model; Weird and Where cards pick 1–2 (Weird) or 1–3 (Where) snippets first and are written from those only; new prompt rules (keep hedges, keep facts on their own subject, name only listed examples); temperature 0.6 → 0.2. Same fixtures, same review rubric. Runs and reviews are in `runs/`.
+Changes: the Danger card is built from GHS data without the model; Weird and Where cards pick 1–2 (Weird) or 1–3 (Where) snippets first and are written from those only; new prompt rules (keep hedges, keep facts on their own subject, name only listed examples); temperature 0.6 → 0.2. Same fixtures, same review rubric. Runs and reviews are in `runs/m0.6b/`.
 
 | | Unsupported claims | Rule violations | Fun | Accurate and fun (4+) |
 | --- | --- | --- | --- | --- |
@@ -93,20 +93,40 @@ Changes: the Danger card is built from GHS data without the model; Weird and Whe
 - **Remaining errors** cluster in an editorial closing sentence on Weird cards ("this is surprising because…"), overconfident titles, and still some merged facts. Rule violations left: lethal doses from toxicity snippets (tetrodotoxin) and historical procedures (roasting frogs for dart poison, a recrystallization step).
 - **Cost: time.** The pick step reads every candidate snippet, so a model card takes about 7–9 s instead of about 5 s, and the first model card for a molecule arrives at about 5 s median. The Danger card appears instantly, so something is on screen at once.
 
-**Memory is not solved.** In this run mistral.rs also refused fixed-size paged attention for Qwen3 4B (the Mac had about 1 GB "available" by its estimate at that moment) and fell back to the plain cache, which peaked at 8.5 GB. The fallback depends on how busy the Mac is, and the plain cache is too large with 1,500-token prompts.
+**Memory is not solved** (resolved in M0.6c below). In this run mistral.rs also refused fixed-size paged attention for Qwen3 4B (the Mac had about 1 GB "available" by its estimate at that moment) and fell back to the plain cache, which peaked at 8.5 GB. The fallback depends on how busy the Mac is, and the plain cache is too large with 1,500-token prompts.
 
 **Still open before M0.7:**
 
 1. **Memory.** Options: patch mistral.rs's macOS free-memory estimate to count reclaimable (inactive) memory, used by both auto device mapping and paged attention, and send it upstream; or move inference to llama.cpp, which has a mature Metal backend with predictable memory.
 2. **The last 16%.** The 320 reviewed cards are now a labeled test set, so a verification step (the model checks each sentence against its cited snippets) can be measured offline for how many bad cards it catches and how many good ones it drops, before adding it to the pipeline. Also: rewrite the Weird example card, whose last sentence models the editorial inference the review keeps flagging, and exclude dose and procedure sentences at snippet selection.
 
+## M0.6c memory (2026-11-01)
+
+**Cause.** On macOS every memory check in mistral.rs (automatic device mapping, paged attention planning, per-request admission, attention workspace) reads one estimate that counts only fully reclaimable pages. Upstream tests make this deliberate (`anonymous_pages_require_explicit_volatile_purgeability`). On a 16 GB Mac with a browser and an editor open it is about 1–2 GB, so the model or its cache is refused even though macOS would free the memory.
+
+**What didn't work.** Patching single checks: there are at least three, each re-applying the same estimate. Counting inactive pages (psutil's definition) helped but still refused on a busy Mac.
+
+**Fix.** An opt-in estimate in mistral.rs, `set_macos_available_memory(MacosAvailableMemory::SystemPressure)`, which uses the kernel's memory pressure level (`kern.memorystatus_level`, the figure behind Activity Monitor's pressure graph). The default is unchanged, and the estimate is never lower than the default. It lives on a fork, [tolmachevroman/mistral.rs `valence/macos-available-memory`](https://github.com/tolmachevroman/mistral.rs/tree/valence/macos-available-memory), based on v0.9.5; Valence pins the exact commit. Upstream's memory tests pass, plus new ones; four Metal attention tests fail on this M1 Pro with and without the patch.
+
+Also changed: the fixed KV cache is 4K tokens instead of 8K (the longest prompt is about 2,500 tokens plus 300 generated), there is no fallback to the plain cache (it reached 8.5 GB and stalled a busy Mac; the app should say "not enough free memory" instead), and the manual device mapping workaround from M0.1 is gone.
+
+With another process holding 6 GB (41% free by the pressure level), Qwen3 4B:
+
+| Estimate | Result |
+| --- | --- |
+| Reclaimable (mistral.rs default) | refused |
+| + inactive pages | refused |
+| **Kernel pressure level** | **loaded in 6.5 s, 3.78 GB peak** |
+
+Full 30-molecule Qwen3 run with the pressure estimate: **4.06 GB peak**, 7.7 s load, every molecule completed, card outcomes in line with M0.6b (`runs/m0.6c/`). Qwen3.5 is still refused, correctly: it allocates over 5.7 GB for a 2.7 GB file and doesn't fit the 5 GB budget.
+
 ## Findings that affect the app
 
 - **Building needs full Xcode** for the `metal` compiler; the Command Line Tools are not enough.
-- **Auto device mapping refuses to load on a normal 16 GB Mac.** mistral.rs counts only free, file-backed and purgeable pages as available (about 2.2 GB with a browser open), not reclaimable app memory. Fix: `with_device_mapping(DeviceMapMetadata::dummy())` puts every layer on Metal.
-- **Automatic paged attention makes memory unpredictable** (3–6 GB for the same model) and blocked Qwen3.5 entirely, because it sizes its cache from the same estimate. M0.1 turned it off, but M0.5 found the plain cache peaks at 6.3 GB on a 2,400-token prompt, against 4.9 GB for paged attention with a **fixed** 8K-token cache (`MemoryGoal::KvTokens`). Current approach: fixed-size paged attention, falling back to the plain cache if its startup check refuses.
+- **mistral.rs's macOS memory estimate is too conservative for a desktop app** (about 2 GB available on a busy 16 GB Mac). Resolved in M0.6c with an opt-in estimate based on the kernel's pressure level, on our fork.
+- **Use paged attention with a fixed cache, never the plain cache.** Automatic paged attention sized itself from the estimate (3–6 GB for the same model); the plain cache peaked at 6.3–8.5 GB on long prompts. A fixed 4K-token cache (`MemoryGoal::KvTokens(4096)`) peaks at about 4.1 GB with Qwen3 4B.
 - **Prompt processing runs at about 300–330 tokens/s** on the M1 Pro with either cache, so prompt length sets time to first token: about 1 s for a 500-token Danger prompt, 7 s for a 2,400-token Weird prompt. Hence a 6,000-character snippet budget per card and generating the shortest card first.
-- With both fixes, the app has to do its own check before loading the model (for example, model size against total RAM) instead of relying on mistral.rs's estimate.
+- When mistral.rs still refuses (real memory pressure), the app should say so clearly ("close some apps to load the model") rather than fall back to a configuration that uses more memory.
 - **Wikipedia intro + History misses the best facts.** Capsaicin's birds (the PRD's own example) are under "Natural function", and its 2021 Nobel link under "Mechanism of action". The M0.2 fixtures also take up to 2 paragraphs from other sections, skipping making/extraction sections. If that helps cards in M0.6, M1.6 should do the same.
 - **Wikipedia snippets need a finer filter.** A "Structure and occurrence" section carried a chemical equation and "can also be generated by oxidation of…": synthesis content the section-name filter missed. Filter equations and how-it's-made sentences at the snippet level.
 - **GHS data disagrees between authorities** (caffeine: EU "Harmful if swallowed", Japan's NITE adds reproductive toxicity). Fixtures use the first authority listed; M1.5 needs a rule.
