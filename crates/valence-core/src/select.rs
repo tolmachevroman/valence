@@ -5,6 +5,7 @@ use std::sync::LazyLock;
 use regex::Regex;
 
 use crate::card::{CardKind, Snippet};
+use crate::validate::sentences;
 
 /// Rough cap on snippet text per card (about 1,500 tokens). Prompt processing
 /// runs at about 300 tokens/s on an M1 Pro (M0.5), so every 1,000 characters
@@ -21,6 +22,50 @@ static WHERE_SECTION: LazyLock<Regex> = LazyLock::new(|| {
 });
 static ORIGIN_SECTION: LazyLock<Regex> =
     LazyLock::new(|| Regex::new(r"(?i)history|discovery|etymology|naming").unwrap());
+
+// Sentences no card may draw on. Doses: lethal or safe amounts, intake levels.
+// Procedures: reaction equations and method steps, which come close to how-to;
+// biology ("synthesized by enzymes") and history ("synthesized by Sobrero in
+// 1846") stay.
+static DOSE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"(?i)\b(?:LD50|LD₅₀|LC50|LDLo|TDLo|(?:lethal|fatal|toxic) dose|[mµμ]?g/kg|mg/d(?:ay)?|g/day|per kilogram)\b").unwrap()
+});
+static AMOUNT: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"\d\s*(?:mg|g|µg|μg|mcg|ml|mL|grams?|milligrams?)\b").unwrap());
+static INTAKE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"(?i)\b(?:dos(?:e|es|age|ing)|daily|intake|ingest\w*|administ\w*|oral(?:ly)?|taken|consum\w*|swallow\w*)\b").unwrap()
+});
+static PROCEDURE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"(?i)\+[^.]*[→⟶⇌]|[→⟶⇌][^.]*\+|\breacts? with\b|\bcan react\b|\breaction of\b[^.]*\bwith\b|\bare prepared by\b|\bby (?:first )?(?:heating|cooling|evaporating|distilling|boiling|treating|reacting|mixing|dissolving|impaling)\b|\byields? (?:of )?\d|\bsteam distillation\b").unwrap()
+});
+static BIOLOGY: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"(?i)\b(?:pathway|enzymes?|in the body|naturally|metaboli\w*|biosynthe\w*)\b")
+        .unwrap()
+});
+
+fn is_dose(sentence: &str) -> bool {
+    DOSE.is_match(sentence) || (AMOUNT.is_match(sentence) && INTAKE.is_match(sentence))
+}
+
+fn is_procedure(sentence: &str) -> bool {
+    PROCEDURE.is_match(sentence) && !BIOLOGY.is_match(sentence)
+}
+
+/// The snippet without dose and procedure sentences, or `None` if nothing is
+/// left. GHS snippets are kept whole: the Danger card is built from them as data.
+pub fn scrub(snippet: &Snippet) -> Option<Snippet> {
+    if snippet.section == GHS {
+        return Some(snippet.clone());
+    }
+    let kept: Vec<_> = sentences(&snippet.text)
+        .into_iter()
+        .filter(|s| !is_dose(s) && !is_procedure(s))
+        .collect();
+    (!kept.is_empty()).then(|| Snippet {
+        text: kept.join(" "),
+        ..snippet.clone()
+    })
+}
 
 fn is_wikipedia(s: &Snippet) -> bool {
     s.source == "wikipedia"
@@ -139,6 +184,37 @@ mod tests {
         assert!(select(CardKind::Origin, &r).is_empty());
         assert!(select(CardKind::Danger, &r).is_empty());
         assert_eq!(select(CardKind::Weird, &r).len(), 1);
+    }
+
+    #[test]
+    fn scrub_drops_doses_and_procedures_only() {
+        let text = |t: &str| scrub(&s("wikipedia", "Toxicity", t)).map(|s| s.text);
+        assert_eq!(
+            text("The LD50 in mice is 47.2 mg/kg. Birds do not feel it."),
+            Some("Birds do not feel it.".into())
+        );
+        assert_eq!(
+            text("A typical dose of caffeine is around 70 to 100 mg per drink."),
+            None
+        );
+        assert_eq!(
+            text(
+                "Becher obtained it by heating ethanol with sulfuric acid; he named it. It is a gas."
+            ),
+            Some("It is a gas.".into())
+        );
+        assert_eq!(text("C60 reacts with lithium in liquid ammonia."), None);
+        for kept in [
+            "It was synthesized by the Italian chemist Ascanio Sobrero in 1846.",
+            "Serotonin is synthesized from tryptophan by a short metabolic pathway.",
+            "It is produced by bacteria, especially cyanobacteria.",
+            "Morphine is obtained from opium.",
+            "A 100 g bar of dark chocolate holds a lot of it.",
+        ] {
+            assert_eq!(text(kept).as_deref(), Some(kept));
+        }
+        let ghs = s("pubchem_view", GHS, "H301: Toxic if swallowed");
+        assert_eq!(scrub(&ghs), Some(ghs));
     }
 
     #[test]

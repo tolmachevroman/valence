@@ -220,8 +220,42 @@ impl Vocabulary {
     }
 }
 
+/// Abbreviations usually followed by a name.
+const TITLES: &[&str] = &[
+    "Mr", "Mrs", "Ms", "Dr", "Prof", "St", "Sr", "Jr", "Rev", "Gen", "Capt",
+];
+
+/// Sentence ends in already-trimmed text, skipping the period after an
+/// initial or a title, as in "named by F. L. Alphonse" or "a Mr. Ingenhousz".
+fn sentence_ends(body: &str) -> impl Iterator<Item = regex::Match<'_>> {
+    SENTENCE_END.find_iter(body).filter(|m| {
+        let word = body[..m.start()]
+            .rsplit(|c: char| c.is_whitespace() || c == '.')
+            .next()
+            .unwrap_or("");
+        let initial = word.chars().count() == 1 && word.chars().all(char::is_uppercase);
+        !(m.as_str().starts_with('.') && (initial || TITLES.contains(&word)))
+    })
+}
+
 fn sentence_count(body: &str) -> usize {
-    SENTENCE_END.find_iter(body.trim()).count()
+    sentence_ends(body.trim()).count()
+}
+
+/// The body's sentences, split the same way the sentence count is.
+pub fn sentences(body: &str) -> Vec<&str> {
+    let body = body.trim();
+    let mut out = Vec::new();
+    let mut start = 0;
+    for m in sentence_ends(body) {
+        let end = m.start() + m.as_str().find(char::is_whitespace).unwrap_or(m.len());
+        out.push(body[start..end].trim());
+        start = end;
+    }
+    if !body[start..].trim().is_empty() {
+        out.push(body[start..].trim());
+    }
+    out
 }
 
 /// Check numbers and alphanumeric codes in `text`.
@@ -533,6 +567,27 @@ mod tests {
             sentence_count("It scores 16.0 million SHU in C. annuum peppers. That is a lot."),
             2
         );
+        assert_eq!(
+            sentences("It scores 16.0 million SHU in C. annuum peppers. That is \"a lot.\" Wow"),
+            [
+                "It scores 16.0 million SHU in C. annuum peppers.",
+                "That is \"a lot.\"",
+                "Wow"
+            ]
+        );
+        assert_eq!(
+            sentences("It was named by F. L. Alphonse in 1841. Chemist A. Woskresensky found it."),
+            [
+                "It was named by F. L. Alphonse in 1841.",
+                "Chemist A. Woskresensky found it."
+            ]
+        );
+        assert_eq!(
+            sentences("In 1777, a Mr. Ingenhousz saw it. Dr. Who did not."),
+            ["In 1777, a Mr. Ingenhousz saw it.", "Dr. Who did not."]
+        );
+        // Known gap: a sentence ending in a single capital reads as an initial.
+        assert_eq!(sentence_count("It is vitamin C. It is sour."), 1);
     }
 
     /// Known gap: a claim with no new names or numbers passes. This is the

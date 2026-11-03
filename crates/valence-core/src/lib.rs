@@ -6,3 +6,4 @@ pub mod ghs;
 pub mod prompt;
 pub mod select;
 pub mod validate;
+pub mod verify;

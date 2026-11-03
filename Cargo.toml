@@ -9,6 +9,11 @@ rust-version = "1.99"
 license = "MIT"
 repository = "https://github.com/tolmachevroman/valence"
 
+# Full debug info for dependencies (mistral.rs, candle, Tauri) made target/debug
+# about 26 GB; keep it for our own crates only.
+[profile.dev.package."*"]
+debug = false
+
 [workspace.lints.rust]
 unsafe_code = "deny"
 

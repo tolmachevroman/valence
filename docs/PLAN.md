@@ -29,7 +29,7 @@ Goal: pick the default model, and find out early whether small models write card
 - [x] **M0.6 Bake-off** — run 2–3 current 3–4B instruct models (and one 7–8B for the "higher quality" setting). Score fun 1–5 by hand. Done for three 4B models; provisional pick Qwen3 4B, but about a third of cards still carry an unsupported claim. 7–8B not yet tried.
 - [x] **M0.6b Accuracy pass** — Danger card from GHS data without the model; pick-then-write for Weird and Where; prompt rules for hedges, merged facts and unlisted examples; lower temperature. Unsupported claims roughly halved (Qwen3 4B: 27% → 16%).
 - [x] **M0.6c Memory** — make memory predictable under 5 GB regardless of how busy the Mac is. Opt-in kernel-pressure memory estimate on our mistral.rs fork, fixed 4K-token paged cache, no plain-cache fallback: 4.1 GB peak on the full Qwen3 run. Upstream pull request still to open.
-- [ ] **M0.6d Last mile on accuracy** — measure a sentence-level verification step against the 320 reviewed cards; fix the Weird example; filter dose and procedure sentences from snippets.
+- [x] **M0.6d Last mile on accuracy** — claim check measured (catches 91% of unsupported cards offline); in the loop it cuts unsupported model cards 21% → 15% but drops 21 cards and doubles time to the first model card. Dose and method sentences scrubbed from snippets (rule violations 3 → 0); Weird example fixed.
 - [ ] **M0.7 Decision record** — `docs/decisions/0001-default-model.md`: winner, HF repo + pinned revision + sha256, numbers.
 
 Exit: one model gets first card in under 10 s and passes validation on most cards.

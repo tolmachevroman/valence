@@ -64,7 +64,8 @@ fn brief(kind: CardKind) -> &'static str {
         }
         CardKind::Weird => {
             "Card: Weird fact. The single most surprising detail in the snippets, the kind that \
-             makes a reader say \"wait, really?\". Focus on one fact and why it is surprising."
+             makes a reader say \"wait, really?\". Focus on one fact. Explain why it matters \
+             only if the snippets say so; never add a cause or consequence of your own."
         }
     }
 }
@@ -121,10 +122,10 @@ fn example(kind: CardKind) -> Example {
                 ),
                 (
                     "Wikipedia, Safety",
-                    "Although the smell is easy to notice at first, at high concentrations hydrogen sulfide quickly deadens the sense of smell.",
+                    "Although the smell is easy to notice at first, at high concentrations hydrogen sulfide quickly deadens the sense of smell, so people may not notice that the gas is still present.",
                 ),
             ],
-            card: r#"{"title": "The smell that switches itself off", "body": "Hydrogen sulfide is famous for smelling like rotten eggs. The strange part: at high concentrations it quickly deadens the sense of smell, so the warning fades just when there is more of the gas around.", "sources": ["s1", "s2"]}"#,
+            card: r#"{"title": "The smell that switches itself off", "body": "Hydrogen sulfide is famous for smelling like rotten eggs. The strange part: at high concentrations it quickly deadens the sense of smell, so people may not notice that the gas is still present.", "sources": ["s1", "s2"]}"#,
         },
     }
 }

@@ -18,6 +18,7 @@ use mistralrs::{Constraint, Model, RequestBuilder, TextMessageRole};
 use serde::{Deserialize, Serialize};
 use valence_core::card::{CardDraft, CardKind, Snippet};
 use valence_core::validate::{self, Rejection, Reply};
+use valence_core::verify::{self, Style};
 use valence_core::{ghs, prompt, select};
 
 use common::{PeakMemory, gb, load_model, stream};
@@ -73,6 +74,14 @@ struct Attempt {
     seconds: f64,
     prompt_tokens: Option<usize>,
     completion_tokens: Option<usize>,
+    /// Claim check of a card that passed the validator (M0.6d).
+    check: Option<Check>,
+}
+
+#[derive(Serialize)]
+struct Check {
+    output: String,
+    seconds: f64,
 }
 
 #[derive(Serialize)]
@@ -102,7 +111,11 @@ impl CardResult {
     /// Model time for this card: pick step plus every attempt.
     fn model_seconds(&self) -> f64 {
         self.pick.as_ref().map_or(0.0, |p| p.seconds)
-            + self.attempts.iter().map(|a| a.seconds).sum::<f64>()
+            + self
+                .attempts
+                .iter()
+                .map(|a| a.seconds + a.check.as_ref().map_or(0.0, |c| c.seconds))
+                .sum::<f64>()
     }
 }
 
@@ -145,10 +158,20 @@ async fn attempt(
         .set_sampler_temperature(TEMPERATURE);
     let g = stream(model, request, |_| {}).await?;
 
+    let mut check = None;
     let (reply, problems, categories) = match validate::parse(&g.text) {
         Ok(Reply::Skip) => (Some(Reply::Skip), vec![], vec![]),
         Ok(Reply::Card(card)) => match validate::validate(&card, molecule, picked) {
-            Ok(()) => (Some(Reply::Card(card)), vec![], vec![]),
+            Ok(()) => {
+                let (c, unsupported) = check_claims(model, molecule, &card, picked).await?;
+                check = Some(c);
+                if unsupported.is_empty() {
+                    (Some(Reply::Card(card)), vec![], vec![])
+                } else {
+                    let n = unsupported.len();
+                    (None, unsupported, vec!["claim check"; n])
+                }
+            }
             Err(rs) => (
                 None,
                 rs.iter().map(ToString::to_string).collect(),
@@ -165,8 +188,61 @@ async fn attempt(
         seconds: g.seconds,
         prompt_tokens: g.usage.as_ref().map(|u| u.prompt_tokens),
         completion_tokens: g.usage.as_ref().map(|u| u.completion_tokens),
+        check,
     };
     Ok((attempt, reply))
+}
+
+/// Ask the model, claim by claim, whether the cited snippets state the card.
+/// Returns the check and one problem per unsupported claim.
+async fn check_claims(
+    model: &Model,
+    molecule: &str,
+    card: &CardDraft,
+    picked: &[&Snippet],
+) -> Result<(Check, Vec<String>)> {
+    let cited: Vec<&Snippet> = card
+        .sources
+        .iter()
+        .filter_map(|id| {
+            picked.get(
+                id.strip_prefix('s')?
+                    .parse::<usize>()
+                    .ok()?
+                    .checked_sub(1)?,
+            )
+        })
+        .copied()
+        .collect();
+    let claims = verify::claims(card);
+    let p = verify::build(Style::Verdict, molecule, card, &cited);
+    let request = RequestBuilder::new()
+        .add_message(TextMessageRole::System, p.system)
+        .add_message(TextMessageRole::User, p.user)
+        .enable_thinking(false)
+        .set_constraint(Constraint::JsonSchema(verify::schema(
+            Style::Verdict,
+            claims.len(),
+        )))
+        .set_sampler_max_len(100)
+        .set_sampler_temperature(0.0);
+    let g = stream(model, request, |_| {}).await?;
+    let problems = match verify::parse(&g.text, claims.len()) {
+        Some(verdicts) => claims
+            .iter()
+            .zip(verdicts)
+            .filter(|(_, ok)| !ok)
+            .map(|(c, _)| format!("not stated in the cited snippets: \"{c}\""))
+            .collect(),
+        None => vec!["claim check reply unparseable".into()],
+    };
+    Ok((
+        Check {
+            output: g.text,
+            seconds: g.seconds,
+        },
+        problems,
+    ))
 }
 
 async fn run_card(
@@ -230,6 +306,7 @@ async fn run_card(
             seconds: g.seconds,
             prompt_tokens: g.usage.as_ref().map(|u| u.prompt_tokens),
             completion_tokens: g.usage.as_ref().map(|u| u.completion_tokens),
+            check: None,
         });
         if let Some(chosen) = chosen {
             picked = chosen.into_iter().map(|i| picked[i]).collect();
@@ -352,7 +429,7 @@ fn report(
     let _ = writeln!(md, "# Spike run: {model_name}\n");
     let _ = writeln!(
         md,
-        "{} molecules, {} cards with input. Temperature {TEMPERATURE}, JSON schema constraint, one stricter retry, shortest card first, pick-then-write for Weird and Where, Danger from GHS data, KV cache: {kv_cache}.\n",
+        "{} molecules, {} cards with input. Temperature {TEMPERATURE}, JSON schema constraint, one stricter retry, shortest card first, pick-then-write for Weird and Where, Danger from GHS data, dose and procedure sentences scrubbed, claim check after the validator, KV cache: {kv_cache}.\n",
         by_molecule.len(),
         with_input
     );
@@ -444,8 +521,10 @@ fn load_fixtures(dir: &Path, only: &[String]) -> Result<Vec<Fixture>> {
     paths.sort();
     let mut fixtures = Vec::new();
     for path in paths {
-        let fixture: Fixture = serde_json::from_str(&std::fs::read_to_string(&path)?)
+        let mut fixture: Fixture = serde_json::from_str(&std::fs::read_to_string(&path)?)
             .with_context(|| format!("reading {}", path.display()))?;
+        // M1 will scrub snippets as they are extracted; the fixtures are raw.
+        fixture.snippets = fixture.snippets.iter().filter_map(select::scrub).collect();
         if only.is_empty() || only.contains(&fixture.molecule) {
             fixtures.push(fixture);
         }

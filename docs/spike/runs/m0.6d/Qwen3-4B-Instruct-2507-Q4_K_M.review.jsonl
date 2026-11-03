@@ -1,0 +1,87 @@
+{"molecule": "allicin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "allicin", "kind": "origin", "accuracy": "minor", "issue": "Title 'Discovered in Japan' drops snippet's 'mainly in Japan'", "rule": "", "fun": 2, "note": "Juxtaposes Japan with US isolators without explaining"}
+{"molecule": "allicin", "kind": "where", "accuracy": "minor", "issue": "'garlic or leeks are chopped' extends chopping to leeks; 'reaction in the enzyme alliinase' misdescribes conversion", "rule": "", "fun": 3, "note": ""}
+{"molecule": "artemisinin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": "Aquatic statements read repetitive"}
+{"molecule": "artemisinin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Good arc from 1596 to 1972"}
+{"molecule": "artemisinin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Medical, not everyday"}
+{"molecule": "artemisinin", "kind": "weird", "accuracy": "minor", "issue": "Title 'Named after a queen botanist' drops snippet's 'may have been'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ascorbic acid", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ascorbic acid", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Vivid controlled-experiment story"}
+{"molecule": "ascorbic acid", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "E-number sentence is dry"}
+{"molecule": "aspirin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "aspirin", "kind": "origin", "accuracy": "minor", "issue": "'later branded as Aspirin' - 'later' is inferred timing", "rule": "", "fun": 3, "note": ""}
+{"molecule": "aspirin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "List of indications"}
+{"molecule": "aspirin", "kind": "weird", "accuracy": "minor", "issue": "'only one proven polymorph ... existed' turns 'proven' into existence claim", "rule": "", "fun": 4, "note": ""}
+{"molecule": "batrachotoxin", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "batrachotoxin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Blowgun darts hook"}
+{"molecule": "batrachotoxin", "kind": "weird", "accuracy": "minor", "issue": "'This shows the toxin exists across unrelated species' is the model's own inference", "rule": "", "fun": 3, "note": "Repeats where card's facts"}
+{"molecule": "benzylpenicillin", "kind": "danger", "accuracy": "minor", "issue": "Lists H334 (48%) as a main hazard though under half of reports; it drives the Danger word", "rule": "", "fun": 3, "note": ""}
+{"molecule": "benzylpenicillin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Clinical list"}
+{"molecule": "buckminsterfullerene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "buckminsterfullerene", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "buckminsterfullerene", "kind": "weird", "accuracy": "unsupported", "issue": "Snippet is about boron B80; card on C60 never says boron, implying a carbon buckyball first seen in 2026", "rule": "", "fun": 2, "note": "Wrong subject"}
+{"molecule": "caffeine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "caffeine", "kind": "weird", "accuracy": "minor", "issue": "Title 'helps premature babies gain weight' drops snippet's 'may improve'", "rule": "", "fun": 4, "note": ""}
+{"molecule": "capsaicin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "capsaicin", "kind": "where", "accuracy": "minor", "issue": "'commonly added to chili powder and paprika' - snippet says used in food in the form of those spices", "rule": "", "fun": 3, "note": ""}
+{"molecule": "capsaicin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Busts the seeds myth; slightly repetitive"}
+{"molecule": "carvone", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "carvone", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": "Never says what the two smells are"}
+{"molecule": "cinnamaldehyde", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "cubane", "kind": "where", "accuracy": "minor", "issue": "Title 'In high-performance explosives' - snippet says only 'studied as' explosives", "rule": "", "fun": 3, "note": ""}
+{"molecule": "cubane", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": "Jargon-heavy"}
+{"molecule": "dopamine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "dopamine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "dopamine", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Bacterial origin idea is a hook"}
+{"molecule": "ethylene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "ethylene", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "geosmin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "geosmin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Petrichor is relatable"}
+{"molecule": "geosmin", "kind": "weird", "accuracy": "minor", "issue": "'as low as 5 parts per trillion' cherry-picks low end of '400 to 5 ppt' range", "rule": "", "fun": 5, "note": ""}
+{"molecule": "indigo", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Copies source grammar 'may causes'"}
+{"molecule": "indigo", "kind": "where", "accuracy": "minor", "issue": "'in the leaves ... where it naturally forms a blue pigment' - snippet says dye obtained from leaves; 'pigment' is due to insolubility", "rule": "", "fun": 4, "note": "Grams-per-jeans fact is nice"}
+{"molecule": "indigo", "kind": "weird", "accuracy": "minor", "issue": "Present tense 'is dissolved' for a pre-industrial method; says process is 'part of' shibori/katazome, snippet says cloth was decorated with them", "rule": "", "fun": 4, "note": ""}
+{"molecule": "limonene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "limonene", "kind": "where", "accuracy": "minor", "issue": "Moves 'hand cleansers' from cleaning products to personal care list", "rule": "", "fun": 3, "note": ""}
+{"molecule": "lycopene", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "lycopene", "kind": "where", "accuracy": "minor", "issue": "Credits lycopene with the red-pink hue of baked beans; snippet only says it is found there", "rule": "", "fun": 3, "note": ""}
+{"molecule": "lycopene", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "menthol", "kind": "danger", "accuracy": "minor", "issue": "Snippet also lists 'Signal word: Warning. Pictograms: Irritant'; card silently drops the conflict", "rule": "", "fun": 3, "note": ""}
+{"molecule": "menthol", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Names and dates only"}
+{"molecule": "menthol", "kind": "where", "accuracy": "unsupported", "issue": "'giving minty flavor and a cooling sensation' - cooling not in snippets; 'snacks' in title also unstated", "rule": "", "fun": 3, "note": ""}
+{"molecule": "morphine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "morphine", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Morpheus naming is a good hook"}
+{"molecule": "morphine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": "Redundant sap sentence"}
+{"molecule": "nicotine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nicotine", "kind": "origin", "accuracy": "unsupported", "issue": "'They identified its empirical formula in 1843 by Melsens' attributes Melsens' work to Posselt and Reimann", "rule": "", "fun": 3, "note": "Garbled subject"}
+{"molecule": "nicotine", "kind": "weird", "accuracy": "minor", "issue": "'less harmful alternatives' drops 'to mammals'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nitroglycerin", "kind": "danger", "accuracy": "minor", "issue": "Lists H201 'explosive; mass explosion hazard' without noting snippet marks it '(Deleted)'; copies 'may causes'", "rule": "", "fun": 3, "note": ""}
+{"molecule": "nitroglycerin", "kind": "origin", "accuracy": "unsupported", "issue": "'adopted by Alfred Nobel for commercial use after a deadly explosion in 1864' - snippet ties the explosion to safer-handling work, not adoption", "rule": "", "fun": 3, "note": "Wrong causal/temporal link"}
+{"molecule": "nitroglycerin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Concrete disaster story"}
+{"molecule": "quinine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "quinine", "kind": "origin", "accuracy": "unsupported", "issue": "'In the 1570s, Jesuit Agostino Salumbrino ... observed' - 1570s refers to Spanish awareness generally; also 'By the 17th century ... Jesuit's bark' merges two snippets", "rule": "", "fun": 3, "note": "Merged dates"}
+{"molecule": "quinine", "kind": "where", "accuracy": "minor", "issue": "Softens 'not recommended for leg cramps' to 'side effects are a concern'; 'areas with resistance to chloroquine' shifts subject", "rule": "", "fun": 3, "note": ""}
+{"molecule": "quinine", "kind": "weird", "accuracy": "unsupported", "issue": "Title 'Quinine suppresses brain chemicals' - MAO inhibition blocks removal of neurotransmitters, the opposite", "rule": "", "fun": 3, "note": "Title contradicts body"}
+{"molecule": "serotonin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "serotonin", "kind": "origin", "accuracy": "minor", "issue": "Implies 'enteramine' named in 1935; snippet says named two years later when shown to be new amine", "rule": "", "fun": 3, "note": ""}
+{"molecule": "serotonin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "serotonin", "kind": "weird", "accuracy": "minor", "issue": "'causing sustained secretory diarrhea' drops 'in some people'", "rule": "", "fun": 4, "note": ""}
+{"molecule": "strychnine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "strychnine", "kind": "origin", "accuracy": "unsupported", "issue": "'used in Europe as early as 1640 to kill animals and humans' - snippet says dogs, cats and birds", "rule": "", "fun": 3, "note": "Adds humans"}
+{"molecule": "strychnine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "sucralose", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "tetrodotoxin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "tetrodotoxin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 5, "note": "Zombie lore with sources"}
+{"molecule": "tetrodotoxin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Bacteria-made twist"}
+{"molecule": "thalidomide", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "thalidomide", "kind": "origin", "accuracy": "unsupported", "issue": "Title 'From discarded by-product to a wonder drug' - 'wonder drug' not in snippets; thalidomide was discarded, the by-product came later", "rule": "", "fun": 3, "note": "Ignores cited s4 harm"}
+{"molecule": "thalidomide", "kind": "where", "accuracy": "minor", "issue": "'Once widely sold' and 'prescribed for HIV-related complications' firmer than 'has been used' with viral-load caveat", "rule": "", "fun": 4, "note": ""}
+{"molecule": "thalidomide", "kind": "weird", "accuracy": "unsupported", "issue": "Title 'A discarded drug became a miracle cure' - 'miracle cure' unsupported and misleading for thalidomide", "rule": "", "fun": 2, "note": "Body is flat"}
+{"molecule": "theobromine", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "theobromine", "kind": "origin", "accuracy": "ok", "issue": "", "rule": "", "fun": 2, "note": ""}
+{"molecule": "theobromine", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": "Colour sentence is filler"}
+{"molecule": "theobromine", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 4, "note": "Neat naming twist"}
+{"molecule": "vanillin", "kind": "danger", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "vanillin", "kind": "origin", "accuracy": "minor", "issue": "'starting industrial production' folded into 1874; discovery dated by Aztec usage; about vanilla more than vanillin", "rule": "", "fun": 3, "note": ""}
+{"molecule": "vanillin", "kind": "where", "accuracy": "ok", "issue": "", "rule": "", "fun": 3, "note": ""}
+{"molecule": "vanillin", "kind": "weird", "accuracy": "ok", "issue": "", "rule": "", "fun": 5, "note": "Bronze Age Canaan surprise"}
