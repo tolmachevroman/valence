@@ -30,7 +30,7 @@ Goal: pick the default model, and find out early whether small models write card
 - [x] **M0.6b Accuracy pass** — Danger card from GHS data without the model; pick-then-write for Weird and Where; prompt rules for hedges, merged facts and unlisted examples; lower temperature. Unsupported claims roughly halved (Qwen3 4B: 27% → 16%).
 - [x] **M0.6c Memory** — make memory predictable under 5 GB regardless of how busy the Mac is. Opt-in kernel-pressure memory estimate on our mistral.rs fork, fixed 4K-token paged cache, no plain-cache fallback: 4.1 GB peak on the full Qwen3 run. Upstream pull request still to open.
 - [x] **M0.6d Last mile on accuracy** — claim check measured (catches 91% of unsupported cards offline); in the loop it cuts unsupported model cards 21% → 15% but drops 21 cards and doubles time to the first model card. Dose and method sentences scrubbed from snippets (rule violations 3 → 0); Weird example fixed.
-- [ ] **M0.7 Decision record** — `docs/decisions/0001-default-model.md`: winner, HF repo + pinned revision + sha256, numbers.
+- [x] **M0.7 Decision record** — [decisions/0001-default-model.md](decisions/0001-default-model.md): Qwen3 4B Instruct 2507 Q4_K_M, pinned revision and sha256; accuracy over speed and card count, so the claim check gates every model card.
 
 Exit: one model gets first card in under 10 s and passes validation on most cards.
 
@@ -71,7 +71,7 @@ Exit: searching any molecule shows its header and a smooth 3D model at 60 fps.
 
 - [ ] **M3.1 Snippet selection** — per-kind rules (`where` ← uses + occurrence, `origin` ← Wikipedia history, `danger` ← GHS, `weird` ← all non-manufacturing); no snippets → no card. A v1 exists in `valence-core::select` from M0.5.
 - [ ] **M3.2 Model service** — loads in the background at launch, one generation queue (shortest card first), token stream to the UI; footer shows loaded / loading / not downloaded. Load with the kernel-pressure memory estimate and a fixed 4K-token paged cache (see M0.6c); if mistral.rs refuses, show a clear "not enough free memory" state instead of falling back.
-- [ ] **M3.3 Pipeline** — select → generate → validate → retry once stricter → persist or drop. Validator from M0, hardened.
+- [ ] **M3.3 Pipeline** — select → generate → validate → claim check → retry once with the problems → persist or drop. Validator and `verify` from M0, hardened.
 - [ ] **M3.4 Danger card** — GHS pictograms + statements rendered straight from data; model writes only the plain-language summary; no doses.
 - [ ] **M3.5 Persistence** — `card` + `card_source`; regenerate only when cited snippet hashes change.
 - [ ] **M3.6 Card UI** — cards stream in one by one; title, body, source links open in the browser; VoiceOver labels; keyboard focus.
@@ -105,5 +105,6 @@ Exit: v0.1 public on GitHub.
 - [x] License: MIT (already in `LICENSE`).
 - [x] UI stack: Tauri 2 + React + TypeScript (Vite), 3D with 3Dmol.js (decided 2026-10-20; PRD updated).
 - [ ] Danger card: GHS classes only, or also LD50? Suggest GHS only for the POC, in line with "never state safe doses".
-- [ ] Default model: settled by M0.7.
+- [x] Default model: Qwen3 4B Instruct 2507 Q4_K_M (M0.7).
+- [x] Accuracy vs speed: accuracy first; the claim check drops cards it can't verify (decided 2026-11-03).
 - [ ] Apple Developer ID ($99/yr) for signing and notarization: needed by M4.5.
