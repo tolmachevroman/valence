@@ -42,7 +42,7 @@ Exit: one model gets first card in under 10 s and passes validation on most card
 - [x] **M1.2 PUG-REST: identity** — autocomplete (`/rest/autocomplete/compound/{q}`), name / CAS → CID, properties (formula, molar mass), top 5 synonyms.
 - [x] **M1.3 PUG-REST: structure** — 3D conformer SDF (handle "no 3D" cleanly), 2D PNG for fallback.
 - [x] **M1.4 PUG-View sections** — fetch by heading; one parser per section, starting with 4–5 only: Uses, Natural occurrence / sources, Toxicity, GHS classification. Manufacturing sections are excluded from card input.
-- [ ] **M1.5 GHS** — pictogram codes + hazard statements stored verbatim in `ghs_json`.
+- [x] **M1.5 GHS** — pictogram codes + hazard statements stored verbatim in `ghs_json`. One authority per molecule: the EU harmonised classification (Regulation 1272/2008) when present, else the first PubChem lists; ECHA notification groups kept apart.
 - [ ] **M1.6 Wikipedia** — summary + History section → snippets with section URL.
 - [ ] **M1.7 SQLite cache** — PRD schema as migration v1 (rusqlite); repository layer; snippet `hash`; `fetched_at` with 90-day freshness.
 - [ ] **M1.8 Fetch orchestration** — properties + SDF first, annotations in parallel afterwards, all within the limiter; results stream out as they arrive.

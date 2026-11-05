@@ -4,6 +4,7 @@
 use serde_json::Value;
 
 use crate::card::Snippet;
+use crate::ghs::Ghs;
 use crate::pubchem::{Error, PubChem};
 use crate::text::{MIN_CHARS, clean};
 
@@ -25,6 +26,8 @@ pub struct Entry {
     pub text: String,
     /// The data provider, like `HSDB` or `ChEBI`.
     pub origin: String,
+    /// Markup labels, like the pictogram names on a `Pictogram(s)` entry.
+    pub marks: Vec<String>,
 }
 
 /// Every text entry under a PUG-View reply, depth first, as PubChem lists them.
@@ -50,16 +53,24 @@ pub fn entries(view: &Value) -> Vec<Entry> {
         .collect();
     while let Some(section) = stack.pop() {
         for info in section["Information"].as_array().into_iter().flatten() {
-            let text: Vec<&str> = info["Value"]["StringWithMarkup"]
+            let parts = info["Value"]["StringWithMarkup"]
                 .as_array()
                 .into_iter()
-                .flatten()
+                .flatten();
+            let text: Vec<&str> = parts
+                .clone()
                 .map(|p| p["String"].as_str().unwrap_or_default())
+                .collect();
+            let marks = parts
+                .flat_map(|p| p["Markup"].as_array().into_iter().flatten())
+                .filter_map(|m| m["Extra"].as_str())
+                .map(str::to_string)
                 .collect();
             out.push(Entry {
                 name: info["Name"].as_str().map(str::to_string),
                 text: text.join(" "),
                 origin: origin(info),
+                marks,
             });
         }
         stack.extend(section["Section"].as_array().into_iter().flatten().rev());
@@ -109,6 +120,96 @@ pub async fn annotations(pubchem: &PubChem, cid: u64) -> Result<Vec<Snippet>, Er
     Ok(out)
 }
 
+/// The EU's harmonised classification: legally binding, preferred when present.
+const EU_HARMONISED: &str = "Regulation (EC) No 1272/2008";
+
+/// One authority's classification: its pictograms, signal word and statements.
+#[derive(Debug, Default)]
+struct Classification {
+    origin: String,
+    pictograms: Vec<String>,
+    signal: Option<String>,
+    statements: Option<String>,
+}
+
+/// Classifications in the order PubChem lists them. An authority can have
+/// several (ECHA has one per notification group), so a new one starts at a
+/// new source or when a part repeats.
+fn classifications(view: &Value) -> Vec<Classification> {
+    let mut out: Vec<Classification> = Vec::new();
+    for entry in entries(view) {
+        let part = match entry.name.as_deref() {
+            Some(p @ ("Pictogram(s)" | "Signal" | "GHS Hazard Statements")) => p,
+            _ => continue,
+        };
+        let repeats = |c: &Classification| match part {
+            "Pictogram(s)" => {
+                !c.pictograms.is_empty() || c.signal.is_some() || c.statements.is_some()
+            }
+            "Signal" => c.signal.is_some() || c.statements.is_some(),
+            _ => c.statements.is_some(),
+        };
+        if out
+            .last()
+            .is_none_or(|c| c.origin != entry.origin || repeats(c))
+        {
+            out.push(Classification {
+                origin: entry.origin.clone(),
+                ..Classification::default()
+            });
+        }
+        let c = out.last_mut().expect("just pushed");
+        match part {
+            "Pictogram(s)" => c.pictograms = entry.marks,
+            "Signal" => c.signal = Some(entry.text.trim().to_string()),
+            _ => c.statements = Some(entry.text),
+        }
+    }
+    out.retain(|c| c.statements.is_some());
+    out
+}
+
+/// The hazard classification to show, and the snippet a card cites for it.
+/// Prefers the EU harmonised classification, else the first one listed.
+pub fn ghs(cid: u64, view: &Value) -> Option<(Ghs, Snippet)> {
+    let all = classifications(view);
+    let chosen = all
+        .iter()
+        .find(|c| c.origin.starts_with(EU_HARMONISED))
+        .or(all.first())?;
+    let mut text = Vec::new();
+    if let Some(signal) = &chosen.signal {
+        text.push(format!("Signal word: {signal}."));
+    }
+    if !chosen.pictograms.is_empty() {
+        text.push(format!("Pictograms: {}.", chosen.pictograms.join(", ")));
+    }
+    text.extend(chosen.statements.clone());
+    let text = text.join(" ");
+    let snippet = Snippet {
+        id: String::new(),
+        source: "pubchem_view".into(),
+        section: GHS_HEADING.into(),
+        url: format!("https://pubchem.ncbi.nlm.nih.gov/compound/{cid}#section=GHS-Classification"),
+        origin: chosen.origin.clone(),
+        text: text.clone(),
+    };
+    Some((Ghs::from_snippet_text(&text), snippet))
+}
+
+pub const GHS_HEADING: &str = "GHS Classification";
+
+/// The compound's hazard classification, or `None` when PubChem has none.
+pub async fn ghs_classification(
+    pubchem: &PubChem,
+    cid: u64,
+) -> Result<Option<(Ghs, Snippet)>, Error> {
+    Ok(pubchem
+        .view(cid, GHS_HEADING)
+        .await?
+        .and_then(|view| ghs(cid, &view)))
+}
+
 #[cfg(test)]
 mod tests {
     use std::path::Path;
@@ -120,6 +221,36 @@ mod tests {
             .join("../../fixtures/http/pubchem")
             .join(name);
         serde_json::from_slice(&std::fs::read(path).unwrap()).unwrap()
+    }
+
+    #[test]
+    fn prefers_the_eu_harmonised_classification() {
+        let (ghs, snippet) = ghs(2519, &view("view-2519-ghs-classification.json")).unwrap();
+        assert!(snippet.origin.starts_with(EU_HARMONISED));
+        assert_eq!(snippet.section, GHS_HEADING);
+        assert_eq!(
+            snippet.text,
+            "Signal word: Warning. Pictograms: Irritant. H302: Harmful if swallowed [Warning Acute toxicity, oral]"
+        );
+        assert_eq!(ghs.signal.as_deref(), Some("Warning"));
+        assert_eq!(ghs.pictograms, ["Irritant"]);
+        assert_eq!(ghs.statements.len(), 1);
+    }
+
+    /// The spike script merged ECHA's notification groups by name, so menthol's
+    /// last, one-company "Not Classified" group replaced the real classification.
+    #[test]
+    fn keeps_each_notification_group_apart() {
+        let view = view("view-1254-ghs-classification.json");
+        let all = classifications(&view);
+        assert!(all.len() > 3, "{all:#?}");
+        assert!(all.iter().filter(|c| c.origin.contains("ECHA")).count() > 1);
+        let (ghs, snippet) = ghs(1254, &view).unwrap();
+        assert!(snippet.origin.contains("ECHA"));
+        assert_eq!(ghs.signal.as_deref(), Some("Warning"));
+        let codes: Vec<_> = ghs.statements.iter().map(|s| s.code.as_str()).collect();
+        assert_eq!(codes, ["H315", "H319"]);
+        assert_eq!(ghs.statements[0].percent, Some(97.3));
     }
 
     #[test]

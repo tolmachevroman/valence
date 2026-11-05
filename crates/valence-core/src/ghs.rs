@@ -9,6 +9,7 @@
 use std::sync::LazyLock;
 
 use regex::Regex;
+use serde::{Deserialize, Serialize};
 
 use crate::card::CardDraft;
 
@@ -16,7 +17,7 @@ use crate::card::CardDraft;
 const MAJORITY_PERCENT: f32 = 50.0;
 const MAX_LISTED: usize = 5;
 
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct HazardStatement {
     /// Such as `H302` or `H300+H310`.
     pub code: String,
@@ -28,7 +29,8 @@ pub struct HazardStatement {
     pub level: Option<String>,
 }
 
-#[derive(Debug, Clone, PartialEq, Default)]
+/// Stored as `ghs_json` in the cache.
+#[derive(Debug, Clone, PartialEq, Default, Serialize, Deserialize)]
 pub struct Ghs {
     /// "Danger" or "Warning"; `None` when not classified.
     pub signal: Option<String>,
@@ -49,8 +51,8 @@ static PICTOGRAMS: LazyLock<Regex> =
     LazyLock::new(|| Regex::new(r"Pictograms:\s*([^.]+)\.").unwrap());
 
 impl Ghs {
-    /// Parse the GHS snippet text written by `scripts/fetch_spike_fixtures.py`.
-    /// M1.5 builds `Ghs` from PubChem's structured data instead.
+    /// Parse a GHS snippet's text, as built by `pug_view::ghs` (and earlier by
+    /// `scripts/fetch_spike_fixtures.py`).
     pub fn from_snippet_text(text: &str) -> Self {
         let mut statements: Vec<HazardStatement> = Vec::new();
         for c in STATEMENT.captures_iter(text) {
