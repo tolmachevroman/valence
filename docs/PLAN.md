@@ -40,7 +40,7 @@ Exit: one model gets first card in under 10 s and passes validation on most card
 
 - [x] **M1.1 HTTP foundation** — shared `reqwest` client, `governor` limiter at 5 req/s for PubChem, 15 s timeout, one retry with backoff on 429/5xx, User-Agent `Valence/<ver> (+repo URL)`.
 - [x] **M1.2 PUG-REST: identity** — autocomplete (`/rest/autocomplete/compound/{q}`), name / CAS → CID, properties (formula, molar mass), top 5 synonyms.
-- [ ] **M1.3 PUG-REST: structure** — 3D conformer SDF (handle "no 3D" cleanly), 2D PNG for fallback.
+- [x] **M1.3 PUG-REST: structure** — 3D conformer SDF (handle "no 3D" cleanly), 2D PNG for fallback.
 - [ ] **M1.4 PUG-View sections** — fetch by heading; one parser per section, starting with 4–5 only: Uses, Natural occurrence / sources, Toxicity, GHS classification. Manufacturing sections are excluded from card input.
 - [ ] **M1.5 GHS** — pictogram codes + hazard statements stored verbatim in `ghs_json`.
 - [ ] **M1.6 Wikipedia** — summary + History section → snippets with section URL.

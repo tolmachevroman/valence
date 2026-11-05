@@ -186,7 +186,7 @@ pub(crate) mod test_server {
     /// Serve every request with `respond(index, path)`, which returns a full
     /// HTTP response. Returns the base URL (`http://127.0.0.1:port`) and the log.
     pub(crate) async fn serve(
-        respond: impl Fn(usize, &str) -> String + Send + 'static,
+        respond: impl Fn(usize, &str) -> Vec<u8> + Send + 'static,
     ) -> (String, Log) {
         let listener = TcpListener::bind("127.0.0.1:0").await.unwrap();
         let base = format!("http://{}", listener.local_addr().unwrap());
@@ -205,17 +205,21 @@ pub(crate) mod test_server {
                     log.len() - 1
                 };
                 let reply = respond(i, &path);
-                socket.write_all(reply.as_bytes()).await.unwrap();
+                socket.write_all(&reply).await.unwrap();
             }
         });
         (base, seen)
     }
 
-    pub(crate) fn response(status: &str, body: &str) -> String {
-        format!(
-            "HTTP/1.1 {status}\r\nContent-Length: {}\r\nConnection: close\r\n\r\n{body}",
+    pub(crate) fn response(status: &str, body: impl AsRef<[u8]>) -> Vec<u8> {
+        let body = body.as_ref();
+        let mut out = format!(
+            "HTTP/1.1 {status}\r\nContent-Length: {}\r\nConnection: close\r\n\r\n",
             body.len()
         )
+        .into_bytes();
+        out.extend_from_slice(body);
+        out
     }
 }
 
@@ -230,7 +234,8 @@ mod tests {
 
     /// Answer each request with the next scripted response; the last repeats.
     async fn serve(script: Vec<&'static str>) -> (String, Log) {
-        let (base, log) = serve_fn(move |i, _| script[i.min(script.len() - 1)].to_string()).await;
+        let (base, log) =
+            serve_fn(move |i, _| script[i.min(script.len() - 1)].as_bytes().to_vec()).await;
         (format!("{base}/x"), log)
     }
 

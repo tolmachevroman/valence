@@ -147,6 +147,56 @@ impl PubChem {
         }
         Ok(compound)
     }
+
+    /// PubChem's computed 3D conformer as an SDF record, or `None` when it has
+    /// none (very large or flexible molecules, metal complexes, C60).
+    pub async fn sdf_3d(&self, cid: u64) -> Result<Option<String>, Error> {
+        let mut url = self.url(&["pug", "compound", "cid", &cid.to_string(), "record", "SDF"]);
+        url.query_pairs_mut().append_pair("record_type", "3d");
+        match self.http.get_text(Host::PubChem, url.as_str()).await {
+            Ok(sdf) if is_sdf(&sdf) => Ok(Some(sdf)),
+            Ok(_) => Err(Error::Format("SDF record")),
+            Err(e) if e.is_not_found() => Ok(None),
+            Err(e) => Err(e.into()),
+        }
+    }
+
+    /// A 500 × 500 2D drawing, for molecules without a 3D conformer.
+    pub async fn png_2d(&self, cid: u64) -> Result<Vec<u8>, Error> {
+        let mut url = self.url(&["pug", "compound", "cid", &cid.to_string(), "PNG"]);
+        url.query_pairs_mut()
+            .append_pair("image_size", &format!("{PNG_SIZE}x{PNG_SIZE}"));
+        let png = self.http.get(Host::PubChem, url.as_str()).await?;
+        if !png.starts_with(PNG_SIGNATURE) {
+            return Err(Error::Format("PNG image"));
+        }
+        Ok(png)
+    }
+
+    /// What the viewer shows: the 3D conformer if there is one, else the 2D drawing.
+    pub async fn structure(&self, cid: u64) -> Result<Structure, Error> {
+        match self.sdf_3d(cid).await? {
+            Some(sdf) => Ok(Structure::ThreeD(sdf)),
+            None => Ok(Structure::TwoD(self.png_2d(cid).await?)),
+        }
+    }
+}
+
+/// Side of the 2D drawing in pixels; sharp at the panel size on Retina screens.
+pub const PNG_SIZE: u32 = 500;
+const PNG_SIGNATURE: &[u8] = b"\x89PNG\r\n\x1a\n";
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum Structure {
+    /// SDF text for 3Dmol.js.
+    ThreeD(String),
+    /// PNG bytes.
+    TwoD(Vec<u8>),
+}
+
+/// A molfile record: a counts line in V2000 or V3000 format and an end marker.
+fn is_sdf(text: &str) -> bool {
+    (text.contains("V2000") || text.contains("V3000")) && text.contains("M  END")
 }
 
 /// Autocomplete returns registry codes too (`Y2T8N94ZQQ`); keep names only.
@@ -243,15 +293,15 @@ mod tests {
     use crate::http::Settings;
     use crate::http::test_server::{response, serve};
 
-    fn fixture(name: &str) -> String {
+    fn fixture(name: &str) -> Vec<u8> {
         let path = Path::new(env!("CARGO_MANIFEST_DIR"))
             .join("../../fixtures/http/pubchem")
             .join(name);
-        std::fs::read_to_string(&path).unwrap_or_else(|_| panic!("missing {}", path.display()))
+        std::fs::read(&path).unwrap_or_else(|_| panic!("missing {}", path.display()))
     }
 
     fn json(name: &str) -> Value {
-        serde_json::from_str(&fixture(name)).unwrap()
+        serde_json::from_slice(&fixture(name)).unwrap()
     }
 
     /// A local PubChem that serves recorded replies by path.
@@ -265,9 +315,14 @@ mod tests {
                     "properties-2519.json"
                 }
                 "/rest/pug/compound/cid/2519/synonyms/JSON" => "synonyms-2519.json",
-                _ => return response("404 Not Found", &fixture("cids-not-found.json")),
+                "/rest/pug/compound/cid/2519/record/SDF?record_type=3d" => "sdf-3d-2519.sdf",
+                "/rest/pug/compound/cid/123591/record/SDF?record_type=3d" => {
+                    return response("404 Not Found", fixture("sdf-3d-not-found.txt"));
+                }
+                "/rest/pug/compound/cid/123591/PNG?image_size=500x500" => "png-123591.png",
+                _ => return response("404 Not Found", fixture("cids-not-found.json")),
             };
-            response("200 OK", &fixture(file))
+            response("200 OK", fixture(file))
         })
         .await;
         let http = Http::with_settings(Settings {
@@ -364,6 +419,32 @@ mod tests {
         );
     }
 
+    #[tokio::test]
+    async fn structure_is_3d_when_pubchem_has_it_else_2d() {
+        let (pubchem, _) = local_pubchem().await;
+        match pubchem.structure(2519).await.unwrap() {
+            Structure::ThreeD(sdf) => {
+                assert!(sdf.starts_with("2519\n"));
+                assert!(sdf.trim_end().ends_with("$$$$"));
+            }
+            other => panic!("caffeine has a 3D conformer: {other:?}"),
+        }
+        // Buckminsterfullerene has no 3D conformer in PubChem.
+        assert_eq!(pubchem.sdf_3d(123591).await.unwrap(), None);
+        match pubchem.structure(123591).await.unwrap() {
+            Structure::TwoD(png) => assert!(png.starts_with(PNG_SIGNATURE)),
+            other => panic!("expected the 2D drawing: {other:?}"),
+        }
+    }
+
+    #[test]
+    fn sdf_check() {
+        assert!(is_sdf(
+            &String::from_utf8(fixture("sdf-3d-2519.sdf")).unwrap()
+        ));
+        assert!(!is_sdf("Status: 404"));
+    }
+
     /// Against the real PubChem: `cargo test -p valence-core -- --ignored live`.
     #[tokio::test]
     #[ignore = "network"]
@@ -374,6 +455,8 @@ mod tests {
         println!("{c:#?}");
         assert_eq!(c.formula, "C18H27NO3");
         assert!(!pubchem.autocomplete("capsa", 10).await.unwrap().is_empty());
+        assert!(matches!(pubchem.structure(cid).await.unwrap(), Structure::ThreeD(_)));
+        assert!(matches!(pubchem.structure(123591).await.unwrap(), Structure::TwoD(_)));
     }
 
     #[tokio::test]
