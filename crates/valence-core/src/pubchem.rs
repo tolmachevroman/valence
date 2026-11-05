@@ -148,6 +148,18 @@ impl PubChem {
         Ok(compound)
     }
 
+    /// The PUG-View reply for one annotation heading, or `None` when the
+    /// compound has nothing under it.
+    pub async fn view(&self, cid: u64, heading: &str) -> Result<Option<Value>, Error> {
+        let mut url = self.url(&["pug_view", "data", "compound", &cid.to_string(), "JSON"]);
+        url.query_pairs_mut().append_pair("heading", heading);
+        match self.json(url).await {
+            Ok(v) => Ok(Some(v)),
+            Err(Error::Http(e)) if e.is_not_found() => Ok(None),
+            Err(e) => Err(e),
+        }
+    }
+
     /// PubChem's computed 3D conformer as an SDF record, or `None` when it has
     /// none (very large or flexible molecules, metal complexes, C60).
     pub async fn sdf_3d(&self, cid: u64) -> Result<Option<String>, Error> {
@@ -455,8 +467,14 @@ mod tests {
         println!("{c:#?}");
         assert_eq!(c.formula, "C18H27NO3");
         assert!(!pubchem.autocomplete("capsa", 10).await.unwrap().is_empty());
-        assert!(matches!(pubchem.structure(cid).await.unwrap(), Structure::ThreeD(_)));
-        assert!(matches!(pubchem.structure(123591).await.unwrap(), Structure::TwoD(_)));
+        assert!(matches!(
+            pubchem.structure(cid).await.unwrap(),
+            Structure::ThreeD(_)
+        ));
+        assert!(matches!(
+            pubchem.structure(123591).await.unwrap(),
+            Structure::TwoD(_)
+        ));
     }
 
     #[tokio::test]
@@ -471,5 +489,13 @@ mod tests {
             "caffeine"
         );
         assert!(pubchem.autocomplete("  ", 10).await.unwrap().is_empty());
+        // Cubane has no natural sources section.
+        assert!(
+            pubchem
+                .view(136090, "Natural Pollution Sources")
+                .await
+                .unwrap()
+                .is_none()
+        );
     }
 }

@@ -1,0 +1,530 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2519,
+    "RecordTitle": "Caffeine",
+    "Section": [
+      {
+        "TOCHeading": "Use and Manufacturing",
+        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
+        "Section": [
+          {
+            "TOCHeading": "Uses",
+            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "Information": [
+              {
+                "ReferenceNumber": 28,
+                "Name": "Cosmetic Ingredient Review Link",
+                "Reference": [
+                  "International Journal of Toxicology 43(Suppl. 4):42-77, 2024"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "International Journal of Toxicology 43(Suppl. 4):42-77, 2024",
+                    "Matched": {
+                      "PCLID": 906421689,
+                      "Citation": "International Journal of Toxicology 43(Suppl. 4):42-77, 2024"
+                    }
+                  }
+                ],
+                "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=8c82edc7-2115-4ae6-b58a-c78671befe16",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "CIR ingredient: Caffeine",
+                      "Markup": [
+                        {
+                          "Start": 16,
+                          "Length": 8,
+                          "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=8c82edc7-2115-4ae6-b58a-c78671befe16"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 43,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 43,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 43,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 64,
+                "Name": "Sources/Uses",
+                "Reference": [
+                  "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                    "Matched": {
+                      "PCLID": 900175655,
+                      "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Occurs naturally in tea leaves, coffee beans, cocoa beans, mate leaves, guarana paste, and kola nuts; [Merck Index] Used in beverages, cardiac and respiratory stimulants, and diuretics; [HSDB] Also used in cosmetics; [eChemPortal: SIDSUNEP]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 66,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "National Pesticide Information Retrieval System's Database on Caffeinie (58-08-2). Available from, as of March 18, 2014: https://npirspublic.ceris.purdue.edu/ppis/"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "National Pesticide Information Retrieval System's Database on Caffeinie (58-08-2). Available from, as of March 18, 2014: https://npirspublic.ceris.purdue.edu/ppis/",
+                    "Matched": {
+                      "PCLID": 900002315,
+                      "Citation": "National Pesticide Information Retrieval System's Database on Caffeinie (58-08-2). Available from, as of March 18, 2014: https://npirspublic.ceris.purdue.edu/ppis/"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For caffeine (USEPA/OPP Pesticide Code: 000660) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-2519"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 66,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 212"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 212",
+                    "Matched": {
+                      "PCLID": 900015621,
+                      "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 212"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Beverages, medicine"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 66,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "OECD SIDS for Caffeine (CAS 58-08-2); Available from, as of January 9, 2014: https://www.inchem.org/documents/sids/sids/CAFEINE.pdf"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "OECD SIDS for Caffeine (CAS 58-08-2); Available from, as of January 9, 2014: https://www.inchem.org/documents/sids/sids/CAFEINE.pdf",
+                    "Matched": {
+                      "PCLID": 900117833,
+                      "Citation": "OECD SIDS for Caffeine (CAS 58-08-2); Available from, as of January 9, 2014: https://www.inchem.org/documents/sids/sids/CAFEINE.pdf"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Caffeine is a substance in wide use. It is predominantly used in the food sector and pharma sector (80% and 16% rspectively). A smaller part is used in cosmetics (3%) or in technical applications (1%). Furthermore caffeine is a naturally occurring substance in various plant species (e.g. 0.9 to 2.6% in green coffee beans). It is a component in coffee, tea and cocoa.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-2519"
+                        },
+                        {
+                          "Start": 214,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-2519"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 66,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 289"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 289",
+                    "Matched": {
+                      "PCLID": 900118661,
+                      "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 289"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Stimulant for central nervous and respiratory systems; cardiac and respiratory stimulant; diuretic"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 66,
+                "Description": "PEER REVIEWED",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For more Uses (Complete) data for CAFFEINE (7 total), please visit the HSDB record page.",
+                      "Markup": [
+                        {
+                          "Start": 71,
+                          "Length": 16,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/36#section=Uses-(Complete)"
+                        },
+                        {
+                          "Start": 34,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/CAFFEINE",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-2519"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 295,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Caffeine is a central nervous system (CNS) stimulant, having the effect of temporarily warding off drowsiness and restoring alertness. For management of fatigue, orthostatic hypotension, and for the short term treatment of apnea of prematurity in infants.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-2519"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "Section": [
+              {
+                "TOCHeading": "Use Classification",
+                "Description": "This section contains use classification/category information for this compound from various sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 265,
+                    "Reference": [
+                      "S66 | EAWAGTPS | Parent-Transformation Product Pairs from Eawag | DOI:10.5281/zenodo.3754448"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S66 | EAWAGTPS | Parent-Transformation Product Pairs from Eawag | DOI:10.5281/zenodo.3754448",
+                        "Matched": {
+                          "PCLID": 426220666,
+                          "Citation": "S66 | EAWAGTPS | Parent-Transformation Product Pairs from Eawag | DOI:10.5281/zenodo.3754448",
+                          "DOI": "10.5281/zenodo.3754448"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Natural products -> Stimulants -> Nervous System -> Psychoanaleptics -> Psycostimulants, agents used for ADHD and nootropics -> Xanthine derivatives",
+                          "Markup": [
+                            {
+                              "Start": 128,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Xanthine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1188"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 265,
+                    "Reference": [
+                      "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                        "Matched": {
+                          "PCLID": 415213182,
+                          "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                          "DOI": "10.5281/zenodo.2624118"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Cosmetics -> Skin conditioning"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Household Products",
+                "Description": "Household products containing this compound.  This information is from several sources, including the Consumer Product Information Database (CPID).",
+                "URL": "https://www.whatsinproducts.com/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 9,
+                    "Name": "California Safe Cosmetics Program (CSCP)",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Cosmetics product ingredient: Caffeine",
+                          "Markup": [
+                            {
+                              "Start": 30,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Source: Caffeine is a chemical that occurs naturally in the coffee plant and tea bush. It acts as a stimulant drug and is used to reduce fatigue and restore alertness. Manufacturers may add caffeine to cosmetics as a skin conditioner or to reduce redness or puffiness.",
+                          "Markup": [
+                            {
+                              "Start": 8,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 190,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Potential health impacts: The major routes of exposure to caffeine in cosmetics are ingestion or skin absorption. Recommendations on caffeine consumption have focused on ingestion of caffeine in food and drinks, not cosmetics. In 2010, the American College of Obstetricians and Gynecologists (ACOG) issued a committee opinion stating that moderate caffeine consumption during pregnancy does not increase the risk of miscarriage or preterm birth. However, some studies suggest that mothers who consume moderate to high levels of caffeine during pregnancy may have a baby who weighs less than expected at birth. The International Agency for Research on Cancer (IARC) does not categorize caffeine as a human or animal carcinogen. Caffeine is not listed by California Proposition 65 as a carcinogen or reproductive toxin.",
+                          "Markup": [
+                            {
+                              "Start": 58,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 133,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 183,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 348,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 528,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 685,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 727,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Product count: 71"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 27,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 22 consumer products that contain Caffeine in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 49,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Personal Care"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "California Safe Cosmetics Program (CSCP) Product Database",
+        "SourceID": "1097",
+        "Name": "Caffeine",
+        "Description": "The California Safe Cosmetics Program (CSCP) is charged with implementing the California Safe Cosmetics Act (CSCA) and the Cosmetic Fragrance and Flavor Ingredient Right to Know Act (CFFIRKA). The goal of CSCP is to collect and share information on hazardous and potentially hazardous ingredients in cosmetics sold in California and to make this information available to the public.",
+        "URL": "https://cscpsearch.cdph.ca.gov/search/detailresult/1097",
+        "LicenseURL": "https://www.cdph.ca.gov/Pages/Conditions-of-Use.aspx",
+        "ANID": 39993329
+      },
+      {
+        "ReferenceNumber": 27,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "38",
+        "Name": "Caffeine",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/3819/000058-08-2",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 5124097
+      },
+      {
+        "ReferenceNumber": 28,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "8c82edc7-2115-4ae6-b58a-c78671befe16",
+        "Name": "Caffeine",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=8c82edc7-2115-4ae6-b58a-c78671befe16",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 38997229
+      },
+      {
+        "ReferenceNumber": 43,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "75904dde34772e5be7cb2cc828bfe594",
+        "Name": "CAFFEINE",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID0020232#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56948497
+      },
+      {
+        "ReferenceNumber": 64,
+        "SourceName": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+        "SourceID": "hz4136",
+        "Name": "Caffeine",
+        "Description": "Haz-Map® is an occupational health database designed for health and safety professionals and for consumers seeking information about the adverse effects of workplace exposures to chemical and biological agents.",
+        "LicenseNote": "Copyright (c) 2026 Haz-Map(R). All rights reserved.\u000AUnless otherwise indicated, all materials from Haz-Map are copyrighted by Haz-Map(R). No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "ANID": 17278866
+      },
+      {
+        "ReferenceNumber": 66,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "36",
+        "Name": "CAFFEINE",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/36",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 7
+      },
+      {
+        "ReferenceNumber": 295,
+        "SourceName": "Toxin and Toxin Target Database (T3DB)",
+        "SourceID": "Compound::T3D2712",
+        "Name": "Caffeine",
+        "Description": "The Toxin and Toxin Target Database (T3DB), or, soon to be referred as, the Toxic Exposome Database, is a unique bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
+        "URL": "http://www.t3db.ca/toxins/T3D2712",
+        "LicenseNote": "T3DB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (T3DB) and the original publication.",
+        "LicenseURL": "https://t3db.ca/downloads",
+        "ANID": 20442602
+      },
+      {
+        "ReferenceNumber": 265,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "nrm_2519",
+        "Name": "CAFFEINE",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 9030730
+      }
+    ]
+  }
+}
