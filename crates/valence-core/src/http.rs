@@ -172,39 +172,66 @@ impl Failure {
     }
 }
 
+/// A local HTTP server for tests: no network, no mocking library.
 #[cfg(test)]
-mod tests {
-    use std::sync::Mutex;
-    use std::time::Instant;
+pub(crate) mod test_server {
+    use std::sync::{Arc, Mutex};
 
     use tokio::io::{AsyncReadExt, AsyncWriteExt};
     use tokio::net::TcpListener;
 
-    use super::*;
+    /// Request heads in the order they arrived.
+    pub(crate) type Log = Arc<Mutex<Vec<String>>>;
 
-    /// A local server that answers each request with the next scripted
-    /// response (the last one repeats) and records the request heads.
-    async fn serve(script: Vec<&'static str>) -> (String, Arc<Mutex<Vec<String>>>) {
+    /// Serve every request with `respond(index, path)`, which returns a full
+    /// HTTP response. Returns the base URL (`http://127.0.0.1:port`) and the log.
+    pub(crate) async fn serve(
+        respond: impl Fn(usize, &str) -> String + Send + 'static,
+    ) -> (String, Log) {
         let listener = TcpListener::bind("127.0.0.1:0").await.unwrap();
-        let url = format!("http://{}/x", listener.local_addr().unwrap());
-        let seen = Arc::new(Mutex::new(Vec::new()));
+        let base = format!("http://{}", listener.local_addr().unwrap());
+        let seen = Log::default();
         let log = seen.clone();
         tokio::spawn(async move {
             loop {
                 let (mut socket, _) = listener.accept().await.unwrap();
-                let mut buf = vec![0; 4096];
+                let mut buf = vec![0; 8192];
                 let n = socket.read(&mut buf).await.unwrap();
                 let head = String::from_utf8_lossy(&buf[..n]).into_owned();
+                let path = head.split(' ').nth(1).unwrap_or("").to_string();
                 let i = {
                     let mut log = log.lock().unwrap();
                     log.push(head);
                     log.len() - 1
                 };
-                let reply = script[i.min(script.len() - 1)];
+                let reply = respond(i, &path);
                 socket.write_all(reply.as_bytes()).await.unwrap();
             }
         });
-        (url, seen)
+        (base, seen)
+    }
+
+    pub(crate) fn response(status: &str, body: &str) -> String {
+        format!(
+            "HTTP/1.1 {status}\r\nContent-Length: {}\r\nConnection: close\r\n\r\n{body}",
+            body.len()
+        )
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use std::time::Instant;
+
+    use tokio::net::TcpListener;
+
+    use super::test_server::{Log, serve as serve_fn};
+    use super::*;
+
+    /// Answer each request with the next scripted response; the last repeats.
+    async fn serve(script: Vec<&'static str>) -> (String, Log) {
+        let (base, log) = serve_fn(move |i, _| script[i.min(script.len() - 1)].to_string()).await;
+        (format!("{base}/x"), log)
     }
 
     const OK: &str = "HTTP/1.1 200 OK\r\nContent-Length: 5\r\nConnection: close\r\n\r\nhello";
