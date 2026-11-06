@@ -1,0 +1,49 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2519,
+    "RecordTitle": "Caffeine",
+    "Section": [
+      {
+        "TOCHeading": "Names and Identifiers",
+        "Description": "Chemical names, synonyms, identifiers, and descriptors.",
+        "Section": [
+          {
+            "TOCHeading": "Other Identifiers",
+            "Description": "Other identifiers assigned to this chemical.",
+            "Section": [
+              {
+                "TOCHeading": "Wikipedia",
+                "Description": "Wikidata entity identifier for this compound.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 304,
+                    "URL": "https://en.wikipedia.org/wiki/Caffeine",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Caffeine"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 304,
+        "SourceName": "Wikipedia",
+        "SourceID": "1815496243",
+        "Name": "caffeine",
+        "Description": "Chemical information link to Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Caffeine",
+        "ANID": 55322486
+      }
+    ]
+  }
+}

@@ -1,7 +1,6 @@
 //! PubChem PUG-REST: search suggestions, name / CAS / CID lookup, and the
 //! molecule header (title, formula, molar mass, synonyms).
 
-use std::fmt;
 use std::sync::LazyLock;
 
 use regex::Regex;
@@ -9,7 +8,7 @@ use reqwest::Url;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
-use crate::http::{Host, Http, HttpError};
+use crate::http::{Host, Http};
 
 pub const BASE: &str = "https://pubchem.ncbi.nlm.nih.gov/rest";
 
@@ -34,29 +33,7 @@ pub struct Compound {
     pub synonyms: Vec<String>,
 }
 
-#[derive(Debug)]
-pub enum Error {
-    Http(HttpError),
-    /// PubChem answered, but not in the shape we expect.
-    Format(&'static str),
-}
-
-impl fmt::Display for Error {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        match self {
-            Self::Http(e) => write!(f, "PubChem: {e}"),
-            Self::Format(what) => write!(f, "PubChem sent an unexpected {what}"),
-        }
-    }
-}
-
-impl std::error::Error for Error {}
-
-impl From<HttpError> for Error {
-    fn from(e: HttpError) -> Self {
-        Self::Http(e)
-    }
-}
+pub use crate::error::Error;
 
 #[derive(Clone)]
 pub struct PubChem {
@@ -88,7 +65,7 @@ impl PubChem {
 
     async fn json(&self, url: Url) -> Result<Value, Error> {
         let body = self.http.get(Host::PubChem, url.as_str()).await?;
-        serde_json::from_slice(&body).map_err(|_| Error::Format("JSON reply"))
+        serde_json::from_slice(&body).map_err(|_| Error::Format("PubChem JSON reply"))
     }
 
     /// Compound names that start like `query`, best first.
@@ -167,7 +144,7 @@ impl PubChem {
         url.query_pairs_mut().append_pair("record_type", "3d");
         match self.http.get_text(Host::PubChem, url.as_str()).await {
             Ok(sdf) if is_sdf(&sdf) => Ok(Some(sdf)),
-            Ok(_) => Err(Error::Format("SDF record")),
+            Ok(_) => Err(Error::Format("PubChem SDF record")),
             Err(e) if e.is_not_found() => Ok(None),
             Err(e) => Err(e.into()),
         }
@@ -180,7 +157,7 @@ impl PubChem {
             .append_pair("image_size", &format!("{PNG_SIZE}x{PNG_SIZE}"));
         let png = self.http.get(Host::PubChem, url.as_str()).await?;
         if !png.starts_with(PNG_SIGNATURE) {
-            return Err(Error::Format("PNG image"));
+            return Err(Error::Format("PubChem PNG image"));
         }
         Ok(png)
     }
@@ -227,20 +204,20 @@ fn parse_cids(v: &Value) -> Result<Vec<u64>, Error> {
     v.pointer("/IdentifierList/CID")
         .and_then(Value::as_array)
         .map(|a| a.iter().filter_map(Value::as_u64).collect())
-        .ok_or(Error::Format("CID list"))
+        .ok_or(Error::Format("PubChem CID list"))
 }
 
 fn parse_properties(v: &Value) -> Result<Compound, Error> {
     let p = v
         .pointer("/PropertyTable/Properties/0")
-        .ok_or(Error::Format("property table"))?;
+        .ok_or(Error::Format("PubChem property table"))?;
     let text = |key: &str| p.get(key).and_then(Value::as_str).map(str::to_string);
     Ok(Compound {
         cid: p
             .get("CID")
             .and_then(Value::as_u64)
-            .ok_or(Error::Format("property table"))?,
-        title: text("Title").ok_or(Error::Format("property table"))?,
+            .ok_or(Error::Format("PubChem property table"))?,
+        title: text("Title").ok_or(Error::Format("PubChem property table"))?,
         formula: text("MolecularFormula").unwrap_or_default(),
         // Usually a string ("194.19"), occasionally a number.
         molar_mass: text("MolecularWeight")

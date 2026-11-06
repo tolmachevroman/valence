@@ -1,0 +1,69 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 54670067,
+    "RecordTitle": "L-Ascorbic Acid",
+    "Section": [
+      {
+        "TOCHeading": "Names and Identifiers",
+        "Description": "Chemical names, synonyms, identifiers, and descriptors.",
+        "Section": [
+          {
+            "TOCHeading": "Other Identifiers",
+            "Description": "Other identifiers assigned to this chemical.",
+            "Section": [
+              {
+                "TOCHeading": "Wikipedia",
+                "Description": "Wikidata entity identifier for this compound.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 177,
+                    "URL": "https://en.wikipedia.org/wiki/Ascorbic_acid",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Ascorbic acid"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 178,
+                    "URL": "https://en.wikipedia.org/wiki/Vitamin_C",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Vitamin_C"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 177,
+        "SourceName": "Wikipedia",
+        "SourceID": "173055818",
+        "Name": "ascorbic acid",
+        "Description": "Chemical information link to Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Ascorbic_acid",
+        "ANID": 55323410
+      },
+      {
+        "ReferenceNumber": 178,
+        "SourceName": "Wikipedia",
+        "SourceID": "1224641365",
+        "Name": "Vitamin C",
+        "Description": "Link to the chemical information in Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Vitamin_C",
+        "ANID": 55327333
+      }
+    ]
+  }
+}
