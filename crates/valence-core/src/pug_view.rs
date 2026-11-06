@@ -110,10 +110,13 @@ pub fn snippets(cid: u64, heading: &str, limit: usize, view: &Value) -> Vec<Snip
 }
 
 /// Snippets from every heading in `SECTIONS` that the compound has.
+/// All four requests are in flight at once; the rate limit spaces them.
 pub async fn annotations(pubchem: &PubChem, cid: u64) -> Result<Vec<Snippet>, Error> {
+    let [a, b, c, d] = SECTIONS.map(|(heading, _)| pubchem.view(cid, heading));
+    let (a, b, c, d) = tokio::join!(a, b, c, d);
     let mut out = Vec::new();
-    for (heading, limit) in SECTIONS {
-        if let Some(view) = pubchem.view(cid, heading).await? {
+    for (view, (heading, limit)) in [a?, b?, c?, d?].into_iter().zip(SECTIONS) {
+        if let Some(view) = view {
             out.extend(snippets(cid, heading, limit, &view));
         }
     }

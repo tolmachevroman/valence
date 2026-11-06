@@ -4,6 +4,7 @@
 pub mod cache;
 pub mod card;
 pub mod error;
+pub mod fetch;
 pub mod ghs;
 pub mod http;
 pub mod prompt;
