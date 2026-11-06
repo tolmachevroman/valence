@@ -296,7 +296,11 @@ mod tests {
             .unwrap();
         assert!(s.iter().any(|s| s.section == "History"), "{s:#?}");
         // Capsaicin's birds live under "Natural function".
-        assert!(s.iter().any(|s| s.text.contains("dispersed predominantly by birds")), "{s:#?}");
+        assert!(
+            s.iter()
+                .any(|s| s.text.contains("dispersed predominantly by birds")),
+            "{s:#?}"
+        );
     }
 
     /// Same paragraphs as the spike fixture wherever the article hasn't been

@@ -274,6 +274,8 @@ CREATE TABLE user_molecule (
 );
 ```
 
+The implemented schema (`crates/valence-core/src/cache.rs`, M1.7) differs slightly: `molar_mass` is text as PubChem formats it, `molecule` adds `cas`, `iupac_name` and the 2D drawing, `snippet` adds the data provider and its order, and times are Unix seconds.
+
 Models, settings and the curated "Surprise me" list live outside the database: model files in the app's Application Support folder, settings in a small TOML file.
 
 ## Non-functional requirements

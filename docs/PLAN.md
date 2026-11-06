@@ -44,7 +44,7 @@ Exit: one model gets first card in under 10 s and passes validation on most card
 - [x] **M1.4 PUG-View sections** — fetch by heading; one parser per section, starting with 4–5 only: Uses, Natural occurrence / sources, Toxicity, GHS classification. Manufacturing sections are excluded from card input.
 - [x] **M1.5 GHS** — pictogram codes + hazard statements stored verbatim in `ghs_json`. One authority per molecule: the EU harmonised classification (Regulation 1272/2008) when present, else the first PubChem lists; ECHA notification groups kept apart.
 - [x] **M1.6 Wikipedia** — summary + History section → snippets with section URL, plus up to 2 paragraphs from other sections (no how-it's-made). The article is the first one PubChem links that exists.
-- [ ] **M1.7 SQLite cache** — PRD schema as migration v1 (rusqlite); repository layer; snippet `hash`; `fetched_at` with 90-day freshness.
+- [x] **M1.7 SQLite cache** — PRD schema as migration v1 (rusqlite); repository layer; snippet `hash`; `fetched_at` with 90-day freshness. A refetch keeps unchanged snippets' ids and deletes cards citing changed ones.
 - [ ] **M1.8 Fetch orchestration** — properties + SDF first, annotations in parallel afterwards, all within the limiter; results stream out as they arrive.
 - [ ] **M1.9 CLI** — `valence snippets <name|CAS|CID>` prints the header + all snippets, served from cache on the second run.
 - [ ] **M1.10 Tests** — recorded HTTP fixtures for ~5 molecules (no live network in CI); parser tests per section.

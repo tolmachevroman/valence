@@ -46,7 +46,8 @@ impl CardKind {
 /// A fetched source passage. The model sees only these, never an open question.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Snippet {
-    /// Prompt-facing id such as `s3`.
+    /// Stable id: the cache row id, or `s3`-style in spike fixtures. Prompts
+    /// number their snippets `s1..sN` themselves.
     pub id: String,
     /// `pubchem_view` or `wikipedia`.
     pub source: String,
