@@ -10,7 +10,7 @@ Order follows the PRD: the riskiest unknown (can a small local model write good,
 
 - [x] **0.1 Toolchain** — `rustup default stable`; add `rust-toolchain.toml` pinning stable + `rustfmt`, `clippy`.
 - [x] **0.2 Workspace** — Cargo workspace with `crates/valence-core` and the Tauri crate in `app/src-tauri`; React + TypeScript frontend in `app/`. Shared lints and edition in the workspace `Cargo.toml`.
-- [x] **0.3 CI** — GitHub Actions on `macos-14` (Apple Silicon): frontend lint + build, then `fmt --check`, `clippy -D warnings`, `test`.
+- [x] **0.3 CI** — GitHub Actions on `macos-15` (Apple Silicon; `macos-14` was retired in November 2026): frontend lint + build, then `fmt --check`, `clippy -D warnings`, `test`.
 - [x] **0.4 Repo hygiene** — `.gitignore` (target, model files, `*.sqlite`), README skeleton, copy the PRD to `docs/PRD.md`.
 
 Done when: `cargo test --workspace` passes locally and in CI.
