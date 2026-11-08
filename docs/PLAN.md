@@ -55,7 +55,7 @@ Exit: the CLI prints every snippet for any CID.
 
 ## M2 · App shell and 3D view (weeks 5–6)
 
-- [ ] **M2.1 Layout** — React shell with top bar, left panel, right panel and footer; follows system light/dark.
+- [x] **M2.1 Layout** — React shell with top bar, left panel, right panel and footer; follows system light/dark.
 - [ ] **M2.2 Core ↔ UI bridge** — Tauri commands for lookups, events for streamed results; serde types mirrored in one TypeScript module. The webview never reaches the network (CSP).
 - [ ] **M2.3 Search + autocomplete** — debounced input, accessible combobox (keyboard up/down/enter/esc, VoiceOver), under 300 ms.
 - [ ] **M2.4 Molecule header** — name, formula (with subscripts), molar mass, synonyms.

@@ -1,6 +1,11 @@
 import { invoke } from '@tauri-apps/api/core'
 import { useEffect, useState } from 'react'
 
+import CardsPanel from './components/CardsPanel'
+import MoleculePanel from './components/MoleculePanel'
+import StatusBar from './components/StatusBar'
+import TopBar from './components/TopBar'
+
 export default function App() {
   const [version, setVersion] = useState<string>()
 
@@ -9,12 +14,13 @@ export default function App() {
   }, [])
 
   return (
-    <>
-      <main>
-        <h1>Valence</h1>
-        <p>Molecule fun facts, grounded in real chemistry data.</p>
+    <div className="app">
+      <TopBar />
+      <main className="panels">
+        <MoleculePanel />
+        <CardsPanel />
       </main>
-      <footer>{version && `Valence ${version}`}</footer>
-    </>
+      <StatusBar version={version} />
+    </div>
   )
 }

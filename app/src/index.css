@@ -2,7 +2,11 @@
   --text: #1d1b20;
   --text-muted: #6b6375;
   --bg: #ffffff;
+  --surface: #f6f5f8;
   --border: #e5e4e7;
+  --accent: #5b4bd6;
+  --accent-text: #ffffff;
+  --focus: #5b4bd6;
 
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   color-scheme: light dark;
@@ -16,32 +20,176 @@
     --text: #ecebee;
     --text-muted: #a29cab;
     --bg: #1c1b1f;
+    --surface: #252429;
     --border: #36343a;
+    --accent: #9d92f2;
+    --accent-text: #17151c;
+    --focus: #9d92f2;
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   background: var(--bg);
 }
 
-#root {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+h1 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.25;
 }
 
-main {
+p {
+  margin: 0;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Layout: top bar, two panels, footer */
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: minmax(340px, 5fr) 7fr;
+  min-height: 0;
+}
+
+/* Top bar */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  margin-right: 8px;
+}
+
+.search {
   flex: 1;
+  min-width: 0;
+  height: 32px;
+  padding: 0 12px;
+  font: inherit;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+button {
+  height: 32px;
+  padding: 0 12px;
+  font: inherit;
+  color: var(--accent-text);
+  background: var(--accent);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.icon {
+  width: 32px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  background: transparent;
+}
+
+button.icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+button:disabled,
+input:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Left panel */
+
+.molecule-panel {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 0;
+  border-right: 1px solid var(--border);
+}
+
+.viewer {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  background: var(--surface);
+}
+
+.placeholder {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.molecule-header {
+  padding: 16px 20px 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* Right panel */
+
+.cards-panel {
+  overflow-y: auto;
   padding: 24px;
 }
 
-footer {
-  padding: 6px 24px;
+.empty {
+  max-width: 520px;
+  margin: 15vh auto 0;
+  text-align: center;
+}
+
+/* Footer */
+
+.status-bar {
+  display: flex;
+  gap: 16px;
+  padding: 5px 16px;
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 12px;
+}
+
+.spacer {
+  flex: 1;
 }
