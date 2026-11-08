@@ -191,31 +191,56 @@ mod tests {
     use crate::http::Settings;
     use crate::http::test_server::{Log, response, serve};
 
-    /// Recorded replies for caffeine, by a distinctive part of the request.
-    const ROUTES: &[(&str, &str)] = &[
-        ("/property/", "pubchem/properties-2519.json"),
-        ("/synonyms/", "pubchem/synonyms-2519.json"),
-        ("/record/SDF", "pubchem/sdf-3d-2519.sdf"),
-        (
-            "heading=Record+Description",
-            "pubchem/view-2519-record-description.json",
-        ),
-        ("heading=Uses", "pubchem/view-2519-uses.json"),
-        (
-            "heading=Natural+Pollution+Sources",
-            "pubchem/view-2519-natural-pollution-sources.json",
-        ),
-        (
-            "heading=Toxicity+Summary",
-            "pubchem/view-2519-toxicity-summary.json",
-        ),
-        (
-            "heading=GHS+Classification",
-            "pubchem/view-2519-ghs-classification.json",
-        ),
-        ("heading=Wikipedia", "pubchem/view-2519-wikipedia.json"),
-        ("titles=Caffeine", "wikipedia/extract-Caffeine.json"),
+    /// Molecules recorded by `scripts/record_http_fixtures.py`.
+    const RECORDED: &[(&str, u64)] = &[
+        ("caffeine", 2519),
+        ("capsaicin", 1548943),
+        ("menthol", 1254),
+        ("buckminsterfullerene", 123591),
+        ("ascorbic-acid", 54670067),
     ];
+
+    fn slug(text: &str) -> String {
+        text.to_lowercase().replace(' ', "-")
+    }
+
+    /// The recorded file for a request, named as the recorder names it; `None`
+    /// means the real service answered 404. Wikipedia requests carry no CID, so
+    /// their title is looked up in every molecule's folder.
+    fn recorded(path: &str) -> Option<std::path::PathBuf> {
+        let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../fixtures/http/molecules");
+        let url = reqwest::Url::parse(&format!("http://local{path}")).ok()?;
+        let query = |key: &str| {
+            url.query_pairs()
+                .find(|(k, _)| k == key)
+                .map(|(_, v)| v.into_owned())
+        };
+        if let Some(title) = query("titles") {
+            let file = format!("wikipedia-{}.json", slug(&title));
+            return RECORDED
+                .iter()
+                .map(|(name, _)| root.join(name).join(&file))
+                .find(|p| p.exists());
+        }
+        let segments: Vec<&str> = url.path_segments()?.collect();
+        // `/pug/compound/cid/<cid>/…` or `/pug_view/data/compound/<cid>/JSON`.
+        let cid_at = segments
+            .iter()
+            .position(|s| *s == "cid")
+            .or_else(|| segments.iter().position(|s| *s == "compound"))?
+            + 1;
+        let cid: u64 = segments.get(cid_at)?.parse().ok()?;
+        let (name, _) = RECORDED.iter().find(|(_, c)| *c == cid)?;
+        let file = match segments.get(cid_at + 1..)? {
+            ["property", ..] => "properties.json".to_string(),
+            ["synonyms", ..] => "synonyms.json".to_string(),
+            ["record", "SDF"] => "sdf-3d.sdf".to_string(),
+            ["PNG"] => "png.png".to_string(),
+            ["JSON"] => format!("view-{}.json", slug(&query("heading")?)),
+            _ => return None,
+        };
+        Some(root.join(name).join(file)).filter(|p| p.exists())
+    }
 
     /// Local PubChem and Wikipedia. While `down` is set, every request fails.
     async fn local_sources(down: Arc<AtomicBool>) -> (Sources, Log) {
@@ -223,19 +248,15 @@ mod tests {
             if down.load(Ordering::Relaxed) {
                 return response("500 Internal Server Error", "");
             }
-            match ROUTES.iter().find(|(part, _)| path.contains(part)) {
-                Some((_, file)) => {
-                    let path = Path::new(env!("CARGO_MANIFEST_DIR"))
-                        .join("../../fixtures/http")
-                        .join(file);
-                    response("200 OK", std::fs::read(path).unwrap())
-                }
+            match recorded(path) {
+                Some(file) => response("200 OK", std::fs::read(file).unwrap()),
                 None => response("404 Not Found", ""),
             }
         })
         .await;
         let http = Http::with_settings(Settings {
             backoff: Duration::from_millis(1),
+            pubchem_per_second: 1_000,
             ..Settings::default()
         });
         let sources = Sources {
@@ -282,6 +303,62 @@ mod tests {
             2
         );
         assert_eq!(parts.len(), 5);
+    }
+
+    /// What each recorded molecule is there to cover.
+    #[tokio::test]
+    async fn recorded_molecules() {
+        let (sources, _) = local_sources(Arc::default()).await;
+        let (tx, _rx) = unbounded_channel();
+        let get = |cid| fetch(&sources, cid, SystemTime::now(), &tx);
+        let has = |m: &Molecule, section: &str| m.snippets.iter().any(|s| s.section == section);
+        let codes = |m: &Molecule| -> Vec<String> {
+            m.ghs
+                .iter()
+                .flat_map(|g| &g.statements)
+                .map(|s| s.code.clone())
+                .collect()
+        };
+
+        for (name, cid) in RECORDED {
+            let m = get(*cid).await.unwrap();
+            assert!(
+                m.snippets.len() >= 20,
+                "{name}: {} snippets",
+                m.snippets.len()
+            );
+            for section in [
+                "Record Description",
+                "Introduction",
+                "History",
+                "GHS Classification",
+            ] {
+                assert!(has(&m, section), "{name} lacks {section}");
+            }
+        }
+
+        let capsaicin = get(1548943).await.unwrap();
+        assert_eq!(
+            capsaicin.ghs.as_ref().unwrap().signal.as_deref(),
+            Some("Danger")
+        );
+        assert!(has(&capsaicin, "Natural function"), "the birds");
+
+        let menthol = get(1254).await.unwrap();
+        assert_eq!(codes(&menthol), ["H315", "H319"]);
+
+        let c60 = get(123591).await.unwrap();
+        assert!(c60.sdf_3d.is_none() && c60.png_2d.is_some());
+        assert!(!has(&c60, "Toxicity Summary"), "PubChem has none");
+
+        let vitamin_c = get(54670067).await.unwrap();
+        let wiki = vitamin_c
+            .snippets
+            .iter()
+            .find(|s| s.source == "wikipedia")
+            .unwrap();
+        assert_eq!(wiki.url, "https://en.wikipedia.org/wiki/Vitamin_C");
+        assert!(codes(&vitamin_c).is_empty(), "not classified");
     }
 
     #[tokio::test]

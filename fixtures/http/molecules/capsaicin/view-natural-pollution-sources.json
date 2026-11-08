@@ -1,0 +1,68 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1548943,
+    "RecordTitle": "Capsaicin",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Ecological Information",
+            "Description": "This section provides information to evaluate the environmental impact of the chemical if it were released to the environment. The information may include data from toxicity tests performed on aquatic and/or terrestrial organisms, where available (e.g., acute or chronic aquatic toxicity data for fish, algae, and crustaceans; toxicity data on birds, bees, and plants).  This section also includes information on whether there is a potential for the chemical to persist or degrade in the environment either through biodegradation or other processes (such as oxidation or hydrolysis) as well as the concentration or amount of the chemical found in the environment (e.g., in plants, animals as well as in the atmosphere or water).",
+            "Section": [
+              {
+                "TOCHeading": "Natural Pollution Sources",
+                "Description": "Pollutants are emitted from a range of natural and man-made (artificial) sources.  This section provides information on the natural sources of the compound as a pollutant.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 48,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "(1) O'Neil MJ ed; The Merck Index. 15th ed. Cambridge, UK: Royal Society of Chemistry, p. 308 (2013)"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "(1) O'Neil MJ ed; The Merck Index. 15th ed. Cambridge, UK: Royal Society of Chemistry, p. 308 (2013)"
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Capsaicin is the pungent principle found in fruit of hot, red peppers such as Capsicum annuum and C. frutescens (Solanaceae)(1).",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Capsaicin",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1548943"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 48,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "954",
+        "Name": "CAPSAICIN",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/954",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 867
+      }
+    ]
+  }
+}

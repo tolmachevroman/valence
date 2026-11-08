@@ -1,0 +1,85 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 123591,
+    "RecordTitle": "Fullerenes",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Ecological Information",
+            "Description": "This section provides information to evaluate the environmental impact of the chemical if it were released to the environment. The information may include data from toxicity tests performed on aquatic and/or terrestrial organisms, where available (e.g., acute or chronic aquatic toxicity data for fish, algae, and crustaceans; toxicity data on birds, bees, and plants).  This section also includes information on whether there is a potential for the chemical to persist or degrade in the environment either through biodegradation or other processes (such as oxidation or hydrolysis) as well as the concentration or amount of the chemical found in the environment (e.g., in plants, animals as well as in the atmosphere or water).",
+            "Section": [
+              {
+                "TOCHeading": "Natural Pollution Sources",
+                "Description": "Pollutants are emitted from a range of natural and man-made (artificial) sources.  This section provides information on the natural sources of the compound as a pollutant.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 19,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "PMID:12523404",
+                      "(1) Utsunomiya S et al; Environ Sci Technol 36: 4943-7 (2002)"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "PMID:12523404",
+                        "Matched": {
+                          "PCLID": 2983562,
+                          "Citation": "Utsunomiya S, Jensen KA, Keeler GJ, Ewing RC. Uraninite and fullerene in atmospheric particulates. Environ Sci Technol. 2002 Dec 01;36(23):4943–7. doi: 10.1021/es025872a. PMID: 12523404.",
+                          "PMID": 12523404,
+                          "DOI": "10.1021/es025872a"
+                        }
+                      },
+                      {
+                        "Citation": "(1) Utsunomiya S et al; Environ Sci Technol 36: 4943-7 (2002)"
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Fullerene was first discovered in shungite, a green-schist facies metamorphic rock containing 99% carbon(1).",
+                          "Markup": [
+                            {
+                              "Start": 34,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/shungite",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5462310"
+                            },
+                            {
+                              "Start": 98,
+                              "Length": 6,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Carbon",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Carbon"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 19,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "7714",
+        "Name": "FULLERENES",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/7714",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 5258
+      }
+    ]
+  }
+}

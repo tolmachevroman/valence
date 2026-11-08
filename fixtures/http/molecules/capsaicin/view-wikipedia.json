@@ -1,0 +1,49 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1548943,
+    "RecordTitle": "Capsaicin",
+    "Section": [
+      {
+        "TOCHeading": "Names and Identifiers",
+        "Description": "Chemical names, synonyms, identifiers, and descriptors.",
+        "Section": [
+          {
+            "TOCHeading": "Other Identifiers",
+            "Description": "Other identifiers assigned to this chemical.",
+            "Section": [
+              {
+                "TOCHeading": "Wikipedia",
+                "Description": "Wikidata entity identifier for this compound.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 142,
+                    "URL": "https://en.wikipedia.org/wiki/Capsaicin",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Capsaicin"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 142,
+        "SourceName": "Wikipedia",
+        "SourceID": "3243029697",
+        "Name": "capsaicin",
+        "Description": "Chemical information link to Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Capsaicin",
+        "ANID": 55322667
+      }
+    ]
+  }
+}

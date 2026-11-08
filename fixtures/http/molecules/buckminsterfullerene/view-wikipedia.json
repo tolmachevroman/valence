@@ -1,0 +1,49 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 123591,
+    "RecordTitle": "Fullerenes",
+    "Section": [
+      {
+        "TOCHeading": "Names and Identifiers",
+        "Description": "Chemical names, synonyms, identifiers, and descriptors.",
+        "Section": [
+          {
+            "TOCHeading": "Other Identifiers",
+            "Description": "Other identifiers assigned to this chemical.",
+            "Section": [
+              {
+                "TOCHeading": "Wikipedia",
+                "Description": "Wikidata entity identifier for this compound.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 42,
+                    "URL": "https://en.wikipedia.org/wiki/Buckminsterfullerene",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Buckminsterfullerene"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 42,
+        "SourceName": "Wikipedia",
+        "SourceID": "4192541121",
+        "Name": "Buckminsterfullerene",
+        "Description": "Chemical information link to Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Buckminsterfullerene",
+        "ANID": 55322773
+      }
+    ]
+  }
+}

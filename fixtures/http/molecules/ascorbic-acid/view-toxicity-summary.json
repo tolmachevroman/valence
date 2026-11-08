@@ -1,0 +1,631 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 54670067,
+    "RecordTitle": "L-Ascorbic Acid",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Toxicological Information",
+            "Description": "This section provides toxicological and health effects information for the chemical.  It includes the likely routes of exposure (inhalation, ingestion, skin and eye contact), and the delayed, immediate, or chronic effects/symptoms from short- and long-term exposure, and the numerical measures of toxicity [e.g., acute toxicity estimates such as the LD50 (median lethal dose, the estimated amount of a chemical expected to kill 50% of test animals in a single dose)].  This section also includes information on whether the chemical is considered as a potential carcinogen according to authoritative sources such as the National Toxicology Program (NTP) Report on Carcinogens and the International agency for Research on Cancer (IARC) Monographs.",
+            "Section": [
+              {
+                "TOCHeading": "Toxicity Summary",
+                "Description": "Summary of the toxicity of this compound, provided by the Hazardous Substances Data Bank (HSDB) and other sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 29,
+                    "Name": "Cosmetic Ingredient Review Finding(s)",
+                    "Reference": [
+                      "International Journal of Toxicology 24(Suppl. 2):51-111, 2005"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "International Journal of Toxicology 24(Suppl. 2):51-111, 2005",
+                        "Matched": {
+                          "PCLID": 906421645,
+                          "Citation": "International Journal of Toxicology 24(Suppl. 2):51-111, 2005"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org",
+                          "Markup": [
+                            {
+                              "Start": 146,
+                              "Length": 34,
+                              "URL": "https://cir-reports.cir-safety.org/"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 75,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "International Programme on Chemical Safety; Poisons Information Monograph: Ascorbic Acid (PIM 046) (1996) Available from, as of May 16, 2008: https://www.inchem.org/pages/pims.html"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "International Programme on Chemical Safety; Poisons Information Monograph: Ascorbic Acid (PIM 046) (1996) Available from, as of May 16, 2008: https://www.inchem.org/pages/pims.html",
+                        "Matched": {
+                          "PCLID": 900042821,
+                          "Citation": "International Programme on Chemical Safety; Poisons Information Monograph: Ascorbic Acid (PIM 046) (1996) Available from, as of May 16, 2008: https://www.inchem.org/pages/pims.html"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "IDENTIFICATION: Origin of the substance: Ascorbic acid is of both natural and synthetic origin. Natural origin: ascorbic acid is found in fresh fruit and vegetables. Citrus fruits are a particularly good source of ascorbic acid and also hip berries, acerola and fresh tea leaves.  Ascorbic acid exists as colorless, or white or almost white crystals.  It is odorless or almost odorless.  It has a pleasant, sharp acidic taste.  It is freely soluble in water and sparingly soluble in ethanol. It is practically insoluble in ether and chloroform.  HUMAN EXPOSURE: Main risks and target organs: The main target organs for toxicity are found in the gastrointestinal, renal and hematological systems.  Summary of clinical effects: In individuals with glucose-6-phosphate dehydrogenase (G-6-PD) deficiency, hemolytic anemia may develop after administration of ascorbic acid.  In individuals predisposed to renal stones, chronic administration of high doses may lead to renal calculi formation. In some cases, acute renal failure may be observed under both conditions. Indications: Prevention and treatment of scurvy. It has been used as a urinary acidifier and in correcting tyrosinemia in premature infants on high-protein diets. The drug may be useful to treat idiopathic methemoglobinemia.  Contraindications: Ascorbic acid is contraindicated in patients with hyperoxaluria and G-6-PD deficiency.  Routes of entry: Oral: Ascorbic acid is usually administered orally in extended-release capsule form, tablets, lozenges, chewable tablets, solutions and extended-release tablets and capsules  Absorption by route of exposure: Ascorbic acid is readily absorbed after oral administration but the proportion does decrease with the dose.  GI absorption of ascorbic acid may be reduced in patients with diarrhea or GI diseases.  Distribution by route of exposure: Normal plasma concentrations of ascorbic acid are about 10 to 20 ug/mL. Total body stores of ascorbic acid have been estimated to be about 1.5 g with about a 30 to 45 mg daily turnover.  Plasma concentrations of ascorbic acid rise as the dose ingested is increased  until a plateau is reached with doses of about 90 to 150 mg daily. Ascorbic acid becomes widely distributed in body tissues with large concentrations  found in the liver, leukocytes, platelets, glandular tissues, and the lens of the eye. In the plasma about 25% of the ascorbic acid is bound to proteins.  Ascorbic acid crosses the placenta; cord blood concentration are generally 2 to 4 times the concentration in maternal blood. Ascorbic acid is distributed into milk. In nursing mothers on a normal diet the milk contains 40 to 70 ug/mL of the vitamin.  Biological half-life by route of exposure: The plasma half-life is reported to be 16 days in humans. This is different in people who have excess levels of vitamin C where the half-life is 3.4 hours.  Metabolism: Ascorbic acid is reversibly oxidized to dehydroascorbic acid in the body. This reaction, which proceeds by removal of the hydrogen from the enediol group of ascorbic acid, is part of the hydrogen transfer system. The two forms found in body fluids are physiologically active.  Some ascorbic acid is metabolized to inactive compounds including ascorbic acid-2-sulfate and oxalic acid.  Elimination by route of exposure: The renal threshold for ascorbic acid is approximately 14 ug/mL, but this level varies among individuals. When the body is saturated with ascorbic acid and blood concentrations exceed the threshold, unchanged ascorbic acid is excreted in the urine. When tissue saturation and blood concentrations of ascorbic acid are low, administration of the vitamin results in little or no urinary excretion of ascorbic acid. Inactive metabolites of ascorbic acid such as ascorbic acid-2-sulfate and oxalic acid are excreted in the urine. Ascorbic acid is also excreted in the bile but there is no evidence for enterohepatic circulation.  Pharmacology and toxicology: Mode of action: Toxicodynamics: Hyperoxaluria may result after administration of ascorbic acid.  Ascorbic acid may cause acidification of the urine, occasionally leading to precipitation of urate, cystine, or oxalate stones, or other drugs in the urinary tract. Urinary calcium may increase, and urinary sodium may decrease. Ascorbic acid reportedly may affect glycogenolysis and may be diabetogenic but this is controversial. Pharmacodynamics: In humans, an exogenous source of ascorbic acid is required for collagen formation and tissue repair.  Vitamin C is a co-factor in many biological processes including the conversion of dopamine to noradrenaline, in the hydroxylation steps in the synthesis of adrenal steroid hormones, in tyrosine metabolism, in the conversion of folic acid to folinic acid, in carbohydrate metabolism, in the synthesis of lipids    and proteins, in iron metabolism, in resistance to infection, and in cellular respiration.  Vitamin C may act as a free oxygen radical scavenger. Toxicity:  Human data: Adults: Diarrhea may occur after oral dosage of large amounts of ascorbic acid.  Interactions: Concurrent administration of more than 200 mg of ascorbic acid per 300 mg of elemental iron increases absorption of iron from the GI tract. Increased urinary excretion of ascorbic acid and decreased excretion of aspirin occur when the drugs are administered concurrently.  Ascorbic acid increases the  apparent half-life of paracetamol.  Interference with anticoagulant therapy has been reported.  Carcinogenicity: It has been reported that there is no evidence of carcinogenicity. Some studies suggest that vitamin C may amplify the carcinogenic effect of other agents.  L-ascorbic acid increases the oral carcinoma size induced by dimethylbenz(a)anthracene.  Also, butylated hydroxyanisole induced forestomach carcinogenesis in rats.  Teratogenicity: There is no evidence of teratogenicity.  Mutagenicity: Ascorbic acid is reported to increase the rate of   mutagenesis in cultured cells but this only occurs in cultures with elevated levels of Cu(2+) or Fe(2+). This effect may be due to the ascorbate induced generation of oxygen-derived free radicals. However, there is no evidence of ascorbate induced mutagenesis in vivo.",
+                          "Markup": [
+                            {
+                              "Start": 41,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 112,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 214,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 281,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 452,
+                              "Length": 5,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/water",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-962"
+                            },
+                            {
+                              "Start": 483,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ethanol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-702"
+                            },
+                            {
+                              "Start": 533,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/chloroform",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6212"
+                            },
+                            {
+                              "Start": 746,
+                              "Length": 19,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/glucose-6-phosphate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5958"
+                            },
+                            {
+                              "Start": 854,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1307,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1418,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1620,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1746,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1885,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 1946,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2065,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2186,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2388,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2425,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2550,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2831,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 2888,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 2928,
+                              "Length": 20,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/dehydroascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-440667"
+                            },
+                            {
+                              "Start": 3010,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Hydrogen"
+                            },
+                            {
+                              "Start": 3045,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3075,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Hydrogen"
+                            },
+                            {
+                              "Start": 3170,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3231,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3259,
+                              "Length": 11,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/oxalic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-971"
+                            },
+                            {
+                              "Start": 3331,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3445,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3516,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3607,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3705,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3744,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3766,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 3794,
+                              "Length": 11,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/oxalic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-971"
+                            },
+                            {
+                              "Start": 3833,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 4043,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 4059,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 4152,
+                              "Length": 5,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/urate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1175"
+                            },
+                            {
+                              "Start": 4159,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/cystine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-67678"
+                            },
+                            {
+                              "Start": 4171,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/oxalate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-71081"
+                            },
+                            {
+                              "Start": 4232,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Calcium",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Calcium"
+                            },
+                            {
+                              "Start": 4266,
+                              "Length": 6,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Sodium",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Sodium"
+                            },
+                            {
+                              "Start": 4287,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 4441,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 4510,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 4592,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/dopamine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-681"
+                            },
+                            {
+                              "Start": 4604,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/noradrenaline",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-439260"
+                            },
+                            {
+                              "Start": 4695,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/tyrosine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6057"
+                            },
+                            {
+                              "Start": 4737,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/folic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-135398658"
+                            },
+                            {
+                              "Start": 4751,
+                              "Length": 12,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/folinic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-135403648"
+                            },
+                            {
+                              "Start": 4840,
+                              "Length": 4,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Iron",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Iron"
+                            },
+                            {
+                              "Start": 4915,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 4943,
+                              "Length": 6,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Oxygen",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Oxygen"
+                            },
+                            {
+                              "Start": 5057,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 5136,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 5174,
+                              "Length": 4,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Iron",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Iron"
+                            },
+                            {
+                              "Start": 5203,
+                              "Length": 4,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Iron",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Iron"
+                            },
+                            {
+                              "Start": 5258,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 5299,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/aspirin",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2244"
+                            },
+                            {
+                              "Start": 5360,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 5411,
+                              "Length": 11,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/paracetamol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1983"
+                            },
+                            {
+                              "Start": 5595,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 5659,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 5895,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 6082,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54679076"
+                            },
+                            {
+                              "Start": 6114,
+                              "Length": 6,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Oxygen",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Oxygen"
+                            },
+                            {
+                              "Start": 6177,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54679076"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 161,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Vitamin C (in grams) can give false negative stool guaiac results and is rarely associated with fatal cardiac arrhythmias in patients with iron overload.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 139,
+                              "Length": 4,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Iron",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Iron"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 29,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "1249ceda-7ea1-4d7c-9f51-d90148a41dae",
+        "Name": "L-Ascorbic Acid",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=1249ceda-7ea1-4d7c-9f51-d90148a41dae",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 38999249
+      },
+      {
+        "ReferenceNumber": 75,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "818",
+        "Name": "L-Ascorbic Acid",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/818",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 739
+      },
+      {
+        "ReferenceNumber": 161,
+        "SourceName": "StatPearls",
+        "SourceID": "article-31221",
+        "Name": "Vitamin C (Ascorbic Acid)",
+        "Description": "StatPearls review books and articles identify knowledge deficits and assist in the learning process. Review books and articles are not intended to be a source of the knowledge base of medicine. The authors and editors do not warrant the information is complete or accurate. All drug indications and dosages should be verified before administration.",
+        "URL": "https://www.ncbi.nlm.nih.gov/books/n/statpearls/article-31221/",
+        "LicenseNote": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+        "ANID": 49087632
+      }
+    ]
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1254,
+    "RecordTitle": "Menthol",
+    "Section": [
+      {
+        "TOCHeading": "Use and Manufacturing",
+        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
+        "Section": [
+          {
+            "TOCHeading": "Uses",
+            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "Information": [
+              {
+                "ReferenceNumber": 25,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 25,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 25,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 26,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 26,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 26,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Name": "Sources/Uses",
+                "Reference": [
+                  "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                  "Haddad - Shannon MW, Borron SW, Burns MJ (eds). Haddad and Winchester's Clinical Management of Poisoning and Drug Overdose, 4th Ed. Philadelphia: Saunders, 2007., p. 1439"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                    "Matched": {
+                      "PCLID": 900175655,
+                      "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                    }
+                  },
+                  {
+                    "Citation": "Haddad - Shannon MW, Borron SW, Burns MJ (eds). Haddad and Winchester's Clinical Management of Poisoning and Drug Overdose, 4th Ed. Philadelphia: Saunders, 2007., p. 1439",
+                    "Matched": {
+                      "PCLID": 900176001,
+                      "Citation": "Haddad - Shannon MW, Borron SW, Burns MJ (eds). Haddad and Winchester's Clinical Management of Poisoning and Drug Overdose, 4th Ed. Philadelphia: Saunders, 2007., p. 1439"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Found in peppermint oil and other mint oils; [Merck Index] Used as flavoring/fragrance agent in toothpastes, mouthwashes, pharmaceuticals, cigarettes, aerosol room fresheners, cosmetics, liqueurs, confectionary, and perfumes; Also used as a topical antipruritic and in cough drops and inhalers; [HSDB] Used in Canada to control mites and in Europe in paints and lacquers, adhesives, metal care products, cleaning products, shoe and leather polishes, disinfectants, solvents, repellents, and animal care products; [eChemPortal: SIDSUNEP] Peppermint oil contains menthol, menthone, and more than 30 other chemicals. It is widely used as a flavoring agent and herbal remedy. [Haddad, p. 1439]",
+                      "Markup": [
+                        {
+                          "Start": 561,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        },
+                        {
+                          "Start": 570,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthone",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-26447"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Name": "Industrial Processes with risk of exposure",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Painting (Solvents) [Category: Paint]"
+                    },
+                    {
+                      "String": "Working with Glues and Adhesives [Category: Other]"
+                    },
+                    {
+                      "String": "Using Disinfectants or Biocides [Category: Clean]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 49,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "National Pesticide Information Retrieval System's Database on Menthol (1490-04-6). Available from, as of July 21, 2015: https://npirspublic.ceris.purdue.edu/ppis/"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "National Pesticide Information Retrieval System's Database on Menthol (1490-04-6). Available from, as of July 21, 2015: https://npirspublic.ceris.purdue.edu/ppis/",
+                    "Matched": {
+                      "PCLID": 900026975,
+                      "Citation": "National Pesticide Information Retrieval System's Database on Menthol (1490-04-6). Available from, as of July 21, 2015: https://npirspublic.ceris.purdue.edu/ppis/"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For menthol (USEPA/OPP Pesticide Code: 051601) ACTIVE products with label matches. /SRP: Registered for use in  the USA but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 49,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 1084"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 1084",
+                    "Matched": {
+                      "PCLID": 900076066,
+                      "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 1084"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Flavor in liquers, confectionary; perfumery, cigarettes, cough drops, and nasal inhalers. /L-Menthol/",
+                      "Markup": [
+                        {
+                          "Start": 91,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-16666"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 49,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Fahlbusch K-G et al; Flavors and Fragrances. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2015) NY, NY: John Wiley & Sons. Online Posting Date: January 15, 2003"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Fahlbusch K-G et al; Flavors and Fragrances. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2015) NY, NY: John Wiley & Sons. Online Posting Date: January 15, 2003",
+                    "Matched": {
+                      "PCLID": 900065286,
+                      "Citation": "Fahlbusch K-G et al; Flavors and Fragrances. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2015) NY, NY: John Wiley & Sons. Online Posting Date: January 15, 2003"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Because of its cooling and refreshing effect, (-)-menthol is used in large quantities in cigarettes, cosmetics, toothpastes, chewing gum, sweets, and medicines. /L-Menthol/",
+                      "Markup": [
+                        {
+                          "Start": 46,
+                          "Length": 11,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/%28-%29-menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-16666"
+                        },
+                        {
+                          "Start": 162,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-16666"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 49,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Kirk-Othmer Encyclopedia of Chemical Technology. 4th ed. Volumes 1: New York, NY. John Wiley and Sons, 1991-Present., p. V7 606 (1993)"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Kirk-Othmer Encyclopedia of Chemical Technology. 4th ed. Volumes 1: New York, NY. John Wiley and Sons, 1991-Present., p. V7 606 (1993)",
+                    "Matched": {
+                      "PCLID": 900091728,
+                      "Citation": "Kirk-Othmer Encyclopedia of Chemical Technology. 4th ed. Volumes 1: New York, NY. John Wiley and Sons, 1991-Present., p. V7 606 (1993)"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Menthol, which provides a cooling sensation, is a common constituent of after-shaves.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 49,
+                "Description": "PEER REVIEWED",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For more Uses (Complete) data for MENTHOL (10 total), please visit the HSDB record page.",
+                      "Markup": [
+                        {
+                          "Start": 71,
+                          "Length": 16,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/593#section=Uses-(Complete)"
+                        },
+                        {
+                          "Start": 34,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/MENTHOL",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 130,
+                "ExtendedReference": [
+                  {
+                    "Citation": "L1263: Wikipedia. Menthol. Last Updated 9 August 2009. http://en.wikipedia.org/wiki/Menthol",
+                    "Matched": {
+                      "PCLID": 900176471,
+                      "Citation": "L1263: Wikipedia. Menthol. Last Updated 9 August 2009. http://en.wikipedia.org/wiki/Menthol"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Menthol has local anesthetic and counterirritant qualities, and it is widely used to relieve minor throat irritation. Menthol is also used to prepare menthyl esters to emphasize floral notes (especially rose) (L1263). Used to treat occasional minor irritation, pain, sore mouth, and sore throat as well as cough associated with a cold or inhaled irritants.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        },
+                        {
+                          "Start": 118,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1254"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "Section": [
+              {
+                "TOCHeading": "Use Classification",
+                "Description": "This section contains use classification/category information for this compound from various sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 57,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Fragrance Ingredients"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 58,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Fragrance Ingredients"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 61,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Flavouring Agent -> FLAVOURING_AGENT -> JECFA Functional Classes"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 62,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Flavoring Agents -> JECFA Flavorings Index"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 113,
+                    "Reference": [
+                      "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                        "Matched": {
+                          "PCLID": 415213182,
+                          "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                          "DOI": "10.5281/zenodo.2624118"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Cosmetics -> Refreshing; Soothing; Masking; Denaturant"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Industry Uses",
+                "Description": "Categories of functional use of this chemical in industry.",
+                "DisplayControls": {
+                  "ListType": "Columns"
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 27,
+                    "Reference": [
+                      "https://www.epa.gov/chemical-data-reporting"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "https://www.epa.gov/chemical-data-reporting",
+                        "Matched": {
+                          "PCLID": 900178337,
+                          "Citation": "https://www.epa.gov/chemical-data-reporting"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Odor agents"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 28,
+                    "Reference": [
+                      "https://www.epa.gov/chemical-data-reporting"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "https://www.epa.gov/chemical-data-reporting",
+                        "Matched": {
+                          "PCLID": 900178337,
+                          "Citation": "https://www.epa.gov/chemical-data-reporting"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Odor agents"
+                        },
+                        {
+                          "String": "Fragrance"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Consumer Uses",
+                "Description": "Consumer uses of this chemical and products containing it (e.g., chemical-specific product categories).",
+                "DisplayControls": {
+                  "ListType": "Columns"
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 28,
+                    "Reference": [
+                      "https://www.epa.gov/chemical-data-reporting"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "https://www.epa.gov/chemical-data-reporting",
+                        "Matched": {
+                          "PCLID": 900178337,
+                          "Citation": "https://www.epa.gov/chemical-data-reporting"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Fragrance"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Household Products",
+                "Description": "Household products containing this compound.  This information is from several sources, including the Consumer Product Information Database (CPID).",
+                "URL": "https://www.whatsinproducts.com/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 8,
+                    "Name": "California Safe Cosmetics Program (CSCP)",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Cosmetics product ingredient: Menthol (dl-menthol; l-menthol; d-menthol)",
+                          "Markup": [
+                            {
+                              "Start": 30,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 39,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/dl-menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 51,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/l-menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            },
+                            {
+                              "Start": 62,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/d-menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-165675"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Menthol is a fragrance allergen. Fragrance allergens are hazardous only to individuals who suffer from fragrance allergies. The Cosmetic Fragrance and Flavor Ingredient Right to Know Act of 2020 requires fragrance allergens included in Annex III of the EU Cosmetics Regulation No. 1223/2009 be reported to the California Department of Public Health. Fragrance allergens are only required to be reported if present in a rinse-off cosmetic product at a concentration at or above 0.01 percent (100 parts per million) or in a leave-on cosmetic product at a concentration at or above 0.001 percent (10 parts per million).",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "For more information, you can visit the fragrance allergens webpage on the California Safe Cosmetics Program website:"
+                        },
+                        {
+                          "String": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/Pages/FragranceAllergens.aspx"
+                        },
+                        {
+                          "String": "Product count: 2205"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 149 consumer products that contain Menthol in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 50,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Commercial / Institutional"
+                        },
+                        {
+                          "String": "• Inside the Home"
+                        },
+                        {
+                          "String": "• Personal Care"
+                        },
+                        {
+                          "String": "• Pet Care"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 19,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 35 consumer products that contain Menthol (Racementhol) in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 49,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 58,
+                              "Length": 11,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Racementhol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Inside the Home"
+                        },
+                        {
+                          "String": "• Personal Care"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "California Safe Cosmetics Program (CSCP) Product Database",
+        "SourceID": "4471",
+        "Name": "Menthol (dl-menthol; l-menthol; d-menthol)",
+        "Description": "The California Safe Cosmetics Program (CSCP) is charged with implementing the California Safe Cosmetics Act (CSCA) and the Cosmetic Fragrance and Flavor Ingredient Right to Know Act (CFFIRKA). The goal of CSCP is to collect and share information on hazardous and potentially hazardous ingredients in cosmetics sold in California and to make this information available to the public.",
+        "URL": "https://cscpsearch.cdph.ca.gov/search/detailresult/4471",
+        "LicenseURL": "https://www.cdph.ca.gov/Pages/Conditions-of-Use.aspx",
+        "ANID": 39993553
+      },
+      {
+        "ReferenceNumber": 18,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "1124",
+        "Name": "Menthol",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/1360/001490-04-6",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 5125053
+      },
+      {
+        "ReferenceNumber": 19,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "204",
+        "Name": "Menthol (Racementhol)",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/77/000089-78-1",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 13198223
+      },
+      {
+        "ReferenceNumber": 25,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "257040a8931cc7deb383f3806d70c094",
+        "Name": "DL-MENTHOL",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID1020805#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56950150
+      },
+      {
+        "ReferenceNumber": 26,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "77418dabb1d81197c3b21fdcc5d23063",
+        "Name": "MENTHOL",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID8029650#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56952319
+      },
+      {
+        "ReferenceNumber": 48,
+        "SourceName": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+        "SourceID": "hz5943",
+        "Name": "Menthol",
+        "Description": "Haz-Map® is an occupational health database designed for health and safety professionals and for consumers seeking information about the adverse effects of workplace exposures to chemical and biological agents.",
+        "LicenseNote": "Copyright (c) 2026 Haz-Map(R). All rights reserved.\u000AUnless otherwise indicated, all materials from Haz-Map are copyrighted by Haz-Map(R). No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "ANID": 17278902
+      },
+      {
+        "ReferenceNumber": 49,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "593",
+        "Name": "MENTHOL",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/593",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 528
+      },
+      {
+        "ReferenceNumber": 130,
+        "SourceName": "Toxin and Toxin Target Database (T3DB)",
+        "SourceID": "Compound::T3D3224",
+        "Name": "Menthol",
+        "Description": "The Toxin and Toxin Target Database (T3DB), or, soon to be referred as, the Toxic Exposome Database, is a unique bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
+        "URL": "http://www.t3db.ca/toxins/T3D3224",
+        "LicenseNote": "T3DB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (T3DB) and the original publication.",
+        "LicenseURL": "https://t3db.ca/downloads",
+        "ANID": 20442919
+      },
+      {
+        "ReferenceNumber": 27,
+        "SourceName": "EPA Chemical Data Reporting (CDR)",
+        "SourceID": "a4b5d725bba606a45d8f07e5caa22f2c",
+        "Name": "Cyclohexanol, 5-methyl-2-(1-methylethyl)-",
+        "Description": "The non-confidential content of the EPA Chemical Data Reporting.",
+        "URL": "https://www.epa.gov/chemical-data-reporting",
+        "LicenseNote": "The U.S. Government retains a nonexclusive, royalty-free license to publish or reproduce these documents, or allow others to do so, for U.S. Government purposes. These documents may be freely distributed and used for non-commercial, scientific and educational purposes.",
+        "LicenseURL": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers#copyright",
+        "ANID": 38380177
+      },
+      {
+        "ReferenceNumber": 28,
+        "SourceName": "EPA Chemical Data Reporting (CDR)",
+        "SourceID": "c173e9c18d7cff3142a5aed4aeaa7acf",
+        "Name": "Cyclohexanol, 5-methyl-2-(1-methylethyl)-, (1R,2S,5R)-rel-",
+        "Description": "The non-confidential content of the EPA Chemical Data Reporting.",
+        "URL": "https://www.epa.gov/chemical-data-reporting",
+        "LicenseNote": "The U.S. Government retains a nonexclusive, royalty-free license to publish or reproduce these documents, or allow others to do so, for U.S. Government purposes. These documents may be freely distributed and used for non-commercial, scientific and educational purposes.",
+        "LicenseURL": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers#copyright",
+        "ANID": 38386387
+      },
+      {
+        "ReferenceNumber": 57,
+        "SourceName": "International Fragrance Association (IFRA)",
+        "SourceID": "e2e1dde74a5030a781d6318b5b497ce3",
+        "Name": "d,l-Menthol (isomer unspecified)",
+        "Description": "The IFRA Fragrance Ingredient Glossary (FIG), provides a harmonized list of positive olfactory descriptors of fragrance ingredients.",
+        "URL": "https://ifrafragrance.org/priorities/ingredients/ifra-transparency-list",
+        "LicenseNote": "(c) The International Fragrance Association, 2007-2021. All rights reserved.",
+        "ANID": 49745607
+      },
+      {
+        "ReferenceNumber": 58,
+        "SourceName": "International Fragrance Association (IFRA)",
+        "SourceID": "5bdd31581316c1a4ad23b9d28c3e638a",
+        "Name": "Menthol",
+        "Description": "The IFRA Fragrance Ingredient Glossary (FIG), provides a harmonized list of positive olfactory descriptors of fragrance ingredients.",
+        "URL": "https://ifrafragrance.org/priorities/ingredients/ifra-transparency-list",
+        "LicenseNote": "(c) The International Fragrance Association, 2007-2021. All rights reserved.",
+        "ANID": 49746122
+      },
+      {
+        "ReferenceNumber": 61,
+        "SourceName": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+        "SourceID": "wf_1519",
+        "Name": "MENTHOL",
+        "Description": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA) database contains the summaries of all the evaluations of flavors, food additives, contaminants, toxicants, and veterinary drugs.",
+        "URL": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1519",
+        "LicenseNote": "Permission from WHO is not required for the use of WHO materials issued under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Intergovernmental Organization (CC BY-NC-SA 3.0 IGO) licence.",
+        "LicenseURL": "https://www.who.int/about/policies/publishing/copyright",
+        "ANID": 9154207
+      },
+      {
+        "ReferenceNumber": 62,
+        "SourceName": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+        "SourceID": "f_432",
+        "Name": "3-p-Menthanol",
+        "Description": "The flavoring agent databse provides the most recent specifications for flavorings evaluated by JECFA.",
+        "URL": "http://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/details/en/c/432/",
+        "LicenseNote": "Permission from WHO is not required for the use of WHO materials issued under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Intergovernmental Organization (CC BY-NC-SA 3.0 IGO) licence.",
+        "LicenseURL": "https://www.who.int/about/policies/publishing/copyright",
+        "ANID": 9156385
+      },
+      {
+        "ReferenceNumber": 113,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "nrm_1254",
+        "Name": "Neomenthol",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 9045527
+      }
+    ]
+  }
+}

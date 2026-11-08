@@ -1,0 +1,206 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 54670067,
+    "RecordTitle": "L-Ascorbic Acid",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Ecological Information",
+            "Description": "This section provides information to evaluate the environmental impact of the chemical if it were released to the environment. The information may include data from toxicity tests performed on aquatic and/or terrestrial organisms, where available (e.g., acute or chronic aquatic toxicity data for fish, algae, and crustaceans; toxicity data on birds, bees, and plants).  This section also includes information on whether there is a potential for the chemical to persist or degrade in the environment either through biodegradation or other processes (such as oxidation or hydrolysis) as well as the concentration or amount of the chemical found in the environment (e.g., in plants, animals as well as in the atmosphere or water).",
+            "Section": [
+              {
+                "TOCHeading": "Natural Pollution Sources",
+                "Description": "Pollutants are emitted from a range of natural and man-made (artificial) sources.  This section provides information on the natural sources of the compound as a pollutant.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 75,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "(1) O'Neil MJ, ed; The Merck Index. 14th ed. Whitehouse Station, NJ: Merck and Co., Inc., p. 136 (2006)",
+                      "(2) Lewis RJ Sr; Hawley's Condensed Chemical Dictionary., 15th ed., New York, NY: John Wiley & Sons, Inc., p. 103 (2007)"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "(1) O'Neil MJ, ed; The Merck Index. 14th ed. Whitehouse Station, NJ: Merck and Co., Inc., p. 136 (2006)"
+                      },
+                      {
+                        "Citation": "(2) Lewis RJ Sr; Hawley's Condensed Chemical Dictionary., 15th ed., New York, NY: John Wiley & Sons, Inc., p. 103 (2007)"
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "L-Ascorbic acid is widely distributed in the plant and animal kingdom(1). Food sources of L-ascorbic acid include acerola (West Indian cherry); citrus fruits, tomatoes; potatoes, and green leafy vegetables(2). It has been isolated from the adrenal cortex of ox and later from lemons and paprika(1).",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 90,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 75,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "Osol, A. and J.E. Hoover, et al. (eds.). Remington's Pharmaceutical Sciences. 15th ed. Easton, Pennsylvania: Mack Publishing Co., 1975., p. 948"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "Osol, A. and J.E. Hoover, et al. (eds.). Remington's Pharmaceutical Sciences. 15th ed. Easton, Pennsylvania: Mack Publishing Co., 1975., p. 948",
+                        "Matched": {
+                          "PCLID": 900105822,
+                          "Citation": "Osol, A. and J.E. Hoover, et al. (eds.). Remington's Pharmaceutical Sciences. 15th ed. Easton, Pennsylvania: Mack Publishing Co., 1975., p. 948"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "VITAMIN C IS FOUND IN ALL LIVING PLANT CELLS, IS SYNTHESIZED DURING GERMINATION OF SEEDS & IS...CONCENTRATED IN RAPIDLY GROWING PARTS OF PLANT. IT IS PRESENT IN ALL ANIMAL TISSUES...ONLY GUINEA PIGS, PRIMATES...FEW EXOTIC ANIMAL SPECIES, & MAN ARE UNABLE TO MEET...NEEDS BY SYNTHESIS...RELY UPON DIETARY SOURCE.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/VITAMIN%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 75,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "Birney EC et al; Nature 260: 626-8 (1976). Available from, as of Aug 19, 2010: https://www.nature.com/nature/journal/v260/n5552/abs/260626a0.html"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "Birney EC et al; Nature 260: 626-8 (1976). Available from, as of Aug 19, 2010: https://www.nature.com/nature/journal/v260/n5552/abs/260626a0.html",
+                        "Matched": {
+                          "PCLID": 900035169,
+                          "Citation": "Birney EC et al; Nature 260: 626-8 (1976). Available from, as of Aug 19, 2010: https://www.nature.com/nature/journal/v260/n5552/abs/260626a0.html"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Recent speculations on the loss and retention of the ability to synthesize L-ascorbic acid (vitamin C) during evolution of animals have been based on few data, often for limited numbers of species. Published reports for the Mammalia deal mostly with domesticated and laboratory species, and there is little information on ascorbate biosynthesis in wild populations. The status of knowledge on bats typifies this paucity of data. It has been reported that two species of bats (of approximately 850 species), like anthropoid primates and guinea pigs, are unable to synthesize vitamin C because they lack L-gulonolactone oxidase. When present, this enzyme catalyzes the final step in the biosynthesis of L-ascorbic acid from glucose. These species are Pteropus medius (= P. giganteus), a fructivore of the suborder Megachiroptera, and Vesperugo abramus (presumably Pipistrellus coromandrd), an insectivore of the only other chiropteran suborder, the Microchiroptera. We have assayed livers of 34 species of New World microchiropteran bats for L-gulonolactone oxidase .... These species represent six families, temperate and tropical environments, and a wide variety of food habits and life histories. Within the limits of our assay, we could not detect L-gulonolactone oxidase in livers of any of the species examined. This greatly strengthens the hypothesis that all members of the Chiroptera lack the ability to synthesize vitamin C, which is surprising considering the diversity of bats and their many highly specialized diets.",
+                          "Markup": [
+                            {
+                              "Start": 75,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 92,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 322,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/ascorbate",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54679076"
+                            },
+                            {
+                              "Start": 574,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 602,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-gulonolactone",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-439373"
+                            },
+                            {
+                              "Start": 701,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            },
+                            {
+                              "Start": 722,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/glucose",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5793"
+                            },
+                            {
+                              "Start": 1040,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-gulonolactone",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-439373"
+                            },
+                            {
+                              "Start": 1250,
+                              "Length": 15,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-gulonolactone",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-439373"
+                            },
+                            {
+                              "Start": 1422,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 75,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "818",
+        "Name": "L-Ascorbic Acid",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/818",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 739
+      }
+    ]
+  }
+}

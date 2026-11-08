@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 123591,
+        "MolecularFormula": "C60",
+        "MolecularWeight": "720.6",
+        "IUPACName": "(C60-Ih)[5,6]fullerene",
+        "Title": "Fullerenes"
+      }
+    ]
+  }
+}

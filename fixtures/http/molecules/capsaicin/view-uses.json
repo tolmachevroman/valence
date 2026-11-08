@@ -1,0 +1,443 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1548943,
+    "RecordTitle": "Capsaicin",
+    "Section": [
+      {
+        "TOCHeading": "Use and Manufacturing",
+        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
+        "Section": [
+          {
+            "TOCHeading": "Uses",
+            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "Information": [
+              {
+                "ReferenceNumber": 17,
+                "Name": "Cosmetic Ingredient Review Link",
+                "Reference": [
+                  "International Journal of Toxicology 26(Suppl. 1):3-106, 2007"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "International Journal of Toxicology 26(Suppl. 1):3-106, 2007",
+                    "Matched": {
+                      "PCLID": 906421608,
+                      "Citation": "International Journal of Toxicology 26(Suppl. 1):3-106, 2007"
+                    }
+                  }
+                ],
+                "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=2f836965-9ff0-4a93-8114-8b39f0aeebd9",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "CIR ingredient: Capsaicin",
+                      "Markup": [
+                        {
+                          "Start": 16,
+                          "Length": 9,
+                          "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=2f836965-9ff0-4a93-8114-8b39f0aeebd9"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 31,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 31,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 31,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 47,
+                "Name": "Sources/Uses",
+                "Reference": [
+                  "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                    "Matched": {
+                      "PCLID": 900175655,
+                      "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Pungent component in capsicum species plants; Used in neurobiological research and as a topical analgesic; [Merck Index] Used as flavoring agent or adjuvant; [FDA] Used as a repellent for birds, voles, deer, rabbits, squirrels, insects, and attacking dogs indoors and outdoors for the protection of fruit and vegetable crops, ornamentals, and lawns; [Reference #1]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 47,
+                "Name": "Industrial Processes with risk of exposure",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Farming (Pesticides) [Category: Industry]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "National Pesticide Information Retrieval System's Database on Capsaicin (404-86-4).  Available from, as of July 12, 2016: https://npirspublic.ceris.purdue.edu/ppis/"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "National Pesticide Information Retrieval System's Database on Capsaicin (404-86-4).  Available from, as of July 12, 2016: https://npirspublic.ceris.purdue.edu/ppis/",
+                    "Matched": {
+                      "PCLID": 900063022,
+                      "Citation": "National Pesticide Information Retrieval System's Database on Capsaicin (404-86-4).  Available from, as of July 12, 2016: https://npirspublic.ceris.purdue.edu/ppis/"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For capsaicin (USEPA/OPP Pesticide Code: 070701) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/capsaicin",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1548943"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 308"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 308",
+                    "Matched": {
+                      "PCLID": 900117787,
+                      "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Cambridge, UK:  Royal Society of Chemistry, 2013., p. 308"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Food flavoring; in pepper spray self-defense devices; as a tool in neurobiological research."
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Crop Protection Handbook Volume 100, Meister Media Worldwide, Willoughby, OH 2014, p. 156"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Crop Protection Handbook Volume 100, Meister Media Worldwide, Willoughby, OH 2014, p. 156",
+                    "Matched": {
+                      "PCLID": 900162488,
+                      "Citation": "Crop Protection Handbook Volume 100, Meister Media Worldwide, Willoughby, OH 2014, p. 156"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For use on fruits, vegetables, foliage plants and ornamentals to repel rabbits, squirrels, and soft-bodied insects."
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "USEPA/Office of Prevention, Pesticides and Toxic Substances; Reregistration Eligibility Decision Document -Capsaicin p.2 21T-100x (June 1992). Available from, as of February 7, 2006: https://www.epa.gov/pesticides/reregistration/status.htm"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "USEPA/Office of Prevention, Pesticides and Toxic Substances; Reregistration Eligibility Decision Document -Capsaicin p.2 21T-100x (June 1992). Available from, as of February 7, 2006: https://www.epa.gov/pesticides/reregistration/status.htm",
+                    "Matched": {
+                      "PCLID": 900029954,
+                      "Citation": "USEPA/Office of Prevention, Pesticides and Toxic Substances; Reregistration Eligibility Decision Document -Capsaicin p.2 21T-100x (June 1992). Available from, as of February 7, 2006: https://www.epa.gov/pesticides/reregistration/status.htm"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Biochemical pesticide, animal and insect repellent; pests repelled: birds, moles, deer, dogs, insects, rabbits, squirrels."
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 48,
+                "Description": "PEER REVIEWED",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For more Uses (Complete) data for CAPSAICIN (7 total), please visit the HSDB record page.",
+                      "Markup": [
+                        {
+                          "Start": 72,
+                          "Length": 16,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/954#section=Uses-(Complete)"
+                        },
+                        {
+                          "Start": 34,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/CAPSAICIN",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1548943"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 113,
+                "Reference": [
+                  "DOI:10.1021/acs.est.5b03332"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "DOI:10.1021/acs.est.5b03332",
+                    "Matched": {
+                      "PCLID": 3232849,
+                      "Citation": "Singer HP, Wössner AE, McArdell CS, Fenner K. Rapid Screening for Exposure to \"Non-Target\" Pharmaceuticals from Wastewater Effluents by Combining HRMS-Based Suspect Screening and Exposure Modeling. Environ Sci Technol. 2016 Jul 05;50(13):6698–707. doi: 10.1021/acs.est.5b03332. PMID: 26938046.",
+                      "PMID": 26938046,
+                      "DOI": "10.1021/acs.est.5b03332"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Use (kg; approx.) in Germany (2009): >25"
+                    },
+                    {
+                      "String": "Consumption (g per capita; approx.) in Germany (2009): 0.000305"
+                    },
+                    {
+                      "String": "Calculated removal (%): 66.5"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 135,
+                "ExtendedReference": [
+                  {
+                    "Citation": "L1246: Wikipedia. Capsaicin. Last Updated 16 July 2009. http://en.wikipedia.org/wiki/Capsaicin",
+                    "Matched": {
+                      "PCLID": 900176792,
+                      "Citation": "L1246: Wikipedia. Capsaicin. Last Updated 16 July 2009. http://en.wikipedia.org/wiki/Capsaicin"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Capsaicin is the active component of chili peppers (genus Capsicum). It is a powerful irritant that is commonly used in food products to give them added spice. Capsaicin is also used in topical ointments to relieve the pain of peripheral neuropathy and can be found in pepper spray. (L1246)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Capsaicin",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1548943"
+                        },
+                        {
+                          "Start": 160,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Capsaicin",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-1548943"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "Section": [
+              {
+                "TOCHeading": "Use Classification",
+                "Description": "This section contains use classification/category information for this compound from various sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 111,
+                    "Reference": [
+                      "S72 | NTUPHTW | Pharmaceutically Active Substances from National Taiwan University | DOI:10.5281/zenodo.3955664"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S72 | NTUPHTW | Pharmaceutically Active Substances from National Taiwan University | DOI:10.5281/zenodo.3955664",
+                        "Matched": {
+                          "PCLID": 426493043,
+                          "Citation": "S72 | NTUPHTW | Pharmaceutically Active Substances from National Taiwan University | DOI:10.5281/zenodo.3955664",
+                          "DOI": "10.5281/zenodo.3955664"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Pharmaceuticals"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Household Products",
+                "Description": "Household products containing this compound.  This information is from several sources, including the Consumer Product Information Database (CPID).",
+                "URL": "https://www.whatsinproducts.com/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 16,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 11 consumer products that contain Capsaicin in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 49,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Capsaicin",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1548943"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Pesticides"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 16,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "761",
+        "Name": "Capsaicin",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/729/000404-86-4",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 5124743
+      },
+      {
+        "ReferenceNumber": 17,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "2f836965-9ff0-4a93-8114-8b39f0aeebd9",
+        "Name": "Capsaicin",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=2f836965-9ff0-4a93-8114-8b39f0aeebd9",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 38997345
+      },
+      {
+        "ReferenceNumber": 31,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "796528d566c226b58e5c7d5d3149d4a5",
+        "Name": "CAPSAICIN",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID9020241#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56939251
+      },
+      {
+        "ReferenceNumber": 47,
+        "SourceName": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+        "SourceID": "hz12063",
+        "Name": "Capsaicin",
+        "Description": "Haz-Map® is an occupational health database designed for health and safety professionals and for consumers seeking information about the adverse effects of workplace exposures to chemical and biological agents.",
+        "LicenseNote": "Copyright (c) 2026 Haz-Map(R). All rights reserved.\u000AUnless otherwise indicated, all materials from Haz-Map are copyrighted by Haz-Map(R). No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "ANID": 17282889
+      },
+      {
+        "ReferenceNumber": 48,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "954",
+        "Name": "CAPSAICIN",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/954",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 867
+      },
+      {
+        "ReferenceNumber": 113,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "870fc603a0512379b4d1e296f4ee2ab8",
+        "Name": "CAPSAICIN",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 45730436
+      },
+      {
+        "ReferenceNumber": 135,
+        "SourceName": "Toxin and Toxin Target Database (T3DB)",
+        "SourceID": "Compound::T3D3085",
+        "Name": "Capsaicin",
+        "Description": "The Toxin and Toxin Target Database (T3DB), or, soon to be referred as, the Toxic Exposome Database, is a unique bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
+        "URL": "http://www.t3db.ca/toxins/T3D3085",
+        "LicenseNote": "T3DB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (T3DB) and the original publication.",
+        "LicenseURL": "https://t3db.ca/downloads",
+        "ANID": 20442883
+      },
+      {
+        "ReferenceNumber": 111,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "nrm_1548943",
+        "Name": "CAPSAICIN",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 9150421
+      }
+    ]
+  }
+}

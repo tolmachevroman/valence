@@ -1,0 +1,677 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 54670067,
+    "RecordTitle": "L-Ascorbic Acid",
+    "Section": [
+      {
+        "TOCHeading": "Use and Manufacturing",
+        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
+        "Section": [
+          {
+            "TOCHeading": "Uses",
+            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "Information": [
+              {
+                "ReferenceNumber": 29,
+                "Name": "Cosmetic Ingredient Review Link",
+                "Reference": [
+                  "International Journal of Toxicology 24(Suppl. 2):51-111, 2005"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "International Journal of Toxicology 24(Suppl. 2):51-111, 2005",
+                    "Matched": {
+                      "PCLID": 906421645,
+                      "Citation": "International Journal of Toxicology 24(Suppl. 2):51-111, 2005"
+                    }
+                  }
+                ],
+                "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=1249ceda-7ea1-4d7c-9f51-d90148a41dae",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "CIR ingredient: L-Ascorbic Acid",
+                      "Markup": [
+                        {
+                          "Start": 16,
+                          "Length": 15,
+                          "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=1249ceda-7ea1-4d7c-9f51-d90148a41dae"
+                        },
+                        {
+                          "Start": 16,
+                          "Length": 15,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Ascorbic%20Acid",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-54670067"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 30,
+                "Name": "Cosmetic Ingredient Review Link",
+                "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=136df4cd-8647-f011-877a-7c1e5258ee15",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "CIR ingredient: Ascorbic Acid",
+                      "Markup": [
+                        {
+                          "Start": 16,
+                          "Length": 13,
+                          "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=136df4cd-8647-f011-877a-7c1e5258ee15"
+                        },
+                        {
+                          "Start": 16,
+                          "Length": 13,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20Acid",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-155903693"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 45,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 45,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 45,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 46,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 46,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 46,
+                "Name": "CPDat List Presence keywords",
+                "Value": {
+                  "ExternalTableName": "cpdatkw"
+                }
+              },
+              {
+                "ReferenceNumber": 74,
+                "Name": "Sources/Uses",
+                "Reference": [
+                  "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                    "Matched": {
+                      "PCLID": 900175655,
+                      "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "An antioxidant essential in the human diet; Used as an antioxidant for foods and therapeutic vitamin; [Merck Index] Used as an antioxidant and pH adjustor in cosmetics (over 75% in hair dyes and colors), for abscission of citrus fruit in harvesting, as a reducing agent in analytical chemistry, skin protectant, and UV sunscreen; [HSDB] Used in chemical synthesis; [IUCLID] Used as flavoring agent, antimicrobial agent, antioxidant, dough strengthener, nutritional supplement, pH control agent, sequestrant, and stabilizer or thickener for foods; [FDA] Permitted for use as an inert ingredient in non-food pesticide products; [EPA]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 75,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Burdock, G.A. (ed.). Fenaroli's Handbook of Flavor Ingredients. 4th ed.Boca Raton, FL 2002, p. 113"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Burdock, G.A. (ed.). Fenaroli's Handbook of Flavor Ingredients. 4th ed.Boca Raton, FL 2002, p. 113",
+                    "Matched": {
+                      "PCLID": 906294873,
+                      "Citation": "Burdock, G.A. (ed.). Fenaroli's Handbook of Flavor Ingredients. 4th ed.Boca Raton, FL 2002, p. 113"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Dietary supplement"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 75,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Whitehouse Station, NJ:  Merck and Co., Inc., 2006., p. 136"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Whitehouse Station, NJ:  Merck and Co., Inc., 2006., p. 136",
+                    "Matched": {
+                      "PCLID": 900056754,
+                      "Citation": "O'Neil, M.J. (ed.). The Merck Index - An Encyclopedia of Chemicals, Drugs, and Biologicals. Whitehouse Station, NJ:  Merck and Co., Inc., 2006., p. 136"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "As antimicrobial and antioxidant in foodstuffs"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 75,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103",
+                    "Matched": {
+                      "PCLID": 900095139,
+                      "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Nutrition, color fixing, flavoring and preservative in meats and other foods, oxidant in bread dough, abscission of citrus fruit in harvesting, reducing agent in analytical chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 75,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103",
+                    "Matched": {
+                      "PCLID": 900095139,
+                      "Citation": "Lewis, R.J. Sr.; Hawley's Condensed Chemical Dictionary 15th  Edition. John Wiley & Sons, Inc. New York, NY 2007., p. 103"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "The iron, calcium, and sodium salts are available for biochemical research.",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 4,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Iron",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "Element-Iron"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Calcium",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "Element-Calcium"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 75,
+                "Description": "PEER REVIEWED",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For more Uses (Complete) data for L-Ascorbic Acid (12 total), please visit the HSDB record page.",
+                      "Markup": [
+                        {
+                          "Start": 79,
+                          "Length": 16,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/818#section=Uses-(Complete)"
+                        },
+                        {
+                          "Start": 34,
+                          "Length": 15,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Ascorbic%20Acid",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-54670067"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "Section": [
+              {
+                "TOCHeading": "Use Classification",
+                "Description": "This section contains use classification/category information for this compound from various sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 51,
+                    "Name": "Use Classification",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "EPA Safer Chemical Functional Use Classes -> Processing Aids and Additives"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 51,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Safer Chemical Classes ->  Green circle - The chemical has been verified to be of low concern",
+                          "Markup": [
+                            {
+                              "Start": 26,
+                              "Length": 1,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/images/epasafe/green.svg",
+                              "Type": "Icon",
+                              "Extra": "Green circle"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 54,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Food additives"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 90,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Fragrance Ingredients"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 95,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Food Additives -> ANTIOXIDANT -> JECFA Functional Classes"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 96,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Food Additives -> ANTIOXIDANT -> JECFA Functional Classes"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 143,
+                    "Reference": [
+                      "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                        "Matched": {
+                          "PCLID": 415213182,
+                          "Citation": "S13 | EUCOSMETICS | Combined Inventory of Ingredients Employed in Cosmetic Products (2000) and Revised Inventory (2006) | DOI:10.5281/zenodo.2624118",
+                          "DOI": "10.5281/zenodo.2624118"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Cosmetics -> Antioxidant; Buffering"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Industry Uses",
+                "Description": "Categories of functional use of this chemical in industry.",
+                "DisplayControls": {
+                  "ListType": "Columns"
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 47,
+                    "Reference": [
+                      "https://www.epa.gov/chemical-data-reporting"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "https://www.epa.gov/chemical-data-reporting",
+                        "Matched": {
+                          "PCLID": 900178337,
+                          "Citation": "https://www.epa.gov/chemical-data-reporting"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Intermediate"
+                        },
+                        {
+                          "String": "Not Known or Reasonably Ascertainable"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Consumer Uses",
+                "Description": "Consumer uses of this chemical and products containing it (e.g., chemical-specific product categories).",
+                "DisplayControls": {
+                  "ListType": "Columns"
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 47,
+                    "Reference": [
+                      "https://www.epa.gov/chemical-data-reporting"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "https://www.epa.gov/chemical-data-reporting",
+                        "Matched": {
+                          "PCLID": 900178337,
+                          "Citation": "https://www.epa.gov/chemical-data-reporting"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Not Known or Reasonably Ascertainable"
+                        },
+                        {
+                          "String": "Anti-stain agent"
+                        },
+                        {
+                          "String": "Other"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Household Products",
+                "Description": "Household products containing this compound.  This information is from several sources, including the Consumer Product Information Database (CPID).",
+                "URL": "https://www.whatsinproducts.com/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 27,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 30 consumer products that contain Ascorbic Acid (Vitamin C) in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 49,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20Acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            },
+                            {
+                              "Start": 64,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Vitamin%20C",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-54670067"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Personal Care"
+                        },
+                        {
+                          "String": "• Pet Care"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 28,
+                    "Name": "Household & Commercial/Institutional Products",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Information on 252 consumer products that contain Ascorbic acid in the following categories is provided:",
+                          "Markup": [
+                            {
+                              "Start": 50,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic%20acid",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-155903693"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "• Personal Care"
+                        },
+                        {
+                          "String": "• Pet Care"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 27,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "8",
+        "Name": "Ascorbic Acid (Vitamin C)",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/1446/000050-81-7",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 5124067
+      },
+      {
+        "ReferenceNumber": 28,
+        "SourceName": "Consumer Product Information Database (CPID)",
+        "SourceID": "2128",
+        "Name": "Ascorbic acid",
+        "Description": "The Consumer Product Information Database (CPID) contains health effects information for products used in the home and in some commercial/institutional settings that contain chemicals. The CPID is unique in that it will, for the first time, link brand names to health effects and allow consumers to select brands based on their individual sensitivity to specific chemical ingredients.",
+        "URL": "https://www.whatsinproducts.com/chemicals/view/1/1008/010504-35-5",
+        "LicenseNote": "Copyright (c) 2024 DeLima Associates. All rights reserved. \u000AUnless otherwise indicated, all materials from CPID are copyrighted by DeLima Associates. No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "LicenseURL": "https://www.whatsinproducts.com/contents/view/1/6",
+        "ANID": 5125830
+      },
+      {
+        "ReferenceNumber": 29,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "1249ceda-7ea1-4d7c-9f51-d90148a41dae",
+        "Name": "L-Ascorbic Acid",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=1249ceda-7ea1-4d7c-9f51-d90148a41dae",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 38999249
+      },
+      {
+        "ReferenceNumber": 30,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "136df4cd-8647-f011-877a-7c1e5258ee15",
+        "Name": "Ascorbic Acid",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=136df4cd-8647-f011-877a-7c1e5258ee15",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 49686394
+      },
+      {
+        "ReferenceNumber": 45,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "332090e0b3b906064e20b03683b2560e",
+        "Name": "DL-ASCORBIC ACID",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID7048112#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56933609
+      },
+      {
+        "ReferenceNumber": 46,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "bbed23034e39dcf207526419d4f8b48d",
+        "Name": "L-ASCORBIC ACID",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID5020106#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56954669
+      },
+      {
+        "ReferenceNumber": 74,
+        "SourceName": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+        "SourceID": "hz11991",
+        "Name": "Ascorbic acid",
+        "Description": "Haz-Map® is an occupational health database designed for health and safety professionals and for consumers seeking information about the adverse effects of workplace exposures to chemical and biological agents.",
+        "LicenseNote": "Copyright (c) 2026 Haz-Map(R). All rights reserved.\u000AUnless otherwise indicated, all materials from Haz-Map are copyrighted by Haz-Map(R). No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "ANID": 17282876
+      },
+      {
+        "ReferenceNumber": 75,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "818",
+        "Name": "L-Ascorbic Acid",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/818",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 739
+      },
+      {
+        "ReferenceNumber": 47,
+        "SourceName": "EPA Chemical Data Reporting (CDR)",
+        "SourceID": "e895d56830b76f32e50a96d2a3bb273e",
+        "Name": "L-Ascorbic acid",
+        "Description": "The non-confidential content of the EPA Chemical Data Reporting.",
+        "URL": "https://www.epa.gov/chemical-data-reporting",
+        "LicenseNote": "The U.S. Government retains a nonexclusive, royalty-free license to publish or reproduce these documents, or allow others to do so, for U.S. Government purposes. These documents may be freely distributed and used for non-commercial, scientific and educational purposes.",
+        "LicenseURL": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers#copyright",
+        "ANID": 38379640
+      },
+      {
+        "ReferenceNumber": 51,
+        "SourceName": "EPA Safer Choice",
+        "SourceID": "50-81-7",
+        "Name": "Ascorbic acid",
+        "Description": "The Safer Choice of the U.S. Environmental Protection Agency (EPA) helps consumers, businesses, and purchasers find products that perform and are safer for human health and the environment.",
+        "URL": "https://www.epa.gov/saferchoice/safer-ingredients",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 2128110
+      },
+      {
+        "ReferenceNumber": 54,
+        "SourceName": "EU Food Improvement Agents",
+        "SourceID": "E 300 ASCORBIC ACID, L-ASCORBIC ACID",
+        "Name": "ASCORBIC ACID, L-ASCORBIC ACID",
+        "Description": "Commission Regulation (EU) No 231/2012 of 9 March 2012 laying down specifications for food additives listed in Annexes II and III to Regulation (EC) No 1333/2008 of the European Parliament and of the Council Text with EEA relevance",
+        "URL": "https://eur-lex.europa.eu/eli/reg/2012/231/oj",
+        "ANID": 5177012
+      },
+      {
+        "ReferenceNumber": 90,
+        "SourceName": "International Fragrance Association (IFRA)",
+        "SourceID": "9e04bd10e2901610fcbfde8099d5064d",
+        "Name": "Ascorbic acid",
+        "Description": "The IFRA Fragrance Ingredient Glossary (FIG), provides a harmonized list of positive olfactory descriptors of fragrance ingredients.",
+        "URL": "https://ifrafragrance.org/priorities/ingredients/ifra-transparency-list",
+        "LicenseNote": "(c) The International Fragrance Association, 2007-2021. All rights reserved.",
+        "ANID": 49745261
+      },
+      {
+        "ReferenceNumber": 95,
+        "SourceName": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+        "SourceID": "wf_59",
+        "Name": "ASCORBIC ACID",
+        "Description": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA) database contains the summaries of all the evaluations of flavors, food additives, contaminants, toxicants, and veterinary drugs.",
+        "URL": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/59",
+        "LicenseNote": "Permission from WHO is not required for the use of WHO materials issued under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Intergovernmental Organization (CC BY-NC-SA 3.0 IGO) licence.",
+        "LicenseURL": "https://www.who.int/about/policies/publishing/copyright",
+        "ANID": 9153107
+      },
+      {
+        "ReferenceNumber": 96,
+        "SourceName": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
+        "SourceID": "wf_2304",
+        "Name": "VITAMIN C",
+        "Description": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA) database contains the summaries of all the evaluations of flavors, food additives, contaminants, toxicants, and veterinary drugs.",
+        "URL": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2304",
+        "LicenseNote": "Permission from WHO is not required for the use of WHO materials issued under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Intergovernmental Organization (CC BY-NC-SA 3.0 IGO) licence.",
+        "LicenseURL": "https://www.who.int/about/policies/publishing/copyright",
+        "ANID": 57066542
+      },
+      {
+        "ReferenceNumber": 143,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "nrm_54670067",
+        "Name": "Ascorbic Acid",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 9047877
+      }
+    ]
+  }
+}

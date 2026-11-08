@@ -1,0 +1,324 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2519,
+    "RecordTitle": "Caffeine",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Toxicological Information",
+            "Description": "This section provides toxicological and health effects information for the chemical.  It includes the likely routes of exposure (inhalation, ingestion, skin and eye contact), and the delayed, immediate, or chronic effects/symptoms from short- and long-term exposure, and the numerical measures of toxicity [e.g., acute toxicity estimates such as the LD50 (median lethal dose, the estimated amount of a chemical expected to kill 50% of test animals in a single dose)].  This section also includes information on whether the chemical is considered as a potential carcinogen according to authoritative sources such as the National Toxicology Program (NTP) Report on Carcinogens and the International agency for Research on Cancer (IARC) Monographs.",
+            "Section": [
+              {
+                "TOCHeading": "Toxicity Summary",
+                "Description": "Summary of the toxicity of this compound, provided by the Hazardous Substances Data Bank (HSDB) and other sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 28,
+                    "Name": "Cosmetic Ingredient Review Finding(s)",
+                    "Reference": [
+                      "International Journal of Toxicology 43(Suppl. 4):42-77, 2024"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "International Journal of Toxicology 43(Suppl. 4):42-77, 2024",
+                        "Matched": {
+                          "PCLID": 906421689,
+                          "Citation": "International Journal of Toxicology 43(Suppl. 4):42-77, 2024"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org",
+                          "Markup": [
+                            {
+                              "Start": 146,
+                              "Length": 34,
+                              "URL": "https://cir-reports.cir-safety.org/"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 288,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Signs and Symptoms of Overdose",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 30,
+                              "Type": "Bold"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Caffeine consumption is generally regarded as safe. Additive caffeine in most substances does not necessitate FDA approval as long as consumption remains within safe levels stipulated by the statute. A typical dose of caffeine is around 70 to 100 mg per drink. While there is no recommended daily allowance for caffeine, doses of up to 400 mg/d are deemed safe.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 61,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 218,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 311,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "The exact LD50 for humans varies and largely depends on individual sensitivity to caffeine. However, the estimated LD50 is between 150 and 200 mg/kg. Case reports indicate that doses as low as 57 mg/kg have resulted in fatalities. A toxic dose of caffeine, where significant adverse effects such as tachycardia, arrhythmia, altered mentation, and seizures may occur, is estimated to be around 1.2 g. The estimates of a life-threatening dose of caffeine range from 10 to 14 g.",
+                          "Markup": [
+                            {
+                              "Start": 82,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 247,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 444,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Management of Overdose",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 22,
+                              "Type": "Bold"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "The treatment for mild ingestions primarily involves supportive care. However, in cases of more severe ingestions, additional interventions may be necessary. Patients may require intubation to protect the airway from vomiting or altered mental status. Benzodiazepines can be administered to abort any seizures that develop. If IV fluid resuscitation fails to address persistent hypotension, patients may need vasopressors. Phenylephrine or norepinephrine is typically the first-line vasopressor, with phenylephrine being preferable due to its α-agonism and reflex bradycardia.",
+                          "Markup": [
+                            {
+                              "Start": 423,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Phenylephrine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6041"
+                            },
+                            {
+                              "Start": 440,
+                              "Length": 14,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/norepinephrine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5814"
+                            },
+                            {
+                              "Start": 501,
+                              "Length": 13,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/phenylephrine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6041"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "Magnesium and β-blockers can combat cardiac arrhythmias secondary to the hyperadrenergic response. The ultra-short-acting β1-selective blocker esmolol has been used successfully in several case reports for this indication. In the case of lethal arrhythmias, patients will require defibrillation and resuscitation according to advanced cardiac life support protocols. Additionally, activated charcoal, intralipid infusion, and hemodialysis can aid in preventing further metabolism and subsequent effects of caffeine overdose.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Magnesium",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "Element-Magnesium"
+                            },
+                            {
+                              "Start": 143,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/esmolol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-59768"
+                            },
+                            {
+                              "Start": 391,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/charcoal",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5462310"
+                            },
+                            {
+                              "Start": 506,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 295,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Caffeine stimulates medullary, vagal, vasomotor, and respiratory centers, promoting bradycardia, vasoconstriction, and increased respiratory rate. This action was previously believed to be due primarily to increased intracellular cyclic 3&prime;,5&prime;-adenosine monophosphate (cyclic AMP) following inhibition of phosphodiesterase, the enzyme that degrades cyclic AMP. It is now thought that xanthines such as caffeine act as antagonists at adenosine-receptors within the plasma membrane of virtually every cell. As adenosine acts as an autocoid, inhibiting the release of neurotransmitters from presynaptic sites but augmenting the actions of norepinephrine or angiotensin, antagonism of adenosine receptors promotes neurotransmitter release. This explains the stimulatory effects of caffeine. Blockade of the adenosine A1 receptor in the heart leads to the accelerated, pronounced \"pounding\" of the heart upon caffeine intake.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 280,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/cyclic%20AMP",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6076"
+                            },
+                            {
+                              "Start": 360,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/cyclic%20AMP",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-6076"
+                            },
+                            {
+                              "Start": 413,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 444,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/adenosine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-60961"
+                            },
+                            {
+                              "Start": 519,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/adenosine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-60961"
+                            },
+                            {
+                              "Start": 647,
+                              "Length": 14,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/norepinephrine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5814"
+                            },
+                            {
+                              "Start": 692,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/adenosine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-60961"
+                            },
+                            {
+                              "Start": 788,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            },
+                            {
+                              "Start": 814,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/adenosine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-60961"
+                            },
+                            {
+                              "Start": 915,
+                              "Length": 8,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/caffeine",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2519"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 28,
+        "SourceName": "Cosmetic Ingredient Review (CIR)",
+        "SourceID": "8c82edc7-2115-4ae6-b58a-c78671befe16",
+        "Name": "Caffeine",
+        "Description": "The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International Nomenclature of Cosmetic Ingredients (INCI) when identifying the ingredients to be assessed. The Expert Panel for Cosmetic Ingredient Safety (Panel) assess the safety of ingredients for use in cosmetics. The function of an ingredient in cosmetics is noted. The Panel reviews the data relevant to the safety of an ingredient and concludes whether an ingredient is safe in cosmetics in the present practices of use and concentration described in a safety assessment.",
+        "URL": "https://cir-reports.cir-safety.org/cir-ingredient-status-report/?id=8c82edc7-2115-4ae6-b58a-c78671befe16",
+        "LicenseURL": "https://cir-safety.org/terms-use",
+        "ANID": 38997229
+      },
+      {
+        "ReferenceNumber": 288,
+        "SourceName": "StatPearls",
+        "SourceID": "article-18756",
+        "Name": "Caffeine",
+        "Description": "StatPearls review books and articles identify knowledge deficits and assist in the learning process. Review books and articles are not intended to be a source of the knowledge base of medicine. The authors and editors do not warrant the information is complete or accurate. All drug indications and dosages should be verified before administration.",
+        "URL": "https://www.ncbi.nlm.nih.gov/books/n/statpearls/article-18756/",
+        "LicenseNote": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+        "ANID": 49087191
+      },
+      {
+        "ReferenceNumber": 295,
+        "SourceName": "Toxin and Toxin Target Database (T3DB)",
+        "SourceID": "Compound::T3D2712",
+        "Name": "Caffeine",
+        "Description": "The Toxin and Toxin Target Database (T3DB), or, soon to be referred as, the Toxic Exposome Database, is a unique bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
+        "URL": "http://www.t3db.ca/toxins/T3D2712",
+        "LicenseNote": "T3DB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (T3DB) and the original publication.",
+        "LicenseURL": "https://t3db.ca/downloads",
+        "ANID": 20442602
+      }
+    ]
+  }
+}

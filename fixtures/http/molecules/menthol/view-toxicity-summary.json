@@ -1,0 +1,209 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1254,
+    "RecordTitle": "Menthol",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Toxicological Information",
+            "Description": "This section provides toxicological and health effects information for the chemical.  It includes the likely routes of exposure (inhalation, ingestion, skin and eye contact), and the delayed, immediate, or chronic effects/symptoms from short- and long-term exposure, and the numerical measures of toxicity [e.g., acute toxicity estimates such as the LD50 (median lethal dose, the estimated amount of a chemical expected to kill 50% of test animals in a single dose)].  This section also includes information on whether the chemical is considered as a potential carcinogen according to authoritative sources such as the National Toxicology Program (NTP) Report on Carcinogens and the International agency for Research on Cancer (IARC) Monographs.",
+            "Section": [
+              {
+                "TOCHeading": "Toxicity Summary",
+                "Description": "Summary of the toxicity of this compound, provided by the Hazardous Substances Data Bank (HSDB) and other sources.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 49,
+                    "Description": "PEER REVIEWED",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "IDENTIFICATION AND USE: Menthol is produced as crystals or granules. DL-Menthol is used as flavoring, disinfectant and cooling compound in confectionery products, liqueurs, chewing gums, toothpastes, cosmetics and common cold ointments and medications for human purposes. L-Menthol is used in large quantities in cigarettes, cosmetics, toothpastes, chewing gum, sweets, and medicines. D-Menthol is used only in research. HUMAN EXPOSURE AND TOXICITY: A maximization test was carried out on 25 volunteers. The material was tested at a concentration of 8% in petrolatum and produced no sensitization reactions. Ingestion of high menthol doses may cause abdominal pain, convulsions, nausea, vomiting, vertigo, ataxia, drowsiness and coma. Menthol may cause allergic reactions (e.g. contact dermatitis, flushing, and headache) in certain individuals. In very few cases, all in children younger than 1 year, menthol applied to the nostrils or near the nose caused reflex apnea. In a representative sample of U.S. adults, menthol cigarette smoking was associated with increased all-cause, cardiovascular and cancer mortality with no differences compared to nonmenthol cigarettes. In the systematic review, menthol cigarette use was associated with inverse risk of cancer compared to nonmenthol cigarette use with some evidence of an increased risk for cardiovascular disease. Epidemiological studies indicate no difference in dependence among U.S. smokers who use menthol compared to non-menthol cigarettes.  ANIMAL STUDIES: All studied isomers of menthol are, if applied undiluted, moderately irritating to skin. The menthol isomers are slightly irritating to the eye. In experimental animals, menthol was of low acute toxicity by oral, injection, and dermal routes. Liver and kidney changes have been seen in a number of animals mainly involving oral administration. Inhalation of menthol may produce respiratory tract injury. There was no convincing evidence of carcinogenicity in rats and mice. L-Menthol was not embryo- or fetotoxic and had no teratogenic properties in gavage studies in various species (rat, mouse, rabbit, and hamster) at not maternally toxic doses. The menthol isomers are considered non-genotoxic in bacterial and mammalian test systems in vitro. In vivo, L- and D/L-menthol have demonstrated no mutagenic potential in dominant lethal and cytogenetic tests and in a bone marrow micronucleus test in mice.",
+                          "Markup": [
+                            {
+                              "Start": 24,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 69,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/DL-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 272,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            },
+                            {
+                              "Start": 385,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/D-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-165675"
+                            },
+                            {
+                              "Start": 626,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 735,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 902,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1015,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1199,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1457,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1481,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1541,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1611,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1688,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1876,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 1992,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            },
+                            {
+                              "Start": 2171,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 2284,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 130,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Menthol acts as a weak Kappa Opioid Receptor Agonist.",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 49,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "593",
+        "Name": "MENTHOL",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/593",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 528
+      },
+      {
+        "ReferenceNumber": 130,
+        "SourceName": "Toxin and Toxin Target Database (T3DB)",
+        "SourceID": "Compound::T3D3224",
+        "Name": "Menthol",
+        "Description": "The Toxin and Toxin Target Database (T3DB), or, soon to be referred as, the Toxic Exposome Database, is a unique bioinformatics resource that combines detailed toxin data with comprehensive toxin target information.",
+        "URL": "http://www.t3db.ca/toxins/T3D3224",
+        "LicenseNote": "T3DB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (T3DB) and the original publication.",
+        "LicenseURL": "https://t3db.ca/downloads",
+        "ANID": 20442919
+      }
+    ]
+  }
+}

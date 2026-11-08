@@ -1,0 +1,274 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 123591,
+    "RecordTitle": "Fullerenes",
+    "Section": [
+      {
+        "TOCHeading": "Use and Manufacturing",
+        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
+        "Section": [
+          {
+            "TOCHeading": "Uses",
+            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "Information": [
+              {
+                "ReferenceNumber": 12,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 13,
+                "Name": "CPDat Function Use Categories",
+                "Value": {
+                  "ExternalTableName": "cpdatfun"
+                }
+              },
+              {
+                "ReferenceNumber": 13,
+                "Name": "CPDat Product Use Categories (PUCs)",
+                "Value": {
+                  "ExternalTableName": "cpdat"
+                }
+              },
+              {
+                "ReferenceNumber": 18,
+                "Name": "Sources/Uses",
+                "Reference": [
+                  "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013.",
+                    "Matched": {
+                      "PCLID": 900175655,
+                      "Citation": "Merck Index - O'Neil MJ, Heckelman PE, Dobbelaar PH, Roman KJ (eds). The Merck Index, An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Ed. Cambridge, UK: The Royal Society of Chemistry, 2013."
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Carbon molecules structured as fullerenes containing 12 pentagons and 'm' hexagons; [Merck Index] Used as high-performance polymer films, transistors, lubricants, anticorrosion coatings, organic photoconductors, and energy cells; [HSDB]",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Carbon",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "Element-Carbon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 19,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010",
+                    "Matched": {
+                      "PCLID": 900106225,
+                      "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "C60 fullerene is an insulator but exhibits electrical conductivity when doped with electropositive metals.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 13,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/C60%20fullerene",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-123591"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 19,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010",
+                    "Matched": {
+                      "PCLID": 900106225,
+                      "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid fullerenes are compressible because of the weak van der Waals forces between the fullerene molecules in the lattice. Various high-pressure phases of C60 and C70 have been characterized. When compressed to 70 percent of its original size, C60 becomes more than twice as hard as diamond. Thus, it could be applied as a shock absorber for high-energy collision or for reinforcing metals or plastics. Cross-linked polymers and high-performance polymer films can be obtained by cross-linking C60 with resins. These materials are very hard and thermally extremely stable.",
+                      "Markup": [
+                        {
+                          "Start": 283,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/diamond",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "CID-5462310"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 19,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010",
+                    "Matched": {
+                      "PCLID": 900106225,
+                      "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "In C60-polymer composites, fast photo induced electron transfer occurs from the polymer to the C60 molecule and photoconductivity is observed. The efficiency of organic photoconductors could be improved by addition of C60. This discovery may lead to applications in xerography, laser printers, fax machines."
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 19,
+                "Description": "PEER REVIEWED",
+                "Reference": [
+                  "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010",
+                    "Matched": {
+                      "PCLID": 900106225,
+                      "Citation": "Cadek M et al; Carbon, 7. Fullerenes and Carbon Nanomaterials. Ullmann's Encyclopedia of Industrial Chemistry 7th ed. (1999-2013). New York, NY: John Wiley & Sons. Online Posting Date: January 15, 2010"
+                    }
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "The possibility of using C60 for hydrogen storage might be useful not only in energy storage cells but also in high-energy-density primary batteries.",
+                      "Markup": [
+                        {
+                          "Start": 33,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/element/Hydrogen",
+                          "Type": "PubChem Internal Link",
+                          "Extra": "Element-Hydrogen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 19,
+                "Description": "PEER REVIEWED",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "For more Uses (Complete) data for FULLERENES (8 total), please visit the HSDB record page.",
+                      "Markup": [
+                        {
+                          "Start": 73,
+                          "Length": 16,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/7714#section=Uses-(Complete)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 31,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Synthetic Polymer MALDI Matrix Compounds"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 12,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "ca4bc1ec07ff8ae19d66ff39216b8bed",
+        "Name": "FULLERITE",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID7036876#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56933310
+      },
+      {
+        "ReferenceNumber": 13,
+        "SourceName": "EPA Chemical and Products Database (CPDat)",
+        "SourceID": "6e2138d0f20aedda15bfa0e070a476b3",
+        "Name": "BUCKMINSTERFULLERENE",
+        "Description": "The US EPA Chemical and Products Database (CPDat) is a database containing information mapping more than 49,000 chemicals to a set of terms categorizing their usage or function in 16,000 consumer products (e.g. shampoo, soap) types based on what chemicals they contain.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID4031772#exposure",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 56947654
+      },
+      {
+        "ReferenceNumber": 18,
+        "SourceName": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+        "SourceID": "hz12493",
+        "Name": "Buckminsterfullerene",
+        "Description": "Haz-Map® is an occupational health database designed for health and safety professionals and for consumers seeking information about the adverse effects of workplace exposures to chemical and biological agents.",
+        "LicenseNote": "Copyright (c) 2026 Haz-Map(R). All rights reserved.\u000AUnless otherwise indicated, all materials from Haz-Map are copyrighted by Haz-Map(R). No part of these materials, either text or image may be used for any purpose other than for personal use. Therefore, reproduction, modification, storage in a retrieval system or retransmission, in any form or by any means, electronic, mechanical or otherwise, for reasons other than personal use, is strictly prohibited without prior written permission.",
+        "ANID": 17283007
+      },
+      {
+        "ReferenceNumber": 19,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "7714",
+        "Name": "FULLERENES",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/7714",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 5258
+      },
+      {
+        "ReferenceNumber": 31,
+        "SourceName": "NIST Synthetic Polymer MALDI Recipes Database",
+        "SourceID": "8f634f301f9470c5e1cb4cae9e037dc3",
+        "Name": "buckminsterfullerene (C60) ",
+        "Description": "The NIST Synthetic Polymer MALDI Recipes Database consists of methods for matrix-assisted laser desorption ionization (MALDI) mass spectrometry on a wide variety of synthetic polymers. The methods are taken from the peer-review scientific literature.",
+        "URL": "https://maldi.nist.gov/",
+        "LicenseNote": "Formerly known as NIST Standard Reference Database 172",
+        "LicenseURL": "https://www.nist.gov/disclaimer",
+        "ANID": 49307820
+      }
+    ]
+  }
+}

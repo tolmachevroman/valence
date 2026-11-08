@@ -19,7 +19,7 @@ pub const USER_AGENT: &str = concat!(
 );
 
 /// PubChem's published limit: no more than 5 requests per second.
-const PUBCHEM_PER_SECOND: u32 = 5;
+pub const PUBCHEM_PER_SECOND: u32 = 5;
 
 /// Who a request goes to, which decides its rate limit.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -35,6 +35,8 @@ pub struct Settings {
     pub backoff: Duration,
     /// Longest `Retry-After` we honor; a longer one fails the request instead.
     pub max_backoff: Duration,
+    /// PubChem's request rate; only tests change it.
+    pub pubchem_per_second: u32,
 }
 
 impl Default for Settings {
@@ -43,6 +45,7 @@ impl Default for Settings {
             timeout: Duration::from_secs(15),
             backoff: Duration::from_secs(1),
             max_backoff: Duration::from_secs(10),
+            pubchem_per_second: PUBCHEM_PER_SECOND,
         }
     }
 }
@@ -92,7 +95,8 @@ impl Http {
             .timeout(settings.timeout)
             .build()
             .expect("TLS backend is available");
-        let quota = Quota::per_second(NonZeroU32::new(PUBCHEM_PER_SECOND).unwrap());
+        let per_second = NonZeroU32::new(settings.pubchem_per_second).expect("a positive rate");
+        let quota = Quota::per_second(per_second);
         Self {
             client,
             pubchem: Arc::new(RateLimiter::direct(quota)),

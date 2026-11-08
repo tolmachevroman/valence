@@ -1,0 +1,49 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1254,
+    "RecordTitle": "Menthol",
+    "Section": [
+      {
+        "TOCHeading": "Names and Identifiers",
+        "Description": "Chemical names, synonyms, identifiers, and descriptors.",
+        "Section": [
+          {
+            "TOCHeading": "Other Identifiers",
+            "Description": "Other identifiers assigned to this chemical.",
+            "Section": [
+              {
+                "TOCHeading": "Wikipedia",
+                "Description": "Wikidata entity identifier for this compound.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 136,
+                    "URL": "https://en.wikipedia.org/wiki/Menthol",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Menthol"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 136,
+        "SourceName": "Wikipedia",
+        "SourceID": "1358888081",
+        "Name": "Menthol",
+        "Description": "Link to the chemical information in Wikipedia.",
+        "URL": "https://en.wikipedia.org/wiki/Menthol",
+        "ANID": 55327576
+      }
+    ]
+  }
+}

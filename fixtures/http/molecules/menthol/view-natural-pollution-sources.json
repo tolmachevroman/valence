@@ -1,0 +1,121 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 1254,
+    "RecordTitle": "Menthol",
+    "Section": [
+      {
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
+        "Section": [
+          {
+            "TOCHeading": "Ecological Information",
+            "Description": "This section provides information to evaluate the environmental impact of the chemical if it were released to the environment. The information may include data from toxicity tests performed on aquatic and/or terrestrial organisms, where available (e.g., acute or chronic aquatic toxicity data for fish, algae, and crustaceans; toxicity data on birds, bees, and plants).  This section also includes information on whether there is a potential for the chemical to persist or degrade in the environment either through biodegradation or other processes (such as oxidation or hydrolysis) as well as the concentration or amount of the chemical found in the environment (e.g., in plants, animals as well as in the atmosphere or water).",
+            "Section": [
+              {
+                "TOCHeading": "Natural Pollution Sources",
+                "Description": "Pollutants are emitted from a range of natural and man-made (artificial) sources.  This section provides information on the natural sources of the compound as a pollutant.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 49,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "(1) Fahlbusch K-G et al; Ullmann's Encyclopedia of Industrial Chemistry. 7th ed. (1999-2015). NY, NY: John Wiley & Sons; Flavors and Fragrances. Online Posting Date: Jan 11, 2003."
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "(1) Fahlbusch K-G et al; Ullmann's Encyclopedia of Industrial Chemistry. 7th ed. (1999-2015). NY, NY: John Wiley & Sons; Flavors and Fragrances. Online Posting Date: Jan 11, 2003."
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "L-Menthol is the main component (other stereoisomers may be present) of peppermint oils and cornmint oils obtained from Mentha piperita and Mentha arvensis(1). /l-Menthol/",
+                          "Markup": [
+                            {
+                              "Start": 0,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/L-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            },
+                            {
+                              "Start": 161,
+                              "Length": 9,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/l-Menthol",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-16666"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 49,
+                    "Description": "PEER REVIEWED",
+                    "Reference": [
+                      "Osol, A., and R. Pratt. (eds.). The United States Dispensatory. 27th ed. Philadelphia: J.B. Lippincott, 1973., p. 697"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "Osol, A., and R. Pratt. (eds.). The United States Dispensatory. 27th ed. Philadelphia: J.B. Lippincott, 1973., p. 697",
+                        "Matched": {
+                          "PCLID": 900138286,
+                          "Citation": "Osol, A., and R. Pratt. (eds.). The United States Dispensatory. 27th ed. Philadelphia: J.B. Lippincott, 1973., p. 697"
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "NATURAL MENTHOL, KNOWN ALSO AS PEPPERMINT CAMPHOR MAY BE OBTAINED FROM PEPPERMINT OIL WHETHER AMERICAN, CHINESE, OR JAPANESE EITHER BY COOLING THE OIL TO POINT OF CRYSTALLIZATION OF MENTHOL OR BY FRACTIONAL DISTILLATION OF THE OIL.",
+                          "Markup": [
+                            {
+                              "Start": 8,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/MENTHOL",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            },
+                            {
+                              "Start": 42,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/CAMPHOR",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-2537"
+                            },
+                            {
+                              "Start": 182,
+                              "Length": 7,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/MENTHOL",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-1254"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 49,
+        "SourceName": "Hazardous Substances Data Bank (HSDB)",
+        "SourceID": "593",
+        "Name": "MENTHOL",
+        "Description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/593",
+        "LicenseURL": "https://www.nlm.nih.gov/web_policies.html",
+        "IsToxnet": true,
+        "ANID": 528
+      }
+    ]
+  }
+}

@@ -208,8 +208,8 @@ pub fn snippets(article: &Article) -> Vec<Snippet> {
     out
 }
 
-/// Snippets from the first article PubChem links for `cid` that exists, or
-/// none when it links no article.
+/// Snippets from the longest article PubChem links for `cid`, or none when it
+/// links no article.
 pub async fn wikipedia_snippets(
     pubchem: &PubChem,
     wikipedia: &Wikipedia,
@@ -218,12 +218,20 @@ pub async fn wikipedia_snippets(
     let Some(view) = pubchem.view(cid, "Wikipedia").await? else {
         return Ok(vec![]);
     };
+    // When PubChem links several articles, the longest is the one about the
+    // molecule as people know it: ascorbic acid links "Ascorbic acid", now a
+    // redirect to "Chemistry of ascorbic acid", and "Vitamin C".
+    let mut best: Option<Article> = None;
     for title in linked_titles(&view) {
-        if let Some(article) = wikipedia.article(&title).await? {
-            return Ok(snippets(&article));
+        if let Some(article) = wikipedia.article(&title).await?
+            && best
+                .as_ref()
+                .is_none_or(|b| article.text.len() > b.text.len())
+        {
+            best = Some(article);
         }
     }
-    Ok(vec![])
+    Ok(best.as_ref().map(snippets).unwrap_or_default())
 }
 
 #[cfg(test)]

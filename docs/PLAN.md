@@ -47,7 +47,7 @@ Exit: one model gets first card in under 10 s and passes validation on most card
 - [x] **M1.7 SQLite cache** — PRD schema as migration v1 (rusqlite); repository layer; snippet `hash`; `fetched_at` with 90-day freshness. A refetch keeps unchanged snippets' ids and deletes cards citing changed ones.
 - [x] **M1.8 Fetch orchestration** — properties + SDF first, annotations in parallel afterwards, all within the limiter; results stream out as they arrive.
 - [x] **M1.9 CLI** — `valence snippets <name|CAS|CID>` prints the header + all snippets, served from cache on the second run (`cargo run -p valence-core --bin valence -- snippets capsaicin`). Names still need one PubChem request to find the CID; caching that is for offline mode (M4.3).
-- [ ] **M1.10 Tests** — recorded HTTP fixtures for ~5 molecules (no live network in CI); parser tests per section.
+- [x] **M1.10 Tests** — recorded HTTP fixtures for ~5 molecules (no live network in CI); parser tests per section. Recorder: `scripts/record_http_fixtures.py`; live checks: `cargo test -p valence-core -- --ignored live`.
 
 Exit: the CLI prints every snippet for any CID.
 
