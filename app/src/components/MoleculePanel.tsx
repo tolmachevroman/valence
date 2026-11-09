@@ -1,7 +1,7 @@
-// Left panel: the 3D model (M2.5, 2D fallback in M2.6) and the molecule
-// header (M2.4).
+// Left panel: the 3D model (M2.5, 2D fallback in M2.6) and the molecule header.
 
 import type { MoleculeState } from '../useMolecule'
+import MoleculeHeader from './MoleculeHeader'
 
 export default function MoleculePanel({ molecule }: { molecule?: MoleculeState }) {
   return (
@@ -9,14 +9,15 @@ export default function MoleculePanel({ molecule }: { molecule?: MoleculeState }
       <div className="viewer" aria-hidden="true">
         <span className="placeholder">3D model</span>
       </div>
-      <div className="molecule-header">
-        {!molecule && <p className="muted">No molecule yet.</p>}
-        {molecule?.status === 'error' && <p role="alert">{molecule.error}</p>}
-        {molecule?.compound && <h2>{molecule.compound.title}</h2>}
-        {molecule && !molecule.compound && molecule.status === 'loading' && (
-          <p className="muted">Looking up {molecule.query}…</p>
-        )}
-      </div>
+      {molecule?.compound ? (
+        <MoleculeHeader compound={molecule.compound} />
+      ) : (
+        <div className="molecule-header">
+          {!molecule && <p className="muted">No molecule yet.</p>}
+          {molecule?.status === 'loading' && <p className="muted">Looking up {molecule.query}…</p>}
+          {molecule?.status === 'error' && <p role="alert">{molecule.error}</p>}
+        </div>
+      )}
     </section>
   )
 }
