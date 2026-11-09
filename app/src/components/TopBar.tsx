@@ -1,19 +1,15 @@
-// Search, "Surprise me", favorites and settings. Search becomes the
-// autocomplete combobox in M2.3; the rest arrive in M4 and v0.2.
+// Search, "Surprise me", favorites and settings. "Surprise me" arrives in
+// M4.1, settings in M4.4, favorites in v0.2.
 
-export default function TopBar() {
+import SearchBox from './SearchBox'
+
+export default function TopBar({ onOpen }: { onOpen: (query: string) => void }) {
   return (
     <header className="top-bar">
       <div className="brand" aria-hidden="true">
         Valence
       </div>
-      <input
-        className="search"
-        type="search"
-        placeholder="Search a molecule: caffeine, 58-08-2, 2519"
-        aria-label="Search a molecule by name, CAS number or PubChem CID"
-        disabled
-      />
+      <SearchBox onOpen={onOpen} />
       <button type="button" disabled>
         Surprise me
       </button>

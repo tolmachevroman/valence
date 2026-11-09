@@ -10,5 +10,7 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     watch: { ignored: ['**/src-tauri/**'] },
+    // The dev mocks read recorded data from ../fixtures.
+    fs: { allow: ['..'] },
   },
 })
