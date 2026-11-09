@@ -21,6 +21,7 @@ static CAS: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"^\d{2,7}-\d{2}-\d$")
 
 /// What the molecule header shows.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Compound {
     pub cid: u64,
     pub title: String,
