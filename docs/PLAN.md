@@ -59,7 +59,7 @@ Exit: the CLI prints every snippet for any CID.
 - [x] **M2.2 Core ↔ UI bridge** — Tauri commands for lookups, events for streamed results; serde types mirrored in one TypeScript module. The webview never reaches the network (CSP).
 - [x] **M2.3 Search + autocomplete** — debounced input, accessible combobox (keyboard up/down/enter/esc, VoiceOver), under 300 ms.
 - [x] **M2.4 Molecule header** — name, formula (with subscripts), molar mass, synonyms.
-- [ ] **M2.5 3D view** — 3Dmol.js component fed the cached SDF from the core; ball-and-stick, rotate and zoom, auto-fit; theme-aware background.
+- [x] **M2.5 3D view** — 3Dmol.js component fed the cached SDF from the core; ball-and-stick, rotate and zoom, auto-fit; theme-aware background.
 - [ ] **M2.6 2D fallback** — show PubChem PNG (served through the core, not fetched by the webview) when there's no 3D conformer.
 - [ ] **M2.7 Perf pass** — 60 fps on M1 with the largest molecules in the curated list.
 
