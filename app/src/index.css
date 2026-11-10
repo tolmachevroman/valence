@@ -198,6 +198,27 @@ input:disabled {
   height: 100%;
 }
 
+.drawing {
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+/* PubChem draws on white; keep it on a white tile in dark mode too. */
+.drawing img {
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.drawing figcaption {
+  font-size: 12px;
+}
+
 .placeholder {
   color: var(--text-muted);
   font-size: 13px;

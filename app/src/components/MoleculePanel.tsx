@@ -1,4 +1,5 @@
-// Left panel: the 3D model (M2.5, 2D fallback in M2.6) and the molecule header.
+// Left panel: the 3D model, or the 2D drawing when PubChem has no 3D
+// conformer, and the molecule header.
 
 import { lazy, Suspense } from 'react'
 
@@ -16,6 +17,14 @@ export default function MoleculePanel({ molecule }: { molecule?: MoleculeState }
           <Suspense fallback={<span className="placeholder">Loading model…</span>}>
             <Viewer sdf={molecule.structure.sdf} title={molecule.compound?.title ?? molecule.query} />
           </Suspense>
+        ) : molecule?.structure?.png ? (
+          <figure className="drawing">
+            <img
+              src={molecule.structure.png}
+              alt={`2D structure drawing of ${molecule.compound?.title ?? molecule.query}`}
+            />
+            <figcaption className="muted">PubChem has no 3D model for this molecule.</figcaption>
+          </figure>
         ) : (
           <span className="placeholder" aria-hidden="true">
             {molecule?.status === 'loading' ? 'Loading model…' : '3D model'}
