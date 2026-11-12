@@ -7,7 +7,13 @@ rust-version.workspace = true
 license.workspace = true
 repository.workspace = true
 
+[features]
+# The local model (mistral.rs on Metal). Off by default so the data layer, the
+# CLI and their tests build without it; the app turns it on.
+model = ["dep:anyhow", "dep:mistralrs"]
+
 [dependencies]
+anyhow = { version = "1", optional = true }
 governor = "0.10"
 regex = "1"
 reqwest = "0.13"
@@ -15,11 +21,12 @@ rusqlite = { version = "0.41", features = ["bundled", "fallible_uint"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time"] }
-
-# M0 model spike only; moves to [dependencies] when generation lands in M3.
 # mistral.rs v0.9.5 plus an opt-in macOS available-memory estimate (M0.6c),
 # from our fork, pinned to the exact commit. Switch back to an upstream
 # release once the change is merged there.
+mistralrs = { git = "https://github.com/tolmachevroman/mistral.rs", rev = "0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb", features = ["metal"], optional = true }
+
+# The M0 spike examples run the model directly.
 [dev-dependencies]
 anyhow = "1"
 libproc = "0.14"

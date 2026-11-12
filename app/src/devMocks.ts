@@ -1,13 +1,14 @@
 // Dev only: a stand-in core for running the UI in a plain browser
 // (`npm run dev`), so layout work needs no Rust build. Serves recorded data
 // for caffeine (3D) and buckminsterfullerene (2D only) with realistic delays.
-// `?q=caffeine` opens a molecule on load. Never part of a production build.
+// `?q=caffeine` opens a molecule on load; `?model=missing|memory|failed`
+// picks how the model load ends. Never part of a production build.
 
 import { mockIPC } from '@tauri-apps/api/mocks'
 
 import caffeineSdf from '../../fixtures/http/molecules/caffeine/sdf-3d.sdf?raw'
 import c60Png from '../../fixtures/http/molecules/buckminsterfullerene/png.png?inline'
-import type { Compound, Ghs, MoleculeEvent } from './core'
+import type { Compound, Ghs, ModelStatus, MoleculeEvent } from './core'
 
 interface Recorded {
   compound: Compound
@@ -67,6 +68,27 @@ interface Internals {
   runCallback: (id: number, data: unknown) => void
 }
 
+/** Sends `message` to the frontend Channel passed as a command argument. */
+function sender<T>(channelArg: unknown) {
+  const { id } = channelArg as { id: number }
+  const internals = (window as unknown as { __TAURI_INTERNALS__: Internals }).__TAURI_INTERNALS__
+  let index = 0
+  return (message: T) => internals.runCallback(id, { message, index: index++ })
+}
+
+function modelOutcome(): ModelStatus {
+  switch (new URLSearchParams(location.search).get('model')) {
+    case 'missing':
+      return { state: 'notDownloaded', path: '~/Library/Application Support/…/models/model.gguf' }
+    case 'memory':
+      return { state: 'notEnoughMemory' }
+    case 'failed':
+      return { state: 'failed', message: 'unsupported GGUF architecture (dev mock)' }
+    default:
+      return { state: 'ready', loadSeconds: 2.4 }
+  }
+}
+
 export function installDevMocks() {
   mockIPC(async (cmd, payload) => {
     const args = payload as Record<string, unknown>
@@ -84,10 +106,7 @@ export function installDevMocks() {
           (r) => r.compound.title.toLowerCase() === query || String(r.compound.cid) === query,
         )
         if (!found) throw `PubChem has no compound called "${args.query}" (dev mock)`
-        const channel = args.onEvent as { id: number }
-        const internals = (window as unknown as { __TAURI_INTERNALS__: Internals }).__TAURI_INTERNALS__
-        let index = 0
-        const send = (message: MoleculeEvent) => internals.runCallback(channel.id, { message, index: index++ })
+        const send = sender<MoleculeEvent>(args.onEvent)
         await sleep(300)
         send({ kind: 'header', compound: found.compound })
         await sleep(200)
@@ -97,6 +116,13 @@ export function installDevMocks() {
         await sleep(600)
         send({ kind: 'done', snippetCount: 30, fetchedAt: Math.floor(Date.now() / 1000) })
         return found.compound.cid
+      }
+      case 'model_status': {
+        const send = sender<ModelStatus>(args.onChange)
+        send({ state: 'loading' })
+        await sleep(2400)
+        send(modelOutcome())
+        return null
       }
     }
     throw `no dev mock for ${cmd}`

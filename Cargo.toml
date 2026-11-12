@@ -10,9 +10,11 @@ license = "MIT"
 repository = "https://github.com/tolmachevroman/valence"
 
 # Full debug info for dependencies (mistral.rs, candle, Tauri) made target/debug
-# about 26 GB; keep it for our own crates only.
+# about 26 GB; keep it for our own crates only. Dependencies are optimized even
+# in dev builds: unoptimized, the model is too slow to try cards in `tauri dev`.
 [profile.dev.package."*"]
 debug = false
+opt-level = 3
 
 [workspace.lints.rust]
 unsafe_code = "deny"

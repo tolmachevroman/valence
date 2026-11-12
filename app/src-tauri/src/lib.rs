@@ -3,21 +3,87 @@
 //!
 //! Types sent to the frontend are mirrored in `app/src/core.ts`.
 
-use std::sync::Mutex;
-use std::time::SystemTime;
+use std::path::{Path, PathBuf};
+use std::sync::{Mutex, OnceLock};
+use std::time::{Instant, SystemTime};
 
 use serde::Serialize;
 use tauri::Manager;
 use tauri::ipc::Channel;
+use tokio::sync::watch;
 use valence_core::cache::Cache;
 use valence_core::fetch::{Progress, Sources, load};
 use valence_core::ghs::Ghs;
 use valence_core::http::Http;
+use valence_core::model::{LoadError, LocalModel, MODEL_FILE};
 use valence_core::pubchem::{Compound, Structure};
 
 struct AppState {
     sources: Sources,
     cache: Mutex<Cache>,
+    model: Model,
+}
+
+/// The local model, loaded in the background at launch.
+struct Model {
+    status: watch::Sender<ModelStatus>,
+    loaded: OnceLock<LocalModel>,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize)]
+#[serde(
+    tag = "state",
+    rename_all = "camelCase",
+    rename_all_fields = "camelCase"
+)]
+enum ModelStatus {
+    /// No model file yet; the download comes in M4.2.
+    NotDownloaded {
+        path: String,
+    },
+    Loading,
+    Ready {
+        load_seconds: f64,
+    },
+    /// mistral.rs refused: too little free memory for the model and its cache.
+    NotEnoughMemory,
+    Failed {
+        message: String,
+    },
+}
+
+impl ModelStatus {
+    fn is_final(&self) -> bool {
+        *self != Self::Loading
+    }
+}
+
+/// `VALENCE_MODEL` when set (development), else the app's models folder.
+fn model_path(data_dir: &Path) -> PathBuf {
+    std::env::var_os("VALENCE_MODEL")
+        .map(PathBuf::from)
+        .unwrap_or_else(|| data_dir.join("models").join(MODEL_FILE))
+}
+
+async fn load_model(state: &AppState, path: &Path) {
+    let started = Instant::now();
+    let status = match LocalModel::load(path).await {
+        Ok(model) => {
+            let _ = state.model.loaded.set(model);
+            ModelStatus::Ready {
+                load_seconds: started.elapsed().as_secs_f64(),
+            }
+        }
+        Err(LoadError::Missing) => ModelStatus::NotDownloaded {
+            path: path.display().to_string(),
+        },
+        Err(LoadError::NotEnoughMemory(e)) => {
+            eprintln!("model refused to load: {e}");
+            ModelStatus::NotEnoughMemory
+        }
+        Err(LoadError::Failed(message)) => ModelStatus::Failed { message },
+    };
+    state.model.status.send_replace(status);
 }
 
 /// One part of a molecule, as it arrives.
@@ -144,6 +210,23 @@ async fn open_molecule(
     Ok(cid)
 }
 
+/// Send the model status to `on_change` now and on every change, until it is
+/// final: ready, or not loadable.
+#[tauri::command]
+async fn model_status(
+    state: tauri::State<'_, AppState>,
+    on_change: Channel<ModelStatus>,
+) -> Result<(), String> {
+    let mut rx = state.model.status.subscribe();
+    loop {
+        let status = rx.borrow_and_update().clone();
+        let _ = on_change.send(status.clone());
+        if status.is_final() || rx.changed().await.is_err() {
+            return Ok(());
+        }
+    }
+}
+
 pub fn run() {
     tauri::Builder::default()
         .setup(|app| {
@@ -153,13 +236,23 @@ pub fn run() {
             app.manage(AppState {
                 sources: Sources::new(Http::new()),
                 cache: Mutex::new(cache),
+                model: Model {
+                    status: watch::Sender::new(ModelStatus::Loading),
+                    loaded: OnceLock::new(),
+                },
+            });
+            let handle = app.handle().clone();
+            let path = model_path(&dir);
+            tauri::async_runtime::spawn(async move {
+                load_model(&handle.state::<AppState>(), &path).await;
             });
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
             app_version,
             autocomplete,
-            open_molecule
+            open_molecule,
+            model_status
         ])
         .run(tauri::generate_context!())
         .expect("error while running Valence");
@@ -193,6 +286,11 @@ mod tests {
         assert_eq!(
             serde_json::to_string(&done).unwrap(),
             r#"{"kind":"done","snippetCount":3,"fetchedAt":7}"#
+        );
+        let ready = ModelStatus::Ready { load_seconds: 1.5 };
+        assert_eq!(
+            serde_json::to_string(&ready).unwrap(),
+            r#"{"state":"ready","loadSeconds":1.5}"#
         );
     }
 }

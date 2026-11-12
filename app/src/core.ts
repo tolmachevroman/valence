@@ -41,6 +41,16 @@ export type MoleculeEvent =
   /** Everything arrived and is cached. fetchedAt is Unix seconds. */
   | { kind: 'done'; snippetCount: number; fetchedAt: number }
 
+/** ModelStatus: the local model, loaded in the background at launch. */
+export type ModelStatus =
+  /** No model file at `path` yet. */
+  | { state: 'notDownloaded'; path: string }
+  | { state: 'loading' }
+  | { state: 'ready'; loadSeconds: number }
+  /** Too little free memory for the model and its cache. */
+  | { state: 'notEnoughMemory' }
+  | { state: 'failed'; message: string }
+
 export function appVersion(): Promise<string> {
   return invoke<string>('app_version')
 }
@@ -58,4 +68,11 @@ export function openMolecule(query: string, onEvent: (e: MoleculeEvent) => void)
   const channel = new Channel<MoleculeEvent>()
   channel.onmessage = onEvent
   return invoke<number>('open_molecule', { query, onEvent: channel })
+}
+
+/** Receive the model status now and on every change, until it is final. */
+export function watchModel(onChange: (s: ModelStatus) => void): Promise<void> {
+  const channel = new Channel<ModelStatus>()
+  channel.onmessage = onChange
+  return invoke<void>('model_status', { onChange: channel })
 }

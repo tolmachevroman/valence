@@ -5,8 +5,11 @@ pub mod cache;
 pub mod card;
 pub mod error;
 pub mod fetch;
+pub mod generate;
 pub mod ghs;
 pub mod http;
+#[cfg(feature = "model")]
+pub mod model;
 pub mod prompt;
 pub mod pubchem;
 pub mod pug_view;

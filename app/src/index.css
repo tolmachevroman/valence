@@ -7,6 +7,8 @@
   --accent: #5b4bd6;
   --accent-text: #ffffff;
   --focus: #5b4bd6;
+  --ok: #2e7d4f;
+  --warn: #b26a00;
 
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   color-scheme: light dark;
@@ -25,6 +27,8 @@
     --accent: #9d92f2;
     --accent-text: #17151c;
     --focus: #9d92f2;
+    --ok: #6fcf97;
+    --warn: #f2b45c;
   }
 }
 
@@ -288,4 +292,38 @@ input:disabled {
 
 .spacer {
   flex: 1;
+}
+
+/* Model status: a dot before the text, colored by state. */
+.model::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  vertical-align: 1px;
+}
+
+.model-ready::before {
+  background: var(--ok);
+}
+
+.model-notEnoughMemory::before,
+.model-failed::before,
+.model-notDownloaded::before {
+  background: var(--warn);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .model-loading::before {
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
 }
