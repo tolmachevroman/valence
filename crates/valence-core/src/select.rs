@@ -22,6 +22,19 @@ static WHERE_SECTION: LazyLock<Regex> = LazyLock::new(|| {
 });
 static ORIGIN_SECTION: LazyLock<Regex> =
     LazyLock::new(|| Regex::new(r"(?i)history|discovery|etymology|naming").unwrap());
+// How it's made. "Biosynthesis" (how a plant makes it) and "Discovery and
+// isolation" (history) are not.
+static HOW_MADE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(
+        r"(?i)\bsynthesis|production|manufactur|preparation|extraction|isolation|purification",
+    )
+    .unwrap()
+});
+
+/// Whether a section is about how the molecule is made. No card draws on these.
+pub fn is_how_made(section: &str) -> bool {
+    HOW_MADE.is_match(section) && !ORIGIN_SECTION.is_match(section)
+}
 
 // Sentences no card may draw on. Doses: lethal or safe amounts, intake levels.
 // Procedures: reaction equations and method steps, which come close to how-to;
@@ -97,23 +110,24 @@ fn within_budget(snippets: Vec<&Snippet>) -> Vec<&Snippet> {
 
 /// Snippets for one card, in the order the prompt should list them.
 pub fn select(kind: CardKind, snippets: &[Snippet]) -> Vec<&Snippet> {
+    // Fetching already leaves how-made sections out; snippets cached by older
+    // versions may not.
+    let snippets = snippets.iter().filter(|s| !is_how_made(&s.section));
     match kind {
         CardKind::Where => within_budget(
             snippets
-                .iter()
                 .filter(|s| s.section != GHS && WHERE_SECTION.is_match(&s.section))
                 .filter(|s| is_wikipedia(s) || s.section != "Toxicity Summary")
                 .collect(),
         ),
         CardKind::Origin => within_budget(
             snippets
-                .iter()
                 .filter(|s| is_wikipedia(s) && ORIGIN_SECTION.is_match(&s.section))
                 .collect(),
         ),
-        CardKind::Danger => snippets.iter().filter(|s| s.section == GHS).collect(),
+        CardKind::Danger => snippets.filter(|s| s.section == GHS).collect(),
         CardKind::Weird => {
-            let mut picked: Vec<_> = snippets.iter().filter(|s| s.section != GHS).collect();
+            let mut picked: Vec<_> = snippets.filter(|s| s.section != GHS).collect();
             picked.sort_by_key(|s| weird_rank(s));
             within_budget(picked)
         }
@@ -215,6 +229,27 @@ mod tests {
         }
         let ghs = s("pubchem_view", GHS, "H301: Toxic if swallowed");
         assert_eq!(scrub(&ghs), Some(ghs));
+    }
+
+    #[test]
+    fn how_made_sections_reach_no_card() {
+        for made in ["Synthesis", "Production", "Chemical synthesis", "Isolation"] {
+            assert!(is_how_made(made), "{made}");
+        }
+        for kept in ["Biosynthesis", "Discovery and isolation", "History", "Uses"] {
+            assert!(!is_how_made(kept), "{kept}");
+        }
+        let r = vec![
+            s(
+                "wikipedia",
+                "Production",
+                "Made in large vats from petroleum.",
+            ),
+            s("wikipedia", "Uses", "Used in cough drops."),
+        ];
+        for kind in [CardKind::Where, CardKind::Weird] {
+            assert_eq!(sections(&select(kind, &r)), ["Uses"]);
+        }
     }
 
     #[test]

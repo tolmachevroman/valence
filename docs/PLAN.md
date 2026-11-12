@@ -69,7 +69,7 @@ Exit: searching any molecule shows its header and a smooth 3D model at 60 fps.
 
 ## M3 · Cards end to end (weeks 7–10)
 
-- [ ] **M3.1 Snippet selection** — per-kind rules (`where` ← uses + occurrence, `origin` ← Wikipedia history, `danger` ← GHS, `weird` ← all non-manufacturing); no snippets → no card. A v1 exists in `valence-core::select` from M0.5.
+- [x] **M3.1 Snippet selection** — per-kind rules (`where` ← uses + occurrence, `origin` ← Wikipedia history, `danger` ← GHS, `weird` ← all non-manufacturing); no snippets → no card. A v1 exists in `valence-core::select` from M0.5. Hardened: one how-made rule shared by fetch and selection (biosynthesis and "discovery and isolation" stay), Wikipedia end matter cut by position so content sections named "Sources" survive, checked on the five recorded molecules.
 - [ ] **M3.2 Model service** — loads in the background at launch, one generation queue (shortest card first), token stream to the UI; footer shows loaded / loading / not downloaded. Load with the kernel-pressure memory estimate and a fixed 4K-token paged cache (see M0.6c); if mistral.rs refuses, show a clear "not enough free memory" state instead of falling back.
 - [ ] **M3.3 Pipeline** — select → generate → validate → claim check → retry once with the problems → persist or drop. Validator and `verify` from M0, hardened.
 - [ ] **M3.4 Danger card** — GHS pictograms + statements rendered straight from data; model writes only the plain-language summary; no doses.

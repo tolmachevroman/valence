@@ -361,6 +361,49 @@ mod tests {
         assert!(codes(&vitamin_c).is_empty(), "not classified");
     }
 
+    /// Card selection on real data: every recorded molecule has material for
+    /// every card, from the sections each card is meant to use.
+    #[tokio::test]
+    async fn recorded_molecules_feed_every_card() {
+        use crate::card::CardKind;
+        use crate::select::{is_how_made, select};
+
+        let (sources, _) = local_sources(Arc::default()).await;
+        let (tx, _rx) = unbounded_channel();
+        for (name, cid) in RECORDED {
+            let m = fetch(&sources, *cid, SystemTime::now(), &tx).await.unwrap();
+            for kind in [
+                CardKind::Where,
+                CardKind::Origin,
+                CardKind::Danger,
+                CardKind::Weird,
+            ] {
+                let picked = select(kind, &m.snippets);
+                assert!(!picked.is_empty(), "{name}: no {kind:?} snippets");
+                assert!(picked.iter().all(|s| !is_how_made(&s.section)), "{name}");
+            }
+            let origin = select(CardKind::Origin, &m.snippets);
+            assert!(origin.iter().all(|s| s.source == "wikipedia"), "{name}");
+        }
+
+        let vitamin_c = fetch(&sources, 54670067, SystemTime::now(), &tx)
+            .await
+            .unwrap();
+        let sections: Vec<&str> = select(CardKind::Where, &vitamin_c.snippets)
+            .iter()
+            .map(|s| s.section.as_str())
+            .collect();
+        assert!(sections.contains(&"Sources"), "food sources: {sections:?}");
+        let capsaicin = fetch(&sources, 1548943, SystemTime::now(), &tx)
+            .await
+            .unwrap();
+        assert!(
+            select(CardKind::Weird, &capsaicin.snippets)
+                .iter()
+                .any(|s| s.text.contains("dispersed predominantly by birds"))
+        );
+    }
+
     #[tokio::test]
     async fn serves_fresh_data_from_the_cache_and_stale_data_when_offline() {
         let down = Arc::new(AtomicBool::new(false));

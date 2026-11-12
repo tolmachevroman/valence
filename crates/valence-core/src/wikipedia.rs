@@ -11,6 +11,7 @@ use crate::card::Snippet;
 use crate::error::Error;
 use crate::http::{Host, Http};
 use crate::pubchem::PubChem;
+use crate::select::is_how_made;
 use crate::text::{MIN_CHARS, clean};
 
 pub const API: &str = "https://en.wikipedia.org/w/api.php";
@@ -24,10 +25,12 @@ const SECTIONS: [(&str, usize); 2] = [("Introduction", 3), ("History", 4)];
 const OTHER_PER_SECTION: usize = 2;
 const MAX_SNIPPETS: usize = 20;
 
-/// Boilerplate, and how-it's-made sections that must never reach a card.
-static SKIP: LazyLock<Regex> = LazyLock::new(|| {
+/// Where an article's end matter starts: everything from the first of these
+/// on is links and citations, including a citation list called "Sources".
+/// Before it, "Sources" is content (vitamin C's food sources).
+static END_MATTER: LazyLock<Regex> = LazyLock::new(|| {
     Regex::new(
-        r"(?i)see also|references|external links|further reading|notes|bibliography|citations|sources|synthesis|production|manufactur|preparation|extraction|isolation|purification",
+        r"(?i)^(?:see also|notes|footnotes|references|citations|bibliography|further reading|external links)$",
     )
     .unwrap()
 });
@@ -140,12 +143,16 @@ fn percent_decode(s: &str) -> String {
     String::from_utf8_lossy(&out).into_owned()
 }
 
-/// The article split into top-level sections, in order. Subsections stay
-/// with their parent; the text before the first heading is "Introduction".
+/// The article split into top-level sections, in order, up to the end matter.
+/// Subsections stay with their parent; the text before the first heading is
+/// "Introduction".
 fn sections(text: &str) -> Vec<(String, Vec<&str>)> {
     let mut out = vec![("Introduction".to_string(), Vec::new())];
     for line in text.lines() {
         if let Some(c) = TOP_HEADING.captures(line.trim()) {
+            if END_MATTER.is_match(&c[1]) {
+                break;
+            }
             out.push((c[1].to_string(), Vec::new()));
         } else if !line.trim().is_empty() && !line.starts_with('=') {
             out.last_mut().expect("starts with the intro").1.push(line);
@@ -155,7 +162,7 @@ fn sections(text: &str) -> Vec<(String, Vec<&str>)> {
 }
 
 /// Snippets from the intro, History, and a little from every other section
-/// except boilerplate and how-it's-made. Ids are left empty.
+/// except end matter and how-it's-made. Ids are left empty.
 pub fn snippets(article: &Article) -> Vec<Snippet> {
     let mut page = Url::parse(ARTICLE_BASE).expect("valid base");
     page.path_segments_mut()
@@ -167,7 +174,7 @@ pub fn snippets(article: &Article) -> Vec<Snippet> {
     plan.extend(
         all.iter()
             .map(|(name, _)| name.as_str())
-            .filter(|name| !SECTIONS.iter().any(|(n, _)| n == name) && !SKIP.is_match(name))
+            .filter(|name| !SECTIONS.iter().any(|(n, _)| n == name) && !is_how_made(name))
             .map(|name| (name, OTHER_PER_SECTION)),
     );
 
@@ -289,8 +296,26 @@ mod tests {
             history[0].url,
             "https://en.wikipedia.org/wiki/Caffeine#History"
         );
-        assert!(s.iter().all(|s| !SKIP.is_match(&s.section)));
+        assert!(
+            s.iter()
+                .all(|s| !END_MATTER.is_match(&s.section) && !is_how_made(&s.section))
+        );
         assert!(s.iter().all(|s| s.text.chars().count() >= MIN_CHARS));
+        // Content until the end matter, even when its name sounds like a citation list.
+        assert!(
+            s.iter().any(|s| s.section == "Commercial sources"),
+            "{s:#?}"
+        );
+    }
+
+    #[test]
+    fn end_matter_ends_the_article() {
+        let text = "Intro paragraph that is long enough to be kept as a snippet.\n\
+            == Sources ==\nCitrus fruits, kiwifruit and peppers are rich in vitamin C.\n\
+            == References ==\nSmith J (2001). A long citation that would otherwise be kept.\n\
+            == Sources ==\nJones K (1999). Another citation, long enough to be kept too.";
+        let names: Vec<String> = sections(text).into_iter().map(|(n, _)| n).collect();
+        assert_eq!(names, ["Introduction", "Sources"]);
     }
 
     /// Against the real services: `cargo test -p valence-core -- --ignored live`.
