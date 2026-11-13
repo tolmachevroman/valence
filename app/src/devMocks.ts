@@ -23,20 +23,26 @@ const WIKI = 'https://en.wikipedia.org/wiki/'
 const PUBCHEM = 'https://pubchem.ncbi.nlm.nih.gov/compound/'
 
 function card(kind: CardKind, label: string, title: string, body: string, sources: [string, string][]): Card {
-  return { kind, label, title, body, sources: sources.map(([label, url]) => ({ label, url })) }
+  return { kind, label, title, body, sources: sources.map(([label, url]) => ({ label, url })), hazards: null }
 }
 
 // Written by the real pipeline (`valence cards caffeine`), plus one dropped card.
 const CAFFEINE_CARDS: [CardKind, Card | null][] = [
   [
     'danger',
-    card(
-      'danger',
-      'Danger level',
-      'Official signal word: Warning',
-      'Caffeine carries the official GHS signal word "Warning". Its hazard statements: harmful if swallowed.',
-      [['PubChem, GHS Classification', `${PUBCHEM}2519#section=GHS-Classification`]],
-    ),
+    {
+      ...card(
+        'danger',
+        'Danger level',
+        'Official signal word: Warning',
+        'Caffeine carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.',
+        [['PubChem, GHS Classification', `${PUBCHEM}2519#section=GHS-Classification`]],
+      ),
+      hazards: {
+        pictograms: ['Irritant'],
+        statements: [{ code: 'H302', text: 'Harmful if swallowed', percent: null, level: 'Warning' }],
+      },
+    },
   ],
   ['origin', null],
   [

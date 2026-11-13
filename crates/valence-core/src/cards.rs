@@ -2,6 +2,7 @@
 //! one retry with the problems → card or nothing. Accuracy first: a card that
 //! fails twice is dropped, never shown.
 
+use crate::cache::{Cache, NewCard, StoredCard, text_hash};
 use crate::card::{CardDraft, CardKind, Snippet};
 use crate::generate::{Generate, GenerateError, Request};
 use crate::validate::{self, Reply};
@@ -25,15 +26,25 @@ pub struct Source {
 }
 
 /// A card that passed every check.
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Card {
     pub kind: CardKind,
     pub title: String,
     pub body: String,
     pub sources: Vec<Source>,
+    /// Danger only: what to show verbatim under the text.
+    pub hazards: Option<Hazards>,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+/// The official GHS data a Danger card lists: the statements most reports
+/// agree on, plus any that explain the signal word (`Ghs::listed`).
+#[derive(Debug, Clone, PartialEq)]
+pub struct Hazards {
+    pub pictograms: Vec<String>,
+    pub statements: Vec<ghs::HazardStatement>,
+}
+
+#[derive(Debug, Clone, PartialEq)]
 pub enum Outcome {
     Card(Card),
     /// The model said the snippets have nothing for this card.
@@ -88,7 +99,106 @@ fn finished(kind: CardKind, draft: CardDraft, listed: &[&Snippet]) -> Card {
         title: draft.title,
         body: draft.body,
         sources,
+        hazards: None,
     }
+}
+
+/// What the cache holds for one card kind.
+#[derive(Debug, Clone, PartialEq)]
+pub enum Cached {
+    Card(Card),
+    /// Written before from these same snippets, and came out empty.
+    NoCard,
+    /// Never written from these snippets: generate it.
+    Missing,
+}
+
+/// One hash for the snippets a card kind gets, so a remembered empty card
+/// is retried once any of them changes.
+fn input_hash(kind: CardKind, snippets: &[Snippet]) -> String {
+    let joined: String = select::select(kind, snippets)
+        .iter()
+        .map(|s| text_hash(&s.text))
+        .collect();
+    text_hash(&joined)
+}
+
+/// The cached `kind` card for a molecule, written by `model` (a file name).
+pub fn cached(
+    cache: &Cache,
+    cid: u64,
+    kind: CardKind,
+    snippets: &[Snippet],
+    model: &str,
+) -> rusqlite::Result<Cached> {
+    let stored = cache.cards(cid, model)?;
+    if let Some(card) = stored.into_iter().find(|c| c.kind == kind.as_str()) {
+        return Ok(Cached::Card(from_stored(kind, card, snippets)));
+    }
+    let no_card = cache.no_card(cid, kind.as_str(), model)?;
+    Ok(
+        if no_card.as_deref() == Some(input_hash(kind, snippets).as_str()) {
+            Cached::NoCard
+        } else {
+            Cached::Missing
+        },
+    )
+}
+
+fn from_stored(kind: CardKind, stored: StoredCard, snippets: &[Snippet]) -> Card {
+    let sources = stored
+        .snippet_ids
+        .iter()
+        .filter_map(|id| snippets.iter().find(|s| s.id == id.to_string()))
+        .map(|s| Source {
+            snippet_id: s.id.clone(),
+            label: label(s),
+            url: s.url.clone(),
+        })
+        .collect();
+    Card {
+        kind,
+        title: stored.title,
+        body: stored.body,
+        sources,
+        hazards: None,
+    }
+}
+
+/// Store what generating a `kind` card came to. Errors are not stored (the
+/// next open tries again), nor is missing input (nothing to try).
+pub fn remember(
+    cache: &mut Cache,
+    cid: u64,
+    kind: CardKind,
+    snippets: &[Snippet],
+    model: &str,
+    outcome: &Outcome,
+    now: u64,
+) -> rusqlite::Result<()> {
+    match outcome {
+        Outcome::Card(card) => {
+            let ids: Vec<i64> = card
+                .sources
+                .iter()
+                .filter_map(|s| s.snippet_id.parse().ok())
+                .collect();
+            cache.save_card(&NewCard {
+                cid,
+                kind: kind.as_str(),
+                title: &card.title,
+                body: &card.body,
+                model,
+                snippet_ids: &ids,
+                created_at: now,
+            })?;
+        }
+        Outcome::Skipped | Outcome::Dropped(_) => {
+            cache.save_no_card(cid, kind.as_str(), model, &input_hash(kind, snippets), now)?;
+        }
+        Outcome::NoInput => {}
+    }
+    Ok(())
 }
 
 /// Card kinds with input, in generation order: Danger first (built from data,
@@ -116,7 +226,13 @@ pub fn danger(molecule: &str, snippets: &[Snippet]) -> Option<Card> {
         sources: vec!["s1".into()],
         ..ghs::danger_card(molecule, &data)
     };
-    Some(finished(CardKind::Danger, draft, &picked))
+    Some(Card {
+        hazards: Some(Hazards {
+            pictograms: data.pictograms.clone(),
+            statements: data.listed().0.into_iter().cloned().collect(),
+        }),
+        ..finished(CardKind::Danger, draft, &picked)
+    })
 }
 
 /// Generate one card about `molecule` from its snippets.
@@ -502,7 +618,90 @@ mod tests {
             panic!("{outcome:?}")
         };
         assert_eq!(card.sources[0].label, "PubChem, GHS Classification");
+        let hazards = card.hazards.unwrap();
+        assert_eq!(hazards.statements[0].code, "H301");
         assert!(events.is_empty() && model.asked().is_empty());
+    }
+
+    #[tokio::test]
+    async fn cards_are_cached_and_empty_ones_remembered_until_the_snippets_change() {
+        use crate::cache::Molecule;
+        use crate::pubchem::Compound;
+
+        let molecule = |snippets| Molecule {
+            compound: Compound {
+                cid: 1548943,
+                title: "Capsaicin".into(),
+                formula: "C18H27NO3".into(),
+                molar_mass: "305.4".into(),
+                iupac_name: None,
+                cas: None,
+                synonyms: vec![],
+            },
+            sdf_3d: None,
+            png_2d: None,
+            ghs: None,
+            snippets,
+            fetched_at: 1,
+        };
+        let mut cache = Cache::in_memory().unwrap();
+        cache.save(&molecule(capsaicin())).unwrap();
+        let snippets = cache.molecule(1548943).unwrap().unwrap().snippets;
+        let cached = |cache: &Cache, kind, snippets: &[Snippet]| {
+            super::cached(cache, 1548943, kind, snippets, "qwen").unwrap()
+        };
+        assert_eq!(cached(&cache, CardKind::Origin, &snippets), Cached::Missing);
+
+        let model = Scripted::new(&[GOOD, ALL_TRUE]);
+        let outcome = card(
+            &model,
+            CardKind::Origin,
+            "Capsaicin",
+            &snippets,
+            &mut |_| {},
+        )
+        .await
+        .unwrap();
+        remember(
+            &mut cache,
+            1548943,
+            CardKind::Origin,
+            &snippets,
+            "qwen",
+            &outcome,
+            2,
+        )
+        .unwrap();
+        assert_eq!(cached(&cache, CardKind::Origin, &snippets), {
+            let Outcome::Card(c) = outcome else { panic!() };
+            Cached::Card(c)
+        });
+
+        remember(
+            &mut cache,
+            1548943,
+            CardKind::Weird,
+            &snippets,
+            "qwen",
+            &Outcome::Skipped,
+            2,
+        )
+        .unwrap();
+        assert_eq!(cached(&cache, CardKind::Weird, &snippets), Cached::NoCard);
+        assert_eq!(
+            super::cached(&cache, 1548943, CardKind::Weird, &snippets, "phi").unwrap(),
+            Cached::Missing,
+            "another model tries again"
+        );
+
+        // The History paragraph is edited upstream: the Origin card citing it
+        // goes, and the empty Weird card is tried again.
+        let mut edited = capsaicin();
+        edited[0].text.push_str(" He named it capsicin.");
+        cache.save(&molecule(edited)).unwrap();
+        let snippets = cache.molecule(1548943).unwrap().unwrap().snippets;
+        assert_eq!(cached(&cache, CardKind::Origin, &snippets), Cached::Missing);
+        assert_eq!(cached(&cache, CardKind::Weird, &snippets), Cached::Missing);
     }
 
     #[test]

@@ -1,0 +1,6 @@
+# mistral.rs precompiles its Metal shaders for macOS, iOS and tvOS by default;
+# Valence only needs macOS. Precompiling needs Xcode's Metal Toolchain
+# (`xcodebuild -downloadComponent MetalToolchain`); without it, build with
+# MISTRALRS_METAL_PRECOMPILE=0 and the shaders compile when the model loads.
+[env]
+MISTRALRS_METAL_PLATFORMS = "macos"

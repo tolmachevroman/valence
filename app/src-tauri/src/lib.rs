@@ -12,11 +12,12 @@ use tauri::Manager;
 use tauri::async_runtime::JoinHandle;
 use tauri::ipc::Channel;
 use tokio::sync::watch;
-use valence_core::cache::{Cache, Molecule};
+use valence_core::cache::{Cache, Molecule, unix_seconds};
 use valence_core::card::CardKind;
-use valence_core::cards::{self, Card, Event, Outcome};
+use valence_core::cards::{self, Cached, Card, Event, Hazards, Outcome};
 use valence_core::fetch::{Progress, Sources, load};
 use valence_core::ghs::Ghs;
+use valence_core::ghs::HazardStatement;
 use valence_core::http::Http;
 use valence_core::model::{LoadError, LocalModel, MODEL_FILE};
 use valence_core::pubchem::{Compound, Structure};
@@ -32,6 +33,8 @@ struct AppState {
 
 /// The local model, loaded in the background at launch.
 struct Model {
+    /// The model's file name; cards are cached per model.
+    name: String,
     status: watch::Sender<ModelStatus>,
     loaded: OnceLock<LocalModel>,
 }
@@ -155,6 +158,14 @@ struct CardView {
     title: String,
     body: String,
     sources: Vec<SourceView>,
+    /// Danger only: official statements to list verbatim.
+    hazards: Option<HazardsView>,
+}
+
+#[derive(Clone, Serialize)]
+struct HazardsView {
+    pictograms: Vec<String>,
+    statements: Vec<HazardStatement>,
 }
 
 #[derive(Clone, Serialize)]
@@ -181,6 +192,15 @@ impl From<Card> for CardView {
             title: c.title,
             body: c.body,
             sources,
+            hazards: c.hazards.map(
+                |Hazards {
+                     pictograms,
+                     statements,
+                 }| HazardsView {
+                    pictograms,
+                    statements,
+                },
+            ),
         }
     }
 }
@@ -253,10 +273,13 @@ async fn autocomplete(
         .map_err(|e| e.to_string())
 }
 
-/// Write the molecule's cards in order, streaming progress to `on_event`.
-/// Model cards wait for the model to load and are dropped when it can't.
+/// Show the molecule's cards: the Danger card and cached cards at once, then
+/// the missing ones as the model writes them, in order, each stored as it
+/// finishes. Model cards wait for the model to load and are dropped when it can't.
 async fn write_cards(state: &AppState, m: &Molecule, on_event: &Channel<MoleculeEvent>) {
     let name = &m.compound.title;
+    let cid = m.compound.cid;
+    let model_name = &state.model.name;
     let send = |e| {
         let _ = on_event.send(e);
     };
@@ -264,35 +287,67 @@ async fn write_cards(state: &AppState, m: &Molecule, on_event: &Channel<Molecule
     send(MoleculeEvent::CardsPlanned {
         cards: order.clone(),
     });
-    let mut status = state.model.status.subscribe();
-    for kind in order {
-        let outcome = if kind == CardKind::Danger {
-            Ok(cards::danger(name, &m.snippets).map_or(Outcome::NoInput, Outcome::Card))
+
+    let mut missing = Vec::new();
+    for &kind in &order {
+        let cached = if kind == CardKind::Danger {
+            Ok(cards::danger(name, &m.snippets).map_or(Cached::NoCard, Cached::Card))
         } else {
-            let _ = status.wait_for(ModelStatus::is_final).await;
-            match state.model.loaded.get() {
-                Some(model) => {
-                    let mut on_card_event = |e| send(MoleculeEvent::from_card_event(kind, e));
-                    cards::card(model, kind, name, &m.snippets, &mut on_card_event).await
-                }
-                None => Ok(Outcome::NoInput),
-            }
+            let cache = state.cache.lock().expect("not poisoned");
+            cards::cached(&cache, cid, kind, &m.snippets, model_name)
         };
-        match outcome {
-            Ok(Outcome::Card(card)) => send(MoleculeEvent::CardReady { card: card.into() }),
-            Ok(Outcome::Dropped(problems)) => {
-                eprintln!(
-                    "{name}: {} card dropped: {}",
-                    kind.as_str(),
-                    problems.join("; ")
-                );
-                send(MoleculeEvent::CardGone { card: kind });
+        match cached {
+            Ok(Cached::Card(card)) => send(MoleculeEvent::CardReady { card: card.into() }),
+            Ok(Cached::NoCard) => send(MoleculeEvent::CardGone { card: kind }),
+            Ok(Cached::Missing) => missing.push(kind),
+            Err(e) => {
+                eprintln!("{name}: reading cached {} card: {e}", kind.as_str());
+                missing.push(kind);
             }
-            Ok(Outcome::Skipped | Outcome::NoInput) => send(MoleculeEvent::CardGone { card: kind }),
+        }
+    }
+
+    let mut status = state.model.status.subscribe();
+    for kind in missing {
+        let _ = status.wait_for(ModelStatus::is_final).await;
+        let Some(model) = state.model.loaded.get() else {
+            send(MoleculeEvent::CardGone { card: kind });
+            continue;
+        };
+        let mut on_card_event = |e| send(MoleculeEvent::from_card_event(kind, e));
+        let outcome = cards::card(model, kind, name, &m.snippets, &mut on_card_event).await;
+        let outcome = match outcome {
+            Ok(outcome) => outcome,
             Err(e) => {
                 eprintln!("{name}: {} card failed: {e}", kind.as_str());
                 send(MoleculeEvent::CardGone { card: kind });
+                continue;
             }
+        };
+        if let Outcome::Dropped(problems) = &outcome {
+            eprintln!(
+                "{name}: {} card dropped: {}",
+                kind.as_str(),
+                problems.join("; ")
+            );
+        }
+        let now = unix_seconds(SystemTime::now());
+        let mut cache = state.cache.lock().expect("not poisoned");
+        if let Err(e) = cards::remember(
+            &mut cache,
+            cid,
+            kind,
+            &m.snippets,
+            model_name,
+            &outcome,
+            now,
+        ) {
+            eprintln!("{name}: storing the {} card: {e}", kind.as_str());
+        }
+        drop(cache);
+        match outcome {
+            Outcome::Card(card) => send(MoleculeEvent::CardReady { card: card.into() }),
+            _ => send(MoleculeEvent::CardGone { card: kind }),
         }
     }
 }
@@ -390,17 +445,20 @@ pub fn run() {
             let dir = app.path().app_data_dir()?;
             std::fs::create_dir_all(&dir)?;
             let cache = Cache::open(&dir.join("cache.sqlite"))?;
+            let path = model_path(&dir);
             app.manage(AppState {
                 sources: Sources::new(Http::new()),
                 cache: Mutex::new(cache),
                 model: Model {
+                    name: path
+                        .file_name()
+                        .map_or_else(|| MODEL_FILE.into(), |f| f.to_string_lossy().into_owned()),
                     status: watch::Sender::new(ModelStatus::Loading),
                     loaded: OnceLock::new(),
                 },
                 writing: Mutex::new(None),
             });
             let handle = app.handle().clone();
-            let path = model_path(&dir);
             tauri::async_runtime::spawn(async move {
                 load_model(&handle.state::<AppState>(), &path).await;
             });

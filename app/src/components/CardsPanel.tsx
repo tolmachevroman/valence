@@ -2,7 +2,7 @@
 // the model writes it, marked as unchecked until it passes the checks against
 // its sources; cards that fail twice disappear.
 
-import type { CardKind, Ghs, ModelStatus } from '../core'
+import type { Card, CardKind, ModelStatus } from '../core'
 import { openUrl } from '../core'
 import type { CardSlot, MoleculeState } from '../useMolecule'
 
@@ -29,13 +29,13 @@ function progress(slot: CardSlot, model?: ModelStatus): string {
 }
 
 /** Official GHS statements, shown as PubChem gives them. */
-function Hazards({ ghs }: { ghs: Ghs }) {
-  if (ghs.statements.length === 0) return null
+function Hazards({ hazards }: { hazards: NonNullable<Card['hazards']> }) {
+  if (hazards.statements.length === 0) return null
   return (
     <div className="hazards">
-      {ghs.pictograms.length > 0 && <p className="pictograms">{ghs.pictograms.join(' · ')}</p>}
+      {hazards.pictograms.length > 0 && <p className="pictograms">{hazards.pictograms.join(' · ')}</p>}
       <ul>
-        {ghs.statements.map((s) => (
+        {hazards.statements.map((s) => (
           <li key={s.code}>
             <span className="code">{s.code}</span> {s.text}
             {s.percent != null && <span className="muted"> ({s.percent}% of reports)</span>}
@@ -46,7 +46,7 @@ function Hazards({ ghs }: { ghs: Ghs }) {
   )
 }
 
-function CardView({ slot, ghs, model }: { slot: CardSlot; ghs?: Ghs | null; model?: ModelStatus }) {
+function CardView({ slot, model }: { slot: CardSlot; model?: ModelStatus }) {
   const ready = slot.state === 'ready' && slot.card
   const title = slot.card?.title ?? slot.draft?.title
   const body = slot.card?.body ?? slot.draft?.body
@@ -55,7 +55,7 @@ function CardView({ slot, ghs, model }: { slot: CardSlot; ghs?: Ghs | null; mode
       <h3 className="card-label">{LABELS[slot.kind]}</h3>
       {title ? <h4 className="card-title">{title}</h4> : <div className="line line-title" />}
       {body ? <p className="card-body">{body}</p> : !ready && <div className="line" />}
-      {slot.kind === 'danger' && ghs && <Hazards ghs={ghs} />}
+      {slot.card?.hazards && <Hazards hazards={slot.card.hazards} />}
       {ready ? (
         <p className="sources">
           {slot.card!.sources.map((s) => (
@@ -102,7 +102,7 @@ export default function CardsPanel({ molecule, model }: { molecule?: MoleculeSta
       {/* Announce finished cards only, not every streamed word. */}
       <div className="cards">
         {cards?.map((slot) => (
-          <CardView key={slot.kind} slot={slot} ghs={molecule.ghs} model={model} />
+          <CardView key={slot.kind} slot={slot} model={model} />
         ))}
       </div>
       <div className="visually-hidden" aria-live="polite">

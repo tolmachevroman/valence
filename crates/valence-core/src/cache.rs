@@ -21,7 +21,12 @@ pub const FRESH_FOR: Duration = Duration::from_secs(90 * 24 * 60 * 60);
 /// (the data provider) and `position` (the order cards were measured with);
 /// times are Unix seconds. The GHS snippet is stored like any other so a
 /// Danger card can cite it.
-const MIGRATIONS: &[&str] = &["
+///
+/// 2: `card_attempt` remembers card kinds that came out empty (skipped by the
+/// model, or failed their checks twice) for the exact snippets they were
+/// given, so reopening a molecule doesn't retry them until the snippets change.
+const MIGRATIONS: &[&str] = &[
+    "
 CREATE TABLE molecule (
   cid            INTEGER PRIMARY KEY,
   name           TEXT NOT NULL,
@@ -70,7 +75,18 @@ CREATE TABLE user_molecule (
   favorite     INTEGER NOT NULL DEFAULT 0,
   last_viewed  INTEGER
 );
-"];
+",
+    "
+CREATE TABLE card_attempt (
+  cid         INTEGER NOT NULL REFERENCES molecule(cid) ON DELETE CASCADE,
+  kind        TEXT NOT NULL,
+  model       TEXT NOT NULL,
+  input_hash  TEXT NOT NULL,
+  created_at  INTEGER NOT NULL,
+  PRIMARY KEY (cid, kind, model)
+);
+",
+];
 
 /// Everything fetched for one molecule.
 #[derive(Debug, Clone, PartialEq)]
@@ -119,6 +135,15 @@ pub struct NewCard<'a> {
     pub snippet_ids: &'a [i64],
     /// Unix seconds.
     pub created_at: u64,
+}
+
+/// A stored card, citing snippets by row id.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct StoredCard {
+    pub kind: String,
+    pub title: String,
+    pub body: String,
+    pub snippet_ids: Vec<i64>,
 }
 
 pub struct Cache {
@@ -279,9 +304,18 @@ impl Cache {
         Ok(Some(m))
     }
 
-    /// Store a card. Returns its id.
+    /// Store a card, replacing any earlier card of its kind from the same
+    /// model. Returns its id.
     pub fn save_card(&mut self, card: &NewCard) -> rusqlite::Result<i64> {
         let tx = self.conn.transaction()?;
+        tx.execute(
+            "DELETE FROM card WHERE cid = ?1 AND kind = ?2 AND model = ?3",
+            params![card.cid, card.kind, card.model],
+        )?;
+        tx.execute(
+            "DELETE FROM card_attempt WHERE cid = ?1 AND kind = ?2 AND model = ?3",
+            params![card.cid, card.kind, card.model],
+        )?;
         tx.execute(
             "INSERT INTO card (cid, kind, title, body, model, created_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
             params![card.cid, card.kind, card.title, card.body, card.model, card.created_at],
@@ -295,6 +329,68 @@ impl Cache {
         }
         tx.commit()?;
         Ok(id)
+    }
+
+    /// A molecule's cards from `model`, oldest first.
+    pub fn cards(&self, cid: u64, model: &str) -> rusqlite::Result<Vec<StoredCard>> {
+        let mut stmt = self.conn.prepare(
+            "SELECT id, kind, title, body FROM card WHERE cid = ?1 AND model = ?2 ORDER BY id",
+        )?;
+        let rows: Vec<(i64, StoredCard)> = stmt
+            .query_map(params![cid, model], |r| {
+                Ok((
+                    r.get(0)?,
+                    StoredCard {
+                        kind: r.get(1)?,
+                        title: r.get(2)?,
+                        body: r.get(3)?,
+                        snippet_ids: vec![],
+                    },
+                ))
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        let mut sources = self
+            .conn
+            .prepare("SELECT snippet_id FROM card_source WHERE card_id = ?1 ORDER BY rowid")?;
+        rows.into_iter()
+            .map(|(id, mut card)| {
+                card.snippet_ids = sources
+                    .query_map([id], |r| r.get(0))?
+                    .collect::<rusqlite::Result<_>>()?;
+                Ok(card)
+            })
+            .collect()
+    }
+
+    /// Remember that `model` wrote no `kind` card from the snippets hashing to
+    /// `input_hash`.
+    pub fn save_no_card(
+        &mut self,
+        cid: u64,
+        kind: &str,
+        model: &str,
+        input_hash: &str,
+        created_at: u64,
+    ) -> rusqlite::Result<()> {
+        self.conn.execute(
+            "INSERT INTO card_attempt (cid, kind, model, input_hash, created_at)
+             VALUES (?1, ?2, ?3, ?4, ?5)
+             ON CONFLICT(cid, kind, model) DO UPDATE SET
+               input_hash = excluded.input_hash, created_at = excluded.created_at",
+            params![cid, kind, model, input_hash, created_at],
+        )?;
+        Ok(())
+    }
+
+    /// The input hash of a remembered empty `kind` card, if any.
+    pub fn no_card(&self, cid: u64, kind: &str, model: &str) -> rusqlite::Result<Option<String>> {
+        self.conn
+            .query_row(
+                "SELECT input_hash FROM card_attempt WHERE cid = ?1 AND kind = ?2 AND model = ?3",
+                params![cid, kind, model],
+                |r| r.get(0),
+            )
+            .optional()
     }
 
     /// Card ids for a molecule, oldest first.
@@ -407,6 +503,58 @@ mod tests {
         assert_ne!(loaded.snippets[0].id, ids[1].to_string());
         assert_eq!(cache.card_ids(2519).unwrap(), [keeps]);
         assert_ne!(keeps, goes);
+    }
+
+    #[test]
+    fn cards_and_empty_attempts_per_model() {
+        let mut cache = Cache::in_memory().unwrap();
+        cache
+            .save(&caffeine(
+                vec![snippet("History", "Runge isolated it in 1819.")],
+                1,
+            ))
+            .unwrap();
+        let id: i64 = cache.molecule(2519).unwrap().unwrap().snippets[0]
+            .id
+            .parse()
+            .unwrap();
+        cache
+            .save_no_card(2519, "origin", "qwen", "abc", 2)
+            .unwrap();
+        assert_eq!(
+            cache.no_card(2519, "origin", "qwen").unwrap().as_deref(),
+            Some("abc")
+        );
+        assert_eq!(cache.no_card(2519, "origin", "phi").unwrap(), None);
+
+        let ids = [id];
+        let card = |title| NewCard {
+            cid: 2519,
+            kind: "origin",
+            title,
+            body: "b",
+            model: "qwen",
+            snippet_ids: &ids,
+            created_at: 3,
+        };
+        cache.save_card(&card("first")).unwrap();
+        cache.save_card(&card("second")).unwrap();
+        let stored = cache.cards(2519, "qwen").unwrap();
+        assert_eq!(
+            stored,
+            [StoredCard {
+                kind: "origin".into(),
+                title: "second".into(),
+                body: "b".into(),
+                snippet_ids: vec![id],
+            }]
+        );
+        assert!(cache.cards(2519, "phi").unwrap().is_empty());
+        assert_eq!(
+            cache.no_card(2519, "origin", "qwen").unwrap(),
+            None,
+            "a card replaces it"
+        );
     }
 
     #[test]

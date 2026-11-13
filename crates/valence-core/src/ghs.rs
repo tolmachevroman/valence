@@ -4,7 +4,8 @@
 //! irritation"), and M0.6 showed small models misreading them: report
 //! percentages as probabilities, "Suspected of" as "may", "Not Classified" as
 //! "safe", plus unprompted advice. So the Danger card is assembled from the
-//! data directly.
+//! data directly: the statements are shown verbatim as a list, and the card's
+//! text says what the list can't (what the signal word means, what was left out).
 
 use std::sync::LazyLock;
 
@@ -15,7 +16,6 @@ use crate::card::CardDraft;
 
 /// Statements reported by fewer than this share of notifiers are counted, not listed.
 const MAJORITY_PERCENT: f32 = 50.0;
-const MAX_LISTED: usize = 5;
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct HazardStatement {
@@ -85,7 +85,7 @@ impl Ghs {
     /// none of those carries the signal word's level, the ones that do, so the
     /// card explains its own signal (benzylpenicillin's "Danger" comes from a
     /// statement 48% report). The rest are only counted.
-    fn listed(&self) -> (Vec<&HazardStatement>, Vec<&HazardStatement>) {
+    pub fn listed(&self) -> (Vec<&HazardStatement>, Vec<&HazardStatement>) {
         let majority = |s: &HazardStatement| s.percent.is_none_or(|p| p >= MAJORITY_PERCENT);
         let at_signal = |s: &HazardStatement| s.level.is_some() && s.level == self.signal;
         let explained = self.statements.iter().any(|s| majority(s) && at_signal(s));
@@ -95,32 +95,19 @@ impl Ghs {
     }
 }
 
-fn lower_first(s: &str) -> String {
+fn capitalized(s: &str) -> String {
     let mut chars = s.chars();
-    match chars.next() {
-        Some(first) => first.to_lowercase().chain(chars).collect(),
-        None => String::new(),
-    }
+    chars
+        .next()
+        .map(|c| c.to_uppercase().chain(chars).collect())
+        .unwrap_or_default()
 }
 
-fn join_list(items: &[String]) -> String {
-    match items {
-        [] => String::new(),
-        [one] => one.clone(),
-        [rest @ .., last] => format!("{}, and {last}", rest.join(", ")),
-    }
-}
-
-/// The Danger card text. The UI shows pictograms and statements verbatim next to it.
+/// The Danger card text. The UI shows the listed statements verbatim under it,
+/// so the text doesn't repeat them.
 pub fn danger_card(molecule: &str, ghs: &Ghs) -> CardDraft {
-    let name = {
-        let mut chars = molecule.chars();
-        chars
-            .next()
-            .map(|c| c.to_uppercase().chain(chars).collect::<String>())
-            .unwrap_or_default()
-    };
-    let Some(signal) = &ghs.signal else {
+    let name = capitalized(molecule);
+    if ghs.statements.is_empty() {
         return CardDraft {
             title: "Not classified as hazardous".into(),
             body: format!(
@@ -128,32 +115,40 @@ pub fn danger_card(molecule: &str, ghs: &Ghs) -> CardDraft {
             ),
             sources: vec![],
         };
+    }
+    let (title, mut body) = match ghs.signal.as_deref() {
+        Some("Danger") => (
+            "Official signal word: Danger".to_string(),
+            format!(
+                "{name} carries \"Danger\", the stronger of the two GHS signal words, used for the more severe hazard categories."
+            ),
+        ),
+        Some("Warning") => (
+            "Official signal word: Warning".to_string(),
+            format!(
+                "{name} carries \"Warning\", the milder of the two GHS signal words, used for the less severe hazard categories."
+            ),
+        ),
+        Some(other) => (
+            format!("Official signal word: {other}"),
+            format!("{name} carries the official GHS signal word \"{other}\"."),
+        ),
+        None => (
+            "Official hazard statements".to_string(),
+            format!(
+                "PubChem lists official GHS hazard statements for {name}, without a signal word."
+            ),
+        ),
     };
-
-    let (common, rare) = ghs.listed();
-    let listed: Vec<String> = common
-        .iter()
-        .take(MAX_LISTED)
-        .map(|s| lower_first(&s.text))
-        .collect();
-    let unlisted = common.len().saturating_sub(MAX_LISTED);
-
-    let mut body = format!("{name} carries the official GHS signal word \"{signal}\".");
-    if !listed.is_empty() {
-        body.push_str(&format!(" Its hazard statements: {}.", join_list(&listed)));
-    }
-    if unlisted > 0 {
-        body.push_str(&format!(" The official list has {unlisted} more."));
-    }
-    if !rare.is_empty() {
-        let n = rare.len();
+    let rare = ghs.listed().1.len();
+    if rare > 0 {
         body.push_str(&format!(
-            " A minority of reports list {n} other hazard{}.",
-            if n == 1 { "" } else { "s" }
+            " A minority of company reports add {rare} more hazard{}, not listed here.",
+            if rare == 1 { "" } else { "s" }
         ));
     }
     CardDraft {
-        title: format!("Official signal word: {signal}"),
+        title,
         body,
         sources: vec![],
     }
@@ -193,8 +188,21 @@ mod tests {
         assert_eq!(card.title, "Official signal word: Danger");
         assert_eq!(
             card.body,
-            "Capsaicin carries the official GHS signal word \"Danger\". Its hazard statements: harmful if swallowed, causes skin irritation, and causes serious eye damage. A minority of reports list 2 other hazards."
+            "Capsaicin carries \"Danger\", the stronger of the two GHS signal words, used for the more severe hazard categories. A minority of company reports add 2 more hazards, not listed here."
         );
+        let g = Ghs::from_snippet_text(CAPSAICIN);
+        let codes: Vec<_> = g.listed().0.iter().map(|s| s.code.as_str()).collect();
+        assert_eq!(codes, ["H302", "H315", "H318"]);
+    }
+
+    #[test]
+    fn statements_without_a_signal_word_are_not_called_unclassified() {
+        let g = Ghs::from_snippet_text(
+            "H315: Causes skin irritation [Warning Skin corrosion/irritation]",
+        );
+        assert_eq!(g.signal, None);
+        let card = danger_card("x", &g);
+        assert_eq!(card.title, "Official hazard statements");
     }
 
     /// M0.6b review: the "**" footnote marker hid H373, and "(Deleted)" leaked into the card.
@@ -214,12 +222,11 @@ mod tests {
         let g = Ghs::from_snippet_text(
             "Signal word: Danger. H317 (100%): May cause an allergic skin reaction [Warning Sensitization, Skin] H334 (48%): May cause allergy or asthma symptoms or breathing difficulties if inhaled [Danger Sensitization, respiratory] H400 (46.7%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard]",
         );
+        let (listed, rare) = g.listed();
+        assert!(listed.iter().any(|s| s.code == "H334"), "explains Danger");
+        assert_eq!(rare.len(), 1);
         let card = danger_card("benzylpenicillin", &g);
-        assert!(card.body.contains("may cause allergy or asthma symptoms"));
-        assert!(
-            card.body
-                .ends_with("A minority of reports list 1 other hazard.")
-        );
+        assert!(card.body.ends_with("add 1 more hazard, not listed here."));
     }
 
     /// PubChem can show an Irritant pictogram next to "Not Classified"; with no

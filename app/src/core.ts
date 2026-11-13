@@ -43,6 +43,8 @@ export interface Card {
   title: string
   body: string
   sources: { label: string; url: string }[]
+  /** Danger only: official statements to list verbatim, chosen by the core. */
+  hazards: { pictograms: string[]; statements: HazardStatement[] } | null
 }
 
 /** MoleculeEvent: one part of a molecule, as it arrives, then its cards. */
