@@ -9,9 +9,12 @@ use std::time::{Instant, SystemTime};
 
 use serde::Serialize;
 use tauri::Manager;
+use tauri::async_runtime::JoinHandle;
 use tauri::ipc::Channel;
 use tokio::sync::watch;
-use valence_core::cache::Cache;
+use valence_core::cache::{Cache, Molecule};
+use valence_core::card::CardKind;
+use valence_core::cards::{self, Card, Event, Outcome};
 use valence_core::fetch::{Progress, Sources, load};
 use valence_core::ghs::Ghs;
 use valence_core::http::Http;
@@ -22,6 +25,9 @@ struct AppState {
     sources: Sources,
     cache: Mutex<Cache>,
     model: Model,
+    /// Writes the open molecule's cards, one at a time: the only user of the
+    /// model, so this is the generation queue. Opening another molecule aborts it.
+    writing: Mutex<Option<JoinHandle<()>>>,
 }
 
 /// The local model, loaded in the background at launch.
@@ -111,6 +117,83 @@ enum MoleculeEvent {
         /// Unix seconds.
         fetched_at: u64,
     },
+    /// Cards to expect, in the order they will be written.
+    CardsPlanned {
+        cards: Vec<CardKind>,
+    },
+    CardWriting {
+        card: CardKind,
+    },
+    /// The card so far, not yet checked.
+    CardDraft {
+        card: CardKind,
+        title: String,
+        body: String,
+    },
+    CardChecking {
+        card: CardKind,
+    },
+    CardRetrying {
+        card: CardKind,
+    },
+    CardReady {
+        card: CardView,
+    },
+    /// No card of this kind: skipped, failed its checks, or no model.
+    CardGone {
+        card: CardKind,
+    },
+}
+
+/// A card that passed every check.
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+struct CardView {
+    kind: CardKind,
+    /// "Where you meet it".
+    label: &'static str,
+    title: String,
+    body: String,
+    sources: Vec<SourceView>,
+}
+
+#[derive(Clone, Serialize)]
+struct SourceView {
+    label: String,
+    url: String,
+}
+
+impl From<Card> for CardView {
+    /// Two paragraphs of one section share a link; it is shown once.
+    fn from(c: Card) -> Self {
+        let mut sources: Vec<SourceView> = Vec::new();
+        for s in c.sources {
+            if !sources.iter().any(|v| v.url == s.url) {
+                sources.push(SourceView {
+                    label: s.label,
+                    url: s.url,
+                });
+            }
+        }
+        Self {
+            kind: c.kind,
+            label: c.kind.label(),
+            title: c.title,
+            body: c.body,
+            sources,
+        }
+    }
+}
+
+impl MoleculeEvent {
+    fn from_card_event(card: CardKind, e: Event) -> Self {
+        match e {
+            Event::Writing => Self::CardWriting { card },
+            Event::Draft { title, body } => Self::CardDraft { card, title, body },
+            Event::Checking => Self::CardChecking { card },
+            Event::Retrying => Self::CardRetrying { card },
+        }
+    }
 }
 
 impl MoleculeEvent {
@@ -170,14 +253,64 @@ async fn autocomplete(
         .map_err(|e| e.to_string())
 }
 
+/// Write the molecule's cards in order, streaming progress to `on_event`.
+/// Model cards wait for the model to load and are dropped when it can't.
+async fn write_cards(state: &AppState, m: &Molecule, on_event: &Channel<MoleculeEvent>) {
+    let name = &m.compound.title;
+    let send = |e| {
+        let _ = on_event.send(e);
+    };
+    let order = cards::order(&m.snippets);
+    send(MoleculeEvent::CardsPlanned {
+        cards: order.clone(),
+    });
+    let mut status = state.model.status.subscribe();
+    for kind in order {
+        let outcome = if kind == CardKind::Danger {
+            Ok(cards::danger(name, &m.snippets).map_or(Outcome::NoInput, Outcome::Card))
+        } else {
+            let _ = status.wait_for(ModelStatus::is_final).await;
+            match state.model.loaded.get() {
+                Some(model) => {
+                    let mut on_card_event = |e| send(MoleculeEvent::from_card_event(kind, e));
+                    cards::card(model, kind, name, &m.snippets, &mut on_card_event).await
+                }
+                None => Ok(Outcome::NoInput),
+            }
+        };
+        match outcome {
+            Ok(Outcome::Card(card)) => send(MoleculeEvent::CardReady { card: card.into() }),
+            Ok(Outcome::Dropped(problems)) => {
+                eprintln!(
+                    "{name}: {} card dropped: {}",
+                    kind.as_str(),
+                    problems.join("; ")
+                );
+                send(MoleculeEvent::CardGone { card: kind });
+            }
+            Ok(Outcome::Skipped | Outcome::NoInput) => send(MoleculeEvent::CardGone { card: kind }),
+            Err(e) => {
+                eprintln!("{name}: {} card failed: {e}", kind.as_str());
+                send(MoleculeEvent::CardGone { card: kind });
+            }
+        }
+    }
+}
+
 /// Find a molecule by name, CAS number or CID and stream its parts to
-/// `on_event`, from the cache when fresh. Returns its CID.
+/// `on_event`, from the cache when fresh, then its cards as they are written.
+/// Returns its CID once the data is in; cards keep arriving after that.
 #[tauri::command]
 async fn open_molecule(
+    app: tauri::AppHandle,
     state: tauri::State<'_, AppState>,
     query: String,
     on_event: Channel<MoleculeEvent>,
 ) -> Result<u64, String> {
+    // The window has moved on: stop writing the previous molecule's cards.
+    if let Some(previous) = state.writing.lock().expect("not poisoned").take() {
+        previous.abort();
+    }
     let cid = state
         .sources
         .pubchem
@@ -207,7 +340,31 @@ async fn open_molecule(
         snippet_count: molecule.snippets.len(),
         fetched_at: molecule.fetched_at,
     });
+    let task = tauri::async_runtime::spawn(async move {
+        write_cards(&app.state::<AppState>(), &molecule, &on_event).await;
+    });
+    if let Some(previous) = state.writing.lock().expect("not poisoned").replace(task) {
+        previous.abort();
+    }
     Ok(cid)
+}
+
+/// Open a source link in the default browser. Only https links: card sources
+/// are PubChem and Wikipedia pages.
+#[tauri::command]
+fn open_url(url: String) -> Result<(), String> {
+    if !url.starts_with("https://") {
+        return Err(format!("not an https link: {url}"));
+    }
+    std::process::Command::new("/usr/bin/open")
+        .arg(&url)
+        .status()
+        .map_err(|e| e.to_string())
+        .and_then(|s| {
+            s.success()
+                .then_some(())
+                .ok_or_else(|| format!("open failed for {url}"))
+        })
 }
 
 /// Send the model status to `on_change` now and on every change, until it is
@@ -240,6 +397,7 @@ pub fn run() {
                     status: watch::Sender::new(ModelStatus::Loading),
                     loaded: OnceLock::new(),
                 },
+                writing: Mutex::new(None),
             });
             let handle = app.handle().clone();
             let path = model_path(&dir);
@@ -252,7 +410,8 @@ pub fn run() {
             app_version,
             autocomplete,
             open_molecule,
-            model_status
+            model_status,
+            open_url
         ])
         .run(tauri::generate_context!())
         .expect("error while running Valence");

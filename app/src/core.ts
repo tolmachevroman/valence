@@ -32,7 +32,20 @@ export interface Ghs {
   statements: HazardStatement[]
 }
 
-/** MoleculeEvent: one part of a molecule, as it arrives. */
+/** valence_core::card::CardKind */
+export type CardKind = 'where' | 'origin' | 'danger' | 'weird'
+
+/** CardView: a card that passed every check. */
+export interface Card {
+  kind: CardKind
+  /** "Where you meet it" */
+  label: string
+  title: string
+  body: string
+  sources: { label: string; url: string }[]
+}
+
+/** MoleculeEvent: one part of a molecule, as it arrives, then its cards. */
 export type MoleculeEvent =
   | { kind: 'header'; compound: Compound }
   /** SDF for the 3D view, or a PNG data URL when there is no 3D conformer. */
@@ -40,6 +53,16 @@ export type MoleculeEvent =
   | { kind: 'hazards'; ghs: Ghs | null }
   /** Everything arrived and is cached. fetchedAt is Unix seconds. */
   | { kind: 'done'; snippetCount: number; fetchedAt: number }
+  /** Cards to expect, in the order they will be written. */
+  | { kind: 'cardsPlanned'; cards: CardKind[] }
+  | { kind: 'cardWriting'; card: CardKind }
+  /** The card so far, not yet checked against its sources. */
+  | { kind: 'cardDraft'; card: CardKind; title: string; body: string }
+  | { kind: 'cardChecking'; card: CardKind }
+  | { kind: 'cardRetrying'; card: CardKind }
+  | { kind: 'cardReady'; card: Card }
+  /** No card of this kind: skipped, failed its checks, or no model. */
+  | { kind: 'cardGone'; card: CardKind }
 
 /** ModelStatus: the local model, loaded in the background at launch. */
 export type ModelStatus =
@@ -75,4 +98,9 @@ export function watchModel(onChange: (s: ModelStatus) => void): Promise<void> {
   const channel = new Channel<ModelStatus>()
   channel.onmessage = onChange
   return invoke<void>('model_status', { onChange: channel })
+}
+
+/** Open an https link in the default browser. */
+export function openUrl(url: string): Promise<void> {
+  return invoke<void>('open_url', { url })
 }

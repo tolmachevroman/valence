@@ -1,20 +1,25 @@
 //! `valence snippets <name | CAS | CID>`: print a molecule's header and every
 //! snippet a card could use, fetching it once and then serving it from the cache.
+//!
+//! `valence cards <name | CAS | CID>` (feature `model`): write its cards with
+//! the local model, as the app does, with timings.
 
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 use std::sync::Mutex;
 use std::time::{Instant, SystemTime};
 
 use tokio::sync::mpsc::unbounded_channel;
-use valence_core::cache::Cache;
+use valence_core::cache::{Cache, Molecule};
 use valence_core::fetch::{Progress, Sources, load};
 use valence_core::http::Http;
 use valence_core::pubchem::Structure;
 
 const USAGE: &str = "usage: valence snippets <name | CAS number | CID> [--cache <file>]
+       valence cards <name | CAS number | CID> [--cache <file>] [--model <file.gguf>]
 
-The cache defaults to the app's: ~/Library/Application Support/io.github.tolmachevroman.valence/cache.sqlite";
+The cache defaults to the app's: ~/Library/Application Support/io.github.tolmachevroman.valence/cache.sqlite
+The model defaults to $VALENCE_MODEL, then the app's models folder.";
 
 const APP_ID: &str = "io.github.tolmachevroman.valence";
 
@@ -28,24 +33,57 @@ fn default_cache() -> Option<PathBuf> {
     )
 }
 
+#[cfg(feature = "model")]
+fn app_dir() -> Option<PathBuf> {
+    default_cache()?.parent().map(PathBuf::from)
+}
+
+struct Args {
+    command: String,
+    query: String,
+    cache: Option<PathBuf>,
+    #[cfg_attr(not(feature = "model"), allow(dead_code))]
+    model: Option<PathBuf>,
+}
+
+fn parse_args() -> Option<Args> {
+    let mut args = std::env::args().skip(1);
+    let command = args.next().filter(|c| c == "snippets" || c == "cards")?;
+    let query = args.next()?;
+    let (mut cache, mut model) = (None, None);
+    while let Some(flag) = args.next() {
+        let value = PathBuf::from(args.next()?);
+        match flag.as_str() {
+            "--cache" => cache = Some(value),
+            "--model" if command == "cards" => model = Some(value),
+            _ => return None,
+        }
+    }
+    Some(Args {
+        command,
+        query,
+        cache,
+        model,
+    })
+}
+
+type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
+
 #[tokio::main]
 async fn main() -> ExitCode {
-    let args: Vec<String> = std::env::args().skip(1).collect();
-    let (query, cache_path) = match args.as_slice() {
-        [cmd, query] if cmd == "snippets" => (query.clone(), default_cache()),
-        [cmd, query, flag, path] if cmd == "snippets" && flag == "--cache" => {
-            (query.clone(), Some(PathBuf::from(path)))
-        }
-        _ => {
-            eprintln!("{USAGE}");
-            return ExitCode::from(2);
-        }
+    let Some(args) = parse_args() else {
+        eprintln!("{USAGE}");
+        return ExitCode::from(2);
     };
-    let Some(cache_path) = cache_path else {
+    let Some(cache_path) = args.cache.clone().or_else(default_cache) else {
         eprintln!("HOME is not set; pass --cache <file>");
         return ExitCode::from(2);
     };
-    match run(&query, cache_path).await {
+    let result = match args.command.as_str() {
+        "snippets" => snippets(&args.query, cache_path).await,
+        _ => cards(&args, cache_path).await,
+    };
+    match result {
         Ok(()) => ExitCode::SUCCESS,
         Err(e) => {
             eprintln!("error: {e}");
@@ -54,13 +92,13 @@ async fn main() -> ExitCode {
     }
 }
 
-async fn run(query: &str, cache_path: PathBuf) -> Result<(), Box<dyn std::error::Error>> {
+/// Resolve and load a molecule, logging each part as it arrives.
+async fn open(query: &str, cache_path: &Path, start: Instant) -> Result<Molecule> {
     if let Some(dir) = cache_path.parent() {
         std::fs::create_dir_all(dir)?;
     }
-    let cache = Mutex::new(Cache::open(&cache_path)?);
+    let cache = Mutex::new(Cache::open(cache_path)?);
     let sources = Sources::new(Http::new());
-    let start = Instant::now();
 
     let Some(cid) = sources.pubchem.resolve(query).await? else {
         return Err(format!("PubChem has no compound named \"{query}\"").into());
@@ -86,6 +124,12 @@ async fn run(query: &str, cache_path: PathBuf) -> Result<(), Box<dyn std::error:
     let m = load(&sources, &cache, cid, SystemTime::now(), &tx).await?;
     drop(tx);
     progress.await?;
+    Ok(m)
+}
+
+async fn snippets(query: &str, cache_path: PathBuf) -> Result<()> {
+    let start = Instant::now();
+    let m = open(query, &cache_path, start).await?;
 
     let c = &m.compound;
     println!("{} (CID {})", c.title, c.cid);
@@ -145,5 +189,76 @@ async fn run(query: &str, cache_path: PathBuf) -> Result<(), Box<dyn std::error:
         start.elapsed().as_secs_f64(),
         cache_path.display()
     );
+    Ok(())
+}
+
+#[cfg(not(feature = "model"))]
+async fn cards(_: &Args, _: PathBuf) -> Result<()> {
+    Err("built without the model; run with --features model".into())
+}
+
+#[cfg(feature = "model")]
+async fn cards(args: &Args, cache_path: PathBuf) -> Result<()> {
+    use valence_core::card::CardKind;
+    use valence_core::cards::{self, Event, Outcome};
+    use valence_core::model::{LocalModel, MODEL_FILE};
+
+    let model_path = args
+        .model
+        .clone()
+        .or_else(|| std::env::var_os("VALENCE_MODEL").map(PathBuf::from))
+        .or_else(|| Some(app_dir()?.join("models").join(MODEL_FILE)))
+        .ok_or("HOME is not set; pass --model <file>")?;
+    let start = Instant::now();
+    // One after the other: run concurrently in one task, the model load
+    // starved the fetch and both hung.
+    let m = open(&args.query, &cache_path, start).await?;
+    let model = LocalModel::load(&model_path).await?;
+    let t = || start.elapsed().as_secs_f64();
+    eprintln!("{:6.2} s  model loaded", t());
+
+    let name = &m.compound.title;
+    for kind in cards::order(&m.snippets) {
+        let began = t();
+        let mut first_text = None;
+        let outcome = if kind == CardKind::Danger {
+            cards::danger(name, &m.snippets).map_or(Outcome::NoInput, Outcome::Card)
+        } else {
+            cards::card(&model, kind, name, &m.snippets, &mut |e| match e {
+                Event::Draft { .. } => {
+                    first_text.get_or_insert_with(t);
+                }
+                Event::Retrying => eprintln!("{:6.2} s  {} retrying", t(), kind.as_str()),
+                _ => {}
+            })
+            .await?
+        };
+        let first = first_text.map_or(String::new(), |f| format!(", first text at {f:.2} s"));
+        let took = format!("{:.1} s{first}", t() - began);
+        match outcome {
+            Outcome::Card(card) => {
+                eprintln!("{:6.2} s  {} ready ({took})", t(), kind.as_str());
+                println!("## {}: {}\n{}", kind.label(), card.title, card.body);
+                for s in card.sources {
+                    println!("  - {} <{}>", s.label, s.url);
+                }
+                println!();
+            }
+            Outcome::Dropped(problems) => {
+                eprintln!(
+                    "{:6.2} s  {} dropped ({took}): {}",
+                    t(),
+                    kind.as_str(),
+                    problems.join("; ")
+                );
+            }
+            Outcome::Skipped => eprintln!(
+                "{:6.2} s  {} skipped by the model ({took})",
+                t(),
+                kind.as_str()
+            ),
+            Outcome::NoInput => eprintln!("{:6.2} s  {} no input", t(), kind.as_str()),
+        }
+    }
     Ok(())
 }

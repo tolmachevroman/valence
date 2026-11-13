@@ -177,10 +177,7 @@ mod tests {
             temperature: 0.0,
         };
         let mut pieces = 0;
-        let g = model
-            .generate(request, &mut |_| pieces += 1)
-            .await
-            .unwrap();
+        let g = model.generate(request, &mut |_| pieces += 1).await.unwrap();
         let v: serde_json::Value = serde_json::from_str(&g.text).unwrap();
         assert_eq!(v["element"], "Oxygen", "{}", g.text);
         assert!(pieces > 1, "streamed");

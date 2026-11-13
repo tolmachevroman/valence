@@ -28,7 +28,7 @@ export default function App() {
       <TopBar onOpen={open} />
       <main className="panels">
         <MoleculePanel molecule={molecule} />
-        <CardsPanel />
+        <CardsPanel molecule={molecule} model={model} />
       </main>
       <StatusBar version={version} model={model} />
     </div>

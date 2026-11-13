@@ -34,6 +34,11 @@ static END_MATTER: LazyLock<Regex> = LazyLock::new(|| {
     )
     .unwrap()
 });
+/// Words of an origin story: who found or made the molecule, and when.
+static DISCOVERY: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"(?i)\b(?:discover\w*|isolat\w*|first|named|coined|identif\w*|extracted|synthesi[sz]\w*|characteri[sz]ed)\b").unwrap()
+});
+static YEAR: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"\b1[0-9]{3}\b").unwrap());
 static TOP_HEADING: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"^== ([^=].*?) ==$").unwrap());
 
 /// An article's title and plain text, as the API returns them.
@@ -161,6 +166,30 @@ fn sections(text: &str) -> Vec<(String, Vec<&str>)> {
     out
 }
 
+/// The `limit` History paragraphs that read most like the molecule's origin
+/// story, in article order. History sections often open with the plants
+/// people used for centuries (caffeine: kola, cocoa, yaupon) and reach the
+/// discovery only later.
+fn origin_paragraphs<'a>(paragraphs: &[&'a str], molecule: &str, limit: usize) -> Vec<&'a str> {
+    let name = molecule.to_lowercase();
+    let score = |p: &str| {
+        2 * usize::from(DISCOVERY.is_match(p))
+            + usize::from(YEAR.is_match(p))
+            + usize::from(p.to_lowercase().contains(&name))
+    };
+    let mut ranked: Vec<(usize, &str)> = paragraphs
+        .iter()
+        .copied()
+        .filter(|p| clean(p).chars().count() >= MIN_CHARS)
+        .enumerate()
+        .collect();
+    // Stable: equal scores keep article order.
+    ranked.sort_by_key(|&(_, p)| std::cmp::Reverse(score(p)));
+    ranked.truncate(limit);
+    ranked.sort_by_key(|&(i, _)| i);
+    ranked.into_iter().map(|(_, p)| p).collect()
+}
+
 /// Snippets from the intro, History, and a little from every other section
 /// except end matter and how-it's-made. Ids are left empty.
 pub fn snippets(article: &Article) -> Vec<Snippet> {
@@ -185,12 +214,18 @@ pub fn snippets(article: &Article) -> Vec<Snippet> {
         } else {
             format!("#{}", name.replace(' ', "_"))
         };
-        let paragraphs = all
+        let paragraphs: Vec<&str> = all
             .iter()
             .find(|(n, _)| n == name)
-            .map(|(_, p)| p.as_slice());
+            .map(|(_, p)| p.clone())
+            .unwrap_or_default();
+        let paragraphs = if name == "History" {
+            origin_paragraphs(&paragraphs, &article.title, limit)
+        } else {
+            paragraphs
+        };
         let mut kept = 0;
-        for para in paragraphs.unwrap_or_default() {
+        for para in paragraphs {
             let text = clean(para);
             if text.chars().count() < MIN_CHARS {
                 continue;
@@ -306,6 +341,17 @@ mod tests {
             s.iter().any(|s| s.section == "Commercial sources"),
             "{s:#?}"
         );
+    }
+
+    #[test]
+    fn history_prefers_the_discovery() {
+        let history: Vec<String> = snippets(&caffeine())
+            .into_iter()
+            .filter(|s| s.section == "History")
+            .map(|s| s.text)
+            .collect();
+        assert!(history[0].contains("Runge"), "{history:#?}");
+        assert!(history.iter().all(|h| !h.starts_with("Kola nut")));
     }
 
     #[test]
