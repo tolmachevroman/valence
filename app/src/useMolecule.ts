@@ -8,7 +8,7 @@ import { type Card, type CardKind, type Compound, type Ghs, type MoleculeEvent, 
 /** One planned card, from waiting for the model to ready (or gone). */
 export interface CardSlot {
   kind: CardKind
-  state: 'waiting' | 'writing' | 'checking' | 'retrying' | 'ready'
+  state: 'waiting' | 'writing' | 'retrying' | 'ready'
   /** The text so far, unchecked; cleared when a retry starts. */
   draft?: { title: string; body: string }
   card?: Card
@@ -70,8 +70,6 @@ export function useMolecule() {
           return card(e.card, (s) => ({ ...s, state: 'writing' }))
         case 'cardDraft':
           return card(e.card, (s) => ({ ...s, draft: { title: e.title, body: e.body } }))
-        case 'cardChecking':
-          return card(e.card, (s) => ({ ...s, state: 'checking' }))
         case 'cardRetrying':
           return card(e.card, (s) => ({ ...s, state: 'retrying', draft: undefined }))
         case 'cardReady':

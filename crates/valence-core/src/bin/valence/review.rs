@@ -129,13 +129,15 @@ mod run {
     struct CardRun {
         molecule: String,
         kind: CardKind,
-        /// written, trimmed, retried, skipped, dropped, no input, from data, error.
+        /// written, untitled, retried, skipped, dropped, no input, from data, error.
         outcome: &'static str,
         title: Option<String>,
         body: Option<String>,
         /// Cited snippets: label, url, text.
         cited: Vec<(String, String, String)>,
         problems: Vec<String>,
+        /// Problems of attempts that were retried.
+        rejected: Vec<String>,
         /// Seconds from the start of the molecule's cards.
         first_text: Option<f64>,
         done: f64,
@@ -146,7 +148,7 @@ mod run {
         fn shown(&self) -> bool {
             matches!(
                 self.outcome,
-                "written" | "trimmed" | "retried" | "from data"
+                "written" | "untitled" | "retried" | "from data"
             )
         }
     }
@@ -157,16 +159,18 @@ mod run {
         let mut runs = Vec::new();
         for kind in cards::order(&f.snippets) {
             let began = start.elapsed().as_secs_f64();
-            let (mut first_text, mut retried, mut last_draft) = (None, false, String::new());
+            let (mut first_text, mut retried, mut rejected) = (None, false, Vec::new());
             let outcome = if kind == CardKind::Danger {
                 Ok(cards::danger(name, &f.snippets).map_or(Outcome::NoInput, Outcome::Card))
             } else {
                 cards::card(model, kind, name, &f.snippets, &mut |e| match e {
-                    Event::Draft { body, .. } => {
+                    Event::Draft { .. } => {
                         first_text.get_or_insert_with(|| start.elapsed().as_secs_f64());
-                        last_draft = body;
                     }
-                    Event::Retrying => retried = true,
+                    Event::Retrying { problems } => {
+                        retried = true;
+                        rejected.extend(problems);
+                    }
                     _ => {}
                 })
                 .await
@@ -180,6 +184,7 @@ mod run {
                 body: None,
                 cited: vec![],
                 problems: vec![],
+                rejected: vec![],
                 first_text,
                 done,
                 seconds: done - began,
@@ -188,8 +193,8 @@ mod run {
                 Ok(Outcome::Card(card)) => {
                     run.outcome = if kind == CardKind::Danger {
                         "from data"
-                    } else if card.body != last_draft {
-                        "trimmed"
+                    } else if card.title.is_empty() {
+                        "untitled"
                     } else if retried {
                         "retried"
                     } else {
@@ -214,6 +219,7 @@ mod run {
                 Ok(Outcome::NoInput) => run.outcome = "no input",
                 Err(e) => run.problems = vec![e.to_string()],
             }
+            run.rejected = rejected;
             eprintln!(
                 "{:24} {:7} {:10} {:5.1} s",
                 f.query,
@@ -307,13 +313,13 @@ mod run {
         let _ = writeln!(md, "| Model load | under 10 s | {load:.1} s |");
         let _ = writeln!(
             md,
-            "| Model card, including pick, check and retry | | {} |",
+            "| Model card, including retry | | {} |",
             spread(&card_time)
         );
 
         let _ = writeln!(
             md,
-            "\n## Outcomes\n\n| Card | written | trimmed | retried | skipped | dropped | no input | error |\n| --- | --- | --- | --- | --- | --- | --- | --- |"
+            "\n## Outcomes\n\n| Card | written | untitled | retried | skipped | dropped | no input | error |\n| --- | --- | --- | --- | --- | --- | --- | --- |"
         );
         for kind in [CardKind::Where, CardKind::Origin, CardKind::Weird] {
             let count = |o: &str| {
@@ -326,7 +332,7 @@ mod run {
                 "| {} | {} | {} | {} | {} | {} | {} | {} |",
                 kind.label(),
                 count("written"),
-                count("trimmed"),
+                count("untitled"),
                 count("retried"),
                 count("skipped"),
                 count("dropped"),

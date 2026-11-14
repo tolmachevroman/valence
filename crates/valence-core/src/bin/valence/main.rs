@@ -257,7 +257,12 @@ async fn cards(args: &Args, cache_path: PathBuf) -> Result<()> {
                 Event::Draft { .. } => {
                     first_text.get_or_insert_with(t);
                 }
-                Event::Retrying => eprintln!("{:6.2} s  {} retrying", t(), kind.as_str()),
+                Event::Retrying { problems } => eprintln!(
+                    "{:6.2} s  {} retrying: {}",
+                    t(),
+                    kind.as_str(),
+                    problems.join("; ")
+                ),
                 _ => {}
             })
             .await?

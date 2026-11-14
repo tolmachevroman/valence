@@ -5,6 +5,7 @@ pub mod cache;
 pub mod card;
 pub mod cards;
 pub mod error;
+pub mod extract;
 pub mod fetch;
 pub mod generate;
 pub mod ghs;

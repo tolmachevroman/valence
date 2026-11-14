@@ -150,8 +150,7 @@ async function streamCards(cards: [CardKind, Card | null][], send: (e: MoleculeE
         send({ kind: 'cardDraft', card: kind, title: text.title, body: words.slice(0, i).join(' ') })
         await sleep(90)
       }
-      send({ kind: 'cardChecking', card: kind })
-      await sleep(1600)
+      await sleep(600)
     }
     send(ready ? { kind: 'cardReady', card: ready } : { kind: 'cardGone', card: kind })
   }

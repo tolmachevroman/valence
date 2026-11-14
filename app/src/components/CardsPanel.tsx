@@ -1,6 +1,6 @@
-// Right panel: fact cards, streamed in one by one. A card's text appears as
-// the model writes it, marked as unchecked until it passes the checks against
-// its sources; cards that fail twice disappear.
+// Right panel: fact cards, streamed in one by one. A card's text is always
+// sentences from its sources, shown as the model chooses them and marked as
+// pending until the choice passes its checks; cards that fail twice disappear.
 
 import type { Card, CardKind, ModelStatus } from '../core'
 import { openUrl } from '../core'
@@ -18,11 +18,9 @@ function progress(slot: CardSlot, model?: ModelStatus): string {
     case 'waiting':
       return model?.state === 'ready' ? 'Waiting its turn…' : 'Waiting for the model to load…'
     case 'writing':
-      return slot.draft ? 'Writing…' : 'Reading the sources…'
-    case 'checking':
-      return 'Checking each sentence against the sources…'
+      return slot.draft ? 'Choosing sentences from the sources…' : 'Reading the sources…'
     case 'retrying':
-      return 'Rewriting: the first draft said more than its sources…'
+      return 'Choosing again…'
     case 'ready':
       return ''
   }
@@ -53,7 +51,7 @@ function CardView({ slot, model }: { slot: CardSlot; model?: ModelStatus }) {
   return (
     <article className={`card card-${slot.kind}${ready ? '' : ' card-pending'}`} aria-busy={!ready}>
       <h3 className="card-label">{LABELS[slot.kind]}</h3>
-      {title ? <h4 className="card-title">{title}</h4> : <div className="line line-title" />}
+      {title ? <h4 className="card-title">{title}</h4> : !ready && <div className="line line-title" />}
       {body ? <p className="card-body">{body}</p> : !ready && <div className="line" />}
       {slot.card?.hazards && <Hazards hazards={slot.card.hazards} />}
       {ready ? (

@@ -127,14 +127,11 @@ enum MoleculeEvent {
     CardWriting {
         card: CardKind,
     },
-    /// The card so far, not yet checked.
+    /// The card so far: the title as written and the sentences chosen.
     CardDraft {
         card: CardKind,
         title: String,
         body: String,
-    },
-    CardChecking {
-        card: CardKind,
     },
     CardRetrying {
         card: CardKind,
@@ -210,8 +207,7 @@ impl MoleculeEvent {
         match e {
             Event::Writing => Self::CardWriting { card },
             Event::Draft { title, body } => Self::CardDraft { card, title, body },
-            Event::Checking => Self::CardChecking { card },
-            Event::Retrying => Self::CardRetrying { card },
+            Event::Retrying { .. } => Self::CardRetrying { card },
         }
     }
 }
