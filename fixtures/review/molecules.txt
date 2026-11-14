@@ -1,0 +1,57 @@
+# The 50-molecule review set (M3.7): `valence review fetch` saves each as
+# <name>.json, `valence review run` writes and reports their cards.
+
+# From the M0 spike: well-known, odd, toxic and historic molecules.
+allicin
+artemisinin
+ascorbic acid
+aspirin
+batrachotoxin
+benzylpenicillin
+buckminsterfullerene
+caffeine
+capsaicin
+carvone
+cinnamaldehyde
+cubane
+dopamine
+ethylene
+geosmin
+indigo
+limonene
+lycopene
+menthol
+morphine
+nicotine
+nitroglycerin
+quinine
+serotonin
+strychnine
+sucralose
+tetrodotoxin
+thalidomide
+theobromine
+vanillin
+
+# Added for M3.7: everyday chemicals, medicines and hormones, toxic and
+# explosive compounds (the safety rules), tiny molecules, and a peptide.
+water
+ethanol
+sodium chloride
+glucose
+sucrose
+citric acid
+acetaminophen
+ibuprofen
+cholesterol
+testosterone
+epinephrine
+melatonin
+oxytocin
+glyphosate
+DDT
+trinitrotoluene
+hydrogen cyanide
+benzene
+formaldehyde
+carbon monoxide

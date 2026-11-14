@@ -1,0 +1,235 @@
+{
+  "query": "ethylene",
+  "compound": {
+    "cid": 6325,
+    "title": "Ethylene",
+    "formula": "C2H4",
+    "molarMass": "28.05",
+    "iupacName": "ethene",
+    "cas": "74-85-1",
+    "synonyms": [
+      "Ethene",
+      "Acetene",
+      "Elayl",
+      "Olefiant gas",
+      "Athylen"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Flammable",
+      "Compressed Gas",
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H220",
+        "text": "Extremely flammable gas",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H336",
+        "text": "May cause drowsiness or dizziness",
+        "percent": null,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Ethylene appears as a colorless gas with a sweet odor and taste. It is lighter than air. It is easily ignited and a flame can easily flash back to the source of the leak. Under prolonged exposure to fire or heat the containers may rupture violently and rocket. Can cause explosion."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Ethylene, refrigerated liquid (cryogenic liquid) appears as a pressurized liquid when shipped below 50 °F. Colorless with a sweet odor and taste. Vapors arising from the boiling liquid are lighter than air. Easily ignited. Not toxic but is a simple asphyxiant. Under prolonged exposure to fire or intense heat the containers may rupture violently and rocket. Used as an anesthetic, a refrigerant, and to make other chemicals."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Ethene is a gas molecular entity and an alkene. It has a role as a plant hormone and a refrigerant."
+    },
+    {
+      "id": "4",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethylene",
+      "origin": "Wikipedia",
+      "text": "Ethylene (IUPAC name: ethene) is a hydrocarbon which has the formula C2H4 or H2C=CH2. It is a colourless, flammable odorless gas. It is the simplest alkene (a hydrocarbon with carbon–carbon double bonds)."
+    },
+    {
+      "id": "5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethylene",
+      "origin": "Wikipedia",
+      "text": "Ethylene is widely used in the chemical industry, and its worldwide production (over 225 million tonnes in 2022) exceeds that of any other organic compound. Much of this production goes toward creating polyethylene, which is a widely used plastic containing polymer chains of ethylene units in various chain lengths."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethylene",
+      "origin": "Wikipedia",
+      "text": "Ethylene is also an important natural plant hormone and is used in agriculture to induce ripening of fruits. The hydrate of ethylene is ethanol."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#History",
+      "origin": "Wikipedia",
+      "text": "Joseph Priestley also mentions the gas in his Experiments and observations relating to the various branches of natural philosophy: with a continuation of the observations on air (1779), where he reports that Jan Ingenhousz saw ethylene synthesized in the same way by a Mr. Enée in Amsterdam in 1777 and that Ingenhousz subsequently produced the gas himself."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#History",
+      "origin": "Wikipedia",
+      "text": "In the mid-19th century, the suffix -ene (an Ancient Greek root added to the end of female names meaning \"daughter of\") was widely used to refer to a molecule or part thereof that contained one fewer hydrogen atoms than the molecule being modified. Thus, ethylene (C2H4) was the \"daughter of ethyl\" (C2H5). The name ethylene was used in this sense as early as 1852."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#History",
+      "origin": "Wikipedia",
+      "text": "In 1866, the German chemist August Wilhelm von Hofmann proposed a system of hydrocarbon nomenclature in which the suffixes -ane, -ene, -ine, -one, and -une were used to denote the hydrocarbons with 0, 2, 4, 6, and 8 fewer hydrogens than their parent alkane. In this system, ethylene became ethene. Hofmann's system eventually became the basis for the Geneva nomenclature approved by the International Congress of Chemists in 1892, which remains at the core of the IUPAC nomenclature. However, by that time, the name ethylene was deeply entrenched, and it remains in wide use today, especially in the chemical industry."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#History",
+      "origin": "Wikipedia",
+      "text": "The 1979 IUPAC nomenclature rules made an exception for retaining the non-systematic name ethylene; however, this decision was reversed in the 1993 rules, and it remains unchanged in the newest 2013 recommendations, so the IUPAC name is now ethene. In the IUPAC system, the name ethylene is reserved for the divalent group -CH2CH2-. Hence, names like ethylene oxide and ethylene dibromide are permitted, but the use of the name ethylene for the two-carbon alkene is not. Nevertheless, use of the name ethylene for H2C=CH2 (and propylene for H2C=CHCH3) is still prevalent among chemists in North America."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Structure and properties",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Structure_and_properties",
+      "origin": "Wikipedia",
+      "text": "This hydrocarbon has four hydrogen atoms bound to a pair of carbon atoms that are connected by a double bond. All six atoms that comprise ethylene are coplanar. The H-C-H angle is 117.4°, close to the 120° for ideal sp² hybridized carbon. The molecule is also relatively weak: rotation about the C-C bond is a high energy process that requires breaking the π-bond by supplying heat at 50 °C."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Structure and properties",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Structure_and_properties",
+      "origin": "Wikipedia",
+      "text": "The π-bond in the ethylene molecule is responsible for its useful reactivity. The double bond is a region of high electron density, thus it is susceptible to attack by electrophiles. Many reactions of ethylene are catalyzed by transition metals, which bind temporarily to the ethylene using both the π and π* orbitals."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Uses",
+      "origin": "Wikipedia",
+      "text": "Major industrial reactions of ethylene include in order of scale: 1) polymerization, 2) oxidation, 3) halogenation and hydrohalogenation, 4) alkylation, 5) hydration, 6) oligomerization, and 7) hydroformylation. In the United States and Europe, approximately 90% of ethylene is used to produce ethylene oxide, ethylene dichloride, ethylbenzene and polyethylene."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Uses",
+      "origin": "Wikipedia",
+      "text": "Polyethylene production uses more than half of the world's ethylene supply. Polyethylene, also called polyethene and polythene, is the world's most widely used plastic. It is primarily used to make films in packaging, carrier bags and trash liners. Linear alpha-olefins, produced by oligomerization (formation of short-chain molecules) are used as precursors, detergents, plasticisers, synthetic lubricants, additives, and also as co-monomers in the production of polyethylenes."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Ligand",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Ligand",
+      "origin": "Wikipedia",
+      "text": "Ethylene is a fundamental ligand in transition metal alkene complexes. One of the first organometallic compounds, Zeise's salt is a complex of ethylene. Useful reagents containing ethylene include Pt(PPh3)2(C2H4) and Rh2Cl2(C2H4)4. The Rh-catalysed hydroformylation of ethylene is conducted on an industrial scale to provide propionaldehyde."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Ethylene#Safety",
+      "origin": "Wikipedia",
+      "text": "Like all hydrocarbons, ethylene is a combustible asphyxiant. It is listed as an IARC group 3 agent, since there is no current evidence that it causes cancer in humans."
+    },
+    {
+      "id": "17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in oxyethylene welding, chemical manufacturing, fruit ripening; Has been used as a general anesthetic; [Merck Index]"
+    },
+    {
+      "id": "18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Gas Welding and Cutting [Category: Weld]"
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For ethylene (USEPA/OPP Pesticide Code: 041901) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Oxyethylene welding and cutting metals; manufacture of alcohol, mustard gas, and many other organics. Manufacture of ethylene oxide (for plastics), polythene, polystyrene and other plastics. Plant growth regulator; used commercially to accelerate the ripening of various fruits."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Ethylene is a natural product emitted by fruits, flowers, leaves, roots, and tubers(1). The release rate of ethylene from plants varies during the life cycle of the plant(1). Plants that normally produce 0.6 to 6 ug ethylene/kg (fresh weight) per hour may produce up to 120 ug/kg per hour during ripening of fruits and during senescence and loss of leaves(1). Ethylene has been found in the gaseous metabolites released by germinating bean, corn, cotton, and pea seeds, from fading morning glory flowers and from ripening avocados and apples(2). Ethylene is released to the atmosphere from biomass combustion and volcanos(3)."
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The total annual emission of ethylene from the global surface is estimated as 18-45 million tons, of which approximately 74% is emitted from natural sources(1)."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Ethylene is a colorless gas. It is used for oxyethylene welding and cutting metals, as well as in the manufacture of alcohol, mustard gas, and many other organics. It is also used in manufacture of ethylene oxide (for plastics), polythene, polystyrene and other plastics. Ethylene is a plant growth regulator, which is used commercially to accelerate the ripening of various fruits. HUMAN STUDIES: Exposure to 37.5% ethylene for 15 min may result in marked memory disturbances. Humans exposed to as much as 50% ethylene in air, whereby the oxygen availability is decreased to 10%, experienced a loss of consciousness."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Flammable, Compressed Gas, Irritant. H220: Extremely flammable gas [Danger Flammable gases] H336: May cause drowsiness or dizziness [Warning Specific target organ toxicity, single exposure; Narcotic effects]"
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "query": "aspirin",
+  "compound": {
+    "cid": 2244,
+    "title": "Aspirin",
+    "formula": "C9H8O4",
+    "molarMass": "180.16",
+    "iupacName": "2-acetyloxybenzoic acid",
+    "cas": "50-78-2",
+    "synonyms": [
+      "ACETYLSALICYLIC ACID",
+      "Acylpyrin",
+      "Acetophen",
+      "O-Acetylsalicylic acid",
+      "Acenterine"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 95.6,
+        "level": "Warning"
+      },
+      {
+        "code": "H315",
+        "text": "Causes skin irritation",
+        "percent": 20.6,
+        "level": "Warning"
+      },
+      {
+        "code": "H319",
+        "text": "Causes serious eye irritation",
+        "percent": 22.2,
+        "level": "Warning"
+      },
+      {
+        "code": "H335",
+        "text": "May cause respiratory irritation",
+        "percent": 20.0,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Aspirin can cause developmental toxicity and female reproductive toxicity according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Acetylsalicylic acid appears as odorless white crystals or crystalline powder with a slightly bitter taste. (NTP, 1992)"
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Acetylsalicylic acid is a member of the class of benzoic acids that is salicylic acid in which the hydrogen that is attached to the phenolic hydroxy group has been replaced by an acetoxy group. A non-steroidal anti-inflammatory drug with cyclooxygenase inhibitor activity. It has a role as a geroprotector, a non-steroidal anti-inflammatory drug, a non-narcotic analgesic, an antipyretic, a prostaglandin antagonist, an anticoagulant, a platelet aggregation inhibitor, a cyclooxygenase 2 inhibitor, a cyclooxygenase 1 inhibitor, a teratogenic agent, a plant activator, an EC 1.1.1.188 (prostaglandin-F synthase) inhibitor and a drug allergen."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Also known as Aspirin, acetylsalicylic acid (ASA) is a commonly used drug for the treatment of pain and fever due to various causes. Acetylsalicylic acid has both anti-inflammatory and antipyretic effects. This drug also inhibits platelet aggregation and is used in the prevention of blood clots stroke, and myocardial infarction (MI). Interestingly, the results of various studies have demonstrated that long-term use of acetylsalicylic acid may decrease the risk of various cancers, including colorectal, esophageal, breast, lung, prostate, liver and skin cancer."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Aspirin is a Nonsteroidal Anti-inflammatory Drug and Platelet Aggregation Inhibitor. The mechanism of action of aspirin is as a Cyclooxygenase Inhibitor. The physiologic effect of aspirin is by means of Decreased Prostaglandin Production and Decreased Platelet Aggregation."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Aspirin",
+      "origin": "Wikipedia",
+      "text": "Aspirin is the genericized trademark for acetylsalicylic acid (ASA), a nonsteroidal anti-inflammatory drug (NSAID) used to reduce pain, fever, and inflammation, and as an antithrombotic. Aspirin is used to treat inflammatory conditions including Kawasaki disease, pericarditis, and rheumatic fever."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Aspirin",
+      "origin": "Wikipedia",
+      "text": "Aspirin is also used long term to reduce the chance of heart attack, ischaemic stroke, and blood clots occurring in people considered to be at high risk for such events. For pain or fever, effects typically begin within 30 minutes. Aspirin works similarly to other NSAIDs but also suppresses the normal functioning of platelets."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Aspirin",
+      "origin": "Wikipedia",
+      "text": "One common adverse effect is an upset stomach. More significant side effects include stomach ulcers, stomach bleeding, and worsening asthma. Bleeding risk is greater among those who are older, drink alcohol, take other NSAIDs, or are on other blood thinners. Aspirin is not recommended in the last part of pregnancy. It is not generally recommended in children with viral infections because of the risk of Reye syndrome. High doses may result in ringing in the ears."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#History",
+      "origin": "Wikipedia",
+      "text": "In 1853, the chemist Charles Frédéric Gerhardt treated sodium salicylate with acetyl chloride to produce acetylsalicylic acid for the first time; in the second half of the 19th century, other academic chemists established the compound's chemical structure and devised more efficient methods of synthesis. In 1897, scientists at the drug and dye firm Bayer began investigating acetylsalicylic acid as a less-irritating replacement for standard common salicylate medicines, and identified a new way to synthesize it. That year, Felix Hoffmann (or Arthur Eichengrün) of Bayer was the first to produce acetylsalicylic acid in a pure, stable form."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#History",
+      "origin": "Wikipedia",
+      "text": "Salicylic acid had been extracted in 1839 from the herb meadowsweet, whose German name, Spirsäure, was the basis for naming the newly synthesized drug, which, by 1899, Bayer was selling globally. The word Aspirin was Bayer's brand name, rather than the generic name of the drug; however, Bayer's rights to the trademark were lost or sold in many countries. Aspirin's popularity grew over the first half of the 20th century, leading to fierce competition with the proliferation of aspirin brands and products."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#History",
+      "origin": "Wikipedia",
+      "text": "Aspirin's popularity declined after the development of acetaminophen/paracetamol in 1956 and ibuprofen in 1962. In the 1960s and 1970s, John Vane and others discovered the basic mechanism of aspirin's effects, while clinical trials and other studies from the 1960s to the 1980s established aspirin's efficacy as an anti-clotting agent that reduces the risk of clotting diseases."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#History",
+      "origin": "Wikipedia",
+      "text": "Bayer lost its trademark for aspirin in the United States and some other countries in actions taken between 1918 and 1921, because it had failed to use the name for its own product correctly and had for years allowed the use of \"Aspirin\" by other manufacturers without defending the intellectual property rights. Aspirin is a generic trademark in many countries. Aspirin, with a capital \"A\", remains a registered trademark of Bayer in Germany, Canada, Mexico, and over 80 other countries, for acetylsalicylic acid in all markets, but using different packaging and physical aspects for each."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Brand vs. generic name",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Brand_vs._generic_name",
+      "origin": "Wikipedia",
+      "text": "In 1897, scientists at the Bayer company began studying acetylsalicylic acid as a less-irritating replacement medication for common salicylate medicines. It developed heroin in 1898 as a cough suppressant, and the less potent aspirin the following year. By 1899, Bayer had named it \"Aspirin\" and was selling it around the world."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Brand vs. generic name",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Brand_vs._generic_name",
+      "origin": "Wikipedia",
+      "text": "Aspirin's popularity grew over the first half of the 20th century, leading to competition between many brands and formulations. The word Aspirin was Bayer's brand name; however, its rights to the trademark were lost or sold in many countries. The name is ultimately a blend of the prefix a(cetyl) + spir, from Spirsäure, German for meadowsweet, the plant genus from which the aspirin precursor salicylic acid was first isolated (originally Spiraea, now Filipendula) + -in, the common suffix for drugs near the end of the 19th century."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Aspirin decomposes rapidly in solutions of ammonium acetate or the acetates, carbonates, citrates, or hydroxides of the alkali metals. It is stable in dry air, but gradually hydrolyses in contact with moisture to acetic and salicylic acids. In a solution with alkalis, the hydrolysis proceeds rapidly and the clear solutions formed may consist entirely of acetate and salicylate."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Like flour mills, factories producing aspirin tablets must control the amount of the powder that becomes airborne inside the building, because the powder-air mixture can be explosive. The National Institute for Occupational Safety and Health (NIOSH) has set a recommended exposure limit in the United States of 5 mg/m3 (time-weighted average). OSHA decision in 1993."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Physical properties",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Physical_properties",
+      "origin": "Wikipedia",
+      "text": "Aspirin, an acetyl derivative of salicylic acid, is a white, crystalline, weakly acidic substance that melts at 136 °C (277 °F), and decomposes around 140 °C (284 °F). Its acid dissociation constant (pKa) is 3.5 at 25 °C (77 °F)."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Physical properties",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Physical_properties",
+      "origin": "Wikipedia",
+      "text": "Polymorphism is the ability of a substance to form more than one crystal structure. Until 2005, there was only one proven polymorph of aspirin (form I), though the existence of another polymorph was debated since the 1960s, and one report from 1981 reported that when crystallized in the presence of aspirin anhydride, the diffractogram of aspirin has weak additional peaks. Though at the time it was dismissed as mere impurity, it was, in retrospect, form II aspirin."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "In 1971, the British pharmacologist John Robert Vane, then employed by the Royal College of Surgeons in London, showed that aspirin suppressed the production of prostaglandins and thromboxanes. For this discovery, he was awarded the 1982 Nobel Prize in Physiology or Medicine, jointly with Sune Bergström and Bengt Ingemar Samuelsson."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "Aspirin's ability to suppress the production of prostaglandins and thromboxanes is due to its irreversible inactivation of the cyclooxygenase (COX; officially known as prostaglandin-endoperoxide synthase, PTGS) enzyme required for prostaglandin and thromboxane synthesis. Aspirin acts as an acetylating agent where an acetyl group is covalently attached to a serine residue in the active site of the COX enzyme (suicide inhibition). This makes aspirin different from other NSAIDs (such as diclofenac and ibuprofen), which are reversible inhibitors."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Formulations",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Formulations",
+      "origin": "Wikipedia",
+      "text": "Aspirin is available in a variety of pharmaceutical formulations, each with distinct pharmacological and safety profiles. A key concern in aspirin therapy is the risk of gastrointestinal bleeding, prompting the development of formulations aimed at maintaining efficacy while minimizing gastrointestinal harm. Some formulations are also combined, for example, buffered aspirin with vitamin C. Formulation examples include:"
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Formulations",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Formulations",
+      "origin": "Wikipedia",
+      "text": "Immediate-release tablets (IR-ASA): Commonly contain 75–100 mg or 300–320 mg of aspirin and are rapidly absorbed in the stomach."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Pharmacokinetics",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Pharmacokinetics",
+      "origin": "Wikipedia",
+      "text": "Acetylsalicylic acid is a weak acid, and very little of it is ionized in the stomach after oral administration. Acetylsalicylic acid is quickly absorbed through the cell membrane in the acidic conditions of the stomach. The higher pH and larger surface area of the small intestine cause aspirin to be absorbed more slowly there, as more of it is ionized. Owing to the formation of concretions, aspirin is absorbed much more slowly during overdose, and blood plasma concentrations can continue to rise for up to 24 hours after ingestion."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Pharmacokinetics",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Pharmacokinetics",
+      "origin": "Wikipedia",
+      "text": "About 50–80% of salicylate in the blood is bound to human serum albumin, while the rest remains in the active, ionized state; protein binding is concentration-dependent. Saturation of binding sites leads to more free salicylate and increased toxicity. The volume of distribution is 0.1–0.2 L/kg. Acidosis increases the volume of distribution because of enhancement of tissue penetration of salicylates."
+    },
+    {
+      "id": "25",
+      "source": "wikipedia",
+      "section": "Medical use",
+      "url": "https://en.wikipedia.org/wiki/Aspirin#Medical_use",
+      "origin": "Wikipedia",
+      "text": "Aspirin is used in the treatment of a number of conditions, including fever, pain, rheumatic fever, and inflammatory conditions, such as rheumatoid arthritis, pericarditis, and Kawasaki disease. Lower doses of aspirin have also been shown to reduce the risk of death from a myocardial infarction (heart attack), or the risk of stroke in people who are at high risk or who have cardiovascular disease, but not in older adults who are otherwise healthy. There is evidence that aspirin is effective for preventing colorectal cancer, though the mechanisms of this effect are unclear. There is also evidence that aspirin can treat some cases of vasculogenic ED."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in manufacturing and health care; [ACGIH TLVs and BEIs]"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Therapeutic Category: Analgesic; antipyretic; anti-inflammatory; antithrombotic."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Therapeutic Category (Vet): Analgesic; antipyretic; anti-inflammatory; antithrombotic."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "CHEMICAL PROFILE: Virtually all aspirin is used in pharmaceutical products in aspirin tablets or in concert with other ingredients (1981)"
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION: Acetylsalicylic acid is colorless or white crystals or white crystalline powder or granules; odorless or almost odorless with a slight acid taste. It is soluble in water. Indications: It is used as an analgesic for the treatment of mild to moderate pain, as an anti-inflammatory agent for the treatment of soft tissue and joint inflammation, and as an antipyretic drug. In low doses salicylate is used for the prevention of thrombosis. HUMAN EXPOSURE: The toxic effects of salicylate are complex."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "The analgesic, antipyretic, and anti-inflammatory effects of acetylsalicylic acid are due to actions by both the acetyl and the salicylate portions of the intact molecule as well as by the active salicylate metabolite. Acetylsalicylic acid directly and irreversibly inhibits the activity of both types of cyclooxygenase (COX-1 and COX-2) to decrease the formation of precursors of prostaglandins and thromboxanes from arachidonic acid. This makes acetylsalicylic acid different from other NSAIDS (such as diclofenac and ibuprofen) which are reversible inhibitors. Salicylate may competitively inhibit prostaglandin formation."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. H302 (95.6%): Harmful if swallowed [Warning Acute toxicity, oral] H315 (20.6%): Causes skin irritation [Warning Skin corrosion/irritation] H319 (22.2%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] H335 (20%): May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]"
+    }
+  ]
+}

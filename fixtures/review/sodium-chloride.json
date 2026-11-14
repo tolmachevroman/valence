@@ -1,0 +1,209 @@
+{
+  "query": "sodium chloride",
+  "compound": {
+    "cid": 5234,
+    "title": "Sodium Chloride",
+    "formula": "ClNa",
+    "molarMass": "58.44",
+    "iupacName": "sodium chloride",
+    "cas": "7647-14-5",
+    "synonyms": [
+      "Table salt",
+      "Common salt",
+      "Sodium chloric",
+      "NaCl",
+      "Dendritis"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Corrosive"
+    ],
+    "statements": [
+      {
+        "code": "H318",
+        "text": "Causes serious eye damage",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H412",
+        "text": "Harmful to aquatic life with long lasting effects",
+        "percent": null,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": false,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Sodium chloride is an inorganic chloride salt having sodium(1+) as the counterion. It has a role as an emetic, a NMR chemical shift reference compound and a flame retardant. It is an inorganic chloride and an inorganic sodium salt."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound with the chemical formula NaCl, representing a 1:1 ratio of sodium and chloride ions. Sodium chloride is the primary salt in seawater and in the extracellular fluid of many multicellular organisms. It is listed on the World Health Organization Model List of Essential Medicines."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Sea salt is the salt obtained from the evaporation of seawater or water from saltwater lakes. Sea salt production is subject to little processing which leaves certain trace minerals and elements behind. In comparison, table salt is mined from underground sedimentary deposits and is more heavily processed to eliminate minerals. Unlike sea salt, table salt usually contains an additive to prevent clumping and involves addition of iodine. Sea salt is a food ingredient and is often colored by adding charcoal or red clay to sometimes be referred to as “Hawaiian Sea Salt.”"
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Sodium Chloride is a metal halide composed of sodium and chloride with sodium and chloride replacement capabilities. When depleted in the body, sodium must be replaced in order to maintain intracellular osmolarity, nerve conduction, muscle contraction and normal renal function."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Saline is a solution of salt and water. Saline usually refers to normal or physiological saline, which is an aqueous solution containing 0.9% sodium chloride."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride",
+      "origin": "Wikipedia",
+      "text": "Sodium chloride , is an ionic compound with the chemical formula NaCl, representing a 1:1 ratio of sodium and chloride ions. It is transparent or translucent, brittle, hygroscopic, and occurs as the mineral halite. In its edible form, common table salt, it is commonly used as a condiment and food preservative. Large quantities of sodium chloride are used in many industrial processes, and it is a major source of sodium and chlorine compounds used as feedstocks for further chemical syntheses. Another major application of sodium chloride is de-icing of roadways in sub-freezing weather."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride#Uses",
+      "origin": "Wikipedia",
+      "text": "In addition to the many familiar domestic uses of salt, more dominant applications of the approximately 250 million tonnes per year production (2008 data) include chemicals and de-icing."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride#Uses",
+      "origin": "Wikipedia",
+      "text": "Salt is used, directly or indirectly, in the production of many chemicals, which consumes most of the world's production."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride#Chemistry",
+      "origin": "Wikipedia",
+      "text": "In solid sodium chloride, each ion is surrounded by six ions of the opposite charge as expected on electrostatic grounds. The surrounding ions are located at the vertices of a regular octahedron. In the language of close-packing, the larger chloride ions (167 pm in size) are arranged in a cubic array whereas the smaller sodium ions (116 pm) fill all the cubic gaps (octahedral voids) between them. This same basic structure is found in many other compounds and is commonly known as the NaCl structure or rock salt crystal structure. It can be represented as a face-centered cubic (fcc) lattice with a two-atom basis or as two interpenetrating face centered cubic lattices."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Solid sodium chloride has a melting point of 801 °C and liquid sodium chloride boils at 1465 °C. Atomic-resolution real-time video imaging allows visualization of the initial stage of crystal nucleation of sodium chloride."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Sodium_chloride#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Salt is found in the Earth's crust as the mineral halite (rock salt), and a tiny amount exists as suspended sea salt particles in the atmosphere. These particles are the dominant cloud condensation nuclei far out at sea, which allow the formation of clouds in otherwise non-polluted air."
+    },
+    {
+      "id": "12",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Sodium chloride (NaCl). A colorless, cubic crystal or white, crystalline powder, found widely distributed over the earth, in sea water, etc., which is a necessary constituent of the body and consequently of the diet. It makes up over 90 percent of the inorganic constituents of the blood serum and is the principal salt involved in maintaining osmotic tension of the blood and tissues. (From Dorland, 27th ed) [ChemIDplus] Used in the hide preservation and pickling stages of leather production; [PMID 21938525]"
+    },
+    {
+      "id": "13",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Leather Tanning and Processing [Category: Industry]"
+    },
+    {
+      "id": "14",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For sodium chloride (USEPA/OPP Pesticide Code: 013905) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Over 14,000 different uses for salt have been identified ...the salt industry generally classifies salt uses by 5 principal categories: 1) chemical; 2) highway deicing and stabilization; 3) food use and processing; 4) agriculture; 5) water conditioning. Remaining uses are categorized as miscellaneous."
+    },
+    {
+      "id": "16",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Sodium chloride, commonly known as salt, table salt, and sea salt, is abundant in nature(1)."
+    },
+    {
+      "id": "17",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Ocean water: 2.6% concentration; deposits in central New York, southern Michigan, Gulf Coast, Great Salt Lake, Newfoundland."
+    },
+    {
+      "id": "18",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Sodium chloride occurs in nature as the mineral halite."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Signs and Symptoms of Overdose The primary toxicities associated with overdose are hyperchloremic metabolic acidosis and volume overload. Patients may present with pulmonary edema. Sodium disorders can lead to central nervous system dysfunction and lethargy. Clinicians should obtain a chest x-ray, two-dimensional echocardiogram, 12-lead electrocardiogram, complete blood count to assess changes in hematocrit, and a comprehensive metabolic panel. Arterial blood gas analysis should be obtained. Management of Overdose The saline drip should be discontinued. Bicarbonate or sodium citrate can be used to treat metabolic acidosis in stable patients without severe volume contraction."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "A high salt diet disrupts the natural sodium balance in the body. This causes fluid retention which increases the pressure exerted by the blood against blood vessel walls leading to high blood pressure or hypertension."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Corrosive. H318: Causes serious eye damage [Danger Serious eye damage/eye irritation] H412: Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

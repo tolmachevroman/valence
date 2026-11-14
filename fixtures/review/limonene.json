@@ -1,0 +1,245 @@
+{
+  "query": "limonene",
+  "compound": {
+    "cid": 22311,
+    "title": "1-Methyl-4-Prop-1-En-2-Ylcyclohexene",
+    "formula": "C10H16",
+    "molarMass": "136.23",
+    "iupacName": "1-methyl-4-prop-1-en-2-ylcyclohexene",
+    "cas": "138-86-3",
+    "synonyms": [
+      "LIMONENE",
+      "Dipentene",
+      "Cinene",
+      "Cajeputene",
+      "DL-Limonene"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Flammable",
+      "Irritant",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H226",
+        "text": "Flammable liquid and vapor",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H315",
+        "text": "Causes skin irritation",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H317",
+        "text": "May cause an allergic skin reaction",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H400",
+        "text": "Very toxic to aquatic life",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H410",
+        "text": "Very toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Dipentene appears as a colorless liquid with an odor of lemon. Flash point 113 °F. Density about 7.2 lb /gal and insoluble in water. Hence floats on water. Vapors heavier than air. Used as a solvent for rosin, waxes, rubber; as a dispersing agent for oils, resins, paints, lacquers, varnishes, and in floor waxes and furniture polishes."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Limonene is a monoterpene that is cyclohex-1-ene substituted by a methyl group at position 1 and a prop-1-en-2-yl group at position 4 respectively. It has a role as a human metabolite. It is a cycloalkene and a p-menthadiene."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Limonene, (+/-)- is under investigation in clinical trial NCT05525260 (Limonene for Pulmonary Nodule Chemoprevention)."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "(±)-limonene has been reported in Camellia sinensis, Hypericum foliosum, and other organisms with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Limonene, (+/-)- is a racemic mixture of limonene, a natural cyclic monoterpene and major component of the oil extracted from citrus rind with chemo-preventive and antitumor activities. The metabolites of DL-limonene, perillic acid, dihydroperillic acid, uroterpenol and limonene 1,2-diol are suggested to inhibit tumor growth through inhibition of p21-dependent signaling, induce apoptosis via the induction of the transforming growth factor beta-signaling pathway, inhibit post-translational modification of signal transduction proteins, result in G1 cell cycle arrest as well as cause differential expression of cell cycle- and apoptosis-related genes."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Limonene",
+      "origin": "Wikipedia",
+      "text": "Limonene is a slightly yellow-green liquid aliphatic hydrocarbon classified as a cyclic monoterpene, and is the major component in the fragrance and essential oil of citrus fruit peels, taking its name from Italian limone 'lemon'."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Limonene",
+      "origin": "Wikipedia",
+      "text": "Limonene is a chiral molecule, and most biological sources produce just one enantiomer (isomer). It has a \"citrus, orange, fresh, sweet, peely\" aroma."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Limonene",
+      "origin": "Wikipedia",
+      "text": "The less common (−)-isomer, l-limonene, which is the (S)-enantiomer, has a piny, turpentine-like odor, and is found in the edible parts of such plants as caraway, dill, and bergamot orange."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "In plants",
+      "url": "https://en.wikipedia.org/wiki/Limonene#In_plants",
+      "origin": "Wikipedia",
+      "text": "Limonene is a major component of the aromatic scents and resins characteristic of numerous coniferous and broadleaved trees: red and silver maple (Acer rubrum, Acer saccharinum), cottonwoods (Populus angustifolia), aspens (Populus grandidentata, Populus tremuloides) sumac (Rhus glabra), spruce (Picea spp.), various pines (e.g., Pinus echinata, Pinus ponderosa, Pinus leucodermis), Douglas fir (Pseudotsuga menziesii), larches (Larix spp.), true firs (Abies spp.), hemlocks (Tsuga spp.), cedars (Cedrus spp.), various Cupressaceae, and juniper bush (Juniperus spp.). It contributes to the characteristic odor of orange peel, orange juice and other citrus fruits."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Chemical reactions",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Chemical_reactions",
+      "origin": "Wikipedia",
+      "text": "Limonene is a relatively stable monoterpene and can be distilled without decomposition, although at elevated temperatures it cracks to form isoprene. It oxidizes easily in moist air to produce carveol, carvone, and limonene oxide. With sulfur, it undergoes dehydrogenation to p-cymene."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Chemical reactions",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Chemical_reactions",
+      "origin": "Wikipedia",
+      "text": "Limonene occurs commonly as the (R)-enantiomer, but racemizes at 300 °C. When warmed with mineral acid, limonene isomerizes to the conjugated diene α-terpinene (which can also easily be converted to p-cymene). Evidence for this isomerization includes the formation of Diels–Alder adducts between α-terpinene adducts and maleic anhydride."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Uses",
+      "origin": "Wikipedia",
+      "text": "As the main fragrance of citrus peels, D-limonene is used in food manufacturing and some medicines, such as a flavoring agent to mask the bitter taste of alkaloids, and as a fragrance in perfumery, aftershave lotions, bath products, and other personal care products. (+)-Limonene is also used as a botanical insecticide. (+)-Limonene is used in the organic herbicides. It is added to cleaning products, such as hand cleansers, to give a lemon or orange fragrance (see orange oil) and for its ability to dissolve oils. In contrast, (−)-limonene has a piny, turpentine-like odor."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Uses",
+      "origin": "Wikipedia",
+      "text": "Limonene is used as a solvent for cleaning purposes, such as adhesive remover, or the removal of oil from machine parts, as it is produced from a renewable source (citrus essential oil, as a byproduct of orange juice manufacture). It is used as a paint stripper and is also useful as a fragrant alternative to turpentine. Limonene is also used as a solvent in some model airplane glues and as a constituent in some paints. Commercial air fresheners, with air propellants, containing limonene are used by stamp collectors to remove self-adhesive postage stamps from envelope paper."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Safety and research",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Safety_and_research",
+      "origin": "Wikipedia",
+      "text": "Applied to skin, limonene may cause irritation from contact dermatitis, but otherwise appears to be safe for human use. Limonene is flammable as a liquid or vapor and toxic to aquatic life."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Safety and research",
+      "url": "https://en.wikipedia.org/wiki/Limonene#Safety_and_research",
+      "origin": "Wikipedia",
+      "text": "There is no evidence that the limonene in peel oils of citrus fruits affects the onset or progress of cancer, with one US national agency stating, \"There is no consistent evidence that people with cancer who consume limonene—either in supplement form or by eating citrus fruits—get better or are more likely to be cured\"."
+    },
+    {
+      "id": "16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in flavorings, fragrances, cosmetics and as a solvent and wetting agent; Also used to make resins, insecticides, insect repellants, and animal repellants; [HSDB] Used as a dissolving agent for gallstones and gutta-percha; [ChemIDplus] Used in floor waxes and furniture polishes; [CAMEO] Occurs naturally in essential oils of many plants and is a minor constituent of turpentine; [CHEMINFO]"
+    },
+    {
+      "id": "17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For limonene (USEPA/OPP Pesticide Code: 079701) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Monomer in terpene resins; solvent for oleoresinous products; general wetting and dispersing agent; chemical intermediate for various organic compounds; flavor ingredient (orange-like)."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "One important use for (R)-(+)-limonene is its use as a chiral starting material for the synthesis of (R)-(-)-carvone."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Limonene is found in many oils and fruits including orange, lemon, grapefruit, berry, leaf, caraway, dill, bergamot, peppermint and spearmint oils(1-4). Limonene emissions to the environment are associated with wax myrtle, sweet acacia, oranges, tomatoes, grasses, and California western sagebrush(5). Emissions of limonene are also associated with balsam poplar, European larche, European fir, Scots pine, Siberian pine, silver fir, common juniper, zeravshan juniper, pencil cedar, evergreen cypress, northern white cedar, chinese arbor vitae, marsh tea and deciduous moss(6)."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Limonene is widely distributed and occurs naturally in both d- and l- forms(1)."
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Limonene is a colorless liquid. It is not registered for current pesticide use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses. Limonene is used as a solvent in degreasing metals prior to industrial painting, for cleaning in the electronic and printing industries, and in paint as a solvent. Limonene is also used as a flavor and fragrance additive in food, household cleaning products and perfumes. It is also used as gallstone solubilizer. HUMAN EXPOSURE AND TOXICITY: Limonene is a skin irritant in humans."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22311#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Warning. Pictograms: Flammable, Irritant, Environmental Hazard. H226: Flammable liquid and vapor [Warning Flammable liquids] H315: Causes skin irritation [Warning Skin corrosion/irritation] H317: May cause an allergic skin reaction [Warning Sensitization, Skin] H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

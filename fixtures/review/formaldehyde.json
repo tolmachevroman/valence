@@ -1,0 +1,315 @@
+{
+  "query": "formaldehyde",
+  "compound": {
+    "cid": 712,
+    "title": "Formaldehyde",
+    "formula": "CH2O",
+    "molarMass": "30.026",
+    "iupacName": "formaldehyde",
+    "cas": "50-00-0",
+    "synonyms": [
+      "formalin",
+      "methanal",
+      "formol",
+      "Formic aldehyde",
+      "Methylene oxide"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Corrosive",
+      "Acute Toxic",
+      "Health Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H314",
+        "text": "Causes severe skin burns and eye damage",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H317",
+        "text": "May cause an allergic skin reaction",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H330",
+        "text": "Fatal if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H341",
+        "text": "Suspected of causing genetic defects",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H350",
+        "text": "May cause cancer",
+        "percent": null,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Record-Description",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "At room temperature, formaldehyde is a colorless, flammable gas that has a distinct, pungent smell. It is also known as methanal, methylene oxide, oxymethyline, methylaldehyde, and oxomethane. Formaldehyde is naturally produced in small amounts in our bodies. It is used in the production of fertilizer, paper, plywood, and urea-formaldehyde resins. It is also used as a preservative in some foods and in many products used around the house, such as antiseptics, medicines, and cosmetics."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Formaldehyde (gas) can cause cancer according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Solids containing varying amounts of formaldehyde, probably as paraformaldehyde (polymers of formula HO(CH2O)xH where x averages about 30). A hazard to the environment. Immediate steps should be taken to limit spread to the environment."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Formaldehyde, solution, flammable appears as a colorless aqueous solution of formaldehyde, which is a gas at ordinary conditions. Has a pungent irritating odor. Flash point varies from 122 to 141 °F. Denser than water. The vapors are heavier than air and are highly irritating to the nose. Toxic if swallowed. Contact can cause severe injury to the skin accompanied by drying, cracking, and scaling. Used to make plastics, other chemicals, and fertilizers. Used as a preservative and a corrosion inhibitor. Rate of onset: Immediate Persistence: Hours Odor threshold: 1 ppm Source/use/other hazard: Disinfection/germicide; fungicide; textile; health care (tissue fixing)."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Formaldehyde, solutions (formalin) (corrosive) appears as a colorless liquid with a pungent irritating odor. Contains 37-50% formaldehyde by mass and varying amounts of methanol, added to prevent precipitation of formaldehyde polymers (formaldehyde exists in solution as CH2(OH)2 and its polymers HO(CH2O)xH where x averages about three). Formalin free of methanol is also shipped but must be kept warm (about 30 °C (86 °F)) to prevent polymerization. Pure formaldehyde, a gas, is not handled commercially because it tends to polymerize exothermally and may ignite. Vapor from formalin solution is flammable and an explosion hazard when exposed to flame or heat. Skin and eye irritant."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde ( for-MAL-di-hide, US also fər-) (systematic name methanal) is a pungent colorless gas mainly used in the production of industrial resins, such as for particle board, coatings, plastics, pulp, paper, synthetic fibers, and textiles. A ~5% solution in water of formaldehyde is used as a disinfectant and fumigant in industrial, agricultural, and healthcare settings, and a ~37% solution is used to preserve tissue samples in labs. In 2024, the global production of formaldehyde was estimated at 26 million tons per year, and is a precursor to many other materials and chemical compounds."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde",
+      "origin": "Wikipedia",
+      "text": "It is an organic compound with the chemical formula CH2O and structure H2C=O. The gas spontaneously polymerizes into paraformaldehyde. It is stored as a ~37% aqueous solution known as formalin, which consists mainly of the hydrate CH2(OH)2. It is the simplest of the aldehydes (R−CHO)."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde also occurs naturally. It is derived from the degradation of serine, dimethylglycine, and lipids. Demethylases act by converting N-methyl groups to formaldehyde."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Forms",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Forms",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is more complex than most carbon compounds in that it takes several forms at normal temperatures. These compounds can often be used interchangeably and can be interconverted."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Forms",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Forms",
+      "origin": "Wikipedia",
+      "text": "Molecular formaldehyde. A colorless gas with a characteristic sweetish-pungent irritating odor. It is stable at about 150 °C, but polymerizes when condensed to a liquid."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde (HCHO) enters the atmosphere via primary emission and secondary formation. Primary sources of atmospheric HCHO include direct biogenic emissions from vegetation and biomass burning, and anthropogenic emissions from vehicles, industrial activities, and coal combustion. Most atmospheric HCHO is secondary, produced by radical-driven oxidation of methane (CH4) and non-methane volatile organic compounds (VOCs) rather than direct emissions. Secondary production from CH4 oxidation dominates in remote and marine environments. Oxidation of biogenic and anthropogenic VOCs is the main source of HCHO in continental regions."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Occurrence",
+      "origin": "Wikipedia",
+      "text": "As a short-lived but very reactive carbonyl compound, HCHO is important in the oxidation chemistry of the troposphere. It is a key source of odd-hydrogen radicals (HOx = OH + HO2) that help to sustain the atmosphere's oxidative capacity. It is also an important ozone precursor."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is produced via several enzyme-catalyzed routes. Living beings, including humans, produce formaldehyde as part of their metabolism. Formaldehyde is key to several bodily functions (e.g. epigenetics), but its amount must also be tightly controlled to avoid self-poisoning."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Organic chemistry",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Organic_chemistry",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is a building block in the synthesis of many other compounds of specialized and industrial significance. It exhibits most of the chemical properties of other aldehydes but is more reactive."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Organic chemistry",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Organic_chemistry",
+      "origin": "Wikipedia",
+      "text": "Monomeric CH2O is a gas and is rarely encountered in the laboratory. Aqueous formaldehyde, unlike some other small aldehydes (which need specific conditions to oligomerize through aldol condensation) oligomerizes spontaneously at a common state. The trimer 1,3,5-trioxane, (CH2O)3, is a typical oligomer. Many cyclic oligomers of other sizes have been isolated. Similarly, formaldehyde hydrates to give the geminal diol methanediol, which condenses further to form hydroxy-terminated oligomers HO(CH2O)nH. The polymer is called paraformaldehyde. The higher concentration of formaldehyde—the more equilibrium shifts towards polymerization."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Uses",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is a common precursor to more complex compounds and materials. In approximate order of decreasing consumption, products generated from formaldehyde include urea formaldehyde resin, melamine resin, phenol formaldehyde resin, polyoxymethylene plastics, 1,4-butanediol, and methylene diphenyl diisocyanate. The textile industry uses formaldehyde-based resins as finishers to make fabrics crease-resistant."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Uses",
+      "origin": "Wikipedia",
+      "text": "When condensed with phenol, urea, or melamine, formaldehyde produces, respectively, hard thermoset phenol formaldehyde resin, urea formaldehyde resin, and melamine resin. These polymers are permanent adhesives used in plywood and carpeting. They are also foamed to make insulation, or cast into moulded products. Production of formaldehyde resins accounts for more than half of formaldehyde consumption."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Safety",
+      "origin": "Wikipedia",
+      "text": "In view of its widespread use, toxicity, and volatility, formaldehyde poses a significant danger to human health. In 2011, the US National Toxicology Program described formaldehyde as \"known to be a human carcinogen\"."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Safety",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is regulated in the United States by multiple federal programs. The U.S. Occupational Safety and Health Administration (OSHA) has an 8-hour time-weighted average of 0.75 parts per million (ppm) and a 15-minute short-term exposure limit (STEL) of 2 ppm. The United States Environmental Protection Agency (EPA) regulates formaldehyde emissions from certain composite wood products under TSCA Title VI.The EPA has completed its risk evaluation for formaldehyde under the TSCA's conditions of use in January 2025 and found the chemical to be an unreasonable risk of injury to human health when used under the conditions evaluated, including under conditions of use for workers and consumers."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Contaminant in food",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Contaminant_in_food",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde in food can be present naturally, added as an inadvertent contaminant, or intentionally added as a preservative, disinfectant, or bacteriostatic agent. Cooking and smoking food can also result in formaldehyde being produced in food. Foods that the U.S. National Toxicology Program has reported to have higher levels compared to other foods are fish, seafood, and smoked ham. It also notes that formaldehyde in food generally occurs in a bound form and that formaldehyde is unstable in an aqueous solution."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Contaminant in food",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Contaminant_in_food",
+      "origin": "Wikipedia",
+      "text": "Scandals have broken in both the 2005 Indonesia food scare and 2007 Vietnam food scare regarding the addition of formaldehyde to foods to extend shelf life. In 2011, after a four-year absence, Indonesian authorities found foods with formaldehyde being sold in markets in a number of regions across the country. In August 2011, at least at two Carrefour supermarkets, the Central Jakarta Livestock and Fishery Sub-Department found cendol containing 10 parts per million of formaldehyde. In 2014, the owner of two noodle factories in Bogor, Indonesia, was arrested for using formaldehyde in noodles. Foods known to be contaminated included noodles, salted fish, and tofu."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Regulation",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Regulation",
+      "origin": "Wikipedia",
+      "text": "Formaldehyde is banned from use in certain applications (preservatives for liquid-cooling and processing systems, slimicides, metalworking-fluid preservatives, and antifouling products) under the Biocidal Products Directive. In the EU, the maximum allowed concentration of formaldehyde in finished products is 0.2%, and any product that exceeds 0.05% has to include a warning that the product contains formaldehyde."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Regulation",
+      "url": "https://en.wikipedia.org/wiki/Formaldehyde#Regulation",
+      "origin": "Wikipedia",
+      "text": "In the United States, Congress passed a bill July 7, 2010, regarding the use of formaldehyde in hardwood plywood, particle board, and medium-density fiberboard. The bill limited the allowable amount of formaldehyde emissions from these wood products to 0.09 ppm, and required companies to meet this standard by January 2013."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Uses",
+      "origin": "EPA Hazardous Air Pollutants",
+      "text": "Formaldehyde is used predominantly as a chemical intermediate. It also has minor uses in agriculture, as an analytical reagent, in concrete and plaster additives, cosmetics, disinfectants, fumigants, photography, and wood preservation. One of the most common uses of formaldehyde in the U.S is manufacturing urea-formaldehyde resins, used in particleboard products."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in the production of formaldehyde resins, plywood, particle board, paper, and urea-formaldehyde foam; embalmers and laboratory workers may be exposed to levels above 1 ppm; [LaDou, p. 502-3] The major industrial consumers of formaldehyde resins are molded plastic parts, decorative laminates, photographic film, and plywood paneling. High formaldehyde exposures were documented in carpet installers and parquet tile fitters. Formaldehyde also exists as a polymer (paraformaldehyde) and as a trimer (sym-trioxane or trioxmethylene)."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "See 29CFR1910.1048 (Code of Federal Regulations)"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Molding and Core Making [Category: Foundry] Metal Machining [Category: Heat or Machine] Electroplating [Category: Plate] Semiconductor Manufacturing [Category: Industry] Pulp and Paper Processing [Category: Industry] Painting (Pigments, Binders, and Biocides) [Category: Paint] Working with Glues and Adhesives [Category: Other] Using Disinfectants or Biocides [Category: Clean] Sterilizing Equipment [Category: Clean] Plastic Composites Manufacturing [Category: Industry] Leather Tanning and Processing [Category: Industry] Photographic Processing [Category: Other] Fur Dressing and Dyeing [Category: Industry] Textiles (Printing, Dyeing, or Finishing) [Category: Industry] Dressing Hair [Category:…"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Formaldehyde is ubiquitous in the environment; it is an endogenous chemical that occurs in most life forms, including humans(1). It is formed naturally in the troposphere during the oxidation of hydrocarbons, which react with hydroxyl radicals and ozone to form formaldehyde and other aldehydes, as intermediates in a series of reactions that ultimately lead to the formation of carbon monoxide and carbon dioxide, hydrogen and water(1). Of the hydrocarbons found in the troposphere, methane is the single most important source of formaldehyde(1)."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Toxicity-Summary",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "ATSDR Toxicological Profile for Formaldehyde - Succinctly characterizes the toxicologic and adverse health effects information."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "The CIR Expert Panel concluded that formaldehyde and methylene glycol are safe for use in cosmetics when formulated to ensure use at the minimal effective concentration, but in no case should the formalin concentration exceed 0.2% (w/w), which would be 0.074% (w/w) calculated as formaldehyde or 0.118% (w/w) calculated as methylene glycol. Additionally, formaldehyde and methylene glycol are safe in the present practices of use and concentration in nail hardening products. However, formaldehyde and methylene glycol are unsafe in the present practices of use and concentration in hair smoothing products (a.k.a. hair straightening products)."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/712#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Corrosive, Acute Toxic, Health Hazard. H302: Harmful if swallowed [Warning Acute toxicity, oral] H314: Causes severe skin burns and eye damage [Danger Skin corrosion/irritation] H317: May cause an allergic skin reaction [Warning Sensitization, Skin] H330: Fatal if inhaled [Danger Acute toxicity, inhalation] H341: Suspected of causing genetic defects [Warning Germ cell mutagenicity] H350: May cause cancer [Danger Carcinogenicity]"
+    }
+  ]
+}

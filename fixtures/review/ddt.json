@@ -1,0 +1,149 @@
+{
+  "query": "DDT",
+  "compound": {
+    "cid": 3036,
+    "title": "1-Chloro-4-(2,2,2-trichloro-1-(4-chlorophenyl)ethyl)benzene",
+    "formula": "C14H9Cl5",
+    "molarMass": "354.5",
+    "iupacName": "1-chloro-4-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene",
+    "cas": "50-29-3",
+    "synonyms": [
+      "Clofenotane",
+      "p,p'-DDT",
+      "Chlorophenothane",
+      "Dicophane",
+      "DDT"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Acute Toxic",
+      "Health Hazard",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H301",
+        "text": "Toxic if swallowed",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H351",
+        "text": "Suspected of causing cancer",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H372",
+        "text": "Causes damage to organs through prolonged or repeated exposure",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H400",
+        "text": "Very toxic to aquatic life",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H410",
+        "text": "Very toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "DDT (Dichlorodiphenyltrichloroethane) can cause cancer according to an independent committee of scientific and health experts. It can cause developmental toxicity, female reproductive toxicity and male reproductive toxicity according to The National Institute for Occupational Safety and Health (NIOSH) and The Environmental Protection Agency (EPA)."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Odorless colorless solid. Sinks in water. (USCG, 1999)"
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "DDT is a chlorophenylethane that is 1,1,1-trichloro-2,2-diphenylethane substituted by additional chloro substituents at positions 4 of the phenyl substituents. It is a commonly used organochlorine insecticide. It has a role as an endocrine disruptor, a bridged diphenyl acaricide, a carcinogenic agent and a persistent organic pollutant. It is a chlorophenylethane, an organochlorine insecticide, a benzenoid aromatic compound and a member of monochlorobenzenes. It is functionally related to a 4,4'-dichlorodiphenylmethane and a 1,1,1-trichloro-2,2-diphenylethane."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Clofenotane is a white, odorless and tasteless, very stable, water-insoluble, synthetic, crystalline chlorinated hydrocarbon that is soluble in most organic solvents, fat and oils and tends to accumulate in ecosystems. Clofenotane was once widely used as a pesticide to control insects in agriculture and to control malaria, typhus and body lice, but its use is now limited. Exposure to clofenotane mainly affects the nervous system resulting in tremors, dizziness, nausea, incoordination, convulsions and seizures. This substance is reasonably anticipated to be a human carcinogen based on evidence of carcinogenicity in experimental animals."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Detox is a cancer vaccine adjuvant consisting of a combination of the active monophosphoryl lipid A component of lipopolysaccharide (LPS) isolated from the bacterium Salmonella minnesota combined with a residue of the cell wall of the bacterium Mycobacterium phlei. Detox is a non-specific immunostimulant that may enhance the host immune response to certain cancer vaccines. (NCI04)"
+    },
+    {
+      "id": "6",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Formerly used as an insecticide and pesticide; [HSDB]"
+    },
+    {
+      "id": "7",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "All agricultural uses cancelled in 1972 by EPA; [Sullivan, p. 660]"
+    },
+    {
+      "id": "8",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Farming (Pesticides) [Category: Industry] Leather Tanning and Processing [Category: Industry]"
+    },
+    {
+      "id": "9",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For DDT (USEPA/OPP Pesticide Code: 029201) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "10",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "DDT toxicity occurs via at least four mechanisms, possibly all functioning simultaneously. DDT reduces potassium transport across the membrane. DDT inhibits the inactivation of voltaged-gated sodium channels. The channels activate (open) normally but are inactivated (closed) slowly, thus interfering with the active transport of sodium out of the nerve axon during repolarization and resulting in a state of hyperexcitability. DDT inhibits neuronal adenosine triphosphatases (ATPases), particularly Na+K+-ATPase, and Ca2+-ATPase which play vital roles in neuronal repolarization."
+    },
+    {
+      "id": "11",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic, Health Hazard, Environmental Hazard. H301: Toxic if swallowed [Danger Acute toxicity, oral] H351: Suspected of causing cancer [Warning Carcinogenicity] H372 **: Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure] H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

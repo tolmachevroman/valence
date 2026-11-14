@@ -1,0 +1,309 @@
+{
+  "query": "testosterone",
+  "compound": {
+    "cid": 6013,
+    "title": "Testosterone",
+    "formula": "C19H28O2",
+    "molarMass": "288.4",
+    "iupacName": "(8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",
+    "cas": "58-22-0",
+    "synonyms": [
+      "Virosterone",
+      "Homosterone",
+      "Mertestate",
+      "Testim",
+      "Testosteron"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Irritant",
+      "Health Hazard",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 64.9,
+        "level": "Warning"
+      },
+      {
+        "code": "H350",
+        "text": "May cause cancer",
+        "percent": 34.2,
+        "level": "Danger"
+      },
+      {
+        "code": "H351",
+        "text": "Suspected of causing cancer",
+        "percent": 66.2,
+        "level": "Warning"
+      },
+      {
+        "code": "H360",
+        "text": "May damage fertility or the unborn child",
+        "percent": 76.2,
+        "level": "Danger"
+      },
+      {
+        "code": "H361",
+        "text": "Suspected of damaging fertility or the unborn child",
+        "percent": 19.0,
+        "level": "Warning"
+      },
+      {
+        "code": "H362",
+        "text": "May cause harm to breast-fed children",
+        "percent": 28.1,
+        "level": null
+      },
+      {
+        "code": "H372",
+        "text": "Causes damage to organs through prolonged or repeated exposure",
+        "percent": 15.6,
+        "level": "Danger"
+      },
+      {
+        "code": "H400",
+        "text": "Very toxic to aquatic life",
+        "percent": 64.9,
+        "level": "Warning"
+      },
+      {
+        "code": "H410",
+        "text": "Very toxic to aquatic life with long lasting effects",
+        "percent": 15.2,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Testosterone is an androstanoid having 17beta-hydroxy and 3-oxo groups, together with unsaturation at C-4C-5.. It has a role as an androgen, a mouse metabolite, a human metabolite and a Daphnia magna metabolite. It is a C19-steroid, a 17beta-hydroxy steroid, a 3-oxo-Delta(4) steroid and an androstanoid."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Record-Description",
+      "origin": "Drug Enforcement Administration (DEA)",
+      "text": "testosterone is a DEA Schedule III controlled substance. Substances in the DEA Schedule III have a potential for abuse less than substances in Schedules I or II and abuse may lead to moderate or low physical dependence or high psychological dependence. It is a Anabolic steroids substance."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Testosterone is a steroid sex hormone indicated to treat primary hypogonadism and hypogonadotropic hypogonadism. Testosterone antagonizes the androgen receptor to induce gene expression that causes the growth and development of masculine sex organs and secondary sexual characteristics. Testosterone was isolated from samples and also synthesized in 1935."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Testosterone is an Androgen. The mechanism of action of testosterone is as an Androgen Receptor Agonist."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "testosterone has been reported in Locusta migratoria, Botrytis cinerea, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Testosterone",
+      "origin": "Wikipedia",
+      "text": "Testosterone is the primary male sex hormone and androgen in males. In humans, testosterone drives the development of male reproductive tissues such as testicles and prostate, as well as promoting secondary sexual characteristics such as increased muscle and bone mass, and the growth of body hair. It is associated with increased aggression, sex drive, dominance, courtship display, and a wide range of behavioral characteristics. In addition, testosterone in both sexes is involved in health and well-being, where it has a significant effect on overall mood, cognition, social and sexual behavior, metabolism and energy output, the cardiovascular system, and in the prevention of osteoporosis."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Testosterone",
+      "origin": "Wikipedia",
+      "text": "Excessive levels of testosterone in men may be associated with hyperandrogenism, higher risk of heart failure, increased mortality in men with prostate cancer, and male pattern baldness."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Testosterone",
+      "origin": "Wikipedia",
+      "text": "Testosterone is a steroid hormone from the androstane class containing a ketone and a hydroxyl group at positions three and seventeen respectively. It is biosynthesized in several steps from cholesterol and is converted in the liver to inactive metabolites. It exerts its action through binding to and activation of the androgen receptor. In humans and most other vertebrates, testosterone is secreted primarily by the testicles of males and, to a lesser extent, the ovaries of females. On average, in adult males, levels of testosterone are about seven to eight times as great as in adult females."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Biological effects",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biological_effects",
+      "origin": "Wikipedia",
+      "text": "In general, androgens such as testosterone promote protein synthesis and thus growth of tissues with androgen receptors. Testosterone can be described as having anabolic and androgenic (virilising) effects, though these categorical descriptions are somewhat arbitrary, as there is a great deal of mutual overlap between them. The relative potency of these effects can depend on various factors and is a topic of ongoing research. Testosterone can either directly exert effects on target tissues or be metabolized by 5α-reductase into dihydrotestosterone (DHT) or aromatized to estradiol (E2) the major hormone in producing the female body type."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Biological effects",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biological_effects",
+      "origin": "Wikipedia",
+      "text": "Anabolic effects include growth of muscle mass and strength, increased bone density and strength, and stimulation of linear growth and bone maturation."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Biological activity",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biological_activity",
+      "origin": "Wikipedia",
+      "text": "Lipophilic hormones (soluble in lipids but not in water), such as steroid hormones, including testosterone, are transported in water-based blood plasma through specific and non-specific proteins. Specific proteins include sex hormone-binding globulin (SHBG), which binds testosterone, dihydrotestosterone, estradiol, and other sex steroids. Non-specific binding proteins include albumin. The part of the total hormone concentration that is not bound to its respective specific carrier protein is the free part. As a result, testosterone which is not bound to SHBG is called free testosterone."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Biological activity",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biological_activity",
+      "origin": "Wikipedia",
+      "text": "The effects of testosterone in humans and other vertebrates occur by way of multiple mechanisms: by activation of the androgen receptor (directly or as dihydrotestosterone), and by conversion to estradiol and activation of certain estrogen receptors. Androgens such as testosterone have also been found to bind to and activate membrane androgen receptors."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Like other steroid hormones, testosterone is derived from cholesterol (Figure 1). The first step in the biosynthesis involves the oxidative cleavage of the side-chain of cholesterol by cholesterol side-chain cleavage enzyme (P450scc, CYP11A1), a mitochondrial cytochrome P450 oxidase with the loss of six carbon atoms to give pregnenolone. In the next step, two additional carbon atoms are removed by the CYP17A1 (17α-hydroxylase/17,20-lyase) enzyme in the endoplasmic reticulum to yield a variety of C19 steroids. In addition, the 3β-hydroxyl group is oxidized by 3β-hydroxysteroid dehydrogenase to produce androstenedione."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "The largest amounts of testosterone (>95%) are produced by the testes in men, while the adrenal glands account for most of the remainder. Testosterone is also synthesized in far smaller total quantities in women by the adrenal glands, thecal cells of the ovaries, and, during pregnancy, by the placenta. In the testes, testosterone is produced by the Leydig cells. The male generative glands also contain Sertoli cells, which require testosterone for spermatogenesis. Like most hormones, testosterone is supplied to target tissues in the blood where much of it is transported bound to a specific plasma protein, sex hormone-binding globulin (SHBG)."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Measurement",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Measurement",
+      "origin": "Wikipedia",
+      "text": "In measurements of testosterone in blood samples, different assay techniques can yield different results. Immunofluorescence assays exhibit considerable variability in quantifying testosterone concentrations in blood samples due to the cross-reaction of structurally similar steroids, leading to overestimating the results. In contrast, the liquid chromatography/tandem mass spectrometry method is more desirable: it offers superior specificity and precision, making it a more suitable choice for this application."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Measurement",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Measurement",
+      "origin": "Wikipedia",
+      "text": "Testosterone's bioavailable concentration is commonly determined using the Vermeulen calculation or more precisely using the modified Vermeulen method, which considers the dimeric form of sex hormone-binding globulin."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Distribution",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Distribution",
+      "origin": "Wikipedia",
+      "text": "Testosterone has been detected at variably higher and lower levels among men of various nations and from various backgrounds, explanations for the causes of this have been relatively diverse."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "History and production",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#History_and_production",
+      "origin": "Wikipedia",
+      "text": "A testicular action was linked to circulating blood fractions – now understood to be a family of androgenic hormones – in the early work on castration and testicular transplantation in fowl by Arnold Adolph Berthold (1803–1861). Research on the action of testosterone received a brief boost in 1889, when the Harvard professor Charles-Édouard Brown-Séquard (1817–1894), then in Paris, self-injected subcutaneously a \"rejuvenating elixir\" consisting of an extract of dog and guinea pig testicle. He reported in The Lancet that his vigor and feeling of well-being were markedly restored but the effects were transient, and Brown-Séquard's hopes for the compound were dashed."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "History and production",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#History_and_production",
+      "origin": "Wikipedia",
+      "text": "In 1927, the University of Chicago's Professor of Physiologic Chemistry, Fred C. Koch, established easy access to a large source of bovine testicles – the Chicago stockyards – and recruited students willing to endure the tedious work of extracting their isolates."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Other species",
+      "url": "https://en.wikipedia.org/wiki/Testosterone#Other_species",
+      "origin": "Wikipedia",
+      "text": "Testosterone is observed in most vertebrates. Testosterone and the classical nuclear androgen receptor first appeared in gnathostomes (jawed vertebrates). Agnathans (jawless vertebrates) such as lampreys do not produce testosterone but instead use androstenedione as a male sex hormone. Fish make a slightly different form called 11-ketotestosterone. Its counterpart in insects is ecdysone. The presence of these ubiquitous steroids in a wide range of animals suggest that sex hormones have an ancient evolutionary history."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Anabolic steroids are listed as Schedule III controlled substances (DEA Code #: 400). /Anabolic steroid means any drug or hormonal substance, chemically and pharmacologically related to testosterone (other than estrogens, progestins, corticosteroids, and dehydroepiandrosterone)/"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Schedule III Controlled Substance: (A) The drug or other substance has a potential for abuse less than the drugs or other substances in schedules I and II. (B) The drug or other substance has a currently accepted medical use in treatment in the United States. (C) Abuse of the drug or other substance may lead to moderate or low physical dependence or high psychological dependence."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For more Uses (Complete) data for Testosterone (6 total), please visit the HSDB record page."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg) in Switzerland (2009): >50 Use (kg; approx.) in Germany (2009): >500 Use (kg) in USA (2002): 1020 Consumption (g per capita) in Switzerland (2009): 0.0064 Consumption (g per capita; approx.) in Germany (2009): 0.0061 Consumption (g per capita) in the USA (2002): 0.0036 Excretion rate: 0.1 Calculated removal (%): 37.8"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Testosterone is a principal hormone of the testes produced in interstitial cells and required for male sexual differentiation(1)."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Testosterone is an anabolic steroid for systemic use. It consists of odorless or almost odorless crystals or crystalline powder. Naturally-occuring anabolic steroids are synthesized in the testis, ovary and adrenal gland. Anabolic steroids are listed as Schedule III controlled substances. HUMAN EXPOSURE AND TOXICITY: The main risks associated with testosterone are those of excessive androgens: menstrual irregularities and virilization in women and impotence, premature cardiovascular disease and prostatic hypertrophy in men. Both men and women can suffer liver damage with oral anabolic steroids containing a substituted 17-alpha-carbon."
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Testosterone is considered an anabolic steroid. It plays a key role in the development of male reproductive tissues such as the testis and prostate as well as promoting secondary sexual characteristics such as increased muscle, bone mass, and the growth of body hair. High levels of testosterone can lead to masculinization in females or premature puberty in young boys. Chronically high levels in adults increase the incidence of heart attack, stroke and blood clots by lowering the level of HDL (good cholesterol) and increasing the level of LDL (bad cholesterol). Chronic high use of anabolic steroids (such as testosterone) appears to lead to cardiac myopathy and weakening the left ventricle."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6013#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Irritant, Health Hazard, Environmental Hazard. H302 (64.9%): Harmful if swallowed [Warning Acute toxicity, oral] H350 (34.2%): May cause cancer [Danger Carcinogenicity] H351 (66.2%): Suspected of causing cancer [Warning Carcinogenicity] H360 (76.2%): May damage fertility or the unborn child [Danger Reproductive toxicity] H361 (19%): Suspected of damaging fertility or the unborn child [Warning Reproductive toxicity] H362 (28.1%): May cause harm to breast-fed children [Reproductive toxicity, effects on or via lactation] H372 (15.6%): Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure] H400 (64.9%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410 (15.2%): Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "query": "capsaicin",
+  "compound": {
+    "cid": 1548943,
+    "title": "Capsaicin",
+    "formula": "C18H27NO3",
+    "molarMass": "305.4",
+    "iupacName": "(E)-N-[(4-hydroxy-3-methoxyphenyl)methyl]-8-methylnon-6-enamide",
+    "cas": "404-86-4",
+    "synonyms": [
+      "Zostrix",
+      "CAPSAICINE",
+      "trans-Capsaicin",
+      "Qutenza",
+      "Styptysat"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Corrosive",
+      "Acute Toxic",
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H301",
+        "text": "Toxic if swallowed",
+        "percent": 21.9,
+        "level": "Danger"
+      },
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 78.0,
+        "level": "Warning"
+      },
+      {
+        "code": "H315",
+        "text": "Causes skin irritation",
+        "percent": 99.7,
+        "level": "Warning"
+      },
+      {
+        "code": "H318",
+        "text": "Causes serious eye damage",
+        "percent": 97.2,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Capsaicin is a capsaicinoid. It has a role as a TRPV1 agonist, a non-narcotic analgesic and a voltage-gated sodium channel blocker."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Record-Description",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "On the basis of the available data, the CIR Expert Panel concludes that Capsaicin and Capsicum Annuum Extract, Capsicum Annuum Fruit Extract, Capsicum Annuum Resin, Capsicum Annuum Fruit Powder, Capsicum Frutescens Fruit, Capsicum Frutescens Fruit Extract and Capsicum Frutescens Resin are safe as cosmetics in practices of use and concentration as described in the safety assessment when formulated not to be irritating."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Capsaicin is most often used as a topical analgesic and exists in many formulations of cream, liquid, and patch preparations of various strengths; however, it may also be found in some dietary supplements. Capsaicin is a naturally-occurring botanical irritant in chili peppers, synthetically derived for pharmaceutical formulations. The most recent capsaicin FDA approval was Qutenza, an 8% capsaicin patch dermal-delivery system, indicated for neuropathic pain associated with post-herpetic neuralgia."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "capsaicin has been reported in Capsicum pubescens, Capsicum annuum, and Capsicum with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "N-[(4-Hydroxy-3-methoxyphenyl)methyl]-8-methyl-6-nonenamide has been reported in Capsicum pubescens, Capsicum annuum, and Capsicum with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin",
+      "origin": "Wikipedia",
+      "text": "Capsaicin (8-methyl-N-vanillyl-6-nonenamide) is a toxin that is the main active component of chili peppers and gives them their distinct pungent, \"spicy\" or \"hot\" taste. It is a potent irritant for mammals for which it produces a sensation of burning in any tissue with which it comes into contact. Capsaicin and several related amides (capsaicinoids) are produced as secondary metabolites by chili peppers, likely as deterrents against eating by mammals and against the growth of fungi. Pure capsaicin is a hydrophobic, highly pungent (i.e., spicy) crystalline solid."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#History",
+      "origin": "Wikipedia",
+      "text": "The compound was first extracted in impure form in 1816 by Christian Friedrich Bucholz (1770–1818)."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#History",
+      "origin": "Wikipedia",
+      "text": "In 1873 German pharmacologist Rudolf Buchheim (1820–1879) and in 1878 the Hungarian doctor Endre Hőgyes stated that \"capsicol\" (partially purified capsaicin) caused the burning feeling when in contact with mucous membranes and increased secretion of gastric acid."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Natural function",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Natural_function",
+      "origin": "Wikipedia",
+      "text": "Capsaicin is present in large quantities in the placental tissue (which holds the seeds), the internal membranes and, to a lesser extent, the other fleshy parts of the fruits of plants in the genus Capsicum. The seeds themselves do not produce any capsaicin, although the highest concentration of capsaicin can be found in the white pith of the inner wall, where the seeds are attached."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Natural function",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Natural_function",
+      "origin": "Wikipedia",
+      "text": "The seeds of Capsicum plants are dispersed predominantly by birds. In birds, the TRPV1 channel does not respond to capsaicin or related chemicals, but mammalian TRPV1 is very sensitive to it. This is advantageous to the plant, as chili pepper seeds consumed by birds pass through the digestive tract and can germinate later, whereas mammals have molar teeth that destroy such seeds and prevent them from germinating. Thus, natural selection may have led to increasing capsaicin production because it makes the plant less likely to be eaten by animals that do not help it disperse. There is also evidence that capsaicin may have evolved as an anti-fungal agent."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Uses",
+      "origin": "Wikipedia",
+      "text": "Because of the burning sensation caused by capsaicin when it comes in contact with mucous membranes, it is commonly used in food products to provide added spiciness or \"heat\" (piquancy), usually in the form of spices such as chili powder and paprika. In high concentrations, capsaicin will also cause a burning effect on other sensitive areas, such as skin or eyes. The degree of heat found within a food is often measured on the Scoville scale."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Uses",
+      "origin": "Wikipedia",
+      "text": "There has long been a demand for capsaicin-spiced products like chili pepper, and hot sauces such as Tabasco sauce and Mexican salsa. It is common for people to experience pleasurable and even euphoric effects from ingesting capsaicin. Folklore among self-described \"chiliheads\" attribute this to pain-stimulated release of endorphins, a different mechanism from the local receptor overload that makes capsaicin effective as a topical analgesic. Because capsaicin sublimes at 115 °C, some precaution is needed when cooking dry or with fats to preserve capsaicin in pungent food."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Irritant effects",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Irritant_effects",
+      "origin": "Wikipedia",
+      "text": "Capsaicin is a strong irritant requiring proper protective goggles, respirators, and proper hazardous material-handling procedures. Capsaicin takes effect upon skin contact (irritant, sensitizer), eye contact (irritant), ingestion, and inhalation (lung irritant, lung sensitizer)."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Irritant effects",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Irritant_effects",
+      "origin": "Wikipedia",
+      "text": "Painful exposures to capsaicin-containing peppers are among the most common plant-related exposures presented to poison centers. They cause burning or stinging pain to the skin and, if ingested in large amounts by adults or small amounts by children, can produce nausea, vomiting, abdominal pain, and burning diarrhea. Eye exposure produces intense tearing, pain, conjunctivitis, and blepharospasm."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "The burning and painful sensations associated with capsaicin result from \"defunctionalization\" of nociceptor nerve fibers by causing a topical hypersensitivity reaction in the skin. As a member of the vanilloid family, capsaicin binds to a receptor on nociceptor fibers called the vanilloid receptor subtype 1 (TRPV1). TRPV1, which can also be stimulated with heat, protons, and physical abrasion, permits cations to pass through the cell membrane when activated. The resulting depolarization of the neuron stimulates it to send impulses to the brain."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "Clarifying the mechanisms of capsaicin effects on skin nociceptors was part of awarding the 2021 Nobel Prize in Physiology or Medicine, as it led to the discovery of skin sensors for temperature and touch, and identification of the single gene causing sensitivity to capsaicin."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Capsaicinoids",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Capsaicinoids",
+      "origin": "Wikipedia",
+      "text": "The most commonly occurring capsaicinoids are capsaicin (69%), dihydrocapsaicin (22%), nordihydrocapsaicin (7%), homocapsaicin (1%), and homodihydrocapsaicin (1%)."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Capsaicinoids",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Capsaicinoids",
+      "origin": "Wikipedia",
+      "text": "Capsaicin and dihydrocapsaicin (both 16.0 million SHU) are the most pungent capsaicinoids. Nordihydrocapsaicin (9.1 million SHU), homocapsaicin and homodihydrocapsaicin (both 8.6 million SHU) are about half as hot."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Biosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Biosynthesis",
+      "origin": "Wikipedia",
+      "text": "The general biosynthetic pathway of capsaicin and other capsaicinoids was elucidated in the 1960s by Bennett, Kirby, Leete, and Louden. Radiolabeling studies identified phenylalanine and valine as the precursors to capsaicin. Enzymes of the phenylpropanoid pathway, phenylalanine ammonia lyase (PAL), cinnamate 4-hydroxylase (C4H), caffeic acid O-methyltransferase (COMT) and their function in capsaicinoid biosynthesis were identified later by Fujiwake et al., and Sukrasno and Yeoman. Suzuki et al. are responsible for identifying leucine as another precursor to the branched-chain fatty acid pathway."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Biosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Biosynthesis",
+      "origin": "Wikipedia",
+      "text": "Plants exclusively of the genus Capsicum produce capsaicinoids, which are alkaloids. Capsaicin is believed to be synthesized in the interlocular septum of chili peppers and depends on the gene AT3, which resides at the pun1 locus, and which encodes a putative acyltransferase."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Evolution",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Evolution",
+      "origin": "Wikipedia",
+      "text": "The Capsicum genus split from Solanaceae 19.6 million years ago, 5.4 million years after the appearance of Solanaceae, and is native only to the Americas. Chilies only started to quickly evolve in the past 2 million years into markedly different species. This evolution can be partially attributed to a key compound found in peppers, 8-methyl-N-vanillyl-6-nonenamide, otherwise known as capsaicin. Capsaicin evolved similarly across species of chilies that produce capsaicin. Its evolution over the course of centuries is due to genetic drift and natural selection, across the genus Capsicum."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Evolution",
+      "url": "https://en.wikipedia.org/wiki/Capsaicin#Evolution",
+      "origin": "Wikipedia",
+      "text": "Capsaicin acts as an antifungal agent in four primary ways. First, capsaicin inhibits the metabolic rate of the cells that make up the fungal biofilm. This inhibits the area and growth rate of the fungus, since the biofilm creates an area where a fungus can grow and adhere to the chili in which capsaicin is present. Capsaicin also inhibits fungal hyphae formation, which impacts the amount of nutrients that the rest of the fungal body can receive. Thirdly, capsaicin disrupts the structure of fungal cells and the fungal cell membranes. This has consequential negative impacts on the integrity of fungal cells and their ability to survive and proliferate."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Pungent component in capsicum species plants; Used in neurobiological research and as a topical analgesic; [Merck Index] Used as flavoring agent or adjuvant; [FDA] Used as a repellent for birds, voles, deer, rabbits, squirrels, insects, and attacking dogs indoors and outdoors for the protection of fruit and vegetable crops, ornamentals, and lawns; [Reference #1]"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Farming (Pesticides) [Category: Industry]"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For capsaicin (USEPA/OPP Pesticide Code: 070701) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Food flavoring; in pepper spray self-defense devices; as a tool in neurobiological research."
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Capsaicin is the pungent principle found in fruit of hot, red peppers such as Capsicum annuum and C. frutescens (Solanaceae)(1)."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe for use in cosmetics, with qualifications"
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1548943#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Corrosive, Acute Toxic, Irritant. H301 (21.9%): Toxic if swallowed [Danger Acute toxicity, oral] H302 (78%): Harmful if swallowed [Warning Acute toxicity, oral] H315 (99.7%): Causes skin irritation [Warning Skin corrosion/irritation] H318 (97.2%): Causes serious eye damage [Danger Serious eye damage/eye irritation]"
+    }
+  ]
+}

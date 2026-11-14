@@ -3,6 +3,10 @@
 //!
 //! `valence cards <name | CAS | CID>` (feature `model`): write its cards with
 //! the local model, as the app does, with timings.
+//!
+//! `valence review fetch | run`: the 50-molecule review set (see `review`).
+
+mod review;
 
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
@@ -17,6 +21,8 @@ use valence_core::pubchem::Structure;
 
 const USAGE: &str = "usage: valence snippets <name | CAS number | CID> [--cache <file>]
        valence cards <name | CAS number | CID> [--cache <file>] [--model <file.gguf>]
+       valence review fetch
+       valence review run [--model <file.gguf>]
 
 The cache defaults to the app's: ~/Library/Application Support/io.github.tolmachevroman.valence/cache.sqlite
 The model defaults to $VALENCE_MODEL, then the app's models folder.";
@@ -48,14 +54,19 @@ struct Args {
 
 fn parse_args() -> Option<Args> {
     let mut args = std::env::args().skip(1);
-    let command = args.next().filter(|c| c == "snippets" || c == "cards")?;
-    let query = args.next()?;
+    let command = args
+        .next()
+        .filter(|c| ["snippets", "cards", "review"].contains(&c.as_str()))?;
+    // For `review`, the subcommand.
+    let query = args
+        .next()
+        .filter(|q| command != "review" || q == "fetch" || q == "run")?;
     let (mut cache, mut model) = (None, None);
     while let Some(flag) = args.next() {
         let value = PathBuf::from(args.next()?);
         match flag.as_str() {
             "--cache" => cache = Some(value),
-            "--model" if command == "cards" => model = Some(value),
+            "--model" if command != "snippets" => model = Some(value),
             _ => return None,
         }
     }
@@ -81,6 +92,8 @@ async fn main() -> ExitCode {
     };
     let result = match args.command.as_str() {
         "snippets" => snippets(&args.query, cache_path).await,
+        "review" if args.query == "fetch" => review::fetch_all().await,
+        "review" => review_run(&args).await,
         _ => cards(&args, cache_path).await,
     };
     match result {
@@ -197,18 +210,34 @@ async fn cards(_: &Args, _: PathBuf) -> Result<()> {
     Err("built without the model; run with --features model".into())
 }
 
+#[cfg(not(feature = "model"))]
+async fn review_run(_: &Args) -> Result<()> {
+    Err("built without the model; run with --features model".into())
+}
+
+#[cfg(feature = "model")]
+async fn review_run(args: &Args) -> Result<()> {
+    review::run(&model_path(args)?).await
+}
+
+/// `--model`, else `VALENCE_MODEL`, else the app's models folder.
+#[cfg(feature = "model")]
+fn model_path(args: &Args) -> Result<PathBuf> {
+    use valence_core::model::MODEL_FILE;
+    args.model
+        .clone()
+        .or_else(|| std::env::var_os("VALENCE_MODEL").map(PathBuf::from))
+        .or_else(|| Some(app_dir()?.join("models").join(MODEL_FILE)))
+        .ok_or_else(|| "HOME is not set; pass --model <file>".into())
+}
+
 #[cfg(feature = "model")]
 async fn cards(args: &Args, cache_path: PathBuf) -> Result<()> {
     use valence_core::card::CardKind;
     use valence_core::cards::{self, Event, Outcome};
-    use valence_core::model::{LocalModel, MODEL_FILE};
+    use valence_core::model::LocalModel;
 
-    let model_path = args
-        .model
-        .clone()
-        .or_else(|| std::env::var_os("VALENCE_MODEL").map(PathBuf::from))
-        .or_else(|| Some(app_dir()?.join("models").join(MODEL_FILE)))
-        .ok_or("HOME is not set; pass --model <file>")?;
+    let model_path = model_path(args)?;
     let start = Instant::now();
     // One after the other: run concurrently in one task, the model load
     // starved the fetch and both hung.

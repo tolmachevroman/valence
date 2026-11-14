@@ -1,0 +1,324 @@
+{
+  "query": "quinine",
+  "compound": {
+    "cid": 3034034,
+    "title": "Quinine",
+    "formula": "C20H24N2O2",
+    "molarMass": "324.4",
+    "iupacName": "(R)-[(2S,4S,5R)-5-ethenyl-1-azabicyclo[2.2.2]octan-2-yl]-(6-methoxyquinolin-4-yl)methanol",
+    "cas": "130-95-0",
+    "synonyms": [
+      "Chinin",
+      "Chinine",
+      "(-)-Quinine",
+      "(R)-(-)-quinine",
+      "chininum"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Irritant",
+      "Health Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 22.9,
+        "level": "Warning"
+      },
+      {
+        "code": "H315",
+        "text": "Causes skin irritation",
+        "percent": 28.4,
+        "level": "Warning"
+      },
+      {
+        "code": "H317",
+        "text": "May cause an allergic skin reaction",
+        "percent": 99.5,
+        "level": "Warning"
+      },
+      {
+        "code": "H319",
+        "text": "Causes serious eye irritation",
+        "percent": 28.4,
+        "level": "Warning"
+      },
+      {
+        "code": "H334",
+        "text": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+        "percent": 83.1,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Quinine is a cinchona alkaloid that is cinchonidine in which the hydrogen at the 6-position of the quinoline ring is substituted by methoxy. It has a role as a non-narcotic analgesic, an antimalarial and a muscle relaxant. It is a conjugate base of a quinine(1+). It derives from a hydride of an (8S)-cinchonan."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "An alkaloid derived from the bark of the cinchona tree. It is used as an antimalarial drug, and is the active ingredient in extracts of the cinchona that have been used for that purpose since before 1633. Quinine is also a mild antipyretic and analgesic and has been used in common cold preparations for that purpose. It was used commonly and as a bitter and flavoring agent, and is still useful for the treatment of babesiosis. Quinine is also useful in some muscular disorders, especially nocturnal leg cramps and myotonia congenita, because of its direct effects on muscle membrane and sodium channels. The mechanisms of its antimalarial effects are not well understood."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Record-Description",
+      "origin": "LiverTox",
+      "text": "Quinine is a natural cinchona alkaloid that has been used for centuries in the prevention and therapy of malaria. Quinine is also used for idiopathic muscle cramps. Quinine therapy has been associated with rare instances of hypersensitivity reactions which can be accompanied by hepatitis and mild jaundice."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "quinine has been reported in Cinchona calisaya, Ciliosemina pedunculata, and other organisms with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Quinine is a quinidine alkaloid isolated from the bark of the cinchona tree. Quinine has many mechanisms of action, including reduction of oxygen intake and carbohydrate metabolism; disruption of DNA replication and transcription via DNA intercalation; and reduction of the excitability of muscle fibers via alteration of calcium distribution. This agent also inhibits the drug efflux pump P-glycoprotein which is overexpressed in multi-drug resistant tumors and may improve the efficacy of some antineoplastic agents. (NCI04)"
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Quinine",
+      "origin": "Wikipedia",
+      "text": "Quinine is an alkaloid used medically to treat malaria and babesiosis. This includes the treatment of malaria due to Plasmodium falciparum that is resistant to chloroquine when artesunate is not available. While sometimes used for nocturnal leg cramps, quinine is not recommended for this purpose due to the risk of serious side effects. It can be taken by mouth or intravenously. Malaria resistance to quinine occurs in certain areas of the world. Quinine is also used as an ingredient in tonic water and other beverages to impart a bitter taste."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Quinine",
+      "origin": "Wikipedia",
+      "text": "Common side effects include headache, ringing in the ears, vision issues, and sweating. More severe side effects include deafness, low blood platelets, and an irregular heartbeat. Use can make one more prone to sunburn. While it is unclear if use during pregnancy carries potential for fetal harm, treating malaria during pregnancy with quinine when appropriate is still recommended. Quinine possesses a C9H7N quinoline functional group (pyridine fused to benzene)."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Quinine",
+      "origin": "Wikipedia",
+      "text": "Quinine was first isolated in 1820 from the bark of a cinchona tree, which is native to Peru, and its molecular formula was determined by Adolph Strecker in 1854. The class of chemical compounds to which it belongs is thus called the cinchona alkaloids. Bark extracts had been used to treat malaria since at least 1632 and it was introduced to Spain as early as 1636 by Jesuit missionaries returning from the New World. It is on the World Health Organization's List of Essential Medicines. Treatment of malaria with quinine marks the first known use of a chemical compound to treat an infectious disease."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Quinine#History",
+      "origin": "Wikipedia",
+      "text": "Spanish Jesuit missionaries were the first to bring cinchona to Europe. The Spanish had observed the Quechua's use of cinchona and were aware of its bark's medicinal properties by the 1570s: Nicolás Monardes (1571) and Juan Fragoso (1572) both described a tree, which was subsequently identified as the cinchona tree, whose bark was used to produce a drink to treat diarrhea. Quinine has been used in unextracted form by Europeans since at least the early 17th century."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Quinine#History",
+      "origin": "Wikipedia",
+      "text": "The Jesuit Agostino Salumbrino (1564–1642), an apothecary by training who lived in Lima (now in present-day Peru), observed the Quechua using the bark of the cinchona tree to treat such shivering. While its effect in treating malaria (and malaria-induced shivering) was unrelated to its effect in controlling shivering from rigors, it was a successful medicine against malaria. At the first opportunity, Salumbrino sent a small quantity to Rome for testing as a malaria treatment. In the years that followed, cinchona bark, known as Jesuit's bark or Peruvian bark, became one of the most valuable commodities shipped from Peru to Europe."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Quinine#History",
+      "origin": "Wikipedia",
+      "text": "The form of quinine most effective in treating malaria was found by Charles Marie de La Condamine in 1737. In 1820, French researchers Pierre Joseph Pelletier and Joseph Bienaimé Caventou first isolated quinine from the bark of a tree in the genus Cinchona – probably Cinchona pubescens – and subsequently named the substance. The name was derived from the original Quechua (Inca) word for the cinchona tree bark, quina or quina-quina, which means \"bark of bark\" or \"holy bark\". Prior to 1820, the bark was dried, ground to a fine powder, and mixed into a liquid (commonly wine) in order to be drunk. Large-scale use of quinine as a malaria prophylaxis started around 1850."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Quinine#History",
+      "origin": "Wikipedia",
+      "text": "Bromo Quinine were brand name cold tablets containing quinine, manufactured by Grove Laboratories. They were first marketed in 1889 and available until at least the 1960s."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Uses",
+      "origin": "Wikipedia",
+      "text": "As of 2006, quinine is no longer recommended by the World Health Organization (WHO) as a first-line treatment for malaria, because there are other substances that are equally effective with fewer side effects. They recommend that it be used only when artemisinins are not available. Quinine is also used to treat lupus and arthritis."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Uses",
+      "origin": "Wikipedia",
+      "text": "Quinine was frequently prescribed as an off-label treatment for leg cramps at night, but this has become less common since 2010 due to a warning from the US Food and Drug Administration (FDA) that such practice is associated with life-threatening side effects. Quinine can also act as a competitive inhibitor of monoamine oxidase (MAO), an enzyme that removes neurotransmitters from the brain. As an MAO inhibitor, it has potential to serve as a treatment for individuals with psychological disorders, similar to antidepressants that inhibit MAO."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Because of the narrow difference between its therapeutic and toxic effects, quinine is a common cause of drug-induced disorders, including thrombocytopenia and thrombotic microangiopathy. Even from minor levels occurring in common beverages, quinine can have severe adverse effects involving multiple organ systems, among which are immune system effects and fever, hypotension, hemolytic anemia, acute kidney injury, liver toxicity, and blindness. In people with atrial fibrillation, conduction defects, or heart block, quinine can cause heart arrhythmias, and should be avoided."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Quinine can cause hemolysis in G6PD deficiency (an inherited deficiency), but this risk is small and the physician should not hesitate to use quinine in people with G6PD deficiency when there is no alternative."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Quinine can cause unpredictable serious and life-threatening blood and cardiovascular reactions including low platelet count and hemolytic–uremic syndrome/thrombotic thrombocytopenic purpura (HUS/TTP), long QT syndrome and other serious cardiac arrhythmias including torsades de pointes, blackwater fever, disseminated intravascular coagulation, leukopenia, and neutropenia. Some people who have developed TTP due to quinine have gone on to develop kidney failure."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "The most common adverse effects involve a group of symptoms called cinchonism, which can include headache, vasodilation and sweating, nausea, tinnitus, hearing impairment, vertigo or dizziness, blurred vision, and disturbance in color perception. More severe cinchonism includes vomiting, diarrhea, abdominal pain, deafness, blindness, and disturbances in heart rhythms. Cinchonism is much less common when quinine is given by mouth, but oral quinine is not well tolerated (quinine is exceedingly bitter and many people will vomit after ingesting quinine tablets)."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Mechanism of action",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Mechanism_of_action",
+      "origin": "Wikipedia",
+      "text": "Quinine is used for its toxicity to the malarial pathogen, Plasmodium falciparum, by interfering with its ability to dissolve and metabolize hemoglobin. As with other quinoline antimalarial drugs, the precise mechanism of action of quinine has not been fully resolved, although in vitro studies indicate it inhibits nucleic acid and protein synthesis, and inhibits glycolysis in P. falciparum. The most widely accepted hypothesis of its action is based on the well-studied and closely related quinoline drug, chloroquine. This model involves the inhibition of hemozoin biocrystallization in the heme detoxification pathway, which facilitates the aggregation of cytotoxic heme."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "The UV absorption of quinine peaks around 350 nm (in UVA). Fluorescent emission peaks at around 460 nm (bright blue/cyan hue). Quinine is highly fluorescent (quantum yield ~0.58) in 0.1 M sulfuric acid solution."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Cinchona trees remain the only economically practical source of quinine. However, under wartime pressure during World War II, research towards its synthetic production was undertaken. A formal chemical synthesis was accomplished in 1944 by American chemists R.B. Woodward and W.E. Doering. Since then, several more efficient quinine total syntheses have been achieved, but none of them can compete in economic terms with isolation of the alkaloid from natural sources. The first synthetic organic dye, mauveine, was discovered by William Henry Perkin in 1856 while he was attempting to synthesize quinine."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Society and culture",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Society_and_culture",
+      "origin": "Wikipedia",
+      "text": "The bark of Remijia contains 0.5–2% of quinine. The bark is cheaper than bark of Cinchona. As it has an intense taste, it is used for making tonic water."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Society and culture",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Society_and_culture",
+      "origin": "Wikipedia",
+      "text": "From 1969 to 1992, the US Food and Drug Administration (FDA) received 157 reports of health problems related to quinine use, including 23 which had resulted in death. In 1994, the FDA banned the marketing of over-the-counter quinine as a treatment for nocturnal leg cramps. Pfizer Pharmaceuticals had been selling the brand name Legatrin for this purpose. It is also sold as a softgel (by SmithKlineBeecham) as Q-vel. Doctors may still prescribe quinine, but the FDA has ordered firms to stop marketing unapproved drug products containing quinine. The FDA is also cautioning consumers about off-label use of quinine to treat leg cramps."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Other animals",
+      "url": "https://en.wikipedia.org/wiki/Quinine#Other_animals",
+      "origin": "Wikipedia",
+      "text": "Quinine is used as a treatment for Cryptocaryon irritans (commonly referred to as white spot, crypto or marine ich) infection of marine aquarium fish."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Medicine (antimalarial) as the alkaloid or as numerous salts and derivatives; flavoring in carbonated beverages"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For more Uses (Complete) data for QUININE (8 total), please visit the HSDB record page."
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg; approx.) in Germany (2009): >5000 Use (kg) in USA (2002): 56800 Consumption (g per capita; approx.) in Germany (2009): 0.0611 Consumption (g per capita) in the USA (2002): 0.201 Calculated removal (%): 41.8"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "For the treatment of malaria and leg cramps. Used as an antipyretic (fever-reducing), antimalarial, analgesic (painkilling), and anti-inflammatory. It is also used as a flavor component of tonic water and bitter lemon."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Quinone is found in the bark of cinchona species (Rubiaceae)(1) native to Indonesia and Bolivia(2)."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "QUININE IS CHIEF ALKALOID OF CINCHONA, THE BARK OF CINCHONA TREE INDIGENOUS TO CERTAIN REGIONS OF SOUTH AMERICA ... BARK IS ALSO CALLED PERUVIAN, JESUIT'S OR CARDINAL'S BARK."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Quinine is a bulky, white, amorphous powder or crystalline alkaloid, used as medication: non-narcotic analgesics; antimalarial; central muscle relaxants. It is also used as flavor in carbonated beverages. HUMAN EXPOSURE AND TOXICITY: Serious hypersensitivity reactions, including anaphylactic shock, anaphylactoid reactions, urticaria, serious skin rashes, angioedema, facial edema, bronchospasm, and pruritus, have been reported with quinine."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "The theorized mechanism of action for quinine and related anti-malarial drugs is that these drugs are toxic to the malaria parasite. Specifically, the drugs interfere with the parasite's ability to break down and digest hemoglobin. Consequently, the parasite starves and/or builds up toxic levels of partially degraded hemoglobin in itself."
+    },
+    {
+      "id": "33",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3034034#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Irritant, Health Hazard. H302 (22.9%): Harmful if swallowed [Warning Acute toxicity, oral] H315 (28.4%): Causes skin irritation [Warning Skin corrosion/irritation] H317 (99.5%): May cause an allergic skin reaction [Warning Sensitization, Skin] H319 (28.4%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] H334 (83.1%): May cause allergy or asthma symptoms or breathing difficulties if inhaled [Danger Sensitization, respiratory]"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "query": "sucrose",
+  "compound": {
+    "cid": 5988,
+    "title": "Sucrose",
+    "formula": "C12H22O11",
+    "molarMass": "342.30",
+    "iupacName": "(2R,3R,4S,5S,6R)-2-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+    "cas": "57-50-1",
+    "synonyms": [
+      "saccharose",
+      "sugar",
+      "Table sugar",
+      "White sugar",
+      "Saccharum"
+    ]
+  },
+  "ghs": {
+    "signal": null,
+    "pictograms": [],
+    "statements": []
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Sucrose appears as white odorless crystalline or powdery solid. Denser than water."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Sucrose is a glycosyl glycoside formed by glucose and fructose units joined by an acetal oxygen bridge from hemiacetal of glucose to the hemiketal of the fructose. It has a role as an osmolyte, a sweetening agent, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "A nonreducing disaccharide composed of glucose and fructose linked via their anomeric carbons. It is obtained commercially from sugarcane, sugar beet (beta vulgaris), and other plants and used extensively as a food and a sweetener."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Record-Description",
+      "origin": "E. coli Metabolome Database (ECMDB)",
+      "text": "Sucrose is a metabolite found in or produced by Escherichia coli (strain K12, MG1655)."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "sucrose has been reported in Quercus castaneifolia, Ceiba speciosa, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sucrose",
+      "origin": "Wikipedia",
+      "text": "Sucrose (also called saccharose) is a disaccharide, a sugar composed of glucose and fructose subunits. It is produced naturally in plants and is the main constituent of white sugar. It has the molecular formula C12H22O11."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sucrose",
+      "origin": "Wikipedia",
+      "text": "For human consumption, sucrose is extracted and refined from either sugarcane or sugar beet. Sugar mills located in tropical regions near where sugarcane is grown crush the cane and produce raw sugar which is shipped to factories for refining into pure sucrose. Sugar beet factories are located in temperate climates where the beet is grown, and process the beets directly into refined sugar. The sugar-refining process involves washing the raw sugar crystals before dissolving them into a sugar syrup which is filtered and then passed over carbon to remove any residual colour."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Sucrose",
+      "origin": "Wikipedia",
+      "text": "Sugar is often an added ingredient in food production and recipes. About 185 million tonnes of sugar were produced worldwide in 2017."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Etymology",
+      "origin": "Wikipedia",
+      "text": "The word sucrose was coined in 1857, by the English chemist William Miller from the French sucre (\"sugar\") and the generic chemical suffix for sugars -ose. The abbreviated term Suc is often used for sucrose in scientific literature."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Etymology",
+      "origin": "Wikipedia",
+      "text": "The name saccharose was coined in 1860 by the French chemist Marcellin Berthelot. Saccharose is an obsolete name for sugars in general, especially sucrose."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Physical and chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Physical_and_chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Sucrose's IUPAC name is β-D-fructofuranosyl-(2→1)-α-D-glucopyranoside. In this disaccharide, glucose and fructose are linked via a glycosidic linkage, i.e. an ether bond between C1 on the glucosyl subunit and C2 on the fructosyl unit. Glucose exists predominantly as a mixture of α and β \"pyranose\" anomers, but sucrose has only the α form. Fructose exists as a mixture of five tautomers but sucrose has only the β-D-fructofuranose form. Unlike most disaccharides, the glycosidic bond in sucrose is formed between the reducing ends of both glucose and fructose, and not between the reducing end of one and the non-reducing end of the other."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Physical and chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Physical_and_chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Sucrose crystallizes in the monoclinic space group P21 with room-temperature lattice parameters a = 1.08631 nm, b = 0.87044 nm, c = 0.77624 nm, β = 102.938°."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Sources",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Sources",
+      "origin": "Wikipedia",
+      "text": "In nature, sucrose is present in many plants, and in particular their roots, fruits and nectars, because it serves as a way to store energy, primarily from photosynthesis. Many mammals, birds, insects and bacteria accumulate and feed on the sucrose in plants and for some it is their main food source. Although honeybees consume sucrose, the honey they produce consists primarily of fructose and glucose, with only trace amounts of sucrose."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Sources",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Sources",
+      "origin": "Wikipedia",
+      "text": "As fruits ripen, their sucrose content usually rises sharply, but some fruits contain almost no sucrose at all. This includes grapes, cherries, blueberries, blackberries, figs, pomegranates, tomatoes, avocados, lemons and limes. In grapes, for instance, during ripening the sucrose molecules are hydrolyzed (separated) into glucose and fructose."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Culinary sugars",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Culinary_sugars",
+      "origin": "Wikipedia",
+      "text": "Mill white, also called plantation white, crystal sugar or superior sugar is produced from raw sugar. It is exposed to sulfur dioxide during the production to reduce the concentration of color compounds and helps prevent further color development during the crystallization process. Although common to sugarcane-growing areas, this product does not store or ship well. After a few weeks, its impurities tend to promote discoloration and clumping; therefore this type of sugar is generally limited to local consumption."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Culinary sugars",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Culinary_sugars",
+      "origin": "Wikipedia",
+      "text": "Blanco directo, a white sugar common in India and other south Asian countries, is produced by precipitating many impurities out of cane juice using phosphoric acid and calcium hydroxide, similar to the carbonatation technique used in beet sugar refining. Blanco directo is purer than mill white sugar, but less pure than white refined sugar."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Consumption",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Consumption",
+      "origin": "Wikipedia",
+      "text": "Refined sugar was a luxury before the 18th century. It became widely popular in the 18th century, then graduated to becoming a necessary food in the 19th century. This evolution of taste and demand for sugar as an essential food ingredient unleashed major economic and social changes. Eventually, table sugar became sufficiently cheap and common enough to influence standard cuisine and flavored drinks."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Consumption",
+      "url": "https://en.wikipedia.org/wiki/Sucrose#Consumption",
+      "origin": "Wikipedia",
+      "text": "Sucrose forms a major element in confectionery and desserts. Cooks use it for sweetening. It can also act as a food preservative when used in sufficient concentrations, and thus is an important ingredient in the production of fruit preserves. Sucrose is important to the structure of many foods, including biscuits and cookies, cakes and pies, candy, and ice cream and sorbets. It is a common ingredient in many processed and so-called \"junk foods\"."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Obtained from cane sugar, sugar beet, and sorghum; Used as a sweetener; [ChemIDplus]"
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For Sucrose (USEPA/OPP Pesticide Code: 000023) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "FLAVOR BLENDER, ACCENTUATOR, MODIFIER & DISPERSING AGENT, SWEETENING, TEXTURE & BODYING AGENT FOR FOODS & BEVERAGES; RAW MATERIAL FOR NUMEROUS ORG CHEM & YEAST PRODN; LUBRICANT IN FOODS"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Sweetener in foods and soft drinks, manufacture of syrups, source of invert sugar, confectionary, preserves and jams, demulcent, pharmaceutical products, caramel, chemical intermediate for detergents, emulsifying agents, and other sucrose derivatives."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Occurs in low percentages in honey and maple sap"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Sugar cane contains from 15-20% and sugar beet from 10-17% sucrose"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The quantity of sucrose synthesized by all plants on earth is estimated to be 150X10+9 t/a."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 423 of 442 companies (only 4.3% companies provided GHS information). For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

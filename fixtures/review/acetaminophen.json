@@ -1,0 +1,309 @@
+{
+  "query": "acetaminophen",
+  "compound": {
+    "cid": 1983,
+    "title": "Acetaminophen",
+    "formula": "C8H9NO2",
+    "molarMass": "151.16",
+    "iupacName": "N-(4-hydroxyphenyl)acetamide",
+    "cas": "103-90-2",
+    "synonyms": [
+      "Paracetamol",
+      "Tylenol",
+      "APAP",
+      "Acetaminofen",
+      "Datril"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 98.1,
+        "level": "Warning"
+      },
+      {
+        "code": "H315",
+        "text": "Causes skin irritation",
+        "percent": 17.4,
+        "level": "Warning"
+      },
+      {
+        "code": "H319",
+        "text": "Causes serious eye irritation",
+        "percent": 17.1,
+        "level": "Warning"
+      },
+      {
+        "code": "H412",
+        "text": "Harmful to aquatic life with long lasting effects",
+        "percent": 36.8,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "4-hydroxyacetanilide is an odorless white crystalline solid. Bitter taste. pH (saturated aqueous solution) about 6. (NTP, 1992)"
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Paracetamol is a member of the class of phenols that is 4-aminophenol in which one of the hydrogens attached to the amino group has been replaced by an acetyl group. It has a role as a ferroptosis inducer, a geroprotector, a non-steroidal anti-inflammatory drug, a non-narcotic analgesic, an antipyretic, a xenobiotic, a cyclooxygenase 2 inhibitor, a cyclooxygenase 1 inhibitor, a hepatotoxic agent, a cyclooxygenase 3 inhibitor, an environmental contaminant and a human blood serum metabolite. It is a member of acetamides and a member of phenols. It is functionally related to a 4-aminophenol."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Acetaminophen (paracetamol), also commonly known as Tylenol, is the most commonly taken analgesic worldwide and is recommended as first-line therapy in pain conditions by the World Health Organization (WHO). It is also used for its antipyretic effects, helping to reduce fever. This drug was initially approved by the U.S. FDA in 1951 and is available in a variety of forms including syrup form, regular tablets, effervescent tablets, injection, suppository, and other forms. Acetaminophen is often found combined with other drugs in more than 600 over the counter (OTC) allergy medications, cold medications, sleep medications, pain relievers, and other products."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Record-Description",
+      "origin": "LiverTox",
+      "text": "Acetaminophen is a widely used nonprescription analgesic and antipyretic medication for mild-to-moderate pain and fever. Harmless at low doses, acetaminophen has direct hepatotoxic potential when taken as an overdose and can cause acute liver injury and death from acute liver failure. Even in therapeutic doses, acetaminophen can cause transient serum aminotransferase elevations."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "paracetamol has been reported in Streptomyces xiamenensis with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol",
+      "origin": "Wikipedia",
+      "text": "Paracetamol, or acetaminophen, is an analgesic and antipyretic agent used to treat fever and mild to moderate pain. It is a widely available over-the-counter drug sold generically or under various brand names, including Tylenol and Panadol."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol",
+      "origin": "Wikipedia",
+      "text": "Paracetamol relieves pain in acute mild migraine and episodic tension headaches. At a standard dose, paracetamol slightly reduces fever, though it is inferior to ibuprofen in that respect: the benefits of its use for fever are unclear, particularly in the context of fever of viral origins. Paracetamol is effective for pain after wisdom tooth extraction, but it is less effective than ibuprofen. The combination of paracetamol and ibuprofen provides greater analgesic efficacy than either drug alone. The pain relief paracetamol provides in osteoarthritis is small and clinically insignificant. Evidence supporting its use in low back pain, cancer pain, and neuropathic pain is insufficient."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol",
+      "origin": "Wikipedia",
+      "text": "At a recommended maximum daily dose for an adult of three to four grams, paracetamol is safe and effective in the short term when used as directed, with uncommon adverse effects similar to those of ibuprofen. It is often used in patients who cannot tolerate nonsteroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen. Chronic consumption of paracetamol is in many cases not of benefit, and may result in abnormal liver function tests, and higher doses may lead to toxicity, including liver failure. Paracetamol poisoning is one of the leading causes of poisoning in high-income countries, and the foremost cause of acute liver failure in many countries."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#History",
+      "origin": "Wikipedia",
+      "text": "Acetanilide was the first aniline derivative serendipitously found to possess analgesic as well as antipyretic properties, and was quickly introduced into medical practice under the name of Antifebrin by Cahn & Hepp in 1886. But its unacceptable toxic effects—the most alarming being cyanosis due to methemoglobinemia, an increase of hemoglobin in its ferric [Fe3+] state, called methemoglobin, which cannot bind oxygen, and thus decreases overall carriage of oxygen to tissue—prompted the search for less toxic aniline derivatives. Some reports state that Cahn & Hepp or a French chemist called Charles Gerhardt first synthesized paracetamol in 1852."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#History",
+      "origin": "Wikipedia",
+      "text": "Harmon Northrop Morse synthesized paracetamol at Johns Hopkins University via the reduction of p-nitrophenol with tin in glacial acetic acid in 1877, but it was not until 1887 that clinical pharmacologist Joseph von Mering tried paracetamol on humans. In 1893, von Mering published a paper reporting on the clinical results of paracetamol with phenacetin, another aniline derivative. Von Mering claimed that, unlike phenacetin, paracetamol had a slight tendency to produce methemoglobinemia. Paracetamol was then quickly discarded in favor of phenacetin. The sales of phenacetin established Bayer as a leading pharmaceutical company."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#History",
+      "origin": "Wikipedia",
+      "text": "Von Mering's claims remained essentially unchallenged for half a century until two teams of researchers from the United States analysed the metabolism of acetanilide and phenacetin. In 1947, David Lester and Leon Greenberg found strong evidence that paracetamol was a major metabolite of acetanilide in human blood, and in a subsequent study, they reported that large doses of paracetamol given to albino rats did not cause methemoglobinemia. In 1948, Bernard Brodie, Julius Axelrod and Frederick Flinn confirmed that paracetamol was the major metabolite of acetanilide in humans, and established that it was just as efficacious an analgesic as its precursor."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#History",
+      "origin": "Wikipedia",
+      "text": "Paracetamol was first marketed in the United States in 1950 under the name Trigesic, a combination of paracetamol, aspirin, and caffeine. Reports in 1951 of three users stricken with the blood disease agranulocytosis led to its removal from the marketplace, and it took several years until it became clear that the disease was unconnected. The following year, 1952, paracetamol returned to the U.S. market as a prescription drug. In the United Kingdom, marketing of paracetamol began in 1956 by Sterling-Winthrop Co. as Panadol, available only by prescription, and promoted as preferable to aspirin since it was safe for children and people with ulcers."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "Paracetamol is used for reducing fever. However, there has been a lack of research on its antipyretic properties, particularly in adults, and thus its benefits are unclear. As a result, it has been described as over-prescribed for this application. In addition, low-quality clinical data indicates that when used for the common cold, paracetamol may relieve a stuffed or runny nose, but not other cold symptoms such as sore throat, malaise, sneezing, or cough."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "For people in critical care, paracetamol decreases body temperature by only 0.2–0.3 °C more than control interventions and does not affect their mortality: It does not change the outcome in febrile patients with stroke. The results are contradictory for paracetamol use in sepsis: higher mortality, lower mortality, and no change in mortality were all reported. Paracetamol offered no benefit in the treatment of dengue fever and was accompanied by a higher rate of liver enzyme elevation, a sign of potential liver damage. Overall, there is no support for a routine administration of antipyretic drugs, including paracetamol, to hospitalized patients with fever and infection."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Use in pregnancy and breastfeeding",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Use_in_pregnancy_and_breastfeeding",
+      "origin": "Wikipedia",
+      "text": "Paracetamol has long been established as a safe medication to treat short-term fever and significant pain in pregnant patients. Regulatory agencies, including the European Medicines Agency (EMA), the Medicines and Healthcare products Regulatory Agency (MHRA), the World Health Organization (WHO), and the U.S. Food and Drug Administration (FDA) recommend paracetamol as a first-line analgesic and antipyretic in pregnancy, with use limited to situations where necessary, at the lowest effective dose, and for the shortest duration."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Use in pregnancy and breastfeeding",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Use_in_pregnancy_and_breastfeeding",
+      "origin": "Wikipedia",
+      "text": "Some observational studies have suggested a possible association between prenatal paracetamol use and neurodevelopmental disorders, including ADHD and autism. However, these studies are limited by confounding factors such as maternal fever and infection, and do not demonstrate causation. Large, well-controlled studies, including sibling-controlled analyses, find no causal link after adjusting for maternal conditions."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Gastrointestinal adverse effects such as nausea and abdominal pain are extremely uncommon, and their frequency is substantially lower than with ibuprofen use. Increase in risk-taking behavior is possible. According to the U.S. Food and Drug Administration (FDA), the drug may cause rare and possibly fatal skin reactions such as Stevens–Johnson syndrome and toxic epidermal necrolysis, Rechallenge tests and an analysis of American but not French pharmacovigilance databases indicated a risk of these reactions."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "In clinical trials for osteoarthritis, the number of participants reporting adverse effects was similar for those on paracetamol and on placebo. However, the abnormal liver function tests (meaning there was some inflammation or damage to the liver) were almost four times more likely in those on paracetamol, although the clinical importance of this effect is uncertain. After 13 weeks of paracetamol therapy for knee pain, a drop in hemoglobin level indicating gastrointestinal bleeding was observed in 20% of participants, this rate being similar to the ibuprofen group."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Overdose",
+      "origin": "Wikipedia",
+      "text": "Overdose of paracetamol is caused by taking more than the recommended maximum daily dose of paracetamol for healthy adults (three or four grams), and can cause potentially fatal liver damage. While a majority of adult overdoses are linked to suicide attempts, many cases are accidental, often due to the use of more than one paracetamol-containing product over an extended period."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Overdose",
+      "origin": "Wikipedia",
+      "text": "Paracetamol is hepatotoxic and depletes the stock of the antioxidant glutathione in the liver as glutathione is consumed much faster than it can be replenished."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Interactions",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Interactions",
+      "origin": "Wikipedia",
+      "text": "Prokinetic agents such as metoclopramide accelerate gastric emptying, shorten time (tmax) to paracetamol peak blood plasma concentration (Cmax), and increase Cmax. Medications slowing gastric emptying such as propantheline and morphine lengthen tmax and decrease Cmax. The interaction with morphine may result in patients failing to achieve the therapeutic concentration of paracetamol; the clinical significance of interactions with metoclopramide and propantheline is unclear."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Interactions",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Interactions",
+      "origin": "Wikipedia",
+      "text": "There have been suspicions that cytochrome inducers may enhance the toxic pathway of paracetamol metabolism to NAPQI (see Paracetamol#Pharmacokinetics). By and large, these suspicions have not been confirmed. Out of the inducers studied, the evidence of potentially increased liver toxicity in paracetamol overdose exists for phenobarbital, primidone, isoniazid, and possibly St John's wort. On the other hand, the anti-tuberculosis drug isoniazid cuts the formation of NAPQI by 70%."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Paracetamol appears to exert its effects through two mechanisms: the inhibition of cyclooxygenase (COX) and actions of its metabolite N-arachidonoylphenolamine (AM404)."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Supporting the first mechanism, pharmacologically and in its side effects, paracetamol is close to classical nonsteroidal anti-inflammatory drugs (NSAIDs) that act by inhibiting COX-1 and COX-2 enzymes and especially similar to selective COX-2 inhibitors, Paracetamol inhibits prostaglandin synthesis by reducing the active form of COX-1 and COX-2 enzymes. This occurs only when the concentration of arachidonic acid and peroxides is low; under these conditions, COX-2 is the predominant form of cyclooxygenase, which explains the apparent COX-2 selectivity of paracetamol."
+    },
+    {
+      "id": "25",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol#Chemistry",
+      "origin": "Wikipedia",
+      "text": "The classical methods for the production of paracetamol involve the acetylation of 4-aminophenol with acetic anhydride as the last step. They differ in how 4-aminophenol is prepared. In one method, nitration of phenol with nitric acid affords 4-nitrophenol, which is reduced to 4-aminophenol by hydrogenation over Raney nickel. In another method, nitrobenzene is reduced electrolytically giving 4-aminophenol directly."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Registered for use in the US for control of brown tree snakes; [NPIRS] Used to make azo dyes, photographic chemicals, and pharmaceuticals, as a stabilizer for hydrogen peroxide, and as a therapeutic analgesic and antipyretic; [HSDB]"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Manufacture of azo dyes, photographic chemicals."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "An analgesic used as an aspirin substitute"
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For more Uses (Complete) data for ACETAMINOPHEN (6 total), please visit the HSDB record page."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Acetaminophen is an odorless compound with a slightly bitter taste. It is a common analgesic and antipyretic agent used for the relief of fever as well as aches and pains associated with many conditions. HUMAN EXPOSURE AND TOXICITY: Nausea, vomiting, and abdominal pain usually occur within 2-3 hours after ingestion of toxic doses of the drug. In severe poisoning, CNS stimulation, excitement, and delirium may occur initially. This may be followed by CNS depression, stupor, hypothermia, marked prostration, rapid shallow breathing, rapid weak irregular pulse, low blood pressure, and circulatory failure."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Each year, approximately 500 fatalities and 50,000 emergency department admissions in the United States are linked to acetaminophen. In 2021, US poison control centers recorded over 80,000 cases. Acetaminophen is the most prevalent drug-related cause of acute liver failure, with hepatic injury occurring as a consequence of the drug's metabolism properties. After reaching therapeutic concentrations of oral acetaminophen, 60% to 90% of the drug undergoes metabolism in the liver, forming glucuronic acid- and sulfate-conjugate metabolites."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. H302 (98.1%): Harmful if swallowed [Warning Acute toxicity, oral] H315 (17.4%): Causes skin irritation [Warning Skin corrosion/irritation] H319 (17.1%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] H412 (36.8%): Harmful to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

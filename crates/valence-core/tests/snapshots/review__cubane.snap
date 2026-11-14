@@ -1,0 +1,21 @@
+---
+source: crates/valence-core/tests/review.rs
+expression: summary(&f)
+---
+order: where, weird
+
+where:
+  [1] wikipedia / Introduction: Cubane is a synthetic hydrocarbon compound with the formula C8H8. It c…
+  [2] wikipedia / Introduction: Having high potential energy and kinetic stability makes cubane and it…
+
+origin:
+  (no input)
+
+danger:
+  (no GHS data)
+
+weird:
+  [3] wikipedia / Reactions and derivatives: Cubane is highly strained, but cannot decompose: the resultant cubene …
+  [4] wikipedia / Reactions and derivatives: With a rhodium catalyst, cubane first forms syn-tricyclooctadiene, whi…
+  [1] wikipedia / Introduction: Cubane is a synthetic hydrocarbon compound with the formula C8H8. It c…
+  [2] wikipedia / Introduction: Having high potential energy and kinetic stability makes cubane and it…

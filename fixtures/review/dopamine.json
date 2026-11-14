@@ -1,0 +1,295 @@
+{
+  "query": "dopamine",
+  "compound": {
+    "cid": 681,
+    "title": "Dopamine",
+    "formula": "C8H11NO2",
+    "molarMass": "153.18",
+    "iupacName": "4-(2-aminoethyl)benzene-1,2-diol",
+    "cas": "51-61-6",
+    "synonyms": [
+      "Oxytyramine",
+      "Hydroxytyramin",
+      "Dopamin",
+      "hydroxytyramine",
+      "Dopaminum"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant",
+      "Health Hazard",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 100.0,
+        "level": "Warning"
+      },
+      {
+        "code": "H361",
+        "text": "Suspected of damaging fertility or the unborn child",
+        "percent": 100.0,
+        "level": "Warning"
+      },
+      {
+        "code": "H400",
+        "text": "Very toxic to aquatic life",
+        "percent": 100.0,
+        "level": "Warning"
+      },
+      {
+        "code": "H410",
+        "text": "Very toxic to aquatic life with long lasting effects",
+        "percent": 100.0,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Dopamine is catechol in which the hydrogen at position 4 is substituted by a 2-aminoethyl group. It has a role as a beta-adrenergic agonist, a sympathomimetic agent, a cardiotonic drug, a dopaminergic agent, a mouse metabolite, an Escherichia coli metabolite and a human metabolite. It is a conjugate base of a dopaminium(1+)."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "One of the catecholamine neurotransmitters in the brain. It is derived from tyrosine and is the precursor to norepinephrine and epinephrine. Dopamine is a major transmitter in the extrapyramidal system of the brain, and important in regulating movement. A family of receptors (receptors, dopamine) mediate its action."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description",
+      "origin": "E. coli Metabolome Database (ECMDB)",
+      "text": "Dopamine is a metabolite found in or produced by Escherichia coli (strain K12, MG1655)."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "dopamine has been reported in Magnolia officinalis, Senegalia berlandieri, and other organisms with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Dopamine is a monoamine compound with positive inotropic activity. Dopamine is a naturally occurring catecholamine formed by decarboxylation of dehydroxyphenylalanine and a precursor of norepinephrine and epinephrine. Dopamine binds to alpha-1 and beta-1 adrenergic receptors. Mediated through myocardial beta-1 adrenergic receptors, dopamine increase heart rate and force, thereby increasing cardiac output. Alpha-1 adrenergic receptor stimulation on vascular smooth muscle, leads to vasoconstriction and results in an increase in systemic vascular resistance."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Dopamine",
+      "origin": "Wikipedia",
+      "text": "Dopamine (DA, a contraction of 3,4-dihydroxyphenethylamine) is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group through decarboxylation from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys. Dopamine is also synthesized in plants and most animals. In the brain, dopamine functions as a neurotransmitter—a chemical released by neurons (nerve cells) to send signals to other nerve cells."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Dopamine",
+      "origin": "Wikipedia",
+      "text": "In popular culture and media, dopamine is often portrayed as the main chemical of pleasure, but the current opinion in pharmacology is that dopamine instead confers motivational salience; in other words, dopamine signals the perceived motivational prominence (i.e., the desirability or aversiveness) of an outcome, which in turn directs behavior toward or away from achieving that outcome."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Dopamine",
+      "origin": "Wikipedia",
+      "text": "Outside the central nervous system, dopamine functions primarily as a local paracrine messenger. In blood vessels, it inhibits norepinephrine release and acts as a vasodilator; in the kidneys, it increases sodium excretion and urine output; in the pancreas, it reduces insulin production; in the digestive system, it hinders gastrointestinal motility and protects intestinal mucosa; and in the immune system, it reduces the activity of lymphocytes. With the exception of the blood vessels, dopamine is synthesized locally within these systems and exerts its effects near the cells that release it."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Structure",
+      "origin": "Wikipedia",
+      "text": "A dopamine molecule consists of a catechol structure (a benzene ring with two hydroxyl side groups) with one amine group attached via an ethyl chain. Dopamine is the simplest possible catecholamine, a chemical compound class that also includes norepinephrine and epinephrine. The presence of a benzene ring with this amine attachment makes it a substituted phenethylamine, a class that includes numerous psychoactive drugs."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Structure",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Structure",
+      "origin": "Wikipedia",
+      "text": "Like most amines, dopamine is an organic base. As a base, it is generally protonated in acidic environments (in an acid-base reaction). The protonated form is highly water-soluble and relatively stable, but can become oxidized if exposed to oxygen or other oxidants. In basic environments, dopamine is not protonated. In this free base form, it is less water-soluble and also more highly reactive. Because of the increased stability and water-solubility of the protonated form, dopamine is supplied for chemical or pharmaceutical use as dopamine hydrochloride—that is, the hydrochloride salt that is created when dopamine is combined with hydrochloric acid."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Dopamine is synthesized in a restricted set of cell types, mainly neurons and cells in the medulla of the adrenal glands. The primary and minor metabolic pathways respectively are:"
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Primary: L-Phenylalanine → L-Tyrosine → L-DOPA → Dopamine"
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Functions",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Functions",
+      "origin": "Wikipedia",
+      "text": "Dopamine exerts its effects by binding to and activating cell surface receptors. In humans, dopamine has a high binding affinity at dopamine receptors and human trace amine-associated receptor 1 (hTAAR1). In mammals, five subtypes of dopamine receptors have been identified, labeled from D1 to D5. All of them function as metabotropic, G protein-coupled receptors, meaning that they exert their effects via a complex second messenger system. These receptors can be divided into two families, known as D1-like and D2-like."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Functions",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Functions",
+      "origin": "Wikipedia",
+      "text": "Inside the brain, dopamine functions as a neurotransmitter and neuromodulator, and is controlled by a set of mechanisms common to all monoamine neurotransmitters. After synthesis, dopamine is transported from the cytosol into secretory vesicles, including synaptic vesicles, small and large dense core vesicles by a solute carrier—a vesicular monoamine transporter, VMAT2. Dopamine is stored in these vesicles until it is ejected into the synaptic cleft. In most cases, the release of dopamine occurs through a process called exocytosis which is caused by action potentials, but it can also be caused by the activity of an intracellular trace amine-associated receptor, TAAR1."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "Dopamine as a manufactured medication is sold under the trade names Intropin, Dopastat, and Revimine, among others. It is on the World Health Organization's List of Essential Medicines. It is most commonly used as a stimulant drug in the treatment of severe low blood pressure, slow heart rate, and cardiac arrest. It is especially important in treating these in newborn infants. It is given intravenously. Since the half-life of dopamine in plasma is very short—approximately one minute in adults, two minutes in newborn infants and up to five minutes in preterm infants—it is usually given in a continuous intravenous drip rather than a single injection."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Medical uses",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Medical_uses",
+      "origin": "Wikipedia",
+      "text": "Its effects, depending on dosage, include an increase in sodium excretion by the kidneys, an increase in urine output, an increase in heart rate, and an increase in blood pressure. At low doses it acts through the sympathetic nervous system to increase heart muscle contraction force and heart rate, thereby increasing cardiac output and blood pressure. Higher doses also cause vasoconstriction that further increases blood pressure. Older literature also describes very low doses thought to improve kidney function without other consequences, but recent reviews have concluded that doses at such low levels are not effective and may sometimes be harmful."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Disease, disorders, and pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Disease,_disorders,_and_pharmacology",
+      "origin": "Wikipedia",
+      "text": "The dopamine system plays a central role in several significant medical conditions, including Parkinson's disease, attention deficit hyperactivity disorder, Tourette syndrome, schizophrenia, bipolar disorder, and addiction. Aside from dopamine itself, there are many other important drugs that act on dopamine systems in various parts of the brain or body."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Disease, disorders, and pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Disease,_disorders,_and_pharmacology",
+      "origin": "Wikipedia",
+      "text": "A number of studies have reported an age-related decline in dopamine synthesis and dopamine receptor density (i.e., the number of receptors) in the brain. This decline has been shown to occur in the striatum and extrastriatal regions. Decreases in the D1, D2, and D3 receptors are well documented. The reduction of dopamine with aging is thought to be responsible for many neurological symptoms that increase in frequency with age, such as decreased arm swing and increased rigidity. Changes in dopamine levels may also cause age-related changes in cognitive flexibility."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Comparative biology and evolution",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Comparative_biology_and_evolution",
+      "origin": "Wikipedia",
+      "text": "There are no reports of dopamine in archaea, but it has been detected in some types of bacteria and in the protozoan called Tetrahymena. Perhaps more importantly, there are types of bacteria that contain homologs of all the enzymes that animals use to synthesize dopamine. It has been proposed that animals derived their dopamine-synthesizing machinery from bacteria, via horizontal gene transfer that may have occurred relatively late in evolutionary time, perhaps as a result of the symbiotic incorporation of bacteria into eukaryotic cells that gave rise to mitochondria."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Comparative biology and evolution",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#Comparative_biology_and_evolution",
+      "origin": "Wikipedia",
+      "text": "Dopamine is used as a neurotransmitter in most multicellular animals. In sponges there is only a single report of the presence of dopamine, with no indication of its function; however, dopamine has been reported in the nervous systems of many other radially symmetric species, including the cnidarian jellyfish, hydra and some corals. This dates the emergence of dopamine as a neurotransmitter back to the earliest appearance of the nervous system, over 500 million years ago in the Cambrian Period. Dopamine functions as a neurotransmitter in vertebrates, echinoderms, arthropods, molluscs, and several types of worm."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "History and development",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#History_and_development",
+      "origin": "Wikipedia",
+      "text": "Dopamine was first synthesized in 1910 by George Barger and James Ewens at Wellcome Laboratories in London, England and first identified in the human brain by Katharine Montagu in 1957. It was named dopamine because it is a monoamine whose precursor in the Barger-Ewens synthesis is 3,4-dihydroxyphenylalanine (levodopa or L-DOPA). Dopamine's function as a neurotransmitter was first recognized in 1958 by Arvid Carlsson and Nils-Åke Hillarp at the Laboratory for Chemical Pharmacology of the National Heart Institute of Sweden."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "History and development",
+      "url": "https://en.wikipedia.org/wiki/Dopamine#History_and_development",
+      "origin": "Wikipedia",
+      "text": "Research motivated by adhesive polyphenolic proteins in mussels led to the discovery in 2007 that a wide variety of materials, if placed in a solution of dopamine at slightly basic pH, will become coated with a layer of polymerized dopamine, often referred to as polydopamine. This polymerized dopamine forms by a spontaneous oxidation reaction, and is formally a type of melanin. Furthermore, dopamine self-polymerization can be used to modulate the mechanical properties of peptide-based gels. The structure of polydopamine is unknown."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "... used in the treatment of severe congestive /heart/ failure ... also may improve physiological parameters in the treatment of cardiogenic and septic shock"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For the correction of hemodynamic imbalances present in shock ... due to mycocardial infarction, trauma, endotoxin septicemia, open-heart surgery, and chronic cardiac decompensation as in congestive failure"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Therapeutic Category: Cardiotonic; antihypotensive"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg; approx.) in Germany (2009): >25 Consumption (g per capita; approx.) in Germany (2009): 0.000305 Calculated removal (%): 75.1"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Dopamine is a natural catecholamine formed by the decarboxylation of 3,4-dihydroxyphenylamine."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "In humans, dopamine can lead to peripheral vasoconstriction, resulting in gangrenous extremities and cardiac arrhythmias. Additionally, it can cause severe hypertension, tachycardia, confusion, and agitation. Management of Overdose or Toxicity No specific antidote exists for a dopamine overdose. If overdose is suspected, the infusion should be discontinued immediately. Symptoms generally resolve rapidly due to dopamine’s short half-life."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Dopamine is a precursor to norepinephrine in noradrenergic nerves and is also a neurotransmitter in certain areas of the central nervous system. Dopamine produces positive chronotropic and inotropic effects on the myocardium, resulting in increased heart rate and cardiac contractility. This is accomplished directly by exerting an agonist action on beta-adrenoceptors and indirectly by causing release of norepinephrine from storage sites in sympathetic nerve endings. In the brain, dopamine actas as an agonist to the five dopamine receptor subtypes (D!, D2, D3, D4, D5)."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/681#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant, Health Hazard, Environmental Hazard. H302 (100%): Harmful if swallowed [Warning Acute toxicity, oral] H361 (100%): Suspected of damaging fertility or the unborn child [Warning Reproductive toxicity] H400 (100%): Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410 (100%): Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

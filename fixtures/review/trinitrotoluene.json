@@ -1,0 +1,284 @@
+{
+  "query": "trinitrotoluene",
+  "compound": {
+    "cid": 8376,
+    "title": "2,4,6-Trinitrotoluene",
+    "formula": "C7H5N3O6",
+    "molarMass": "227.13",
+    "iupacName": "2-methyl-1,3,5-trinitrobenzene",
+    "cas": "118-96-7",
+    "synonyms": [
+      "Trinitrotoluene",
+      "Trotyl",
+      "Tolite",
+      "s-Trinitrotoluol",
+      "s-Trinitrotoluene"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Explosive",
+      "Acute Toxic",
+      "Health Hazard",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H201",
+        "text": "Explosive; mass explosion hazard",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H301",
+        "text": "Toxic if swallowed",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H311",
+        "text": "Toxic in contact with skin",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H331",
+        "text": "Toxic if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H373",
+        "text": "May causes damage to organs through prolonged or repeated exposure",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H411",
+        "text": "Toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "2,4,6-Trinitrotoluene is a yellow, odorless solid that does not occur naturally in the environment. It is commonly known as TNT and is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting. 2,4,6-Trinitrotoluene production in the United States occurs solely at military arsenals."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "2,4,6-Trinitrotoluene can cause cancer according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Tnt, wetted with not less than 30% water appears as a slurry of a yellow water-insoluble crystalline solid. Can burn, although difficult to ignite. When water has been driven off or evaporated the residue is easily ignited, burns vigorously, and is highly explosive. Produces toxic oxides of nitrogen during combustion. May explode under exposure to intense heat. Primary hazard is blast of an explosion, not flying projectiles or fragments."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Trinitrotoluene, dry or wetted with less than 30 percent water, by mass appears as an explosive solid. Primary hazard is from effects of a blast. Not designed to produce significant fragmentation or throw projectiles. May explode under exposure to intense heat or fire."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "2,4,6-trinitrotoluene is a trinitrotoluene having the nitro groups at positions 2, 4 and 6. It has a role as an explosive. It is functionally related to a 1,3,5-trinitrobenzene."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/TNT",
+      "origin": "Wikipedia",
+      "text": "Trinitrotoluene ( TRY-ny-troh-TOL-yoo-een, try-NY-), more commonly known as TNT (and more specifically 2,4,6-trinitrotoluene, and by its preferred IUPAC name 2-methyl-1,3,5-trinitrobenzene), is a chemical compound with the formula C6H2(NO2)3CH3. TNT is occasionally used as a reagent in chemical synthesis, but it is best known as an explosive material with convenient handling properties. The explosive yield of TNT is a standard comparative convention of bombs and asteroid impacts. In chemistry, TNT is used to generate charge transfer salts. TNT has contaminated ecosystems, and been found in fish."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/TNT#History",
+      "origin": "Wikipedia",
+      "text": "TNT was first synthesized in 1863 by German chemist Julius Wilbrand and was originally used as a yellow dye. Its potential as an explosive was not recognized for three decades, mainly because it was so much less sensitive than other explosives known at the time. Its explosive properties were discovered in 1891 by another German chemist, Carl Häussermann. TNT can be safely poured when liquid into shell cases, and is so insensitive that in 1910 it was exempted from the UK's Explosives Act 1875 and was not considered an explosive for the purposes of manufacture and storage."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/TNT#History",
+      "origin": "Wikipedia",
+      "text": "The German armed forces adopted it as a filling for artillery shells in 1902. TNT-filled armour-piercing shells would explode after they had penetrated the armour of British capital ships, whereas the British Lyddite-filled shells tended to explode upon striking armour, thus expending much of their energy outside the ship. The British started replacing Lyddite with TNT in 1907."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/TNT#History",
+      "origin": "Wikipedia",
+      "text": "The United States Navy continued filling armour-piercing shells with explosive D after some other nations had switched to TNT, but began filling naval mines, bombs, depth charges, and torpedo warheads with burster charges of crude grade B TNT with the color of brown sugar and requiring an explosive booster charge of granular crystallized grade A TNT for detonation. High-explosive shells were filled with grade A TNT, which became preferred for other uses as industrial chemical capacity became available for removing xylene and similar hydrocarbons from the toluene feedstock and other nitrotoluene isomer byproducts from the nitrating reactions."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/TNT#Applications",
+      "origin": "Wikipedia",
+      "text": "TNT is one of the most commonly used explosives for military, industrial, and mining applications. TNT has been used in oil and gas fracking (hydraulic fracturing) in shale formations. The technique involves displacing and detonating nitroglycerin in hydraulically induced fractures followed by wellbore shots using pelletized TNT."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/TNT#Applications",
+      "origin": "Wikipedia",
+      "text": "TNT is valued partly because of its insensitivity to shock and friction, with reduced risk of accidental detonation compared to more sensitive explosives such as nitroglycerin. TNT melts at 80 °C (176 °F), far below the temperature at which it will spontaneously detonate, allowing it to be poured or safely combined with other explosives. TNT neither absorbs nor dissolves in water, which allows it to be used effectively in wet environments. To detonate, TNT must be triggered by a pressure wave from a starter explosive, called an explosive booster."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Explosive character",
+      "url": "https://en.wikipedia.org/wiki/TNT#Explosive_character",
+      "origin": "Wikipedia",
+      "text": "Upon detonation, TNT undergoes a decomposition equivalent to the reaction"
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Explosive character",
+      "url": "https://en.wikipedia.org/wiki/TNT#Explosive_character",
+      "origin": "Wikipedia",
+      "text": "The reaction is exothermic but has a high activation energy in the gas phase (~62 kcal/mol). The condensed phases (solid or liquid) show markedly lower activation energies of roughly 35 kcal/mol due to unique bimolecular decomposition routes at elevated densities. Because of the production of carbon, TNT explosions have a sooty appearance. During the 20th century amatol, a mixture of TNT with ammonium nitrate, was a widely used military explosive."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Energy content",
+      "url": "https://en.wikipedia.org/wiki/TNT#Energy_content",
+      "origin": "Wikipedia",
+      "text": "The energy density of TNT is used as a reference point for many other explosives, including nuclear weapons, as their energy content is measured in equivalent tonnes (metric tons, t) of TNT. The energy used by NIST to define the equivalent is 4.184 GJ/t or exactly 1 kcal/g."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Energy content",
+      "url": "https://en.wikipedia.org/wiki/TNT#Energy_content",
+      "origin": "Wikipedia",
+      "text": "For safety assessments, it has been stated that the detonation of TNT, depending on circumstances, can release 2.673–6.702 GJ/t."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Detection",
+      "url": "https://en.wikipedia.org/wiki/TNT#Detection",
+      "origin": "Wikipedia",
+      "text": "Various methods can be used to detect TNT, including optical and electrochemical sensors and explosive-sniffing dogs. In 2013, researchers from the Indian Institutes of Technology using noble-metal quantum clusters could detect TNT at the sub-zeptomolar (10−18 mol/m3) level."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Safety and toxicity",
+      "url": "https://en.wikipedia.org/wiki/TNT#Safety_and_toxicity",
+      "origin": "Wikipedia",
+      "text": "TNT is poisonous, and skin contact can cause skin irritation, causing the skin to turn a bright yellow-orange color. During the First World War, female munition workers who handled the chemical found that their skin turned bright yellow, which resulted in their acquiring the nickname \"canary girls\" or simply \"canaries\"."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Safety and toxicity",
+      "url": "https://en.wikipedia.org/wiki/TNT#Safety_and_toxicity",
+      "origin": "Wikipedia",
+      "text": "People exposed to TNT over a prolonged period tend to experience anemia and abnormal liver functions. Blood and liver effects, spleen enlargement and other harmful effects on the immune system have also been found in animals that ingested or breathed trinitrotoluene. There is evidence that TNT adversely affects male fertility. TNT is listed as a possible human carcinogen, with carcinogenic effects demonstrated in animal experiments with rats, although effects upon humans so far amount to none (according to IRIS of March 15, 2000). Consumption of TNT produces red urine through the presence of breakdown products and not blood as sometimes believed."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Ecological impact",
+      "url": "https://en.wikipedia.org/wiki/TNT#Ecological_impact",
+      "origin": "Wikipedia",
+      "text": "Because of its suitability in munitions, TNTs toxicity has been characterized and reported. Residual TNT from manufacture, storage, and use can pollute water, soil, the atmosphere, and the biosphere."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Ecological impact",
+      "url": "https://en.wikipedia.org/wiki/TNT#Ecological_impact",
+      "origin": "Wikipedia",
+      "text": "In September 2001, the United States Environmental Protection Agency (USEPA) declared TNT a pollutant whose removal is a priority."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "An explosive that requires a high-velocity initiator or efficient concussion to detonate; [ACGIH]"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "2,4,6-Trinitrotoluene is used as a high explosive in military and industrial applications. It has been widely used for filling shells, grenades and airborne demolition bombs, as it is sufficiently insensitive to the shock of ejection from a gun barrel but can be exploded on impact by a detonator mechanism. It has been used either as the pure explosive or in binary mixtures ... Small amounts of 2,4,6-trinitrotoluene have been used for industrial explosive applications, such as deep-well and underwater blasting ..."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Explosive. Intermediate in dyestuffs and photographic chemicals"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "2,4,6-Trinitrotoluene is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting. Exposure may results from drinking contaminated water that has migrated from chemical waste disposal sites, breathing contaminated air, eating contaminated foods such as fruits and vegetables, and/or eating contaminated soil. (L132)"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Toxicity-Summary",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "ATSDR Toxicological Profile for 2,4,6-Trinitrotoluene (TNT) - Succinctly characterizes the toxicologic and adverse health effects information."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "2,4,6-Trinitrotoluene is a competitive inhibitor with respect to NADPH and a noncompetitive inhibitor with respect to L-arginine. It binds to the P450 reductase domain of the eNOS and suppresses l-citrulline formation by shunting electrons away from the normal catalytic pathway. The reduction of TNT then produces reactive oxygen species (ROS), such as superoxide (O2.−), and hydrogen peroxide (H2O2). The overproduction of superoxide is associated with oxidative stress-mediated induction of cataracts. The inhibition of the eNOS activity occurs in a concentration-dependent manner. (A110, A111)"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Explosive, Acute Toxic, Health Hazard, Environmental Hazard. H201: (Deleted) Explosive; mass explosion hazard [Danger Explosives] H301: Toxic if swallowed [Danger Acute toxicity, oral] H311: Toxic in contact with skin [Danger Acute toxicity, dermal] H331: Toxic if inhaled [Danger Acute toxicity, inhalation] H373 **: May causes damage to organs through prolonged or repeated exposure [Warning Specific target organ toxicity, repeated exposure] H411: Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

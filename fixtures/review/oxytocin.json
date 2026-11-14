@@ -1,0 +1,210 @@
+{
+  "query": "oxytocin",
+  "compound": {
+    "cid": 439302,
+    "title": "Oxytocin",
+    "formula": "C43H66N12O12S2",
+    "molarMass": "1007.2",
+    "iupacName": "(2S)-1-[(4R,7S,10S,13S,16S,19R)-19-amino-7-(2-amino-2-oxoethyl)-10-(3-amino-3-oxopropyl)-13-[(2S)-butan-2-yl]-16-[(4-hydroxyphenyl)methyl]-6,9,12,15,18-pentaoxo-1,2-dithia-5,8,11,14,17-pentazacycloicosane-4-carbonyl]-N-[(2S)-1-[(2-amino-2-oxoethyl)amino]-4-methyl-1-oxopentan-2-yl]pyrrolidine-2-carboxamide",
+    "cas": "50-56-6",
+    "synonyms": [
+      "Pitocin",
+      "Endopituitrina",
+      "Syntocinon",
+      "Ocytocin",
+      "Orasthin"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant",
+      "Health Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 10.2,
+        "level": "Warning"
+      },
+      {
+        "code": "H361",
+        "text": "Suspected of damaging fertility or the unborn child",
+        "percent": 14.3,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": false,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Oxytocin is a cyclic nonapeptide hormone with amino acid sequence CYIQNCPLG that also acts as a neurotransmitter in the brain; the principal uterine-contracting and milk-ejecting hormone of the posterior pituitary. Together with the neuropeptide vasopressin, it is believed to influence social cognition and behaviour. It has a role as a vasodilator agent and an oxytocic. It is a heterodetic cyclic peptide and a peptide hormone."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Sir Henry H. Dale first identified oxytocin and its uterine contractile properties in 1906. Like all other neurohypophysial hormones, oxytocin is composed of nine amino acids with a disulfide bridge between the Cys 1 and 6 residues. In the mid-1950s, synthetic oxytocin was successfully synthesized by a biochemist named Vincent du Vigneaud; he was later recognized with a Nobel prize for his work. Oxytocin continues to be an important tool in modern obstetrics to induce labor when indicated and to manage postpartum hemorrhage. It is estimated that labor induction with oxytocin is used in almost 10% of deliveries globally."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Oxytocin is an Oxytocic. The physiologic effect of oxytocin is by means of Increased Uterine Smooth Muscle Contraction or Tone."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "oxytocin has been reported in Oxystelma esculentum with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "oxystin has been reported in Helianthus tuberosus with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin",
+      "origin": "Wikipedia",
+      "text": "Oxytocin is a peptide hormone and neuropeptide normally produced in the hypothalamus and released by the posterior pituitary. Present in animals since early stages of evolution, in humans it plays roles in behavior that include social bonding, love, reproduction, childbirth, and the period after childbirth. Oxytocin is released into the bloodstream as a hormone in response to sexual activity and during childbirth. It is also available in pharmaceutical form. In either form, oxytocin stimulates uterine contractions to speed up the process of childbirth."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin",
+      "origin": "Wikipedia",
+      "text": "In its natural form, it also plays a role in maternal bonding and milk production. Production and secretion of oxytocin is controlled by a positive feedback mechanism, where its initial release stimulates production and release of further oxytocin. For example, when oxytocin is released during a uterine contraction at the start of childbirth, this stimulates the production and release of more oxytocin and an increase in the intensity and frequency of contractions. This process intensifies in frequency and continues until the triggering activity ceases. A similar process takes place during lactation and during sexual activity."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin",
+      "origin": "Wikipedia",
+      "text": "Oxytocin is derived by enzymatic splitting from the peptide precursor encoded by the human OXT gene. The deduced structure of the active nonapeptide is:"
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#History",
+      "origin": "Wikipedia",
+      "text": "The uterine-contracting properties of the principle that would later be named oxytocin were discovered by British pharmacologist Henry Hallett Dale in 1906, and its milk ejection property was described by Ott and Scott in 1910 and by Schafer and Mackenzie in 1911. In 1909 the first clinical use of oxytocin was performed by William Blair-Bell to induce childbirth in patients with complications."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#History",
+      "origin": "Wikipedia",
+      "text": "By the 1920s, oxytocin and vasopressin had been isolated from pituitary tissue and given their current names. Oxytocin's molecular structure was determined in 1952. In the early 1950s, American biochemist Vincent du Vigneaud found that oxytocin is made up of nine amino acids. He identified its amino acid sequence, the first polypeptide hormone to be sequenced. In 1953, du Vigneaud carried out the synthesis of oxytocin, the first polypeptide hormone to be synthesized. Du Vigneaud was awarded the Nobel Prize in Chemistry in 1955 for his work. Further work on different synthetic routes for oxytocin, as well as the preparation of analogues of the hormone (e.g."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Etymology",
+      "origin": "Wikipedia",
+      "text": "The term \"oxytocin\" derives from the Greek ὀξυτόκιον (oxytokion), based on ὀξύς (oxús), meaning \"sharp\" or \"swift\", and τόκος (tókos), meaning \"childbirth\". The adjective form is \"oxytocic\", which refers to medicines that stimulate uterine contractions, to speed up the process of childbirth. Colloquially, it has been referred to as the \"cuddle hormone,\" \"hug hormone,\" or \"love hormone\" because of extensive evidence of its involvement in mating and social behavior. It is involved in mating behavior in animals as low as C. elegans."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Oxytocin and vasopressin are the only known hormones released by the human posterior pituitary gland to act at a distance. However, oxytocin neurons make other peptides, including corticotropin-releasing hormone and dynorphin, for example, that act locally. The magnocellular neurons that make oxytocin are adjacent to magnocellular neurons that make vasopressin and are similar in many respects."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "The oxytocin peptide is synthesized as an inactive precursor protein from the OXT gene. This precursor protein also includes the oxytocin carrier protein neurophysin I. The inactive precursor protein is progressively hydrolyzed into smaller fragments (one of which is neurophysin I) via a series of enzymes. The last hydrolysis that releases the active oxytocin nonapeptide is catalyzed by peptidylglycine alpha-amidating monooxygenase (PAM)."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Biological function",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Biological_function",
+      "origin": "Wikipedia",
+      "text": "Oxytocin has peripheral (hormonal) actions and also acts in the brain. Its actions are mediated by specific oxytocin receptors. The oxytocin receptor is a G protein-coupled receptor (GPCR), OT-R, which requires magnesium and cholesterol and is expressed in myometrial cells. It belongs to the rhodopsin-type (class I) group of G protein-coupled receptors."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Biological function",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Biological_function",
+      "origin": "Wikipedia",
+      "text": "Studies have looked at oxytocin's role in various behaviors, including orgasm, social recognition, pair bonding, anxiety, in-group bias, situational lack of honesty, autism, and maternal behaviors. Oxytocin is believed to have a significant role in social learning. There are indicators that oxytocin may help reduce noise in the brain's auditory system, increase perception of social cues, and support more targeted social behavior. It may also enhance reward responses. However, its effects may be influenced by context, such as the presence of familiar or unfamiliar individuals."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Oxytocin is a peptide of nine amino acids (a nonapeptide) in the sequence cysteine-tyrosine-isoleucine-glutamine-asparagine-cysteine-proline-leucine-glycine-amide (Cys – Tyr – Ile – Gln – Asn – Cys – Pro – Leu – Gly – NH2, or CYIQNCPLG-NH2); its C-terminus has been converted to a primary amide and a disulfide bridge joins the cysteine moieties. Oxytocin has a molecular mass of 1007 Da, and one international unit (IU) of oxytocin is the equivalent of 1.68 μg of pure peptide."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#Chemistry",
+      "origin": "Wikipedia",
+      "text": "While the structure of oxytocin is highly conserved in placental mammals, a novel structure of oxytocin was reported in 2011 in marmosets, tamarins, and other New World primates. Genomic sequencing of the gene for oxytocin revealed a single in-frame mutation (thymine for cytosine) which results in a single amino acid substitution at the 8-position (proline for leucine). Since this original Lee et al. paper, two other laboratories have confirmed Pro8-OT and documented additional oxytocin structural variants in this primate taxon. Vargas-Pinilla et al."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "In medicine",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin#In_medicine",
+      "origin": "Wikipedia",
+      "text": "Small-molecule oxytocin receptor agonists like LIT-001 may prove to be useful in the treatment of social deficits, for instance in autism."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "A hormone secreted by the posterior lobe of the pituitary gland. Its chief action is stimulation of the contraction of the smooth muscle of the uterus. It contains eight different amino acids."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Signs and Symptoms of Overdose An inappropriate dosage of oxytocin can lead to dangerous tachycardia, arrhythmias, and myocardial ischemia. High dosages of oxytocin can cause uterine rupture, hypertonicity, and spasms. When oxytocin is given to women in the first or second stages of labor or to women to cause induction of labor, uterine rupture, maternal subarachnoid hemorrhages, maternal death, and even fetal death can result. If oxytocin is given in doses too large or administered too slowly during 24 hours, the medication can exhibit an antidiuretic effect, resulting in extreme water intoxication; this can result in coma, seizures, and even death of the mother."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439302#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant, Health Hazard. H302 (10.2%): Harmful if swallowed [Warning Acute toxicity, oral] H361 (14.3%): Suspected of damaging fertility or the unborn child [Warning Reproductive toxicity]"
+    }
+  ]
+}

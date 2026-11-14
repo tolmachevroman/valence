@@ -1,0 +1,275 @@
+{
+  "query": "ethanol",
+  "compound": {
+    "cid": 702,
+    "title": "Ethanol",
+    "formula": "C2H6O",
+    "molarMass": "46.07",
+    "iupacName": "ethanol",
+    "cas": "64-17-5",
+    "synonyms": [
+      "ethyl alcohol",
+      "alcohol",
+      "grain alcohol",
+      "Methylcarbinol",
+      "Ethyl hydrate"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Flammable"
+    ],
+    "statements": [
+      {
+        "code": "H225",
+        "text": "Highly Flammable liquid and vapor",
+        "percent": null,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Ethyl alcohol in alcoholic beverages can cause developmental toxicity according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Ethanol with a small amount of an adulterant added so as to be unfit for use as a beverage."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Ethanol appears as a clear colorless liquid with a characteristic vinous odor and pungent taste. Flash point 55 °F. Density 6.5 lb / gal. Vapors are heavier than air."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Ethanol is a primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group. It has a role as a central nervous system depressant, an antiseptic drug, a disinfectant, a polar solvent, a teratogenic agent, a neurotoxin, a NMDA receptor antagonist, a protein kinase C agonist, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a volatile organic compound, a primary alcohol, a member of ethanols and an alkyl alcohol. It is a conjugate acid of an ethoxide."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Record-Description",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "The CIR Expert Panel concluded that Alcohol Denat.... denatured with t-Butyl Alcohol, Denatonium Benzoate, Diethyl Phthalate, or Methyl Alcohol are safe in the practices of use and concentration as described in this safety assessment, and, that Denatonium Benzoate is safe as a denaturant. The CIR Expert Panel concluded that the available data are insufficient to support the safety of Alcohol Denat.... denatured with Quassin, Brucine, and Brucine Sulfate in cosmetic products, and that the available data are insufficient to support the safety of Quassin, Brucine, and Brucine Sulfate as denaturants."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethanol",
+      "origin": "Wikipedia",
+      "text": "Ethanol (also called ethyl alcohol, grain alcohol, drinking alcohol, or simply alcohol) is an organic compound with the chemical formula CH3CH2OH. It is an alcohol, with its formula also written as C2H5OH, C2H6O, or EtOH, where Et is the pseudoelement symbol for ethyl. Ethanol is a volatile, flammable, colorless liquid with a pungent taste. As a central nervous system (CNS) depressant, it is the active ingredient in alcoholic beverages, and the second most consumed drug globally behind caffeine."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethanol",
+      "origin": "Wikipedia",
+      "text": "Ethanol is naturally produced by the fermentation process of sugars by yeasts or via petrochemical processes such as ethylene hydration. Historically it was used as a general anesthetic, and has modern medical applications as an antiseptic, disinfectant, solvent for some medications, and antidote for methanol poisoning and ethylene glycol poisoning. It is used as a chemical solvent and in the synthesis of organic compounds, and as a fuel source for lamps, stoves, and internal combustion engines. Ethanol also can be dehydrated to make ethylene, an important chemical feedstock. As of 2024, world production of ethanol fuel was 120 gigaliters (3.2×1010 U.S. gallons), coming mostly from the U.S."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Ethanol",
+      "origin": "Wikipedia",
+      "text": "The term \"ethanol\", originates from the ethyl group coined in 1834 and was officially adopted in 1892, while \"alcohol\"—now referring broadly to similar compounds—originally described a powdered cosmetic and only later came to mean ethanol specifically. Ethanol occurs naturally as a byproduct of yeast metabolism in environments like overripe fruit and palm blossoms, during plant germination under anaerobic conditions, in interstellar space, in human breath, and in rare cases, is produced internally due to auto-brewery syndrome."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#History",
+      "origin": "Wikipedia",
+      "text": "The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. Ethanol has historically been identified variously as spirit of wine or ardent spirits, and as aqua vitae (Latin for \"water of life\") or aqua vita. The intoxicating effects of its consumption have been known since ancient times. Ethanol has been used by humans since prehistory as the intoxicating ingredient of alcoholic beverages. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#History",
+      "origin": "Wikipedia",
+      "text": "The inflammable nature of the exhalations of wine was already known to ancient natural philosophers such as Aristotle (384–322 BCE), Theophrastus (c. 371–287 BCE), and Pliny the Elder (23/24–79 CE). However, this did not immediately lead to the isolation of ethanol, despite the development of more advanced distillation techniques in second- and third-century Roman Egypt. An important recognition, first found in one of the writings attributed to Jābir ibn Ḥayyān (ninth century CE), was that by adding salt to boiling wine, which increases the wine's relative volatility, the flammability of the resulting vapors may be enhanced."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#History",
+      "origin": "Wikipedia",
+      "text": "French chemist Antoine Lavoisier described ethanol as a compound of carbon, hydrogen, and oxygen, and in 1807 Nicolas-Théodore de Saussure determined ethanol's chemical formula. Fifty years later, Archibald Scott Couper published the structural formula of ethanol, one of the first structural formulas determined."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#History",
+      "origin": "Wikipedia",
+      "text": "Ethanol was first prepared synthetically in 1825 by Michael Faraday. He found that sulfuric acid could absorb large volumes of coal gas. He gave the resulting solution to Henry Hennell, a British chemist, who found in 1826 that it contained \"sulphovinic acid\" (ethyl hydrogen sulfate). In 1828, Hennell and the French chemist Georges-Simon Serullas independently discovered that sulphovinic acid could be decomposed into ethanol. Thus, in 1825 Faraday had unwittingly discovered that ethanol could be produced from ethylene (a component of coal gas) by acid-catalyzed hydration, a process similar to current industrial ethanol synthesis."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Name",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Name",
+      "origin": "Wikipedia",
+      "text": "Ethanol is the systematic name defined by the International Union of Pure and Applied Chemistry for a compound consisting of an alkyl group with two carbon atoms (prefix \"eth-\"), having a single bond between them (infix \"-an-\") and an attached −OH functional group (suffix \"-ol\")."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Name",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Name",
+      "origin": "Wikipedia",
+      "text": "The \"eth-\" prefix and the qualifier \"ethyl\" in \"ethyl alcohol\" originally came from the name \"ethyl\" assigned in 1834 to the group C2H5− by Justus Liebig. He coined the word from the German name Aether of the compound C2H5−O−C2H5 (commonly called \"ether\" in English, more specifically called \"diethyl ether\"). According to the Oxford English Dictionary, Ethyl is a contraction of the Ancient Greek αἰθήρ (aithḗr, \"upper air\") and the Greek word ὕλη (hýlē, \"wood, raw material\", hence \"matter, substance\")."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Uses",
+      "origin": "Wikipedia",
+      "text": "As a central nervous system depressant, ethanol is one of the most commonly consumed psychoactive drugs. Despite alcohol's psychoactive, addictive, and carcinogenic properties, it is readily available and legal for sale in many countries. There are laws regulating the sale, exportation/importation, taxation, manufacturing, consumption, and possession of alcoholic beverages. The most common regulations are excise, and prohibition for minors."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Uses",
+      "origin": "Wikipedia",
+      "text": "In mammals, ethanol is primarily metabolized in the liver and stomach by ADH enzymes. These enzymes catalyze the oxidation of ethanol into acetaldehyde (ethanal):"
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Ethanol is a 2-carbon alcohol. Its molecular formula is CH3CH2OH. The structure of the molecule of ethanol is CH3−CH2−OH (an ethyl group linked to a hydroxyl group), which indicates that the carbon of a methyl group (−CH3) is attached to the carbon of a methylene group (−CH2−), which is attached to the oxygen of a hydroxyl group (−OH). It is a constitutional isomer of dimethyl ether. Ethanol is sometimes abbreviated as EtOH, using the common organic chemistry notation of representing the ethyl group (−CH2CH3) with Et."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Ethanol is a volatile, colorless liquid that has a slight odor. It burns with a smokeless blue flame that is not always visible in normal light. The physical properties of ethanol stem primarily from the presence of its hydroxyl group and the shortness of its carbon chain. Ethanol's hydroxyl group is able to participate in hydrogen bonding, rendering it more viscous and less volatile than less polar organic compounds of similar molecular weight, such as propane."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Natural occurrence",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Natural_occurrence",
+      "origin": "Wikipedia",
+      "text": "Ethanol is a byproduct of the metabolic process of yeast. As such, ethanol will be present in any yeast habitat. Ethanol can commonly be found in overripe fruit. Ethanol produced by symbiotic yeast can be found in bertam palm blossoms. Although some animal species, such as the pentailed treeshrew, exhibit ethanol-seeking behaviors, most show no interest or avoidance of food sources containing ethanol. Ethanol is also produced during the germination of many plants as a result of natural anaerobiosis."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Natural occurrence",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Natural_occurrence",
+      "origin": "Wikipedia",
+      "text": "Ethanol has been detected in outer space, forming an icy coating around dust grains in interstellar clouds."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Reactions",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Reactions",
+      "origin": "Wikipedia",
+      "text": "Ethanol is classified as a primary alcohol, meaning that the carbon that its hydroxyl group attaches to has at least two hydrogen atoms attached to it as well. Many ethanol reactions occur at its hydroxyl group."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Safety",
+      "origin": "Wikipedia",
+      "text": "Ethanol is very flammable and should not be used around an open flame. Atmospheric concentrations above one part per thousand are above the European Union occupational exposure limits."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Safety",
+      "url": "https://en.wikipedia.org/wiki/Ethanol#Safety",
+      "origin": "Wikipedia",
+      "text": "Pure ethanol will irritate the skin and eyes. Nausea, vomiting, and intoxication are symptoms of ingestion. Long-term use by ingestion can result in serious liver damage. Globally, ethanol accounted for 1.8 million deaths in 2021."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Clear, colorless liquid rapidly absorbed from the gastrointestinal tract and distributed throughout the body. It has bactericidal activity and is used often as a topical disinfectant. It is widely used as a solvent and preservative in pharmaceutical preparations as well as serving as the primary ingredient in ALCOHOLIC BEVERAGES. [ChemIDplus]"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Painting (Solvents) [Category: Paint] Using Disinfectants or Biocides [Category: Clean] Leather Tanning and Processing [Category: Industry] Silk-Screen Printing [Category: Other]"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For ethanol (USEPA/OPP Pesticide Code: 001501) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Most ethyl alcohol is used in alcoholic beverages in suitable dilutions. Reagent in synthetic organic chemistry and chromatography. Industrial and laboratory organic solvent. Other uses are in manufacture of denatured alcohol, pharmaceuticals (rubbing compounds, lotions, tonics, colognes), in perfumery. Octane booster in gasoline. Pharmaceutic aid (solvent)."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Ethanol has been detected in emissions from animal wastes, plants, insects, forest fires, microbes, and volcanoes(1) as well as emissions from the natural fermentation of starch, sugar and other carbohydrates(2). Ethanol is a volatile component of many plants(3)."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Ingredients for which the data are insufficient and their use in cosmetics is not supported"
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Flammable. H225: Highly Flammable liquid and vapor [Danger Flammable liquids]"
+    }
+  ]
+}

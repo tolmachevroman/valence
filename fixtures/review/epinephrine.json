@@ -1,0 +1,143 @@
+{
+  "query": "epinephrine",
+  "compound": {
+    "cid": 5816,
+    "title": "Epinephrine",
+    "formula": "C9H13NO3",
+    "molarMass": "183.20",
+    "iupacName": "4-[(1R)-1-hydroxy-2-(methylamino)ethyl]benzene-1,2-diol",
+    "cas": "51-43-4",
+    "synonyms": [
+      "adrenaline",
+      "l-Adrenaline",
+      "Adrenalin",
+      "Levoepinephrine",
+      "Nephridine"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Acute Toxic"
+    ],
+    "statements": [
+      {
+        "code": "H301",
+        "text": "Toxic if swallowed",
+        "percent": 96.1,
+        "level": "Danger"
+      },
+      {
+        "code": "H310",
+        "text": "Fatal in contact with skin",
+        "percent": 95.1,
+        "level": "Danger"
+      },
+      {
+        "code": "H331",
+        "text": "Toxic if inhaled",
+        "percent": 93.2,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Epinephrine appears as white to nearly-white microcrystalline powder or granules. Odorless. Melting point 211-212 °C. Aqueous solutions are slightly alkaline. Slightly bitter, numbing taste."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "(R)-adrenaline is the R-enantiomer of adrenaline. It is a hormone secreted by the adrenal glands resulting in the 'fight-or-flight' response. It has a role as a hormone, a beta-adrenergic agonist, a bronchodilator agent, a sympathomimetic agent, an alpha-adrenergic agonist, a vasodilator agent, an adrenergic agonist, a mydriatic agent, a vasoconstrictor agent and a mouse metabolite. It is a conjugate base of a (R)-adrenaline(1+). It is an enantiomer of a (S)-adrenaline."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Epinephrine, also known as adrenaline, is a hormone and neurotransmitter and produced by the adrenal glands that can also be used as a drug due to its various important functions. Though it has long been used in the treatment of hypersensitivity reactions, epinephrine in the auto-injector form (EpiPen) has been available since 1987 in the USA. Many new products/biosimilars and dosage routes have been approved under various names over the last several decades,,. On August 16, 2018, Teva Pharmaceuticals USA gained approval to market its generic epinephrine auto-injector in 0.3 mg and 0.15 mg strengths."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Epinephrine is an alpha-Adrenergic Agonist, and beta-Adrenergic Agonist, and Catecholamine. The mechanism of action of epinephrine is as an Adrenergic alpha-Agonist and Adrenergic beta-Agonist."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "epinephrine has been reported in Vicia faba, Hemidesmus indicus, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Epinephrine may be applied topically to control superficial bleeding from arterioles or capillaries in the skin, mucous membrane, or other tissues. Bleeding from larger vessels is not controllable by topical application of epinephrine."
+    },
+    {
+      "id": "7",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Epinephrine has been used to relax uterine musculature and inhibit uterine contractions in premature labor; however the cardiovascular effects and other adverse effects limit the usefullness of the drug for this purpose. Some manufacturers state that epinephrine injection is contraindicated during the second stage of labor."
+    },
+    {
+      "id": "8",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Drug of choice for emergency treatment of severe allergic reactions to insect stings or bites, foods, drugs, and other allergens."
+    },
+    {
+      "id": "9",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Used in the treatment of idiopathic or exercise-induced anaphylaxis"
+    },
+    {
+      "id": "10",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Epinephrine is a naturally occurring hormone, which is released from the adrenal medulla and is involved in the regulation of blood pressure and smooth muscle constriction(1). Epinephrine naturally occurs at the ends of sympathetic nerve fibers where they serve as chemical mediators for carrying nerve impulses(2)."
+    },
+    {
+      "id": "11",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Signs and Symptoms of Overdose Epinephrine overdose may lead to myocardial ischemia, infarction, renal insufficiency, and cardiomyopathy. Patients may also experience severe pallor, cold skin, and metabolic acidosis due to elevated blood lactic acid levels. These complications are more likely in individuals with preexisting conditions or when epinephrine is administered in high doses. Pulmonary edema may also occur as a result of peripheral vasoconstriction and myocardial stimulation. Due to its strong β1-adrenergic effects on cardiac tissue, epinephrine toxicity can result in potentially fatal cardiac arrhythmias or ischemia."
+    },
+    {
+      "id": "12",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic. H301 (96.1%): Toxic if swallowed [Danger Acute toxicity, oral] H310 (95.1%): Fatal in contact with skin [Danger Acute toxicity, dermal] H331 (93.2%): Toxic if inhaled [Danger Acute toxicity, inhalation]"
+    }
+  ]
+}

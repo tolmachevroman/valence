@@ -1,0 +1,320 @@
+{
+  "query": "carbon monoxide",
+  "compound": {
+    "cid": 281,
+    "title": "Carbon Monoxide",
+    "formula": "CO",
+    "molarMass": "28.010",
+    "iupacName": "carbon monoxide",
+    "cas": "630-08-0",
+    "synonyms": [
+      "carbon monooxide",
+      "Carbonic oxide",
+      "Carbon oxide (CO)",
+      "carbon(II) oxide",
+      "Exhaust gas"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Flammable",
+      "Compressed Gas",
+      "Acute Toxic",
+      "Health Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H220",
+        "text": "Extremely flammable gas",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H331",
+        "text": "Toxic if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H360D",
+        "text": "May damage the unborn child",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H372",
+        "text": "Causes damage to organs through prolonged or repeated exposure",
+        "percent": null,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Record-Description",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "Carbon monoxide is a colorless, nonirritating, odorless, and tasteless gas. It is found in both outdoor and indoor air."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Carbon Monoxide can cause developmental toxicity according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Carbon monoxide is a colorless, odorless gas. Prolonged exposure to carbon monoxide rich atmospheres may be fatal. It is easily ignited. It is just lighter than air and a flame can flash back to the source of leak very easily. Under prolonged exposure to fire or intense heat the containers may violently rupture and rocket."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Carbon monoxide, refrigerated liquid (cryogenic liquid) appears as a colorless cryogenic liquid. Prolonged exposure to carbon monoxide rich atmospheres may be fatal. Contact with the liquid can cause severe frostbite. Less dense than air. Easily ignited and a flame can flash back to the source of a leak very easily. Burns with a violet flame. Under prolonged exposure to fire or intense heat the containers may rupture violently and rocket. It is used in organic synthesis, metallurgy, and a fuel."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Carbon monoxide is a one-carbon compound in which the carbon is joined only to a single oxygen. It is a colourless, odourless, tasteless, toxic gas. It has a role as a metabolite, a mitochondrial respiratory-chain inhibitor, a neurotransmitter, a vasodilator agent, an EC 1.9.3.1 (cytochrome c oxidase) inhibitor, a P450 inhibitor, a probe, a neurotoxin, a ligand, a biomarker, a signalling molecule, a mouse metabolite and a human metabolite. It is a gas molecular entity, a carbon oxide and a one-carbon compound. It is a conjugate base of a carbon monoxide(1+)."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide (chemical formula CO) is a poisonous, flammable gas that is colorless, odorless, flavorless, and slightly less dense than air. Carbon monoxide consists of one carbon atom and one oxygen atom connected by a triple bond. It is the simplest carbon oxide. In coordination complexes, the carbon monoxide ligand is called carbonyl. It is a key ingredient in many processes in industrial chemistry."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide",
+      "origin": "Wikipedia",
+      "text": "The most common source of carbon monoxide is the partial combustion of carbon-containing compounds. Numerous environmental and biological sources generate carbon monoxide. In industry, carbon monoxide is important in the production of many compounds, including drugs, fragrances, and fuels."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide",
+      "origin": "Wikipedia",
+      "text": "CO is one of the most acutely toxic contaminants affecting indoor air quality. CO may be emitted from tobacco smoke and generated from malfunctioning fuel-burning stoves (wood, kerosene, natural gas, propane) and fuel-burning heating systems (wood, oil, natural gas) and from blocked flues connected to these appliances. Carbon monoxide poisoning is the most common type of fatal air poisoning in many countries."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#History",
+      "origin": "Wikipedia",
+      "text": "Man has maintained a complex relationship with carbon monoxide since first learning to control fire circa 800,000 BC. Early man probably discovered the toxicity of carbon monoxide poisoning upon introducing fire into his dwellings. The early development of metallurgy and smelting technologies emerging circa 6,000 BC through the Bronze Age likewise plagued man from carbon monoxide exposure. Apart from the toxicity of carbon monoxide, Native Americans in the United States may have experienced the neuroactive properties of carbon monoxide through shamanistic fireside rituals."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#History",
+      "origin": "Wikipedia",
+      "text": "Early civilizations developed mythological tales to explain the origin of fire, such as Prometheus from Greek mythology who shared fire with humans. Aristotle (384–322 BC) first recorded that burning coals produced toxic fumes. Greek physician Galen (AD 129–199) speculated that there was a change in the composition of the air that caused harm when inhaled, and many others of the era developed a basis of knowledge about carbon monoxide in the context of coal fume toxicity. Cleopatra may have died from carbon monoxide poisoning."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#History",
+      "origin": "Wikipedia",
+      "text": "In 1697, Georg Ernst Stahl used carbonarii halitus to refer to toxic vapors thought to be carbon monoxide. Friedrich Hoffmann conducted the first modern scientific investigation into carbon monoxide poisoning from coal in 1716. Herman Boerhaave conducted the first scientific experiments on the effect of carbon monoxide (coal fumes) on animals in the 1730s."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#History",
+      "origin": "Wikipedia",
+      "text": "Joseph Priestley is considered to have first synthesized carbon monoxide in 1772. Carl Wilhelm Scheele similarly isolated carbon monoxide from charcoal in 1773 and thought it could be the carbonic entity making fumes toxic. Torbern Bergman isolated carbon monoxide from oxalic acid in 1775. In the presence of oxygen, including atmospheric concentrations, carbon monoxide burns with a blue flame, producing carbon dioxide. Antoine Lavoisier conducted similarly inconclusive experiments in 1777."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Physical and chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Physical_and_chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide is the simplest oxocarbon and is isoelectronic with other triply bonded diatomic species possessing 10 valence electrons, including the cyanide anion, the nitrosonium cation, boron monofluoride and molecular nitrogen. It has a molar mass of 28.0, which, according to the ideal gas law, makes it slightly less dense than air, whose average molar mass is 28.8."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Physical and chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Physical_and_chemical_properties",
+      "origin": "Wikipedia",
+      "text": "The carbon and oxygen are connected by a triple bond that consists of a net two pi bonds and one sigma bond. The bond length between the carbon atom and the oxygen atom is 112.8 pm. This bond length is consistent with a triple bond, as in molecular nitrogen (N2), which has a similar bond length (109.76 pm) and nearly the same molecular mass. Carbon–oxygen double bonds are significantly longer, 120.8 pm in formaldehyde, for example. The boiling point (82 K) and melting point (68 K) are very similar to those of N2 (77 K and 63 K, respectively). The bond-dissociation energy of 1072 kJ/mol is stronger than that of N2 (942 kJ/mol) and represents the strongest chemical bond known."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide occurs in many environments, usually in trace levels. Photochemical degradation of plant matter, for example, generates an estimated 60 million tons/year. Typical concentrations in parts per million are as follows:"
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide (CO) is present in small amounts (about 80 ppb) in the Earth's atmosphere. Most comes from chemical reactions with organic compounds emitted by human activities and natural origins due to photochemical reactions in the troposphere that generate about 5 × 1012 kilograms per year. Other natural sources of CO include volcanoes, forest and bushfires, and other miscellaneous forms of combustion such as fossil fuels. Small amounts are also emitted from the ocean, and from geological activity because carbon monoxide occurs dissolved in molten volcanic rock at high pressures in the Earth's mantle."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Pollution and health effects",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Pollution_and_health_effects",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide is a temporary atmospheric pollutant in some urban areas, chiefly from the exhaust of internal combustion engines (vehicles, portable and back-up generators, lawnmowers, power washers, etc.), but also from incomplete combustion of various other fuels (including wood, coal, charcoal, oil, paraffin, propane, natural gas, and trash)."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Pollution and health effects",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Pollution_and_health_effects",
+      "origin": "Wikipedia",
+      "text": "Large CO pollution events can be observed from space over cities."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide has a wide range of functions across all disciplines of chemistry. The four premier categories of reactivity involve metal-carbonyl catalysis, radical chemistry, cation and anion chemistries."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Most metals form coordination complexes containing covalently attached carbon monoxide. These derivatives, called metal carbonyls, tend to be more robust when the metal is in lower oxidation states. For example, iron pentacarbonyl (Fe(CO)5) is an air-stable, distillable liquid. Nickel carbonyl is a metal carbonyl complex that forms by the direct combination of carbon monoxide with the metal:"
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Use",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Use",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide is an industrial gas with many applications in bulk chemicals manufacturing. Large quantities of aldehydes are produced by the hydroformylation reaction of alkenes, carbon monoxide, and H2. Hydroformylation is coupled to the Shell higher olefin process to give precursors to detergents."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Use",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Use",
+      "origin": "Wikipedia",
+      "text": "Phosgene, useful for preparing isocyanates, polycarbonates, and polyurethanes, is produced by passing purified carbon monoxide and chlorine gas through a bed of porous activated carbon, which serves as a catalyst. World production of this compound was estimated to be 2.74 million tonnes in 1989."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Biological and physiological properties",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Biological_and_physiological_properties",
+      "origin": "Wikipedia",
+      "text": "Carbon monoxide is a bioactive molecule which acts as a gaseous signaling molecule. It is naturally produced by many enzymatic and non-enzymatic pathways, the best understood of which is the catabolic action of heme oxygenase on the heme derived from hemoproteins such as hemoglobin. Following the first report that carbon monoxide is a normal neurotransmitter in 1993, carbon monoxide has received significant clinical attention as a biological regulator."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Biological and physiological properties",
+      "url": "https://en.wikipedia.org/wiki/Carbon_monoxide#Biological_and_physiological_properties",
+      "origin": "Wikipedia",
+      "text": "Because of carbon monoxide's role in the body, abnormalities in its metabolism have been linked to a variety of diseases, including neurodegenerations, hypertension, heart failure, and pathological inflammation. In many tissues, carbon monoxide acts as anti-inflammatory, vasodilatory, and encouragers of neovascular growth. In animal model studies, carbon monoxide reduced the severity of experimentally induced bacterial sepsis, pancreatitis, hepatic ischemia/reperfusion injury, colitis, osteoarthritis, lung injury, lung transplantation rejection, and neuropathic pain while promoting skin wound healing."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "An incomplete combustion product of carbon-containing materials and an emission of internal combustion engines; [ACGIH] Sewer construction workers can be poisoned by carbon monoxide migrating through the soil from nearby use of explosives. [Appl Occup Environ Hyg 2002 Mar;17(3):152-3]"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Aluminum Producing [Category: Industry] Steel Producing [Category: Industry] Forging [Category: Heat or Machine] Molding and Core Making [Category: Foundry] Metal Preparation and Pouring [Category: Foundry] Shakeout, Cleaning, and Finishing [Category: Foundry] Welding [Category: Weld] Heat Treating [Category: Heat or Machine] Smelting Copper or Lead [Category: Industry] Gas Welding and Cutting [Category: Weld] Mining [Category: Industry] Sewer and Wastewater Treatment [Category: Industry] Firefighting [Category: Other] Cement Producing [Category: Industry] Burning Natural Polymers [Category: Burn] Welding Over Coatings [Category: Weld] Burning Synthetic Polymers [Category: Burn] Burning Cell…"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Ceramics making [Category: Hobbies] Lost-wax casting [Category: Hobbies] Sculpturing plastics [Category: Hobbies] Glassblowing [Category: Hobbies] Smoking cigarettes [Category: Food & Drugs] Burning biomass fuel for cooking and heating [Category: Environments]"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Reducing agent in metallurgical operations; in organic synthesis especially in the Fischer-Tropsch process for petroleum-type products and in the oxo reaction; in the manuf of metal carbonyls"
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "NATURAL SOURCES SUCH AS ATMOSPHERIC OXIDN OF METHANE, FOREST FIRES, TERPENE OXIDN & OCEAN (WHERE MICROORGANISMS PRODUCE CARBON MONOXIDE) ARE RESPONSIBLE FOR ABOUT 90% OF ATMOSPHERIC CARBON MONOXIDE; HUMAN ACTIVITY PRODUCES ABOUT 10%."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "A small amount of carbon monoxide is produced normally in the body. This endogenous carbon monoxide is sufficient in amount to maintain a carbon monoxide hemoglobin saturation of about 0.4 to 0.7 percent. In some persons with blood disease, such as hemolytic anemia, the carbon monoxide saturation may reach 6 percent"
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Toxicity-Summary",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "ATSDR Toxicological Profile for Carbon Monoxide - Succinctly characterizes the toxicologic and adverse health effects information. ATSDR ToxGuide for Carbon Monoxide - Quick reference guide providing information such as chemical and physical properties, sources of exposure, routes of exposure, minimal risk levels, children's health, and health effects."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "It is a product of the incomplete combustion of carbon-containing fuels and is also produced by natural processes or by biotransformation of halomethanes within the human body. With external exposures to additional carbon monoxide, subtle effects can begin to occur, and exposure to higher levels can result in death. The health effects of carbon monoxide are largely the result of the formation of carboxyhemoglobin (COHb), which impairs the oxygen carrying capacity of the blood ..."
+    },
+    {
+      "id": "33",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/281#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Flammable, Compressed Gas, Acute Toxic, Health Hazard. H220: Extremely flammable gas [Danger Flammable gases] H331: Toxic if inhaled [Danger Acute toxicity, inhalation] H360D ***: May damage the unborn child [Danger Reproductive toxicity] H372 **: Causes damage to organs through prolonged or repeated exposure [Danger Specific target organ toxicity, repeated exposure]"
+    }
+  ]
+}

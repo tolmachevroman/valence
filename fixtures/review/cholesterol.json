@@ -1,0 +1,250 @@
+{
+  "query": "cholesterol",
+  "compound": {
+    "cid": 5997,
+    "title": "Cholesterol",
+    "formula": "C27H46O",
+    "molarMass": "386.7",
+    "iupacName": "(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-ol",
+    "cas": "57-88-5",
+    "synonyms": [
+      "Cholesterin",
+      "Cholesteryl alcohol",
+      "Dythol",
+      "Cordulan",
+      "Dusoline"
+    ]
+  },
+  "ghs": {
+    "signal": null,
+    "pictograms": [],
+    "statements": []
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Cholesterol is a cholestanoid consisting of cholestane having a double bond at the 5,6-position as well as a 3beta-hydroxy group. It has a role as a mouse metabolite, a human metabolite, a Daphnia galeata metabolite and an algal metabolite. It is a C27-steroid, a 3beta-hydroxy-Delta(5)-steroid, a 3beta-sterol and a cholestanoid."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "The principal sterol of all higher animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "cholesterol has been reported in Acanthus ilicifolius, Amaranthus hybridus, and other organisms with data available."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "cholest-5-en-3-ol has been reported in Caenorhabditis elegans with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Cholesterol is an animal sterol found in the body tissues (and blood plasma) of vertebrates. It can be found in large concentrations within the liver, spinal cord, and brain. Cholesterol is an important component of the membranes of cells, providing stability. It is the major precursor for the synthesis of vitamin D, of the various steroid hormones, including cortisol, cortisone, and aldosterone in the adrenal glands, and of the sex hormones progesterone, estrogen, and testosterone. Cholesterol also has an important role for the brain synapses as well as in the immune system."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol",
+      "origin": "Wikipedia",
+      "text": "Cholesterol is the principal sterol of all animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol",
+      "origin": "Wikipedia",
+      "text": "Cholesterol is biosynthesized by all animal cells and is an essential structural and signaling component of animal cell membranes. In vertebrates, hepatic cells typically produce the greatest amounts of it. In the brain, astrocytes produce cholesterol and transport it to neurons. It is absent among prokaryotes (bacteria and archaea), although there are some exceptions, such as Mycoplasma, which require cholesterol for growth. Cholesterol also serves as a precursor for the biosynthesis of steroid hormones, bile acid, and vitamin D."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol",
+      "origin": "Wikipedia",
+      "text": "Elevated levels of cholesterol in the blood, especially when bound to low-density lipoprotein (LDL, often referred to as \"bad cholesterol\"), may increase the risk of cardiovascular disease."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Etymology",
+      "origin": "Wikipedia",
+      "text": "The word cholesterol comes from Ancient Greek χολή (kholḗ , 'bile') and στερεός (stereos, 'solid'), followed by the chemical suffix -ol for an alcohol."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Physiology",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Physiology",
+      "origin": "Wikipedia",
+      "text": "Cholesterol is essential for all animal life. While most cells are capable of synthesizing it, the majority of cholesterol is ingested or synthesized by hepatocytes and transported in the blood to peripheral cells. The levels of cholesterol in peripheral tissues are dictated by a balance of uptake and export. Under normal conditions, brain cholesterol is separate from peripheral cholesterol, i.e., the dietary and hepatic cholesterol do not cross the blood brain barrier. Rather, astrocytes produce and distribute cholesterol in the brain."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Physiology",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Physiology",
+      "origin": "Wikipedia",
+      "text": "De novo synthesis, both in astrocytes and hepatocytes, occurs by a complex 37-step process. This begins with the mevalonate or HMG-CoA reductase pathway, the target of statin drugs, which encompasses the first 18 steps. This is followed by 19 additional steps to convert the resulting lanosterol into cholesterol. A human male weighing 68 kg (150 lb) normally synthesizes about 1 gram (1,000 mg) of cholesterol per day, and his body contains about 35 g, mostly contained within the cell membranes."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Biosynthesis and regulation",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Biosynthesis_and_regulation",
+      "origin": "Wikipedia",
+      "text": "Almost all animal tissues synthesize cholesterol from acetyl-CoA. All animal cells (with some exceptions within the invertebrates) manufacture cholesterol, for both membrane structure and other uses, with relative production rates varying by cell type and organ function. About 80% of total daily cholesterol production occurs in the liver and the intestines; other sites of higher synthesis rates include the brain, the adrenal glands, and the reproductive organs."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Biosynthesis and regulation",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Biosynthesis_and_regulation",
+      "origin": "Wikipedia",
+      "text": "Synthesis within the body starts with the mevalonate pathway where two molecules of acetyl-CoA condense to form acetoacetyl-CoA. This is followed by a second condensation between acetyl-CoA and acetoacetyl-CoA to form 3-hydroxy-3-methylglutaryl CoA (HMG-CoA)."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Dietary sources",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Dietary_sources",
+      "origin": "Wikipedia",
+      "text": "Animal fats are complex mixtures of triglycerides, with lesser amounts of both the phospholipids and cholesterol molecules from which all animal (and human) cell membranes are constructed. Since all animal cells manufacture cholesterol, all animal-based foods contain cholesterol in varying amounts. Major dietary sources of cholesterol include red meat, egg yolks and whole eggs, liver, kidney, giblets, fish oil, shellfish, and butter. Human breast milk also contains significant quantities of cholesterol."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Dietary sources",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Dietary_sources",
+      "origin": "Wikipedia",
+      "text": "Plant cells synthesize cholesterol as a precursor for other compounds, such as phytosterols and steroidal glycoalkaloids, with cholesterol remaining in plant foods only in minor amounts or absent. Some plant foods, such as avocado, flax seeds and peanuts, contain phytosterols, which compete with cholesterol for absorption in the intestines and reduce the absorption of both dietary and bile cholesterol. A typical diet contributes in the order of 0.2 grams of phytosterols, not enough to have a significant impact on blocking cholesterol absorption."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Clinical significance",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Clinical_significance",
+      "origin": "Wikipedia",
+      "text": "According to the lipid hypothesis, elevated levels of cholesterol in the blood lead to atherosclerosis, which may increase the risk of heart attack, stroke, and peripheral artery disease. Since higher blood LDL – especially higher LDL concentrations and smaller LDL particle size – contributes to this process more than the cholesterol content of the HDL particles, LDL particles are often termed \"bad cholesterol\". High concentrations of functional HDL, which can remove cholesterol from cells and atheromas, offer protection and are commonly referred to as \"good cholesterol\"."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Clinical significance",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Clinical_significance",
+      "origin": "Wikipedia",
+      "text": "Elevated levels of the lipoprotein fractions, LDL, IDL and VLDL, rather than the total cholesterol level, correlate with the extent and progress of atherosclerosis. Conversely, the total cholesterol can be within normal limits, yet be made up primarily of small LDL and small HDL particles, under which conditions atheroma growth rates are high. A post hoc analysis of the IDEAL and the EPIC prospective studies found an association between high levels of HDL cholesterol (adjusted for apolipoprotein A-I and apolipoprotein B) and increased risk of cardiovascular disease, casting doubt on the cardioprotective role of \"good cholesterol\"."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Interactive pathway map",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Interactive_pathway_map",
+      "origin": "Wikipedia",
+      "text": "Click on genes, proteins and metabolites below to link to respective articles."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Cholesteric liquid crystals",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Cholesteric_liquid_crystals",
+      "origin": "Wikipedia",
+      "text": "Some cholesterol derivatives (among other simple cholesteric lipids) are known to generate the cholesteric liquid crystalline phase. The cholesteric phase is, in fact, a chiral nematic phase, and it changes color when its temperature changes. This makes cholesterol derivatives useful for indicating temperature in liquid-crystal thermometers and in temperature-sensitive paints."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Stereoisomers",
+      "url": "https://en.wikipedia.org/wiki/Cholesterol#Stereoisomers",
+      "origin": "Wikipedia",
+      "text": "Cholesterol has 256 stereoisomers that arise from its eight stereocenters. Only two of the stereoisomers have biochemical significance: nat-cholesterol and ent-cholesterol (for natural and enantiomer, respectively). The only cholesterol stereoisomer to occur naturally is nat-cholesterol."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Main sterol of higher animals found in all body tissues; Used as an emulsifying agent for pharmaceuticals; [Merck Index] Also used as a raw material for syntheses; [HSDB]"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Used in pharmaceutical and dermal preparations as an emulsifying agent."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "... Important as raw material for syntheses involving microbiological degradation of the side chain."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Found in many foods (meats, eggs, milk, cheese, fish, shellfish) derived from animal products. Essential for membrane integrity. Used in steroid hormone synthesis."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Cholesterol is found in animals and humans in all body tissues(1)."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Cholesterol is essential for life. However, chronically high levels (from diet or from genetic predisposition or from diseases such as hyperlipidemia) of cholesterol and cholesterol esters lead to an excess of low-density lipoprotein (LDL) particles. In healthy individuals the LDL particles are large and relatively few in number. In contrast, large numbers of small LDL particles are strongly associated with promoting atheromatous disease within the arteries."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 222 of 227 companies (only 2.2% companies provided GHS information). For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "query": "carvone",
+  "compound": {
+    "cid": 7439,
+    "title": "Carvone, (+-)-",
+    "formula": "C10H14O",
+    "molarMass": "150.22",
+    "iupacName": "2-methyl-5-prop-1-en-2-ylcyclohex-2-en-1-one",
+    "cas": "99-49-0",
+    "synonyms": [
+      "CARVONE",
+      "Karvon",
+      "Carvol",
+      "Carvone (natural)",
+      "Carvon"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H317",
+        "text": "May cause an allergic skin reaction",
+        "percent": null,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Carvone is a p-menthane monoterpenoid that consists of cyclohex-2-enone having methyl and isopropenyl substituents at positions 2 and 5, respectively. It has a role as an allergen. It is a member of carvones and a botanical anti-fungal agent."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "(±)-carvone has been reported in Zanthoxylum ovalifolium, Hedycarya angustifolia, and other organisms with data available."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Record-Description",
+      "origin": "Yeast Metabolome Database (YMDB)",
+      "text": "Carvone is a metabolite found in or produced by Saccharomyces cerevisiae."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Record-Description",
+      "origin": "Medical Subject Headings (MeSH)",
+      "text": "an oxidized derivative of limonene; RN given refers to cpd without isomeric designation; L-carvone has spearmint flavor, D-carvone has dill/caraway flavor"
+    },
+    {
+      "id": "5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Carvone",
+      "origin": "Wikipedia",
+      "text": "Carvone is a member of a family of chemicals called terpenoids. Carvone is found naturally in many essential oils, but is most abundant in the oils from seeds of caraway (Carum carvi), spearmint (Mentha spicata), and dill."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Carvone#History",
+      "origin": "Wikipedia",
+      "text": "Caraway was used for medicinal purposes by the ancient Romans, but carvone was probably not isolated as a pure compound until Franz Varrentrapp (1815–1877) obtained it in 1849. It was originally called carvol by Schweizer. Goldschmidt and Zürrer identified it as a ketone related to limonene, and the structure was finally elucidated by Georg Wagner (1849–1903) in 1894."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Uses",
+      "origin": "Wikipedia",
+      "text": "Both carvones are used in the food and flavor industry. As the compound most responsible for the flavor of caraway, dill, and spearmint, carvone has been used for millennia in food. Food applications are mainly met by carvone made from limonene. R-(−)-Carvone is also used for air freshening products and, like many essential oils, oils containing carvones are used in aromatherapy and alternative medicine."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Uses",
+      "origin": "Wikipedia",
+      "text": "S-(+)-Carvone is also used to prevent premature sprouting of potatoes during storage, being marketed in the Netherlands for this purpose under the name Talent."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Stereoisomerism and odor",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Stereoisomerism_and_odor",
+      "origin": "Wikipedia",
+      "text": "Carvone has two mirror image forms, or enantiomers: R-(−)-carvone, the sweetish minty smell of spearmint leaves. Its mirror image, S-(+)-carvone, has a spicy aroma with notes of rye, and gives caraway seeds their smell."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Stereoisomerism and odor",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Stereoisomerism_and_odor",
+      "origin": "Wikipedia",
+      "text": "The fact that the two enantiomers are perceived as smelling different is evidence that olfactory receptors must respond more strongly to one enantiomer than to the other. Not all enantiomers have distinguishable odors. Squirrel monkeys have also been found to be able to discriminate between carvone enantiomers."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Occurrence",
+      "origin": "Wikipedia",
+      "text": "S-(+)-Carvone is the principal constituent (60–70%) of the oil from caraway seeds (Carum carvi), which is produced on a scale of about 10 tonnes per year. It also occurs to the extent of about 40–60% in dill seed oil (from Anethum graveolens), and also in mandarin orange peel oil. R-(−)-Carvone is also the most abundant compound in the essential oil from several species of mint, particularly spearmint oil (Mentha spicata), which is composed of 50–80% R-(−)-carvone. Spearmint is a major source of naturally produced R-(−)-carvone. However, the majority of R-(−)-carvone used in commercial applications is synthesized from R-(+)-limonene. The R-(−)-carvone isomer also occurs in kuromoji oil."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "There are three double bonds in carvone capable of reduction; the product of reduction depends on the reagents and conditions used. Catalytic hydrogenation of carvone (1) can give either carvomenthol (2) or carvomenthone (3). Zinc and acetic acid reduce carvone to give dihydrocarvone (4). MPV reduction using propan-2-ol and aluminium isopropoxide effects reduction of the carbonyl group only to provide carveol (5); a combination of sodium borohydride and CeCl3 (Luche reduction) is also effective. Hydrazine and potassium hydroxide give limonene (6) via a Wolff–Kishner reduction."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Oxidation of carvone can also lead to a variety of products. In the presence of an alkali such as Ba(OH)2, carvone is oxidised by air or oxygen to give the diketone 7. With hydrogen peroxide the epoxide 8 is formed. Carvone may be cleaved using ozone followed by steam, giving dilactone 9, while KMnO4 gives 10."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Metabolism",
+      "url": "https://en.wikipedia.org/wiki/Carvone#Metabolism",
+      "origin": "Wikipedia",
+      "text": "In the body, in vivo studies indicate that both enantiomers of carvone are mainly metabolized into dihydrocarvonic acid, carvonic acid and uroterpenolone. (–)-Carveol is also formed as a minor product via reduction by NADPH. (+)-Carvone is likewise converted to (+)-carveol. This mainly occurs in the liver and involves cytochrome P450 oxidase and (+)-trans-carveol dehydrogenase."
+    },
+    {
+      "id": "15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used as oil of caraway, for flavoring liqueurs and foods, in perfumery and soaps, and to enhance mint flavors (dentifrices, confections, pharmaceuticals, and odorants); [HSDB]"
+    },
+    {
+      "id": "16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "As oil of caraway; also for flavoring liqueurs; in perfumery and soaps."
+    },
+    {
+      "id": "17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Both (+)- and (-)-carvone are used to flavor a number of foods and beverages. (-)-Carvone is produced in much larger quantities and is mainly used in oral hygiene products."
+    },
+    {
+      "id": "18",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The following uses have been identified for carvone: Pesticide: D-Carvone is currently authorised as an anti-sprouting substance for seed potatoes. L-Carvone (spearmint oil) is authorised as plant growth regulator for post-harvest treatment of potatoes. Feed additive: D-Carvone is used in a commercial product claimed to improve the growth rate of weaned piglets. Veterinary use: Carvi aetheroleum (containing D-carvone) is used in veterinary medicinal products to facilitate breathing in new-borne animals, and to treat flatulence and disturbances of the stomach and the gut in farmed animals."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Carvone is found in gingergrass oil and is the main constituent of spearmint oil(1,2). The optically active form D-carvone is found in caraway seed and dill seed oil and it has been isolated from mandarin peel oil (Citrus reticulata blanco, Rutaceae)(1). Optically active form L-carvone is found in spearmint and kuromoji oils(1). The most significant natural sources of carvone are spearmint, dill, and caraway. The term spearmint is applied to various Mentha species including M. cardiaca, M. gracilis, M. spicata, and M. viridis and these usually contain 55-75% of the (R)-(-)-enantiomer."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Carvone occurs in several plants and plant tissues(1). Optically active and inactive forms of carvone have been reported among constituents of about 70 essential oils(2). D-Carvone is present in Carvi sp., Anethum graveolens, Anethum sowa, Lippia carviodora, Mentha arvensis, etc. L-Carvone is present in Mentha viridis var crispa, Mentha longifolia from South Africa, Eucalyptus globulus, and several mint species. Racemic or DL-carvone is present in ginger grass, Litsea guatemaleusis, lavender, and Artemisia ferganensis(2)."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Carvone is a pale-yellowish or colorless liquid. The following uses have been identified for carvone: pesticide, feed additive, veterinary medicine use, flavoring substance and natural food occurrence, personal care products: D- and L-carvone are used in a variety of non-food consumer products, including cosmetics and personal care products. Some of these, such as toothpaste and mouthwash may result in oral intake of carvone. It is also used as natural insect repellent. HUMAN EXPOSURE AND TOXICITY: The sensitizing potential of l-carvone has been considered low, but it has occasionally caused contact allergy in users of spearmint toothpaste and chewing gum."
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7439#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Warning. Pictograms: Irritant. H317: May cause an allergic skin reaction [Warning Sensitization, Skin]"
+    }
+  ]
+}

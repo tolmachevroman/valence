@@ -1,0 +1,266 @@
+{
+  "query": "water",
+  "compound": {
+    "cid": 962,
+    "title": "Water",
+    "formula": "H2O",
+    "molarMass": "18.015",
+    "iupacName": "oxidane",
+    "cas": "7732-18-5",
+    "synonyms": [
+      "Distilled water",
+      "Dihydrogen oxide",
+      "Purified water",
+      "Sterile water",
+      "Water vapor"
+    ]
+  },
+  "ghs": {
+    "signal": null,
+    "pictograms": [],
+    "statements": []
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Water appears as a clear, nontoxic liquid composed of hydrogen and oxygen, essential for life and the most widely used solvent."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Water is an oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms. It has a role as an amphiprotic solvent, a mouse metabolite, a Saccharomyces cerevisiae metabolite, a member of greenhouse gas, an Escherichia coli metabolite and a human metabolite. It is an oxygen hydride, a mononuclear parent hydride and an inorganic hydroxy compound. It is a conjugate base of an oxonium. It is a conjugate acid of a hydroxide."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Water (chemical formula: H2O) is a transparent fluid which forms the world's streams, lakes, oceans and rain, and is the major constituent of the fluids of organisms. As a chemical compound, a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds. Water is a liquid at standard ambient temperature and pressure, but it often co-exists on Earth with its solid state, ice; and gaseous state, steam (water vapor)."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "origin": "E. coli Metabolome Database (ECMDB)",
+      "text": "Water is a metabolite found in or produced by Escherichia coli (strain K12, MG1655)."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "H₂O has been reported in Maclura pomifera, Euonymus hamiltonianus, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "origin": "Wikipedia",
+      "text": "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans. Water is also the fluid of all known living organisms, in which it acts as a solvent. Water, being a polar molecule, undergoes strong intermolecular hydrogen bonding which is a large contributor to its physical and chemical properties. It is vital for all known forms of life, despite not providing food energy or being an organic micronutrient."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "origin": "Wikipedia",
+      "text": "Because Earth's surface temperature and pressure is relatively close to water's triple point, water exists on Earth as a solid, a liquid, and a gas. It forms precipitation in the form of rain and aerosols in the form of fog. Clouds consist of suspended droplets of water and ice, its solid state. When finely divided, crystalline ice may precipitate in the form of snow. The gaseous state of water is steam or water vapor."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Water",
+      "origin": "Wikipedia",
+      "text": "Water covers about 71% of the Earth's surface, with seas and oceans making up most of the water volume (about 96.5%). Small portions of water occur as groundwater (1.7%), in the glaciers and the ice caps of Antarctica and Greenland (1.7%), and in the air as vapor, clouds (consisting of ice and liquid water suspended in air), and precipitation (0.001%). Water moves continuously through the water cycle of evaporation, transpiration (evapotranspiration), condensation, precipitation, and runoff, usually reaching the sea."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Etymology",
+      "url": "https://en.wikipedia.org/wiki/Water#Etymology",
+      "origin": "Wikipedia",
+      "text": "The word water comes from Old English wæter, from Proto-Germanic *watar (source also of Old Saxon watar, Old Frisian wetir, Dutch water, Old High German wazzar, German Wasser, vatn, Gothic 𐍅𐌰𐍄𐍉 (wato)), from Proto-Indo-European *wod-or, suffixed form of root *wed- ('water'; 'wet'). Also cognate, through the Indo-European root, with Greek ύδωρ (ýdor; from Ancient Greek ὕδωρ (hýdōr), whence English 'hydro-'), Russian вода́ (vodá), Irish uisce, and Albanian ujë."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Properties",
+      "url": "https://en.wikipedia.org/wiki/Water#Properties",
+      "origin": "Wikipedia",
+      "text": "Water (H2O) is a polar inorganic compound. At room temperature it is a tasteless and odorless liquid, nearly colorless with a hint of blue. The simplest hydrogen chalcogenide, it is by far the most studied chemical compound and is sometimes described as the \"universal solvent\" for its ability to dissolve more substances than any other liquid, though it is poor at dissolving nonpolar substances. This allows it to be the \"solvent of life\": indeed, water as found in nature almost always includes various dissolved substances, and special steps are required to obtain chemically pure water. Water is the only common substance to exist as a solid, liquid, and gas in normal terrestrial conditions."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Properties",
+      "url": "https://en.wikipedia.org/wiki/Water#Properties",
+      "origin": "Wikipedia",
+      "text": "Along with oxidane, water is one of the two official names for the chemical compound H2O; it is also the liquid phase of H2O. The other two common states of matter of water are the solid phase, which is ice, and the gaseous phase, water vapor or steam. The addition or removal of heat can cause phase transitions: freezing (water to ice), melting (ice to water), vaporization (water to vapor), condensation (vapor to water), sublimation (ice to vapor) and deposition (vapor to ice)."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "On Earth",
+      "url": "https://en.wikipedia.org/wiki/Water#On_Earth",
+      "origin": "Wikipedia",
+      "text": "Hydrology is the study of the movement, distribution, and quality of water throughout the Earth. The study of the distribution of water is hydrography. The study of the distribution and movement of groundwater is hydrogeology, of glaciers is glaciology, of inland waters is limnology and distribution of oceans is oceanography. Ecological processes with hydrology are in the focus of ecohydrology."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "On Earth",
+      "url": "https://en.wikipedia.org/wiki/Water#On_Earth",
+      "origin": "Wikipedia",
+      "text": "The collective mass of water found on, under, and over the surface of a planet is called the hydrosphere. Earth's approximate water volume (the total water supply of the world) is 1.386 billion cubic kilometres (333 million cubic miles)."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Effects on life",
+      "url": "https://en.wikipedia.org/wiki/Water#Effects_on_life",
+      "origin": "Wikipedia",
+      "text": "From a biological standpoint, water has many distinct properties that are critical for the proliferation of life. It carries out this role by allowing organic compounds to react in ways that ultimately allow replication. All known forms of life depend on water. Water is vital both as a solvent in which many of the body's solutes dissolve and as an essential part of many metabolic processes within the body. Metabolism is the sum total of anabolism and catabolism. In anabolism, water is removed from molecules (through energy requiring enzymatic chemical reactions) to grow larger molecules (e.g., starches, triglycerides, and proteins for storage of fuels and information)."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Effects on life",
+      "url": "https://en.wikipedia.org/wiki/Water#Effects_on_life",
+      "origin": "Wikipedia",
+      "text": "Water is fundamental to both photosynthesis and respiration. Photosynthetic cells use the sun's energy to split off water's hydrogen from oxygen. In the presence of sunlight, hydrogen is combined with CO2 (absorbed from air or water) to form glucose and release oxygen. All living cells use such fuels and oxidize the hydrogen and carbon to capture the sun's energy and reform water and CO2 in the process (cellular respiration)."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Effects on human civilization",
+      "url": "https://en.wikipedia.org/wiki/Water#Effects_on_human_civilization",
+      "origin": "Wikipedia",
+      "text": "Civilization has historically flourished around rivers and major waterways; Mesopotamia, one of the so-called cradles of civilization, was situated between the major rivers Tigris and Euphrates; the ancient society of the Egyptians depended entirely upon the Nile. The early Indus Valley civilization (c. 3300 BCE – c. 1300 BCE) developed along the Indus River and tributaries that flowed out of the Himalayas. Rome was also founded on the banks of the Italian river Tiber."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Effects on human civilization",
+      "url": "https://en.wikipedia.org/wiki/Water#Effects_on_human_civilization",
+      "origin": "Wikipedia",
+      "text": "Water fit for human consumption is called drinking water or potable water. Water that is not potable may be made potable by filtration or distillation, or by a range of other methods. More than 660 million people do not have access to safe drinking water."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Distribution in nature",
+      "url": "https://en.wikipedia.org/wiki/Water#Distribution_in_nature",
+      "origin": "Wikipedia",
+      "text": "Much of the universe's water is produced as a byproduct of star formation. The formation of stars is accompanied by a strong outward wind of gas and dust. When this outflow of material eventually impacts the surrounding gas, the shock waves that are created compress and heat the gas. The water observed is quickly produced in this warm dense gas."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Distribution in nature",
+      "url": "https://en.wikipedia.org/wiki/Water#Distribution_in_nature",
+      "origin": "Wikipedia",
+      "text": "On 22 July 2011, a report described the discovery of a gigantic cloud of water vapor containing \"140 trillion times more water than all of Earth's oceans combined\" around a quasar located 12 billion light years from Earth. According to the researchers, the \"discovery shows that water has been prevalent in the universe for nearly its entire existence\"."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Law, politics, and crisis",
+      "url": "https://en.wikipedia.org/wiki/Water#Law,_politics,_and_crisis",
+      "origin": "Wikipedia",
+      "text": "Water politics is politics affected by water and water resources. Water, particularly fresh water, is a strategic resource across the world and an important element in many political conflicts. It causes health impacts and damage to biodiversity."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Law, politics, and crisis",
+      "url": "https://en.wikipedia.org/wiki/Water#Law,_politics,_and_crisis",
+      "origin": "Wikipedia",
+      "text": "Access to safe drinking water has improved over the last decades in almost every part of the world, but approximately one billion people still lack access to safe water and over 2.5 billion lack access to adequate sanitation. However, some observers have estimated that by 2025 more than half of the world population will be facing water-based vulnerability. A report, issued in November 2009, suggests that by 2030, in some developing regions of the world, water demand will exceed supply by 50%."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "In culture",
+      "url": "https://en.wikipedia.org/wiki/Water#In_culture",
+      "origin": "Wikipedia",
+      "text": "Water is considered a purifier in most religions. Faiths that incorporate ritual washing (ablution) include Christianity, Hinduism, Islam, Judaism, the Rastafari movement, Shinto, Taoism, and Wicca. Immersion (or aspersion or affusion) of a person in water is a central Sacrament of Christianity (where it is called baptism); it is also a part of the practice of other religions, including Islam (Ghusl), Judaism (mikvah) and Sikhism (Amrit Sanskar). In addition, a ritual bath in pure water is performed for the dead in many religions including Islam and Judaism."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "In culture",
+      "url": "https://en.wikipedia.org/wiki/Water#In_culture",
+      "origin": "Wikipedia",
+      "text": "In Christianity, holy water is water that has been sanctified by a priest for the purpose of baptism, the blessing of persons, places, and objects, or as a means of repelling evil."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "The most universal solvent; [Merck Index] Used as a solvent, suspending agent, industrial coolant, diluent, moderator in nuclear reactors, nutrient, power source, hydration of lime, paper coatings, textile processing, debarking logs, filtration, washing and scouring, sulfur mining, hydrolysis, Portland cement, hydraulic systems, steam generation, and in foods and beverages; [NTP] Permitted for use as an inert ingredient in non-food pesticide products; [EPA]"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Steel Producing [Category: Industry] Electroplating [Category: Plate] Petroleum Production and Refining [Category: Industry] Pulp and Paper Processing [Category: Industry] Textiles (Fiber & Fabric Manufacturing) [Category: Industry] Painting (Solvents) [Category: Paint] Mining [Category: Industry] Sewer and Wastewater Treatment [Category: Industry] Firefighting [Category: Other] Leather Tanning and Processing [Category: Industry] Photographic Processing [Category: Other] Cement Producing [Category: Industry] Textiles (Printing, Dyeing, or Finishing) [Category: Industry] Dressing Hair [Category: Other] Metal Extraction and Refining [Category: Industry]"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Physiologically water is classed as a nutrient substance."
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Drinking, culinary purposes, bathing, washing, laundering, heating, air conditioning, agriculture, stock raising and gardens, for industrial processes and cooling, for water power and steam power, for fire protection, for disposal of wastes, for fishing, swimming, boating and other recreational purposes, for fish and wildlife propagation, and for navigation"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Water is absolutely essential to all life. The protoplasm of most living cells contains about 80% water. Most of the earth's surface is covered with water(1). The most striking feature of the earth is the extensive hydrosphere, lacking from neighboring planets. 97.22% of earth's water is captured in oceans, with approximately 2% of water locked up in polar icecaps and glaciers. Water found in land, including surface and groundwater, makes up <1% of the earth's water resources. Groundwater represents more than 97% of the usable freshwater resources and is a major source of replenishment for surface water. Water resources are renewable but finite and scarce."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "The most abundant gas typically released into the atmosphere from volcanic systems is water vapor, followed by cabon dioxide and sulfur dioxide. Locally sulfur dioxide gas can lead to acid rain and air pollution downwind from a volcano(1)."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 1866 of 1876 companies (only 0.5% companies provided GHS information). For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

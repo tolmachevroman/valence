@@ -1,0 +1,122 @@
+{
+  "query": "thalidomide",
+  "compound": {
+    "cid": 5426,
+    "title": "Thalidomide",
+    "formula": "C13H10N2O4",
+    "molarMass": "258.23",
+    "iupacName": "2-(2,6-dioxopiperidin-3-yl)isoindole-1,3-dione",
+    "cas": "50-35-1",
+    "synonyms": [
+      "Thalomid",
+      "Contergan",
+      "Pantosediv",
+      "Distaval",
+      "Softenon"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Irritant",
+      "Health Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H302",
+        "text": "Harmful if swallowed",
+        "percent": 88.2,
+        "level": "Warning"
+      },
+      {
+        "code": "H360",
+        "text": "May damage fertility or the unborn child",
+        "percent": 92.1,
+        "level": "Danger"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Thalidomide can cause developmental toxicity according to an independent committee of scientific and health experts."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Thalidomide appears as needles or white powder. (NTP, 1992)"
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "2-(2,6-dioxopiperidin-3-yl)-1H-isoindole-1,3(2H)-dione is a dicarboximide that is isoindole-1,3(2H)-dione in which the hydrogen attached to the nitrogen is substituted by a 2,6-dioxopiperidin-3-yl group. It is a member of piperidones and a member of phthalimides."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "A piperidinyl isoindole originally introduced as a non-barbiturate hypnotic, thalidomide was withdrawn from the market due to teratogenic effects. It has been reintroduced and used for a number of inflammatory disorders and cancers. Thalidomide displays immunosuppressive and anti-angiogenic activity through modulating the release of inflammatory mediators like tumor necrosis factor-alpha (TNF-a) and other cytokine action. Due to severe teratogenicity, pregnancy must be excluded before the start of treatment and patients must enrol in the THALIDOMID Risk Evaluation and Mitigation Strategy (REMS) program to ensure contraception adherence."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "The physiologic effect of thalidomide is by means of Decreased Immunologically Active Molecule Activity."
+    },
+    {
+      "id": "6",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Angiogenesis Inhibitors; Immunosuppressive Agents; Leprostatic Agents; Teratogens"
+    },
+    {
+      "id": "7",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "For the acute treatment of the cutaneous manifestations of moderate to severe erythema nodosum leprosum (ENL). Also for use as maintenance therapy for prevention and suppression of the cutaneous manifestations of ENL recurrence. Used to treat multiple myeloma."
+    },
+    {
+      "id": "8",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Thalidomide is a white to off-white crystalline powder. Thalidomide is an immunomodulatory agent with anti-inflammatory, antiangiogenic, and sedative and hypnotic activity. It is used for the acute treatment of the cutaneous manifestations of moderate to severe erythema nodosum leprosum (ENL). It is also used as maintenance therapy for prevention and suppression of the cutaneous manifestations of erythema nodosum leprosum recurrence. It is used in combination with dexamethasone for the treatment of patients with newly diagnosed multiple myeloma."
+    },
+    {
+      "id": "9",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "There is no indicated antidote for thalidomide overdose. Thalidomide toxicity directly correlates with drug dosage and duration of therapy. The most common symptoms related to thalidomide toxicity include constipation, sedation, fatigue, and neuropathy. Therapy exceeding six months is associated with an increase in neuropathy and hypothyroidism related to thalidomide toxicity. However, the incidence of constipation and sedation seems to decrease with the continued duration of therapy."
+    },
+    {
+      "id": "10",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5426#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Danger. Pictograms: Irritant, Health Hazard. H302 (88.2%): Harmful if swallowed [Warning Acute toxicity, oral] H360 (92.1%): May damage fertility or the unborn child [Danger Reproductive toxicity]"
+    }
+  ]
+}

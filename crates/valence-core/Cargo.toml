@@ -29,6 +29,7 @@ mistralrs = { git = "https://github.com/tolmachevroman/mistral.rs", rev = "0516b
 # The M0 spike examples run the model directly.
 [dev-dependencies]
 anyhow = "1"
+insta = "1"
 libproc = "0.14"
 mistralrs = { git = "https://github.com/tolmachevroman/mistral.rs", rev = "0516b52073eeded1ecbc3cbf4f214b5d6ad9aedb", features = ["metal"] }
 tokio = { version = "1", features = ["io-util", "macros", "net", "rt-multi-thread"] }

@@ -1,0 +1,179 @@
+{
+  "query": "batrachotoxin",
+  "compound": {
+    "cid": 6324647,
+    "title": "Batrachotoxin",
+    "formula": "C31H42N2O6",
+    "molarMass": "538.7",
+    "iupacName": "[(1S)-1-[(1R,5R,6S,9R,11S,12R,14R)-9,12-dihydroxy-6,16-dimethyl-10,19-dioxa-16-azahexacyclo[12.5.3.15,9.01,14.02,11.06,11]tricosa-2,21-dien-22-yl]ethyl] 2,4-dimethyl-1H-pyrrole-3-carboxylate",
+    "cas": "23509-16-2",
+    "synonyms": [
+      "BATRACHOTOXIN [MI]",
+      "BTX"
+    ]
+  },
+  "ghs": null,
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "batrachotoxin has been reported in Phyllobates aurotaenia with data available."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Batrachotoxin is batrachotoxins are potent activators of sodium channels identified in extract of frog skins."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Record-Description",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "Amphibians have the ability to produce and secrete a mixture of bioactive substances in specialized skin glands for antibiotic self-protection and defense against predators. Some of these secretions contain the highly toxic batrachotoxin, tetrodotoxin, and samandarine. Batrachotoxin (BTX) is a steroidal alkaloid that binds to voltage-gated sodium channels and makes them unable to produce action potentials. It is found in frogs of the genus Phyllobates, birds in the genera Pitohui and Ifrita, and beetles in the genus Choresine. Batrachotoxin was discovered by the precolonial inhabitants of the Northwestern Andes (present day Colombia)."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Record-Description",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Batrachotoxins (BTX) are extremely potent cardiotoxic and neurotoxic steroidal alkaloids found in poison dart frogs (genus Dendrobates and Phyllobates), Melyridae beetles, and certain birds (genus Pitohui and Ifrita). They act directly on sodium channels. (L1069). It is the most potent non-peptidal neurotoxin known."
+    },
+    {
+      "id": "5",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin",
+      "origin": "Wikipedia",
+      "text": "Batrachotoxin (BTX) is an extremely potent cardiotoxic and neurotoxic steroidal alkaloid found in certain species of beetles, birds, and frogs. The name is from the Greek word βάτραχος, bátrachos, 'frog'. Structurally-related chemical compounds are often referred to collectively as batrachotoxins. In certain frogs, this alkaloid is present mostly on the skin. Such frogs are among those used for poisoning darts. Batrachotoxin binds to and irreversibly opens the sodium channels of nerve cells and prevents them from closing, resulting in paralysis and death. No antidote is known."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#History",
+      "origin": "Wikipedia",
+      "text": "Batrachotoxin was discovered by Fritz Märki and Bernhard Witkop, at the National Institute of Arthritis and Musculoskeletal and Skin Diseases in Bethesda, Maryland. Märki and Witkop isolated the toxic alkaloids fraction from the black-legged poison dart frog and determined its chemical properties in 1963. They isolated four major toxic steroidal alkaloids including batrachotoxin, homobatrachotoxin (isobatrachotoxin), pseudobatrachotoxin, and batrachotoxinin A. Due to the difficulty of handling such a potent toxin and the minuscule amount that could be collected, a comprehensive structure determination involved several difficulties."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Toxicity",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Toxicity",
+      "origin": "Wikipedia",
+      "text": "The toxin is released through colourless or milky secretions from glands located on the back and behind the ears of frogs from the genus Phyllobates. When one of these frogs is agitated, feels threatened or is in pain, the toxin is reflexively released through several canals."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Treatment",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Treatment",
+      "origin": "Wikipedia",
+      "text": "Currently, no effective antidote exists for the treatment of batrachotoxin poisoning. Veratridine, aconitine and grayanotoxin—like batrachotoxin—are lipid-soluble poisons which similarly alter the ion selectivity of the sodium channels, suggesting a common site of action. Due to these similarities, treatment for batrachotoxin poisoning might best be modeled after, or based on, treatments for one of these poisons. Treatment may also be modeled after that for digitalis, which produces somewhat similar cardiotoxic effects."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Treatment",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Treatment",
+      "origin": "Wikipedia",
+      "text": "While it is not an antidote, the membrane depolarization can be prevented or reversed by tetrodotoxin (from puffer fish), which is a noncompetitive inhibitor, or saxitoxin. These both have effects antagonistic to those of batrachotoxin on sodium flux. Certain anesthetics may act as receptor antagonists to the action of this alkaloid poison, while other local anesthetics block its action altogether by acting as competitive antagonists."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Sources",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Sources",
+      "origin": "Wikipedia",
+      "text": "Batrachotoxin has been found in four Papuan beetle species, all in the genus Choresine in the family Melyridae; C. pulchra, C. semiopaca, C. rugiceps and C. sp. A."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Sources",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Sources",
+      "origin": "Wikipedia",
+      "text": "Several species of bird endemic to New Guinea have the toxin in their skin and on their feathers: the blue-capped ifrit (Ifrita kowaldi), little shrikethrush (aka rufous shrike-thrush, Colluricincla megarhyncha), and the following pitohui species: the hooded pitohui (Pitohui dichrous, the most toxic of the birds), crested pitohui (Ornorectes cristatus), black pitohui (Melanorectes nigrescens), rusty pitohui (Pseudorectes ferrugineus), and the variable pitohui, which is now split into three species: the northern variable pitohui (Pitohui kirhocephalus), Raja Ampat pitohui (P. cerviniventris), and southern variable pitohui (P. uropygialis)."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Use",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Use",
+      "origin": "Wikipedia",
+      "text": "The most common use of this toxin is by the Noanamá Chocó and Emberá Chocó of the Embera-Wounaan of western Colombia for poisoning blowgun darts for use in hunting."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Use",
+      "url": "https://en.wikipedia.org/wiki/Batrachotoxin#Use",
+      "origin": "Wikipedia",
+      "text": "By some accounts, the frog is then held over or roasted alive over a fire until it cries in pain. Bubbles of poison form as the frog's skin begins to blister. Poison darts made from either fresh or fermented batrachotoxin are enough to drop monkeys and birds in their tracks. Nerve paralysis is almost instantaneous. Other accounts say that a stick siurukida (\"bamboo tooth\") is put through the mouth of the frog and passed out through one of its hind legs."
+    },
+    {
+      "id": "14",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Biochemical tool for study of Na+ channels."
+    },
+    {
+      "id": "15",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Uses",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "Batrachotoxins are neurotoxic steroidal alkaloids that were first isolated from a Colombian poison-dart frog and later found in certain passerine birds of New Guinea. Neither vertebrate group is thought to produce the toxins de novo, and the toxins are likely sequestered from dietary sources. The authors of this publication describe the presence of high levels of batrachotoxins in a little-studied group of small beetles, genus Choresine (family Melyridae), and suggest they might provide a toxin source for the New Guinea birds."
+    },
+    {
+      "id": "16",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Uses",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "Amphibian skin contains several structural classes of alkaloids. These include batrachotoxins, histrionicotoxins, gephyrotoxins, decahydroquinolines, pumiliotoxins and homopumiliotoxins, epibatidine, and samandarines. Some of these alkaloids are derived from the amphibians' diet. Examples include pyrrolizidine and indolizidine alkaloids from ants, tricyclic coccinellines from beetles, and pyrrolizidine oximes, likely sourced from millipedes. However, the origins of other alkaloids, such as batrachotoxins, decahydroquinolines, histrionicotoxins, pumiliotoxins, and epibatidine, are unknown."
+    },
+    {
+      "id": "17",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Uses",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Batrachotoxins are found in poison dart frogs (genus Dendrobates and Phyllobates), Melyridae beetles, and certain birds (genus Pitohui and Ifrita). (L1069)"
+    },
+    {
+      "id": "18",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Batrachotoxin is the active principal steroidal alkaloid isolated from poison-dart (poison-arrow) frogs of the genus Phyllobates."
+    },
+    {
+      "id": "19",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Batrachotoxins are neurotoxic steroidal alkaloids first isolated from a Colombian poison-dart frog and later found in certain passerine birds of New Guinea. Neither vertebrate group is thought to produce the toxins de novo, but instead they likely sequester them from dietary sources. HUMAN STUDIES: Batrachotoxin is a potent modulator of voltage-gated sodium channels, leading to irreversible depolarization of nerves and muscles, fibrillation, arrhythmias and eventually cardiac failure. Since its discovery, field researchers also reported numbness after their skin came into contact with this toxin. ANIMAL STUDIES: Levels of batrachotoxin tend to be reduced when P."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6324647#section=Toxicity-Summary",
+      "origin": "Pertti (Bert) Hakkinen's Toxicology and Other Annotations",
+      "text": "Batrachotoxin is a potent modulator of voltage-gated sodium channels, leading to irreversible depolarisation of nerves and muscles, fibrillation, arrhythmias and eventually cardiac failure."
+    }
+  ]
+}

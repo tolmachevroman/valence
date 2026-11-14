@@ -1,0 +1,326 @@
+{
+  "query": "nicotine",
+  "compound": {
+    "cid": 89594,
+    "title": "Nicotine",
+    "formula": "C10H14N2",
+    "molarMass": "162.23",
+    "iupacName": "3-[(2S)-1-methylpyrrolidin-2-yl]pyridine",
+    "cas": "54-11-5",
+    "synonyms": [
+      "L-Nicotine",
+      "(-)-Nicotine",
+      "(S)-Nicotine",
+      "Habitrol",
+      "(S)-(-)-Nicotine"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Acute Toxic",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H300",
+        "text": "Fatal if swallowed",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H310",
+        "text": "Fatal in contact with skin",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H330",
+        "text": "Fatal if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H411",
+        "text": "Toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Nicotine can cause developmental toxicity according to state or federal government labeling requirements."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Nicotine appears as a colorless to light yellow or brown liquid. Combustible. Toxic by inhalation and by skin absorption. Produces toxic oxides of nitrogen during combustion."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "(S)-nicotine is a 3-(1-methylpyrrolidin-2-yl)pyridine in which the chiral centre has S-configuration. The naturally occurring and most active enantiomer of nicotine, isolated from Nicotiana tabacum. It has a role as a phytogenic insecticide, a psychotropic drug, an anxiolytic drug, a xenobiotic, a nicotinic acetylcholine receptor agonist, a peripheral nervous system drug, an immunomodulator, a teratogenic agent, a neurotoxin, a mitogen, a biomarker and a plant metabolite. It is a conjugate base of a (S)-nicotinium(1+). It is an enantiomer of a (R)-nicotine."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Nicotine is highly toxic alkaloid. It is the prototypical agonist at nicotinic cholinergic receptors where it dramatically stimulates neurons and ultimately blocks synaptic transmission. Nicotine is also important medically because of its presence in tobacco smoke."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Nicotine is a Cholinergic Nicotinic Agonist."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nicotine",
+      "origin": "Wikipedia",
+      "text": "Nicotine is a stimulant and alkaloid found primarily in plants of the nightshade family, notably in tobacco; it is also synthesized. Nicotine is used recreationally for its stimulant and anxiolytic effects. In tobacco leaves, nicotine constitutes about 0.6–3% of the dry weight, and smaller, trace quantities occur in other Solanaceae crops such as tomatoes, potatoes, and eggplants. In pure form, nicotine is a colorless to yellowish, oily liquid that readily penetrates biological membranes and acts as a potent neurotoxin in insects, where it serves as an antiherbivore toxin."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nicotine",
+      "origin": "Wikipedia",
+      "text": "In humans, nicotine acts primarily as a stimulant by binding to and activating nicotinic acetylcholine receptors (nAChRs) in the central nervous system and peripheral tissues. This results in the release of neurotransmitters such as dopamine, acetylcholine, and norepinephrine, producing effects including increased alertness, reduced anxiety, and mild euphoria. Nicotine is typically consumed through tobacco smoking, vaping, or other nicotine delivery systems."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nicotine",
+      "origin": "Wikipedia",
+      "text": "Nicotine is highly addictive, and nicotine dependence is characterized by tolerance, physical dependence, psychological dependence, and nicotine withdrawal symptoms such as irritability, anxiety, and difficulty concentrating. Nicotine replacement therapy (NRT) products, including gums, patches, and lozenges, deliver the compound in slower, lower doses that are less addictive and are used medically to help people quit smoking. Synthetic derivatives of nicotine, such as varenicline, act as partial agonists at nicotinic receptors and are also used as smoking cessation aids."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#History",
+      "origin": "Wikipedia",
+      "text": "Nicotine was originally isolated from the tobacco plant in 1828 by chemists Wilhelm Heinrich Posselt and Karl Ludwig Reimann from Germany, who believed it was a poison. Its chemical empirical formula was described by Melsens in 1843, its structure was discovered by Adolf Pinner and Richard Wolffenstein in 1893, and it was first synthesized by Amé Pictet and A. Rotschy in 1904."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#History",
+      "origin": "Wikipedia",
+      "text": "Nicotine is named after the tobacco plant Nicotiana tabacum, which in turn is named after the French ambassador in Portugal, Jean Nicot de Villemain, who sent tobacco and seeds to Paris in 1560, presented to the French King, and who promoted their medicinal use. Smoking was believed to protect against illness, particularly the plague. However, the \"holy herb\", tobacco, had first reached Europe by the early 1530s, brought by Spanish explorers."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#History",
+      "origin": "Wikipedia",
+      "text": "Following its introduction, tobacco rapidly gained popularity in Europe for its stimulating effects, fueled by nicotine's addictive and pharmacological properties and tobacco's widespread embrace as a cure-all. By the early 17th century, this allure fueled its mercilessly laborious cultivation as a cash crop in the Virginia colonies, where John Rolfe's introduction in 1612 rescued Jamestown from economic collapse and famine, transforming it into a prosperous export hub with over 20,000 pounds shipped by 1619 and laying the groundwork for transatlantic trade."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#History",
+      "origin": "Wikipedia",
+      "text": "Although methods of production of synthetic nicotine have existed for decades, it was believed that the cost of making nicotine by laboratory synthesis was cost prohibitive compared to extracting nicotine from tobacco. However, recently synthetic nicotine started to be found in different brands of e-cigarettes and oral pouches and marketed as \"tobacco-free\"."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Uses",
+      "origin": "Wikipedia",
+      "text": "The primary therapeutic use of nicotine is treating nicotine dependence to eliminate smoking and the damage it does to health. Nicotine itself is not a standalone cessation tool; its efficacy in smoking cessation relies on nicotine replacement therapy (NRT) delivery systems, which vary formulations (e.g., transdermal patches and lozenges for steady release versus oral gum, inhalers, and nasal sprays for acute relief) to control and modify how much nicotine is delivered and absorbed, and to mimic tobacco pharmacokinetics without harmful byproducts."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Uses",
+      "origin": "Wikipedia",
+      "text": "A 2018 Cochrane Collaboration review found high-quality evidence that all current forms of nicotine replacement therapy (gum, patch, lozenges, inhaler, and nasal spray) increase the chances of successfully quitting smoking by 50–60%, regardless of setting."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "Nicotine use for tobacco cessation has few contraindications."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Contraindications",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Contraindications",
+      "origin": "Wikipedia",
+      "text": "It is not known whether nicotine replacement therapy is effective for smoking cessation in adolescents, as of 2014. It is therefore not recommended to adolescents. It is not safe to use nicotine during pregnancy or breastfeeding, although it is safer than smoking. The desirability of NRT use in pregnancy is therefore debated."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Nicotine is classified as a poison, and it is \"extremely hazardous\". The CDC says it is \"toxic to developing fetuses and is a health danger for pregnant women.\" It can harm brain development up to age twenty-five, and early use of nicotine can predispose young people to smoking and drug use. However, at doses typically used by consumers, it presents little if any hazard to adult users. Although at low amounts nicotine has a mild analgesic effect, at sufficiently high doses nicotine may result in nausea, vomiting, diarrhea, salivation, bradycardia, and possibly seizures, hypoventilation, and death."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Nicotine reduces the amount of rapid eye movement (REM) sleep, slow-wave sleep (SWS), and total sleep time in healthy nonsmokers given nicotine via a transdermal patch, and the reduction is dose-dependent. Acute nicotine intoxication has been found to significantly reduce total sleep time and increase REM latency, sleep onset latency, and non-rapid eye movement (NREM) stage 2 sleep time. Depressive non-smokers experience mood and sleep improvements under nicotine administration; however, subsequent nicotine withdrawal has a negative effect on both mood and sleep."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Overdose",
+      "origin": "Wikipedia",
+      "text": "It is unlikely that a person would overdose on nicotine through smoking alone. The US Food and Drug Administration (FDA) stated in 2013 that there are no significant safety concerns associated with the use of more than one form of over-the-counter (OTC) nicotine replacement therapy at the same time, or using OTC NRT at the same time as another nicotine-containing product, like cigarettes."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Overdose",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Overdose",
+      "origin": "Wikipedia",
+      "text": "The initial symptoms of a nicotine overdose typically include nausea, vomiting, diarrhea, hypersalivation, abdominal pain, tachycardia (rapid heart rate), hypertension (high blood pressure), tachypnea (rapid breathing), headache, dizziness, pallor (pale skin), auditory or visual disturbances, and perspiration, followed shortly after by marked bradycardia (slow heart rate), bradypnea (slow breathing), and hypotension (low blood pressure). An increased respiratory rate (i.e., tachypnea) is one of the primary signs of nicotine poisoning."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Drug interactions",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Drug_interactions",
+      "origin": "Wikipedia",
+      "text": "Potential interaction with sympathomimetic drugs (adrenergic agonists) and sympatholytic drugs (alpha-blockers and beta-blockers)."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Drug interactions",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Drug_interactions",
+      "origin": "Wikipedia",
+      "text": "Nicotine and cigarette smoke both induce the expression of liver enzymes (e.g., certain cytochrome P450 proteins) which metabolize drugs, leading to the potential for alterations in drug metabolism."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "Nicotine acts as a receptor agonist at most nicotinic acetylcholine receptors (nAChRs), except at two nicotinic receptor subunits (nAChRα9 and nAChRα10) where it acts as a receptor antagonist. Such antagonism results in mild analgesia."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Pharmacology",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Pharmacology",
+      "origin": "Wikipedia",
+      "text": "The stereochemistry of nicotine is crucial to its biological effects. Due to the chiral nature of its receptors in the body, the (S)-enantiomer is substantially more active. For this reason, nearly all pharmacological and toxicological data is based on studies of (S)-nicotine. (S)-Nicotine is 4–28 times more potent than (R)-nicotine in standard nicotinic receptor binding and functional assays and elicits stronger nasal irritation, stinging, and mucosal responses at lower detection thresholds—yet smokers rated it as more pleasant in the only human sensory study."
+    },
+    {
+      "id": "25",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Nicotine#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Nicotine is a very hygroscopic, colorless to pale yellow, oily liquid that gradually turns brown on exposure to air or light. It develops a characteristic pungent, fishy odor of pyridine and has an acrid burning taste. Pure nicotine tastes \"terrible\". It is very soluble in alcohol, chloroform, ether, light petroleum, kerosene, or oils. It is miscible with water in its neutral amine base form between 60 °C and 210 °C. It is a dibasic nitrogenous base, having Kb1=1×10−6, Kb2=1×10−11. It readily forms ammonium salts with acids that are usually solid and water-soluble. Its flash point is 95 °C, and its auto-ignition temperature is 244 °C."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in medicine and as an insecticide; [ACGIH] Used in pesticides, e.g., Black Leaf 40 that contains 40% nicotine sulfate; Other alkaloids similar to nicotine produced by plants are anabasine, cytisine, coniine, and lobeline. [Olson, p. 337]"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Smoking cigarettes [Category: Food & Drugs]"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For nicotine (USEPA/OPP Pesticide Code: 056702) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Use Sites: Ornamental plants in greenhouses only, especially poinsettias, and including annual bedding plants and chrysanthenmums."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "N. glauca (burley tobacco, wild tobacco, wild tree tobacco) and N. tabacum (tobacco plant) contain the alkaloid nicotine."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "SMOKING TOBACCO USUALLY CONTAINS 1-2% NICOTINE."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Nicotine is an alkaloid contained in the leaves of the tobacco plants(1) Nicotiana tabacum and N. rustica(2)."
+    },
+    {
+      "id": "33",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Nicotine is a stimulant drug that acts as an agonist at nicotinic acetylcholine receptors. These are ionotropic receptors composed up of five homomeric or heteromeric subunits. In the brain, nicotine binds to nicotinic acetylcholine receptors on dopaminergic neurons in the cortico-limbic pathways. This causes the channel to open and allow conductance of multiple cations including sodium, calcium, and potassium. This leads to depolarization, which activates voltage-gated calcium channels and allows more calcium to enter the axon terminal. Calcium stimulates vesicle trafficking towards the plasma membrane and the release of dopamine into the synapse."
+    },
+    {
+      "id": "34",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Acute Toxic, Environmental Hazard. H300: Fatal if swallowed [Danger Acute toxicity, oral] H310: Fatal in contact with skin [Danger Acute toxicity, dermal] H330: Fatal if inhaled [Danger Acute toxicity, inhalation] H411: Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "query": "glyphosate",
+  "compound": {
+    "cid": 3496,
+    "title": "Glyphosate",
+    "formula": "C3H8NO5P",
+    "molarMass": "169.07",
+    "iupacName": "2-(phosphonomethylamino)acetic acid",
+    "cas": "1071-83-6",
+    "synonyms": [
+      "N-(Phosphonomethyl)glycine",
+      "Glyphosphate",
+      "N-Phosphomethylglycine",
+      "Glyfos",
+      "Pondmaster"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Corrosive",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H318",
+        "text": "Causes serious eye damage",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H411",
+        "text": "Toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Record-Description",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "Glyphosate is the active ingredient in weed killer products such as RoundUp™. Glyphosate products are one of the most widely used weed killers worldwide in farms and in home gardens and lawns. These products typically contain glyphosate in combination with other ingredients that help improve the absorption of the glyphosate into the plant. Glyphosate-based formulations (GBFs) are easily bought in most stores. These products can have different combinations of other ingredients or different concentrations of glyphosate."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Glyphosate can cause cancer according to California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Glyphosate is an odorless white powder. Decomposition begins at approximately 419 °F (darkens). pH (1% solution in water) 2.5. (NTP, 1992)"
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Glyphosate is a phosphonic acid resulting from the formal oxidative coupling of the methyl group of methylphosphonic acid with the amino group of glycine. It is one of the most commonly used herbicides worldwide, and the only one to target the enzyme 5-enolpyruvyl-3-shikimate phosphate synthase (EPSPS). It has a role as an EC 2.5.1.19 (3-phosphoshikimate 1-carboxyvinyltransferase) inhibitor, a herbicide and an agrochemical. It is a glycine derivative and a phosphonic acid. It is a conjugate acid of a glyphosate(1-) and a glyphosate(2-)."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "glyphosate has been reported in Glycine max and Phaseolus vulgaris with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate",
+      "origin": "Wikipedia",
+      "text": "Glyphosate (IUPAC name: N-(phosphonomethyl)glycine) is a broad-spectrum systemic herbicide and crop desiccant. It is an organophosphorus compound, specifically a phosphonate, which acts by inhibiting the plant enzyme 5-enolpyruvylshikimate-3-phosphate synthase (EPSP). Glyphosate-based herbicides (GBHs) are used to kill weeds, especially annual broadleaf weeds and grasses that compete with crops. American agricultural company Monsanto brought it to market for agricultural use in 1974 under the trade name Roundup. Monsanto's last commercially relevant United States patent expired in 2000."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate",
+      "origin": "Wikipedia",
+      "text": "Farmers quickly adopted glyphosate for agricultural weed control, especially after Monsanto introduced glyphosate-resistant Roundup Ready crops, enabling farmers to kill weeds without killing their crops. In 2007, glyphosate was the most used herbicide in the United States' agricultural sector and the second-most used (after 2,4-D) in home and garden, government and industry, and commercial applications. From the late 1970s to 2016, there was a 100-fold increase in the frequency and volume of application of GBHs worldwide, with further increases expected in the future."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is absorbed through foliage, and minimally through roots, and from there translocated to growing points. It inhibits EPSP synthase, a plant enzyme involved in the synthesis of three aromatic amino acids: tyrosine, tryptophan, and phenylalanine. It is therefore effective only on actively growing plants and is not effective as a pre-emergence herbicide. Crops have been genetically engineered to be tolerant of glyphosate (e.g. Roundup Ready soybean, the first Roundup Ready crop, also created by Monsanto), which allows farmers to use glyphosate as a post-emergence herbicide against weeds."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Discovery",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Discovery",
+      "origin": "Wikipedia",
+      "text": "Glyphosate was first synthesized in 1950 by Swiss chemist Henry Martin, who worked for the Swiss company Cilag. The work was never published. Early studies found it to be a weak chemical chelating agent."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Discovery",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Discovery",
+      "origin": "Wikipedia",
+      "text": "Glyphosate was independently discovered in the United States at Monsanto in 1970. About 100 derivatives of aminomethylphosphonic acid had been prepared as potential water-softening agents. Two were found to have weak herbicidal activity, and John E. Franz, a chemist at Monsanto, was asked to try to make analogs with stronger herbicidal activity. Glyphosate was the third analog he made. Franz received the National Medal of Technology of the United States in 1987 and the Perkin Medal for Applied Chemistry in 1990 for his discoveries."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Chemistry",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Chemistry",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is a derivative of aminophosphonic acid and the amino acid glycine. Both the phosphonic acid and carboxylic acid moieties can be ionised (deprotonated) and the amine group can be protonated. Consequently the substance exists as a series of rapidly interchanging zwitterions. Its name is a contraction of its constituents: glycine and a phosphonate."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Formulations",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Formulations",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is marketed in the United States and worldwide by many agrochemical companies in diverse strengths and with diverse adjuvants, under dozens of tradenames. As of 2010, more than 750 glyphosate products were on the market. In 2012, about half of the total global consumption of glyphosate by volume was for agricultural crops, with forestry comprising another important market. Asia and the Pacific was the largest and fastest growing regional market. As of 2014, Chinese manufacturers collectively are the world's largest producers of glyphosate and its precursors and account for about 30% of global exports."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Formulations",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Formulations",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is an acid molecule, so it is formulated as a salt for packaging and handling. Various salt formulations include isopropylamine, diammonium, monoammonium, or potassium as the counterion. The active ingredient of the Monsanto herbicides is the isopropylamine salt of glyphosate. Another important ingredient in some formulations is the surfactant polyethoxylated tallow amine (POEA). Some brands include more than one salt. Some companies report their product as acid equivalent (ae) of glyphosate acid, or some report it as active ingredient (ai) of glyphosate plus the salt, and others report both."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Mode of action",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Mode_of_action",
+      "origin": "Wikipedia",
+      "text": "Glyphosate interferes with the shikimate pathway, which produces the aromatic amino acids phenylalanine, tyrosine and tryptophan in plants and microorganisms – but does not exist in the genome of animals, including humans. It blocks this pathway by inhibiting the enzyme 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS), which catalyzes the reaction of shikimate-3-phosphate (S3P) and phosphoenolpyruvate to form 5-enolpyruvyl-shikimate-3-phosphate (EPSP). Glyphosate is absorbed through foliage and minimally through roots, meaning that it is only effective on actively growing plants and cannot prevent seeds from germinating."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Mode of action",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Mode_of_action",
+      "origin": "Wikipedia",
+      "text": "Under normal circumstances, EPSP is dephosphorylated to chorismate, an essential precursor for the amino acids mentioned above. These amino acids are used in protein synthesis and to produce secondary metabolites such as folates, ubiquinones, and naphthoquinone."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Uses",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is effective in killing a wide variety of plants, including grasses and broadleaf and woody plants. By volume, it is one of the most widely used herbicides. In 2007, glyphosate was the most used herbicide in the United States agricultural sector, with 180 to 185 million pounds (82,000 to 84,000 tonnes) applied, the second-most used in home and garden with 5 to 8 million pounds (2,300 to 3,600 tonnes) and 13 to 15 million pounds (5,900 to 6,800 tonnes) in non-agricultural settings. It is commonly used for agriculture, horticulture, viticulture, and silviculture purposes, as well as garden maintenance (including home use)."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Uses",
+      "origin": "Wikipedia",
+      "text": "Glyphosate and related herbicides are often used in invasive species eradication and habitat restoration, especially to enhance native plant establishment in prairie ecosystems. The controlled application is usually combined with a selective herbicide and traditional methods of weed eradication such as mulching to achieve an optimal effect."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Environmental fate",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Environmental_fate",
+      "origin": "Wikipedia",
+      "text": "Glyphosate has four ionizable sites, with pKa values of 2.0, 2.6, 5.6 and 10.6. Therefore, it is a zwitterion in aqueous solutions and is expected to exist almost entirely in zwitterionic forms in the environment. Zwitterions generally adsorb more strongly to soils containing organic carbon and clay than their neutral counterparts. Glyphosate strongly sorbs onto soil minerals, and, with the exception of colloid-facilitated transport, its soluble residues are expected to be poorly mobile in the free porewater of soils. The spatial extent of ground and surface water pollution is therefore considered to be relatively limited."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Environmental fate",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Environmental_fate",
+      "origin": "Wikipedia",
+      "text": "The reported half-life of glyphosate in soil varies from two to 197 days with a typical field half-life of 47 days being suggested. Soil and climate conditions affect glyphosate's persistence in soil. The median half-life of glyphosate in water varies from a few days to 91 days. At a site in Texas, half-life was as little as three days. A site in Iowa had a half-life of 141.9 days. The glyphosate metabolite AMPA has been found in Swedish forest soils up to two years after a glyphosate application. In this case, the persistence of AMPA was attributed to the soil being frozen for most of the year."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Toxicity",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Toxicity",
+      "origin": "Wikipedia",
+      "text": "Glyphosate is the active ingredient in herbicide formulations containing it. However, in addition to glyphosate salts, commercial formulations of glyphosate contain additives (known as adjuvants) such as surfactants, which vary in nature and concentration. Surfactants such as polyethoxylated tallow amine (POEA) are added to glyphosate to enable it to wet the leaves and penetrate the cuticle of the plants. The presence of surfactants can significantly alter the toxicity of glyphosate-based herbicides."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Toxicity",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Toxicity",
+      "origin": "Wikipedia",
+      "text": "The acute oral toxicity for mammals is low, but death has been reported after deliberate overdose of concentrated formulations. The surfactants in glyphosate formulations can increase the relative acute toxicity of the formulation. Glyphosate has less acute toxicity than 94% of herbicides in USDA data, and less acute toxicity than household chemicals such as table salt and vinegar."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Effects of use",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Effects_of_use",
+      "origin": "Wikipedia",
+      "text": "In the 1990s, no glyphosate-resistant weeds were known to exist. In 2005 a slow upward trend began, resistant weeds appearing rarely around the world. Another inflection point occurred in 2011 and resistance accelerated globally. By 2014, glyphosate-resistant weeds dominated herbicide-resistance research. At that time, 23 glyphosate-resistant species were found in 18 countries. \"Resistance evolves after a weed population has been subjected to intense selection pressure in the form of repeated use of a single herbicide.\""
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Effects of use",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Effects_of_use",
+      "origin": "Wikipedia",
+      "text": "According to Ian Heap, a weed specialist, who completed his PhD on resistance to multiple herbicides in annual ryegrass (Lolium rigidum) in 1988 – the first case of an herbicide-resistant weed in Australia – by 2014 Lolium rigidum was the \"world's worst herbicide-resistant weed\" with instances in \"12 countries, 11 sites of action, 9 cropping regimens\" and affecting \"over 2 million hectares.\" Annual ryegrass has been known to be resistant to herbicides since 1982. The first documented case of glyphosate-resistant L. rigidum was reported in Australia in 1996 near Orange, New South Wales."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Legal status",
+      "url": "https://en.wikipedia.org/wiki/Glyphosate#Legal_status",
+      "origin": "Wikipedia",
+      "text": "Glyphosate was first approved for use in the 1970s, and as of 2010 was labelled for use in 130 countries."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "A systemic herbicide commonly used for roadside and forest applications; [EXTOXNET]"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Farming (Pesticides) [Category: Industry]"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For glyphosate (USEPA/OPP Pesticide Code: 417300) ACTIVE products with label matches. /SRP: Registered for use in the U.S. but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Glyphosate is a non-selective herbicide registered for use on many food and non-food field crops as well as non-crop areas where total vegetation control is desired. When applied at lower rates, glyphosate also is a plant growth regulator."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Toxicity-Summary",
+      "origin": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "text": "ATSDR Toxicological Profile for Glyphosate - Succinctly characterizes the toxicologic and adverse health effects information. ATSDR ToxGuide for Glyphosate - Quick reference guide providing information such as chemical and physical properties, sources of exposure, routes of exposure, minimal risk levels, children's health, and health effects."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Glyphosate is an odorless white solid. Glyphosate is a non-selective herbicide registered for use on many food and non-food field crops as well as non-crop areas where total vegetation control is desired. When applied at lower rates, glyphosate is also a plant growth regulator. HUMAN EXPOSURE AND TOXICITY: Glyphosate is an active ingredient of the most widely used herbicide and it is believed to be less toxic than other pesticides. However, several studies showed its potential adverse health effects to humans as it may be an endocrine disruptor. Concentrated solutions of glyphosate can also cause dermal irritation."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3496#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Corrosive, Environmental Hazard. H318: Causes serious eye damage [Danger Serious eye damage/eye irritation] H411: Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

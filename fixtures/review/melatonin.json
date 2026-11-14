@@ -1,0 +1,282 @@
+{
+  "query": "melatonin",
+  "compound": {
+    "cid": 896,
+    "title": "Melatonin",
+    "formula": "C13H16N2O2",
+    "molarMass": "232.28",
+    "iupacName": "N-[2-(5-methoxy-1H-indol-3-yl)ethyl]acetamide",
+    "cas": "73-31-4",
+    "synonyms": [
+      "Melatonine",
+      "Circadin",
+      "Melatol",
+      "Melovine",
+      "Melapure"
+    ]
+  },
+  "ghs": {
+    "signal": null,
+    "pictograms": [],
+    "statements": []
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Melatonin is a member of the class of acetamides that is acetamide in which one of the hydrogens attached to the nitrogen atom is replaced by a 2-(5-methoxy-1H-indol-3-yl)ethyl group. It is a hormone secreted by the pineal gland in humans. It has a role as a geroprotector, a hormone, a central nervous system depressant, an anticonvulsant, a radical scavenger, an immunological adjuvant, a mouse metabolite and a human metabolite. It is a member of acetamides and a member of tryptamines. It is functionally related to a tryptamine."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Melatonin is a biogenic amine that is found in animals, plants and microbes. Aaron B. Lerner of Yale University is credited for naming the hormone and for defining its chemical structure in 1958. In mammals, melatonin is produced by the pineal gland. The pineal gland is small endocrine gland, about the size of a rice grain and shaped like a pine cone (hence the name), that is located in the center of the brain (rostro-dorsal to the superior colliculus) but outside the blood-brain barrier. The secretion of melatonin increases in darkness and decreases during exposure to light, thereby regulating the circadian rhythms of several biological functions, including the sleep-wake cycle."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Record-Description",
+      "origin": "LiverTox",
+      "text": "Melatonin is a hormone produced by the pineal gland that has multiple effects including somnolence, and is believed to play a role in regulation of the sleep-wake cycle. Melatonin is available over-the-counter and is reported to have beneficial effects on wellbeing and sleep. Melatonin has not been implicated in causing serum enzyme elevations or clinically apparent liver injury."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "melatonin has been reported in Salvia miltiorrhiza, Gentiana macrophylla, and other organisms with data available."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Record-Description",
+      "origin": "NCI Thesaurus (NCIt)",
+      "text": "Therapeutic Melatonin is a therapeutic chemically synthesized form of the pineal indole melatonin with antioxidant properties. The pineal synthesis and secretion of melatonin, a serotonin-derived neurohormone, is dependent on beta-adrenergic receptor function. Melatonin is involved in numerous biological functions including circadian rhythm, sleep, the stress response, aging, and immunity."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Melatonin",
+      "origin": "Wikipedia",
+      "text": "Melatonin is an indoleamine compound produced by various organisms, including bacteria and eukaryotes. It was discovered in 1958 by Aaron B. Lerner and colleagues in substance from the pineal gland of cows that could induce skin lightening in common frogs. The secretion of melatonin is influenced by the circadian rhythm, and it plays a role in regulating the sleep-wake cycle in vertebrates."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Melatonin",
+      "origin": "Wikipedia",
+      "text": "In vertebrates, melatonin functions to affect the timing of sleep-wake cycles, encompassing sleep-wake timing and blood pressure regulation, as well as controlling seasonal rhythmicity (circannual cycle), which includes reproduction, fattening, molting, and hibernation. Its effects are mediated through the activation of melatonin receptors and its activity as an antioxidant. In vertebrates, circulating melatonin is primary secreted from the pineal gland in response to darkness. In plants and bacteria, it serves as a defense mechanism against oxidative stress. Melatonin is also synthesized in mitochondria, where it may play a role in neutralizing reactive oxygen species."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Melatonin",
+      "origin": "Wikipedia",
+      "text": "Melatonin is sometimes administered exogenously as a dietary supplement and medication. It is used in the treatment of sleep-related disorders such as insomnia and various circadian rhythm sleep disorders."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#History",
+      "origin": "Wikipedia",
+      "text": "Melatonin's discovery is linked to the study of color changes in some amphibians and reptiles, a phenomenon initially observed through the administration of pineal gland extracts. In 1917, Carey Pratt McCord and Floyd P. Allen found that feeding extracts from the pineal glands of cows caused the skin of tadpoles to lighten by contracting the dark epidermal melanophores."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#History",
+      "origin": "Wikipedia",
+      "text": "The hormone melatonin was isolated in 1958 by Aaron B. Lerner, a dermatology professor, and his team at Yale University. Motivated by the possibility that a substance from the pineal gland could be beneficial in treating skin diseases, they extracted and identified melatonin from bovine pineal gland extracts. Subsequent research in the mid-1970s by Lynch and others demonstrated that melatonin production follows a circadian rhythm in human pineal glands."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#History",
+      "origin": "Wikipedia",
+      "text": "The first patent for the therapeutic use of melatonin as a low-dose sleep aid was awarded to Richard Wurtman at the Massachusetts Institute of Technology in 1995."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#History",
+      "origin": "Wikipedia",
+      "text": "The etymology of melatonin stems from its skin-lightening properties. As detailed in their publication in the Journal of the American Chemical Society, Lerner and his colleagues proposed the name melatonin, derived from the Greek words melas, meaning 'black' or 'dark', and tonos, meaning 'labour', 'colour' or 'suppress'. This naming convention follows that of serotonin, another agent affecting skin color, discovered in 1948 as a modulator of vascular tone, which influenced its name based on its serum vasoconstrictor effect."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Biological activity",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biological_activity",
+      "origin": "Wikipedia",
+      "text": "In humans, melatonin acts as an agonist of its two cognate receptors: melatonin receptor 1 (MT1) and melatonin receptor 2 (MT2), exhibiting picomolar binding affinity at both sites, though with a modestly higher affinity for MT1. Both are G-protein coupled receptors and are typically coupled to Gi/o-type proteins. MT1 can also couple to Gq-type proteins."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Biological activity",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biological_activity",
+      "origin": "Wikipedia",
+      "text": "In vitro, melatonin functions as a high-capacity antioxidant or free radical scavenger within mitochondria, playing a dual role in combating cellular oxidative stress. First, it directly neutralizes free radicals, and second, it promotes the gene expression of essential antioxidant enzymes, such as superoxide dismutase, glutathione peroxidase, glutathione reductase, and catalase. This increase in antioxidant enzyme expression is mediated through signal transduction pathways activated by the binding of melatonin to its receptors. Through these mechanisms, melatonin is presumed to protect cells against oxidative stress in ways beyond regulating the sleep-wake cycle."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Biological functions",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biological_functions",
+      "origin": "Wikipedia",
+      "text": "Melatonin is involved in the regulation of sleep–wake cycles in humans. The establishment of regular melatonin levels in human infants occurs around the third month after birth, with peak concentrations observed between midnight and 8:00 am. It has been documented that melatonin production diminishes as a person ages. A shift in the timing of melatonin secretion is observed during adolescence. In adults, approximately 30 μg of melatonin is synthesized per day, nearly 80% of which occurs at night."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Biological functions",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biological_functions",
+      "origin": "Wikipedia",
+      "text": "The antioxidant properties of melatonin were first established in 1993. In vitro studies have demonstrated that melatonin directly neutralizes various reactive oxygen species, including hydroxyl (OH•), and reactive nitrogen species such as nitric oxide (NO•). In plants, melatonin works synergistically with other antioxidants, enhancing the overall effectiveness of each antioxidant. It is about twice as potent as vitamin E at scavenging peroxyl radicals in vitro. The promotion of antioxidant enzyme expression, such as superoxide dismutase, glutathione peroxidase, glutathione reductase, and catalase, is mediated through melatonin receptor-triggered signal transduction pathways."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "The biosynthesis of melatonin in animals involves a sequence of enzymatic reactions starting with L-tryptophan, which can be synthesized through the shikimate pathway from chorismate, found in plants, or obtained from protein catabolism. The initial step in the melatonin biosynthesis pathway is the hydroxylation of L-tryptophan's indole ring by the enzyme tryptophan hydroxylase, resulting in the formation of 5-hydroxytryptophan (5-HTP). Subsequently, 5-HTP undergoes decarboxylation, facilitated by pyridoxal phosphate and the enzyme 5-hydroxytryptophan decarboxylase, yielding serotonin."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Biochemistry",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Biochemistry",
+      "origin": "Wikipedia",
+      "text": "Serotonin, an essential neurotransmitter, is further converted into N-acetylserotonin by the action of serotonin N-acetyltransferase, using acetyl-CoA. The final step in the pathway involves the methylation of N-acetylserotonin's hydroxyl group by hydroxyindole O-methyltransferase, with S-adenosyl methionine as the methyl donor, to produce melatonin."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Applications",
+      "origin": "Wikipedia",
+      "text": "An extended-release pharmaceutical formulation of melatonin is approved under the brand name Circadin for the treatment of insomnia in certain settings, such as in people aged 55 years of age or older. It is approved in the European Union, Israel, Australia, and countries in Asia and elsewhere in the world, but not in the United States (where it reached phase III clinical trials but was not approved). The medication has been licensed since 2007."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Applications",
+      "origin": "Wikipedia",
+      "text": "The 2023, European Insomnia Guideline recommended use of prolonged-release melatonin for treatment of insomnia in people age 55 year of age or older for up to three months. It recommended against fast-release or over-the-counter melatonin for treatment of insomnia. These recommendations were based on several meta-analyses published in 2022 and 2023."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Research",
+      "origin": "Wikipedia",
+      "text": "A 2020 Cochrane review found no evidence that melatonin helped sleep problems in people with moderate to severe dementia due to Alzheimer's disease. A 2019 review found that while melatonin may improve sleep in minimal cognitive impairment, after the onset of Alzheimer's disease it had little to no effect. Melatonin may, however, help with sundowning (increased confusion and restlessness at night) in people with dementia."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Research",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Research",
+      "origin": "Wikipedia",
+      "text": "A 2026 meta-analysis concluded that people taking melatonin supplements may experience relief from musculoskeletal pain similar in magnitude to the effects of typical analgesics. Although melatonin may be considered as an adjunct option for pain relief, it had only modest effects, and the quality of evidence for efficacy was low to moderate."
+    },
+    {
+      "id": "23",
+      "source": "wikipedia",
+      "section": "Available forms",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Available_forms",
+      "origin": "Wikipedia",
+      "text": "Melatonin is also available as an over-the-counter dietary supplement in many countries. It is available in both immediate-release and less commonly prolonged-release forms. It is also possible to buy raw melatonin powder by weight. Immediate-release formulations of melatonin cause blood levels of melatonin to reach their peak in about an hour. The hormone may be administered orally, as capsules, gummies, tablets, oral films, or as a liquid. It is also available for use sublingually, or as transdermal patches."
+    },
+    {
+      "id": "24",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Melatonin#Occurrence",
+      "origin": "Wikipedia",
+      "text": "In vertebrates, melatonin is produced in darkness, thus usually at night, by the pineal gland, a small endocrine gland"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Melatonin regulates biological rhythms and neuroendocrine functions."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "In the United States, the hormone melatonin is sold, without regulation by the FDA, as a dietary supplement. In most of the rest of the world, it is not sold at all, because it is regulated as a drug and no pharmaceutical company has presented an appropriate regulatory body with a successful new drug application for its use."
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Derivatives and analogs of melatonin are being used in the development of preventive therapies of Alzheimer's disease."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Melatonin drugs and supplements have use in treating insomnia, sleep disorders and jet lag; treatment for reducing pain of \"cluster headaches; some evidence that melatonin might improve the effectiveness of cancer drugs used to fight tumors in the breast, lung, kidney, liver, pancreas, stomach and colon."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Melatonin is secreted from the pineal gland and retina during dark periods of the vertebrate circadian rhythm and is formed from serotonin(1). Melatonin, a hormone of the pineal gland, is also produced by extrapineal tissues that lighten skin color in amphibians(2). Melatonin has been identified in many plants including feverfew (Tanacetum parthenium), St John's wort (Hypericum perforatum), rice, corn, tomato and other edible fruits(3)."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Toxicity due to melatonin might present as follows: * Melatonin demonstrates remarkably low acute toxicity according to findings from animal and human studies. At supraphysiological doses, it may result in minor adverse drug reactions such as headaches, rashes, gastritis, nightmares, and insomnia."
+    },
+    {
+      "id": "31",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Melatonin is a derivative of tryptophan. It binds to melatonin receptor type 1A, which then acts on adenylate cylcase and the inhibition of a cAMP signal transduction pathway. Melatonin not only inhibits adenylate cyclase, but it also activates phosphilpase C. This potentiates the release of arachidonate. By binding to melatonin receptors 1 and 2, the downstream signallling cascades have various effects in the body. The melatonin receptors are G protein-coupled receptors and are expressed in various tissues of the body. There are two subtypes of the receptor in humans, melatonin receptor 1 (MT1) and melatonin receptor 2 (MT2)."
+    },
+    {
+      "id": "32",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/896#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 139 of 144 companies (only 3.5% companies provided GHS information). For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}

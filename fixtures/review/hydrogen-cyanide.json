@@ -1,0 +1,287 @@
+{
+  "query": "hydrogen cyanide",
+  "compound": {
+    "cid": 768,
+    "title": "Hydrogen Cyanide",
+    "formula": "CHN",
+    "molarMass": "27.025",
+    "iupacName": "formonitrile",
+    "cas": "74-90-8",
+    "synonyms": [
+      "hydrocyanic acid",
+      "Formonitrile",
+      "Prussic acid",
+      "Blausaeure",
+      "Cyanwasserstoff"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Flammable",
+      "Acute Toxic",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H224",
+        "text": "Extremely flammable liquid and vapor",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H330",
+        "text": "Fatal if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H400",
+        "text": "Very toxic to aquatic life",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H410",
+        "text": "Very toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Record-Description",
+      "origin": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+      "text": "Hydrogen cyanide (HCN) and cyanide salts (CN salts) can cause male reproductive toxicity according to The Environmental Protection Agency (EPA)."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Hydrocyanic acid, aqueous solution, with not more than 20% hydrogen cyanide is a clear colorless aqueous solution of a gas. Has a faint odor of almonds. Can evolve hydrogen cyanide gas, which is (barely) lighter than air. Flame can flash back to the source of a gas leak very easily. Lethal doses of gas may be inhaled. Lethal doses of cyanide can be absorbed from the solution through the skin."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Hydrocyanic acid, aqueous solutions, with more than 20% hydrogen cyanide is a clear colorless aqueous solution of a gas. Has an odor of almonds. Can evolve hydrogen cyanide gas, which is (barely) lighter than air. Flame can flash back to the source of a gas leak very easily. Lethal doses of gas may be inhaled. Lethal doses of cyanide can be absorbed from the solution through the skin."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Hydrogen cyanide, anhydrous, stabilized appears as a chemical warfare blood agent. A deadly human poison by all routes. Very volatile. Colorless or pale-blue liquid or gas (above 78 °F) with a bitter, almond-like odor. Often used as a 96% solution in water. (NIOSH, 2024)"
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Hydrogen cyanide, anhydrous, stabilized (absorbed) appears as a clear colorless liquid with a faint odor of bitter almonds that is absorbed in a porous inert material. Absorption slows evolution of vapors. Vapors slightly lighter than air. Deadly poison by all routes (absorption through skin of liquid, inhalation of vapors, etc). Prolonged exposure of closed containers to heat may cause violent rupture and rocketing. Rate of onset: Immediate Persistence: Minutes Odor threshold: 1-5 ppm Source/use/other hazard: War gas, pesticide, Herbicide; other industries; Weak acid except in water or mucous membranes - then corrosive/training."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide",
+      "origin": "Wikipedia",
+      "text": "Hydrogen cyanide (also called prussic acid) is a chemical compound with the formula HCN and structural formula H−C≡N. It is a highly toxic and flammable liquid that boils slightly above room temperature, at 25.6 °C (78.1 °F). HCN is produced on an industrial scale and is a highly valued precursor to many chemical compounds ranging from polymers to pharmaceuticals. Large-scale applications are for the production of potassium cyanide and adiponitrile, used in mining and plastics, respectively. It is more toxic than solid cyanide compounds due to its volatile nature. A solution of hydrogen cyanide in water, represented as HCN(aq), is called hydrocyanic acid."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide",
+      "origin": "Wikipedia",
+      "text": "Whether hydrogen cyanide is an organic compound or not is a topic of debate among chemists. It is traditionally considered inorganic, but can also be considered a nitrile, giving rise to its alternative names of methanenitrile and formonitrile."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Structure and general properties",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Structure_and_general_properties",
+      "origin": "Wikipedia",
+      "text": "Hydrogen cyanide is a linear molecule, with a triple bond between carbon and nitrogen. The C-N bond length is 115 picometers. The isomer of HCN is HNC, hydrogen isocyanide."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Structure and general properties",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Structure_and_general_properties",
+      "origin": "Wikipedia",
+      "text": "About half of people are unable to detect the odor of hydrogen cyanide owing to a recessive genetic trait. For those that can detect it, the odor has been described as bitter almond-like."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "Hydrogen cyanide is weakly acidic with a pKa of 9.2. It partially ionizes in water to give the cyanide anion, CN−. HCN forms hydrogen bonds with its conjugate base, species such as (CN−)(HCN)n."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Chemical properties",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Chemical_properties",
+      "origin": "Wikipedia",
+      "text": "The conversion, which is called hydrocyanation, employs nickel complexes as catalysts."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History of discovery and naming",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#History_of_discovery_and_naming",
+      "origin": "Wikipedia",
+      "text": "Hydrogen cyanide was first isolated in 1752 by French chemist Pierre Macquer who converted Prussian blue to an iron oxide plus a volatile component and found that these could be used to reconstitute it. The new component was what is now known as hydrogen cyanide. It was subsequently prepared from Prussian blue by the Swedish chemist Carl Wilhelm Scheele in 1782, and was eventually given the German name Blausäure (lit. 'Blue acid') because of its acidic nature in water and its derivation from Prussian blue. In English, it became known popularly as prussic acid."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "History of discovery and naming",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#History_of_discovery_and_naming",
+      "origin": "Wikipedia",
+      "text": "In 1787, the French chemist Claude Louis Berthollet showed that prussic acid did not contain oxygen, an important contribution to acid theory, which had hitherto postulated that acids must contain oxygen (hence the name of oxygen itself, which is derived from Greek elements that mean \"acid-former\" and are likewise calqued into German as Sauerstoff and into Slavic languages, such as kyslík into Czech, or кислород into Russian)."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Applications",
+      "origin": "Wikipedia",
+      "text": "HCN is the precursor to sodium cyanide and potassium cyanide, which are used mainly in gold and silver mining and for the electroplating of those metals. Via the intermediacy of cyanohydrins, a variety of useful organic compounds are prepared from HCN including the monomer methyl methacrylate, from acetone, the amino acid methionine, via the Strecker synthesis, and the chelating agents EDTA and NTA. Via the hydrocyanation process, HCN is added to butadiene to give adiponitrile, a precursor to Nylon-6,6."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Applications",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Applications",
+      "origin": "Wikipedia",
+      "text": "HCN is used globally as a fumigant against many species of pest insects that infest food production facilities. Both its efficacy and method of application lead to very small amounts of the fumigant being used compared to other toxic substances used for the same purpose. Using HCN as a fumigant also has less environmental impact, compared to some other fumigants such as sulfuryl fluoride, and methyl bromide."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Occurrence",
+      "origin": "Wikipedia",
+      "text": "HCN is obtainable from fruits that have a pit, such as cherries, apricots, apples, and nuts such as bitter almonds, from which almond oil and extract is made. Many of these pits contain small amounts of cyanohydrins such as mandelonitrile and amygdalin, which slowly release hydrogen cyanide. One hundred grams of crushed apple seeds can yield about 70 mg of HCN."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#Occurrence",
+      "origin": "Wikipedia",
+      "text": "HCN has been measured in Titan's atmosphere by four instruments on the Cassini space probe, one instrument on Voyager, and one instrument on Earth. One of these measurements was in situ, where the Cassini spacecraft dipped between 1,000 and 1,100 km (620 and 680 mi) above Titan's surface to collect atmospheric gas for mass spectrometry analysis."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "As a poison and chemical weapon",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#As_a_poison_and_chemical_weapon",
+      "origin": "Wikipedia",
+      "text": "In World War I, hydrogen cyanide was used by the French from 1916 as a chemical weapon against the Central Powers, and by the United States and Italy in 1918. It was not found to be effective enough due to weather conditions. The gas is lighter than air and rapidly disperses up into the atmosphere. Rapid dilution made its use in the field impractical. In contrast, denser agents such as phosgene or chlorine tended to remain at ground level and sank into the trenches of the Western Front's battlefields. Compared to such agents, hydrogen cyanide had to be present in higher concentrations in order to be fatal. To increase gas persistence, it was mixed with smoke producing compounds."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "As a poison and chemical weapon",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_cyanide#As_a_poison_and_chemical_weapon",
+      "origin": "Wikipedia",
+      "text": "A hydrogen cyanide concentration of 100–200 ppm in breathing air will kill a human within 10 to 60 minutes. A hydrogen cyanide concentration of 2000 ppm (about 2380 mg/m3) will kill a human in about one minute. The toxic effect is caused by the action of the cyanide ion, which halts cellular respiration. It acts as a non-competitive inhibitor for an enzyme in mitochondria called cytochrome c oxidase. As such, hydrogen cyanide is commonly listed among chemical weapons as a blood agent."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Uses",
+      "origin": "EPA Hazardous Air Pollutants",
+      "text": "The major uses of hydrogen cyanide are as an intermediate in the production of a number of chemicals and as an insecticide for fumigating enclosed spaces. Hydrogen cyanide has also been used in gas chamber executions."
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used to manufacture other chemicals and to fumigate enclosed spaces; [ATSDR ToxProfiles] Used in the following processes: electroplating, metallurgy, and photo development; HCN is a byproduct of blast furnaces, coke ovens, photoengraving, petroleum refining, and some metal mining processes. HCN is released when burning nitrogen containing compounds, e.g., wool, silk, and plastics. HCN is present in plants such as cassava roots, lima beans, and almonds. [CHEMINFO]"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "No longer used as a fumigant in the U.S. [EPA Pesticides]"
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Steel Producing [Category: Industry] Electroplating [Category: Plate] Petroleum Production and Refining [Category: Industry] Firefighting [Category: Other] Photographic Processing [Category: Other] Burning Natural Polymers [Category: Burn] Burning Synthetic Polymers [Category: Burn] Metal Extraction and Refining [Category: Industry]"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Hydrogen cyanide is present in human blood. It is theorized that the compound played the key role in the origin of flora and fauna on earth via formation of amino acids. Small concentrations are also found in the stratosphere and atmosphere(1). Hydrogen cyanide has been reported present in some plants(2,3)."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Molecular hydrogen cyanide may be produced naturally by microorganisms as well as from the cyanogenic degradation of glycosides. ... Many plants may synthesize cyanoglucosides which upon decomposition may lead to the formation of free cyanide. ... Many photosynthetic microorganisms among the blue-green algae can produce free cyanide in the process of nitrate metabolism. ... Anacystis nidulans, a microscopic blue-green algae, used histidine to release substantial amounts of hydrogen cyanide, raising its concentration in the culture medium to 0.5 mg/L in 3 hr."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Laetrile and amygdalin-containing fruit pits /cherries, peaches, apricots, apples, and pears/ have been implicated as causes of acute cyanide poisoning in humans(1). /Cyanides/"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Hydrogen cyanide is a colorless or pale blue liquid or gas with a faint bitter almond like odor. Hydrogen cyanide is used primarily in the production of substances such as adiponitrile, methyl methacrylate, chelating agents, cyanuric chloride, methionine and its hydroxylated analogues, and sodium and potassium cyanide. Hydrogen cyanide is also used as a fumigant in ships, railroad cars, large buildings, grain silos, and flour mills, as well as in the fumigation of peas and seeds in vacuum chambers. Hydrogen cyanide is formed during the incomplete combustion of nitrogen-containing polymers, such as certain plastics, polyurethanes, and wool."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=Toxicity-Summary",
+      "origin": "Toxin and Toxin Target Database (T3DB)",
+      "text": "Organic nitriles decompose into cyanide ions both in vivo and in vitro. Consequently the primary mechanism of toxicity for organic nitriles is their production of toxic cyanide ions or hydrogen cyanide. Cyanide is an inhibitor of cytochrome c oxidase in the fourth complex of the electron transport chain (found in the membrane of the mitochondria of eukaryotic cells). It complexes with the ferric iron atom in this enzyme. The binding of cyanide to this cytochrome prevents transport of electrons from cytochrome c oxidase to oxygen. As a result, the electron transport chain is disrupted and the cell can no longer aerobically produce ATP for energy."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/768#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Flammable, Acute Toxic, Environmental Hazard. H224: Extremely flammable liquid and vapor [Danger Flammable liquids] H330: Fatal if inhaled [Danger Acute toxicity, inhalation] H400: Very toxic to aquatic life [Warning Hazardous to the aquatic environment, acute hazard] H410: Very toxic to aquatic life with long lasting effects [Warning Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

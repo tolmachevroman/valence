@@ -1,0 +1,249 @@
+{
+  "query": "vanillin",
+  "compound": {
+    "cid": 1183,
+    "title": "Vanillin",
+    "formula": "C8H8O3",
+    "molarMass": "152.15",
+    "iupacName": "4-hydroxy-3-methoxybenzaldehyde",
+    "cas": "121-33-5",
+    "synonyms": [
+      "Vanillaldehyde",
+      "Vanillic aldehyde",
+      "p-Vanillin",
+      "Vanilline",
+      "Lioxin"
+    ]
+  },
+  "ghs": {
+    "signal": "Warning",
+    "pictograms": [
+      "Irritant"
+    ],
+    "statements": [
+      {
+        "code": "H317",
+        "text": "May cause an allergic skin reaction",
+        "percent": 14.3,
+        "level": "Warning"
+      },
+      {
+        "code": "H319",
+        "text": "Causes serious eye irritation",
+        "percent": 83.5,
+        "level": "Warning"
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Vanillin appears as white or very slightly yellow needles."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "Vanillin is a member of the class of benzaldehydes carrying methoxy and hydroxy substituents at positions 3 and 4 respectively. It has a role as an antioxidant, a flavouring agent, an anticonvulsant, an anti-inflammatory agent and a plant metabolite. It is a member of benzaldehydes, a monomethoxybenzene and a member of phenols."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Vanilla allergenic extract is used in allergenic testing."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Record-Description",
+      "origin": "FDA Pharm Classes",
+      "text": "Vanilla is a Non-Standardized Food Allergenic Extract. The physiologic effect of vanilla is by means of Increased Histamine Release and Cell-mediated Immunity."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "vanillin has been reported in Humulus lupulus, Ficus erecta var. beecheyana, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vanillin",
+      "origin": "Wikipedia",
+      "text": "Vanillin is an organic compound with the molecular formula C8H8O3. It is a phenolic aldehyde. Its functional groups include aldehyde, hydroxyl, and ether. It is the primary component of the ethanolic extract of the vanilla bean. Synthetic vanillin is now used more often than natural vanilla extract as a flavoring in foods, beverages, and pharmaceuticals."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vanillin",
+      "origin": "Wikipedia",
+      "text": "Vanillin and ethylvanillin are used by the food industry; ethylvanillin is more expensive, but has a stronger note. It differs from vanillin by having an ethoxy group (−O−CH2CH3) instead of a methoxy group (−O−CH3)."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Vanillin",
+      "origin": "Wikipedia",
+      "text": "Natural vanilla extract is a mixture of several hundred different compounds in addition to vanillin. Artificial vanilla flavoring is often an ethanol solution of pure vanillin, usually of synthetic origin. Because of the scarcity and expense of natural vanilla, synthetic preparation of artificial vanilla flavoring has long been of interest. The first commercial synthesis of vanillin began with the more readily available natural compound eugenol (4-allyl-2-methoxyphenol). Today, artificial vanillin is made either from guaiacol or lignin."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "Natural history",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Natural_history",
+      "origin": "Wikipedia",
+      "text": "Although it is generally accepted that vanilla was domesticated in Mesoamerica and subsequently spread to the Old World in the 16th century, in 2019, researchers published a paper stating that vanillin residue had been discovered inside jars within a tomb in Canaan dating to the 2nd millennium BCE, suggesting the possible cultivation of an unidentified, Old World-endemic Vanilla species in Canaan since the Middle Bronze Age. Traces of vanillin were also found in wine jars in Jerusalem, which were used by the Judahite elite before the city was destroyed in 586 BCE."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "Natural history",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Natural_history",
+      "origin": "Wikipedia",
+      "text": "Vanilla beans, called tlilxochitl, were discovered and cultivated as a flavoring for beverages by native Mesoamerican peoples, most famously the Totonacs of modern-day Veracruz, Mexico. Since at least the early 15th century, the Aztecs used vanilla as a flavoring for chocolate in drinks called xocohotl."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "Synthetic history",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Synthetic_history",
+      "origin": "Wikipedia",
+      "text": "In 1874, the German scientists Ferdinand Tiemann and Wilhelm Haarmann deduced its chemical structure, at the same time finding a synthesis for vanillin from coniferin, a glucoside of coniferyl alcohol found in pine bark. Tiemann and Haarmann founded a company Haarmann and Reimer (now part of Symrise) and started the first industrial production of vanillin using their process (now known as the Reimer–Tiemann reaction) in Holzminden, Germany."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Synthetic history",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Synthetic_history",
+      "origin": "Wikipedia",
+      "text": "By the late 19th century, semisynthetic vanillin derived from the eugenol found in clove oil was commercially available."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Occurrence",
+      "origin": "Wikipedia",
+      "text": "Vanillin is most prominent as the principal flavor and aroma compound in vanilla. Cured vanilla pods contain about 2% by dry weight vanillin. Relatively pure vanillin may be visible as a white dust or \"frost\" on the exteriors of cured pods of high quality."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Occurrence",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Occurrence",
+      "origin": "Wikipedia",
+      "text": "It is also found in Leptotes bicolor, a species of orchid native to Paraguay and southern Brazil, and the Southern Chinese red pine."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Uses",
+      "origin": "Wikipedia",
+      "text": "The largest use of vanillin is as a flavoring, usually in sweet foods. The ice cream and chocolate industries together comprise 75% of the market for vanillin as a flavoring, with smaller amounts being used in confections and baked goods."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Uses",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Uses",
+      "origin": "Wikipedia",
+      "text": "Vanillin is also used in the fragrance industry, in perfumes, and to mask unpleasant odors or tastes in medicines, livestock fodder, and cleaning products."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Vanillin can trigger migraine headaches in a small fraction of the people who experience migraines."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Adverse effects",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Adverse_effects",
+      "origin": "Wikipedia",
+      "text": "Some people have allergic reactions to vanilla. They may be allergic to synthetically produced vanilla but not to natural vanilla, or the other way around, or to both."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Ecology",
+      "url": "https://en.wikipedia.org/wiki/Vanillin#Ecology",
+      "origin": "Wikipedia",
+      "text": "Scolytus multistriatus, one of the vectors of the Dutch elm disease, uses vanillin as a signal to find a host tree during oviposition."
+    },
+    {
+      "id": "20",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Found in foods and plants; Used as a flavoring agent and fragrance; [Merck Index] Used as a chemical intermediate, fuel additive, odor agent, and anti-UV agent; [IUCLID] In the group of essential oils with active product registrations in the US for uses as insect feeding depressants, insecticides, and repellants; Used to control clothes moths and fleas; [EPA REDs] Used in attractants for the control of flies, roaches, and crickets; [HSDB]"
+    },
+    {
+      "id": "21",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Farming (Pesticides) [Category: Industry]"
+    },
+    {
+      "id": "22",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "For vanillin (USEPA/OPP Pesticide Code: 115801) there are 0 labels match. /SRP: Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./"
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Pharmaceutic aid (flavor). As a flavoring agent in confectionery, beverages, foods and animal feeds. Fragrance and flavor in cosmetics. Reagent for synthesis."
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Vanillin has been identified as a constituent in various tissues of several plant species(1). Vanillin occurs in a wide variety of foods and plants such as orchids; major commercial source of natural vanillin is from vanilla bean extract (2). Vanillin has been reported in the essential oil of Java citronella (Cymbopogon nardus Rendle), in benzoin, Peru balsam, clove bud oil and chiefly vanilla pods (Vanilla planifolia, Vanilla tahitensis)(3). ["
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION: Small quantities of vanillin are used in perfumery to round and fix sweet, balsamic fragrances. Vanillin is also used as a brightener in galvanotechnical processes and is an important intermediate in, for example, the production of pharmaceuticals such as l-3,4-dihydroxyphenylalanine (l-DOPA) and methyldopa. For vanillin (USEPA/OPP Pesticide Code: 115801) there are 0 labels match. /Not registered for current use in the U.S., but approved pesticide uses may change periodically and so federal, state and local authorities must be consulted for currently approved uses./ Pharmaceutic aid (flavor). As a flavoring agent in confectionery, beverages, foods and animal feeds."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Signal word: Warning. Pictograms: Irritant. H317 (14.3%): May cause an allergic skin reaction [Warning Sensitization, Skin] H319 (83.5%): Causes serious eye irritation [Warning Serious eye damage/eye irritation]"
+    }
+  ]
+}

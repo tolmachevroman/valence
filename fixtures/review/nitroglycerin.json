@@ -1,0 +1,300 @@
+{
+  "query": "nitroglycerin",
+  "compound": {
+    "cid": 4510,
+    "title": "Nitroglycerin",
+    "formula": "C3H5N3O9",
+    "molarMass": "227.09",
+    "iupacName": "1,3-dinitrooxypropan-2-yl nitrate",
+    "cas": "55-63-0",
+    "synonyms": [
+      "Glyceryl trinitrate",
+      "Trinitroglycerin",
+      "Nitrostat",
+      "Nitroglycerine",
+      "Nitroglycerol"
+    ]
+  },
+  "ghs": {
+    "signal": "Danger",
+    "pictograms": [
+      "Explosive",
+      "Acute Toxic",
+      "Health Hazard",
+      "Environmental Hazard"
+    ],
+    "statements": [
+      {
+        "code": "H200",
+        "text": "Unstable Explosive",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H300",
+        "text": "Fatal if swallowed",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H310",
+        "text": "Fatal in contact with skin",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H330",
+        "text": "Fatal if inhaled",
+        "percent": null,
+        "level": "Danger"
+      },
+      {
+        "code": "H373",
+        "text": "May causes damage to organs through prolonged or repeated exposure",
+        "percent": null,
+        "level": "Warning"
+      },
+      {
+        "code": "H411",
+        "text": "Toxic to aquatic life with long lasting effects",
+        "percent": null,
+        "level": null
+      }
+    ]
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Glyceryl trinitrate solution appears as a colorless solution of glyceryl trinitrate (nitroglycerin) in water. If allowed to dry out, the remaining nitroglycerin is explosive."
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Nitroglycerin, desensitized, [liquid] appears as a pale yellow, viscous liquid that is slightly soluble in water and more dense than water. Sensitive to shock and heat. May explode under prolonged exposure to fire or heat. Primary hazard is the blast of an instantaneous explosion and not flying fragment or projectiles. Used medicinally."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Nitroglycerin, solution in alcohol, with more than 1% but not more than 5% nitroglycerin appears as a dilute solution in ethanol. If the ethanol evaporates the nitroglycerine will become shock sensitive. May then detonate if shocked or heated."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Nitroglycerin, solution in alcohol, with not more than 1% nitroglycerin appears as a flammable, colorless solution of nitroglycerin in alcohol. If allowed to dry out, the remaining nitroglycerin is explosive."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Spirits of nitroglycerin, [1 to 10%] appears as a mixture of nitroglycerin and ethanol. If ethanol evaporates the nitroglycerin becomes shock sensitive and may detonate by friction or impact."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin",
+      "origin": "Wikipedia",
+      "text": "Nitroglycerin (NG, alternative spelling nitroglycerine), also known as trinitroglycerin (TNG), nitro, glyceryl trinitrate (GTN), or 1,2,3-trinitroxypropane, is a dense, colorless or pale yellow, oily, explosive liquid most commonly produced by nitrating glycerol with white fuming nitric acid under conditions appropriate to the formation of the nitric acid ester. Chemically, the substance is a nitrate ester rather than a nitro compound, but the traditional name is retained."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin",
+      "origin": "Wikipedia",
+      "text": "As is the case for many other explosives, nitroglycerin becomes more and more prone to exploding (i.e., spontaneous decomposition) as the temperature is increased. Upon exposure to heat above 218 °C at sea-level atmospheric pressure, nitroglycerin becomes extremely unstable and tends to explode. When placed in vacuum, it has an autoignition temperature of 270 °C instead. With a melting point of 12.8 °C, the chemical is almost always encountered as a thick and viscous fluid, changing to a crystalline solid when frozen. Although the pure compound itself is colorless, in practice the presence of nitric oxide impurities left over during production tends to give it a slight yellowish tint."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin",
+      "origin": "Wikipedia",
+      "text": "Due to its high boiling point and consequently low vapor pressure (0.00026 mmHg at 20 °C), pure nitroglycerin has practically no odor at room temperature, with a sweet and burning taste when ingested. Unintentional detonation may ensue when dropped, shaken, lit on fire, rapidly heated, exposed to sunlight and ozone, subjected to sparks and electrical discharges, or roughly handled. Its sensitivity to exploding is responsible for numerous devastating industrial accidents throughout its history. The chemical's characteristic reactivity may be reduced through the addition of desensitizing agents, which makes it less likely to explode."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#History",
+      "origin": "Wikipedia",
+      "text": "Nitroglycerin was the first practical explosive produced that was stronger than black powder. It was synthesized by the Italian chemist Ascanio Sobrero in 1846, working under Théophile-Jules Pelouze at the University of Turin. Sobrero initially called his discovery \"pyroglycerin\" and warned vigorously against its use as an explosive."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#History",
+      "origin": "Wikipedia",
+      "text": "One year later, Nobel founded Alfred Nobel and Company in Germany and built an isolated factory in the Krümmel hills of Geesthacht near Hamburg. This business exported a liquid combination of nitroglycerin and gunpowder called \"Blasting Oil\", but this was extremely unstable and difficult to handle, as evidenced in numerous catastrophes. The buildings of the Krümmel factory were destroyed twice."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#History",
+      "origin": "Wikipedia",
+      "text": "In April 1866, several crates of nitroglycerin were shipped to California, three of which were destined for the Central Pacific Railroad, which planned to experiment with it as a blasting explosive to expedite the construction of the 1,659-foot-long (506 m) Summit Tunnel through the Sierra Nevada Mountains. One of the remaining crates exploded, destroying a Wells Fargo company office in San Francisco and killing 15 people. This led to a complete ban on the transportation of liquid nitroglycerin in California."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#History",
+      "origin": "Wikipedia",
+      "text": "Following the discovery that amyl nitrite helped alleviate chest pain, the physician William Murrell experimented with the use of nitroglycerin to alleviate angina pectoris and to reduce the blood pressure. He began treating his patients with small diluted doses of nitroglycerin in 1878, and this treatment was soon adopted into widespread use after Murrell published his results in The Lancet in 1879."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Instability and desensitization",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Instability_and_desensitization",
+      "origin": "Wikipedia",
+      "text": "In its undiluted form, nitroglycerin is a contact explosive, meaning physical shock causes it to explode. If it has not been adequately purified during manufacture, it can degrade over time to even more unstable forms. This makes nitroglycerin highly dangerous to transport or use. In its undiluted form, it is one of the world's most powerful explosives, comparable to the more recently developed RDX and PETN."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Instability and desensitization",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Instability_and_desensitization",
+      "origin": "Wikipedia",
+      "text": "Early in its history, liquid nitroglycerin was found to be \"desensitized\" by freezing it at a temperature below 45 to 55 °F (7 to 13 °C), depending on its purity. Its sensitivity to shock while frozen is somewhat unpredictable: \"It is more insensitive to the shock from a fulminate cap or a rifle ball when in that condition but on the other hand it appears to be more liable to explode on breaking, crushing, tamping, etc.\" Frozen nitroglycerin is much less energetic than liquid, and so must be thawed before use. Thawing it out can be extremely sensitizing, especially if impurities are present or the warming is too rapid."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Detonation",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Detonation",
+      "origin": "Wikipedia",
+      "text": "When nitroglycerin explodes, the products after cooling are given by:"
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Detonation",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Detonation",
+      "origin": "Wikipedia",
+      "text": "The heat released can be calculated from the heats of formation. Using −371 kJ/mol for the heat of formation of condensed phase nitroglycerin gives 1414 kJ/mol released if forming water vapor, and 1524 if forming liquid water."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Use as an explosive and a propellant",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Use_as_an_explosive_and_a_propellant",
+      "origin": "Wikipedia",
+      "text": "Nitroglycerin is an oily liquid that explodes when subjected to heat, shock, or flame. The main use of nitroglycerin, by tonnage, is in explosives such as dynamite and in propellants as an ingredient. However, its sensitivity has limited the usefulness of nitroglycerin as a military explosive; less sensitive explosives such as TNT, RDX, and HMX have largely replaced it in munitions."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Use as an explosive and a propellant",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Use_as_an_explosive_and_a_propellant",
+      "origin": "Wikipedia",
+      "text": "He named this explosive dynamite and patented it in 1867. It was supplied ready for use in the form of sticks, individually wrapped in greased waterproof paper. Dynamite and similar explosives were widely adopted for civil engineering tasks, such as in drilling highway and railroad tunnels, for mining, for clearing farmland of stumps, in quarrying, and in demolition work. Likewise, military engineers have used dynamite for construction and demolition work."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Medical use",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Medical_use",
+      "origin": "Wikipedia",
+      "text": "Nitroglycerin belongs to a group of drugs called nitrates, which includes many other nitrates like isosorbide dinitrate (Isordil) and isosorbide mononitrate (Imdur, Ismo, Monoket). These agents all exert their effect by being converted to nitric oxide in the body by mitochondrial aldehyde dehydrogenase (ALDH2), and nitric oxide is a potent natural vasodilator."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Medical use",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Medical_use",
+      "origin": "Wikipedia",
+      "text": "In medicine, nitroglycerin is probably most commonly prescribed for angina pectoris, a painful symptom of ischemic heart disease caused by inadequate flow of blood and oxygen to the heart, and as a potent antihypertensive agent. Nitroglycerin corrects the imbalance between the flow of oxygen and blood to the heart and the heart's energy demand. There are many formulations on the market at different doses. At low doses, nitroglycerin dilates veins more than arteries, thereby reducing preload (volume of blood in the heart after filling); this is thought to be its primary mechanism of action."
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Industrial exposure",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Industrial_exposure",
+      "origin": "Wikipedia",
+      "text": "Infrequent exposure to high doses of nitroglycerin can cause severe headaches known as \"NG head\" or \"bang head\". These headaches can be severe enough to incapacitate some people; however, humans develop a tolerance to and dependence on nitroglycerin after long-term exposure. Although rare, withdrawal can be fatal; symptoms include chest pain and other heart problems. These symptoms may be relieved with re-exposure to nitroglycerin or other suitable organic nitrates."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Industrial exposure",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin#Industrial_exposure",
+      "origin": "Wikipedia",
+      "text": "For workers in nitroglycerin (NTG) manufacturing facilities, the effects of withdrawal sometimes include \"Sunday heart attacks\" in those experiencing regular nitroglycerin exposure in the workplace, leading to the development of tolerance for the venodilating effects. Over the weekend, the workers lost their tolerance, and when they were re-exposed on Monday, the drastic vasodilation produced a fast heart rate, dizziness, and a headache. This is referred to as \"Monday disease\"."
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Used in the production of dynamite and other explosives, rocket fuel and pharmaceuticals; [HSDB]"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "High explosive, production of dynamite and other explosives"
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Uses",
+      "origin": "NORMAN Suspect List Exchange",
+      "text": "Use (kg; approx.) in Germany (2009): >100 Use (kg) in USA (2002): 1100 Consumption (g per capita; approx.) in Germany (2009): 0.00122 Consumption (g per capita) in the USA (2002): 0.0039 Calculated removal (%): 22.4"
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Uses",
+      "origin": "EPA Chemical Data Reporting (CDR)",
+      "text": "Other Energy Releasers (explosives, motive propellant)"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION: Glyceryl trinitrate is used as an anti-anginal vasodilating agent. It slightly volatile odorless oily liquid with sweet, aromatic and pungent taste. Soluble in water, ethanol, methanol and miscible with ether, acetone and chloroform. Indications: Prophylaxis and treatment of angina and left ventricular failure. Control of hypertension during cardiac surgery. Congestive cardiac failure unresponsive to usual therapy. HUMAN EXPOSURE: Main risks and target organs: Toxic effects of glyceryl trinitrate are caused by vasodilatation and methemoglobinemia. Venous and arterial vasodilatation causes lowering of blood pressure leading to shock."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=Toxicity-Summary",
+      "origin": "StatPearls",
+      "text": "Overdose toxicity from nitroglycerin is mainly a consequence of increased vasodilatory response. Hypotension, venous pooling, increased vasodilation, and reduced cardiac output can be expected in these patients. Compensatory effects, such as tachycardia and palpitations, can also be expected. Vasodilation and venous pooling can increase the amount of blood in the cranial space, resulting in increased intracranial pressures; this can cause persistent, throbbing headaches, along with confusion, fever, vertigo, nausea, vomiting, and visual disturbances."
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4510#section=GHS-Classification",
+      "origin": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+      "text": "Signal word: Danger. Pictograms: Explosive, Acute Toxic, Health Hazard, Environmental Hazard. H200: (Deleted) Unstable Explosive [Danger Explosives] H300: Fatal if swallowed [Danger Acute toxicity, oral] H310: Fatal in contact with skin [Danger Acute toxicity, dermal] H330: Fatal if inhaled [Danger Acute toxicity, inhalation] H373 **: May causes damage to organs through prolonged or repeated exposure [Warning Specific target organ toxicity, repeated exposure] H411: Toxic to aquatic life with long lasting effects [Hazardous to the aquatic environment, long-term hazard]"
+    }
+  ]
+}

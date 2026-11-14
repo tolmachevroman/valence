@@ -1,0 +1,266 @@
+{
+  "query": "glucose",
+  "compound": {
+    "cid": 5793,
+    "title": "D-Glucose",
+    "formula": "C6H12O6",
+    "molarMass": "180.16",
+    "iupacName": "(3R,4S,5S,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
+    "cas": "50-99-7",
+    "synonyms": [
+      "D-Glucopyranose",
+      "glucose",
+      "Glucopyranose",
+      "Grape sugar",
+      "Blood sugar"
+    ]
+  },
+  "ghs": {
+    "signal": null,
+    "pictograms": [],
+    "statements": []
+  },
+  "has_3d": true,
+  "snippets": [
+    {
+      "id": "1",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Record-Description",
+      "origin": "CAMEO Chemicals",
+      "text": "Watery odorless colorless liquid. Denser than water and soluble in water. Hence sinks in and mixes with water. (USCG, 1999)"
+    },
+    {
+      "id": "2",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Record-Description",
+      "origin": "ChEBI",
+      "text": "D-glucopyranose is a glucopyranose having D-configuration. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a D-glucose and a glucopyranose."
+    },
+    {
+      "id": "3",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Record-Description",
+      "origin": "DrugBank",
+      "text": "Glucose is a simple sugar (monosaccharide) generated during phosynthesis involving water, carbon and sunlight in plants. It is produced in humans via hepatic gluconeogenesis and breakdown of polymeric glucose forms (glycogenolysis). It circulates in human circulation as blood glucose and acts as an essential energy source for many organisms through aerobic or anaerobic respiration and fermentation. It is primarily stored as starch in plants and glycogen in animals to be used in various metabolic processes in the cellular level. Its aldohexose stereoisomer, dextrose or D-glucose, is the most commonly occurring isomer of glucose in nature."
+    },
+    {
+      "id": "4",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Record-Description",
+      "origin": "E. coli Metabolome Database (ECMDB)",
+      "text": "D-Glucose is a metabolite found in or produced by Escherichia coli (strain K12, MG1655)."
+    },
+    {
+      "id": "5",
+      "source": "pubchem_view",
+      "section": "Record Description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Record-Description",
+      "origin": "LOTUS - the natural products occurrence database",
+      "text": "D-glucopyranose has been reported in Phyllanthus sellowianus, Maclura pomifera, and other organisms with data available."
+    },
+    {
+      "id": "6",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glucose",
+      "origin": "Wikipedia",
+      "text": "Glucose is a sugar with the molecular formula C6H12O6. It is the most abundant sugar monomer (or monosaccharide) in the biosphere. The primary source of new glucose from inorganic sources is through photosynthesis by plants and most algae, which synthesize glucose from water and carbon dioxide using the energy from sunlight. Glucose is used by plants to make the glucose polysaccharide cellulose, the most abundant carbohydrate in the world, for use in cell walls, and by all living organisms to replenish adenosine triphosphate (ATP) inside cells, which is used by cells to store energy for phosphorylation."
+    },
+    {
+      "id": "7",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glucose",
+      "origin": "Wikipedia",
+      "text": "In energy metabolism, glucose is the most important source of energy in all organisms. Glucose for metabolism is stored as a polymer, in plants mainly as amylose and amylopectin, and in animals as glycogen. Glucose circulates in the blood of animals as blood sugar. The naturally occurring form is d-glucose, while its stereoisomer l-glucose is produced synthetically in comparatively small amounts and is less biologically active. Glucose is a monosaccharide containing six carbon atoms and an aldehyde group, and is therefore an aldohexose. The glucose molecule can exist in an open-chain (acyclic) as well as ring (cyclic) form."
+    },
+    {
+      "id": "8",
+      "source": "wikipedia",
+      "section": "Introduction",
+      "url": "https://en.wikipedia.org/wiki/Glucose",
+      "origin": "Wikipedia",
+      "text": "Glucose, as intravenous sugar solution, is on the World Health Organization's List of Essential Medicines. It is also on the list in combination with sodium chloride (table salt)."
+    },
+    {
+      "id": "9",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Glucose#History",
+      "origin": "Wikipedia",
+      "text": "Glucose was first isolated from raisins in 1747 by the German chemist Andreas Marggraf. Glucose was discovered in grapes by another German chemist, Johann Tobias Lowitz, in 1792, and distinguished as being different from cane sugar (sucrose). Glucose is the term coined by Jean-Baptiste Dumas in 1838, which has prevailed in the chemical literature. Friedrich August Kekulé proposed the term dextrose (from the Latin dexter, meaning \"right\"), because in aqueous solutions of glucose, the plane of linearly polarized light is turned to the right. In contrast, l-fructose (usually referred to as l-fructose) (a ketohexose) and l-glucose (l-glucose) turn linearly polarized light to the left."
+    },
+    {
+      "id": "10",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Glucose#History",
+      "origin": "Wikipedia",
+      "text": "Since glucose is a basic necessity of many organisms, a correct understanding of its chemical makeup and structure contributed greatly to a general advancement in organic chemistry. This understanding occurred largely as a result of the investigations of Hermann Emil Fischer, a German chemist who received the 1902 Nobel Prize in Chemistry for his findings. The synthesis of glucose established the structure of organic material and consequently formed the first definitive validation of Jacobus Henricus van 't Hoff's theories of chemical kinetics and the arrangements of chemical bonds in carbon-bearing molecules."
+    },
+    {
+      "id": "11",
+      "source": "wikipedia",
+      "section": "History",
+      "url": "https://en.wikipedia.org/wiki/Glucose#History",
+      "origin": "Wikipedia",
+      "text": "For the discovery of the metabolism of glucose Otto Fritz Meyerhof received the Nobel Prize in Physiology or Medicine in 1922. Hans von Euler-Chelpin was awarded the Nobel Prize in Chemistry along with Arthur Harden in 1929 for their \"research on the fermentation of sugar and their share of enzymes in this process\". In 1947, Bernardo Houssay (for his discovery of the role of the pituitary gland in the metabolism of glucose and the derived carbohydrates) as well as Carl and Gerty Cori (for their discovery of the conversion of glycogen from glucose) received the Nobel Prize in Physiology or Medicine."
+    },
+    {
+      "id": "12",
+      "source": "wikipedia",
+      "section": "Chemical and physical properties",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Chemical_and_physical_properties",
+      "origin": "Wikipedia",
+      "text": "Glucose forms white or colorless solids that are highly soluble in water and acetic acid but poorly soluble in methanol and ethanol. They melt at 146 °C (295 °F) (α) and 150 °C (302 °F) (beta), decompose starting at 188 °C (370 °F) with release of various volatile products, ultimately leaving a residue of carbon."
+    },
+    {
+      "id": "13",
+      "source": "wikipedia",
+      "section": "Chemical and physical properties",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Chemical_and_physical_properties",
+      "origin": "Wikipedia",
+      "text": "With six carbon atoms, it is classed as a hexose, a subcategory of the monosaccharides. d-Glucose is one of the sixteen aldohexose stereoisomers. The d-isomer, d-glucose, also known as dextrose, occurs widely in nature, but the l-isomer, l-glucose, does not. Glucose can be obtained by hydrolysis of carbohydrates such as milk sugar (lactose), cane sugar (sucrose), maltose, cellulose, glycogen, etc. Dextrose is commonly commercially manufactured from starches, such as corn starch in the US and Japan, from potato and wheat starch in Europe, and from tapioca starch in tropical areas."
+    },
+    {
+      "id": "14",
+      "source": "wikipedia",
+      "section": "Biochemical properties",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Biochemical_properties",
+      "origin": "Wikipedia",
+      "text": "Glucose is the most abundant monosaccharide. Glucose is also the most widely used aldohexose in most living organisms. One possible explanation for this is that glucose has a lower tendency than other aldohexoses to react nonspecifically with the amine groups of proteins. This reaction—glycation—impairs or destroys the function of many proteins, e.g. in glycated hemoglobin. Glucose's low rate of glycation can be attributed to its having a more stable cyclic form compared to other aldohexoses, which means it spends less time than they do in its reactive open-chain form."
+    },
+    {
+      "id": "15",
+      "source": "wikipedia",
+      "section": "Biochemical properties",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Biochemical_properties",
+      "origin": "Wikipedia",
+      "text": "Glucose is produced by plants through photosynthesis using sunlight, water, and carbon dioxide, and can be used by all living organisms as an energy and carbon source. However, most glucose does not occur in its free form, but in the form of its polymers (polysaccharides), such as sucrose and starch commonly found in plants, lactose in milk, cellulose from plant cell wall, and chitin from arthropods. These polymers, when consumed by animals, fungi, and bacteria, are degraded to glucose using enzymes. All animals are also able to produce glucose themselves from certain precursors as the need arises."
+    },
+    {
+      "id": "16",
+      "source": "wikipedia",
+      "section": "Pathology",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Pathology",
+      "origin": "Wikipedia",
+      "text": "Diabetes is a metabolic disorder where the body is unable to regulate levels of glucose in the blood either because of a lack of insulin in the body or the failure, by cells in the body, to respond properly to insulin. Each of these situations can be caused by persistently high elevations of blood glucose levels, through pancreatic burnout and insulin resistance. The pancreas is the organ responsible for the secretion of the hormones insulin and glucagon. Insulin is a hormone that regulates glucose levels, allowing the body's cells to absorb and use glucose. Without it, glucose cannot enter the cell and therefore cannot be used as fuel for the body's functions."
+    },
+    {
+      "id": "17",
+      "source": "wikipedia",
+      "section": "Pathology",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Pathology",
+      "origin": "Wikipedia",
+      "text": "To monitor the body's response to blood glucose-lowering therapy, glucose levels can be measured. Blood glucose monitoring can be performed by multiple methods, such as the fasting glucose test which measures the level of glucose in the blood after 8 hours of fasting. Another test is the 2-hour glucose tolerance test (GTT) – for this test, the person has a fasting glucose test done, then drinks a 75-gram glucose drink and is retested. This test measures the ability of the person's body to process glucose. Over time the blood glucose levels should decrease as insulin allows it to be taken up by cells and exit the blood stream."
+    },
+    {
+      "id": "18",
+      "source": "wikipedia",
+      "section": "Sources",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Sources",
+      "origin": "Wikipedia",
+      "text": "Most dietary carbohydrates contain glucose, either as their only building block (as in the polysaccharides starch and glycogen), or together with another monosaccharide (as in the hetero-polysaccharides sucrose and lactose). Unbound glucose is one of the main ingredients of honey. Glucose is extremely abundant and has been isolated from a variety of natural sources across the world, including male cones of the coniferous tree Wollemia nobilis in Rome, the roots of Ilex asprella plants in China, and straws from rice in California."
+    },
+    {
+      "id": "19",
+      "source": "wikipedia",
+      "section": "Commercial usage",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Commercial_usage",
+      "origin": "Wikipedia",
+      "text": "Glucose is mainly used for the production of fructose and of glucose-containing foods. In foods, it is used as a sweetener, humectant, to increase the volume and to create a softer mouthfeel. Various sources of glucose, such as grape juice (for wine) or malt (for beer), are used for fermentation to ethanol during the production of alcoholic beverages. Most soft drinks in the US use HFCS-55 (with a fructose content of 55% in the dry mass), while most other HFCS-sweetened foods in the US use HFCS-42 (with a fructose content of 42% in the dry mass). In Mexico, on the other hand, soft drinks are sweetened by cane sugar, which has a higher sweetening power."
+    },
+    {
+      "id": "20",
+      "source": "wikipedia",
+      "section": "Commercial usage",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Commercial_usage",
+      "origin": "Wikipedia",
+      "text": "In addition, various organic acids can be biotechnologically produced from glucose, for example by fermentation with Clostridium thermoaceticum to produce acetic acid, with Penicillium notatum for the production of araboascorbic acid, with Rhizopus delemar for the production of fumaric acid, with Aspergillus niger for the production of gluconic acid, with Candida brumptii to produce isocitric acid, with Aspergillus terreus for the production of itaconic acid, with Pseudomonas fluorescens for the production of 2-ketogluconic acid, with Gluconobacter suboxydans for the production of 5-ketogluconic acid, with Aspergillus oryzae for the production of kojic acid, with Lactobacillus delbrueckii fo…"
+    },
+    {
+      "id": "21",
+      "source": "wikipedia",
+      "section": "Analysis",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Analysis",
+      "origin": "Wikipedia",
+      "text": "When a glucose molecule is to be detected at a certain position in a larger molecule, nuclear magnetic resonance spectroscopy, X-ray crystallography analysis or lectin immunostaining is performed with concanavalin A reporter enzyme conjugate, which binds only glucose or mannose."
+    },
+    {
+      "id": "22",
+      "source": "wikipedia",
+      "section": "Analysis",
+      "url": "https://en.wikipedia.org/wiki/Glucose#Analysis",
+      "origin": "Wikipedia",
+      "text": "These reactions have only historical significance:"
+    },
+    {
+      "id": "23",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+      "origin": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "text": "Formed in photosynthesis; Produced commercially by hydrolysis of cornstarch with acids or enzymes; Used in foods and medicines and as a source of certain amino acids by fermentation; Also called dextrose, but glucose is the preferred term; [Hawley] Glucose is an essential carbohydrate that is used as a substrate for energy production within the body. [Olson, p. 562]"
+    },
+    {
+      "id": "24",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Confectionary, infant foods, medicine, brewing and wine making, intermediate, caramel coloring, baking and canning, source of methane by anaerobic fermentation, source of certain amino acids (e.g. lysine) by fermentation."
+    },
+    {
+      "id": "25",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Benzylisoquinoline alkaloids (BIAs) are a diverse family of plant-specialized metabolites that include the pharmaceuticals codeine and morphine and their derivatives. Microbial synthesis of BIAs holds promise as an alternative to traditional crop-based manufacturing. Here we demonstrate the production of the key BIA intermediate (S)-reticuline from glucose in Saccharomyces cerevisiae. To aid in this effort, we developed an enzyme-coupled biosensor for the upstream intermediate L-3,4-dihydroxyphenylalanine (L-DOPA). Using this sensor, we identified an active tyrosine hydroxylase and improved its L-DOPA yields by 2.8-fold via PCR mutagenesis."
+    },
+    {
+      "id": "26",
+      "source": "pubchem_view",
+      "section": "Uses",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "Nutrient (carbohydrate) replenisher in pharmaceuticals; food component; fluid replenisher"
+    },
+    {
+      "id": "27",
+      "source": "pubchem_view",
+      "section": "Natural Pollution Sources",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Natural-Pollution-Sources",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "D(+)-Glucose is formed in plants by photosynthesis(1). D(+)-Glucose is a main source of energy for living organisms and occurs naturally and in the free state in fruits and other parts of plants(2). Normal human blood contains 0.08-0.1% D(+)-glucose(1,2). Glucose predominantly occurs in nature in the form of the D-enantiomer(3). D(+)-Glucose can be considered the parent compound of the monosaccharide family, because it is the most abundant monosaccharide in nature. It occurs as such in many fruits and plants and constitutes the basic building unit of starch, cellulose, and glycogen(4)."
+    },
+    {
+      "id": "28",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Toxicity-Summary",
+      "origin": "Cosmetic Ingredient Review (CIR)",
+      "text": "Safe in the present practices of use and concentration. Ingredient, concentration, and use information are available in documents discoverable at https://cir-reports.cir-safety.org"
+    },
+    {
+      "id": "29",
+      "source": "pubchem_view",
+      "section": "Toxicity Summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Toxicity-Summary",
+      "origin": "Hazardous Substances Data Bank (HSDB)",
+      "text": "IDENTIFICATION AND USE: Glucose forms colorless crystals or white granular powder. It is used in confectionary, infant foods, medicine, brewing and wine making, caramel coloring, baking and canning, source of methane by anaerobic fermentation, source of certain amino acids by fermentation. A principal industrial fermentation use of glucose is for the production of fuel ethanol as an oxygenate or octane enhancer. Glucose is hydrogenated to sorbitol for use in various food and nonfood applications. Liquid glucose is an ingredient of Cocoa Syrup, It is used as a tablet binder and coating agent, and as a diluent in pilular extracts; it has replaced glycerin in many pharmaceutical preparations."
+    },
+    {
+      "id": "30",
+      "source": "pubchem_view",
+      "section": "GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=GHS-Classification",
+      "origin": "European Chemicals Agency (ECHA)",
+      "text": "Not Classified Reported as not meeting GHS hazard criteria by 946 of 969 companies (only 2.4% companies provided GHS information). For more detailed information, please visit  ECHA C&L website."
+    }
+  ]
+}
