@@ -46,12 +46,12 @@ function Hazards({ hazards }: { hazards: NonNullable<Card['hazards']> }) {
 
 function CardView({ slot, model }: { slot: CardSlot; model?: ModelStatus }) {
   const ready = slot.state === 'ready' && slot.card
-  const title = slot.card?.title ?? slot.draft?.title
-  const body = slot.card?.body ?? slot.draft?.body
+  const title = slot.card?.title
+  const body = slot.card?.body ?? slot.draft
   return (
     <article className={`card card-${slot.kind}${ready ? '' : ' card-pending'}`} aria-busy={!ready}>
       <h3 className="card-label">{LABELS[slot.kind]}</h3>
-      {title ? <h4 className="card-title">{title}</h4> : !ready && <div className="line line-title" />}
+      {title && <h4 className="card-title">{title}</h4>}
       {body ? <p className="card-body">{body}</p> : !ready && <div className="line" />}
       {slot.card?.hazards && <Hazards hazards={slot.card.hazards} />}
       {ready ? (
@@ -106,7 +106,7 @@ export default function CardsPanel({ molecule, model }: { molecule?: MoleculeSta
       <div className="visually-hidden" aria-live="polite">
         {cards
           ?.filter((c) => c.state === 'ready')
-          .map((c) => `${LABELS[c.kind]}: ${c.card?.title}. `)
+          .map((c) => `${LABELS[c.kind]}: ${c.card?.title || c.card?.body}. `)
           .join('')}
       </div>
     </section>

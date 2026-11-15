@@ -40,7 +40,7 @@ export interface Card {
   kind: CardKind
   /** "Where you meet it" */
   label: string
-  /** Empty when the model's title used words its sentences don't have. */
+  /** Empty for cards made of source sentences; the label heads them. */
   title: string
   body: string
   sources: { label: string; url: string }[]
@@ -59,8 +59,8 @@ export type MoleculeEvent =
   /** Cards to expect, in the order they will be written. */
   | { kind: 'cardsPlanned'; cards: CardKind[] }
   | { kind: 'cardWriting'; card: CardKind }
-  /** The card so far: the title as written and the source sentences chosen. */
-  | { kind: 'cardDraft'; card: CardKind; title: string; body: string }
+  /** The card so far: the source sentences chosen. */
+  | { kind: 'cardDraft'; card: CardKind; body: string }
   | { kind: 'cardRetrying'; card: CardKind }
   | { kind: 'cardReady'; card: Card }
   /** No card of this kind: skipped, failed its checks, or no model. */

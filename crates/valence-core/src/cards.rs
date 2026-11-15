@@ -10,8 +10,6 @@ use crate::{extract, ghs, select};
 
 /// Up to three sentence ids.
 const CHOICE_TOKENS: usize = 40;
-/// A title of up to eight words.
-const TITLE_TOKENS: usize = 40;
 /// Lowered from 0.6 in M0.6b for faithfulness to the snippets.
 pub const TEMPERATURE: f64 = 0.2;
 
@@ -60,9 +58,8 @@ pub enum Outcome {
 pub enum Event {
     /// The model is choosing sentences.
     Writing,
-    /// The card so far, unchecked: the title as far as written, and the
-    /// sentences chosen so far.
-    Draft { title: String, body: String },
+    /// The card so far, unchecked: the sentences chosen so far.
+    Draft { body: String },
     /// The choice was rejected; choosing again with these problems listed.
     Retrying { problems: Vec<String> },
 }
@@ -245,10 +242,8 @@ pub fn danger(molecule: &str, snippets: &[Snippet]) -> Option<Card> {
 }
 
 /// Generate one card about `molecule` from its snippets (`extract`): the
-/// model chooses sentences, the choice is checked and retried once with its
-/// problems, then the model picks a title from the excerpts allowed for those
-/// sentences. A choice that fails twice drops the card; with no title
-/// allowed or chosen, the card shows without one.
+/// model chooses sentences, and the choice is checked and retried once with
+/// its problems. A choice that fails twice drops the card.
 pub async fn card<G: Generate>(
     model: &G,
     kind: CardKind,
@@ -297,10 +292,7 @@ pub async fn card<G: Generate>(
                     .join(" ");
                 if body != shown {
                     shown = body.clone();
-                    on_event(Event::Draft {
-                        title: String::new(),
-                        body,
-                    });
+                    on_event(Event::Draft { body });
                 }
             })
             .await?;
@@ -324,66 +316,11 @@ pub async fn card<G: Generate>(
         return Ok(Outcome::Dropped(problems.unwrap_or_default()));
     };
 
-    let body = chosen.iter().map(|o| o.text).collect::<Vec<_>>().join(" ");
-    let titles = extract::titles(&chosen);
-    let mut title = String::new();
-    if !titles.is_empty() {
-        let request = Request {
-            prompt: extract::build_title(kind, molecule, &chosen),
-            schema: extract::title_schema(&titles),
-            max_tokens: TITLE_TOKENS,
-            temperature: TEMPERATURE,
-        };
-        let mut text = String::new();
-        let g = model
-            .generate(request, &mut |piece| {
-                text.push_str(piece);
-                if let Some(t) = partial_string(&text, "title").filter(|t| !t.is_empty()) {
-                    on_event(Event::Draft {
-                        title: t,
-                        body: body.clone(),
-                    });
-                }
-            })
-            .await?;
-        title = extract::parse_title(&g.text, &titles).unwrap_or_default();
-    }
     Ok(Outcome::Card(finished(
         kind,
-        extract::draft(&title, &chosen),
+        extract::draft(&chosen),
         &picked,
     )))
-}
-
-/// The value of string field `key` in JSON that may stop anywhere: complete,
-/// cut off mid-string, or `None` before the value starts. Only top-level
-/// fields are expected; the card schema has no nesting before `sources`.
-fn partial_string(json: &str, key: &str) -> Option<String> {
-    let at = json.find(&format!("\"{key}\""))? + key.len() + 2;
-    let rest = json[at..].trim_start().strip_prefix(':')?;
-    let mut chars = rest.trim_start().strip_prefix('"')?.chars();
-    let mut out = String::new();
-    while let Some(c) = chars.next() {
-        match c {
-            '"' => break,
-            '\\' => match chars.next() {
-                Some('n') => out.push('\n'),
-                Some('t') => out.push('\t'),
-                Some('u') => {
-                    let hex: String = chars.by_ref().take(4).collect();
-                    match u32::from_str_radix(&hex, 16).ok().and_then(char::from_u32) {
-                        Some(c) if hex.len() == 4 => out.push(c),
-                        // Cut off mid-escape, or a surrogate pair: leave it out for now.
-                        _ => {}
-                    }
-                }
-                Some(other) => out.push(other),
-                None => break,
-            },
-            c => out.push(c),
-        }
-    }
-    Some(out)
 }
 
 #[cfg(test)]
@@ -467,7 +404,6 @@ mod tests {
 
     /// The History snippet has one sentence, offered as s1.1.
     const CHOICE: &str = r#"{"sentences": ["s1.1"]}"#;
-    const TITLE: &str = r#"{"title": "first extracted in impure form"}"#;
     const HISTORY: &str =
         "Capsaicin was first extracted in impure form in 1816 by Christian Friedrich Bucholz.";
 
@@ -483,13 +419,12 @@ mod tests {
 
     #[tokio::test]
     async fn a_card_is_the_chosen_sentences_verbatim() {
-        let model = Scripted::new(&[CHOICE, TITLE]);
+        let model = Scripted::new(&[CHOICE]);
         let (outcome, events) = run(&model, CardKind::Origin).await;
         let Outcome::Card(card) = outcome else {
             panic!("{outcome:?}")
         };
-        assert_eq!(card.title, "first extracted in impure form");
-        assert_eq!(card.body, HISTORY);
+        assert_eq!((card.title.as_str(), card.body.as_str()), ("", HISTORY));
         assert_eq!(
             card.sources,
             [Source {
@@ -499,29 +434,10 @@ mod tests {
             }]
         );
         assert_eq!(events.first(), Some(&Event::Writing));
-        let drafts: Vec<_> = events
-            .iter()
-            .filter_map(|e| match e {
-                Event::Draft { title, body } => Some((title.clone(), body.clone())),
-                _ => None,
-            })
-            .collect();
-        assert_eq!(
-            drafts[0],
-            (String::new(), HISTORY.to_string()),
-            "body first"
-        );
-        assert_eq!(drafts.last().unwrap().0, card.title, "then the title");
-        assert_eq!(model.asked().len(), 2, "a choice and a title");
-    }
-
-    #[tokio::test]
-    async fn a_title_outside_the_allowed_excerpts_is_left_off() {
-        let model = Scripted::new(&[CHOICE, r#"{"title": "Hot pepper chemist strikes gold"}"#]);
-        let Outcome::Card(card) = run(&model, CardKind::Origin).await.0 else {
-            panic!()
-        };
-        assert_eq!((card.title.as_str(), card.body.as_str()), ("", HISTORY));
+        assert!(events.contains(&Event::Draft {
+            body: HISTORY.into()
+        }));
+        assert_eq!(model.asked().len(), 1, "one request per card");
     }
 
     #[tokio::test]
@@ -585,7 +501,7 @@ mod tests {
         };
         assert_eq!(cached(&cache, CardKind::Origin, &snippets), Cached::Missing);
 
-        let model = Scripted::new(&[CHOICE, TITLE]);
+        let model = Scripted::new(&[CHOICE]);
         let outcome = card(
             &model,
             CardKind::Origin,
@@ -657,28 +573,5 @@ mod tests {
             ]
         );
         assert_eq!(order(&[]), []);
-    }
-
-    #[test]
-    fn partial_strings_from_cut_off_json() {
-        let full = r#"{"title": "Hot \"stuff\"", "body": "Lineé two"#;
-        assert_eq!(
-            partial_string(full, "title").as_deref(),
-            Some("Hot \"stuff\"")
-        );
-        assert_eq!(
-            partial_string(full, "body").as_deref(),
-            Some("Line\u{e9} two")
-        );
-        assert_eq!(
-            partial_string(r#"{"title": "Ho"#, "title").as_deref(),
-            Some("Ho")
-        );
-        assert_eq!(
-            partial_string(r#"{"title": "A\u00"#, "title").as_deref(),
-            Some("A")
-        );
-        assert_eq!(partial_string(r#"{"title": "#, "title"), None);
-        assert_eq!(partial_string(r#"{"title": "x", "bo"#, "body"), None);
     }
 }

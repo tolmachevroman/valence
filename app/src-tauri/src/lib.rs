@@ -127,10 +127,9 @@ enum MoleculeEvent {
     CardWriting {
         card: CardKind,
     },
-    /// The card so far: the title as written and the sentences chosen.
+    /// The card so far: the source sentences chosen.
     CardDraft {
         card: CardKind,
-        title: String,
         body: String,
     },
     CardRetrying {
@@ -206,7 +205,7 @@ impl MoleculeEvent {
     fn from_card_event(card: CardKind, e: Event) -> Self {
         match e {
             Event::Writing => Self::CardWriting { card },
-            Event::Draft { title, body } => Self::CardDraft { card, title, body },
+            Event::Draft { body } => Self::CardDraft { card, body },
             Event::Retrying { .. } => Self::CardRetrying { card },
         }
     }

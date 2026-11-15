@@ -10,7 +10,7 @@ export interface CardSlot {
   kind: CardKind
   state: 'waiting' | 'writing' | 'retrying' | 'ready'
   /** The text so far, unchecked; cleared when a retry starts. */
-  draft?: { title: string; body: string }
+  draft?: string
   card?: Card
 }
 
@@ -69,7 +69,7 @@ export function useMolecule() {
         case 'cardWriting':
           return card(e.card, (s) => ({ ...s, state: 'writing' }))
         case 'cardDraft':
-          return card(e.card, (s) => ({ ...s, draft: { title: e.title, body: e.body } }))
+          return card(e.card, (s) => ({ ...s, draft: e.body }))
         case 'cardRetrying':
           return card(e.card, (s) => ({ ...s, state: 'retrying', draft: undefined }))
         case 'cardReady':

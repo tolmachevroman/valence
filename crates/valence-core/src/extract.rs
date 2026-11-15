@@ -1,7 +1,8 @@
 //! Cards made of source sentences (M3.7). The model never writes a card's
-//! text: it chooses up to three numbered sentences from the snippets, then a
-//! title from the excerpts of those sentences this module allows, and the
-//! card shows the sentences exactly as the sources give them.
+//! text: it chooses up to three numbered sentences from the snippets, and the
+//! card shows them exactly as the sources give them, under the card's label.
+//! There is no title: in the third review, titles cut from the sentences
+//! changed their meaning more often than the sentences did.
 //!
 //! The first review (docs/review/m3.7-findings.md) found that freely written
 //! cards from a 4B model invent details in about half the cards, and that the
@@ -21,7 +22,6 @@ pub const MAX_CHOSEN: usize = 3;
 pub const MAX_SENTENCE_WORDS: usize = 45;
 const MIN_SENTENCE_WORDS: usize = 4;
 pub const MAX_CARD_WORDS: usize = 90;
-pub const MAX_TITLE_WORDS: usize = 8;
 
 /// Sentence openers that point back at the sentence before.
 const LEANING: &[&str] = &[
@@ -60,47 +60,42 @@ const LEANING: &[&str] = &[
     "Results",
 ];
 
-/// Words a sentence's meaning can hang on; a title copied from it must keep them.
-const QUALIFIERS: &[&str] = &[
-    "may",
-    "might",
-    "can",
-    "could",
-    "probably",
-    "possibly",
-    "presumably",
-    "reportedly",
-    "likely",
-    "perhaps",
-    "suggest",
-    "suggests",
-    "suggested",
-    "thought",
-    "believed",
-    "associated",
-    "claimed",
-    "according",
-    "not",
-    "no",
-    "never",
-    "once",
-    "formerly",
-];
-
-/// Whether a sentence leans on the one before: it opens with a pronoun or a
-/// connective, or points back with "these", "those" or "such".
+/// Whether a sentence leans on the one before: it opens with a pronoun, a
+/// connective or a bare number ("Two were found…"), or points back with
+/// "this", "these", "those", "such" or "also".
 fn leans(text: &str) -> bool {
     let first = text
         .split_whitespace()
         .next()
         .unwrap_or_default()
         .trim_end_matches([',', ';', ':']);
-    if LEANING.contains(&first) {
+    if LEANING.contains(&first) || ["One", "Two", "Three", "Four"].contains(&first) {
         return true;
     }
-    let lower: Vec<String> = tokens(text);
+    let lower = tokens(text);
     lower.iter().enumerate().any(|(i, w)| {
-        w == "these" || w == "those" || (w == "such" && lower.get(i + 1).is_none_or(|n| n != "as"))
+        matches!(w.as_str(), "this" | "these" | "those" | "also")
+            || (w == "such" && lower.get(i + 1).is_none_or(|n| n != "as"))
+    })
+}
+
+/// Whether a sentence opens a caveat on the one before ("However, …").
+fn qualifies(text: &str) -> bool {
+    let first = text
+        .split_whitespace()
+        .next()
+        .unwrap_or_default()
+        .trim_end_matches(',');
+    ["However", "But", "Yet", "Nevertheless", "Nonetheless"].contains(&first)
+}
+
+/// Whether a sentence points at something a card can't show.
+fn points_outside(text: &str) -> bool {
+    tokens(text).iter().any(|w| {
+        matches!(
+            w.as_str(),
+            "diagram" | "figure" | "table" | "below" | "above"
+        )
     })
 }
 
@@ -131,7 +126,11 @@ pub fn offer<'a>(snippets: &[&'a Snippet]) -> Vec<Offered<'a>> {
             let repeat = out.iter().any(|o| tokens(o.text) == tokens(text));
             let stranded =
                 leans(text) && !out.iter().any(|o| o.snippet == i && o.position + 1 == j);
-            if (MIN_SENTENCE_WORDS..=MAX_SENTENCE_WORDS).contains(&words) && !repeat && !stranded {
+            if (MIN_SENTENCE_WORDS..=MAX_SENTENCE_WORDS).contains(&words)
+                && !repeat
+                && !stranded
+                && !points_outside(text)
+            {
                 out.push(Offered {
                     id: format!("s{}.{}", i + 1, j + 1),
                     snippet: i,
@@ -380,85 +379,6 @@ pub fn parse(output: &str) -> Result<Reply, String> {
     Ok(Reply::Chosen(ids))
 }
 
-/// Words a title may not start or end on.
-const EDGE_WORDS: &[&str] = &[
-    "a", "an", "the", "and", "or", "but", "of", "in", "on", "at", "to", "for", "by", "with", "as",
-    "is", "are", "was", "were", "be", "that", "which", "from", "its", "their",
-];
-/// More titles than this make the schema slow to compile; the rest are dropped.
-const MAX_TITLES: usize = 1000;
-
-/// The titles a card may have: 2 to `MAX_TITLE_WORDS` consecutive words of
-/// one chosen sentence, not starting or ending on a small word, with every
-/// hedge and negation of that sentence. Each passes `title_problems`.
-pub fn titles(chosen: &[&Offered]) -> Vec<String> {
-    let mut out: Vec<String> = Vec::new();
-    for o in chosen {
-        let words: Vec<&str> = o.text.split_whitespace().collect();
-        let qualifiers: Vec<String> = tokens(o.text)
-            .into_iter()
-            .filter(|w| QUALIFIERS.contains(&w.as_str()))
-            .collect();
-        for n in 2..=MAX_TITLE_WORDS {
-            for run in words.windows(n) {
-                let text = run
-                    .join(" ")
-                    .trim_matches(|c: char| !c.is_alphanumeric())
-                    .to_string();
-                let t = tokens(&text);
-                let edge = |w: Option<&String>| w.is_none_or(|w| EDGE_WORDS.contains(&w.as_str()));
-                let balanced = text.matches('(').count() == text.matches(')').count()
-                    && text.matches('"').count() % 2 == 0;
-                if t.len() == n
-                    && !edge(t.first())
-                    && !edge(t.last())
-                    && balanced
-                    && qualifiers.iter().all(|q| t.contains(q))
-                    && !out.contains(&text)
-                {
-                    out.push(text);
-                }
-            }
-        }
-    }
-    out.truncate(MAX_TITLES);
-    out
-}
-
-/// The prompt for the title step: the card's sentences, and the brief.
-pub fn build_title(kind: CardKind, molecule: &str, chosen: &[&Offered]) -> Prompt {
-    let system = format!(
-        "You choose titles for fact cards in Valence, an app that makes chemistry fun. \
-         The title is a short phrase copied from the card: pick the most striking one, \
-         the part that makes a reader curious. {}\n\n\
-         Reply with one JSON object and nothing else: {{\"title\": \"...\"}}",
-        brief(kind)
-    );
-    let mut user = format!("Molecule: {molecule}\nCard:\n");
-    for o in chosen {
-        let _ = writeln!(user, "{}", o.text);
-    }
-    user.push_str("Choose the title.");
-    Prompt { system, user }
-}
-
-/// Schema for the title step: one of `titles`.
-pub fn title_schema(titles: &[String]) -> Value {
-    json!({
-        "type": "object",
-        "properties": { "title": { "type": "string", "enum": titles } },
-        "required": ["title"],
-        "additionalProperties": false
-    })
-}
-
-/// The chosen title, if the reply holds one of `titles`.
-pub fn parse_title(output: &str, titles: &[String]) -> Option<String> {
-    let v: Value = serde_json::from_str(output.trim()).ok()?;
-    let title = v["title"].as_str()?;
-    titles.iter().find(|t| *t == title).cloned()
-}
-
 /// Sentence ids found so far in a reply that may be cut off anywhere.
 pub fn partial_ids(output: &str) -> Vec<String> {
     let Some(at) = output.find("\"sentences\"") else {
@@ -542,6 +462,14 @@ pub fn chosen<'o, 'a>(
         {
             chain.push(before);
         }
+        // A caveat right after it ("However, …") comes along too.
+        if let Some(caveat) = offered
+            .iter()
+            .find(|p| p.snippet == o.snippet && p.position == o.position + 1)
+            .filter(|p| qualifies(p.text))
+        {
+            chain.push(caveat);
+        }
         chain.retain(|c| !picked.contains(c));
         // Picks are taken in the model's order while the card stays short.
         let words = |v: &[&Offered]| v.iter().map(|o| word_count(o.text)).sum::<usize>();
@@ -589,41 +517,9 @@ pub fn chosen<'o, 'a>(
     }
 }
 
-/// Problems with a title for the chosen sentences, a check on `titles`: it must be 2 to
-/// `MAX_TITLE_WORDS` consecutive words of one of them, keeping that
-/// sentence's hedges and negations.
-pub fn title_problems(title: &str, chosen: &[&Offered]) -> Vec<String> {
-    let t = tokens(title);
-    if t.len() < 2 || t.len() > MAX_TITLE_WORDS {
-        return vec![format!(
-            "the title has {} words; copy 2 to {MAX_TITLE_WORDS}",
-            t.len()
-        )];
-    }
-    let source = chosen.iter().find(|o| {
-        let words = tokens(o.text);
-        words.windows(t.len()).any(|w| w == t.as_slice())
-    });
-    let Some(source) = source else {
-        return vec!["the title must be consecutive words copied from one chosen sentence".into()];
-    };
-    let dropped: Vec<String> = tokens(source.text)
-        .into_iter()
-        .filter(|w| QUALIFIERS.contains(&w.as_str()) && !t.contains(w))
-        .collect();
-    if dropped.is_empty() {
-        vec![]
-    } else {
-        vec![format!(
-            "the title leaves out \"{}\" from {}",
-            dropped.join("\", \""),
-            source.id
-        )]
-    }
-}
-
-/// The card from a checked choice: the sentences joined, citing their snippets.
-pub fn draft(title: &str, chosen: &[&Offered]) -> CardDraft {
+/// The card from a checked choice: the sentences joined, citing their
+/// snippets, with no title.
+pub fn draft(chosen: &[&Offered]) -> CardDraft {
     let mut sources: Vec<String> = Vec::new();
     for o in chosen {
         let id = format!("s{}", o.snippet + 1);
@@ -632,7 +528,7 @@ pub fn draft(title: &str, chosen: &[&Offered]) -> CardDraft {
         }
     }
     CardDraft {
-        title: title.to_string(),
+        title: String::new(),
         body: chosen.iter().map(|o| o.text).collect::<Vec<_>>().join(" "),
         sources,
     }
@@ -711,6 +607,27 @@ mod tests {
     }
 
     #[test]
+    fn context_rules() {
+        for leaning in [
+            "Two were found to have weak herbicidal activity.",
+            "Traces of vanillin were also found in wine jars in Jerusalem.",
+            "Unknown at that time, this species did not make its own vitamin C.",
+        ] {
+            assert!(leans(leaning), "{leaning}");
+        }
+        assert!(points_outside(
+            "It is the form at the bottom left of the diagram below."
+        ));
+        // A caveat right after a chosen sentence comes along.
+        let a = s(
+            "Nitroglycerin was found to be desensitized by freezing it. However, thawing can be extremely sensitizing.",
+        );
+        let offered = offer(&[&a]);
+        let picked = chosen(&ids(&["s1.1"]), &offered, &["nitroglycerin"]).unwrap();
+        assert_eq!(picked.len(), 2);
+    }
+
+    #[test]
     fn the_card_must_name_its_molecule() {
         let a = s("Acetanilide was the first aniline derivative found to relieve pain in 1886.");
         let offered = offer(&[&a]);
@@ -719,56 +636,6 @@ mod tests {
         let v = s("Ascorbic acid is found in citrus fruits and many green vegetables.");
         let offered = offer(&[&v]);
         assert!(chosen(&ids(&["s1.1"]), &offered, &["L-Ascorbic Acid"]).is_ok());
-    }
-
-    #[test]
-    fn titles_are_copied_and_keep_their_hedges() {
-        let a = s(
-            "Carvone was probably not isolated as a pure compound until 1849. Caffeine helps premature babies gain weight in neonatal care.",
-        );
-        let offered = offer(&[&a]);
-        let all = chosen(&ids(&["s1.1", "s1.2"]), &offered, &["carvone"]).unwrap();
-        assert!(title_problems("premature babies gain weight", &all).is_empty());
-        assert!(title_problems("Premature Babies, Gain Weight!", &all).is_empty());
-        assert_eq!(
-            title_problems("isolated as a pure compound", &all),
-            ["the title leaves out \"probably\", \"not\" from s1.1"]
-        );
-        assert!(title_problems("probably not isolated as a pure compound", &all).is_empty());
-        assert_eq!(
-            title_problems("babies gain weight with caffeine", &all),
-            ["the title must be consecutive words copied from one chosen sentence"]
-        );
-        assert!(!title_problems("Carvone", &all).is_empty(), "too short");
-    }
-
-    #[test]
-    fn allowed_titles_are_clean_excerpts_that_keep_hedges() {
-        let a = s(
-            "Carvone was probably not isolated as a pure compound until 1849. Caffeine helps premature babies gain weight in neonatal care.",
-        );
-        let offered = offer(&[&a]);
-        let all = chosen(&ids(&["s1.1", "s1.2"]), &offered, &["carvone"]).unwrap();
-        let t = titles(&all);
-        assert!(t.contains(&"premature babies gain weight".to_string()));
-        assert!(t.contains(&"probably not isolated".to_string()));
-        assert!(
-            !t.iter().any(|t| t.starts_with("isolated")),
-            "drops the hedge"
-        );
-        assert!(
-            !t.iter()
-                .any(|t| t.ends_with(" in") || t.starts_with("the "))
-        );
-        for title in &t {
-            assert!(title_problems(title, &all).is_empty(), "{title}");
-        }
-        assert_eq!(
-            parse_title(r#"{"title": "premature babies gain weight"}"#, &t).as_deref(),
-            Some("premature babies gain weight")
-        );
-        assert_eq!(parse_title(r#"{"title": "invented"}"#, &t), None);
-        assert!(title_schema(&t)["properties"]["title"]["enum"].is_array());
     }
 
     #[test]
@@ -797,7 +664,7 @@ mod tests {
         let a = s(HISTORY);
         let offered = offer(&[&a]);
         let picked = chosen(&ids(&["s1.1", "s1.2"]), &offered, NAMES).unwrap();
-        let d = draft("isolated relatively pure caffeine", &picked);
+        let d = draft(&picked);
         assert_eq!(
             d.body,
             "In 1819, the German chemist Friedlieb Ferdinand Runge isolated relatively pure caffeine for the first time. He called it Kaffebase, a base that exists in coffee."
@@ -829,8 +696,7 @@ mod tests {
             let Ok(Reply::Chosen(ids)) = parse(ex.reply) else {
                 panic!("{kind:?}")
             };
-            let picked = chosen(&ids, &offered, &[ex.molecule]).unwrap();
-            assert!(!titles(&picked).is_empty(), "{kind:?}");
+            assert!(chosen(&ids, &offered, &[ex.molecule]).is_ok(), "{kind:?}");
         }
     }
 }

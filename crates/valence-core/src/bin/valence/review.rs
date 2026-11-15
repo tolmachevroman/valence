@@ -135,7 +135,7 @@ mod run {
     struct CardRun {
         molecule: String,
         kind: CardKind,
-        /// written, untitled, retried, skipped, dropped, no input, from data, error.
+        /// written, retried, skipped, dropped, no input, from data, error.
         outcome: &'static str,
         title: Option<String>,
         body: Option<String>,
@@ -152,10 +152,7 @@ mod run {
 
     impl CardRun {
         fn shown(&self) -> bool {
-            matches!(
-                self.outcome,
-                "written" | "untitled" | "retried" | "from data"
-            )
+            matches!(self.outcome, "written" | "retried" | "from data")
         }
     }
 
@@ -206,8 +203,6 @@ mod run {
                 Ok(Outcome::Card(card)) => {
                     run.outcome = if kind == CardKind::Danger {
                         "from data"
-                    } else if card.title.is_empty() {
-                        "untitled"
                     } else if retried {
                         "retried"
                     } else {
@@ -332,7 +327,7 @@ mod run {
 
         let _ = writeln!(
             md,
-            "\n## Outcomes\n\n| Card | written | untitled | retried | skipped | dropped | no input | error |\n| --- | --- | --- | --- | --- | --- | --- | --- |"
+            "\n## Outcomes\n\n| Card | written | retried | skipped | dropped | no input | error |\n| --- | --- | --- | --- | --- | --- | --- |"
         );
         for kind in [CardKind::Where, CardKind::Origin, CardKind::Weird] {
             let count = |o: &str| {
@@ -342,10 +337,9 @@ mod run {
             };
             let _ = writeln!(
                 md,
-                "| {} | {} | {} | {} | {} | {} | {} | {} |",
+                "| {} | {} | {} | {} | {} | {} | {} |",
                 kind.label(),
                 count("written"),
-                count("untitled"),
                 count("retried"),
                 count("skipped"),
                 count("dropped"),
@@ -369,7 +363,11 @@ mod run {
                     r.seconds
                 );
                 if let (Some(title), Some(body)) = (&r.title, &r.body) {
-                    let _ = writeln!(md, "> **{title}**  \n> {body}\n");
+                    if title.is_empty() {
+                        let _ = writeln!(md, "> {body}\n");
+                    } else {
+                        let _ = writeln!(md, "> **{title}**  \n> {body}\n");
+                    }
                     if r.kind != CardKind::Danger {
                         let _ = writeln!(md, "<details><summary>Sources</summary>\n");
                         for (label, url, text) in &r.cited {

@@ -6,20 +6,20 @@
 
 | Measure | Target | Result |
 | --- | --- | --- |
-| First model card | under 10 s | 50 of 50 molecules; 3.4 s median, 7.5 s p90, 9.1 s max |
-| Streaming starts | under 3 s | 35 of 50; 2.2 s median, 4.9 s p90, 7.1 s max |
+| First model card | under 10 s | 49 of 50 molecules; 2.3 s median, 6.0 s p90, 11.2 s max |
+| Streaming starts | under 3 s | 37 of 50; 1.9 s median, 4.6 s p90, 6.1 s max |
 | Molecules with 3+ cards | 90% | 44 of 50 (88%) |
 | Cards with a claim not in the sources | 0 | by review, below |
-| Model load | under 10 s | 6.4 s |
-| Model card, including retry | | 5.4 s median, 7.5 s p90, 13.6 s max |
+| Model load | under 10 s | 6.3 s |
+| Model card, including retry | | 4.7 s median, 6.3 s p90, 13.4 s max |
 
 ## Outcomes
 
-| Card | written | untitled | retried | skipped | dropped | no input | error |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Where you meet it | 49 | 0 | 0 | 0 | 1 | 0 | 0 |
-| Origin story | 30 | 0 | 1 | 5 | 1 | 0 | 0 |
-| Weird fact | 42 | 0 | 2 | 2 | 4 | 0 | 0 |
+| Card | written | retried | skipped | dropped | no input | error |
+| --- | --- | --- | --- | --- | --- | --- |
+| Where you meet it | 49 | 0 | 0 | 1 | 0 | 0 |
+| Origin story | 29 | 1 | 3 | 3 | 1 | 0 |
+| Weird fact | 42 | 2 | 2 | 4 | 0 | 0 |
 
 ## Cards
 
@@ -32,9 +32,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Danger**  
 > 1-Chloro-4-(2,2,2-trichloro-1-(4-chlorophenyl)ethyl)benzene carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · written · 4.1 s
+**Where you meet it** · written · 3.3 s
 
-> **DDT is a chlorophenylethane**  
 > DDT is a chlorophenylethane that is 1,1,1-trichloro-2,2-diphenylethane substituted by additional chloro substituents at positions 4 of the phenyl substituents. It is a commonly used organochlorine insecticide. Formerly used as an insecticide and pesticide; [HSDB] All agricultural uses cancelled in 1972 by EPA; [Sullivan, p.
 
 <details><summary>Sources</summary>
@@ -48,27 +47,19 @@ Each claim should be stated by the cited snippets, folded under the card.
 **Weird fact** · skipped · 3.2 s
 
 
-### acetaminophen (4 cards)
+### acetaminophen (3 cards)
 
 **Danger level** · from data · 0.0 s
 
 > **Official signal word: Warning**  
 > Acetaminophen carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 3 more hazards, not listed here.
 
-**Origin story** · retried · 7.5 s
+**Origin story** · dropped · 6.2 s
 
-> **Charles Gerhardt first synthesized paracetamol in 1852**  
-> Acetanilide was the first aniline derivative serendipitously found to possess analgesic as well as antipyretic properties, and was quickly introduced into medical practice under the name of Antifebrin by Cahn & Hepp in 1886. Some reports state that Cahn & Hepp or a French chemist called Charles Gerhardt first synthesized paracetamol in 1852.
+Problems: no chosen sentence names Acetaminophen
 
-<details><summary>Sources</summary>
+**Weird fact** · written · 5.0 s
 
-- [Wikipedia, History](https://en.wikipedia.org/wiki/Paracetamol#History): Acetanilide was the first aniline derivative serendipitously found to possess analgesic as well as antipyretic properties, and was quickly introduced into medical practice under the name of Antifebrin by Cahn & Hepp in 1886. But its unacceptable toxic effects—the most alarming being cyanosis due to methemoglobinemia, an increase of hemoglobin in its ferric [Fe3+] state, called methemoglobin, which cannot bind oxygen, and thus decreases overall carriage of oxygen to tissue—prompted the search for less toxic aniline derivatives. Some reports state that Cahn & Hepp or a French chemist called Charles Gerhardt first synthesized paracetamol in 1852.
-
-</details>
-
-**Weird fact** · written · 6.1 s
-
-> **paracetamol was the major metabolite of acetanilide**  
 > But its unacceptable toxic effects—the most alarming being cyanosis due to methemoglobinemia, an increase of hemoglobin in its ferric [Fe3+] state, called methemoglobin, which cannot bind oxygen, and thus decreases overall carriage of oxygen to tissue—prompted the search for less toxic aniline derivatives. In 1948, Bernard Brodie, Julius Axelrod and Frederick Flinn confirmed that paracetamol was the major metabolite of acetanilide in humans, and established that it was just as efficacious an analgesic as its precursor.
 
 <details><summary>Sources</summary>
@@ -78,10 +69,9 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 7.5 s
+**Where you meet it** · written · 5.7 s
 
-> **Paracetamol, or acetaminophen, is an analgesic and antipyretic**  
-> Acetaminophen (paracetamol), also commonly known as Tylenol, is the most commonly taken analgesic worldwide and is recommended as first-line therapy in pain conditions by the World Health Organization (WHO). Paracetamol, or acetaminophen, is an analgesic and antipyretic agent used to treat fever and mild to moderate pain. It is a widely available over-the-counter drug sold generically or under various brand names, including Tylenol and Panadol.
+> Acetaminophen is often found combined with other drugs in more than 600 over the counter (OTC) allergy medications, cold medications, sleep medications, pain relievers, and other products. Paracetamol, or acetaminophen, is an analgesic and antipyretic agent used to treat fever and mild to moderate pain. It is a widely available over-the-counter drug sold generically or under various brand names, including Tylenol and Panadol.
 
 <details><summary>Sources</summary>
 
@@ -98,9 +88,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Warning**  
 > Allicin carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 2.6 s
+**Origin story** · written · 1.8 s
 
-> **Allicin was discovered as part of efforts**  
 > Allicin was discovered as part of efforts to create thiamine derivatives in the 1940s, mainly in Japan.
 
 <details><summary>Sources</summary>
@@ -109,9 +98,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 3.0 s
+**Where you meet it** · written · 2.4 s
 
-> **When fresh garlic is chopped**  
 > Allicin is an organosulfur compound obtained from garlic and leeks. When fresh garlic is chopped or crushed, the enzyme alliinase converts alliin into allicin, which is responsible for the aroma of fresh garlic.
 
 <details><summary>Sources</summary>
@@ -120,9 +108,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Weird fact** · written · 3.9 s
+**Weird fact** · written · 3.2 s
 
-> **Allicin is chiral but occurs naturally only**  
 > Allicin is chiral but occurs naturally only as a racemate. Allicin is an antifeedant, i.e. the defense mechanism against attacks by pests on the garlic plant.
 
 <details><summary>Sources</summary>
@@ -140,33 +127,30 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Danger**  
 > Artemisinin carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 2.8 s
+**Origin story** · retried · 4.3 s
 
-> **Tu Youyou discovered artemisinin in the leaves**  
-> In 1596, Li Shizhen recommended tea made from 'sweet wormwood specifically to treat malaria symptoms in his Compendium of Materia Medica. In the course of this research in 1972, Tu Youyou discovered artemisinin in the leaves of Artemisia annua.
+> Artemisinin is an antimalarial lactone derived from Artemisia annua or sweet wormwood. In 1596, Li Shizhen recommended tea made from 'sweet wormwood specifically to treat malaria symptoms in his Compendium of Materia Medica. Tu's team subsequently isolated an extract.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, History](https://en.wikipedia.org/wiki/Artemisinin#History): Artemisinin is an antimalarial lactone derived from Artemisia annua or sweet wormwood. In 1596, Li Shizhen recommended tea made from 'sweet wormwood specifically to treat malaria symptoms in his Compendium of Materia Medica. The genus name is derived from the Greek goddess Artemis and, more specifically, may have been named after Queen Artemisia II of Caria, a botanist and medical researcher in the fourth century BC.
-- [Wikipedia, History](https://en.wikipedia.org/wiki/Artemisinin#History): Artemisia annua is a common herb found in many parts of the world. In 1967, a plant screening research program, under a secret military program code-named "Project 523", was set up by the People's Liberation Army to find an adequate treatment for malaria; the program and early clinical work were ordered by Mao Zedong at the request of North Vietnamese leaders to provide assistance for their malaria-ridden army. In the course of this research in 1972, Tu Youyou discovered artemisinin in the leaves of Artemisia annua.
+- [Wikipedia, History](https://en.wikipedia.org/wiki/Artemisinin#History): Tu's team subsequently isolated an extract. Results were published in the Chinese Medical Journal in 1979. The extracted substance, once subject to purification, proved to be a useful starting point to obtain purified artemisinin. A 2012 review reported that artemisinin-based therapies were the most effective drugs for treatment of malaria at that time; it was also reported to clear malaria parasites from patients' bodies faster than other drugs. In addition to artemisinin, Project 523 developed a number of products that can be used in combination with artemisinin, including lumefantrine, piperaquine, and pyronaridine.
 
 </details>
 
-**Where you meet it** · written · 4.6 s
+**Where you meet it** · written · 3.5 s
 
-> **Artemisinin can be isolated from Artemisia annua**  
-> (+)-artemisinin is a sesquiterpene lactone obtained from sweet wormwood, Artemisia annua, which is used as an antimalarial for the treatment of multi-drug resistant strains of falciparum malaria. A 2023 review notes that Artemisinin can be isolated from Artemisia annua, also known as sweet wormwood, sweet annie, sweet sagewort, and annual wormwood (Chinese: qngho).
+> (+)-artemisinin is a sesquiterpene lactone obtained from sweet wormwood, Artemisia annua, which is used as an antimalarial for the treatment of multi-drug resistant strains of falciparum malaria. Artemisinin can be extracted from the herb Artemisia annua (sweet wormwood), which is used in traditional Chinese medicine.
 
 <details><summary>Sources</summary>
 
 - [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description): (+)-artemisinin is a sesquiterpene lactone obtained from sweet wormwood, Artemisia annua, which is used as an antimalarial for the treatment of multi-drug resistant strains of falciparum malaria. It has a role as an antimalarial and a plant metabolite. It is an organic peroxide and a sesquiterpene lactone.
-- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/68827#section=Record-Description): A 2023 review notes that Artemisinin can be isolated from Artemisia annua, also known as sweet wormwood, sweet annie, sweet sagewort, and annual wormwood (Chinese: qngho). It has been used to treat various conditions, e.g. malaria, cancer, viral and bacterial infections, and some cardiovasculreviear diseases.
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Artemisinin): Artemisinin and its semisynthetic derivatives are a group of drugs used in the treatment of malaria due to Plasmodium falciparum. It was discovered in 1972 by Tu Youyou, who shared the 2015 Nobel Prize in Physiology or Medicine for her discovery. Artemisinin-based combination therapies (ACTs) have become standard treatment worldwide for P. falciparum malaria as well as malaria due to other species of Plasmodium. Artemisinin can be extracted from the herb Artemisia annua (sweet wormwood), which is used in traditional Chinese medicine.
 
 </details>
 
-**Weird fact** · written · 6.6 s
+**Weird fact** · written · 5.5 s
 
-> **Artemis and, more specifically, may have been named**  
 > The genus name is derived from the Greek goddess Artemis and, more specifically, may have been named after Queen Artemisia II of Caria, a botanist and medical researcher in the fourth century BC. An unusual component of the artemisinin molecules is an endoperoxide 1,2,4-trioxane ring.
 
 <details><summary>Sources</summary>
@@ -184,31 +168,30 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Not classified as hazardous**  
 > L-Ascorbic Acid is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · written · 2.6 s
+**Origin story** · written · 1.7 s
 
-> **first vitamin to be synthesized**  
-> Vitamin C was discovered in 1912, isolated in 1928 and synthesized in 1933, making it the first vitamin to be synthesized. Shortly thereafter Tadeus Reichstein succeeded in synthesizing the vitamin in bulk by what is now called the Reichstein process. This made possible the inexpensive mass-production of vitamin C. In 1934, Hoffmann–La Roche bought the Reichstein process patent, trademarked synthetic vitamin C under the brand name Redoxon, and began to market it as a dietary supplement.
+> Vitamin C was discovered in 1912, isolated in 1928 and synthesized in 1933, making it the first vitamin to be synthesized. Shortly thereafter Tadeus Reichstein succeeded in synthesizing the vitamin in bulk by what is now called the Reichstein process. In 1912, the Polish biochemist Casimir Funk developed the concept of vitamins. One of these was thought to be the anti-scorbutic factor.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, History](https://en.wikipedia.org/wiki/Vitamin_C#History): Vitamin C was discovered in 1912, isolated in 1928 and synthesized in 1933, making it the first vitamin to be synthesized. Shortly thereafter Tadeus Reichstein succeeded in synthesizing the vitamin in bulk by what is now called the Reichstein process. This made possible the inexpensive mass-production of vitamin C. In 1934, Hoffmann–La Roche bought the Reichstein process patent, trademarked synthetic vitamin C under the brand name Redoxon, and began to market it as a dietary supplement.
-
-</details>
-
-**Weird fact** · written · 5.8 s
-
-> **Unknown at that time, this species did not**  
-> Unknown at that time, this species did not make its own vitamin C (being a caviomorph), whereas mice and rats do.
-
-<details><summary>Sources</summary>
-
 - [Wikipedia, History](https://en.wikipedia.org/wiki/Vitamin_C#History): In 1907, a laboratory animal model which would help to identify the antiscorbutic factor was serendipitously discovered by the Norwegian physicians Axel Holst and Theodor Frølich, who when studying shipboard beriberi, fed guinea pigs their test diet of grains and flour and were surprised when scurvy resulted instead of beriberi. Unknown at that time, this species did not make its own vitamin C (being a caviomorph), whereas mice and rats do. In 1912, the Polish biochemist Casimir Funk developed the concept of vitamins. One of these was thought to be the anti-scorbutic factor. In 1928, this was referred to as "water-soluble C", although its chemical structure had not been determined.
 
 </details>
 
-**Where you meet it** · written · 7.2 s
+**Weird fact** · written · 5.0 s
 
-> **Indian cherry**  
+> In 1928, the Canadian Arctic anthropologist Vilhjalmur Stefansson showed that the Inuit avoided scurvy on a diet largely of raw meat. Vitamin C was discovered in 1912, isolated in 1928 and synthesized in 1933, making it the first vitamin to be synthesized.
+
+<details><summary>Sources</summary>
+
+- [Wikipedia, History](https://en.wikipedia.org/wiki/Vitamin_C#History): The name antiscorbutic was used in the eighteenth and nineteenth centuries for foods known to prevent scurvy. These foods included lemons, limes, oranges, sauerkraut, cabbage, malt, and portable soup. In 1928, the Canadian Arctic anthropologist Vilhjalmur Stefansson showed that the Inuit avoided scurvy on a diet largely of raw meat.
+- [Wikipedia, History](https://en.wikipedia.org/wiki/Vitamin_C#History): Vitamin C was discovered in 1912, isolated in 1928 and synthesized in 1933, making it the first vitamin to be synthesized. Shortly thereafter Tadeus Reichstein succeeded in synthesizing the vitamin in bulk by what is now called the Reichstein process. This made possible the inexpensive mass-production of vitamin C. In 1934, Hoffmann–La Roche bought the Reichstein process patent, trademarked synthetic vitamin C under the brand name Redoxon, and began to market it as a dietary supplement.
+
+</details>
+
+**Where you meet it** · written · 6.0 s
+
 > A six carbon compound related to glucose. It is found naturally in citrus fruits and many vegetables. Food sources of L-ascorbic acid include acerola (West Indian cherry); citrus fruits, tomatoes; potatoes, and green leafy vegetables.
 
 <details><summary>Sources</summary>
@@ -226,9 +209,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Warning**  
 > Aspirin carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 3 more hazards, not listed here.
 
-**Origin story** · written · 3.2 s
+**Origin story** · written · 2.2 s
 
-> **first time**  
 > In 1853, the chemist Charles Frédéric Gerhardt treated sodium salicylate with acetyl chloride to produce acetylsalicylic acid for the first time; in the second half of the 19th century, other academic chemists established the compound's chemical structure and devised more efficient methods of synthesis.
 
 <details><summary>Sources</summary>
@@ -237,9 +219,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 4.3 s
+**Where you meet it** · written · 3.3 s
 
-> **Aspirin is the genericized trademark for acetylsalicylic acid**  
 > Aspirin is the genericized trademark for acetylsalicylic acid (ASA), a nonsteroidal anti-inflammatory drug (NSAID) used to reduce pain, fever, and inflammation, and as an antithrombotic. Aspirin is used in the treatment of a number of conditions, including fever, pain, rheumatic fever, and inflammatory conditions, such as rheumatoid arthritis, pericarditis, and Kawasaki disease.
 
 <details><summary>Sources</summary>
@@ -249,9 +230,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Weird fact** · written · 7.1 s
+**Weird fact** · written · 5.7 s
 
-> **Bayer had named it "Aspirin" and was selling**  
 > In 1897, scientists at the Bayer company began studying acetylsalicylic acid as a less-irritating replacement medication for common salicylate medicines. It developed heroin in 1898 as a cough suppressant, and the less potent aspirin the following year. By 1899, Bayer had named it "Aspirin" and was selling it around the world.
 
 <details><summary>Sources</summary>
@@ -263,9 +243,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 ### batrachotoxin (3 cards)
 
-**Origin story** · written · 1.7 s
+**Origin story** · written · 1.1 s
 
-> **Diseases in Bethesda**  
 > Batrachotoxin was discovered by Fritz Märki and Bernhard Witkop, at the National Institute of Arthritis and Musculoskeletal and Skin Diseases in Bethesda, Maryland. Märki and Witkop isolated the toxic alkaloids fraction from the black-legged poison dart frog and determined its chemical properties in 1963.
 
 <details><summary>Sources</summary>
@@ -274,9 +253,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 5.9 s
+**Where you meet it** · written · 4.9 s
 
-> **poison dart frogs**  
 > Batrachotoxins (BTX) are extremely potent cardiotoxic and neurotoxic steroidal alkaloids found in poison dart frogs (genus Dendrobates and Phyllobates), Melyridae beetles, and certain birds (genus Pitohui and Ifrita). Batrachotoxin (BTX) is an extremely potent cardiotoxic and neurotoxic steroidal alkaloid found in certain species of beetles, birds, and frogs. Batrachotoxins are found in poison dart frogs (genus Dendrobates and Phyllobates), Melyridae beetles, and certain birds (genus Pitohui and Ifrita).
 
 <details><summary>Sources</summary>
@@ -287,9 +265,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Weird fact** · written · 6.7 s
+**Weird fact** · written · 5.8 s
 
-> **It is the most potent non-peptidal neurotoxin known**  
 > Batrachotoxin binds to and irreversibly opens the sodium channels of nerve cells and prevents them from closing, resulting in paralysis and death. Batrachotoxins (BTX) are extremely potent cardiotoxic and neurotoxic steroidal alkaloids found in poison dart frogs (genus Dendrobates and Phyllobates), Melyridae beetles, and certain birds (genus Pitohui and Ifrita). They act directly on sodium channels.. It is the most potent non-peptidal neurotoxin known.
 
 <details><summary>Sources</summary>
@@ -307,9 +284,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Danger**  
 > Benzene carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.7 s
+**Origin story** · written · 2.3 s
 
-> **Benzolfest, Kekulé**  
 > Michael Faraday first isolated and identified benzene in 1825 from the oily residue derived from the production of illuminating gas, giving it the name bicarburet of hydrogen. At Benzolfest, Kekulé discussed the theory's creation, having discovered the ring shape of the benzene molecule after having a reverie (or day-dream) of a snake biting its own tail (a symbol in ancient cultures known as the ouroboros).
 
 <details><summary>Sources</summary>
@@ -319,10 +295,9 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 7.4 s
+**Where you meet it** · written · 6.0 s
 
-> **Benzene is found in the air from emissions**  
-> Benzene is a colorless liquid with a sweet odor. Benzene is also a natural part of crude oil, gasoline, and cigarette smoke. Benzene is found in the air from emissions from burning coal and oil, gasoline service stations, and motor vehicle exhaust.
+> Benzene is a colorless liquid with a sweet odor. Natural sources of benzene include volcanoes and forest fires. Benzene is also a natural part of crude oil, gasoline, and cigarette smoke. Benzene is found in the air from emissions from burning coal and oil, gasoline service stations, and motor vehicle exhaust.
 
 <details><summary>Sources</summary>
 
@@ -331,9 +306,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Weird fact** · written · 7.4 s
+**Weird fact** · written · 6.0 s
 
-> **benzene is a planar molecule with six-fold rotational**  
 > X-ray diffraction reveals that benzene is a planar molecule with six-fold rotational symmetry, which is in the symmetry group, D6h. A valence bond description involves a superposition of resonance structures. Its considerable stability and distinctive chemical properties are manifested in the phenomenon of aromaticity.
 
 <details><summary>Sources</summary>
@@ -351,26 +325,24 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Danger**  
 > Penicillin G carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories. A minority of company reports add 2 more hazards, not listed here.
 
-**Where you meet it** · written · 4.9 s
+**Where you meet it** · written · 3.6 s
 
-> **This includes pneumonia, strep throat, syphilis**  
-> Natural penicillins are considered the drugs of choice for several infections caused by susceptible gram positive aerobic organisms, such as *Streptococcus pneumoniae*, groups A, B, C and G streptococci, nonenterococcal group D streptococci, viridans group streptococci, and non-penicillinase producing staphylococcus. Benzylpenicillin, also known as penicillin G (PenG) or BENPEN, is an antibiotic used to treat a number of bacterial infections. This includes pneumonia, strep throat, syphilis, necrotizing enterocolitis, diphtheria, gas gangrene, leptospirosis, cellulitis, and tetanus.
+> Penicillin G (potassium or sodium) is an antibacterial prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain serious bacterialinfections, such as pneumonia, meningitis, gonorrhea, syphilis, and others. Benzylpenicillin (Penicillin G) is narrow spectrum antibiotic used to treat infections caused by susceptible bacteria.
 
 <details><summary>Sources</summary>
 
+- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description): Penicillin G (potassium or sodium) is an antibacterial prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain serious bacterialinfections, such as pneumonia, meningitis, gonorrhea, syphilis, and others. Pneumonia and syphilis can be opportunistic infections (OI) of HIV.
 - [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description): Benzylpenicillin (Penicillin G) is narrow spectrum antibiotic used to treat infections caused by susceptible bacteria. It is a natural penicillin antibiotic that is administered intravenously or intramuscularly due to poor oral absorption. Penicillin G may also be used in some cases as prophylaxis against susceptible organisms. Natural penicillins are considered the drugs of choice for several infections caused by susceptible gram positive aerobic organisms, such as *Streptococcus pneumoniae*, groups A, B, C and G streptococci, nonenterococcal group D streptococci, viridans group streptococci, and non-penicillinase producing staphylococcus.
-- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Benzylpenicillin): Benzylpenicillin, also known as penicillin G (PenG) or BENPEN, is an antibiotic used to treat a number of bacterial infections. This includes pneumonia, strep throat, syphilis, necrotizing enterocolitis, diphtheria, gas gangrene, leptospirosis, cellulitis, and tetanus. It is not a first-line agent for pneumococcal meningitis. Due to benzylpenicillin's limited bioavailability for oral medications, it is generally taken as an injection in the form of a sodium, potassium, benzathine, or procaine salt. Benzylpenicillin is given by injection into a vein or muscle. Two long-acting forms benzathine benzylpenicillin and procaine benzylpenicillin are available for use by injection into a muscle only.
 
 </details>
 
-**Weird fact** · retried · 10.9 s
+**Weird fact** · retried · 9.3 s
 
-> **Benzylpenicillin is a penicillin in which the substituent**  
-> Benzylpenicillin is a penicillin in which the substituent at position 6 of the penam ring is a phenylacetamido group. Natural penicillins are considered the drugs of choice for several infections caused by susceptible gram positive aerobic organisms, such as *Streptococcus pneumoniae*, groups A, B, C and G streptococci, nonenterococcal group D streptococci, viridans group streptococci, and non-penicillinase producing staphylococcus.
+> Penicillin G (potassium or sodium) is an antibacterial prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain serious bacterialinfections, such as pneumonia, meningitis, gonorrhea, syphilis, and others. Benzylpenicillin (Penicillin G) is narrow spectrum antibiotic used to treat infections caused by susceptible bacteria.
 
 <details><summary>Sources</summary>
 
-- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description): Benzylpenicillin is a penicillin in which the substituent at position 6 of the penam ring is a phenylacetamido group. It has a role as an antibacterial drug, an epitope and a drug allergen. It is a penicillin and a penicillin allergen. It is a conjugate acid of a benzylpenicillin(1-).
+- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description): Penicillin G (potassium or sodium) is an antibacterial prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain serious bacterialinfections, such as pneumonia, meningitis, gonorrhea, syphilis, and others. Pneumonia and syphilis can be opportunistic infections (OI) of HIV.
 - [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5904#section=Record-Description): Benzylpenicillin (Penicillin G) is narrow spectrum antibiotic used to treat infections caused by susceptible bacteria. It is a natural penicillin antibiotic that is administered intravenously or intramuscularly due to poor oral absorption. Penicillin G may also be used in some cases as prophylaxis against susceptible organisms. Natural penicillins are considered the drugs of choice for several infections caused by susceptible gram positive aerobic organisms, such as *Streptococcus pneumoniae*, groups A, B, C and G streptococci, nonenterococcal group D streptococci, viridans group streptococci, and non-penicillinase producing staphylococcus.
 
 </details>
@@ -383,9 +355,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 > **Official signal word: Warning**  
 > Fullerenes carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 1 more hazard, not listed here.
 
-**Origin story** · written · 3.8 s
+**Origin story** · written · 2.7 s
 
-> **Buckminster Fuller, who designed many geodesic dome structures**  
 > Theoretical predictions of buckminsterfullerene molecules appeared in the late 1960s and early 1970s. It was first generated in 1984 by Eric Rohlfing, Donald Cox, and Andrew Kaldor, using a laser to vaporize carbon in a supersonic helium beam, although the group did not realize that buckminsterfullerene had been produced. The discoverers of the allotrope named the newfound molecule after American architect R. Buckminster Fuller, who designed many geodesic dome structures that look similar to C60 and who had died in 1983, the year before discovery.
 
 <details><summary>Sources</summary>
@@ -395,9 +366,8 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Where you meet it** · written · 5.5 s
+**Where you meet it** · written · 4.5 s
 
-> **Buckminsterfullerene is the most common naturally occurring fullerene**  
 > Buckminsterfullerene is the most common naturally occurring fullerene. Neutral C60 has been observed in planetary nebulae and several types of star.
 
 <details><summary>Sources</summary>
@@ -407,7 +377,7 @@ Each claim should be stated by the cited snippets, folded under the card.
 
 </details>
 
-**Weird fact** · dropped · 13.1 s
+**Weird fact** · dropped · 13.2 s
 
 Problems: no chosen sentence names Fullerenes
 
@@ -419,21 +389,9 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Warning**  
 > Caffeine carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 3.4 s
+**Origin story** · written · 2.1 s
 
-> **Caventou, according to Swedish chemist Jöns Jacob Berzelius**  
-> In 1819, the German chemist Friedlieb Ferdinand Runge isolated caffeine for the first time; he called it "Kaffebase" (i.e., a base that exists in coffee). In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal.
-
-<details><summary>Sources</summary>
-
-- [Wikipedia, History](https://en.wikipedia.org/wiki/Caffeine#History): In 1819, the German chemist Friedlieb Ferdinand Runge isolated caffeine for the first time; he called it "Kaffebase" (i.e., a base that exists in coffee). In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal. Furthermore, Berzelius stated that the French chemists had made their discoveries independently of any knowledge of Runge's or each other's work.
-
-</details>
-
-**Weird fact** · written · 6.3 s
-
-> **French chemists had made their discoveries independently**  
-> In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal. Furthermore, Berzelius stated that the French chemists had made their discoveries independently of any knowledge of Runge's or each other's work. In 1827, M. Oudry isolated "théine" from tea, but in 1838 it was proved by Mulder and by Carl Jobst that theine was actually the same as caffeine.
+> In 1819, the German chemist Friedlieb Ferdinand Runge isolated caffeine for the first time; he called it "Kaffebase" (i.e., a base that exists in coffee). In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal. In 1827, M. Oudry isolated "théine" from tea, but in 1838 it was proved by Mulder and by Carl Jobst that theine was actually the same as caffeine.
 
 <details><summary>Sources</summary>
 
@@ -442,16 +400,25 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Where you meet it** · written · 7.4 s
+**Weird fact** · written · 4.8 s
 
-> **Caffeine is a naturally occurring alkaloid**  
-> Caffeine is a major component of coffee, tea and chocolate and in humans acts as a central nervous system (CNS) stimulant. A smaller part is used in cosmetics (3%) or in technical applications (1%). Furthermore caffeine is a naturally occurring substance in various plant species (e.g. 0.9 to 2.6% in green coffee beans). It is a component in coffee, tea and cocoa. Caffeine is a naturally occurring alkaloid commonly found in tea leaves, coffee beans, cocoa beans, mate leaves, guarana paste and kola nuts.
+> In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal. Furthermore, Berzelius stated that the French chemists had made their discoveries independently of any knowledge of Runge's or each other's work.
+
+<details><summary>Sources</summary>
+
+- [Wikipedia, History](https://en.wikipedia.org/wiki/Caffeine#History): In 1819, the German chemist Friedlieb Ferdinand Runge isolated caffeine for the first time; he called it "Kaffebase" (i.e., a base that exists in coffee). In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal. Furthermore, Berzelius stated that the French chemists had made their discoveries independently of any knowledge of Runge's or each other's work.
+
+</details>
+
+**Where you meet it** · written · 6.0 s
+
+> Caffeine is a major component of coffee, tea and chocolate and in humans acts as a central nervous system (CNS) stimulant. The most common sources of caffeine for human consumption are the tea leaves of the Camellia sinensis plant and the coffee bean, the seed of the Coffea plant. A smaller part is used in cosmetics (3%) or in technical applications (1%). Furthermore caffeine is a naturally occurring substance in various plant species (e.g. 0.9 to 2.6% in green coffee beans). It is a component in coffee, tea and cocoa.
 
 <details><summary>Sources</summary>
 
 - [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Record-Description): Caffeine is xanthine alkaloid that occurs naturally in seeds, leaves and fruit of several plants and trees that acts as a natural pesticide. Caffeine is a major component of coffee, tea and chocolate and in humans acts as a central nervous system (CNS) stimulant. Consumption of caffeine, even in high doses, has not been associated with elevations in serum enzyme elevations or instances of clinically apparent liver injury.
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Caffeine): Caffeine is a bitter, white crystalline purine, a methylxanthine alkaloid, and is chemically related to the adenine and guanine bases of deoxyribonucleic acid (DNA) and ribonucleic acid (RNA). It is found in the seeds, fruits, nuts, or leaves of a number of plants native to Africa, East Asia, and South America and helps to protect them against herbivores and from competition by preventing the germination of nearby seeds, as well as encouraging consumption by select animals such as honey bees. The most common sources of caffeine for human consumption are the tea leaves of the Camellia sinensis plant and the coffee bean, the seed of the Coffea plant.
 - [PubChem, Uses](https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Uses): Caffeine is a substance in wide use. It is predominantly used in the food sector and pharma sector (80% and 16% rspectively). A smaller part is used in cosmetics (3%) or in technical applications (1%). Furthermore caffeine is a naturally occurring substance in various plant species (e.g. 0.9 to 2.6% in green coffee beans). It is a component in coffee, tea and cocoa.
-- [PubChem, Natural Pollution Sources](https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Natural-Pollution-Sources): Caffeine is a naturally occurring alkaloid commonly found in tea leaves, coffee beans, cocoa beans, mate leaves, guarana paste and kola nuts.
 
 </details>
 
@@ -463,9 +430,8 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Danger**  
 > Capsaicin carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories. A minority of company reports add 1 more hazard, not listed here.
 
-**Origin story** · written · 2.3 s
+**Origin story** · written · 1.0 s
 
-> **Christian Friedrich Bucholz**  
 > The compound was first extracted in impure form in 1816 by Christian Friedrich Bucholz (1770–1818). In 1873 German pharmacologist Rudolf Buchheim (1820–1879) and in 1878 the Hungarian doctor Endre Hőgyes stated that "capsicol" (partially purified capsaicin) caused the burning feeling when in contact with mucous membranes and increased secretion of gastric acid.
 
 <details><summary>Sources</summary>
@@ -475,21 +441,20 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Where you meet it** · written · 5.4 s
+**Where you meet it** · written · 4.8 s
 
-> **There has long been a demand for capsaicin-spiced**  
-> Because of the burning sensation caused by capsaicin when it comes in contact with mucous membranes, it is commonly used in food products to provide added spiciness or "heat" (piquancy), usually in the form of spices such as chili powder and paprika. There has long been a demand for capsaicin-spiced products like chili pepper, and hot sauces such as Tabasco sauce and Mexican salsa.
+> Capsaicin (8-methyl-N-vanillyl-6-nonenamide) is a toxin that is the main active component of chili peppers and gives them their distinct pungent, "spicy" or "hot" taste. Because of the burning sensation caused by capsaicin when it comes in contact with mucous membranes, it is commonly used in food products to provide added spiciness or "heat" (piquancy), usually in the form of spices such as chili powder and paprika. There has long been a demand for capsaicin-spiced products like chili pepper, and hot sauces such as Tabasco sauce and Mexican salsa.
 
 <details><summary>Sources</summary>
 
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Capsaicin): Capsaicin (8-methyl-N-vanillyl-6-nonenamide) is a toxin that is the main active component of chili peppers and gives them their distinct pungent, "spicy" or "hot" taste. It is a potent irritant for mammals for which it produces a sensation of burning in any tissue with which it comes into contact. Capsaicin and several related amides (capsaicinoids) are produced as secondary metabolites by chili peppers, likely as deterrents against eating by mammals and against the growth of fungi. Pure capsaicin is a hydrophobic, highly pungent (i.e., spicy) crystalline solid.
 - [Wikipedia, Uses](https://en.wikipedia.org/wiki/Capsaicin#Uses): Because of the burning sensation caused by capsaicin when it comes in contact with mucous membranes, it is commonly used in food products to provide added spiciness or "heat" (piquancy), usually in the form of spices such as chili powder and paprika. In high concentrations, capsaicin will also cause a burning effect on other sensitive areas, such as skin or eyes. The degree of heat found within a food is often measured on the Scoville scale.
 - [Wikipedia, Uses](https://en.wikipedia.org/wiki/Capsaicin#Uses): There has long been a demand for capsaicin-spiced products like chili pepper, and hot sauces such as Tabasco sauce and Mexican salsa. It is common for people to experience pleasurable and even euphoric effects from ingesting capsaicin. Folklore among self-described "chiliheads" attribute this to pain-stimulated release of endorphins, a different mechanism from the local receptor overload that makes capsaicin effective as a topical analgesic. Because capsaicin sublimes at 115 °C, some precaution is needed when cooking dry or with fats to preserve capsaicin in pungent food.
 
 </details>
 
-**Weird fact** · written · 7.7 s
+**Weird fact** · written · 6.7 s
 
-> **birds pass through the digestive tract and can**  
 > In birds, the TRPV1 channel does not respond to capsaicin or related chemicals, but mammalian TRPV1 is very sensitive to it. This is advantageous to the plant, as chili pepper seeds consumed by birds pass through the digestive tract and can germinate later, whereas mammals have molar teeth that destroy such seeds and prevent them from germinating.
 
 <details><summary>Sources</summary>
@@ -506,9 +471,8 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Danger**  
 > Carbon Monoxide carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.7 s
+**Origin story** · written · 2.9 s
 
-> **Early man probably discovered the toxicity of carbon**  
 > Man has maintained a complex relationship with carbon monoxide since first learning to control fire circa 800,000 BC. Early man probably discovered the toxicity of carbon monoxide poisoning upon introducing fire into his dwellings. Aristotle (384–322 BC) first recorded that burning coals produced toxic fumes.
 
 <details><summary>Sources</summary>
@@ -518,9 +482,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Where you meet it** · written · 6.8 s
+**Where you meet it** · written · 5.9 s
 
-> **CO is one of the most acutely toxic**  
 > The most common source of carbon monoxide is the partial combustion of carbon-containing compounds. CO is one of the most acutely toxic contaminants affecting indoor air quality. CO may be emitted from tobacco smoke and generated from malfunctioning fuel-burning stoves (wood, kerosene, natural gas, propane) and fuel-burning heating systems (wood, oil, natural gas) and from blocked flues connected to these appliances.
 
 <details><summary>Sources</summary>
@@ -530,9 +493,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Weird fact** · written · 7.0 s
+**Weird fact** · written · 6.3 s
 
-> **carbon monoxide is a normal neurotransmitter**  
 > Early man probably discovered the toxicity of carbon monoxide poisoning upon introducing fire into his dwellings. In the presence of oxygen, including atmospheric concentrations, carbon monoxide burns with a blue flame, producing carbon dioxide. Following the first report that carbon monoxide is a normal neurotransmitter in 1993, carbon monoxide has received significant clinical attention as a biological regulator.
 
 <details><summary>Sources</summary>
@@ -551,9 +513,8 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Warning**  
 > Carvone, (+-)- carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 2.2 s
+**Origin story** · written · 1.0 s
 
-> **Georg Wagner**  
 > Caraway was used for medicinal purposes by the ancient Romans, but carvone was probably not isolated as a pure compound until Franz Varrentrapp (1815–1877) obtained it in 1849. Goldschmidt and Zürrer identified it as a ketone related to limonene, and the structure was finally elucidated by Georg Wagner (1849–1903) in 1894.
 
 <details><summary>Sources</summary>
@@ -562,9 +523,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Where you meet it** · written · 6.1 s
+**Where you meet it** · written · 5.0 s
 
-> **Mentha spicata**  
 > S-(+)-Carvone is the principal constituent (60–70%) of the oil from caraway seeds (Carum carvi), which is produced on a scale of about 10 tonnes per year. It also occurs to the extent of about 40–60% in dill seed oil (from Anethum graveolens), and also in mandarin orange peel oil. R-(−)-Carvone is also the most abundant compound in the essential oil from several species of mint, particularly spearmint oil (Mentha spicata), which is composed of 50–80% R-(−)-carvone.
 
 <details><summary>Sources</summary>
@@ -573,9 +533,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Weird fact** · written · 8.0 s
+**Weird fact** · written · 6.5 s
 
-> **Carvone has two mirror image forms, or enantiomers**  
 > Carvone has two mirror image forms, or enantiomers: R-(−)-carvone, the sweetish minty smell of spearmint leaves. Its mirror image, S-(+)-carvone, has a spicy aroma with notes of rye, and gives caraway seeds their smell. The fact that the two enantiomers are perceived as smelling different is evidence that olfactory receptors must respond more strongly to one enantiomer than to the other.
 
 <details><summary>Sources</summary>
@@ -593,11 +552,10 @@ Problems: no chosen sentence names Fullerenes
 > **Not classified as hazardous**  
 > Cholesterol is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · skipped · 1.0 s
+**Origin story** · skipped · 0.5 s
 
-**Where you meet it** · written · 4.7 s
+**Where you meet it** · written · 4.2 s
 
-> **Found in many foods**  
 > Major dietary sources of cholesterol include red meat, egg yolks and whole eggs, liver, kidney, giblets, fish oil, shellfish, and butter. Found in many foods (meats, eggs, milk, cheese, fish, shellfish) derived from animal products.
 
 <details><summary>Sources</summary>
@@ -607,9 +565,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Weird fact** · written · 6.5 s
+**Weird fact** · written · 6.2 s
 
-> **Cholesterol has 256 stereoisomers**  
 > Cholesterol has 256 stereoisomers that arise from its eight stereocenters. In the brain, astrocytes produce cholesterol and transport it to neurons. It is absent among prokaryotes (bacteria and archaea), although there are some exceptions, such as Mycoplasma, which require cholesterol for growth.
 
 <details><summary>Sources</summary>
@@ -627,9 +584,8 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Warning**  
 > Cinnamaldehyde carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Where you meet it** · written · 6.3 s
+**Where you meet it** · written · 5.3 s
 
-> **Cinnamaldehyde is a naturally occurring flavonoid that gives**  
 > Cinnamaldehyde is a naturally occurring flavonoid that gives the spice cinnamon its flavour and odour. It occurs naturally in the bark of cinnamon trees and other species of the genus Cinnamomum such as camphor and cassia. Cinnamaldehyde occurs naturally in the bark of cinnamon trees and other species of the genus Cinnamomum like camphor and cassia. These trees are the natural source of cinnamon, and the essential oil of cinnamon bark is about 90% cinnamaldehyde.
 
 <details><summary>Sources</summary>
@@ -639,9 +595,8 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Weird fact** · written · 7.8 s
+**Weird fact** · written · 7.0 s
 
-> **29 ppm of cinnamaldehyde kills half of Aedes**  
 > A concentration of 29 ppm of cinnamaldehyde kills half of Aedes aegypti mosquito larvae in 24 hours. Cinnamaldehyde is a bioactive electrophile that activates the transient receptor potential ankyrin 1 (TRPA1) ion channel, a chemosensory receptor expressed in sensory neurons and in the gastrointestinal tract.
 
 <details><summary>Sources</summary>
@@ -659,10 +614,9 @@ Problems: no chosen sentence names Fullerenes
 > **Official signal word: Warning**  
 > Citric Acid carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Where you meet it** · written · 7.6 s
+**Where you meet it** · written · 6.6 s
 
-> **Citric acid can be added to ice cream**  
-> A key intermediate in metabolism. It is an acid compound found in citrus fruits. Because it is one of the stronger edible acids, the dominant use of citric acid is as a flavoring and preservative in food and beverages, especially soft drinks and candies. Citric acid can be added to ice cream as an emulsifying agent to keep fats from separating, to caramel to prevent sucrose crystallization, or in recipes in place of fresh lemon juice.
+> A key intermediate in metabolism. It is an acid compound found in citrus fruits. Because it is one of the stronger edible acids, the dominant use of citric acid is as a flavoring and preservative in food and beverages, especially soft drinks and candies. Citric acid is used with sodium bicarbonate in a wide range of effervescent formulae, both for ingestion (e.g., powders and tablets) and for personal care (e.g., bath salts, bath bombs, and cleaning of grease).
 
 <details><summary>Sources</summary>
 
@@ -672,16 +626,15 @@ Problems: no chosen sentence names Fullerenes
 
 </details>
 
-**Weird fact** · dropped · 13.5 s
+**Weird fact** · dropped · 13.1 s
 
 Problems: no chosen sentence names Citric Acid
 
 
 ### cubane (2 cards)
 
-**Where you meet it** · written · 2.1 s
+**Where you meet it** · written · 1.6 s
 
-> **Cubane is a synthetic hydrocarbon compound**  
 > Cubane is a synthetic hydrocarbon compound with the formula C8H8. It consists of eight carbon atoms arranged at the corners of a cube, with one hydrogen atom attached to each carbon atom.
 
 <details><summary>Sources</summary>
@@ -690,9 +643,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 2.7 s
+**Weird fact** · written · 1.9 s
 
-> **Cubane is highly strained, but cannot decompose**  
 > Cubane is highly strained, but cannot decompose: the resultant cubene molecules would be pyramidal alkenes, too high-energy for most elimination pathways. The cubic shape requires the carbon atoms to adopt an unusually sharp 90° bonding angle, which would be highly strained as compared to the 109.45° angle of a tetrahedral carbon.
 
 <details><summary>Sources</summary>
@@ -710,9 +662,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Dopamine carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 2.9 s
+**Origin story** · written · 2.0 s
 
-> **Dopamine was first synthesized in 1910 by George**  
 > Dopamine was first synthesized in 1910 by George Barger and James Ewens at Wellcome Laboratories in London, England and first identified in the human brain by Katharine Montagu in 1957. It was named dopamine because it is a monoamine whose precursor in the Barger-Ewens synthesis is 3,4-dihydroxyphenylalanine (levodopa or L-DOPA).
 
 <details><summary>Sources</summary>
@@ -721,22 +672,19 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 5.3 s
+**Where you meet it** · written · 4.4 s
 
-> **Dopamine is also synthesized in plants and most**  
-> dopamine has been reported in Magnolia officinalis, Senegalia berlandieri, and other organisms with data available. Dopamine is also synthesized in plants and most animals. Dopamine as a manufactured medication is sold under the trade names Intropin, Dopastat, and Revimine, among others.
+> Dopamine is a naturally occurring catecholamine formed by decarboxylation of dehydroxyphenylalanine and a precursor of norepinephrine and epinephrine. Dopamine (DA, a contraction of 3,4-dihydroxyphenethylamine) is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group through decarboxylation from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys. Dopamine is also synthesized in plants and most animals.
 
 <details><summary>Sources</summary>
 
-- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description): dopamine has been reported in Magnolia officinalis, Senegalia berlandieri, and other organisms with data available.
+- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/681#section=Record-Description): Dopamine is a monoamine compound with positive inotropic activity. Dopamine is a naturally occurring catecholamine formed by decarboxylation of dehydroxyphenylalanine and a precursor of norepinephrine and epinephrine. Dopamine binds to alpha-1 and beta-1 adrenergic receptors. Mediated through myocardial beta-1 adrenergic receptors, dopamine increase heart rate and force, thereby increasing cardiac output. Alpha-1 adrenergic receptor stimulation on vascular smooth muscle, leads to vasoconstriction and results in an increase in systemic vascular resistance.
 - [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Dopamine): Dopamine (DA, a contraction of 3,4-dihydroxyphenethylamine) is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group through decarboxylation from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys. Dopamine is also synthesized in plants and most animals. In the brain, dopamine functions as a neurotransmitter—a chemical released by neurons (nerve cells) to send signals to other nerve cells.
-- [Wikipedia, Medical uses](https://en.wikipedia.org/wiki/Dopamine#Medical_uses): Dopamine as a manufactured medication is sold under the trade names Intropin, Dopastat, and Revimine, among others. It is on the World Health Organization's List of Essential Medicines. It is most commonly used as a stimulant drug in the treatment of severe low blood pressure, slow heart rate, and cardiac arrest. It is especially important in treating these in newborn infants. It is given intravenously. Since the half-life of dopamine in plasma is very short—approximately one minute in adults, two minutes in newborn infants and up to five minutes in preterm infants—it is usually given in a continuous intravenous drip rather than a single injection.
 
 </details>
 
-**Weird fact** · written · 7.1 s
+**Weird fact** · written · 6.0 s
 
-> **Perhaps more importantly, there are types of bacteria**  
 > There are no reports of dopamine in archaea, but it has been detected in some types of bacteria and in the protozoan called Tetrahymena. Perhaps more importantly, there are types of bacteria that contain homologs of all the enzymes that animals use to synthesize dopamine. It has been proposed that animals derived their dopamine-synthesizing machinery from bacteria, via horizontal gene transfer that may have occurred relatively late in evolutionary time, perhaps as a result of the symbiotic incorporation of bacteria into eukaryotic cells that gave rise to mitochondria.
 
 <details><summary>Sources</summary>
@@ -753,27 +701,25 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Epinephrine carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · written · 3.8 s
+**Where you meet it** · written · 3.3 s
 
-> **emergency treatment of severe allergic reactions**  
-> Though it has long been used in the treatment of hypersensitivity reactions, epinephrine in the auto-injector form (EpiPen) has been available since 1987 in the USA. Drug of choice for emergency treatment of severe allergic reactions to insect stings or bites, foods, drugs, and other allergens.
+> Drug of choice for emergency treatment of severe allergic reactions to insect stings or bites, foods, drugs, and other allergens. Epinephrine is a naturally occurring hormone, which is released from the adrenal medulla and is involved in the regulation of blood pressure and smooth muscle constriction.
 
 <details><summary>Sources</summary>
 
-- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description): Epinephrine, also known as adrenaline, is a hormone and neurotransmitter and produced by the adrenal glands that can also be used as a drug due to its various important functions. Though it has long been used in the treatment of hypersensitivity reactions, epinephrine in the auto-injector form (EpiPen) has been available since 1987 in the USA. Many new products/biosimilars and dosage routes have been approved under various names over the last several decades,,. On August 16, 2018, Teva Pharmaceuticals USA gained approval to market its generic epinephrine auto-injector in 0.3 mg and 0.15 mg strengths.
 - [PubChem, Uses](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Uses): Drug of choice for emergency treatment of severe allergic reactions to insect stings or bites, foods, drugs, and other allergens.
+- [PubChem, Natural Pollution Sources](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Natural-Pollution-Sources): Epinephrine is a naturally occurring hormone, which is released from the adrenal medulla and is involved in the regulation of blood pressure and smooth muscle constriction. Epinephrine naturally occurs at the ends of sympathetic nerve fibers where they serve as chemical mediators for carrying nerve impulses.
 
 </details>
 
-**Weird fact** · written · 4.8 s
+**Weird fact** · written · 3.8 s
 
-> **Epinephrine naturally occurs at the ends of sympathetic**  
-> (R)-adrenaline is the R-enantiomer of adrenaline. It is a hormone secreted by the adrenal glands resulting in the 'fight-or-flight' response. It has a role as a hormone, a beta-adrenergic agonist, a bronchodilator agent, a sympathomimetic agent, an alpha-adrenergic agonist, a vasodilator agent, an adrenergic agonist, a mydriatic agent, a vasoconstrictor agent and a mouse metabolite. It is a conjugate base of a (R)-adrenaline(1+). It is an enantiomer of a (S)-adrenaline. Epinephrine naturally occurs at the ends of sympathetic nerve fibers where they serve as chemical mediators for carrying nerve impulses.
+> Epinephrine naturally occurs at the ends of sympathetic nerve fibers where they serve as chemical mediators for carrying nerve impulses. Due to its strong β1-adrenergic effects on cardiac tissue, epinephrine toxicity can result in potentially fatal cardiac arrhythmias or ischemia.
 
 <details><summary>Sources</summary>
 
-- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Record-Description): (R)-adrenaline is the R-enantiomer of adrenaline. It is a hormone secreted by the adrenal glands resulting in the 'fight-or-flight' response. It has a role as a hormone, a beta-adrenergic agonist, a bronchodilator agent, a sympathomimetic agent, an alpha-adrenergic agonist, a vasodilator agent, an adrenergic agonist, a mydriatic agent, a vasoconstrictor agent and a mouse metabolite. It is a conjugate base of a (R)-adrenaline(1+). It is an enantiomer of a (S)-adrenaline.
 - [PubChem, Natural Pollution Sources](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Natural-Pollution-Sources): Epinephrine is a naturally occurring hormone, which is released from the adrenal medulla and is involved in the regulation of blood pressure and smooth muscle constriction. Epinephrine naturally occurs at the ends of sympathetic nerve fibers where they serve as chemical mediators for carrying nerve impulses.
+- [PubChem, Toxicity Summary](https://pubchem.ncbi.nlm.nih.gov/compound/5816#section=Toxicity-Summary): Signs and Symptoms of Overdose Epinephrine overdose may lead to myocardial ischemia, infarction, renal insufficiency, and cardiomyopathy. Patients may also experience severe pallor, cold skin, and metabolic acidosis due to elevated blood lactic acid levels. These complications are more likely in individuals with preexisting conditions or when epinephrine is administered in high doses. Pulmonary edema may also occur as a result of peripheral vasoconstriction and myocardial stimulation. Due to its strong β1-adrenergic effects on cardiac tissue, epinephrine toxicity can result in potentially fatal cardiac arrhythmias or ischemia.
 
 </details>
 
@@ -785,9 +731,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Ethanol carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.5 s
+**Origin story** · written · 3.1 s
 
-> **Serullas independently discovered that sulphovinic acid could**  
 > The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages. In 1828, Hennell and the French chemist Georges-Simon Serullas independently discovered that sulphovinic acid could be decomposed into ethanol.
 
 <details><summary>Sources</summary>
@@ -797,9 +742,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.3 s
+**Weird fact** · written · 5.8 s
 
-> **Ethanol has been detected in outer space**  
 > Ethanol has been detected in outer space, forming an icy coating around dust grains in interstellar clouds.
 
 <details><summary>Sources</summary>
@@ -808,43 +752,48 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 7.3 s
+**Where you meet it** · written · 5.4 s
 
-> **BEVERAGES. [ChemIDplus**  
-> Ethanol can commonly be found in overripe fruit. Ethanol produced by symbiotic yeast can be found in bertam palm blossoms. Clear, colorless liquid rapidly absorbed from the gastrointestinal tract and distributed throughout the body. It has bactericidal activity and is used often as a topical disinfectant. It is widely used as a solvent and preservative in pharmaceutical preparations as well as serving as the primary ingredient in ALCOHOLIC BEVERAGES. [ChemIDplus]
+> Ethanol can commonly be found in overripe fruit. Industrial and laboratory organic solvent.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, Natural occurrence](https://en.wikipedia.org/wiki/Ethanol#Natural_occurrence): Ethanol is a byproduct of the metabolic process of yeast. As such, ethanol will be present in any yeast habitat. Ethanol can commonly be found in overripe fruit. Ethanol produced by symbiotic yeast can be found in bertam palm blossoms. Although some animal species, such as the pentailed treeshrew, exhibit ethanol-seeking behaviors, most show no interest or avoidance of food sources containing ethanol. Ethanol is also produced during the germination of many plants as a result of natural anaerobiosis.
-- [PubChem, Uses](https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses): Clear, colorless liquid rapidly absorbed from the gastrointestinal tract and distributed throughout the body. It has bactericidal activity and is used often as a topical disinfectant. It is widely used as a solvent and preservative in pharmaceutical preparations as well as serving as the primary ingredient in ALCOHOLIC BEVERAGES. [ChemIDplus]
+- [PubChem, Uses](https://pubchem.ncbi.nlm.nih.gov/compound/702#section=Uses): Most ethyl alcohol is used in alcoholic beverages in suitable dilutions. Reagent in synthetic organic chemistry and chromatography. Industrial and laboratory organic solvent. Other uses are in manufacture of denatured alcohol, pharmaceuticals (rubbing compounds, lotions, tonics, colognes), in perfumery. Octane booster in gasoline. Pharmaceutic aid (solvent).
 
 </details>
 
 
-### ethylene (3 cards)
+### ethylene (4 cards)
 
 **Danger level** · from data · 0.0 s
 
 > **Official signal word: Danger**  
 > Ethylene carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · skipped · 2.1 s
+**Origin story** · written · 1.9 s
 
-**Where you meet it** · written · 5.4 s
-
-> **Ethylene is also an important natural plant hormone**  
-> Ethylene is also an important natural plant hormone and is used in agriculture to induce ripening of fruits. Ethylene has been found in the gaseous metabolites released by germinating bean, corn, cotton, and pea seeds, from fading morning glory flowers and from ripening avocados and apples.
+> In the mid-19th century, the suffix -ene (an Ancient Greek root added to the end of female names meaning "daughter of") was widely used to refer to a molecule or part thereof that contained one fewer hydrogen atoms than the molecule being modified. Thus, ethylene (C2H4) was the "daughter of ethyl" (C2H5). The name ethylene was used in this sense as early as 1852.
 
 <details><summary>Sources</summary>
 
-- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Ethylene): Ethylene is also an important natural plant hormone and is used in agriculture to induce ripening of fruits. The hydrate of ethylene is ethanol.
+- [Wikipedia, History](https://en.wikipedia.org/wiki/Ethylene#History): In the mid-19th century, the suffix -ene (an Ancient Greek root added to the end of female names meaning "daughter of") was widely used to refer to a molecule or part thereof that contained one fewer hydrogen atoms than the molecule being modified. Thus, ethylene (C2H4) was the "daughter of ethyl" (C2H5). The name ethylene was used in this sense as early as 1852.
+
+</details>
+
+**Where you meet it** · written · 4.3 s
+
+> Ethylene is widely used in the chemical industry, and its worldwide production (over 225 million tonnes in 2022) exceeds that of any other organic compound. Much of this production goes toward creating polyethylene, which is a widely used plastic containing polymer chains of ethylene units in various chain lengths. Ethylene has been found in the gaseous metabolites released by germinating bean, corn, cotton, and pea seeds, from fading morning glory flowers and from ripening avocados and apples.
+
+<details><summary>Sources</summary>
+
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Ethylene): Ethylene is widely used in the chemical industry, and its worldwide production (over 225 million tonnes in 2022) exceeds that of any other organic compound. Much of this production goes toward creating polyethylene, which is a widely used plastic containing polymer chains of ethylene units in various chain lengths.
 - [PubChem, Natural Pollution Sources](https://pubchem.ncbi.nlm.nih.gov/compound/6325#section=Natural-Pollution-Sources): Ethylene is a natural product emitted by fruits, flowers, leaves, roots, and tubers. The release rate of ethylene from plants varies during the life cycle of the plant. Plants that normally produce 0.6 to 6 ug ethylene/kg (fresh weight) per hour may produce up to 120 ug/kg per hour during ripening of fruits and during senescence and loss of leaves. Ethylene has been found in the gaseous metabolites released by germinating bean, corn, cotton, and pea seeds, from fading morning glory flowers and from ripening avocados and apples. Ethylene is released to the atmosphere from biomass combustion and volcanos.
 
 </details>
 
-**Weird fact** · written · 7.3 s
+**Weird fact** · written · 5.6 s
 
-> **Ancient Greek root added to the end**  
 > In the mid-19th century, the suffix -ene (an Ancient Greek root added to the end of female names meaning "daughter of") was widely used to refer to a molecule or part thereof that contained one fewer hydrogen atoms than the molecule being modified. Thus, ethylene (C2H4) was the "daughter of ethyl" (C2H5).
 
 <details><summary>Sources</summary>
@@ -861,10 +810,9 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Formaldehyde carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · written · 7.2 s
+**Where you meet it** · written · 5.9 s
 
-> **Cooking and smoking food can also result**  
-> A ~5% solution in water of formaldehyde is used as a disinfectant and fumigant in industrial, agricultural, and healthcare settings, and a ~37% solution is used to preserve tissue samples in labs. Cooking and smoking food can also result in formaldehyde being produced in food. Foods that the U.S. National Toxicology Program has reported to have higher levels compared to other foods are fish, seafood, and smoked ham.
+> A ~5% solution in water of formaldehyde is used as a disinfectant and fumigant in industrial, agricultural, and healthcare settings, and a ~37% solution is used to preserve tissue samples in labs. Formaldehyde in food can be present naturally, added as an inadvertent contaminant, or intentionally added as a preservative, disinfectant, or bacteriostatic agent. Foods that the U.S. National Toxicology Program has reported to have higher levels compared to other foods are fish, seafood, and smoked ham.
 
 <details><summary>Sources</summary>
 
@@ -873,9 +821,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.6 s
+**Weird fact** · written · 5.7 s
 
-> **formaldehyde hydrates to give the geminal diol methanediol**  
 > Monomeric CH2O is a gas and is rarely encountered in the laboratory. Many cyclic oligomers of other sizes have been isolated. Similarly, formaldehyde hydrates to give the geminal diol methanediol, which condenses further to form hydroxy-terminated oligomers HO(CH2O)nH. The polymer is called paraformaldehyde.
 
 <details><summary>Sources</summary>
@@ -892,9 +839,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Geosmin carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Where you meet it** · written · 3.2 s
+**Where you meet it** · written · 2.3 s
 
-> **It is produced by bacteria, especially cyanobacteria, often**  
 > Geosmin is responsible for the earthy taste of beetroots and a contributor to the strong scent, known as petrichor, that occurs when rain falls after a spell of dry weather or when soil is disturbed. It is produced by bacteria, especially cyanobacteria, often present in soil and water supplies.
 
 <details><summary>Sources</summary>
@@ -903,9 +849,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 5.2 s
+**Weird fact** · written · 3.9 s
 
-> **human olfactory system is extremely sensitive to geosmin**  
 > The human olfactory system is extremely sensitive to geosmin and is able to detect it at concentrations as low as anywhere from 400 parts per trillion to 5 parts per trillion. In a study of 50 subjects, the mean odor detection threshold was 9.5 ng/L for naturally occurring (−)-geosmin and 78 ng/L for (+)-geosmin. This makes the natural form roughly eight times more potent.
 
 <details><summary>Sources</summary>
@@ -922,9 +867,8 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > D-Glucose is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · written · 3.3 s
+**Origin story** · written · 2.4 s
 
-> **Glucose was first isolated from raisins in 1747**  
 > Glucose was first isolated from raisins in 1747 by the German chemist Andreas Marggraf. Glucose was discovered in grapes by another German chemist, Johann Tobias Lowitz, in 1792, and distinguished as being different from cane sugar (sucrose).
 
 <details><summary>Sources</summary>
@@ -933,10 +877,9 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.4 s
+**Weird fact** · written · 5.7 s
 
-> **glucose, the plane of linearly polarized light**  
-> Friedrich August Kekulé proposed the term dextrose (from the Latin dexter, meaning "right"), because in aqueous solutions of glucose, the plane of linearly polarized light is turned to the right. The d-isomer, d-glucose, also known as dextrose, occurs widely in nature, but the l-isomer, l-glucose, does not.
+> Friedrich August Kekulé proposed the term dextrose (from the Latin dexter, meaning "right"), because in aqueous solutions of glucose, the plane of linearly polarized light is turned to the right. With six carbon atoms, it is classed as a hexose, a subcategory of the monosaccharides. d-Glucose is one of the sixteen aldohexose stereoisomers. The d-isomer, d-glucose, also known as dextrose, occurs widely in nature, but the l-isomer, l-glucose, does not.
 
 <details><summary>Sources</summary>
 
@@ -945,10 +888,9 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 6.8 s
+**Where you meet it** · written · 5.9 s
 
-> **glucose is one of the main ingredients**  
-> Most dietary carbohydrates contain glucose, either as their only building block (as in the polysaccharides starch and glycogen), or together with another monosaccharide (as in the hetero-polysaccharides sucrose and lactose). Unbound glucose is one of the main ingredients of honey.
+> Unbound glucose is one of the main ingredients of honey. Glucose is extremely abundant and has been isolated from a variety of natural sources across the world, including male cones of the coniferous tree Wollemia nobilis in Rome, the roots of Ilex asprella plants in China, and straws from rice in California.
 
 <details><summary>Sources</summary>
 
@@ -964,10 +906,9 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Glyphosate carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 2.2 s
+**Origin story** · written · 1.4 s
 
-> **Glyphosate was the third analog he made**  
-> Glyphosate was first synthesized in 1950 by Swiss chemist Henry Martin, who worked for the Swiss company Cilag. Two were found to have weak herbicidal activity, and John E. Franz, a chemist at Monsanto, was asked to try to make analogs with stronger herbicidal activity. Glyphosate was the third analog he made.
+> Glyphosate was first synthesized in 1950 by Swiss chemist Henry Martin, who worked for the Swiss company Cilag. About 100 derivatives of aminomethylphosphonic acid had been prepared as potential water-softening agents. Two were found to have weak herbicidal activity, and John E. Franz, a chemist at Monsanto, was asked to try to make analogs with stronger herbicidal activity. Glyphosate was the third analog he made.
 
 <details><summary>Sources</summary>
 
@@ -976,9 +917,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.5 s
+**Weird fact** · written · 5.4 s
 
-> **does not exist in the genome of animals**  
 > Glyphosate interferes with the shikimate pathway, which produces the aromatic amino acids phenylalanine, tyrosine and tryptophan in plants and microorganisms – but does not exist in the genome of animals, including humans.
 
 <details><summary>Sources</summary>
@@ -987,9 +927,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 7.2 s
+**Where you meet it** · written · 6.3 s
 
-> **Glyphosate is the active ingredient in weed killer**  
 > Glyphosate is the active ingredient in weed killer products such as RoundUp™. Glyphosate products are one of the most widely used weed killers worldwide in farms and in home gardens and lawns. In 2007, glyphosate was the most used herbicide in the United States' agricultural sector and the second-most used (after 2,4-D) in home and garden, government and industry, and commercial applications.
 
 <details><summary>Sources</summary>
@@ -1007,9 +946,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Hydrogen Cyanide carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 2.4 s
+**Origin story** · written · 1.4 s
 
-> **Blausäure (lit. 'Blue acid') because of its acidic**  
 > The new component was what is now known as hydrogen cyanide. It was subsequently prepared from Prussian blue by the Swedish chemist Carl Wilhelm Scheele in 1782, and was eventually given the German name Blausäure (lit. 'Blue acid') because of its acidic nature in water and its derivation from Prussian blue. In English, it became known popularly as prussic acid.
 
 <details><summary>Sources</summary>
@@ -1018,9 +956,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 8.0 s
+**Where you meet it** · written · 6.2 s
 
-> **HCN is a byproduct of blast furnaces, coke**  
 > HCN is obtainable from fruits that have a pit, such as cherries, apricots, apples, and nuts such as bitter almonds, from which almond oil and extract is made. Many of these pits contain small amounts of cyanohydrins such as mandelonitrile and amygdalin, which slowly release hydrogen cyanide. Used to manufacture other chemicals and to fumigate enclosed spaces; [ATSDR ToxProfiles] Used in the following processes: electroplating, metallurgy, and photo development; HCN is a byproduct of blast furnaces, coke ovens, photoengraving, petroleum refining, and some metal mining processes.
 
 <details><summary>Sources</summary>
@@ -1030,15 +967,14 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 7.0 s
+**Weird fact** · written · 5.7 s
 
-> **About half of people are unable to detect**  
-> About half of people are unable to detect the odor of hydrogen cyanide owing to a recessive genetic trait. HCN has been measured in Titan's atmosphere by four instruments on the Cassini space probe, one instrument on Voyager, and one instrument on Earth.
+> About half of people are unable to detect the odor of hydrogen cyanide owing to a recessive genetic trait. Whether hydrogen cyanide is an organic compound or not is a topic of debate among chemists.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, Structure and general properties](https://en.wikipedia.org/wiki/Hydrogen_cyanide#Structure_and_general_properties): About half of people are unable to detect the odor of hydrogen cyanide owing to a recessive genetic trait. For those that can detect it, the odor has been described as bitter almond-like.
-- [Wikipedia, Occurrence](https://en.wikipedia.org/wiki/Hydrogen_cyanide#Occurrence): HCN has been measured in Titan's atmosphere by four instruments on the Cassini space probe, one instrument on Voyager, and one instrument on Earth. One of these measurements was in situ, where the Cassini spacecraft dipped between 1,000 and 1,100 km (620 and 680 mi) above Titan's surface to collect atmospheric gas for mass spectrometry analysis.
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Hydrogen_cyanide): Whether hydrogen cyanide is an organic compound or not is a topic of debate among chemists. It is traditionally considered inorganic, but can also be considered a nitrile, giving rise to its alternative names of methanenitrile and formonitrile.
 
 </details>
 
@@ -1050,9 +986,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Ibuprofen, (+-)- carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 1 more hazard, not listed here.
 
-**Origin story** · written · 3.3 s
+**Origin story** · written · 2.1 s
 
-> **Ibuprofen was derived from propionic acid**  
 > Ibuprofen was derived from propionic acid by the research arm of Boots Group during the 1960s. The molecule was discovered and synthesized by a team led by Stewart Adams, with a patent application filed in 1961. In recognition of the pioneering research work, here on Pennyfoot Street, by Dr Stewart Adams and Dr John Nicholson in the Research Department of Boots, which led to the discovery of ibuprofen used by millions worldwide for the relief of pain.
 
 <details><summary>Sources</summary>
@@ -1062,9 +997,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 5.4 s
+**Where you meet it** · written · 5.2 s
 
-> **pain relief after surgery**  
 > Ibuprofen is used primarily to treat fever (including post-vaccination fever), mild to moderate pain (including pain relief after surgery), painful menstruation, osteoarthritis, dental pain, headaches, and pain from kidney stones. Ingredient in over-the-counter pain relievers
 
 <details><summary>Sources</summary>
@@ -1074,9 +1008,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 8.0 s
+**Weird fact** · written · 7.2 s
 
-> **ibuprofen had a neuroprotective effect against the risk**  
 > Ibuprofen has been associated with a lower risk of Parkinson's disease and may delay or prevent it. Aspirin, other NSAIDs, and paracetamol (acetaminophen) did not affect the risk for Parkinson's. In March 2011, researchers at Harvard Medical School announced that ibuprofen had a neuroprotective effect against the risk of developing Parkinson's disease.
 
 <details><summary>Sources</summary>
@@ -1095,21 +1028,19 @@ Problems: no chosen sentence names Citric Acid
 
 **Origin story** · skipped · 2.6 s
 
-**Where you meet it** · written · 3.4 s
+**Where you meet it** · written · 2.2 s
 
-> **Indigo is a natural dye obtained**  
-> Indigo is a natural dye obtained from the leaves of some plants of the Indigofera genus, in particular Indigofera tinctoria. The primary use for indigo is as a dye for cotton yarn, mainly used in the production of denim cloth suitable for blue jeans; on average, a pair of blue jeans requires 3–12 grams (0.11–0.42 oz) of dye.
+> Indigo is a natural dye obtained from the leaves of some plants of the Indigofera genus, in particular Indigofera tinctoria. Most indigo dye produced today is synthetic, constituting around 80,000 tonnes each year, as of 2023. It is most commonly associated with the production of denim cloth and blue jeans, where its properties allow for effects such as stone washing and acid washing to be applied quickly.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Indigo_dye): Indigo dye is an organic compound with a distinctive blue color. Indigo is a natural dye obtained from the leaves of some plants of the Indigofera genus, in particular Indigofera tinctoria. Dye-bearing Indigofera plants were once common throughout the world. Blue colorants are relatively rare. Since indigo is insoluble, it is also referred to as a pigment (C.I. Pigment Blue 66, C.I.).
-- [Wikipedia, Uses](https://en.wikipedia.org/wiki/Indigo_dye#Uses): The primary use for indigo is as a dye for cotton yarn, mainly used in the production of denim cloth suitable for blue jeans; on average, a pair of blue jeans requires 3–12 grams (0.11–0.42 oz) of dye. Smaller quantities are used in the dyeing of wool and silk.
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Indigo_dye): Most indigo dye produced today is synthetic, constituting around 80,000 tonnes each year, as of 2023. It is most commonly associated with the production of denim cloth and blue jeans, where its properties allow for effects such as stone washing and acid washing to be applied quickly.
 
 </details>
 
-**Weird fact** · written · 7.7 s
+**Weird fact** · written · 6.4 s
 
-> **bacteria generate hydrogen as a metabolic product**  
 > Another pre-industrial method, used in Japan, was to dissolve the indigo in a heated vat in which a culture of thermophilic, anaerobic bacteria was maintained. Some species of such bacteria generate hydrogen as a metabolic product, which convert insoluble indigo into soluble indigo white.
 
 <details><summary>Sources</summary>
@@ -1126,9 +1057,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > 1-Methyl-4-Prop-1-En-2-Ylcyclohexene carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Where you meet it** · written · 5.1 s
+**Where you meet it** · written · 4.0 s
 
-> **Limonene is found in many oils and fruits**  
 > Limonene is used as a solvent for cleaning purposes, such as adhesive remover, or the removal of oil from machine parts, as it is produced from a renewable source (citrus essential oil, as a byproduct of orange juice manufacture). Limonene is found in many oils and fruits including orange, lemon, grapefruit, berry, leaf, caraway, dill, bergamot, peppermint and spearmint oils.
 
 <details><summary>Sources</summary>
@@ -1138,7 +1068,7 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · skipped · 4.5 s
+**Weird fact** · skipped · 4.2 s
 
 
 ### lycopene (3 cards)
@@ -1148,9 +1078,8 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > Lycopene is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Where you meet it** · written · 4.1 s
+**Where you meet it** · written · 3.2 s
 
-> **Lycopene is an acyclic carotene commonly obtained**  
 > Lycopene is an acyclic carotene commonly obtained from tomatoes and other red fruits. Aside from tomatoes or tomato products like ketchup, it is found in watermelons, grapefruits, red guavas, and baked beans.
 
 <details><summary>Sources</summary>
@@ -1160,9 +1089,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 7.2 s
+**Weird fact** · written · 6.1 s
 
-> **Lycopene may undergo extensive isomerization that allows 1056**  
 > Lycopene may undergo extensive isomerization that allows 1056 theoretical cis-trans configurations; however, the all-trans configuration of lycopene is the most predominant isomer found in foods that gives the red hue. Lycopene is a linear, unsaturated hydrocarbon carotenoid, the major red pigment in fruits such as tomatoes, pink grapefruit, apricots, red oranges, watermelon, rosehips, and guava.
 
 <details><summary>Sources</summary>
@@ -1180,9 +1108,8 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > Melatonin is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · written · 3.1 s
+**Origin story** · written · 2.6 s
 
-> **Melatonin's discovery**  
 > Melatonin's discovery is linked to the study of color changes in some amphibians and reptiles, a phenomenon initially observed through the administration of pineal gland extracts. The hormone melatonin was isolated in 1958 by Aaron B. Lerner, a dermatology professor, and his team at Yale University. Motivated by the possibility that a substance from the pineal gland could be beneficial in treating skin diseases, they extracted and identified melatonin from bovine pineal gland extracts.
 
 <details><summary>Sources</summary>
@@ -1192,9 +1119,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 6.5 s
+**Where you meet it** · written · 6.0 s
 
-> **Melatonin is sometimes administered exogenously as a dietary**  
 > Melatonin is a hormone produced by the pineal gland that has multiple effects including somnolence, and is believed to play a role in regulation of the sleep-wake cycle. Melatonin is sometimes administered exogenously as a dietary supplement and medication. Melatonin has been identified in many plants including feverfew (Tanacetum parthenium), St John's wort (Hypericum perforatum), rice, corn, tomato and other edible fruits.
 
 <details><summary>Sources</summary>
@@ -1205,9 +1131,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.8 s
+**Weird fact** · written · 6.1 s
 
-> **melatonin, derived from the Greek words melas, meaning**  
 > As detailed in their publication in the Journal of the American Chemical Society, Lerner and his colleagues proposed the name melatonin, derived from the Greek words melas, meaning 'black' or 'dark', and tonos, meaning 'labour', 'colour' or 'suppress'. This naming convention follows that of serotonin, another agent affecting skin color, discovered in 1948 as a modulator of vascular tone, which influenced its name based on its serum vasoconstrictor effect.
 
 <details><summary>Sources</summary>
@@ -1224,9 +1149,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Menthol carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 2.2 s
+**Origin story** · written · 1.4 s
 
-> **Menthol was first isolated in 1771**  
 > Menthol was first isolated in 1771, by the German, Hieronymus David Gaubius. Early characterizations were done by Oppenheim, Beckett, Moriya, and Atkinson. It was named by F. L. Alphonse Oppenheim (1833–1877) in 1861.
 
 <details><summary>Sources</summary>
@@ -1235,9 +1159,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 4.8 s
+**Where you meet it** · written · 3.5 s
 
-> **Menthol is a monoterpenoid organic compound that occurs**  
 > Menthol is a monoterpenoid organic compound that occurs naturally in the oils of certain plants in the mint family, such as corn mint and peppermint. For many people, menthol produces a cooling sensation when inhaled, eaten, or applied to the skin, and mint plants have been used for centuries for topical pain relief and as a food flavoring. Menthol occurs naturally in peppermint oil (along with a little menthone, the ester menthyl acetate and other compounds), obtained from Mentha × piperita (peppermint).
 
 <details><summary>Sources</summary>
@@ -1248,15 +1171,14 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 7.3 s
+**Weird fact** · written · 6.2 s
 
-> **Natural menthol exists as one pure stereoisomer**  
-> Natural menthol exists as one pure stereoisomer, nearly always the (1R,2S,5R) form (bottom left corner of the diagram below). In the natural compound, the isopropyl group is in the trans orientation to both the methyl and hydroxyl groups.
+> In the natural compound, the isopropyl group is in the trans orientation to both the methyl and hydroxyl groups. The main form of menthol occurring in nature is (−)-menthol, which is assigned the (1R,2S,5R) configuration.
 
 <details><summary>Sources</summary>
 
-- [Wikipedia, Structure](https://en.wikipedia.org/wiki/Menthol#Structure): Natural menthol exists as one pure stereoisomer, nearly always the (1R,2S,5R) form (bottom left corner of the diagram below). The eight possible stereoisomers are:
 - [Wikipedia, Structure](https://en.wikipedia.org/wiki/Menthol#Structure): In the natural compound, the isopropyl group is in the trans orientation to both the methyl and hydroxyl groups. Thus, it can be drawn in any of the ways shown:
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Menthol): Menthol is a monoterpenoid organic compound that occurs naturally in the oils of certain plants in the mint family, such as corn mint and peppermint. It is a white or clear waxy crystalline substance that is solid at room temperature and melts slightly above. The main form of menthol occurring in nature is (−)-menthol, which is assigned the (1R,2S,5R) configuration.
 
 </details>
 
@@ -1268,9 +1190,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Morphine carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 5 more hazards, not listed here.
 
-**Origin story** · written · 3.4 s
+**Origin story** · written · 2.1 s
 
-> **Morphine was discovered as the first active alkaloid**  
 > Morphine was discovered as the first active alkaloid extracted from the opium poppy plant in December 1804 in Paderborn by German pharmacist Friedrich Sertürner. Sertürner noticed the compound induced drowsiness in rats and stray dogs and he reported his findings in 1805.
 
 <details><summary>Sources</summary>
@@ -1279,10 +1200,9 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.4 s
+**Weird fact** · written · 5.1 s
 
-> **Sertürner reported experiments in which he administered morphine**  
-> In 1817, Sertürner reported experiments in which he administered morphine to himself, three young boys, three dogs, and a mouse; all four people almost died.
+> In 1817, Sertürner reported experiments in which he administered morphine to himself, three young boys, three dogs, and a mouse; all four people almost died. Sertürner's morphium was six times stronger than opium.
 
 <details><summary>Sources</summary>
 
@@ -1290,9 +1210,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 7.5 s
+**Where you meet it** · written · 6.3 s
 
-> **Papaver somniferum**  
 > Morphine is the most abundant opiate found in opium, the dried latex extracted by shallowly scoring the unripe seedpods of the Papaver somniferum poppy. Morphine is obtained from opium, which itself is obtained from the milky exudate of incised unripe seed capsules of the poppy plant, Papaver somniferum, indigenous to Asia Minor.
 
 <details><summary>Sources</summary>
@@ -1310,9 +1229,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Nicotine carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.1 s
+**Origin story** · written · 1.7 s
 
-> **Nicotine is named after the tobacco plant**  
 > Nicotine was originally isolated from the tobacco plant in 1828 by chemists Wilhelm Heinrich Posselt and Karl Ludwig Reimann from Germany, who believed it was a poison. Nicotine is named after the tobacco plant Nicotiana tabacum, which in turn is named after the French ambassador in Portugal, Jean Nicot de Villemain, who sent tobacco and seeds to Paris in 1560, presented to the French King, and who promoted their medicinal use.
 
 <details><summary>Sources</summary>
@@ -1322,9 +1240,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 6.6 s
+**Where you meet it** · written · 4.7 s
 
-> **TOBACCO USUALLY CONTAINS 1-2% NICOTINE**  
 > In tobacco leaves, nicotine constitutes about 0.6–3% of the dry weight, and smaller, trace quantities occur in other Solanaceae crops such as tomatoes, potatoes, and eggplants. SMOKING TOBACCO USUALLY CONTAINS 1-2% NICOTINE.
 
 <details><summary>Sources</summary>
@@ -1334,10 +1251,9 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.0 s
+**Weird fact** · written · 3.9 s
 
-> **nicotine can predispose young people to smoking**  
-> Following its introduction, tobacco rapidly gained popularity in Europe for its stimulating effects, fueled by nicotine's addictive and pharmacological properties and tobacco's widespread embrace as a cure-all. The CDC says it is "toxic to developing fetuses and is a health danger for pregnant women." It can harm brain development up to age twenty-five, and early use of nicotine can predispose young people to smoking and drug use.
+> Following its introduction, tobacco rapidly gained popularity in Europe for its stimulating effects, fueled by nicotine's addictive and pharmacological properties and tobacco's widespread embrace as a cure-all. The CDC says it is "toxic to developing fetuses and is a health danger for pregnant women." It can harm brain development up to age twenty-five, and early use of nicotine can predispose young people to smoking and drug use. However, at doses typically used by consumers, it presents little if any hazard to adult users.
 
 <details><summary>Sources</summary>
 
@@ -1354,10 +1270,9 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Nitroglycerin carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 2.7 s
+**Origin story** · written · 1.3 s
 
-> **Nitroglycerin was the first practical explosive produced**  
-> Nitroglycerin was the first practical explosive produced that was stronger than black powder. It was synthesized by the Italian chemist Ascanio Sobrero in 1846, working under Théophile-Jules Pelouze at the University of Turin.
+> Nitroglycerin was the first practical explosive produced that was stronger than black powder. It was synthesized by the Italian chemist Ascanio Sobrero in 1846, working under Théophile-Jules Pelouze at the University of Turin. Sobrero initially called his discovery "pyroglycerin" and warned vigorously against its use as an explosive.
 
 <details><summary>Sources</summary>
 
@@ -1365,9 +1280,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 6.9 s
+**Where you meet it** · written · 5.2 s
 
-> **Dynamite and similar explosives**  
 > Dynamite and similar explosives were widely adopted for civil engineering tasks, such as in drilling highway and railroad tunnels, for mining, for clearing farmland of stumps, in quarrying, and in demolition work. In medicine, nitroglycerin is probably most commonly prescribed for angina pectoris, a painful symptom of ischemic heart disease caused by inadequate flow of blood and oxygen to the heart, and as a potent antihypertensive agent.
 
 <details><summary>Sources</summary>
@@ -1377,16 +1291,14 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.6 s
+**Weird fact** · written · 4.8 s
 
-> **Nitroglycerin was the first practical explosive produced**  
-> Nitroglycerin was the first practical explosive produced that was stronger than black powder. In its undiluted form, nitroglycerin is a contact explosive, meaning physical shock causes it to explode. Early in its history, liquid nitroglycerin was found to be "desensitized" by freezing it at a temperature below 45 to 55 °F (7 to 13 °C), depending on its purity.
+> In its undiluted form, nitroglycerin is a contact explosive, meaning physical shock causes it to explode. Infrequent exposure to high doses of nitroglycerin can cause severe headaches known as "NG head" or "bang head".
 
 <details><summary>Sources</summary>
 
-- [Wikipedia, History](https://en.wikipedia.org/wiki/Nitroglycerin#History): Nitroglycerin was the first practical explosive produced that was stronger than black powder. It was synthesized by the Italian chemist Ascanio Sobrero in 1846, working under Théophile-Jules Pelouze at the University of Turin. Sobrero initially called his discovery "pyroglycerin" and warned vigorously against its use as an explosive.
 - [Wikipedia, Instability and desensitization](https://en.wikipedia.org/wiki/Nitroglycerin#Instability_and_desensitization): In its undiluted form, nitroglycerin is a contact explosive, meaning physical shock causes it to explode. If it has not been adequately purified during manufacture, it can degrade over time to even more unstable forms. This makes nitroglycerin highly dangerous to transport or use. In its undiluted form, it is one of the world's most powerful explosives, comparable to the more recently developed RDX and PETN.
-- [Wikipedia, Instability and desensitization](https://en.wikipedia.org/wiki/Nitroglycerin#Instability_and_desensitization): Early in its history, liquid nitroglycerin was found to be "desensitized" by freezing it at a temperature below 45 to 55 °F (7 to 13 °C), depending on its purity. Its sensitivity to shock while frozen is somewhat unpredictable: "It is more insensitive to the shock from a fulminate cap or a rifle ball when in that condition but on the other hand it appears to be more liable to explode on breaking, crushing, tamping, etc." Frozen nitroglycerin is much less energetic than liquid, and so must be thawed before use. Thawing it out can be extremely sensitizing, especially if impurities are present or the warming is too rapid.
+- [Wikipedia, Industrial exposure](https://en.wikipedia.org/wiki/Nitroglycerin#Industrial_exposure): Infrequent exposure to high doses of nitroglycerin can cause severe headaches known as "NG head" or "bang head". These headaches can be severe enough to incapacitate some people; however, humans develop a tolerance to and dependence on nitroglycerin after long-term exposure. Although rare, withdrawal can be fatal; symptoms include chest pain and other heart problems. These symptoms may be relieved with re-exposure to nitroglycerin or other suitable organic nitrates.
 
 </details>
 
@@ -1398,9 +1310,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Warning**  
 > Oxytocin carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories.
 
-**Origin story** · written · 3.4 s
+**Origin story** · written · 2.1 s
 
-> **Ott and Scott in 1910**  
 > The uterine-contracting properties of the principle that would later be named oxytocin were discovered by British pharmacologist Henry Hallett Dale in 1906, and its milk ejection property was described by Ott and Scott in 1910 and by Schafer and Mackenzie in 1911. In 1909 the first clinical use of oxytocin was performed by William Blair-Bell to induce childbirth in patients with complications.
 
 <details><summary>Sources</summary>
@@ -1409,21 +1320,18 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 4.1 s
+**Where you meet it** · written · 3.0 s
 
-> **It is also available in pharmaceutical form**  
-> Oxytocin is released into the bloodstream as a hormone in response to sexual activity and during childbirth. It is also available in pharmaceutical form. For example, when oxytocin is released during a uterine contraction at the start of childbirth, this stimulates the production and release of more oxytocin and an increase in the intensity and frequency of contractions.
+> Oxytocin is released into the bloodstream as a hormone in response to sexual activity and during childbirth. It is also available in pharmaceutical form.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Oxytocin): Oxytocin is a peptide hormone and neuropeptide normally produced in the hypothalamus and released by the posterior pituitary. Present in animals since early stages of evolution, in humans it plays roles in behavior that include social bonding, love, reproduction, childbirth, and the period after childbirth. Oxytocin is released into the bloodstream as a hormone in response to sexual activity and during childbirth. It is also available in pharmaceutical form. In either form, oxytocin stimulates uterine contractions to speed up the process of childbirth.
-- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Oxytocin): In its natural form, it also plays a role in maternal bonding and milk production. Production and secretion of oxytocin is controlled by a positive feedback mechanism, where its initial release stimulates production and release of further oxytocin. For example, when oxytocin is released during a uterine contraction at the start of childbirth, this stimulates the production and release of more oxytocin and an increase in the intensity and frequency of contractions. This process intensifies in frequency and continues until the triggering activity ceases. A similar process takes place during lactation and during sexual activity.
 
 </details>
 
-**Weird fact** · written · 7.2 s
+**Weird fact** · written · 6.0 s
 
-> **Pro8-OT and documented additional oxytocin structural variants**  
 > While the structure of oxytocin is highly conserved in placental mammals, a novel structure of oxytocin was reported in 2011 in marmosets, tamarins, and other New World primates. Genomic sequencing of the gene for oxytocin revealed a single in-frame mutation (thymine for cytosine) which results in a single amino acid substitution at the 8-position (proline for leucine). Since this original Lee et al. paper, two other laboratories have confirmed Pro8-OT and documented additional oxytocin structural variants in this primate taxon.
 
 <details><summary>Sources</summary>
@@ -1440,9 +1348,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Quinine carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories. A minority of company reports add 3 more hazards, not listed here.
 
-**Origin story** · written · 3.3 s
+**Origin story** · written · 2.0 s
 
-> **Charles Marie de La Condamine in 1737**  
 > The form of quinine most effective in treating malaria was found by Charles Marie de La Condamine in 1737. In 1820, French researchers Pierre Joseph Pelletier and Joseph Bienaimé Caventou first isolated quinine from the bark of a tree in the genus Cinchona – probably Cinchona pubescens – and subsequently named the substance.
 
 <details><summary>Sources</summary>
@@ -1451,10 +1358,9 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 6.7 s
+**Where you meet it** · written · 5.9 s
 
-> **Quinine is also used as an ingredient**  
-> Quinine is also used as an ingredient in tonic water and other beverages to impart a bitter taste. Used as an antipyretic (fever-reducing), antimalarial, analgesic (painkilling), and anti-inflammatory. It is also used as a flavor component of tonic water and bitter lemon.
+> Malaria resistance to quinine occurs in certain areas of the world. Quinine is also used as an ingredient in tonic water and other beverages to impart a bitter taste. Used as an antipyretic (fever-reducing), antimalarial, analgesic (painkilling), and anti-inflammatory. It is also used as a flavor component of tonic water and bitter lemon.
 
 <details><summary>Sources</summary>
 
@@ -1463,9 +1369,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 5.9 s
+**Weird fact** · written · 4.7 s
 
-> **Quinine can cause unpredictable serious and life-threatening blood**  
 > The name was derived from the original Quechua (Inca) word for the cinchona tree bark, quina or quina-quina, which means "bark of bark" or "holy bark". Quinine can cause unpredictable serious and life-threatening blood and cardiovascular reactions including low platelet count and hemolytic–uremic syndrome/thrombotic thrombocytopenic purpura (HUS/TTP), long QT syndrome and other serious cardiac arrhythmias including torsades de pointes, blackwater fever, disseminated intravascular coagulation, leukopenia, and neutropenia.
 
 <details><summary>Sources</summary>
@@ -1483,9 +1388,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Serotonin carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.2 s
+**Origin story** · written · 1.6 s
 
-> **Maurice M. Rapport, Arda Green, and Irvine Page**  
 > In 1935, Italian Vittorio Erspamer, working in Pavia, showed an extract from enterochromaffin cells made intestines contract. Some believed it contained adrenaline, but two years later, Erspamer was able to show it was a previously unknown amine, which he named "enteramine". In 1948, Maurice M. Rapport, Arda Green, and Irvine Page of the Cleveland Clinic discovered a vasoconstrictor substance in blood serum, and since it was a serum agent affecting vascular tone, they named it serotonin.
 
 <details><summary>Sources</summary>
@@ -1494,9 +1398,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 3.9 s
+**Where you meet it** · written · 3.1 s
 
-> **where it regulates intestinal movements**  
 > Most of the body's serotonin—about 90%—is synthesized in the gastrointestinal tract by enterochromaffin cells, where it regulates intestinal movements. It is also produced in smaller amounts in the brainstem's raphe nuclei, the skin's Merkel cells, pulmonary neuroendocrine cells, and taste receptor cells of the tongue. Once secreted, serotonin is taken up by platelets in the blood, which release it during clotting to promote vasoconstriction and platelet aggregation.
 
 <details><summary>Sources</summary>
@@ -1505,9 +1408,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.2 s
+**Weird fact** · written · 5.8 s
 
-> **Patients infected with E. histolytica have been found**  
 > The gastrointestinal parasite Entamoeba histolytica secretes serotonin, causing a sustained secretory diarrhea in some people. Patients infected with E. histolytica have been found to have highly elevated serum serotonin levels, which returned to normal following resolution of the infection.
 
 <details><summary>Sources</summary>
@@ -1524,10 +1426,9 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Sodium Chloride carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · written · 5.4 s
+**Where you meet it** · written · 3.8 s
 
-> **Saline usually refers to normal or physiological saline**  
-> Sodium chloride is the primary salt in seawater and in the extracellular fluid of many multicellular organisms. Saline usually refers to normal or physiological saline, which is an aqueous solution containing 0.9% sodium chloride. In its edible form, common table salt, it is commonly used as a condiment and food preservative.
+> Sodium chloride is the primary salt in seawater and in the extracellular fluid of many multicellular organisms. Saline usually refers to normal or physiological saline, which is an aqueous solution containing 0.9% sodium chloride. Another major application of sodium chloride is de-icing of roadways in sub-freezing weather.
 
 <details><summary>Sources</summary>
 
@@ -1537,9 +1438,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · retried · 13.6 s
+**Weird fact** · retried · 11.3 s
 
-> **each ion is surrounded by six ions**  
 > In solid sodium chloride, each ion is surrounded by six ions of the opposite charge as expected on electrostatic grounds. The surrounding ions are located at the vertices of a regular octahedron.
 
 <details><summary>Sources</summary>
@@ -1556,9 +1456,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Strychnine carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Origin story** · written · 3.1 s
+**Origin story** · written · 2.0 s
 
-> **Strychnine was first discovered by French chemists Joseph**  
 > Strychnine was first discovered by French chemists Joseph Bienaimé Caventou and Pierre-Joseph Pelletier in 1818 in the Saint-Ignatius' bean.
 
 <details><summary>Sources</summary>
@@ -1567,9 +1466,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 4.5 s
+**Where you meet it** · written · 3.8 s
 
-> **Strychnine is a plant toxin most commonly found**  
 > Strychnine is a plant toxin most commonly found in the seeds of the Strychnine tree (Strychnos nux-vomica L.). The most common source is from the seeds of the Strychnos nux-vomica tree. Strychnine is an alkaloid found in seeds of Strychnos nux vomica Loganiaceae and beans of Strychnos ignatii.
 
 <details><summary>Sources</summary>
@@ -1580,15 +1478,13 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.1 s
+**Weird fact** · written · 5.1 s
 
-> **William Palmer to kill his final victim, John**  
-> Historic records indicate that preparations containing strychnine (presumably) had been used to kill dogs, cats, and birds in Europe as far back as 1640. It was allegedly used by convicted murderer William Palmer to kill his final victim, John Cook. The biosynthesis of strychnine was solved in 2022.
+> Historic records indicate that preparations containing strychnine (presumably) had been used to kill dogs, cats, and birds in Europe as far back as 1640. It was allegedly used by convicted murderer William Palmer to kill his final victim, John Cook. It was also used during World War II by Oskar Dirlewanger against civilians.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, History](https://en.wikipedia.org/wiki/Strychnine#History): Strychnine was first discovered by French chemists Joseph Bienaimé Caventou and Pierre-Joseph Pelletier in 1818 in the Saint-Ignatius' bean. In some Strychnos plants a 9,10-dimethoxy derivative of strychnine, the alkaloid brucine, is also present. Brucine is not as poisonous as strychnine. Historic records indicate that preparations containing strychnine (presumably) had been used to kill dogs, cats, and birds in Europe as far back as 1640. It was allegedly used by convicted murderer William Palmer to kill his final victim, John Cook. It was also used during World War II by Oskar Dirlewanger against civilians.
-- [Wikipedia, Biosynthesis](https://en.wikipedia.org/wiki/Strychnine#Biosynthesis): Strychnine is a terpene indole alkaloid belonging to the Strychnos family of Corynanthe alkaloids, and it is derived from tryptamine and secologanin. The biosynthesis of strychnine was solved in 2022. The enzyme, strictosidine synthase, catalyzes the condensation of tryptamine and secologanin, followed by a Pictet-Spengler reaction to form strictosidine. Many steps have been inferred by isolation of intermediates from Strychnos nux-vomica. The next step is hydrolysis of the acetal, which opens the ring by elimination of glucose (O-Glu) and provides a reactive aldehyde.
 
 </details>
 
@@ -1600,9 +1496,8 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > Sucralose is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · written · 2.8 s
+**Origin story** · written · 2.1 s
 
-> **While researching novel uses of sucrose**  
 > Sucralose was discovered in 1975 by scientists from Tate & Lyle, working with researchers Leslie Hough and Shashikant Phadnis at Queen Elizabeth College (now part of King's College London). While researching novel uses of sucrose and its synthetic derivatives, mixing sulfuryl chloride with sugar, Phadnis was told to "test" a chlorinated sugar compound. According to an anecdotal account, Phadnis thought Hough asked him to "taste" it, so he did and found the compound to be exceptionally sweet.
 
 <details><summary>Sources</summary>
@@ -1611,9 +1506,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 3.8 s
+**Where you meet it** · written · 2.9 s
 
-> **Sucralose is used as a replacement**  
 > Sucralose is used as a replacement for (or in combination with) other artificial or natural sweeteners such as aspartame, acesulfame potassium or high-fructose corn syrup. It is used in products such as candy, breakfast bars, coffee pods, and soft drinks. It is also used in canned fruits wherein water and sucralose take the place of much higher-energy corn syrup-based additives.
 
 <details><summary>Sources</summary>
@@ -1622,15 +1516,14 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.6 s
+**Weird fact** · written · 5.4 s
 
-> **600 times sweeter than sucrose**  
-> According to an anecdotal account, Phadnis thought Hough asked him to "taste" it, so he did and found the compound to be exceptionally sweet. Sucralose is about 600 times sweeter than sucrose (table sugar), three times as sweet as both aspartame and acesulfame potassium, and twice as sweet as sodium saccharin.
+> According to an anecdotal account, Phadnis thought Hough asked him to "taste" it, so he did and found the compound to be exceptionally sweet. Sucralose is a disaccharide derivative consisting of 4-chloro-4-deoxy-alpha-D-galactopyranose and 1,6-dichloro-1,6-dideoxy-beta-D-fructofuranose units linked by a glycosidic bond.
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, History](https://en.wikipedia.org/wiki/Sucralose#History): Sucralose was discovered in 1975 by scientists from Tate & Lyle, working with researchers Leslie Hough and Shashikant Phadnis at Queen Elizabeth College (now part of King's College London). While researching novel uses of sucrose and its synthetic derivatives, mixing sulfuryl chloride with sugar, Phadnis was told to "test" a chlorinated sugar compound. According to an anecdotal account, Phadnis thought Hough asked him to "taste" it, so he did and found the compound to be exceptionally sweet. Tate & Lyle patented the substance in 1976; as of 2008, the only remaining patents concerned specific manufacturing processes.
-- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Sucralose): Sucralose is an artificial sweetener and sugar substitute. In the European Union, it is also known under the E number E955. It is produced by chlorination of sucrose, selectively replacing three of the hydroxy groups. Sucralose is about 600 times sweeter than sucrose (table sugar), three times as sweet as both aspartame and acesulfame potassium, and twice as sweet as sodium saccharin.
+- [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/71485#section=Record-Description): Sucralose is a disaccharide derivative consisting of 4-chloro-4-deoxy-alpha-D-galactopyranose and 1,6-dichloro-1,6-dideoxy-beta-D-fructofuranose units linked by a glycosidic bond. It has a role as a xenobiotic, a sweetening agent and an environmental contaminant. It is an organochlorine compound and a disaccharide derivative.
 
 </details>
 
@@ -1642,23 +1535,22 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > Sucrose is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · skipped · 1.2 s
+**Origin story** · skipped · 0.7 s
 
-**Where you meet it** · written · 7.0 s
+**Where you meet it** · written · 5.3 s
 
-> **Sucrose is important to the structure of many**  
-> In nature, sucrose is present in many plants, and in particular their roots, fruits and nectars, because it serves as a way to store energy, primarily from photosynthesis. Sucrose forms a major element in confectionery and desserts. Sucrose is important to the structure of many foods, including biscuits and cookies, cakes and pies, candy, and ice cream and sorbets.
+> Sugar is often an added ingredient in food production and recipes. In nature, sucrose is present in many plants, and in particular their roots, fruits and nectars, because it serves as a way to store energy, primarily from photosynthesis. Sucrose forms a major element in confectionery and desserts.
 
 <details><summary>Sources</summary>
 
+- [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Sucrose): Sugar is often an added ingredient in food production and recipes. About 185 million tonnes of sugar were produced worldwide in 2017.
 - [Wikipedia, Sources](https://en.wikipedia.org/wiki/Sucrose#Sources): In nature, sucrose is present in many plants, and in particular their roots, fruits and nectars, because it serves as a way to store energy, primarily from photosynthesis. Many mammals, birds, insects and bacteria accumulate and feed on the sucrose in plants and for some it is their main food source. Although honeybees consume sucrose, the honey they produce consists primarily of fructose and glucose, with only trace amounts of sucrose.
 - [Wikipedia, Consumption](https://en.wikipedia.org/wiki/Sucrose#Consumption): Sucrose forms a major element in confectionery and desserts. Cooks use it for sweetening. It can also act as a food preservative when used in sufficient concentrations, and thus is an important ingredient in the production of fruit preserves. Sucrose is important to the structure of many foods, including biscuits and cookies, cakes and pies, candy, and ice cream and sorbets. It is a common ingredient in many processed and so-called "junk foods".
 
 </details>
 
-**Weird fact** · written · 8.2 s
+**Weird fact** · written · 6.0 s
 
-> **both glucose and fructose, and not between**  
 > Unlike most disaccharides, the glycosidic bond in sucrose is formed between the reducing ends of both glucose and fructose, and not between the reducing end of one and the non-reducing end of the other.
 
 <details><summary>Sources</summary>
@@ -1675,9 +1567,8 @@ Problems: no chosen sentence names Citric Acid
 > **Not classified as hazardous**  
 > Testosterone is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · written · 2.4 s
+**Origin story** · written · 1.5 s
 
-> **Harvard professor Charles-Édouard Brown-Séquard**  
 > A testicular action was linked to circulating blood fractions – now understood to be a family of androgenic hormones – in the early work on castration and testicular transplantation in fowl by Arnold Adolph Berthold (1803–1861). Research on the action of testosterone received a brief boost in 1889, when the Harvard professor Charles-Édouard Brown-Séquard (1817–1894), then in Paris, self-injected subcutaneously a "rejuvenating elixir" consisting of an extract of dog and guinea pig testicle.
 
 <details><summary>Sources</summary>
@@ -1686,9 +1577,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Where you meet it** · written · 4.3 s
+**Where you meet it** · written · 4.0 s
 
-> **Testosterone is the primary male sex hormone**  
 > Testosterone is the primary male sex hormone and androgen in males. In humans, testosterone drives the development of male reproductive tissues such as testicles and prostate, as well as promoting secondary sexual characteristics such as increased muscle and bone mass, and the growth of body hair. In humans and most other vertebrates, testosterone is secreted primarily by the testicles of males and, to a lesser extent, the ovaries of females.
 
 <details><summary>Sources</summary>
@@ -1698,9 +1588,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.0 s
+**Weird fact** · written · 5.6 s
 
-> **Fish make a slightly different form called 11-ketotestosterone**  
 > Agnathans (jawless vertebrates) such as lampreys do not produce testosterone but instead use androstenedione as a male sex hormone. Fish make a slightly different form called 11-ketotestosterone.
 
 <details><summary>Sources</summary>
@@ -1717,9 +1606,8 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Tetrodotoxin carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · written · 6.2 s
+**Where you meet it** · written · 5.2 s
 
-> **poison (toxin) found mainly in the liver**  
 > Tetrodotoxin (TTX) is a potent neurotoxin. Its name derives from Tetraodontiformes, an order that includes pufferfish, porcupinefish, ocean sunfish, and triggerfish; several of these species carry the toxin. Although tetrodotoxin was discovered in these fish, it is found in several other animals (e.g., in blue-ringed octopuses, rough-skinned newts, and moon snails). Tetrodotoxin is an extremely potent poison (toxin) found mainly in the liver and sex organs (gonads) of some fish, such as puffer fish, globefish, and toadfish (order Tetraodontiformes) and in some amphibian, octopus, and shellfish species.
 
 <details><summary>Sources</summary>
@@ -1729,9 +1617,8 @@ Problems: no chosen sentence names Citric Acid
 
 </details>
 
-**Weird fact** · written · 6.5 s
+**Weird fact** · written · 5.3 s
 
-> **Tell My Horse**  
 > Based on the presumption that tetrodotoxin is not always fatal, but at near-lethal doses can leave a person extremely unwell with the person remaining conscious, tetrodotoxin has been alleged to result in zombieism, and has been suggested as an ingredient in Haitian Vodou preparations. This idea first appeared in the 1938 non-fiction book Tell My Horse by Zora Neale Hurston in which there were multiple accounts of purported tetrodotoxin poisoning in Haiti by a voodoo sorcerer called the bokor.
 
 <details><summary>Sources</summary>
@@ -1748,13 +1635,12 @@ Problems: no chosen sentence names Citric Acid
 > **Official signal word: Danger**  
 > Thalidomide carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories.
 
-**Where you meet it** · dropped · 4.6 s
+**Where you meet it** · dropped · 4.7 s
 
 Problems: no chosen sentence names Thalidomide
 
-**Weird fact** · written · 3.7 s
+**Weird fact** · written · 3.2 s
 
-> **It has been reintroduced and used**  
 > A piperidinyl isoindole originally introduced as a non-barbiturate hypnotic, thalidomide was withdrawn from the market due to teratogenic effects. It has been reintroduced and used for a number of inflammatory disorders and cancers.
 
 <details><summary>Sources</summary>
@@ -1771,9 +1657,8 @@ Problems: no chosen sentence names Thalidomide
 > **Official signal word: Warning**  
 > Theobromine carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 2 more hazards, not listed here.
 
-**Origin story** · written · 2.4 s
+**Origin story** · written · 1.5 s
 
-> **Theobromine was discovered in 1841 in cacao beans**  
 > Theobromine was discovered in 1841 in cacao beans by the chemist A. Woskresensky.
 
 <details><summary>Sources</summary>
@@ -1782,19 +1667,19 @@ Problems: no chosen sentence names Thalidomide
 
 </details>
 
-**Where you meet it** · written · 5.0 s
+**Where you meet it** · written · 4.1 s
 
-> **found in chocolate and several other foods**  
-> In industry, theobromine is used as an additive and precursor to some cosmetics. It is found in chocolate and several other foods, including tea (Camellia sinensis), some American hollies (yaupon and guayusa) and the kola nut. Theobromine is the primary alkaloid found in cocoa and chocolate.
+> In industry, theobromine is used as an additive and precursor to some cosmetics. It is found in chocolate and several other foods, including tea (Camellia sinensis), some American hollies (yaupon and guayusa) and the kola nut. Theobromine is the primary alkaloid found in cocoa and chocolate. There are approximately 60 milligrams (1 grain) of theobromine in 28 grams (1 oz) of milk chocolate, while the same amount of dark chocolate contains about 200 milligrams (3 grains).
 
 <details><summary>Sources</summary>
 
 - [Wikipedia, Introduction](https://en.wikipedia.org/wiki/Theobromine): Theobromine, also known as xantheose, is the principal alkaloid of Theobroma cacao (cacao plant). Theobromine is slightly water-soluble (330 mg/L) with a bitter taste. In industry, theobromine is used as an additive and precursor to some cosmetics. It is found in chocolate and several other foods, including tea (Camellia sinensis), some American hollies (yaupon and guayusa) and the kola nut. It is a white or colourless solid, but commercial samples can appear yellowish.
 - [Wikipedia, Sources](https://en.wikipedia.org/wiki/Theobromine#Sources): Theobromine is the primary alkaloid found in cocoa and chocolate. Cocoa butter only contains trace amounts of theobromine. There are usually higher concentrations in dark than in milk chocolate.
+- [Wikipedia, Sources](https://en.wikipedia.org/wiki/Theobromine#Sources): There are approximately 60 milligrams (1 grain) of theobromine in 28 grams (1 oz) of milk chocolate, while the same amount of dark chocolate contains about 200 milligrams (3 grains). Cocoa beans naturally contain approximately 1% theobromine.
 
 </details>
 
-**Weird fact** · dropped · 13.1 s
+**Weird fact** · dropped · 13.4 s
 
 Problems: no chosen sentence names Theobromine
 
@@ -1810,46 +1695,35 @@ Problems: no chosen sentence names Theobromine
 
 Problems: no chosen sentence names 2,4,6-Trinitrotoluene
 
-**Where you meet it** · written · 5.4 s
+**Where you meet it** · written · 4.2 s
 
-> **TNT and is an explosive used in military**  
-> 2,4,6-Trinitrotoluene is a yellow, odorless solid that does not occur naturally in the environment. It is commonly known as TNT and is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting. TNT is one of the most commonly used explosives for military, industrial, and mining applications. 2,4,6-Trinitrotoluene is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting.
+> 2,4,6-Trinitrotoluene is a yellow, odorless solid that does not occur naturally in the environment. 2,4,6-Trinitrotoluene is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting.
 
 <details><summary>Sources</summary>
 
 - [PubChem, Record Description](https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Record-Description): 2,4,6-Trinitrotoluene is a yellow, odorless solid that does not occur naturally in the environment. It is commonly known as TNT and is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting. 2,4,6-Trinitrotoluene production in the United States occurs solely at military arsenals.
-- [Wikipedia, Applications](https://en.wikipedia.org/wiki/TNT#Applications): TNT is one of the most commonly used explosives for military, industrial, and mining applications. TNT has been used in oil and gas fracking (hydraulic fracturing) in shale formations. The technique involves displacing and detonating nitroglycerin in hydraulically induced fractures followed by wellbore shots using pelletized TNT.
 - [PubChem, Uses](https://pubchem.ncbi.nlm.nih.gov/compound/8376#section=Uses): 2,4,6-Trinitrotoluene is an explosive used in military shells, bombs, and grenades, in industrial uses, and in underwater blasting. Exposure may results from drinking contaminated water that has migrated from chemical waste disposal sites, breathing contaminated air, eating contaminated foods such as fruits and vegetables, and/or eating contaminated soil.
 
 </details>
 
-**Weird fact** · dropped · 12.3 s
+**Weird fact** · dropped · 11.8 s
 
 Problems: no chosen sentence names 2,4,6-Trinitrotoluene
 
 
-### vanillin (4 cards)
+### vanillin (3 cards)
 
 **Danger level** · from data · 0.0 s
 
 > **Official signal word: Warning**  
 > Vanillin carries "Warning", the milder of the two GHS signal words, used for the less severe hazard categories. A minority of company reports add 1 more hazard, not listed here.
 
-**Origin story** · written · 3.3 s
+**Origin story** · dropped · 3.4 s
 
-> **Vanilla beans, called tlilxochitl, were discovered and cultivated**  
-> Traces of vanillin were also found in wine jars in Jerusalem, which were used by the Judahite elite before the city was destroyed in 586 BCE. Vanilla beans, called tlilxochitl, were discovered and cultivated as a flavoring for beverages by native Mesoamerican peoples, most famously the Totonacs of modern-day Veracruz, Mexico. Since at least the early 15th century, the Aztecs used vanilla as a flavoring for chocolate in drinks called xocohotl.
+Problems: no chosen sentence names Vanillin
 
-<details><summary>Sources</summary>
+**Where you meet it** · written · 4.7 s
 
-- [Wikipedia, Natural history](https://en.wikipedia.org/wiki/Vanillin#Natural_history): Although it is generally accepted that vanilla was domesticated in Mesoamerica and subsequently spread to the Old World in the 16th century, in 2019, researchers published a paper stating that vanillin residue had been discovered inside jars within a tomb in Canaan dating to the 2nd millennium BCE, suggesting the possible cultivation of an unidentified, Old World-endemic Vanilla species in Canaan since the Middle Bronze Age. Traces of vanillin were also found in wine jars in Jerusalem, which were used by the Judahite elite before the city was destroyed in 586 BCE.
-- [Wikipedia, Natural history](https://en.wikipedia.org/wiki/Vanillin#Natural_history): Vanilla beans, called tlilxochitl, were discovered and cultivated as a flavoring for beverages by native Mesoamerican peoples, most famously the Totonacs of modern-day Veracruz, Mexico. Since at least the early 15th century, the Aztecs used vanilla as a flavoring for chocolate in drinks called xocohotl.
-
-</details>
-
-**Where you meet it** · written · 5.6 s
-
-> **Vanillin is most prominent as the principal flavor**  
 > Vanillin is most prominent as the principal flavor and aroma compound in vanilla. Vanillin occurs in a wide variety of foods and plants such as orchids; major commercial source of natural vanillin is from vanilla bean extract.
 
 <details><summary>Sources</summary>
@@ -1859,14 +1733,12 @@ Problems: no chosen sentence names 2,4,6-Trinitrotoluene
 
 </details>
 
-**Weird fact** · written · 6.7 s
+**Weird fact** · written · 5.5 s
 
-> **vanillin were also found in wine jars**  
-> Traces of vanillin were also found in wine jars in Jerusalem, which were used by the Judahite elite before the city was destroyed in 586 BCE. Scolytus multistriatus, one of the vectors of the Dutch elm disease, uses vanillin as a signal to find a host tree during oviposition.
+> Scolytus multistriatus, one of the vectors of the Dutch elm disease, uses vanillin as a signal to find a host tree during oviposition.
 
 <details><summary>Sources</summary>
 
-- [Wikipedia, Natural history](https://en.wikipedia.org/wiki/Vanillin#Natural_history): Although it is generally accepted that vanilla was domesticated in Mesoamerica and subsequently spread to the Old World in the 16th century, in 2019, researchers published a paper stating that vanillin residue had been discovered inside jars within a tomb in Canaan dating to the 2nd millennium BCE, suggesting the possible cultivation of an unidentified, Old World-endemic Vanilla species in Canaan since the Middle Bronze Age. Traces of vanillin were also found in wine jars in Jerusalem, which were used by the Judahite elite before the city was destroyed in 586 BCE.
 - [Wikipedia, Ecology](https://en.wikipedia.org/wiki/Vanillin#Ecology): Scolytus multistriatus, one of the vectors of the Dutch elm disease, uses vanillin as a signal to find a host tree during oviposition.
 
 </details>
@@ -1879,11 +1751,10 @@ Problems: no chosen sentence names 2,4,6-Trinitrotoluene
 > **Not classified as hazardous**  
 > Water is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
-**Origin story** · skipped · 1.2 s
+**Origin story** · no input · 0.0 s
 
-**Where you meet it** · written · 4.9 s
+**Where you meet it** · written · 4.3 s
 
-> **Water is an inorganic compound with the chemical**  
 > Water (chemical formula: H2O) is a transparent fluid which forms the world's streams, lakes, oceans and rain, and is the major constituent of the fluids of organisms. Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance. It is the main constituent of Earth's streams, lakes, and oceans.
 
 <details><summary>Sources</summary>
@@ -1893,9 +1764,8 @@ Problems: no chosen sentence names 2,4,6-Trinitrotoluene
 
 </details>
 
-**Weird fact** · written · 6.6 s
+**Weird fact** · written · 5.1 s
 
-> **Water is the only common substance to exist**  
 > Water is the only common substance to exist as a solid, liquid, and gas in normal terrestrial conditions.
 
 <details><summary>Sources</summary>

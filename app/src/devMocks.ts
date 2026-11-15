@@ -26,7 +26,7 @@ function card(kind: CardKind, label: string, title: string, body: string, source
   return { kind, label, title, body, sources: sources.map(([label, url]) => ({ label, url })), hazards: null }
 }
 
-// Written by the real pipeline (`valence cards caffeine`), plus one dropped card.
+// Chosen by the real pipeline (`valence review run`), plus one dropped card.
 const CAFFEINE_CARDS: [CardKind, Card | null][] = [
   [
     'danger',
@@ -44,17 +44,17 @@ const CAFFEINE_CARDS: [CardKind, Card | null][] = [
       },
     },
   ],
-  ['origin', null],
   [
-    'weird',
+    'origin',
     card(
-      'weird',
-      'Weird fact',
-      'Caffeine helps premature babies gain weight',
-      'Caffeine is used to treat bronchopulmonary dysplasia in premature infants. It may improve weight gain and reduce risks of cerebral palsy and cognitive delay. Subtle long-term side effects are possible.',
-      [['Wikipedia, Uses', `${WIKI}Caffeine#Uses`]],
+      'origin',
+      'Origin story',
+      '',
+      'In 1819, the German chemist Friedlieb Ferdinand Runge isolated caffeine for the first time; he called it "Kaffebase" (i.e., a base that exists in coffee). In 1821, caffeine was isolated both by the French chemist Pierre Jean Robiquet and by another pair of French chemists, Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, according to Swedish chemist Jöns Jacob Berzelius in his yearly journal.',
+      [['Wikipedia, History', `${WIKI}Caffeine#History`]],
     ),
   ],
+  ['weird', null],
 ]
 
 const RECORDED: Record<string, Recorded> = {
@@ -142,12 +142,12 @@ async function streamCards(cards: [CardKind, Card | null][], send: (e: MoleculeE
     }
     send({ kind: 'cardWriting', card: kind })
     await sleep(1500)
-    const text = ready ?? card(kind, '', 'A draft that says too much', 'A first sentence from the sources. A second one that is not in them.', [])
+    const text = ready ?? card(kind, '', '', 'A sentence from the sources that the checks turn down.', [])
     for (const attempt of ready ? [1] : [1, 2]) {
       if (attempt === 2) send({ kind: 'cardRetrying', card: kind })
       const words = text.body.split(' ')
       for (let i = 1; i <= words.length; i += 2) {
-        send({ kind: 'cardDraft', card: kind, title: text.title, body: words.slice(0, i).join(' ') })
+        send({ kind: 'cardDraft', card: kind, body: words.slice(0, i).join(' ') })
         await sleep(90)
       }
       await sleep(600)
