@@ -223,7 +223,7 @@ impl Vocabulary {
 /// Abbreviations usually followed by a name.
 const TITLES: &[&str] = &[
     "Mr", "Mrs", "Ms", "Dr", "Prof", "St", "Sr", "Jr", "Rev", "Gen", "Capt", "Messrs", "Mme",
-    "Mlle", "vs", "approx", "ca", "cf", "al", "Fig", "No", "Vol",
+    "Mlle", "vs", "approx", "ca", "cf", "al", "Fig", "No", "Vol", "p", "pp",
 ];
 
 /// Sentence ends in already-trimmed text, skipping the period after an

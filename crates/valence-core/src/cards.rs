@@ -255,14 +255,14 @@ pub async fn card<G: Generate>(
     if kind == CardKind::Danger {
         return Ok(danger(molecule, snippets).map_or(Outcome::NoInput, Outcome::Card));
     }
-    let picked = select::select(kind, snippets);
-    let offered = extract::offer(&picked);
-    if offered.is_empty() {
-        return Ok(Outcome::NoInput);
-    }
     let names: Vec<&str> = std::iter::once(molecule)
         .chain(also_called.iter().map(String::as_str))
         .collect();
+    let picked = select::select(kind, snippets);
+    let offered = extract::offer(&picked, &names);
+    if offered.is_empty() {
+        return Ok(Outcome::NoInput);
+    }
 
     on_event(Event::Writing);
     let mut problems: Option<Vec<String>> = None;

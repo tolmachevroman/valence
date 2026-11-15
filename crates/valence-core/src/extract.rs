@@ -38,6 +38,8 @@ const LEANING: &[&str] = &[
     "That",
     "Those",
     "Such",
+    "But",
+    "Yet",
     "However",
     "Thus",
     "Therefore",
@@ -61,9 +63,11 @@ const LEANING: &[&str] = &[
 ];
 
 /// Whether a sentence leans on the one before: it opens with a pronoun, a
-/// connective or a bare number ("Two were found…"), or points back with
-/// "this", "these", "those", "such" or "also".
-fn leans(text: &str) -> bool {
+/// connective or a bare number ("Two were found…"); points back with "this",
+/// "these", "those", "such", "also", "subsequently" or "here"; or uses a
+/// pronoun before naming the molecule (`forms`, from `name_forms`), as in
+/// "The CDC says it is toxic".
+fn leans(text: &str, forms: &[String]) -> bool {
     let first = text
         .split_whitespace()
         .next()
@@ -73,10 +77,23 @@ fn leans(text: &str) -> bool {
         return true;
     }
     let lower = tokens(text);
-    lower.iter().enumerate().any(|(i, w)| {
-        matches!(w.as_str(), "this" | "these" | "those" | "also")
-            || (w == "such" && lower.get(i + 1).is_none_or(|n| n != "as"))
-    })
+    let points_back = lower.iter().enumerate().any(|(i, w)| {
+        matches!(
+            w.as_str(),
+            "this" | "these" | "those" | "also" | "subsequently" | "here"
+        ) || (w == "such" && lower.get(i + 1).is_none_or(|n| n != "as"))
+    });
+    let pronoun = lower.iter().position(|w| {
+        matches!(
+            w.as_str(),
+            "it" | "its" | "they" | "them" | "their" | "he" | "she" | "his" | "her"
+        )
+    });
+    let named_before = |p: usize| {
+        let before = lower[..p].join(" ");
+        forms.iter().any(|n| before.contains(n.as_str()))
+    };
+    points_back || pronoun.is_some_and(|p| !named_before(p))
 }
 
 /// Whether a sentence opens a caveat on the one before ("However, …").
@@ -115,17 +132,19 @@ fn word_count(text: &str) -> usize {
     text.split_whitespace().count()
 }
 
-/// The sentences of `snippets` a card may use, in order. A sentence that
+/// The sentences of `snippets` a card may use, in order, for a molecule
+/// called `names` (title and synonyms). A sentence that
 /// appears in two snippets is offered once, and one that leans on the sentence
 /// before it only if that one is offered too.
-pub fn offer<'a>(snippets: &[&'a Snippet]) -> Vec<Offered<'a>> {
+pub fn offer<'a>(snippets: &[&'a Snippet], names: &[&str]) -> Vec<Offered<'a>> {
+    let forms = name_forms(names);
     let mut out: Vec<Offered> = Vec::new();
     for (i, s) in snippets.iter().enumerate() {
         for (j, text) in sentences(&s.text).into_iter().enumerate() {
             let words = word_count(text);
             let repeat = out.iter().any(|o| tokens(o.text) == tokens(text));
             let stranded =
-                leans(text) && !out.iter().any(|o| o.snippet == i && o.position + 1 == j);
+                leans(text, &forms) && !out.iter().any(|o| o.snippet == i && o.position + 1 == j);
             if (MIN_SENTENCE_WORDS..=MAX_SENTENCE_WORDS).contains(&words)
                 && !repeat
                 && !stranded
@@ -444,6 +463,7 @@ pub fn chosen<'o, 'a>(
     offered: &'o [Offered<'a>],
     names: &[&str],
 ) -> Result<Vec<&'o Offered<'a>>, Vec<String>> {
+    let forms = name_forms(names);
     let mut problems = Vec::new();
     let mut picked: Vec<&Offered> = Vec::new();
     let mut too_long = 0;
@@ -455,7 +475,7 @@ pub fn chosen<'o, 'a>(
         // A sentence that leans on the one before ("It was…") brings that
         // one along; still the sources' own words.
         let mut chain = vec![o];
-        while let Some(first) = chain.last().filter(|c| leans(c.text))
+        while let Some(first) = chain.last().filter(|c| leans(c.text, &forms))
             && let Some(before) = offered
                 .iter()
                 .find(|p| p.snippet == first.snippet && p.position + 1 == first.position)
@@ -488,14 +508,13 @@ pub fn chosen<'o, 'a>(
     for (i, o) in picked.iter().enumerate() {
         let after_its_own =
             i > 0 && picked[i - 1].snippet == o.snippet && picked[i - 1].position + 1 == o.position;
-        if leans(o.text) && !after_its_own {
+        if leans(o.text, &forms) && !after_its_own {
             problems.push(format!(
                 "{} refers back to a sentence that can't be included",
                 o.id
             ));
         }
     }
-    let forms = name_forms(names);
     let text = picked
         .iter()
         .map(|o| o.text.to_lowercase())
@@ -561,7 +580,7 @@ mod tests {
         let a = s(HISTORY);
         let b = s(&format!("{} words.", "many ".repeat(50)));
         let c = s("He called it Kaffebase, a base that exists in coffee.");
-        let offered = offer(&[&a, &b, &c]);
+        let offered = offer(&[&a, &b, &c], NAMES);
         let ids: Vec<&str> = offered.iter().map(|o| o.id.as_str()).collect();
         assert_eq!(
             ids,
@@ -573,14 +592,14 @@ mod tests {
     #[test]
     fn a_leaning_sentence_brings_the_one_before_it() {
         let a = s(HISTORY);
-        let offered = offer(&[&a]);
+        let offered = offer(&[&a], NAMES);
         let with_before = chosen(&ids(&["s1.2"]), &offered, NAMES).unwrap();
         let got: Vec<&str> = with_before.iter().map(|o| o.id.as_str()).collect();
         assert_eq!(got, ["s1.1", "s1.2"]);
         // A sentence leaning on nothing offered isn't offered itself.
         let first =
             s("It was isolated by Runge in Germany in 1819. Runge called caffeine Kaffebase.");
-        let offered = offer(&[&first]);
+        let offered = offer(&[&first], NAMES);
         let got: Vec<&str> = offered.iter().map(|o| o.id.as_str()).collect();
         assert_eq!(got, ["s1.2"]);
         assert!(chosen(&ids(&["s9.1"]), &offered, NAMES).is_err());
@@ -591,16 +610,19 @@ mod tests {
             "Although caffeine was discovered in these fish, it is found elsewhere.",
             "The Quechua used the bark to treat such shivering.",
         ] {
-            assert!(leans(leaning), "{leaning}");
+            assert!(leans(leaning, &name_forms(NAMES)), "{leaning}");
         }
-        assert!(!leans("Caffeine is found in foods such as tea and coffee."));
+        assert!(!leans(
+            "Caffeine is found in foods such as tea and coffee.",
+            &name_forms(NAMES)
+        ));
     }
 
     #[test]
     fn picks_are_kept_in_order_while_the_card_is_short() {
         let long = |n: u32| format!("Caffeine {} end {n}.", "word ".repeat(40));
         let a = s(&format!("{} {} {}", long(1), long(2), long(3)));
-        let offered = offer(&[&a]);
+        let offered = offer(&[&a], NAMES);
         let picked = chosen(&ids(&["s1.3", "s1.1", "s1.2"]), &offered, NAMES).unwrap();
         let got: Vec<&str> = picked.iter().map(|o| o.id.as_str()).collect();
         assert_eq!(got, ["s1.1", "s1.3"], "the third no longer fits");
@@ -609,11 +631,14 @@ mod tests {
     #[test]
     fn context_rules() {
         for leaning in [
+            "The CDC says it is toxic to developing fetuses.",
+            "But its toxic effects prompted the search for safer derivatives.",
+            "Tu's team subsequently isolated an extract.",
             "Two were found to have weak herbicidal activity.",
             "Traces of vanillin were also found in wine jars in Jerusalem.",
             "Unknown at that time, this species did not make its own vitamin C.",
         ] {
-            assert!(leans(leaning), "{leaning}");
+            assert!(leans(leaning, &name_forms(NAMES)), "{leaning}");
         }
         assert!(points_outside(
             "It is the form at the bottom left of the diagram below."
@@ -622,7 +647,7 @@ mod tests {
         let a = s(
             "Nitroglycerin was found to be desensitized by freezing it. However, thawing can be extremely sensitizing.",
         );
-        let offered = offer(&[&a]);
+        let offered = offer(&[&a], &["nitroglycerin"]);
         let picked = chosen(&ids(&["s1.1"]), &offered, &["nitroglycerin"]).unwrap();
         assert_eq!(picked.len(), 2);
     }
@@ -630,11 +655,11 @@ mod tests {
     #[test]
     fn the_card_must_name_its_molecule() {
         let a = s("Acetanilide was the first aniline derivative found to relieve pain in 1886.");
-        let offered = offer(&[&a]);
+        let offered = offer(&[&a], NAMES);
         let err = chosen(&ids(&["s1.1"]), &offered, &["acetaminophen", "paracetamol"]).unwrap_err();
         assert_eq!(err, ["no chosen sentence names acetaminophen"]);
         let v = s("Ascorbic acid is found in citrus fruits and many green vegetables.");
-        let offered = offer(&[&v]);
+        let offered = offer(&[&v], NAMES);
         assert!(chosen(&ids(&["s1.1"]), &offered, &["L-Ascorbic Acid"]).is_ok());
     }
 
@@ -662,7 +687,7 @@ mod tests {
     #[test]
     fn the_card_is_the_sentences_verbatim() {
         let a = s(HISTORY);
-        let offered = offer(&[&a]);
+        let offered = offer(&[&a], NAMES);
         let picked = chosen(&ids(&["s1.1", "s1.2"]), &offered, NAMES).unwrap();
         let d = draft(&picked);
         assert_eq!(
@@ -676,7 +701,7 @@ mod tests {
     fn the_prompt_lists_numbered_sentences_and_the_schema_only_those_ids() {
         let a = s(HISTORY);
         let snippets = [&a];
-        let offered = offer(&snippets);
+        let offered = offer(&snippets, NAMES);
         let p = build(CardKind::Origin, "caffeine", &snippets, &offered, None);
         assert!(p.user.contains("  [s1.2] He called it Kaffebase"));
         assert!(!p.user.contains("Short one"));
@@ -692,7 +717,7 @@ mod tests {
             let ex = example(kind);
             let owned: Vec<Snippet> = ex.snippets.iter().map(|(_, t)| s(&t.join(" "))).collect();
             let refs: Vec<&Snippet> = owned.iter().collect();
-            let offered = offer(&refs);
+            let offered = offer(&refs, &[ex.molecule]);
             let Ok(Reply::Chosen(ids)) = parse(ex.reply) else {
                 panic!("{kind:?}")
             };
