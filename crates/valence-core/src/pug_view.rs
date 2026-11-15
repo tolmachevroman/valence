@@ -317,16 +317,17 @@ mod tests {
                 .into_iter()
                 .map(|s| s.text)
                 .collect();
-            let spike: Vec<&str> = fixture["snippets"]
+            // Cleaned as today: the spike kept citation markers like "(1)".
+            let spike: Vec<String> = fixture["snippets"]
                 .as_array()
                 .unwrap()
                 .iter()
                 .filter(|s| s["source"] == "pubchem_view" && s["section"] == heading)
-                .map(|s| s["text"].as_str().unwrap())
+                .map(|s| crate::text::clean(s["text"].as_str().unwrap()))
                 .collect();
             // The spike also dropped texts repeated across headings.
             assert!(
-                spike.iter().all(|t| ours.iter().any(|o| o == t)),
+                spike.iter().all(|t| ours.contains(t)),
                 "{heading}: {spike:#?}\nvs\n{ours:#?}"
             );
         }

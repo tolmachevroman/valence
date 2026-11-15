@@ -222,11 +222,13 @@ impl Vocabulary {
 
 /// Abbreviations usually followed by a name.
 const TITLES: &[&str] = &[
-    "Mr", "Mrs", "Ms", "Dr", "Prof", "St", "Sr", "Jr", "Rev", "Gen", "Capt",
+    "Mr", "Mrs", "Ms", "Dr", "Prof", "St", "Sr", "Jr", "Rev", "Gen", "Capt", "Messrs", "Mme",
+    "Mlle", "vs", "approx", "ca", "cf", "al", "Fig", "No", "Vol",
 ];
 
 /// Sentence ends in already-trimmed text, skipping the period after an
-/// initial or a title, as in "named by F. L. Alphonse" or "a Mr. Ingenhousz".
+/// initial, a title or an abbreviation, as in "named by F. L. Alphonse",
+/// "a Mr. Ingenhousz" or "(e.g. 0.9 to 2.6%)".
 fn sentence_ends(body: &str) -> impl Iterator<Item = regex::Match<'_>> {
     SENTENCE_END.find_iter(body).filter(|m| {
         let word = body[..m.start()]
@@ -234,7 +236,11 @@ fn sentence_ends(body: &str) -> impl Iterator<Item = regex::Match<'_>> {
             .next()
             .unwrap_or("");
         let initial = word.chars().count() == 1 && word.chars().all(char::is_uppercase);
-        !(m.as_str().starts_with('.') && (initial || TITLES.contains(&word)))
+        // The last letter of "e.g." or "i.e.".
+        let dotted = word.chars().count() == 1
+            && word.chars().all(char::is_lowercase)
+            && body[..m.start() - word.len()].ends_with('.');
+        !(m.as_str().starts_with('.') && (initial || dotted || TITLES.contains(&word)))
     })
 }
 
@@ -585,6 +591,15 @@ mod tests {
         assert_eq!(
             sentences("In 1777, a Mr. Ingenhousz saw it. Dr. Who did not."),
             ["In 1777, a Mr. Ingenhousz saw it.", "Dr. Who did not."]
+        );
+        assert_eq!(
+            sentences(
+                "It is natural (e.g. 0.9 to 2.6% in beans). Messrs. Pelletier and Caventou obtained it."
+            ),
+            [
+                "It is natural (e.g. 0.9 to 2.6% in beans).",
+                "Messrs. Pelletier and Caventou obtained it."
+            ]
         );
         // Known gap: a sentence ending in a single capital reads as an initial.
         assert_eq!(sentence_count("It is vitamin C. It is sour."), 1);

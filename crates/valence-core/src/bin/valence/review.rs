@@ -15,6 +15,7 @@ use valence_core::fetch::{Sources, fetch};
 use valence_core::ghs::Ghs;
 use valence_core::http::Http;
 use valence_core::pubchem::Compound;
+use valence_core::text::clean;
 
 use crate::Result;
 
@@ -56,7 +57,12 @@ pub fn load_all() -> Result<Vec<Fixture>> {
             let path = dir().join(format!("{}.json", slug(name)));
             let text = std::fs::read_to_string(&path)
                 .map_err(|e| format!("{}: {e}; run `valence review fetch`", path.display()))?;
-            Ok(serde_json::from_str(&text)?)
+            let mut f: Fixture = serde_json::from_str(&text)?;
+            // Saved with an older cleanup, perhaps; cleaning twice changes nothing.
+            for s in &mut f.snippets {
+                s.text = clean(&s.text);
+            }
+            Ok(f)
         })
         .collect()
 }
@@ -163,16 +169,23 @@ mod run {
             let outcome = if kind == CardKind::Danger {
                 Ok(cards::danger(name, &f.snippets).map_or(Outcome::NoInput, Outcome::Card))
             } else {
-                cards::card(model, kind, name, &f.snippets, &mut |e| match e {
-                    Event::Draft { .. } => {
-                        first_text.get_or_insert_with(|| start.elapsed().as_secs_f64());
-                    }
-                    Event::Retrying { problems } => {
-                        retried = true;
-                        rejected.extend(problems);
-                    }
-                    _ => {}
-                })
+                cards::card(
+                    model,
+                    kind,
+                    name,
+                    &f.compound.synonyms,
+                    &f.snippets,
+                    &mut |e| match e {
+                        Event::Draft { .. } => {
+                            first_text.get_or_insert_with(|| start.elapsed().as_secs_f64());
+                        }
+                        Event::Retrying { problems } => {
+                            retried = true;
+                            rejected.extend(problems);
+                        }
+                        _ => {}
+                    },
+                )
                 .await
             };
             let done = start.elapsed().as_secs_f64();

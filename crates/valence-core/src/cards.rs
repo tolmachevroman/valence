@@ -8,8 +8,10 @@ use crate::card::{CardDraft, CardKind, Snippet};
 use crate::generate::{Generate, GenerateError, Request};
 use crate::{extract, ghs, select};
 
-/// A title and up to three sentence ids.
-const CHOICE_TOKENS: usize = 60;
+/// Up to three sentence ids.
+const CHOICE_TOKENS: usize = 40;
+/// A title of up to eight words.
+const TITLE_TOKENS: usize = 40;
 /// Lowered from 0.6 in M0.6b for faithfulness to the snippets.
 pub const TEMPERATURE: f64 = 0.2;
 
@@ -242,14 +244,16 @@ pub fn danger(molecule: &str, snippets: &[Snippet]) -> Option<Card> {
     })
 }
 
-/// Generate one card about `molecule` from its snippets: the model chooses
-/// sentences and writes a title (`extract`), the choice is checked, and a
-/// rejected choice is retried once with its problems. A title that fails
-/// twice is left off; a choice that fails twice drops the card.
+/// Generate one card about `molecule` from its snippets (`extract`): the
+/// model chooses sentences, the choice is checked and retried once with its
+/// problems, then the model picks a title from the excerpts allowed for those
+/// sentences. A choice that fails twice drops the card; with no title
+/// allowed or chosen, the card shows without one.
 pub async fn card<G: Generate>(
     model: &G,
     kind: CardKind,
     molecule: &str,
+    also_called: &[String],
     snippets: &[Snippet],
     on_event: &mut (dyn FnMut(Event) + Send),
 ) -> Result<Outcome, GenerateError> {
@@ -261,10 +265,14 @@ pub async fn card<G: Generate>(
     if offered.is_empty() {
         return Ok(Outcome::NoInput);
     }
+    let names: Vec<&str> = std::iter::once(molecule)
+        .chain(also_called.iter().map(String::as_str))
+        .collect();
 
     on_event(Event::Writing);
     let mut problems: Option<Vec<String>> = None;
-    for attempt in 0..2 {
+    let mut chosen = None;
+    for _ in 0..2 {
         if let Some(p) = &problems {
             on_event(Event::Retrying {
                 problems: p.clone(),
@@ -277,62 +285,74 @@ pub async fn card<G: Generate>(
             temperature: TEMPERATURE,
         };
         let mut text = String::new();
-        let mut shown = (String::new(), String::new());
+        let mut shown = String::new();
         let g = model
             .generate(request, &mut |piece| {
                 text.push_str(piece);
-                let title = partial_string(&text, "title").unwrap_or_default();
                 let body = extract::partial_ids(&text)
                     .iter()
                     .filter_map(|id| offered.iter().find(|o| &o.id == id))
                     .map(|o| o.text)
                     .collect::<Vec<_>>()
                     .join(" ");
-                let now = (title, body);
-                if now != shown && !now.0.is_empty() {
-                    shown = now.clone();
+                if body != shown {
+                    shown = body.clone();
                     on_event(Event::Draft {
-                        title: now.0,
-                        body: now.1,
+                        title: String::new(),
+                        body,
                     });
                 }
             })
             .await?;
-
-        let (title, ids) = match extract::parse(&g.text) {
+        let ids = match extract::parse(&g.text) {
             Ok(extract::Reply::Skip) => return Ok(Outcome::Skipped),
-            Ok(extract::Reply::Chosen { title, ids }) => (title, ids),
+            Ok(extract::Reply::Chosen(ids)) => ids,
             Err(e) => {
                 problems = Some(vec![e]);
                 continue;
             }
         };
-        let chosen = match extract::chosen(&ids, &offered) {
-            Ok(chosen) => chosen,
-            Err(p) => {
-                problems = Some(p);
-                continue;
+        match extract::chosen(&ids, &offered, &names) {
+            Ok(c) => {
+                chosen = Some(c);
+                break;
             }
-        };
-        let title_problems = extract::title_problems(&title, &chosen, molecule);
-        if title_problems.is_empty() {
-            return Ok(Outcome::Card(finished(
-                kind,
-                extract::draft(&title, &chosen),
-                &picked,
-            )));
+            Err(p) => problems = Some(p),
         }
-        if attempt == 1 {
-            // The sentences are fine on their own; show them without a title.
-            return Ok(Outcome::Card(finished(
-                kind,
-                extract::draft("", &chosen),
-                &picked,
-            )));
-        }
-        problems = Some(title_problems);
     }
-    Ok(Outcome::Dropped(problems.unwrap_or_default()))
+    let Some(chosen) = chosen else {
+        return Ok(Outcome::Dropped(problems.unwrap_or_default()));
+    };
+
+    let body = chosen.iter().map(|o| o.text).collect::<Vec<_>>().join(" ");
+    let titles = extract::titles(&chosen);
+    let mut title = String::new();
+    if !titles.is_empty() {
+        let request = Request {
+            prompt: extract::build_title(kind, molecule, &chosen),
+            schema: extract::title_schema(&titles),
+            max_tokens: TITLE_TOKENS,
+            temperature: TEMPERATURE,
+        };
+        let mut text = String::new();
+        let g = model
+            .generate(request, &mut |piece| {
+                text.push_str(piece);
+                if let Some(t) = partial_string(&text, "title").filter(|t| !t.is_empty()) {
+                    on_event(Event::Draft {
+                        title: t,
+                        body: body.clone(),
+                    });
+                }
+            })
+            .await?;
+        title = extract::parse_title(&g.text, &titles).unwrap_or_default();
+    }
+    Ok(Outcome::Card(finished(
+        kind,
+        extract::draft(&title, &chosen),
+        &picked,
+    )))
 }
 
 /// The value of string field `key` in JSON that may stop anywhere: complete,
@@ -446,13 +466,14 @@ mod tests {
     }
 
     /// The History snippet has one sentence, offered as s1.1.
-    const GOOD: &str = r#"{"title": "First extracted in 1816", "sentences": ["s1.1"]}"#;
+    const CHOICE: &str = r#"{"sentences": ["s1.1"]}"#;
+    const TITLE: &str = r#"{"title": "first extracted in impure form"}"#;
     const HISTORY: &str =
         "Capsaicin was first extracted in impure form in 1816 by Christian Friedrich Bucholz.";
 
     async fn run(model: &Scripted, kind: CardKind) -> (Outcome, Vec<Event>) {
         let mut events = Vec::new();
-        let outcome = card(model, kind, "capsaicin", &capsaicin(), &mut |e| {
+        let outcome = card(model, kind, "capsaicin", &[], &capsaicin(), &mut |e| {
             events.push(e)
         })
         .await
@@ -462,12 +483,12 @@ mod tests {
 
     #[tokio::test]
     async fn a_card_is_the_chosen_sentences_verbatim() {
-        let model = Scripted::new(&[GOOD]);
+        let model = Scripted::new(&[CHOICE, TITLE]);
         let (outcome, events) = run(&model, CardKind::Origin).await;
         let Outcome::Card(card) = outcome else {
             panic!("{outcome:?}")
         };
-        assert_eq!(card.title, "First extracted in 1816");
+        assert_eq!(card.title, "first extracted in impure form");
         assert_eq!(card.body, HISTORY);
         assert_eq!(
             card.sources,
@@ -485,21 +506,18 @@ mod tests {
                 _ => None,
             })
             .collect();
-        assert!(drafts.len() > 2, "streamed: {drafts:?}");
-        assert_eq!(drafts.last().unwrap().1, card.body);
-        assert_eq!(model.asked().len(), 1, "one request per card");
+        assert_eq!(
+            drafts[0],
+            (String::new(), HISTORY.to_string()),
+            "body first"
+        );
+        assert_eq!(drafts.last().unwrap().0, card.title, "then the title");
+        assert_eq!(model.asked().len(), 2, "a choice and a title");
     }
 
     #[tokio::test]
-    async fn a_title_with_foreign_words_is_retried_then_left_off() {
-        let hype = r#"{"title": "Hot pepper chemist strikes gold", "sentences": ["s1.1"]}"#;
-        let model = Scripted::new(&[hype, GOOD]);
-        let (outcome, events) = run(&model, CardKind::Origin).await;
-        assert!(matches!(&outcome, Outcome::Card(c) if c.title == "First extracted in 1816"));
-        assert!(events.iter().any(|e| matches!(e, Event::Retrying { .. })));
-        assert!(model.asked()[1].contains("not in the chosen sentences: Hot, pepper"));
-
-        let model = Scripted::new(&[hype, hype]);
+    async fn a_title_outside_the_allowed_excerpts_is_left_off() {
+        let model = Scripted::new(&[CHOICE, r#"{"title": "Hot pepper chemist strikes gold"}"#]);
         let Outcome::Card(card) = run(&model, CardKind::Origin).await.0 else {
             panic!()
         };
@@ -508,7 +526,7 @@ mod tests {
 
     #[tokio::test]
     async fn a_bad_choice_is_retried_then_dropped() {
-        let unknown = r#"{"title": "First extracted", "sentences": ["s1.7"]}"#;
+        let unknown = r#"{"sentences": ["s1.7"]}"#;
         let model = Scripted::new(&[unknown, unknown]);
         let (outcome, _) = run(&model, CardKind::Origin).await;
         assert_eq!(
@@ -567,11 +585,12 @@ mod tests {
         };
         assert_eq!(cached(&cache, CardKind::Origin, &snippets), Cached::Missing);
 
-        let model = Scripted::new(&[GOOD]);
+        let model = Scripted::new(&[CHOICE, TITLE]);
         let outcome = card(
             &model,
             CardKind::Origin,
             "Capsaicin",
+            &[],
             &snippets,
             &mut |_| {},
         )

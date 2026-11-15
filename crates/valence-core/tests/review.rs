@@ -89,7 +89,11 @@ fn review_set_selection() {
         let slug = name.to_lowercase().replace([' ', ','], "-");
         let text = std::fs::read_to_string(review_dir().join(format!("{slug}.json")))
             .unwrap_or_else(|e| panic!("{slug}.json: {e}; run `valence review fetch`"));
-        let f: Fixture = serde_json::from_str(&text).unwrap();
+        let mut f: Fixture = serde_json::from_str(&text).unwrap();
+        // Saved with an older cleanup, perhaps; cleaning twice changes nothing.
+        for s in &mut f.snippets {
+            s.text = valence_core::text::clean(&s.text);
+        }
         insta::assert_snapshot!(slug, summary(&f));
     }
 }

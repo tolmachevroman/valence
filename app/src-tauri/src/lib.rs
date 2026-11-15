@@ -311,7 +311,15 @@ async fn write_cards(state: &AppState, m: &Molecule, on_event: &Channel<Molecule
             continue;
         };
         let mut on_card_event = |e| send(MoleculeEvent::from_card_event(kind, e));
-        let outcome = cards::card(model, kind, name, &m.snippets, &mut on_card_event).await;
+        let outcome = cards::card(
+            model,
+            kind,
+            name,
+            &m.compound.synonyms,
+            &m.snippets,
+            &mut on_card_event,
+        )
+        .await;
         let outcome = match outcome {
             Ok(outcome) => outcome,
             Err(e) => {

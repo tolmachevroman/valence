@@ -253,18 +253,25 @@ async fn cards(args: &Args, cache_path: PathBuf) -> Result<()> {
         let outcome = if kind == CardKind::Danger {
             cards::danger(name, &m.snippets).map_or(Outcome::NoInput, Outcome::Card)
         } else {
-            cards::card(&model, kind, name, &m.snippets, &mut |e| match e {
-                Event::Draft { .. } => {
-                    first_text.get_or_insert_with(t);
-                }
-                Event::Retrying { problems } => eprintln!(
-                    "{:6.2} s  {} retrying: {}",
-                    t(),
-                    kind.as_str(),
-                    problems.join("; ")
-                ),
-                _ => {}
-            })
+            cards::card(
+                &model,
+                kind,
+                name,
+                &m.compound.synonyms,
+                &m.snippets,
+                &mut |e| match e {
+                    Event::Draft { .. } => {
+                        first_text.get_or_insert_with(t);
+                    }
+                    Event::Retrying { problems } => eprintln!(
+                        "{:6.2} s  {} retrying: {}",
+                        t(),
+                        kind.as_str(),
+                        problems.join("; ")
+                    ),
+                    _ => {}
+                },
+            )
             .await?
         };
         let first = first_text.map_or(String::new(), |f| format!(", first text at {f:.2} s"));

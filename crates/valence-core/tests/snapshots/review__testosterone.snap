@@ -24,12 +24,8 @@ origin:
   [19] wikipedia / History and production: In 1927, the University of Chicago's Professor of Physiologic Chemistr…
 
 danger:
-  Official signal word: Danger
-  Testosterone carries "Danger", the stronger of the two GHS signal words, used for the more severe hazard categories. A minority of company reports add 5 more hazards, not listed here.
-  - H302: Harmful if swallowed
-  - H351: Suspected of causing cancer
-  - H360: May damage fertility or the unborn child
-  - H400: Very toxic to aquatic life
+  Not classified as hazardous
+  Testosterone is not classified as hazardous under the official GHS system in the data PubChem lists. That is a regulatory label, not a promise of safety.
 
 weird:
   [9] wikipedia / Biological effects: In general, androgens such as testosterone promote protein synthesis a…
