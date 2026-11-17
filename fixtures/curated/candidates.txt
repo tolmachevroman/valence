@@ -1,0 +1,1147 @@
+# Candidates for "Surprise me": molecules likely to have a story.
+# `valence curate` keeps those with an origin story and input for 3+ cards
+# and writes app/src/curated.json. One PubChem name per line.
+
+# Medicines
+acetaminophen
+aspirin
+ibuprofen
+naproxen
+diclofenac
+celecoxib
+morphine
+codeine
+heroin
+fentanyl
+methadone
+oxycodone
+naloxone
+tramadol
+buprenorphine
+benzylpenicillin
+amoxicillin
+ampicillin
+methicillin
+cephalexin
+vancomycin
+streptomycin
+tetracycline
+doxycycline
+erythromycin
+azithromycin
+chloramphenicol
+ciprofloxacin
+sulfanilamide
+prontosil
+isoniazid
+rifampicin
+metronidazole
+nitrofurantoin
+quinine
+chloroquine
+hydroxychloroquine
+artemisinin
+mefloquine
+ivermectin
+praziquantel
+penicillamine
+warfarin
+heparin
+dicoumarol
+clopidogrel
+digoxin
+digitoxin
+atropine
+scopolamine
+hyoscyamine
+ephedrine
+pseudoephedrine
+salbutamol
+theophylline
+propranolol
+atenolol
+captopril
+enalapril
+lisinopril
+losartan
+amlodipine
+nifedipine
+verapamil
+furosemide
+hydrochlorothiazide
+spironolactone
+metformin
+insulin
+glibenclamide
+atorvastatin
+lovastatin
+simvastatin
+fluoxetine
+sertraline
+imipramine
+amitriptyline
+iproniazid
+lithium carbonate
+chlorpromazine
+haloperidol
+clozapine
+diazepam
+chlordiazepoxide
+alprazolam
+lorazepam
+midazolam
+zolpidem
+phenobarbital
+thiopental
+pentobarbital
+methaqualone
+meprobamate
+phenytoin
+valproic acid
+carbamazepine
+gabapentin
+pregabalin
+levodopa
+carbidopa
+donepezil
+galantamine
+memantine
+methylphenidate
+modafinil
+sildenafil
+tadalafil
+finasteride
+minoxidil
+omeprazole
+ranitidine
+cimetidine
+loratadine
+diphenhydramine
+cetirizine
+dextromethorphan
+loperamide
+thalidomide
+lenalidomide
+tamoxifen
+cisplatin
+methotrexate
+fluorouracil
+paclitaxel
+vincristine
+vinblastine
+doxorubicin
+imatinib
+camptothecin
+colchicine
+allopurinol
+prednisone
+cortisone
+hydrocortisone
+dexamethasone
+acyclovir
+zidovudine
+oseltamivir
+remdesivir
+sofosbuvir
+azathioprine
+cyclosporine
+tacrolimus
+sirolimus
+mitomycin
+bleomycin
+nitrous oxide
+diethyl ether
+chloroform
+halothane
+sevoflurane
+lidocaine
+procaine
+benzocaine
+ketamine
+propofol
+curare
+tubocurarine
+succinylcholine
+botulinum toxin
+mifepristone
+levonorgestrel
+norethisterone
+ethinylestradiol
+clomifene
+misoprostol
+oxytocin
+vasopressin
+nitroglycerin
+amyl nitrite
+disulfiram
+acamprosate
+varenicline
+bupropion
+orlistat
+semaglutide
+dapsone
+clofazimine
+suramin
+pentamidine
+miltefosine
+emetine
+ipecac
+mercurochrome
+gentian violet
+salvarsan
+bismuth subsalicylate
+calamine
+zinc oxide
+magnesium sulfate
+potassium iodide
+silver sulfadiazine
+benzoyl peroxide
+salicylic acid
+tretinoin
+isotretinoin
+hydroquinone
+methoxsalen
+psoralen
+
+# Hormones, neurotransmitters, body chemistry
+adrenaline
+noradrenaline
+dopamine
+serotonin
+melatonin
+acetylcholine
+histamine
+gamma-aminobutyric acid
+glutamic acid
+glycine
+anandamide
+endorphin
+testosterone
+estradiol
+progesterone
+cortisol
+aldosterone
+thyroxine
+triiodothyronine
+dihydrotestosterone
+cholesterol
+bilirubin
+biliverdin
+heme
+urea
+uric acid
+creatine
+creatinine
+lactic acid
+adenosine triphosphate
+nicotinamide adenine dinucleotide
+glutathione
+nitric oxide
+carbon dioxide
+ketone bodies
+acetone
+beta-hydroxybutyric acid
+prostaglandin E2
+leukotriene B4
+thromboxane A2
+cadaverine
+putrescine
+skatole
+indole
+trimethylamine
+methanethiol
+hydrogen sulfide
+ammonia
+squalene
+retinal
+rhodopsin
+luciferin
+coelenterazine
+green fluorescent protein
+hemoglobin
+myoglobin
+chlorophyll a
+carotene
+beta-carotene
+lutein
+zeaxanthin
+astaxanthin
+melanin
+eumelanin
+keratin
+collagen
+
+# Vitamins and nutrients
+retinol
+thiamine
+riboflavin
+niacin
+pantothenic acid
+pyridoxine
+biotin
+folic acid
+cyanocobalamin
+ascorbic acid
+cholecalciferol
+ergocalciferol
+tocopherol
+phylloquinone
+menaquinone
+choline
+inositol
+carnitine
+taurine
+coenzyme Q10
+lipoic acid
+omega-3 fatty acid
+docosahexaenoic acid
+eicosapentaenoic acid
+linoleic acid
+alpha-linolenic acid
+oleic acid
+palmitic acid
+stearic acid
+arachidonic acid
+butyric acid
+caproic acid
+lauric acid
+
+# Amino acids
+alanine
+arginine
+asparagine
+aspartic acid
+cysteine
+glutamine
+histidine
+isoleucine
+leucine
+lysine
+methionine
+phenylalanine
+proline
+serine
+threonine
+tryptophan
+tyrosine
+valine
+selenocysteine
+ornithine
+citrulline
+theanine
+beta-alanine
+
+# Sugars and sweeteners
+glucose
+fructose
+galactose
+sucrose
+lactose
+maltose
+trehalose
+ribose
+deoxyribose
+xylitol
+sorbitol
+erythritol
+mannitol
+cellulose
+starch
+amylose
+glycogen
+chitin
+inulin
+pectin
+saccharin
+aspartame
+sucralose
+acesulfame potassium
+cyclamate
+stevioside
+rebaudioside A
+glycyrrhizin
+mogroside V
+neotame
+advantame
+thaumatin
+miraculin
+brazzein
+tagatose
+allulose
+isomalt
+neohesperidin dihydrochalcone
+
+# Food, flavor and smell
+caffeine
+theobromine
+theophylline
+capsaicin
+piperine
+gingerol
+shogaol
+allicin
+alliin
+ajoene
+diallyl disulfide
+allyl isothiocyanate
+sinigrin
+syn-propanethial-S-oxide
+menthol
+carvone
+limonene
+pinene
+myrcene
+linalool
+geraniol
+citral
+citronellal
+eugenol
+cinnamaldehyde
+vanillin
+ethylvanillin
+coumarin
+benzaldehyde
+anethole
+estragole
+safrole
+thymol
+carvacrol
+camphor
+eucalyptol
+borneol
+nootkatone
+rotundone
+geosmin
+2-methylisoborneol
+petrichor
+furaneol
+sotolon
+maltol
+diacetyl
+acetoin
+2-acetyl-1-pyrroline
+methional
+isoamyl acetate
+ethyl butyrate
+methyl salicylate
+methyl anthranilate
+gamma-decalactone
+raspberry ketone
+damascenone
+beta-ionone
+cis-3-hexenol
+hexanal
+acrolein
+acrylamide
+monosodium glutamate
+inosinic acid
+guanylic acid
+quinine
+naringin
+limonin
+humulone
+lupulone
+xanthohumol
+catechin
+epigallocatechin gallate
+theaflavin
+chlorogenic acid
+trigonelline
+quercetin
+resveratrol
+curcumin
+anthocyanin
+cyanidin
+betanin
+lycopene
+capsanthin
+bixin
+crocin
+safranal
+carmine
+carminic acid
+annatto
+tartrazine
+allura red AC
+erythrosine
+brilliant blue FCF
+caramel
+citric acid
+malic acid
+tartaric acid
+acetic acid
+lactic acid
+fumaric acid
+succinic acid
+oxalic acid
+phosphoric acid
+sodium bicarbonate
+sodium chloride
+potassium chloride
+calcium carbonate
+agar
+gelatin
+lecithin
+xanthan gum
+carrageenan
+trimethylamine N-oxide
+ethanol
+methanol
+isopropanol
+glycerol
+propylene glycol
+ethylene glycol
+diethylene glycol
+histamine
+tyramine
+phenethylamine
+solanine
+tomatine
+cucurbitacin
+amygdalin
+linamarin
+patulin
+aflatoxin B1
+ochratoxin A
+ergotamine
+ergine
+myristicin
+thujone
+absinthin
+quassin
+denatonium benzoate
+gymnemic acid
+hydroxycitric acid
+sesamol
+oleocanthal
+hydroxytyrosol
+oleuropein
+sulforaphane
+glucoraphanin
+indole-3-carbinol
+lignin
+tannic acid
+gallic acid
+ellagic acid
+phytic acid
+
+# Smells and pheromones
+muscone
+civetone
+ambroxide
+ambergris
+iso E super
+galaxolide
+hedione
+calone
+bombykol
+androstenone
+androstadienone
+nepetalactone
+actinidine
+valerenic acid
+isovaleric acid
+butyl mercaptan
+thioacetone
+ethyl mercaptan
+tert-butylthiol
+trans-2-butene-1-thiol
+methyl jasmonate
+jasmone
+indole
+skatole
+cis-jasmone
+rose oxide
+
+# Plants, poisons and natural toxins
+nicotine
+cocaine
+atropine
+strychnine
+brucine
+aconitine
+coniine
+cicutoxin
+oenanthotoxin
+ricin
+abrin
+digitalin
+oleandrin
+ouabain
+convallatoxin
+taxol
+taxine
+colchicine
+podophyllotoxin
+cytisine
+lobeline
+sparteine
+lupinine
+pyrrolizidine
+senecionine
+cyanide
+hydrogen cyanide
+potassium cyanide
+arsenic trioxide
+mercury
+strontium
+thallium sulfate
+polonium
+cantharidin
+tetrodotoxin
+saxitoxin
+batrachotoxin
+epibatidine
+pumiliotoxin
+bufotoxin
+bufotenin
+palytoxin
+maitotoxin
+ciguatoxin
+brevetoxin
+domoic acid
+okadaic acid
+conotoxin
+alpha-bungarotoxin
+apamin
+melittin
+histrionicotoxin
+samandarin
+anatoxin-a
+microcystin-LR
+cylindrospermopsin
+muscarine
+muscimol
+ibotenic acid
+amatoxin
+alpha-amanitin
+phalloidin
+orellanine
+coprine
+gyromitrin
+psilocybin
+psilocin
+mescaline
+dimethyltryptamine
+harmine
+harmaline
+ibogaine
+salvinorin A
+lysergic acid diethylamide
+lysergic acid
+tetrahydrocannabinol
+cannabidiol
+cannabinol
+kavain
+mitragynine
+cathinone
+arecoline
+khat
+myristicin
+thebaine
+papaverine
+noscapine
+berberine
+sanguinarine
+chelidonine
+galanthamine
+huperzine A
+physostigmine
+pilocarpine
+reserpine
+yohimbine
+vinpocetine
+camptothecin
+emodin
+aloin
+hypericin
+hyperforin
+ginkgolide B
+ginsenoside Rb1
+glycyrrhizic acid
+stevioside
+rotenone
+pyrethrin I
+azadirachtin
+nicotine sulfate
+caffeic acid
+salicin
+juglone
+urushiol
+hypoglycin A
+cycasin
+beta-N-methylamino-L-alanine
+oxalic acid
+calcium oxalate
+cucurbitacin E
+ptaquiloside
+fluoroacetic acid
+sodium fluoroacetate
+gossypol
+grayanotoxin
+andromedotoxin
+tutin
+picrotoxin
+bicuculline
+anisatin
+thapsigargin
+ryanodine
+veratridine
+cyclopamine
+jervine
+batrachotoxinin A
+chaconine
+solasodine
+diosgenin
+digitonin
+saponin
+glycoalkaloid
+
+# Explosives, fuels and industry
+trinitrotoluene
+nitrocellulose
+picric acid
+RDX
+HMX
+PETN
+ammonium nitrate
+potassium nitrate
+black powder
+lead azide
+mercury fulminate
+triacetone triperoxide
+nitroglycol
+hexanitrohexaazaisowurtzitane
+octanitrocubane
+hydrazine
+unsymmetrical dimethylhydrazine
+dinitrogen tetroxide
+hydrogen peroxide
+ammonium perchlorate
+methane
+ethane
+propane
+butane
+isobutane
+octane
+isooctane
+benzene
+toluene
+xylene
+naphthalene
+anthracene
+styrene
+ethylene
+propylene
+acetylene
+butadiene
+isoprene
+vinyl chloride
+tetrafluoroethylene
+chloroprene
+acrylonitrile
+caprolactam
+adipic acid
+hexamethylenediamine
+terephthalic acid
+bisphenol A
+phthalic anhydride
+diethylhexyl phthalate
+melamine
+formaldehyde
+phenol
+urethane
+toluene diisocyanate
+methyl isocyanate
+phosgene
+chlorine
+bromine
+iodine
+fluorine
+ozone
+sulfuric acid
+nitric acid
+hydrochloric acid
+hydrofluoric acid
+sodium hydroxide
+calcium hydroxide
+calcium oxide
+sodium carbonate
+ammonium chloride
+sodium hypochlorite
+chlorine dioxide
+potassium permanganate
+potassium dichromate
+chromium trioxide
+titanium dioxide
+silicon dioxide
+silicon carbide
+boron nitride
+aluminium oxide
+iron(III) oxide
+magnetite
+copper sulfate
+silver nitrate
+silver chloride
+gold chloride
+lead tetraethyl
+tetraethyllead
+methyl tert-butyl ether
+ethylene oxide
+propylene oxide
+dioxane
+tetrahydrofuran
+dimethyl sulfoxide
+dimethylformamide
+acetonitrile
+carbon tetrachloride
+dichloromethane
+trichloroethylene
+tetrachloroethylene
+freon-12
+dichlorodifluoromethane
+trichlorofluoromethane
+sulfur hexafluoride
+nitrogen trifluoride
+carbon disulfide
+carbon monoxide
+hydrogen
+helium
+neon
+argon
+xenon
+radon
+nitrogen
+oxygen
+water
+heavy water
+deuterium oxide
+hydrogen chloride
+sodium azide
+sodium metal
+calcium carbide
+white phosphorus
+red phosphorus
+phosphine
+arsine
+silane
+diborane
+nickel tetracarbonyl
+iron pentacarbonyl
+ferrocene
+uranium hexafluoride
+plutonium dioxide
+thorium dioxide
+cesium chloride
+lithium hydride
+sodium thiosulfate
+sodium silicate
+borax
+boric acid
+alum
+gypsum
+calcium sulfate
+plaster of paris
+quicklime
+saltpeter
+sal ammoniac
+cinnabar
+vermilion
+realgar
+orpiment
+galena
+pyrite
+malachite
+azurite
+fluorite
+cryolite
+corundum
+graphite
+diamond
+graphene
+fullerene
+buckminsterfullerene
+carbon nanotube
+
+# Pigments and dyes
+indigo
+tyrian purple
+mauveine
+alizarin
+purpurin
+Prussian blue
+Egyptian blue
+Han purple
+Scheele's green
+Paris green
+lead white
+red lead
+chrome yellow
+cadmium yellow
+cobalt blue
+ultramarine
+smalt
+verdigris
+lapis lazuli
+YInMn blue
+phthalocyanine blue
+quinacridone
+fluorescein
+rhodamine B
+eosin
+methylene blue
+crystal violet
+malachite green
+Congo red
+methyl orange
+phenolphthalein
+bromothymol blue
+litmus
+aniline
+azobenzene
+para-phenylenediamine
+henna
+lawsone
+juglone
+hematoxylin
+brazilin
+logwood
+saffron
+gamboge
+luminol
+dioxetane
+tris(bipyridine)ruthenium(II) chloride
+quinine sulfate
+
+# Pesticides and agriculture
+DDT
+dieldrin
+aldrin
+chlordane
+lindane
+endosulfan
+mirex
+malathion
+parathion
+chlorpyrifos
+diazinon
+carbaryl
+aldicarb
+imidacloprid
+clothianidin
+fipronil
+permethrin
+glyphosate
+paraquat
+diquat
+atrazine
+2,4-dichlorophenoxyacetic acid
+2,4,5-trichlorophenoxyacetic acid
+2,3,7,8-tetrachlorodibenzo-p-dioxin
+dicamba
+metolachlor
+strychnine sulfate
+warfarin sodium
+brodifacoum
+zinc phosphide
+methyl bromide
+sulfuryl fluoride
+ethylene dibromide
+dibromochloropropane
+copper(II) sulfate
+Bordeaux mixture
+lime sulfur
+neonicotinoid
+spinosad
+Bacillus thuringiensis toxin
+gibberellic acid
+indole-3-acetic acid
+abscisic acid
+ethephon
+cytokinin
+zeatin
+kinetin
+jasmonic acid
+salicylic acid
+strigol
+urea
+ammonium sulfate
+superphosphate
+potash
+
+# Plastics, materials and everyday chemistry
+polyethylene
+polypropylene
+polystyrene
+polyvinyl chloride
+polytetrafluoroethylene
+nylon 6,6
+Kevlar
+polyethylene terephthalate
+polycarbonate
+polymethyl methacrylate
+methyl methacrylate
+cyanoacrylate
+ethyl cyanoacrylate
+epoxy
+bakelite
+neoprene
+silicone
+polydimethylsiloxane
+natural rubber
+gutta-percha
+sodium lauryl sulfate
+sodium stearate
+triclosan
+chlorhexidine
+hexachlorophene
+benzalkonium chloride
+hydrogen peroxide
+sodium percarbonate
+oxybenzone
+avobenzone
+octocrylene
+para-aminobenzoic acid
+DEET
+icaridin
+naphthalene
+paradichlorobenzene
+sodium fluoride
+stannous fluoride
+hydroxyapatite
+fluoroapatite
+sodium benzoate
+potassium sorbate
+butylated hydroxytoluene
+butylated hydroxyanisole
+sodium nitrite
+sodium nitrate
+sulfur dioxide
+perfluorooctanoic acid
+perfluorooctanesulfonic acid
+polychlorinated biphenyl
+asbestos
+tributyltin
+methylmercury
+dimethylmercury
+mercury(II) chloride
+lead(II) acetate
+arsenic
+cadmium
+beryllium
+radium
+
+# Weapons and war history
+mustard gas
+lewisite
+chloropicrin
+phosgene
+diphosgene
+hydrogen cyanide
+Agent Orange
+napalm
+Zyklon B
+CS gas
+CN gas
+capsaicin
+white phosphorus
+thermite
+
+# Odd and record-setting molecules
+cubane
+prismane
+dodecahedrane
+tetrahedrane
+basketane
+twistane
+adamantane
+diamantane
+triangulane
+pagodane
+olympiadane
+catenane
+rotaxane
+kekulene
+circulene
+corannulene
+coronene
+helicene
+triptycene
+barrelene
+bullvalene
+fenestrane
+propellane
+bicyclobutane
+cyclopropane
+cyclobutadiene
+benzyne
+tropylium
+azulene
+pentacene
+porphyrin
+cryptand
+18-crown-6
+cyclodextrin
+calixarene
+dendrimer
+nanoputian
+anthropomorphic molecule
+penguinone
+moronic acid
+arsole
+fucitol
+megaphone
+mirasorvone
+traumatic acid
+erinacine
+vomitoxin
+cadaverine
+putrescine
+spermine
+spermidine
+diethyl azodicarboxylate
+dioxygen difluoride
+chlorine trifluoride
+azidoazide azide
+tetraazidomethane
+octaazacubane
+nitrogen triiodide
+acetone peroxide
+dimethylcadmium
+fluoroantimonic acid
+magic acid
+carborane acid
+triflic acid
+sodium hydride
+superoxide
+hydroxyl radical
+peroxynitrite
+diatomic carbon
+cyclo[18]carbon
+oxocarbon
+buckyball
+deuterated methane
+methane clathrate
+hexamethylbenzene
+hexaphenylbenzene
+tetraphenylporphyrin
+borazine
+inorganic benzene
+xenon hexafluoroplatinate
+xenon difluoride
+xenon tetrafluoride
+argon fluorohydride
+helium hydride ion
+trihydrogen cation
+positronium
+water dimer
+hexacyanoferrate
+cisplatin
+transplatin
+Zeise's salt
+vitamin B12
+tetrodotoxin
+maitotoxin
+taxol
+brevetoxin
+palytoxin

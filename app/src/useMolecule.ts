@@ -15,6 +15,7 @@ export interface CardSlot {
 }
 
 export interface MoleculeState {
+  /** What was searched for, or the name of a "Surprise me" pick. */
   query: string
   status: 'loading' | 'done' | 'error'
   compound?: Compound
@@ -46,14 +47,15 @@ export function useMolecule() {
   // Each open gets a number; events from an older open are dropped.
   const current = useRef(0)
 
-  const open = useCallback((query: string) => {
+  /** Open `query` (a name, CAS number or CID), shown as `name` until the header arrives. */
+  const open = useCallback((query: string, name = query) => {
     const request = ++current.current
     const update = (change: (m: MoleculeState) => Partial<MoleculeState>) => {
       if (request === current.current) setMolecule((m) => (m ? { ...m, ...change(m) } : m))
     }
     const card = (kind: CardKind, change: (slot: CardSlot) => CardSlot | undefined) =>
       update((m) => ({ cards: updateCard(m.cards, kind, change) }))
-    setMolecule({ query, status: 'loading' })
+    setMolecule({ query: name, status: 'loading' })
     const onEvent = (e: MoleculeEvent) => {
       switch (e.kind) {
         case 'header':

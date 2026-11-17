@@ -83,7 +83,7 @@ Exit: speed and accuracy metrics met on the 50-molecule review set.
 
 ## M4 · Polish and launch (weeks 11–12)
 
-- [ ] **M4.1 Surprise me** — bundled `curated.json` (~500 well-documented molecules), random pick.
+- [x] **M4.1 Surprise me** — bundled `curated.json` (~500 well-documented molecules), random pick. Done: `valence curate` loads `fixtures/curated/candidates.txt` (1,116 names) and keeps the 439 with an origin story and input for 3+ cards, with CIDs (`app/src/curated.json`); the button never picks the molecule already open.
 - [ ] **M4.2 First launch** — welcome screen; model download from Hugging Face at a pinned revision with progress, resume and sha256 check; search, 3D and hazards work during the download.
 - [ ] **M4.3 Offline and freshness** — clear offline message in search; cached molecules fully usable; stale (>90 d) data refreshed in the background.
 - [ ] **M4.4 Settings and About** — TOML settings (model choice), About with PubChem and Wikipedia attribution.

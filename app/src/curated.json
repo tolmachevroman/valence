@@ -1,0 +1,1758 @@
+[
+  {
+    "cid": 1983,
+    "name": "Acetaminophen"
+  },
+  {
+    "cid": 2244,
+    "name": "Aspirin"
+  },
+  {
+    "cid": 3672,
+    "name": "Ibuprofen, (+-)-"
+  },
+  {
+    "cid": 3033,
+    "name": "Diclofenac"
+  },
+  {
+    "cid": 2662,
+    "name": "Celecoxib"
+  },
+  {
+    "cid": 5288826,
+    "name": "Morphine"
+  },
+  {
+    "cid": 5284371,
+    "name": "Codeine"
+  },
+  {
+    "cid": 5462328,
+    "name": "Heroin"
+  },
+  {
+    "cid": 3345,
+    "name": "Fentanyl"
+  },
+  {
+    "cid": 4095,
+    "name": "Methadone"
+  },
+  {
+    "cid": 5284603,
+    "name": "Oxycodone"
+  },
+  {
+    "cid": 5284596,
+    "name": "Naloxone"
+  },
+  {
+    "cid": 644073,
+    "name": "Buprenorphine"
+  },
+  {
+    "cid": 33613,
+    "name": "Amoxicillin"
+  },
+  {
+    "cid": 6249,
+    "name": "Ampicillin"
+  },
+  {
+    "cid": 6087,
+    "name": "Methicillin"
+  },
+  {
+    "cid": 14969,
+    "name": "Vancomycin"
+  },
+  {
+    "cid": 19649,
+    "name": "Streptomycin"
+  },
+  {
+    "cid": 12560,
+    "name": "Erythromycin"
+  },
+  {
+    "cid": 447043,
+    "name": "Azithromycin"
+  },
+  {
+    "cid": 5959,
+    "name": "Chloramphenicol"
+  },
+  {
+    "cid": 2764,
+    "name": "Ciprofloxacin"
+  },
+  {
+    "cid": 5333,
+    "name": "Sulfanilamide"
+  },
+  {
+    "cid": 3767,
+    "name": "Isoniazid"
+  },
+  {
+    "cid": 135398735,
+    "name": "Rifampicin"
+  },
+  {
+    "cid": 4173,
+    "name": "Metronidazole"
+  },
+  {
+    "cid": 6604200,
+    "name": "Nitrofurantoin"
+  },
+  {
+    "cid": 3034034,
+    "name": "Quinine"
+  },
+  {
+    "cid": 2719,
+    "name": "Chloroquine"
+  },
+  {
+    "cid": 3652,
+    "name": "Hydroxychloroquine"
+  },
+  {
+    "cid": 68827,
+    "name": "Artemisinin"
+  },
+  {
+    "cid": 4046,
+    "name": "Mefloquine"
+  },
+  {
+    "cid": 4891,
+    "name": "Praziquantel"
+  },
+  {
+    "cid": 5852,
+    "name": "Penicillamine"
+  },
+  {
+    "cid": 54678486,
+    "name": "Warfarin"
+  },
+  {
+    "cid": 54676038,
+    "name": "Dicoumarol"
+  },
+  {
+    "cid": 2724385,
+    "name": "Digoxin"
+  },
+  {
+    "cid": 441207,
+    "name": "Digitoxin"
+  },
+  {
+    "cid": 9294,
+    "name": "Ephedrine"
+  },
+  {
+    "cid": 7028,
+    "name": "Pseudoephedrine"
+  },
+  {
+    "cid": 2083,
+    "name": "Salbutamol"
+  },
+  {
+    "cid": 2153,
+    "name": "Theophylline"
+  },
+  {
+    "cid": 4946,
+    "name": "Propranolol"
+  },
+  {
+    "cid": 2249,
+    "name": "Atenolol"
+  },
+  {
+    "cid": 44093,
+    "name": "Captopril"
+  },
+  {
+    "cid": 5388962,
+    "name": "Enalapril"
+  },
+  {
+    "cid": 5362119,
+    "name": "Lisinopril"
+  },
+  {
+    "cid": 2162,
+    "name": "Amlodipine"
+  },
+  {
+    "cid": 4485,
+    "name": "Nifedipine"
+  },
+  {
+    "cid": 5833,
+    "name": "Spironolactone"
+  },
+  {
+    "cid": 4091,
+    "name": "Metformin"
+  },
+  {
+    "cid": 60823,
+    "name": "Atorvastatin"
+  },
+  {
+    "cid": 53232,
+    "name": "Lovastatin"
+  },
+  {
+    "cid": 54454,
+    "name": "Simvastatin"
+  },
+  {
+    "cid": 3386,
+    "name": "Fluoxetine"
+  },
+  {
+    "cid": 68617,
+    "name": "Sertraline"
+  },
+  {
+    "cid": 3696,
+    "name": "Imipramine"
+  },
+  {
+    "cid": 2160,
+    "name": "Amitriptyline"
+  },
+  {
+    "cid": 3748,
+    "name": "Iproniazid"
+  },
+  {
+    "cid": 2726,
+    "name": "Chlorpromazine"
+  },
+  {
+    "cid": 3559,
+    "name": "Haloperidol"
+  },
+  {
+    "cid": 135398737,
+    "name": "Clozapine"
+  },
+  {
+    "cid": 3016,
+    "name": "Diazepam"
+  },
+  {
+    "cid": 3958,
+    "name": "Lorazepam"
+  },
+  {
+    "cid": 4192,
+    "name": "Midazolam"
+  },
+  {
+    "cid": 5732,
+    "name": "Zolpidem"
+  },
+  {
+    "cid": 4763,
+    "name": "Phenobarbital"
+  },
+  {
+    "cid": 6292,
+    "name": "Methaqualone"
+  },
+  {
+    "cid": 4064,
+    "name": "Meprobamate"
+  },
+  {
+    "cid": 1775,
+    "name": "Phenytoin"
+  },
+  {
+    "cid": 2554,
+    "name": "Carbamazepine"
+  },
+  {
+    "cid": 3446,
+    "name": "Gabapentin"
+  },
+  {
+    "cid": 5486971,
+    "name": "Pregabalin"
+  },
+  {
+    "cid": 6047,
+    "name": "Levodopa"
+  },
+  {
+    "cid": 3152,
+    "name": "Donepezil"
+  },
+  {
+    "cid": 4054,
+    "name": "Memantine"
+  },
+  {
+    "cid": 4158,
+    "name": "Methylphenidate"
+  },
+  {
+    "cid": 4236,
+    "name": "Modafinil"
+  },
+  {
+    "cid": 135398744,
+    "name": "Sildenafil"
+  },
+  {
+    "cid": 110635,
+    "name": "Tadalafil"
+  },
+  {
+    "cid": 57363,
+    "name": "Finasteride"
+  },
+  {
+    "cid": 4594,
+    "name": "Omeprazole"
+  },
+  {
+    "cid": 3001055,
+    "name": "Ranitidine"
+  },
+  {
+    "cid": 2756,
+    "name": "Cimetidine"
+  },
+  {
+    "cid": 3957,
+    "name": "Loratadine"
+  },
+  {
+    "cid": 3100,
+    "name": "Diphenhydramine"
+  },
+  {
+    "cid": 5360696,
+    "name": "Dextromethorphan"
+  },
+  {
+    "cid": 3955,
+    "name": "Loperamide"
+  },
+  {
+    "cid": 2733526,
+    "name": "Tamoxifen"
+  },
+  {
+    "cid": 126941,
+    "name": "Methotrexate"
+  },
+  {
+    "cid": 3385,
+    "name": "5-Fluorouracil"
+  },
+  {
+    "cid": 36314,
+    "name": "Paclitaxel"
+  },
+  {
+    "cid": 5978,
+    "name": "Vincristine"
+  },
+  {
+    "cid": 13342,
+    "name": "Vinblastine"
+  },
+  {
+    "cid": 31703,
+    "name": "Doxorubicin"
+  },
+  {
+    "cid": 5291,
+    "name": "Imatinib"
+  },
+  {
+    "cid": 6167,
+    "name": "Colchicine"
+  },
+  {
+    "cid": 135401907,
+    "name": "Allopurinol"
+  },
+  {
+    "cid": 5865,
+    "name": "Prednisone"
+  },
+  {
+    "cid": 222786,
+    "name": "Cortisone"
+  },
+  {
+    "cid": 5743,
+    "name": "Dexamethasone"
+  },
+  {
+    "cid": 135398513,
+    "name": "Acyclovir"
+  },
+  {
+    "cid": 35370,
+    "name": "Zidovudine"
+  },
+  {
+    "cid": 65028,
+    "name": "Oseltamivir"
+  },
+  {
+    "cid": 45375808,
+    "name": "Sofosbuvir"
+  },
+  {
+    "cid": 2265,
+    "name": "Azathioprine"
+  },
+  {
+    "cid": 5284373,
+    "name": "Cyclosporin A"
+  },
+  {
+    "cid": 445643,
+    "name": "Tacrolimus"
+  },
+  {
+    "cid": 5746,
+    "name": "Mitomycin C"
+  },
+  {
+    "cid": 5360373,
+    "name": "Bleomycin"
+  },
+  {
+    "cid": 948,
+    "name": "Nitrous Oxide"
+  },
+  {
+    "cid": 3283,
+    "name": "Diethyl Ether"
+  },
+  {
+    "cid": 6212,
+    "name": "Chloroform"
+  },
+  {
+    "cid": 3562,
+    "name": "Halothane"
+  },
+  {
+    "cid": 5206,
+    "name": "Sevoflurane"
+  },
+  {
+    "cid": 3676,
+    "name": "Lidocaine"
+  },
+  {
+    "cid": 2337,
+    "name": "Benzocaine"
+  },
+  {
+    "cid": 3821,
+    "name": "Ketamine"
+  },
+  {
+    "cid": 4943,
+    "name": "Propofol"
+  },
+  {
+    "cid": 5314,
+    "name": "Succinylcholine"
+  },
+  {
+    "cid": 55245,
+    "name": "Mifepristone"
+  },
+  {
+    "cid": 13109,
+    "name": "Levonorgestrel"
+  },
+  {
+    "cid": 6230,
+    "name": "Norethindrone"
+  },
+  {
+    "cid": 5991,
+    "name": "Ethinylestradiol"
+  },
+  {
+    "cid": 1548955,
+    "name": "Zuclomiphene"
+  },
+  {
+    "cid": 439302,
+    "name": "Oxytocin"
+  },
+  {
+    "cid": 4510,
+    "name": "Nitroglycerin"
+  },
+  {
+    "cid": 3117,
+    "name": "Disulfiram"
+  },
+  {
+    "cid": 71158,
+    "name": "Acamprosate"
+  },
+  {
+    "cid": 5310966,
+    "name": "Varenicline"
+  },
+  {
+    "cid": 444,
+    "name": "Bupropion"
+  },
+  {
+    "cid": 56843331,
+    "name": "Semaglutide"
+  },
+  {
+    "cid": 2955,
+    "name": "Dapsone"
+  },
+  {
+    "cid": 2794,
+    "name": "Clofazimine"
+  },
+  {
+    "cid": 5361,
+    "name": "Suramin"
+  },
+  {
+    "cid": 4735,
+    "name": "Pentamidine"
+  },
+  {
+    "cid": 3599,
+    "name": "Miltefosine"
+  },
+  {
+    "cid": 11057,
+    "name": "Crystal Violet"
+  },
+  {
+    "cid": 53629521,
+    "name": "Bismuth Subsalicylate"
+  },
+  {
+    "cid": 3007857,
+    "name": "Zinc Oxide"
+  },
+  {
+    "cid": 4875,
+    "name": "Potassium Iodide"
+  },
+  {
+    "cid": 7187,
+    "name": "Benzoyl Peroxide"
+  },
+  {
+    "cid": 338,
+    "name": "Salicylic Acid"
+  },
+  {
+    "cid": 444795,
+    "name": "Retinoic Acid"
+  },
+  {
+    "cid": 5282379,
+    "name": "Isotretinoin"
+  },
+  {
+    "cid": 439260,
+    "name": "Norepinephrine"
+  },
+  {
+    "cid": 681,
+    "name": "Dopamine"
+  },
+  {
+    "cid": 5202,
+    "name": "Serotonin"
+  },
+  {
+    "cid": 896,
+    "name": "Melatonin"
+  },
+  {
+    "cid": 774,
+    "name": "Histamine"
+  },
+  {
+    "cid": 119,
+    "name": "Gamma-Aminobutyric Acid"
+  },
+  {
+    "cid": 33032,
+    "name": "L-Glutamic Acid"
+  },
+  {
+    "cid": 750,
+    "name": "Glycine"
+  },
+  {
+    "cid": 5281969,
+    "name": "Anandamide"
+  },
+  {
+    "cid": 6013,
+    "name": "Testosterone"
+  },
+  {
+    "cid": 5757,
+    "name": "Estradiol"
+  },
+  {
+    "cid": 5994,
+    "name": "Progesterone"
+  },
+  {
+    "cid": 5819,
+    "name": "Thyroxine"
+  },
+  {
+    "cid": 5920,
+    "name": "Liothyronine"
+  },
+  {
+    "cid": 10635,
+    "name": "Dihydrotestosterone"
+  },
+  {
+    "cid": 5997,
+    "name": "Cholesterol"
+  },
+  {
+    "cid": 5280352,
+    "name": "Bilirubin"
+  },
+  {
+    "cid": 26945,
+    "name": "Hemin"
+  },
+  {
+    "cid": 1176,
+    "name": "Urea"
+  },
+  {
+    "cid": 586,
+    "name": "Creatine"
+  },
+  {
+    "cid": 612,
+    "name": "Lactic Acid"
+  },
+  {
+    "cid": 5957,
+    "name": "5'-Atp"
+  },
+  {
+    "cid": 5892,
+    "name": "Nadide"
+  },
+  {
+    "cid": 145068,
+    "name": "Nitric Oxide"
+  },
+  {
+    "cid": 280,
+    "name": "Carbon Dioxide"
+  },
+  {
+    "cid": 180,
+    "name": "Acetone"
+  },
+  {
+    "cid": 5280360,
+    "name": "Prostaglandin E2"
+  },
+  {
+    "cid": 273,
+    "name": "Cadaverine"
+  },
+  {
+    "cid": 1045,
+    "name": "Putrescine"
+  },
+  {
+    "cid": 798,
+    "name": "Indole"
+  },
+  {
+    "cid": 222,
+    "name": "Ammonia"
+  },
+  {
+    "cid": 638072,
+    "name": "Squalene"
+  },
+  {
+    "cid": 638015,
+    "name": "Retinal"
+  },
+  {
+    "cid": 92934,
+    "name": "Firefly Luciferin"
+  },
+  {
+    "cid": 445354,
+    "name": "Retinol"
+  },
+  {
+    "cid": 1130,
+    "name": "Thiamine"
+  },
+  {
+    "cid": 493570,
+    "name": "Riboflavin"
+  },
+  {
+    "cid": 938,
+    "name": "Nicotinic Acid"
+  },
+  {
+    "cid": 6613,
+    "name": "Pantothenic Acid"
+  },
+  {
+    "cid": 1054,
+    "name": "Pyridoxine"
+  },
+  {
+    "cid": 171548,
+    "name": "Biotin"
+  },
+  {
+    "cid": 54670067,
+    "name": "L-Ascorbic Acid"
+  },
+  {
+    "cid": 305,
+    "name": "Choline"
+  },
+  {
+    "cid": 288,
+    "name": "DL-Carnitine"
+  },
+  {
+    "cid": 1123,
+    "name": "Taurine"
+  },
+  {
+    "cid": 5281915,
+    "name": "Coenzyme Q10"
+  },
+  {
+    "cid": 5280450,
+    "name": "Linoleic Acid"
+  },
+  {
+    "cid": 264,
+    "name": "Butyric Acid"
+  },
+  {
+    "cid": 6322,
+    "name": "L-Arginine"
+  },
+  {
+    "cid": 6267,
+    "name": "(-)-Asparagine"
+  },
+  {
+    "cid": 5960,
+    "name": "L-Aspartic Acid"
+  },
+  {
+    "cid": 5862,
+    "name": "L-(+)-Cysteine"
+  },
+  {
+    "cid": 6306,
+    "name": "L-Isoleucine"
+  },
+  {
+    "cid": 6140,
+    "name": "L-Phenylalanine"
+  },
+  {
+    "cid": 145742,
+    "name": "L-Proline"
+  },
+  {
+    "cid": 6288,
+    "name": "L-Threonine"
+  },
+  {
+    "cid": 6287,
+    "name": "L-Valine"
+  },
+  {
+    "cid": 439378,
+    "name": "L-Theanine"
+  },
+  {
+    "cid": 5793,
+    "name": "D-Glucose"
+  },
+  {
+    "cid": 2723872,
+    "name": "D-Fructose"
+  },
+  {
+    "cid": 6036,
+    "name": "D-Galactose"
+  },
+  {
+    "cid": 5988,
+    "name": "Sucrose"
+  },
+  {
+    "cid": 7427,
+    "name": "Trehalose"
+  },
+  {
+    "cid": 10975657,
+    "name": "D-Ribose"
+  },
+  {
+    "cid": 222285,
+    "name": "Erythritol"
+  },
+  {
+    "cid": 6251,
+    "name": "Mannitol"
+  },
+  {
+    "cid": 5143,
+    "name": "Saccharin"
+  },
+  {
+    "cid": 134601,
+    "name": "Aspartame"
+  },
+  {
+    "cid": 71485,
+    "name": "Sucralose"
+  },
+  {
+    "cid": 11074431,
+    "name": "Acesulfame Potassium"
+  },
+  {
+    "cid": 7533,
+    "name": "Cyclamate"
+  },
+  {
+    "cid": 56843846,
+    "name": "Advantame"
+  },
+  {
+    "cid": 30231,
+    "name": "Neohesperidin dihydrochalcone"
+  },
+  {
+    "cid": 2519,
+    "name": "Caffeine"
+  },
+  {
+    "cid": 5429,
+    "name": "Theobromine"
+  },
+  {
+    "cid": 1548943,
+    "name": "Capsaicin"
+  },
+  {
+    "cid": 638024,
+    "name": "Piperine"
+  },
+  {
+    "cid": 65036,
+    "name": "Allicin"
+  },
+  {
+    "cid": 5386591,
+    "name": "Ajoene"
+  },
+  {
+    "cid": 16590,
+    "name": "Diallyl Disulfide"
+  },
+  {
+    "cid": 1254,
+    "name": "Menthol"
+  },
+  {
+    "cid": 7439,
+    "name": "Carvone, (+-)-"
+  },
+  {
+    "cid": 637566,
+    "name": "Geraniol"
+  },
+  {
+    "cid": 1183,
+    "name": "Vanillin"
+  },
+  {
+    "cid": 323,
+    "name": "Coumarin"
+  },
+  {
+    "cid": 240,
+    "name": "Benzaldehyde"
+  },
+  {
+    "cid": 637563,
+    "name": "Anethole"
+  },
+  {
+    "cid": 5144,
+    "name": "Safrole"
+  },
+  {
+    "cid": 6989,
+    "name": "Thymol"
+  },
+  {
+    "cid": 2537,
+    "name": "Camphor"
+  },
+  {
+    "cid": 7847,
+    "name": "Acrolein"
+  },
+  {
+    "cid": 23689119,
+    "name": "Monosodium Glutamate"
+  },
+  {
+    "cid": 68051,
+    "name": "Lupulone"
+  },
+  {
+    "cid": 1794427,
+    "name": "Chlorogenic Acid"
+  },
+  {
+    "cid": 445154,
+    "name": "Resveratrol"
+  },
+  {
+    "cid": 969516,
+    "name": "Curcumin"
+  },
+  {
+    "cid": 33258,
+    "name": "E129"
+  },
+  {
+    "cid": 3259,
+    "name": "Erythrosine"
+  },
+  {
+    "cid": 19700,
+    "name": "FD&C Blue No. 1"
+  },
+  {
+    "cid": 525,
+    "name": "Malic Acid"
+  },
+  {
+    "cid": 444305,
+    "name": "L-Tartaric acid"
+  },
+  {
+    "cid": 176,
+    "name": "Acetic Acid"
+  },
+  {
+    "cid": 971,
+    "name": "Oxalic Acid"
+  },
+  {
+    "cid": 516892,
+    "name": "Sodium Bicarbonate"
+  },
+  {
+    "cid": 702,
+    "name": "Ethanol"
+  },
+  {
+    "cid": 887,
+    "name": "Methanol"
+  },
+  {
+    "cid": 3776,
+    "name": "Isopropanol"
+  },
+  {
+    "cid": 753,
+    "name": "Glycerol"
+  },
+  {
+    "cid": 1001,
+    "name": "Phenethylamine"
+  },
+  {
+    "cid": 28523,
+    "name": "Tomatine"
+  },
+  {
+    "cid": 442072,
+    "name": "Lysergic acid amide"
+  },
+  {
+    "cid": 4276,
+    "name": "Myristicin"
+  },
+  {
+    "cid": 5281855,
+    "name": "Ellagic Acid"
+  },
+  {
+    "cid": 91497,
+    "name": "Galaxolide"
+  },
+  {
+    "cid": 102861,
+    "name": "Hedione"
+  },
+  {
+    "cid": 89594,
+    "name": "Nicotine"
+  },
+  {
+    "cid": 446220,
+    "name": "Cocaine"
+  },
+  {
+    "cid": 441071,
+    "name": "Strychnine"
+  },
+  {
+    "cid": 442021,
+    "name": "Brucine"
+  },
+  {
+    "cid": 441072,
+    "name": "(+)-Coniine"
+  },
+  {
+    "cid": 25265910,
+    "name": "Cicutoxin"
+  },
+  {
+    "cid": 44138996,
+    "name": "Oenanthotoxin"
+  },
+  {
+    "cid": 439501,
+    "name": "Ouabain"
+  },
+  {
+    "cid": 441852,
+    "name": "Convallatoxin"
+  },
+  {
+    "cid": 768,
+    "name": "Hydrogen Cyanide"
+  },
+  {
+    "cid": 5359327,
+    "name": "Strontium"
+  },
+  {
+    "cid": 6328143,
+    "name": "Polonium"
+  },
+  {
+    "cid": 5944,
+    "name": "Cantharidin"
+  },
+  {
+    "cid": 6324647,
+    "name": "Batrachotoxin"
+  },
+  {
+    "cid": 854023,
+    "name": "Epibatidine"
+  },
+  {
+    "cid": 10257,
+    "name": "Bufotenine"
+  },
+  {
+    "cid": 11105289,
+    "name": "Palytoxin"
+  },
+  {
+    "cid": 5311333,
+    "name": "Ciguatoxin"
+  },
+  {
+    "cid": 5282253,
+    "name": "Domoic Acid"
+  },
+  {
+    "cid": 446512,
+    "name": "Okadaic Acid"
+  },
+  {
+    "cid": 9548773,
+    "name": "(2S,5R,5aS,5bS,7aR,9S,10aS,10bS,12aR)-Octadecahydro-5a,7a-dimethyl-2,5-epoxycyclopenta(5,6)naphth(1,2-d)azepin-9-ol"
+  },
+  {
+    "cid": 3034748,
+    "name": "Anatoxin A"
+  },
+  {
+    "cid": 445434,
+    "name": "Microcystin-lr"
+  },
+  {
+    "cid": 42628600,
+    "name": "Cylindrospermopsin"
+  },
+  {
+    "cid": 9308,
+    "name": "Muscarine"
+  },
+  {
+    "cid": 4266,
+    "name": "Muscimol"
+  },
+  {
+    "cid": 1233,
+    "name": "Ibotenic Acid"
+  },
+  {
+    "cid": 441542,
+    "name": "Phalloidin"
+  },
+  {
+    "cid": 108079,
+    "name": "Coprine"
+  },
+  {
+    "cid": 9548611,
+    "name": "Gyromitrin"
+  },
+  {
+    "cid": 10624,
+    "name": "Psilocybin"
+  },
+  {
+    "cid": 4980,
+    "name": "Psilocin"
+  },
+  {
+    "cid": 4076,
+    "name": "Mescaline"
+  },
+  {
+    "cid": 6089,
+    "name": "N,N-Dimethyltryptamine"
+  },
+  {
+    "cid": 5280953,
+    "name": "Harmine"
+  },
+  {
+    "cid": 3564,
+    "name": "Harmaline"
+  },
+  {
+    "cid": 197060,
+    "name": "Ibogaine"
+  },
+  {
+    "cid": 128563,
+    "name": "Salvinorin A"
+  },
+  {
+    "cid": 16078,
+    "name": "Tetrahydrocannabinol"
+  },
+  {
+    "cid": 644019,
+    "name": "Cannabidiol"
+  },
+  {
+    "cid": 2543,
+    "name": "Cannabinol"
+  },
+  {
+    "cid": 3034396,
+    "name": "(-)-Mitragynine"
+  },
+  {
+    "cid": 62258,
+    "name": "Cathinone"
+  },
+  {
+    "cid": 4680,
+    "name": "Papaverine"
+  },
+  {
+    "cid": 275196,
+    "name": "Noscapine"
+  },
+  {
+    "cid": 854026,
+    "name": "Huperzine A"
+  },
+  {
+    "cid": 5983,
+    "name": "Physostigmine"
+  },
+  {
+    "cid": 5770,
+    "name": "Reserpine"
+  },
+  {
+    "cid": 8969,
+    "name": "Yohimbine"
+  },
+  {
+    "cid": 3806,
+    "name": "Juglone"
+  },
+  {
+    "cid": 3503,
+    "name": "Gossypol"
+  },
+  {
+    "cid": 442972,
+    "name": "Cyclopamine"
+  },
+  {
+    "cid": 8376,
+    "name": "2,4,6-Trinitrotoluene"
+  },
+  {
+    "cid": 6954,
+    "name": "Picric Acid"
+  },
+  {
+    "cid": 6518,
+    "name": "Pentaerythritol Tetranitrate"
+  },
+  {
+    "cid": 24434,
+    "name": "Potassium Nitrate"
+  },
+  {
+    "cid": 61600,
+    "name": "Lead azide (Pb(N3)2)"
+  },
+  {
+    "cid": 40818,
+    "name": "Ethylene glycol dinitrate"
+  },
+  {
+    "cid": 9889323,
+    "name": "Hexanitrohexaazaisowurtzitane"
+  },
+  {
+    "cid": 9321,
+    "name": "Hydrazine"
+  },
+  {
+    "cid": 784,
+    "name": "Hydrogen Peroxide"
+  },
+  {
+    "cid": 297,
+    "name": "Methane"
+  },
+  {
+    "cid": 6324,
+    "name": "Ethane"
+  },
+  {
+    "cid": 6334,
+    "name": "Propane"
+  },
+  {
+    "cid": 7843,
+    "name": "Butane"
+  },
+  {
+    "cid": 10907,
+    "name": "2,2,4-Trimethylpentane"
+  },
+  {
+    "cid": 241,
+    "name": "Benzene"
+  },
+  {
+    "cid": 931,
+    "name": "Naphthalene"
+  },
+  {
+    "cid": 8418,
+    "name": "Anthracene"
+  },
+  {
+    "cid": 7501,
+    "name": "Styrene"
+  },
+  {
+    "cid": 6325,
+    "name": "Ethylene"
+  },
+  {
+    "cid": 6326,
+    "name": "Acetylene"
+  },
+  {
+    "cid": 7845,
+    "name": "1,3-Butadiene"
+  },
+  {
+    "cid": 6557,
+    "name": "Isoprene"
+  },
+  {
+    "cid": 31369,
+    "name": "Chloroprene"
+  },
+  {
+    "cid": 7489,
+    "name": "Terephthalic Acid"
+  },
+  {
+    "cid": 6623,
+    "name": "Bisphenol A"
+  },
+  {
+    "cid": 7955,
+    "name": "Melamine"
+  },
+  {
+    "cid": 996,
+    "name": "Phenol"
+  },
+  {
+    "cid": 6371,
+    "name": "Phosgene"
+  },
+  {
+    "cid": 24526,
+    "name": "Chlorine"
+  },
+  {
+    "cid": 24408,
+    "name": "Bromine"
+  },
+  {
+    "cid": 807,
+    "name": "Iodine"
+  },
+  {
+    "cid": 24524,
+    "name": "Fluorine"
+  },
+  {
+    "cid": 24823,
+    "name": "Ozone"
+  },
+  {
+    "cid": 1118,
+    "name": "Sulfuric Acid"
+  },
+  {
+    "cid": 944,
+    "name": "Nitric Acid"
+  },
+  {
+    "cid": 313,
+    "name": "Hydrochloric Acid"
+  },
+  {
+    "cid": 14798,
+    "name": "Sodium Hydroxide"
+  },
+  {
+    "cid": 25517,
+    "name": "Ammonium Chloride"
+  },
+  {
+    "cid": 24870,
+    "name": "Chlorine Dioxide"
+  },
+  {
+    "cid": 516875,
+    "name": "Potassium Permanganate"
+  },
+  {
+    "cid": 9863,
+    "name": "Silicon carbide"
+  },
+  {
+    "cid": 66227,
+    "name": "Boron Nitride"
+  },
+  {
+    "cid": 9989226,
+    "name": "Alumina"
+  },
+  {
+    "cid": 24561,
+    "name": "Silver Chloride"
+  },
+  {
+    "cid": 6511,
+    "name": "Tetraethyllead"
+  },
+  {
+    "cid": 6354,
+    "name": "Ethylene Oxide"
+  },
+  {
+    "cid": 31275,
+    "name": "1,4-Dioxane"
+  },
+  {
+    "cid": 5943,
+    "name": "Carbon Tetrachloride"
+  },
+  {
+    "cid": 6575,
+    "name": "Trichloroethylene"
+  },
+  {
+    "cid": 31373,
+    "name": "Tetrachloroethylene"
+  },
+  {
+    "cid": 6391,
+    "name": "Dichlorodifluoromethane"
+  },
+  {
+    "cid": 6348,
+    "name": "Carbon Disulfide"
+  },
+  {
+    "cid": 281,
+    "name": "Carbon Monoxide"
+  },
+  {
+    "cid": 783,
+    "name": "Hydrogen"
+  },
+  {
+    "cid": 23987,
+    "name": "Helium"
+  },
+  {
+    "cid": 23935,
+    "name": "Neon"
+  },
+  {
+    "cid": 23968,
+    "name": "Argon"
+  },
+  {
+    "cid": 23991,
+    "name": "Xenon"
+  },
+  {
+    "cid": 24857,
+    "name": "Radon"
+  },
+  {
+    "cid": 947,
+    "name": "Nitrogen"
+  },
+  {
+    "cid": 977,
+    "name": "Oxygen"
+  },
+  {
+    "cid": 24602,
+    "name": "Deuterium Oxide"
+  },
+  {
+    "cid": 5360545,
+    "name": "Sodium"
+  },
+  {
+    "cid": 5462309,
+    "name": "Phosphorus"
+  },
+  {
+    "cid": 24404,
+    "name": "Phosphine"
+  },
+  {
+    "cid": 10219726,
+    "name": "Ferrocene"
+  },
+  {
+    "cid": 23266,
+    "name": "Sodium Silicate"
+  },
+  {
+    "cid": 16211214,
+    "name": "Borax (B4Na2O7.10H2O)"
+  },
+  {
+    "cid": 7628,
+    "name": "Boric Acid"
+  },
+  {
+    "cid": 3033839,
+    "name": "Calcium Sulfate, Hemihydrate"
+  },
+  {
+    "cid": 62402,
+    "name": "Cinnabar"
+  },
+  {
+    "cid": 6337004,
+    "name": "Orpiment (As2S3)"
+  },
+  {
+    "cid": 14788,
+    "name": "Pyrite"
+  },
+  {
+    "cid": 25503,
+    "name": "Malachite"
+  },
+  {
+    "cid": 9884557,
+    "name": "Azurite"
+  },
+  {
+    "cid": 24617,
+    "name": "Fluorite"
+  },
+  {
+    "cid": 16693908,
+    "name": "Cryolite"
+  },
+  {
+    "cid": 5462310,
+    "name": "Carbon"
+  },
+  {
+    "cid": 123591,
+    "name": "Fullerenes"
+  },
+  {
+    "cid": 10215,
+    "name": "Indigo"
+  },
+  {
+    "cid": 6293,
+    "name": "Alizarin"
+  },
+  {
+    "cid": 6683,
+    "name": "Purpurin anthraquinone"
+  },
+  {
+    "cid": 2724251,
+    "name": "Ferric Ferrocyanide"
+  },
+  {
+    "cid": 22833492,
+    "name": "C.I. Pigment Green 21"
+  },
+  {
+    "cid": 6531516,
+    "name": "Copper phthalocyanine"
+  },
+  {
+    "cid": 6099,
+    "name": "Methylene Blue"
+  },
+  {
+    "cid": 6115,
+    "name": "Aniline"
+  },
+  {
+    "cid": 969491,
+    "name": "Dieldrin"
+  },
+  {
+    "cid": 3224,
+    "name": "Endosulfan"
+  },
+  {
+    "cid": 991,
+    "name": "Parathion"
+  },
+  {
+    "cid": 3017,
+    "name": "Diazinon"
+  },
+  {
+    "cid": 9570071,
+    "name": "Aldicarb"
+  },
+  {
+    "cid": 86287518,
+    "name": "Imidacloprid"
+  },
+  {
+    "cid": 3352,
+    "name": "Fipronil"
+  },
+  {
+    "cid": 40326,
+    "name": "Permethrin"
+  },
+  {
+    "cid": 3496,
+    "name": "Glyphosate"
+  },
+  {
+    "cid": 6795,
+    "name": "Diquat"
+  },
+  {
+    "cid": 1486,
+    "name": "(2,4-Dichlorophenoxy)Acetic Acid"
+  },
+  {
+    "cid": 15625,
+    "name": "2,3,7,8-Tetrachlorodibenzo-P-Dioxin"
+  },
+  {
+    "cid": 802,
+    "name": "Indole-3-Acetic Acid"
+  },
+  {
+    "cid": 5280896,
+    "name": "Abscisic Acid"
+  },
+  {
+    "cid": 3830,
+    "name": "Kinetin"
+  },
+  {
+    "cid": 5461123,
+    "name": "Silicon"
+  },
+  {
+    "cid": 5564,
+    "name": "Triclosan"
+  },
+  {
+    "cid": 159762,
+    "name": "Sodium percarbonate"
+  },
+  {
+    "cid": 51040,
+    "name": "Avobenzone"
+  },
+  {
+    "cid": 4284,
+    "name": "N,N-diethyl-m-toluamide"
+  },
+  {
+    "cid": 24268,
+    "name": "Sodium Nitrate"
+  },
+  {
+    "cid": 9554,
+    "name": "Perfluorooctanoic acid"
+  },
+  {
+    "cid": 74483,
+    "name": "Perfluorooctanesulfonic acid"
+  },
+  {
+    "cid": 24085,
+    "name": "Mercuric Chloride"
+  },
+  {
+    "cid": 5359596,
+    "name": "Arsenic"
+  },
+  {
+    "cid": 23973,
+    "name": "Cadmium"
+  },
+  {
+    "cid": 5460467,
+    "name": "Beryllium"
+  },
+  {
+    "cid": 6328144,
+    "name": "Radium"
+  },
+  {
+    "cid": 10461,
+    "name": "Sulfur Mustard"
+  },
+  {
+    "cid": 10923,
+    "name": "Lewisite"
+  },
+  {
+    "cid": 12305738,
+    "name": "Prismane"
+  },
+  {
+    "cid": 123218,
+    "name": "(5)Fullerane-C20-Ih"
+  },
+  {
+    "cid": 9238,
+    "name": "Adamantane"
+  },
+  {
+    "cid": 123154,
+    "name": "Congressane"
+  },
+  {
+    "cid": 6351,
+    "name": "Cyclopropane"
+  },
+  {
+    "cid": 5224206,
+    "name": "Tropylium"
+  },
+  {
+    "cid": 15908632,
+    "name": "Acetone peroxide"
+  },
+  {
+    "cid": 16211378,
+    "name": "Magic Acid"
+  },
+  {
+    "cid": 71311337,
+    "name": "Potassium trichloro(ethylene)platinate(II) hydrate"
+  },
+  {
+    "cid": 165339223,
+    "name": "Vitamin B12"
+  }
+]

@@ -5,7 +5,10 @@
 //! the local model, as the app does, with timings.
 //!
 //! `valence review fetch | run`: the 50-molecule review set (see `review`).
+//!
+//! `valence curate`: the "Surprise me" list (see `curate`).
 
+mod curate;
 mod review;
 
 use std::path::{Path, PathBuf};
@@ -23,6 +26,7 @@ const USAGE: &str = "usage: valence snippets <name | CAS number | CID> [--cache 
        valence cards <name | CAS number | CID> [--cache <file>] [--model <file.gguf>]
        valence review fetch
        valence review run [--model <file.gguf>]
+       valence curate [--cache <file>]
 
 The cache defaults to the app's: ~/Library/Application Support/io.github.tolmachevroman.valence/cache.sqlite
 The model defaults to $VALENCE_MODEL, then the app's models folder.";
@@ -56,17 +60,20 @@ fn parse_args() -> Option<Args> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .filter(|c| ["snippets", "cards", "review"].contains(&c.as_str()))?;
-    // For `review`, the subcommand.
-    let query = args
-        .next()
-        .filter(|q| command != "review" || q == "fetch" || q == "run")?;
+        .filter(|c| ["snippets", "cards", "review", "curate"].contains(&c.as_str()))?;
+    // For `review`, the subcommand; `curate` takes none.
+    let query = if command == "curate" {
+        String::new()
+    } else {
+        args.next()
+            .filter(|q| command != "review" || q == "fetch" || q == "run")?
+    };
     let (mut cache, mut model) = (None, None);
     while let Some(flag) = args.next() {
         let value = PathBuf::from(args.next()?);
         match flag.as_str() {
             "--cache" => cache = Some(value),
-            "--model" if command != "snippets" => model = Some(value),
+            "--model" if command == "cards" || command == "review" => model = Some(value),
             _ => return None,
         }
     }
@@ -94,6 +101,7 @@ async fn main() -> ExitCode {
         "snippets" => snippets(&args.query, cache_path).await,
         "review" if args.query == "fetch" => review::fetch_all().await,
         "review" => review_run(&args).await,
+        "curate" => curate::run(&cache_path).await,
         _ => cards(&args, cache_path).await,
     };
     match result {

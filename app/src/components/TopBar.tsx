@@ -1,16 +1,22 @@
-// Search, "Surprise me", favorites and settings. "Surprise me" arrives in
-// M4.1, settings in M4.4, favorites in v0.2.
+// Search, "Surprise me", favorites and settings. Settings arrive in M4.4,
+// favorites in v0.2.
 
 import SearchBox from './SearchBox'
 
-export default function TopBar({ onOpen }: { onOpen: (query: string) => void }) {
+export default function TopBar({
+  onOpen,
+  onSurprise,
+}: {
+  onOpen: (query: string) => void
+  onSurprise: () => void
+}) {
   return (
     <header className="top-bar">
       <div className="brand" aria-hidden="true">
         Valence
       </div>
       <SearchBox onOpen={onOpen} />
-      <button type="button" disabled>
+      <button type="button" onClick={onSurprise} title="Open a random molecule with a good story">
         Surprise me
       </button>
       <button type="button" className="icon" aria-label="Favorites" title="Favorites" disabled>

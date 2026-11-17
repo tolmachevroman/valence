@@ -5,6 +5,7 @@ import MoleculePanel from './components/MoleculePanel'
 import StatusBar from './components/StatusBar'
 import TopBar from './components/TopBar'
 import { appVersion, type ModelStatus, watchModel } from './core'
+import { surprise } from './surprise'
 import { useMolecule } from './useMolecule'
 
 export default function App() {
@@ -25,7 +26,13 @@ export default function App() {
 
   return (
     <div className="app">
-      <TopBar onOpen={open} />
+      <TopBar
+        onOpen={open}
+        onSurprise={() => {
+          const pick = surprise(molecule?.compound?.cid)
+          open(String(pick.cid), pick.name)
+        }}
+      />
       <main className="panels">
         <MoleculePanel molecule={molecule} />
         <CardsPanel molecule={molecule} model={model} />

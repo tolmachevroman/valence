@@ -241,6 +241,23 @@ pub fn danger(molecule: &str, snippets: &[Snippet]) -> Option<Card> {
     })
 }
 
+/// Whether `card` would have anything to work with: GHS data for Danger,
+/// sentences to offer the model for the others.
+pub fn has_input(
+    kind: CardKind,
+    molecule: &str,
+    also_called: &[String],
+    snippets: &[Snippet],
+) -> bool {
+    if kind == CardKind::Danger {
+        return danger(molecule, snippets).is_some();
+    }
+    let names: Vec<&str> = std::iter::once(molecule)
+        .chain(also_called.iter().map(String::as_str))
+        .collect();
+    !extract::offer(&select::select(kind, snippets), &names).is_empty()
+}
+
 /// Generate one card about `molecule` from its snippets (`extract`): the
 /// model chooses sentences, and the choice is checked and retried once with
 /// its problems. A choice that fails twice drops the card.
@@ -415,6 +432,23 @@ mod tests {
         .await
         .unwrap();
         (outcome, events)
+    }
+
+    #[test]
+    fn has_input_matches_what_card_would_offer() {
+        let snippets = capsaicin();
+        let input = |k| has_input(k, "capsaicin", &[], &snippets);
+        // Weird draws on any snippet but the hazards.
+        assert!(input(CardKind::Origin) && input(CardKind::Danger) && input(CardKind::Weird));
+        assert!(!input(CardKind::Where));
+        // A history sentence that never names the molecule offers nothing.
+        let unnamed = [s(
+            "1",
+            "wikipedia",
+            "History",
+            "It was first extracted in 1816 by Bucholz.",
+        )];
+        assert!(!has_input(CardKind::Origin, "capsaicin", &[], &unnamed));
     }
 
     #[tokio::test]
