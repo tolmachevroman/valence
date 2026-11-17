@@ -84,7 +84,7 @@ Exit: speed and accuracy metrics met on the 50-molecule review set.
 ## M4 · Polish and launch (weeks 11–12)
 
 - [x] **M4.1 Surprise me** — bundled `curated.json` (~500 well-documented molecules), random pick. Done: `valence curate` loads `fixtures/curated/candidates.txt` (1,116 names) and keeps the 439 with an origin story and input for 3+ cards, with CIDs (`app/src/curated.json`); the button never picks the molecule already open.
-- [ ] **M4.2 First launch** — welcome screen; model download from Hugging Face at a pinned revision with progress, resume and sha256 check; search, 3D and hazards work during the download.
+- [ ] **M4.2 First launch** — welcome screen; model download from Hugging Face at a pinned revision with progress, resume and sha256 check; search, 3D and hazards work during the download. Built: `download.rs` (pinned URL, size and sha256 from decision 0001; hashes as it writes; resumes a `.part` with a Range request; the file takes the model's place only when it matches), `download_model` command, welcome card in the cards panel with progress and Resume / Try again, footer percentage. A live test resumed the last 50 MB from Hugging Face and verified the whole file. Open: a full first-launch run in the app.
 - [ ] **M4.3 Offline and freshness** — clear offline message in search; cached molecules fully usable; stale (>90 d) data refreshed in the background.
 - [ ] **M4.4 Settings and About** — TOML settings (model choice), About with PubChem and Wikipedia attribution.
 - [ ] **M4.5 Packaging** — Tauri bundler .app/.dmg; Developer ID signing + notarization; release workflow on tag.

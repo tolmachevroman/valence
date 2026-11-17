@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import CardsPanel from './components/CardsPanel'
 import MoleculePanel from './components/MoleculePanel'
@@ -17,6 +17,21 @@ export default function App() {
     appVersion().then(setVersion)
     watchModel(setModel)
   }, [])
+
+  // A molecule opened before the model was downloaded has no cards waiting
+  // for it; once the model is ready, open it again to write them.
+  const wasMissing = useRef(false)
+  const shown = useRef(molecule)
+  useEffect(() => {
+    shown.current = molecule
+  }, [molecule])
+  useEffect(() => {
+    if (model?.state === 'notDownloaded') wasMissing.current = true
+    if (model?.state !== 'ready' || !wasMissing.current) return
+    wasMissing.current = false
+    const m = shown.current
+    if (m?.compound && !m.cards?.some((c) => c.state !== 'ready')) open(String(m.compound.cid), m.compound.title)
+  }, [model, open])
 
   // Dev only: `?q=caffeine` opens a molecule on load, for screenshots.
   useEffect(() => {

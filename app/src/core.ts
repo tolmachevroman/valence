@@ -66,10 +66,11 @@ export type MoleculeEvent =
   /** No card of this kind: skipped, failed its checks, or no model. */
   | { kind: 'cardGone'; card: CardKind }
 
-/** ModelStatus: the local model, loaded in the background at launch. */
+/** ModelStatus: the local model, downloaded on request, loaded in the background. */
 export type ModelStatus =
-  /** No model file at `path` yet. */
-  | { state: 'notDownloaded'; path: string }
+  /** No model file yet. `downloaded` bytes are kept from an earlier attempt; `error` says why it stopped. */
+  | { state: 'notDownloaded'; size: number; downloaded: number; error: string | null }
+  | { state: 'downloading'; done: number; total: number }
   | { state: 'loading' }
   | { state: 'ready'; loadSeconds: number }
   /** Too little free memory for the model and its cache. */
@@ -100,6 +101,16 @@ export function watchModel(onChange: (s: ModelStatus) => void): Promise<void> {
   const channel = new Channel<ModelStatus>()
   channel.onmessage = onChange
   return invoke<void>('model_status', { onChange: channel })
+}
+
+/** Download the model, resuming an earlier attempt; progress arrives through `watchModel`. */
+export function downloadModel(): Promise<void> {
+  return invoke<void>('download_model')
+}
+
+/** "2.5 GB" */
+export function gigabytes(bytes: number): string {
+  return `${(bytes / 1e9).toFixed(1)} GB`
 }
 
 /** Open an https link in the default browser. */

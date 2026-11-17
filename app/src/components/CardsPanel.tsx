@@ -3,7 +3,7 @@
 // pending until the choice passes its checks; cards that fail twice disappear.
 
 import type { Card, CardKind, ModelStatus } from '../core'
-import { openUrl } from '../core'
+import { downloadModel, gigabytes, openUrl } from '../core'
 import type { CardSlot, MoleculeState } from '../useMolecule'
 
 const LABELS: Record<CardKind, string> = {
@@ -16,7 +16,8 @@ const LABELS: Record<CardKind, string> = {
 function progress(slot: CardSlot, model?: ModelStatus): string {
   switch (slot.state) {
     case 'waiting':
-      return model?.state === 'ready' ? 'Waiting its turn…' : 'Waiting for the model to load…'
+      if (model?.state === 'ready') return 'Waiting its turn…'
+      return model?.state === 'downloading' ? 'Waiting for the model to download…' : 'Waiting for the model to load…'
     case 'writing':
       return slot.draft ? 'Choosing sentences from the sources…' : 'Reading the sources…'
     case 'retrying':
@@ -78,6 +79,42 @@ function CardView({ slot, model }: { slot: CardSlot; model?: ModelStatus }) {
   )
 }
 
+/** First launch: what the model is, and its download. */
+function Welcome({ model }: { model: ModelStatus }) {
+  if (model.state !== 'notDownloaded' && model.state !== 'downloading') return null
+  return (
+    <div className="welcome">
+      <h2>Fact cards need a one-time download</h2>
+      <p>
+        Valence writes its cards with an AI model that runs on your Mac. What you look up stays on it: the
+        app only talks to PubChem, Wikipedia and, for this download, Hugging Face.
+      </p>
+      {model.state === 'downloading' ? (
+        <>
+          <progress value={model.done} max={model.total} aria-label="Model download" />
+          <p className="muted">
+            {gigabytes(model.done)} of {gigabytes(model.total)}. Search, 3D and hazard labels work meanwhile.
+          </p>
+        </>
+      ) : (
+        <>
+          {model.error && (
+            <p className="welcome-error" role="alert">
+              The download stopped: {model.error}.
+            </p>
+          )}
+          <button type="button" onClick={() => downloadModel()}>
+            {model.downloaded > 0
+              ? `Resume download (${gigabytes(model.downloaded)} of ${gigabytes(model.size)})`
+              : `Download the model (${gigabytes(model.size)})`}
+          </button>
+          <p className="muted">Search, 3D and hazard labels work without it.</p>
+        </>
+      )}
+    </div>
+  )
+}
+
 export default function CardsPanel({ molecule, model }: { molecule?: MoleculeState; model?: ModelStatus }) {
   if (!molecule || molecule.status === 'error') {
     return (
@@ -88,6 +125,7 @@ export default function CardsPanel({ molecule, model }: { molecule?: MoleculeSta
             Search a molecule to see where you meet it, how it was found, how dangerous it is, and its
             strangest detail. Every card cites its sources.
           </p>
+          {model && <Welcome model={model} />}
         </div>
       </section>
     )
@@ -95,6 +133,7 @@ export default function CardsPanel({ molecule, model }: { molecule?: MoleculeSta
   const cards = molecule.cards
   return (
     <section className="cards-panel" aria-label="Fact cards">
+      {model && <Welcome model={model} />}
       {!cards && <p className="muted">Gathering sources…</p>}
       {cards?.length === 0 && <p className="muted">Not enough in the sources for a fact card.</p>}
       {/* Announce finished cards only, not every streamed word. */}

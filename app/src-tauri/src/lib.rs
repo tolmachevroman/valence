@@ -15,6 +15,7 @@ use tokio::sync::watch;
 use valence_core::cache::{Cache, Molecule, unix_seconds};
 use valence_core::card::CardKind;
 use valence_core::cards::{self, Cached, Card, Event, Hazards, Outcome};
+use valence_core::download::{self, DEFAULT_MODEL, part_path};
 use valence_core::fetch::{Progress, Sources, load};
 use valence_core::ghs::Ghs;
 use valence_core::ghs::HazardStatement;
@@ -35,6 +36,7 @@ struct AppState {
 struct Model {
     /// The model's file name; cards are cached per model.
     name: String,
+    path: PathBuf,
     status: watch::Sender<ModelStatus>,
     loaded: OnceLock<LocalModel>,
 }
@@ -46,9 +48,18 @@ struct Model {
     rename_all_fields = "camelCase"
 )]
 enum ModelStatus {
-    /// No model file yet; the download comes in M4.2.
+    /// No model file yet: the welcome screen offers the download.
     NotDownloaded {
-        path: String,
+        /// Bytes of the whole file.
+        size: u64,
+        /// Bytes kept from an earlier attempt, resumed by the next.
+        downloaded: u64,
+        /// Why the last attempt stopped.
+        error: Option<String>,
+    },
+    Downloading {
+        done: u64,
+        total: u64,
     },
     Loading,
     Ready {
@@ -62,8 +73,17 @@ enum ModelStatus {
 }
 
 impl ModelStatus {
-    fn is_final(&self) -> bool {
-        *self != Self::Loading
+    /// Whether the model may still become ready without the user's help.
+    fn is_coming(&self) -> bool {
+        matches!(self, Self::Loading | Self::Downloading { .. })
+    }
+
+    fn not_downloaded(path: &Path, error: Option<String>) -> Self {
+        Self::NotDownloaded {
+            size: DEFAULT_MODEL.size,
+            downloaded: std::fs::metadata(part_path(path)).map_or(0, |m| m.len()),
+            error,
+        }
     }
 }
 
@@ -83,9 +103,7 @@ async fn load_model(state: &AppState, path: &Path) {
                 load_seconds: started.elapsed().as_secs_f64(),
             }
         }
-        Err(LoadError::Missing) => ModelStatus::NotDownloaded {
-            path: path.display().to_string(),
-        },
+        Err(LoadError::Missing) => ModelStatus::not_downloaded(path, None),
         Err(LoadError::NotEnoughMemory(e)) => {
             eprintln!("model refused to load: {e}");
             ModelStatus::NotEnoughMemory
@@ -304,7 +322,7 @@ async fn write_cards(state: &AppState, m: &Molecule, on_event: &Channel<Molecule
 
     let mut status = state.model.status.subscribe();
     for kind in missing {
-        let _ = status.wait_for(ModelStatus::is_final).await;
+        let _ = status.wait_for(|s| !s.is_coming()).await;
         let Some(model) = state.model.loaded.get() else {
             send(MoleculeEvent::CardGone { card: kind });
             continue;
@@ -425,8 +443,8 @@ fn open_url(url: String) -> Result<(), String> {
         })
 }
 
-/// Send the model status to `on_change` now and on every change, until it is
-/// final: ready, or not loadable.
+/// Send the model status to `on_change` now and on every change, until the
+/// model is ready or the window is gone.
 #[tauri::command]
 async fn model_status(
     state: tauri::State<'_, AppState>,
@@ -435,11 +453,55 @@ async fn model_status(
     let mut rx = state.model.status.subscribe();
     loop {
         let status = rx.borrow_and_update().clone();
-        let _ = on_change.send(status.clone());
-        if status.is_final() || rx.changed().await.is_err() {
+        let ready = matches!(status, ModelStatus::Ready { .. });
+        if on_change.send(status).is_err() || ready || rx.changed().await.is_err() {
             return Ok(());
         }
     }
+}
+
+/// Download the default model, resuming what an earlier attempt kept, then
+/// load it. Does nothing unless the model is missing.
+#[tauri::command]
+fn download_model(app: tauri::AppHandle, state: tauri::State<'_, AppState>) {
+    let start = ModelStatus::Downloading {
+        done: 0,
+        total: DEFAULT_MODEL.size,
+    };
+    let started = state.model.status.send_if_modified(|s| {
+        let missing = matches!(s, ModelStatus::NotDownloaded { .. });
+        if missing {
+            *s = start;
+        }
+        missing
+    });
+    if !started {
+        return;
+    }
+    let path = state.model.path.clone();
+    tauri::async_runtime::spawn(async move {
+        let state = app.state::<AppState>();
+        let status = &state.model.status;
+        let result = download::download(
+            &download::client(),
+            DEFAULT_MODEL,
+            &path,
+            &mut |done, total| {
+                status.send_replace(ModelStatus::Downloading { done, total });
+            },
+        )
+        .await;
+        match result {
+            Ok(()) => {
+                status.send_replace(ModelStatus::Loading);
+                load_model(&state, &path).await;
+            }
+            Err(e) => {
+                eprintln!("model download stopped: {e}");
+                status.send_replace(ModelStatus::not_downloaded(&path, Some(e.to_string())));
+            }
+        }
+    });
 }
 
 pub fn run() {
@@ -456,6 +518,7 @@ pub fn run() {
                     name: path
                         .file_name()
                         .map_or_else(|| MODEL_FILE.into(), |f| f.to_string_lossy().into_owned()),
+                    path: path.clone(),
                     status: watch::Sender::new(ModelStatus::Loading),
                     loaded: OnceLock::new(),
                 },
@@ -472,6 +535,7 @@ pub fn run() {
             autocomplete,
             open_molecule,
             model_status,
+            download_model,
             open_url
         ])
         .run(tauri::generate_context!())
@@ -506,6 +570,15 @@ mod tests {
         assert_eq!(
             serde_json::to_string(&done).unwrap(),
             r#"{"kind":"done","snippetCount":3,"fetchedAt":7}"#
+        );
+        let missing = ModelStatus::NotDownloaded {
+            size: 9,
+            downloaded: 4,
+            error: None,
+        };
+        assert_eq!(
+            serde_json::to_string(&missing).unwrap(),
+            r#"{"state":"notDownloaded","size":9,"downloaded":4,"error":null}"#
         );
         let ready = ModelStatus::Ready { load_seconds: 1.5 };
         assert_eq!(

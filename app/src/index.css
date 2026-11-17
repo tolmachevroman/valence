@@ -279,6 +279,47 @@ input:disabled {
   text-align: center;
 }
 
+.welcome {
+  max-width: 640px;
+  margin: 0 0 24px;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.empty .welcome {
+  margin: 32px auto 0;
+}
+
+.welcome h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.welcome p {
+  margin: 0 0 12px;
+}
+
+.welcome p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome progress {
+  width: 100%;
+  margin-bottom: 8px;
+  accent-color: var(--accent);
+}
+
+.welcome button + p {
+  margin-top: 8px;
+}
+
+.welcome-error {
+  color: var(--warn);
+}
+
 .cards {
   display: grid;
   gap: 16px;
@@ -416,6 +457,10 @@ input:disabled {
 .model-failed::before,
 .model-notDownloaded::before {
   background: var(--warn);
+}
+
+.model-downloading::before {
+  background: var(--accent);
 }
 
 @media (prefers-reduced-motion: no-preference) {

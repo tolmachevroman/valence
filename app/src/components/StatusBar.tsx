@@ -1,6 +1,6 @@
 // Footer: model status, and data freshness (M4.3).
 
-import type { ModelStatus } from '../core'
+import { gigabytes, type ModelStatus } from '../core'
 
 /** Short footer text, and a longer explanation for the tooltip and VoiceOver. */
 function describe(model?: ModelStatus): [string, string] {
@@ -11,7 +11,11 @@ function describe(model?: ModelStatus): [string, string] {
     case 'ready':
       return ['Model: ready', `The fact-card model loaded in ${model.loadSeconds.toFixed(1)} s.`]
     case 'notDownloaded':
-      return ['Model: not downloaded', `No model file at ${model.path}. Cards need it; search, 3D and hazards work without it.`]
+      return ['Model: not downloaded', 'Fact cards need the model; search, 3D and hazards work without it.']
+    case 'downloading': {
+      const percent = Math.floor((100 * model.done) / model.total)
+      return [`Model: downloading ${percent}%`, `Downloading the model: ${gigabytes(model.done)} of ${gigabytes(model.total)}.`]
+    }
     case 'notEnoughMemory':
       return [
         'Model: not enough free memory',

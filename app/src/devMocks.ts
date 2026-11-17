@@ -2,7 +2,7 @@
 // (`npm run dev`), so layout work needs no Rust build. Serves recorded data
 // for caffeine (3D) and buckminsterfullerene (2D only) with realistic delays.
 // `?q=caffeine` opens a molecule on load; `?model=missing|memory|failed`
-// picks how the model load ends. Never part of a production build.
+// picks how the model load ends; with `missing`, the download takes about 10 s. Never part of a production build.
 
 import { mockIPC } from '@tauri-apps/api/mocks'
 
@@ -118,10 +118,25 @@ function sender<T>(channelArg: unknown) {
   return (message: T) => internals.runCallback(id, { message, index: index++ })
 }
 
+const MODEL_SIZE = 2_497_281_120
+
+/** Model status changes go to the latest `model_status` channel. */
+let sendModel: (s: ModelStatus) => void = () => {}
+
+async function mockDownload() {
+  for (let done = 0; done <= MODEL_SIZE; done += MODEL_SIZE / 50) {
+    sendModel({ state: 'downloading', done, total: MODEL_SIZE })
+    await sleep(200)
+  }
+  sendModel({ state: 'loading' })
+  await sleep(1500)
+  sendModel({ state: 'ready', loadSeconds: 1.5 })
+}
+
 function modelOutcome(): ModelStatus {
   switch (new URLSearchParams(location.search).get('model')) {
     case 'missing':
-      return { state: 'notDownloaded', path: '~/Library/Application Support/…/models/model.gguf' }
+      return { state: 'notDownloaded', size: MODEL_SIZE, downloaded: 0, error: null }
     case 'memory':
       return { state: 'notEnoughMemory' }
     case 'failed':
@@ -186,12 +201,15 @@ export function installDevMocks() {
         return found.compound.cid
       }
       case 'model_status': {
-        const send = sender<ModelStatus>(args.onChange)
-        send({ state: 'loading' })
+        sendModel = sender<ModelStatus>(args.onChange)
+        sendModel({ state: 'loading' })
         await sleep(2400)
-        send(modelOutcome())
+        sendModel(modelOutcome())
         return null
       }
+      case 'download_model':
+        void mockDownload()
+        return null
       case 'open_url':
         window.open(String(args.url), '_blank')
         return null
