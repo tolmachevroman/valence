@@ -269,6 +269,9 @@ input:disabled {
 /* Right panel */
 
 .cards-panel {
+  /* Contains the visually hidden live region, which otherwise sits below
+     the last card and stretches the whole window into a blank scroll. */
+  position: relative;
   overflow-y: auto;
   padding: 24px;
 }
