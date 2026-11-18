@@ -7988,6 +7988,7 @@ dependencies = [
  "serde_json",
  "sha2",
  "tokio",
+ "toml 1.1.8+spec-1.1.0",
 ]
 
 [[package]]

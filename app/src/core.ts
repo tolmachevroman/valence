@@ -2,6 +2,7 @@
 // Mirrors app/src-tauri/src/lib.rs and the valence-core types it serializes.
 
 import { Channel, invoke } from '@tauri-apps/api/core'
+import { listen } from '@tauri-apps/api/event'
 
 /** valence_core::pubchem::Compound */
 export interface Compound {
@@ -117,6 +118,35 @@ export function downloadModel(): Promise<void> {
 /** "2.5 GB" */
 export function gigabytes(bytes: number): string {
   return `${(bytes / 1e9).toFixed(1)} GB`
+}
+
+/** What the Settings tab shows. */
+export interface SettingsInfo {
+  settingsPath: string
+  /** Why settings.toml couldn't be read; the defaults are in use. */
+  settingsError: string | null
+  modelPath: string
+  modelFile: string
+  /** Null while the file is missing. */
+  modelBytes: number | null
+  /** The default model, the only one tested for accurate cards. */
+  modelIsDefault: boolean
+}
+
+export type DialogTab = 'settings' | 'about'
+
+export function settingsInfo(): Promise<SettingsInfo> {
+  return invoke<SettingsInfo>('settings_info')
+}
+
+/** Show the model in Finder, or open settings.toml in the default text editor. */
+export function showFile(which: 'model' | 'settings'): Promise<void> {
+  return invoke<void>('show_file', { which })
+}
+
+/** The app menu's "About Valence" and "Settings…" open the dialog on a tab. */
+export function onShowDialog(show: (tab: DialogTab) => void): Promise<() => void> {
+  return listen<DialogTab>('show-dialog', (e) => show(e.payload))
 }
 
 /** Open an https link in the default browser. */

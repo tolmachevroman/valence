@@ -219,10 +219,21 @@ export function installDevMocks() {
       case 'download_model':
         void mockDownload()
         return null
+      case 'settings_info':
+        return {
+          settingsPath: '~/Library/Application Support/io.github.tolmachevroman.valence/settings.toml',
+          settingsError: null,
+          modelPath: '~/Library/Application Support/io.github.tolmachevroman.valence/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf',
+          modelFile: 'Qwen3-4B-Instruct-2507-Q4_K_M.gguf',
+          modelBytes: MODEL_SIZE,
+          modelIsDefault: true,
+        }
+      case 'show_file':
+        return null
       case 'open_url':
         window.open(String(args.url), '_blank')
         return null
     }
     throw `no dev mock for ${cmd}`
-  })
+  }, { shouldMockEvents: true })
 }

@@ -490,3 +490,102 @@ input:disabled {
     opacity: 0.3;
   }
 }
+
+/* Settings and About dialog */
+
+.dialog {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  padding: 0;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 0.24);
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.32);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tabs [role='tab'] {
+  color: var(--text-muted);
+  background: transparent;
+}
+
+.tabs [role='tab'][aria-selected='true'] {
+  color: var(--text);
+  background: var(--surface);
+  font-weight: 600;
+}
+
+.dialog-body {
+  overflow-y: auto;
+  padding: 4px 20px 20px;
+}
+
+.dialog-body section {
+  padding-top: 16px;
+}
+
+.dialog-body h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.dialog-body p {
+  margin: 0 0 8px;
+}
+
+.dialog-body code,
+.dialog-body .path {
+  font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dialog-body .path {
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.dialog-body a {
+  color: var(--accent);
+}
+
+.dialog-warn {
+  color: var(--warn);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 16px;
+  margin: 0 0 8px;
+}
+
+.facts dt {
+  color: var(--text-muted);
+}
+
+.facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}

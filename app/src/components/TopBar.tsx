@@ -1,14 +1,15 @@
-// Search, "Surprise me", favorites and settings. Settings arrive in M4.4,
-// favorites in v0.2.
+// Search, "Surprise me", favorites and settings. Favorites arrive in v0.2.
 
 import SearchBox from './SearchBox'
 
 export default function TopBar({
   onOpen,
   onSurprise,
+  onSettings,
 }: {
   onOpen: (query: string) => void
   onSurprise: () => void
+  onSettings: () => void
 }) {
   return (
     <header className="top-bar">
@@ -24,7 +25,7 @@ export default function TopBar({
           <path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.85L12 16.9l-5.25 2.75 1-5.85L3.5 9.7l5.9-.9z" />
         </svg>
       </button>
-      <button type="button" className="icon" aria-label="Settings" title="Settings" disabled>
+      <button type="button" className="icon" aria-label="Settings and About" title="Settings and About" onClick={onSettings}>
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="3" />
           <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" />

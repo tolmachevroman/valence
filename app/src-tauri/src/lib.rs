@@ -8,9 +8,10 @@ use std::sync::{Mutex, OnceLock};
 use std::time::{Instant, SystemTime};
 
 use serde::Serialize;
-use tauri::Manager;
 use tauri::async_runtime::JoinHandle;
 use tauri::ipc::Channel;
+use tauri::menu::{Menu, MenuItem, PredefinedMenuItem};
+use tauri::{Emitter, Manager};
 use tokio::sync::watch;
 use valence_core::cache::{Cache, Molecule, unix_seconds};
 use valence_core::card::CardKind;
@@ -23,8 +24,12 @@ use valence_core::ghs::HazardStatement;
 use valence_core::http::Http;
 use valence_core::model::{LoadError, LocalModel, MODEL_FILE};
 use valence_core::pubchem::{Compound, Structure};
+use valence_core::settings;
 
 struct AppState {
+    settings_path: PathBuf,
+    /// Why `settings.toml` couldn't be read; the defaults are used meanwhile.
+    settings_error: Option<String>,
     sources: Sources,
     cache: Mutex<Cache>,
     model: Model,
@@ -38,6 +43,9 @@ struct Model {
     /// The model's file name; cards are cached per model.
     name: String,
     path: PathBuf,
+    /// Named by `settings.toml`: not downloadable. (A `VALENCE_MODEL` path
+    /// is, so the download can be tried in development.)
+    custom: bool,
     status: watch::Sender<ModelStatus>,
     loaded: OnceLock<LocalModel>,
 }
@@ -88,11 +96,17 @@ impl ModelStatus {
     }
 }
 
-/// `VALENCE_MODEL` when set (development), else the app's models folder.
-fn model_path(data_dir: &Path) -> PathBuf {
+/// `VALENCE_MODEL` when set (development), else the model `settings.toml`
+/// names, else the default in the app's models folder.
+fn model_path(data_dir: &Path, settings: &settings::Settings) -> PathBuf {
     std::env::var_os("VALENCE_MODEL")
         .map(PathBuf::from)
-        .unwrap_or_else(|| data_dir.join("models").join(MODEL_FILE))
+        .or_else(|| settings.model.clone())
+        .unwrap_or_else(|| default_model_path(data_dir))
+}
+
+fn default_model_path(data_dir: &Path) -> PathBuf {
+    data_dir.join("models").join(MODEL_FILE)
 }
 
 async fn load_model(state: &AppState, path: &Path) {
@@ -104,6 +118,13 @@ async fn load_model(state: &AppState, path: &Path) {
                 load_seconds: started.elapsed().as_secs_f64(),
             }
         }
+        // Only the default model can be downloaded.
+        Err(LoadError::Missing) if state.model.custom => ModelStatus::Failed {
+            message: format!(
+                "No model file at {}, the model settings.toml names.",
+                path.display()
+            ),
+        },
         Err(LoadError::Missing) => ModelStatus::not_downloaded(path, None),
         Err(LoadError::NotEnoughMemory(e)) => {
             eprintln!("model refused to load: {e}");
@@ -271,6 +292,73 @@ fn base64(bytes: &[u8]) -> String {
 #[tauri::command]
 fn app_version() -> &'static str {
     env!("CARGO_PKG_VERSION")
+}
+
+/// What the Settings tab shows.
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SettingsInfo {
+    settings_path: String,
+    settings_error: Option<String>,
+    model_path: String,
+    model_file: String,
+    /// `None` while the file is missing.
+    model_bytes: Option<u64>,
+    /// The default model, the only one tested for accurate cards.
+    model_is_default: bool,
+}
+
+#[tauri::command]
+fn settings_info(state: tauri::State<'_, AppState>) -> SettingsInfo {
+    let model = &state.model;
+    SettingsInfo {
+        settings_path: state.settings_path.display().to_string(),
+        settings_error: state.settings_error.clone(),
+        model_path: model.path.display().to_string(),
+        model_file: model.name.clone(),
+        model_bytes: std::fs::metadata(&model.path).ok().map(|m| m.len()),
+        model_is_default: model.name == MODEL_FILE,
+    }
+}
+
+/// Show the model file in Finder, or open `settings.toml` in the default
+/// text editor. Only these two files, never a path from the window.
+#[tauri::command]
+fn show_file(state: tauri::State<'_, AppState>, which: String) -> Result<(), String> {
+    let mut open = std::process::Command::new("/usr/bin/open");
+    match which.as_str() {
+        "model" if state.model.path.exists() => open.arg("-R").arg(&state.model.path),
+        // Not downloaded yet: its folder, if there is one.
+        "model" => match state.model.path.parent().filter(|d| d.exists()) {
+            Some(dir) => open.arg(dir),
+            None => return Err("the model's folder doesn't exist yet".into()),
+        },
+        "settings" => {
+            settings::create(&state.settings_path).map_err(|e| e.to_string())?;
+            open.arg("-t").arg(&state.settings_path)
+        }
+        _ => return Err(format!("unknown file: {which}")),
+    };
+    match open.status() {
+        Ok(s) if s.success() => Ok(()),
+        Ok(_) => Err(format!("open failed for the {which} file")),
+        Err(e) => Err(e.to_string()),
+    }
+}
+
+/// The macOS app menu with "About Valence" and "Settings…" opening the
+/// window's own dialog instead of the native About panel.
+fn app_menu(app: &tauri::AppHandle) -> tauri::Result<Menu<tauri::Wry>> {
+    let menu = Menu::default(app)?;
+    if let Some(app_menu) = menu.items()?.first().and_then(|i| i.as_submenu().cloned()) {
+        app_menu.remove_at(0)?;
+        let about = MenuItem::with_id(app, "about", "About Valence", true, None::<&str>)?;
+        let settings = MenuItem::with_id(app, "settings", "Settings…", true, Some("CmdOrCtrl+,"))?;
+        app_menu.insert(&about, 0)?;
+        app_menu.insert(&settings, 2)?;
+        app_menu.insert(&PredefinedMenuItem::separator(app)?, 3)?;
+    }
+    Ok(menu)
 }
 
 const OFFLINE: &str = "You're offline. Molecules you've opened before still work.";
@@ -504,6 +592,9 @@ fn download_model(app: tauri::AppHandle, state: tauri::State<'_, AppState>) {
         done: 0,
         total: DEFAULT_MODEL.size,
     };
+    if state.model.custom {
+        return;
+    }
     let started = state.model.status.send_if_modified(|s| {
         let missing = matches!(s, ModelStatus::NotDownloaded { .. });
         if missing {
@@ -546,14 +637,26 @@ pub fn run() {
             let dir = app.path().app_data_dir()?;
             std::fs::create_dir_all(&dir)?;
             let cache = Cache::open(&dir.join("cache.sqlite"))?;
-            let path = model_path(&dir);
+            let settings_path = dir.join(settings::FILE);
+            if let Err(e) = settings::create(&settings_path) {
+                eprintln!("writing {}: {e}", settings_path.display());
+            }
+            let (settings, settings_error) = match settings::load(&settings_path) {
+                Ok(s) => (s, None),
+                Err(e) => (settings::Settings::default(), Some(e)),
+            };
+            let path = model_path(&dir, &settings);
             app.manage(AppState {
+                settings_path,
+                settings_error,
                 sources: Sources::new(Http::new()),
                 cache: Mutex::new(cache),
                 model: Model {
                     name: path
                         .file_name()
                         .map_or_else(|| MODEL_FILE.into(), |f| f.to_string_lossy().into_owned()),
+                    custom: std::env::var_os("VALENCE_MODEL").is_none()
+                        && path != default_model_path(&dir),
                     path: path.clone(),
                     status: watch::Sender::new(ModelStatus::Loading),
                     loaded: OnceLock::new(),
@@ -566,12 +669,23 @@ pub fn run() {
             });
             Ok(())
         })
+        .menu(app_menu)
+        .on_menu_event(|app, event| {
+            let tab = match event.id().as_ref() {
+                "about" => "about",
+                "settings" => "settings",
+                _ => return,
+            };
+            let _ = app.emit("show-dialog", tab);
+        })
         .invoke_handler(tauri::generate_handler![
             app_version,
             autocomplete,
             open_molecule,
             model_status,
             download_model,
+            settings_info,
+            show_file,
             open_url
         ])
         .run(tauri::generate_context!())

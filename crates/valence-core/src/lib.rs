@@ -17,6 +17,7 @@ pub mod prompt;
 pub mod pubchem;
 pub mod pug_view;
 pub mod select;
+pub mod settings;
 pub mod text;
 pub mod validate;
 pub mod verify;
