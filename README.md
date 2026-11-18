@@ -45,4 +45,4 @@ cargo test --workspace   # Rust tests, from the repo root
 
 ## License
 
-MIT. Molecule data from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and [Wikipedia](https://www.wikipedia.org/).
+The code is MIT. Molecule data comes from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and [Wikipedia](https://www.wikipedia.org/) and keeps its own terms: Wikipedia text is © Wikipedia contributors under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), and PubChem data comes from the NCBI and the depositors each record names ([data policies](https://pubchem.ncbi.nlm.nih.gov/docs/about)). That applies to the recorded replies and review runs in this repository (`fixtures/`, `docs/spike/`, `docs/review/`, test snapshots) and to the cards the app shows.
