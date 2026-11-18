@@ -4,7 +4,7 @@
 use std::sync::Mutex;
 use std::time::SystemTime;
 
-use tokio::sync::mpsc::UnboundedSender;
+use tokio::sync::mpsc::{UnboundedSender, unbounded_channel};
 
 use crate::cache::{Cache, Molecule, unix_seconds};
 use crate::card::Snippet;
@@ -129,9 +129,26 @@ pub async fn fetch(
     })
 }
 
-/// The molecule from the cache while fresh, else fetched and cached. Cached
-/// parts are sent as progress too, so the UI handles both paths the same way.
-/// If a refetch fails, stale cached data is still better than nothing.
+/// The CID for a name, CAS number or CID: a number as it is, then a molecule
+/// already in the cache (so it works offline), then PubChem.
+pub async fn resolve(
+    sources: &Sources,
+    cache: &Mutex<Cache>,
+    query: &str,
+) -> Result<Option<u64>, Error> {
+    let query = query.trim();
+    if let Ok(cid) = query.parse::<u64>() {
+        return Ok(Some(cid));
+    }
+    if let Some(cid) = cache.lock().expect("cache lock").find(query)? {
+        return Ok(Some(cid));
+    }
+    sources.pubchem.resolve(query).await
+}
+
+/// The molecule from the cache, else fetched and cached. Cached parts are sent
+/// as progress too, so the UI handles both paths the same way. Stale data is
+/// served as it is, at once and offline too; `refresh` it afterwards.
 pub async fn load(
     sources: &Sources,
     cache: &Mutex<Cache>,
@@ -145,23 +162,33 @@ pub async fn load(
             let _ = progress.send(p);
         }
     };
-    if let Some(m) = cached.as_ref().filter(|m| m.is_fresh(now)) {
-        replay(m);
-        return Ok(m.clone());
+    if let Some(m) = cached {
+        replay(&m);
+        return Ok(m);
     }
-    match (fetch(sources, cid, now, progress).await, cached) {
-        (Ok(m), _) => {
-            let mut cache = cache.lock().expect("cache lock");
-            cache.save(&m)?;
-            // Reload so snippets carry their row ids.
-            Ok(cache.molecule(cid)?.expect("just saved"))
-        }
-        (Err(_), Some(stale)) => {
-            replay(&stale);
-            Ok(stale)
-        }
-        (Err(e), None) => Err(e),
-    }
+    let m = fetch(sources, cid, now, progress).await?;
+    save(cache, &m)
+}
+
+/// Fetch a cached molecule again and store it. Cards citing snippets that
+/// changed are deleted, so don't run it while cards for this molecule are
+/// being stored.
+pub async fn refresh(
+    sources: &Sources,
+    cache: &Mutex<Cache>,
+    cid: u64,
+    now: SystemTime,
+) -> Result<Molecule, Error> {
+    let (tx, _rx) = unbounded_channel();
+    let m = fetch(sources, cid, now, &tx).await?;
+    save(cache, &m)
+}
+
+fn save(cache: &Mutex<Cache>, m: &Molecule) -> Result<Molecule, Error> {
+    let mut cache = cache.lock().expect("cache lock");
+    cache.save(m)?;
+    // Reload so snippets carry their row ids.
+    Ok(cache.molecule(m.compound.cid)?.expect("just saved"))
 }
 
 /// A cached molecule as the progress messages a fetch would have sent.
@@ -405,7 +432,7 @@ mod tests {
     }
 
     #[tokio::test]
-    async fn serves_fresh_data_from_the_cache_and_stale_data_when_offline() {
+    async fn serves_cached_data_offline_and_refreshes_it_later() {
         let down = Arc::new(AtomicBool::new(false));
         let (sources, log) = local_sources(down.clone()).await;
         let cache = Mutex::new(Cache::in_memory().unwrap());
@@ -428,10 +455,41 @@ mod tests {
         down.store(true, Ordering::Relaxed);
         let later = t0 + crate::cache::FRESH_FOR + Duration::from_secs(1);
         let stale = load(&sources, &cache, 2519, later, &tx).await.unwrap();
-        assert_eq!(stale, first, "stale data when the refetch fails");
-        assert!(log.lock().unwrap().len() > requests, "a refetch was tried");
+        assert_eq!(stale, first, "stale data at once, without a request");
+        assert!(!stale.is_fresh(later));
+        assert_eq!(log.lock().unwrap().len(), requests);
+        assert_eq!(
+            resolve(&sources, &cache, "Caffeine").await.unwrap(),
+            Some(2519),
+            "names of cached molecules resolve offline"
+        );
+        assert!(refresh(&sources, &cache, 2519, later).await.is_err());
+        assert!(load(&sources, &cache, 1, later, &tx).await.is_err());
 
-        let missing = load(&sources, &cache, 1, later, &tx).await;
-        assert!(missing.is_err());
+        down.store(false, Ordering::Relaxed);
+        let fresh = refresh(&sources, &cache, 2519, later).await.unwrap();
+        assert!(fresh.is_fresh(later));
+        assert_eq!(
+            fresh.snippets, first.snippets,
+            "unchanged snippets keep their ids"
+        );
+    }
+
+    #[tokio::test]
+    async fn no_connection_is_offline_and_an_error_status_is_not() {
+        let addr = tokio::net::TcpListener::bind("127.0.0.1:0")
+            .await
+            .unwrap()
+            .local_addr()
+            .unwrap();
+        // The listener is dropped: nothing answers there.
+        let nowhere = PubChem::with_base(Http::new(), &format!("http://{addr}/rest"));
+        let e = nowhere.resolve("caffeine").await.unwrap_err();
+        assert!(e.is_offline(), "{e}");
+
+        let down = Arc::new(AtomicBool::new(true));
+        let (sources, _) = local_sources(down).await;
+        let e = sources.pubchem.resolve("caffeine").await.unwrap_err();
+        assert!(!e.is_offline(), "{e}");
     }
 }

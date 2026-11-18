@@ -1,10 +1,11 @@
 // Molecule search: an ARIA 1.2 combobox with PubChem autocomplete.
 // Arrow keys move through suggestions, Enter opens the highlighted one (or
 // what was typed: a name, CAS number or CID), Escape closes the list.
+// Offline, suggestions come from molecules opened before, under a note.
 
 import { useEffect, useId, useState } from 'react'
 
-import { autocomplete } from '../core'
+import { autocomplete, type Suggestions } from '../core'
 
 const DEBOUNCE_MS = 120
 const MIN_CHARS = 2
@@ -13,15 +14,18 @@ export default function SearchBox({ onOpen }: { onOpen: (query: string) => void 
   const [text, setText] = useState('')
   // Replies by query; what's shown is the reply for what's typed now, so a
   // late reply to an older query never shows.
-  const [found, setFound] = useState<Record<string, string[]>>({})
+  const [found, setFound] = useState<Record<string, Suggestions>>({})
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(-1)
   const listId = useId()
 
   const query = text.trim().toLowerCase()
   const ready = query.length >= MIN_CHARS
-  const suggestions = (ready && found[query]) || []
-  const known = ready && query in found
+  const reply = ready ? found[query] : undefined
+  const suggestions = reply?.names ?? []
+  const offline = reply?.offline ?? false
+  // Offline answers aren't kept: once back online, PubChem is asked again.
+  const known = ready && query in found && !offline
 
   useEffect(() => {
     if (!ready || known) return
@@ -35,6 +39,7 @@ export default function SearchBox({ onOpen }: { onOpen: (query: string) => void 
   }, [query, ready, known])
 
   const showList = open && suggestions.length > 0
+  const showNote = open && offline
 
   function choose(value: string) {
     if (!value.trim()) return
@@ -95,24 +100,33 @@ export default function SearchBox({ onOpen }: { onOpen: (query: string) => void 
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
       />
-      <ul id={listId} role="listbox" aria-label="Suggestions" className="suggestions" hidden={!showList}>
-        {suggestions.map((s, i) => (
-          <li
-            key={s}
-            id={`${listId}-${i}`}
-            role="option"
-            aria-selected={i === active}
-            // mousedown, not click: the input's blur would close the list first.
-            onMouseDown={(e) => {
-              e.preventDefault()
-              choose(s)
-            }}
-            onMouseEnter={() => setActive(i)}
-          >
-            {s}
-          </li>
-        ))}
-      </ul>
+      <div className="suggestions" hidden={!showList && !showNote}>
+        {showNote && (
+          <p className="suggestions-note" role="status">
+            {suggestions.length > 0
+              ? "You're offline. These molecules were opened before and still work:"
+              : "You're offline, and no molecule opened before starts like this."}
+          </p>
+        )}
+        <ul id={listId} role="listbox" aria-label="Suggestions" hidden={!showList}>
+          {suggestions.map((s, i) => (
+            <li
+              key={s}
+              id={`${listId}-${i}`}
+              role="option"
+              aria-selected={i === active}
+              // mousedown, not click: the input's blur would close the list first.
+              onMouseDown={(e) => {
+                e.preventDefault()
+                choose(s)
+              }}
+              onMouseEnter={() => setActive(i)}
+            >
+              {s}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

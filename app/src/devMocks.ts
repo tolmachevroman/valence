@@ -2,7 +2,9 @@
 // (`npm run dev`), so layout work needs no Rust build. Serves recorded data
 // for caffeine (3D) and buckminsterfullerene (2D only) with realistic delays.
 // `?q=caffeine` opens a molecule on load; `?model=missing|memory|failed`
-// picks how the model load ends; with `missing`, the download takes about 10 s. Never part of a production build.
+// picks how the model load ends; with `missing`, the download takes about 10 s.
+// `?offline=1` answers as if PubChem were out of reach: recorded molecules
+// stand in for the cache. Never part of a production build.
 
 import { mockIPC } from '@tauri-apps/api/mocks'
 
@@ -102,6 +104,8 @@ const RECORDED: Record<string, Recorded> = {
   },
 }
 
+const OFFLINE = new URLSearchParams(location.search).has('offline')
+
 const NAMES = ['caffeine', 'caffeic acid', 'buckminsterfullerene', 'capsaicin', 'carvone']
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
@@ -180,13 +184,18 @@ export function installDevMocks() {
       case 'autocomplete': {
         await sleep(150)
         const q = String(args.query).toLowerCase()
-        return NAMES.filter((n) => n.startsWith(q))
+        if (OFFLINE) {
+          const names = Object.values(RECORDED).map((r) => r.compound.title)
+          return { names: names.filter((n) => n.toLowerCase().startsWith(q)), offline: true }
+        }
+        return { names: NAMES.filter((n) => n.startsWith(q)), offline: false }
       }
       case 'open_molecule': {
         const query = String(args.query).toLowerCase()
         const found = Object.values(RECORDED).find(
           (r) => r.compound.title.toLowerCase() === query || String(r.compound.cid) === query,
         )
+        if (!found && OFFLINE) throw "You're offline. Molecules you've opened before still work. (dev mock)"
         if (!found) throw `PubChem has no compound called "${args.query}" (dev mock)`
         const send = sender<MoleculeEvent>(args.onEvent)
         await sleep(300)

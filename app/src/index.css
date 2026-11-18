@@ -128,8 +128,21 @@ p {
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.16);
 }
 
-.suggestions[hidden] {
+.suggestions[hidden],
+.suggestions ul[hidden] {
   display: none;
+}
+
+.suggestions ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suggestions-note {
+  padding: 5px 8px;
+  color: var(--text-muted);
+  font-size: 13px;
 }
 
 .suggestions li {

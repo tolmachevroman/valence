@@ -393,6 +393,45 @@ impl Cache {
             .optional()
     }
 
+    /// The cached molecule called `query`, by name, CAS number or synonym,
+    /// ignoring case. Lets a name open offline, without asking PubChem.
+    pub fn find(&self, query: &str) -> rusqlite::Result<Option<u64>> {
+        self.conn
+            .query_row(
+                "SELECT cid FROM molecule WHERE name = ?1 COLLATE NOCASE OR cas = ?1
+                 UNION ALL
+                 SELECT m.cid FROM molecule m, json_each(m.synonyms_json) s
+                 WHERE s.value = ?1 COLLATE NOCASE
+                 LIMIT 1",
+                [query.trim()],
+                |r| r.get(0),
+            )
+            .optional()
+    }
+
+    /// Names and synonyms of cached molecules starting like `prefix`, names
+    /// first, shortest first: search suggestions while offline.
+    pub fn names_starting(&self, prefix: &str, limit: usize) -> rusqlite::Result<Vec<String>> {
+        let escaped = prefix
+            .trim()
+            .replace('\\', "\\\\")
+            .replace('%', "\\%")
+            .replace('_', "\\_");
+        let mut stmt = self.conn.prepare(
+            "SELECT value FROM (
+               SELECT name AS value, 0 AS rank FROM molecule
+               UNION ALL
+               SELECT s.value, 1 FROM molecule m, json_each(m.synonyms_json) s
+             )
+             WHERE value LIKE ?1 ESCAPE '\\'
+             GROUP BY lower(value)
+             ORDER BY min(rank), length(value), value
+             LIMIT ?2",
+        )?;
+        stmt.query_map(params![format!("{escaped}%"), limit], |r| r.get(0))?
+            .collect()
+    }
+
     /// Card ids for a molecule, oldest first.
     pub fn card_ids(&self, cid: u64) -> rusqlite::Result<Vec<i64>> {
         let mut stmt = self
@@ -436,6 +475,22 @@ mod tests {
             snippets,
             fetched_at,
         }
+    }
+
+    #[test]
+    fn finds_cached_molecules_by_name() {
+        let mut cache = Cache::in_memory().unwrap();
+        assert_eq!(cache.find("caffeine").unwrap(), None);
+        cache.save(&caffeine(Vec::new(), 1)).unwrap();
+        for query in ["caffeine", " CAFFEINE ", "58-08-2", "theine"] {
+            assert_eq!(cache.find(query).unwrap(), Some(2519), "{query}");
+        }
+        assert_eq!(cache.find("caff").unwrap(), None);
+
+        assert_eq!(cache.names_starting("ca", 10).unwrap(), ["Caffeine"]);
+        assert_eq!(cache.names_starting("THE", 10).unwrap(), ["Theine"]);
+        assert!(cache.names_starting("%", 10).unwrap().is_empty());
+        assert!(cache.names_starting("c_f", 10).unwrap().is_empty());
     }
 
     #[test]

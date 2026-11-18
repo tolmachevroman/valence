@@ -52,7 +52,7 @@ export default function App() {
         <MoleculePanel molecule={molecule} />
         <CardsPanel molecule={molecule} model={model} />
       </main>
-      <StatusBar version={version} model={model} />
+      <StatusBar version={version} model={model} fetchedAt={molecule?.fetchedAt} />
     </div>
   )
 }

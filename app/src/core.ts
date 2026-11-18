@@ -82,8 +82,14 @@ export function appVersion(): Promise<string> {
 }
 
 /** Compound names starting like `query`, best first. */
-export function autocomplete(query: string): Promise<string[]> {
-  return invoke<string[]>('autocomplete', { query })
+export function autocomplete(query: string): Promise<Suggestions> {
+  return invoke<Suggestions>('autocomplete', { query })
+}
+
+/** Suggestions: from PubChem, or while `offline` from molecules opened before. */
+export interface Suggestions {
+  names: string[]
+  offline: boolean
 }
 
 /**

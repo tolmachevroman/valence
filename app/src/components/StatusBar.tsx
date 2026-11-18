@@ -1,4 +1,4 @@
-// Footer: model status, and data freshness (M4.3).
+// Footer: model status, and when the open molecule's data was fetched.
 
 import { gigabytes, type ModelStatus } from '../core'
 
@@ -26,13 +26,39 @@ function describe(model?: ModelStatus): [string, string] {
   }
 }
 
-export default function StatusBar({ version, model }: { version?: string; model?: ModelStatus }) {
+/** Data older than this is fetched again after it is shown (FRESH_FOR in the core). */
+const FRESH_DAYS = 90
+
+function fetched(at: number): [string, string] {
+  const date = new Date(at * 1000).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })
+  return [
+    `Data from ${date}`,
+    `PubChem and Wikipedia data fetched on ${date}. Data older than ${FRESH_DAYS} days is fetched again when you open the molecule.`,
+  ]
+}
+
+export default function StatusBar({
+  version,
+  model,
+  fetchedAt,
+}: {
+  version?: string
+  model?: ModelStatus
+  /** The open molecule's data, Unix seconds. */
+  fetchedAt?: number
+}) {
   const [text, detail] = describe(model)
+  const data = fetchedAt != null ? fetched(fetchedAt) : undefined
   return (
     <footer className="status-bar">
       <span className={`model model-${model?.state ?? 'loading'}`} title={detail} role="status" aria-label={detail}>
         {text}
       </span>
+      {data && (
+        <span className="fetched" title={data[1]} aria-label={data[1]}>
+          {data[0]}
+        </span>
+      )}
       <span className="spacer" />
       {version && <span>Valence {version}</span>}
     </footer>

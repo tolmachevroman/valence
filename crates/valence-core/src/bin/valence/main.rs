@@ -18,7 +18,7 @@ use std::time::{Instant, SystemTime};
 
 use tokio::sync::mpsc::unbounded_channel;
 use valence_core::cache::{Cache, Molecule};
-use valence_core::fetch::{Progress, Sources, load};
+use valence_core::fetch::{Progress, Sources, load, refresh, resolve};
 use valence_core::http::Http;
 use valence_core::pubchem::Structure;
 
@@ -121,7 +121,7 @@ async fn open(query: &str, cache_path: &Path, start: Instant) -> Result<Molecule
     let cache = Mutex::new(Cache::open(cache_path)?);
     let sources = Sources::new(Http::new());
 
-    let Some(cid) = sources.pubchem.resolve(query).await? else {
+    let Some(cid) = resolve(&sources, &cache, query).await? else {
         return Err(format!("PubChem has no compound named \"{query}\"").into());
     };
     eprintln!("{:6.2} s  CID {cid}", start.elapsed().as_secs_f64());
@@ -142,10 +142,29 @@ async fn open(query: &str, cache_path: &Path, start: Instant) -> Result<Molecule
             eprintln!("{:6.2} s  {what}", start.elapsed().as_secs_f64());
         }
     });
-    let m = load(&sources, &cache, cid, SystemTime::now(), &tx).await?;
+    let now = SystemTime::now();
+    let m = load(&sources, &cache, cid, now, &tx).await?;
     drop(tx);
     progress.await?;
-    Ok(m)
+    if m.is_fresh(now) {
+        return Ok(m);
+    }
+    match refresh(&sources, &cache, cid, now).await {
+        Ok(fresh) => {
+            eprintln!(
+                "{:6.2} s  refreshed stale data",
+                start.elapsed().as_secs_f64()
+            );
+            Ok(fresh)
+        }
+        Err(e) => {
+            eprintln!(
+                "{:6.2} s  stale data; refresh failed: {e}",
+                start.elapsed().as_secs_f64()
+            );
+            Ok(m)
+        }
+    }
 }
 
 async fn snippets(query: &str, cache_path: PathBuf) -> Result<()> {

@@ -16,7 +16,8 @@ use valence_core::cache::{Cache, Molecule, unix_seconds};
 use valence_core::card::CardKind;
 use valence_core::cards::{self, Cached, Card, Event, Hazards, Outcome};
 use valence_core::download::{self, DEFAULT_MODEL, part_path};
-use valence_core::fetch::{Progress, Sources, load};
+use valence_core::error::Error;
+use valence_core::fetch::{Progress, Sources, load, refresh, resolve};
 use valence_core::ghs::Ghs;
 use valence_core::ghs::HazardStatement;
 use valence_core::http::Http;
@@ -272,18 +273,47 @@ fn app_version() -> &'static str {
     env!("CARGO_PKG_VERSION")
 }
 
-/// Compound names starting like `query`.
+const OFFLINE: &str = "You're offline. Molecules you've opened before still work.";
+
+/// What the window shows for an error: being offline gets a plain message.
+fn describe(e: &Error) -> String {
+    if e.is_offline() {
+        OFFLINE.into()
+    } else {
+        e.to_string()
+    }
+}
+
+#[derive(Serialize)]
+struct Suggestions {
+    names: Vec<String>,
+    /// PubChem couldn't be reached; `names` are molecules opened before.
+    offline: bool,
+}
+
+/// Compound names starting like `query`: from PubChem, or from the cache
+/// while offline.
 #[tauri::command]
 async fn autocomplete(
     state: tauri::State<'_, AppState>,
     query: String,
-) -> Result<Vec<String>, String> {
-    state
-        .sources
-        .pubchem
-        .autocomplete(&query, 10)
-        .await
-        .map_err(|e| e.to_string())
+) -> Result<Suggestions, String> {
+    match state.sources.pubchem.autocomplete(&query, 10).await {
+        Ok(names) => Ok(Suggestions {
+            names,
+            offline: false,
+        }),
+        Err(e) if e.is_offline() => {
+            let cache = state.cache.lock().expect("not poisoned");
+            Ok(Suggestions {
+                names: cache
+                    .names_starting(&query, 10)
+                    .map_err(|e| e.to_string())?,
+                offline: true,
+            })
+        }
+        Err(e) => Err(e.to_string()),
+    }
 }
 
 /// Show the molecule's cards: the Danger card and cached cards at once, then
@@ -387,12 +417,9 @@ async fn open_molecule(
     if let Some(previous) = state.writing.lock().expect("not poisoned").take() {
         previous.abort();
     }
-    let cid = state
-        .sources
-        .pubchem
-        .resolve(&query)
+    let cid = resolve(&state.sources, &state.cache, &query)
         .await
-        .map_err(|e| e.to_string())?
+        .map_err(|e| describe(&e))?
         .ok_or_else(|| format!("PubChem has no compound called \"{}\"", query.trim()))?;
 
     let (tx, mut rx) = tokio::sync::mpsc::unbounded_channel();
@@ -411,13 +438,22 @@ async fn open_molecule(
             }
         },
     );
-    let molecule = molecule.map_err(|e| e.to_string())?;
+    let molecule = molecule.map_err(|e| describe(&e))?;
     let _ = on_event.send(MoleculeEvent::Done {
         snippet_count: molecule.snippets.len(),
         fetched_at: molecule.fetched_at,
     });
     let task = tauri::async_runtime::spawn(async move {
-        write_cards(&app.state::<AppState>(), &molecule, &on_event).await;
+        let state = app.state::<AppState>();
+        write_cards(&state, &molecule, &on_event).await;
+        // Stale data was shown as it was; fetch it again for next time, now
+        // that no card citing it is being stored.
+        let now = SystemTime::now();
+        if !molecule.is_fresh(now)
+            && let Err(e) = refresh(&state.sources, &state.cache, cid, now).await
+        {
+            eprintln!("{}: refreshing stale data: {e}", molecule.compound.title);
+        }
     });
     if let Some(previous) = state.writing.lock().expect("not poisoned").replace(task) {
         previous.abort();

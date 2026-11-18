@@ -13,6 +13,13 @@ pub enum Error {
     Cache(rusqlite::Error),
 }
 
+impl Error {
+    /// No answer from the network: offline, or the connection failed.
+    pub fn is_offline(&self) -> bool {
+        matches!(self, Self::Http(HttpError::Network(_)))
+    }
+}
+
 impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
