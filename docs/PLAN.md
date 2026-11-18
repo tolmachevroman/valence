@@ -94,6 +94,23 @@ Exit: v0.1 public on GitHub.
 
 ---
 
+## Remaining for v0.1 (as of 2026-11-18)
+
+Everything else through M4.5 is done and verified in the app. To finish v0.1:
+
+1. **M2.7 Perf pass**: measure frame rate with the largest molecules in `app/src/curated.json` on an M1; target 60 fps.
+2. **M4.6 Launch kit**: the user records a 15–20 s screen clip (search, 3D, cards streaming, Surprise me) to turn into the README GIF; the launch post's venue is still to be chosen.
+3. **First release**: push the `v0.1.0` tag; `release.yml` has never run, so check its draft release (the .dmg, the notes), then publish it by hand.
+4. **Danger card decision** below: the app already shows GHS classes only; confirm and close it.
+
+Known gaps against the PRD, accepted for now (M3.7, round 5 in `docs/review/m3.7-findings.md`):
+
+- 4% of model cards mislead by omission (target 0). Idea: a card's sentences must be consecutive within one paragraph.
+- Molecules with 3+ cards: 86% (target 90%). Streaming starts under 3 s: 76% (target all).
+- "Surprise me" has 439 molecules (target about 500); add candidates to `fixtures/curated/candidates.txt` and rerun `valence curate`.
+
+Also: valence-core depends on our mistral.rs fork (pinned commit) for the memory estimate; an upstream PR was never authorized.
+
 ## Later (from the PRD roadmap)
 
 - **v0.2:** related molecules (F10), Ask a question (F11), favorites and history (F12), regenerate card (F13).
@@ -106,5 +123,5 @@ Exit: v0.1 public on GitHub.
 - [x] UI stack: Tauri 2 + React + TypeScript (Vite), 3D with 3Dmol.js (decided 2026-10-20; PRD updated).
 - [ ] Danger card: GHS classes only, or also LD50? Suggest GHS only for the POC, in line with "never state safe doses".
 - [x] Default model: Qwen3 4B Instruct 2507 Q4_K_M (M0.7).
-- [x] Accuracy vs speed: accuracy first; the claim check drops cards it can't verify (decided 2026-11-03).
+- [x] Accuracy vs speed: accuracy first (decided 2026-11-03). Since 2026-11-14 cards are the sources' own sentences, chosen by the model, which replaced the claim check (M3.7).
 - [x] Apple Developer ID ($99/yr) for signing and notarization: not for now (2026-11-18); builds are ad-hoc signed and users open them past Gatekeeper once.
