@@ -16,6 +16,10 @@ repository = "https://github.com/tolmachevroman/valence"
 debug = false
 opt-level = 3
 
+# Release builds ship to users: no symbols, a smaller download.
+[profile.release]
+strip = true
+
 [workspace.lints.rust]
 unsafe_code = "deny"
 
